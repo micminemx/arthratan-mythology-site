@@ -156,6 +156,15 @@ jobs:
           ! grep -q 'data:image/webp;base64' index.html
           test "$(find assets/art -name '*.webp' | wc -l)" -ge 29
 
+      - name: Check custom-domain HTTPS readiness
+        run: |
+          if curl -fsSI --max-time 20 https://arthratanmythology.com/ >/tmp/https-headers.txt; then
+            echo "HTTPS_READY=true"
+            sed -n '1,20p' /tmp/https-headers.txt
+          else
+            echo "HTTPS_READY=false"
+          fi
+
       - name: Commit synchronized multi-file site
         id: commit
         run: |
