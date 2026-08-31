@@ -1,0 +1,59 @@
+name: Sync visual Codex from Drive
+
+on:
+  push:
+    paths:
+      - ".github/workflows/sync-drive-site.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Download self-contained visual Codex from Google Drive
+        run: |
+          python -m pip install --quiet gdown
+          gdown "https://drive.google.com/uc?id=1pLoDFQuicjCzVznCdZGQKiHMi3VBXRn6" -O index.html
+
+      - name: Verify visual build
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          data = p.read_text('utf-8')
+          assert p.stat().st_size > 20_000_000, p.stat().st_size
+          assert 'The Arthitean Codex' in data
+          assert data.count('data:image/webp;base64') >= 60, data.count('data:image/webp;base64')
+          print(f"Verified {p.stat().st_size:,} bytes and {data.count('data:image/webp;base64')} embedded WebP images")
+          PY
+
+      - name: Write GitHub Pages metadata
+        run: |
+          printf '%s\n' 'arthratanmythology.com' > CNAME
+          printf '%s\n' 'User-agent: *' 'Disallow: /' > robots.txt
+          touch .nojekyll
+
+      - name: Commit synchronized site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html CNAME robots.txt .nojekyll
+          if git diff --cached --quiet; then
+            echo "Drive preview is already synchronized."
+          else
+            git commit -m "Sync visual Arthitean Codex from Drive"
+            git push
+          fi
