@@ -32,4 +32,25 @@ jobs:
           curl -sSI --max-time 20 https://arthratanmythology.com/assets/art/chibi-rhayhara.webp | sed -n '1,20p' || true
           echo "=== certificate subject/issuer/dates ==="
           echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates || true
-          # post-publication verification 2026-08-31T19:54+01:00
+
+          echo "=== exact live HTTP publication checks ==="
+          curl -fsSL --max-time 30 http://arthratanmythology.com/ -o /tmp/live-index.html
+          curl -fsSL --max-time 30 http://arthratanmythology.com/app.js -o /tmp/live-app.js
+          curl -fsSL --max-time 30 http://arthratanmythology.com/styles.css -o /tmp/live-styles.css
+          curl -fsSL --max-time 30 http://arthratanmythology.com/data/characters.json -o /tmp/live-characters.json
+          wc -c /tmp/live-index.html /tmp/live-app.js /tmp/live-styles.css /tmp/live-characters.json
+          sha256sum /tmp/live-index.html /tmp/live-app.js /tmp/live-styles.css /tmp/live-characters.json
+          node - <<'NODE'
+          const fs = require('fs');
+          const j = JSON.parse(fs.readFileSync('/tmp/live-characters.json', 'utf8'));
+          console.log(`LIVE_CHARACTER_COUNT=${j.characters?.length}`);
+          if (!Array.isArray(j.characters) || j.characters.length !== 43) process.exit(1);
+          NODE
+
+          echo "=== HTTPS content probe ignoring current certificate mismatch ==="
+          curl -kfsSL --max-time 30 https://arthratanmythology.com/data/characters.json -o /tmp/live-characters-https-unverified.json || true
+          if [ -s /tmp/live-characters-https-unverified.json ]; then
+            wc -c /tmp/live-characters-https-unverified.json
+            sha256sum /tmp/live-characters-https-unverified.json
+          fi
+          # exact publication verification 2026-08-31T19:58+01:00
