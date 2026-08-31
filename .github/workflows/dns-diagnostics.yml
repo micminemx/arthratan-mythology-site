@@ -28,3 +28,7 @@ jobs:
           curl -sSIL --max-time 20 http://arthratanmythology.com/ | sed -n '1,30p' || true
           echo "=== HTTPS headers ==="
           curl -sSIL --max-time 20 https://arthratanmythology.com/ | sed -n '1,30p' || true
+          echo "=== artwork probe ==="
+          curl -sSI --max-time 20 https://arthratanmythology.com/assets/art/chibi-rhayhara.webp | sed -n '1,20p' || true
+          echo "=== homepage marker ==="
+          curl -sSL --max-time 20 https://arthratanmythology.com/ | grep -o "A navigable sanctuary for" | head -1 || true
