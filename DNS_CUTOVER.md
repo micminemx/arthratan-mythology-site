@@ -1,34 +1,31 @@
 # Arthratan Mythology DNS cutover
 
-Observed from an external GitHub Actions runner on 2026-08-31 at 17:04 UTC.
+## Status: DNS cutover successful
 
-## Current live routing
+External GitHub Actions verification on 2026-08-31 at approximately 17:25 UTC confirms:
 
-- Authoritative nameservers: `ns1.vercel-dns.com`, `ns2.vercel-dns.com`
-- Apex A records: `64.29.17.1`, `216.198.79.65`
-- Live HTTP/HTTPS response server: `Vercel`
-- The domain therefore still serves the previous Vercel deployment.
+- `arthratanmythology.com` now resolves to all four GitHub Pages IPv4 addresses:
+  - `185.199.108.153`
+  - `185.199.109.153`
+  - `185.199.110.153`
+  - `185.199.111.153`
+- Plain HTTP is served by `Server: GitHub.com`.
+- The live artwork path `/assets/art/chibi-rhayhara.webp` returns HTTP 200 with `Content-Type: image/webp` from GitHub Pages.
+- No conflicting AAAA record was returned.
 
-## Required GitHub Pages routing
+## Remaining state
 
-Replace the two current apex A records with these four GitHub Pages A records:
+HTTPS certificate provisioning for `arthratanmythology.com` is not complete yet. External TLS verification currently reports that the certificate presented by GitHub Pages does not yet contain `arthratanmythology.com` as a valid subject name.
 
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
+This is now a GitHub Pages certificate-provisioning step rather than a DNS-routing or artwork-deployment problem.
 
-Optional but recommended for `www`:
+## DNS authority
 
-- `CNAME www -> micminemx.github.io`
+The authoritative nameservers remain `ns1.vercel-dns.com` and `ns2.vercel-dns.com`, but the apex A records now override Vercel's default ALIAS and route the website to GitHub Pages. Vercel is therefore acting only as the DNS provider, not the website host.
 
-Do not add an apex CNAME for `@` when using these A records.
-
-## GitHub side already prepared
+## GitHub side
 
 - GitHub Pages is enabled from `main` / repository root.
 - `CNAME` contains `arthratanmythology.com`.
 - The visual build is published with separate artwork files and chibi assets.
-- `.github/workflows/dns-diagnostics.yml` can be rerun after DNS changes to verify propagation externally.
-
-Once the authoritative DNS returns the four GitHub Pages A records, GitHub Pages should serve the custom domain. HTTPS may take additional time to provision after DNS verification.
+- `.github/workflows/dns-diagnostics.yml` provides repeatable external verification.
