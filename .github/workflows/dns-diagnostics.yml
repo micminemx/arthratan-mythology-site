@@ -1,0 +1,30 @@
+name: Diagnose custom-domain routing
+
+on:
+  push:
+    paths:
+      - ".github/workflows/dns-diagnostics.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query public DNS and live origin
+        run: |
+          set -e
+          echo "=== arthratanmythology.com A ==="
+          curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=A" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== arthratanmythology.com AAAA ==="
+          curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=AAAA" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== arthratanmythology.com NS ==="
+          curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=NS" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== www CNAME ==="
+          curl -fsSL "https://dns.google/resolve?name=www.arthratanmythology.com&type=CNAME" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== HTTP headers ==="
+          curl -sSIL --max-time 20 http://arthratanmythology.com/ | sed -n '1,30p' || true
+          echo "=== HTTPS headers ==="
+          curl -sSIL --max-time 20 https://arthratanmythology.com/ | sed -n '1,30p' || true
