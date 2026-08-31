@@ -1,0 +1,63 @@
+name: Publish character encyclopedia
+
+on:
+  push:
+    paths:
+      - ".github/workflows/publish-character-encyclopedia.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reconstruct canonical site delta
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .github/publish-character-encyclopedia/payload.part* > /tmp/site_delta.tar.xz.b64
+          test "$(wc -c < /tmp/site_delta.tar.xz.b64)" -eq 49740
+          echo "9333a3da6114f08ec517dd04ffb9140a48035fd39970ec5f8ef202afd32d7a11  /tmp/site_delta.tar.xz.b64" | sha256sum -c -
+          base64 -d /tmp/site_delta.tar.xz.b64 > /tmp/site_delta.tar.xz
+          echo "39b1dda0acec530f43af8a3639368cc29baf369d3ae7d4ca40d76d8336c2cdf0  /tmp/site_delta.tar.xz" | sha256sum -c -
+          mkdir -p /tmp/site_delta
+          tar -xJf /tmp/site_delta.tar.xz -C /tmp/site_delta
+          mkdir -p data
+          cp /tmp/site_delta/data/characters.json data/characters.json
+          cp /tmp/site_delta/app.js app.js
+          cp /tmp/site_delta/styles.css styles.css
+          cp /tmp/site_delta/index.html index.html
+
+      - name: Verify canonical bytes and structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "ad88c4835cfed747bb71f2555428cf8f4ae35cf26af5afd58553553d70418ff2  data/characters.json" | sha256sum -c -
+          echo "abf35b21831f0d1ec0e3bb99a4c4d353c3d1c8d76baaae2a318fb955a0a3e834  app.js" | sha256sum -c -
+          echo "ad5c8b0d00f7b8e57058d9b15713d334505295a76f8ed04c2c4802aaf62496bf  styles.css" | sha256sum -c -
+          echo "27ae905eff0fda7703ce539f652febe6afc52b52b50e510c3c8b57feb92c3e55  index.html" | sha256sum -c -
+          node --check app.js
+          node - <<'NODE'
+          const fs = require('fs');
+          const j = JSON.parse(fs.readFileSync('data/characters.json', 'utf8'));
+          if (!Array.isArray(j.characters) || j.characters.length !== 43) {
+            throw new Error(`Expected 43 characters, got ${j.characters?.length}`);
+          }
+          console.log(`Validated ${j.characters.length} character records`);
+          NODE
+
+      - name: Commit canonical publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm -r .github/publish-character-encyclopedia
+          git add app.js index.html styles.css data/characters.json
+          git commit -m "Publish 43-page character encyclopedia"
+          git push
