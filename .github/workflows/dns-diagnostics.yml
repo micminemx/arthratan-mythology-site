@@ -32,4 +32,4 @@ jobs:
           curl -sSI --max-time 20 https://arthratanmythology.com/assets/art/chibi-rhayhara.webp | sed -n '1,20p' || true
           echo "=== certificate subject/issuer/dates ==="
           echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates || true
-          # certificate-watch 2026-08-31T18:46+01:00
+          # certificate-watch 2026-08-31T19:39+01:00
