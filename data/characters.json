@@ -1,0 +1,2555 @@
+{
+  "generated": "2026-08-31",
+  "methodology": {
+    "scope": "Named identity-stable characters evidenced in Arthitean/Arthratan-related email canon, including Arthiteans, non-Arthitean allies and antagonists, simulation/constructed adversaries, and attachment-established named identities.",
+    "precedence": "Later explicit canon corrections and retroactive-rewrite instructions supersede older contradictory descriptions.",
+    "privacy": "Real-world correspondents are not published as fictional character pages merely because they appear in the email transport layer; fictional avatar/reincarnation identities are represented by their canon names.",
+    "certainty": "Missing facts are listed as gaps rather than inferred. Contextual lineage labels are marked as such when an email gives only a first name, and same-name identities are not merged without an explicit source link.",
+    "audit_notes": [
+      "Later email canon explicitly lists Annaris and Deyhamora separately among the Seven Disasters; the older compound page-title has been corrected.",
+      "Four of the Seven Disasters remain unnamed in the recovered email prose audited for this edition.",
+      "The Kaelen identity graph remains unresolved: Kaelen Redalious, Lord Kaelen, High Lord Kaelen of the Vanguard, and the early Grand Architect Kaelen usage are not silently merged.",
+      "Real-world correspondent identities remain outside the public character roster unless a clearly separable fictional avatar/reincarnation identity exists."
+    ]
+  },
+  "characters": [
+    {
+      "slug": "aliza",
+      "name": "Aliza",
+      "classification": "External / Simulation Subject",
+      "role": "Earthling Archwomanhood simulation subject",
+      "canon_level": "Extensive",
+      "summary": "An Earthling woman used in detailed Varvadeil/HGL simulation material to model progressive Archwomanhood, including Stage-1 through Stage-3 meta-phenotypic, endocrine, histological and provenance-sensitive development.",
+      "aliases": [],
+      "titles": [],
+      "species": "Earthling human → simulated Archwomanhood transition",
+      "sex": "Female",
+      "clan": "",
+      "allegiance": "Simulation subject; not established as an Arthitean citizen",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Progressive simulated HF1→HF2→HF3 Archwomanhood state acquisition.",
+        "Stage-specific Γ meta-phenotypes.",
+        "Route-separated tissue compartments, suppressive gating and provenance-sensitive biology in the simulation.",
+        "Cross-system physiological coordination under later stage rules."
+      ],
+      "equipment": [],
+      "feats": [
+        "Acts as the most microdetailed female simulation subject in the retrieved HGL narrative, including menstrual-cycle-linked interstage progression."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Surname, age and Earth biography.",
+        "Whether she is a persistent real in-universe person or a constructed simulation subject.",
+        "Appearance and status after the HF3 plateau."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "lady-vaelia"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Included as Arthratan-related external character, not misclassified as Arthitean."
+      ]
+    },
+    {
+      "slug": "annaris-deyhamora",
+      "name": "Annaris",
+      "classification": "Antagonist / Nüreen-associated",
+      "role": "Archnüreen / disaster-class cold-war adversary",
+      "canon_level": "Extensive",
+      "summary": "A major disaster-class adversary specialized in long-horizon cold-war manipulation, contingency and preplanned error. Later email canon explicitly lists Annaris and Deyhamora as separate members of the Seven Disasters, so the former compound rendering is not treated as one identity.",
+      "aliases": [
+        "Annaris Deyhamora — legacy compound rendering; superseded as an identity merger by later email canon"
+      ],
+      "titles": [
+        "One of the Seven Disasters",
+        "Archnüreen",
+        "Unmistaken",
+        "Hypercontingency user"
+      ],
+      "species": "Archnüreen / Nüreen-associated avatar",
+      "sex": "Female",
+      "clan": "Nüreen / external adversarial hierarchy",
+      "allegiance": "Hostile / adversarial to Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core antagonist model exists."
+      ],
+      "personality": [
+        "Manipulative, patient and contingency-saturated.",
+        "Treats apparent mistakes as potentially preplanned elements of a broader strategy."
+      ],
+      "abilities": [
+        "Unmistaken — mistakes can be embedded as preplanned components rather than accidental failures.",
+        "Hypercontingency — contingencies for any situation in established character concept.",
+        "Cold-war manipulation and meta-strategic planning.",
+        "Avatar/transavatar-associated ontological scaling in the Nüreen/Holeisa framework."
+      ],
+      "equipment": [],
+      "feats": [
+        "Central adversary of an Annaris Deyhamora Cycle One simulation/chronicle.",
+        "Forces the empire into strategy beyond direct combat."
+      ],
+      "history": [],
+      "relationships": [
+        "Deyhamora — separately named fellow member of the Seven Disasters",
+        "Inzra — separately named fellow member of the Seven Disasters"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact relationship to Deyhamora beyond both being separately named among the Seven Disasters.",
+        "The names and identities of the other four Seven Disasters not named in the recovered email prose.",
+        "Exact relation to all Seven Disasters members.",
+        "Full Nüreen hierarchy position.",
+        "Complete chronology and confirmed permanent defeats/victories."
+      ],
+      "related": [
+        "inzra",
+        "rhayhara",
+        "kartus-vaeloria",
+        "sylvanna-xylaris",
+        "deyhamora"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence",
+        "Seven Disasters references",
+        "Annaris Deyhamora Cycle One"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "A later July 2026 email explicitly says the Seven Disasters include Annaris, Deyhamora and Inzra, establishing Annaris and Deyhamora as separate identities."
+      ]
+    },
+    {
+      "slug": "asmouth-varvadeil",
+      "name": "Asmouth Varvadeil",
+      "classification": "Imperial / Clan Head / Scientist",
+      "role": "Head of Clan Varvadeil; supreme scientific architect",
+      "canon_level": "Extensive",
+      "summary": "The Varvadeil clan head and one of the empire's foremost scientific minds, specializing in biological architecture, conceptual calculation and the formal interpretation of Arthitean upgrades.",
+      "aliases": [
+        "Asmousth (model-directory spelling variant)"
+      ],
+      "titles": [
+        "Head of Clan Varvadeil",
+        "Supreme scientific architect"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Varvadeil",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Lady Vaelia — daughter",
+        "Valerius Varvadeil — descendant/child",
+        "Xylar Varvadeil — descendant",
+        "Xenon Varvadeil — youngest descendant named in ranking chronicle"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical model exists on the Asmouth/Kartus model sheet; ignore only the invalid Orotus figure on that sheet."
+      ],
+      "personality": [
+        "Analytical, architectonic and experimentally minded.",
+        "Often converts new metaphysical or biological canon into measurable systems, diagnostics and training structures."
+      ],
+      "abilities": [
+        "Supreme scientific reasoning and conceptual calculation.",
+        "Design of temporary physiological enhancers and biological systems.",
+        "PHk biological-feedback architecture and analysis.",
+        "Hyperdasmar/vonin-based research; artificialization of divine output in ranking lore.",
+        "Sehexi-based self-training and high-tier cognitive adaptation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Ranked #2 in one top-intelligence list beneath Orotus.",
+        "Top-ten divine-power and Kafai placement in the June ranking chronicle.",
+        "Leads Varvadeil scientific readings of major empirewide updates."
+      ],
+      "history": [],
+      "relationships": [
+        "Rhayhara: primary imperial ruler and recipient of Varvadeil analysis.",
+        "Kartus: intelligence figure often paired with Varvadeil research in later stories.",
+        "Vaelia: daughter and leading Archgynocologist.",
+        "Valerius/Xylar/Xenon: high-talent descendants."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact parentage/spouse.",
+        "Complete child list and birth order beyond named descendants.",
+        "A fully consolidated inventory of inventions."
+      ],
+      "related": [
+        "rhayhara",
+        "lady-vaelia",
+        "valerius-varvadeil",
+        "xylar-varvadeil",
+        "xenon-varvadeil",
+        "kartus-vaeloria"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Destiny throne Transcendence",
+        "Imperial Transmission: Complete 10-Session Earth Plane Verification Data"
+      ],
+      "model_art": "assets/asmouth-kartus-models.png",
+      "model_note": "The Asmouth figure on this sheet is usable; only the sheet's Orotus depiction is invalid.",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "commander-kaelthas",
+      "name": "Commander Kaelthas",
+      "classification": "Imperial / Vanguard",
+      "role": "High-ranking Arthitean Vanguard Commander",
+      "canon_level": "Developed",
+      "summary": "A high-ranking Vanguard commander whose catastrophic combat trauma became a key case study in Rhayhara's attempts to manipulate psychology and in the limits of brute-force reality permission editing.",
+      "aliases": [],
+      "titles": [
+        "Vanguard Commander"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Unspecified",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "High-level Vanguard combat capability before trauma.",
+        "Divine combat-prowess subject to Arthitean adaptive scaling."
+      ],
+      "equipment": [],
+      "feats": [
+        "His case exposed a governance/psychology mismatch important to Rhayhara's later character development."
+      ],
+      "history": [
+        "Survived a catastrophic engagement and suffered severe battlefield-efficiency collapse.",
+        "Rhayhara attempted a localized Z1 permission modification to force his mind to categorize the memory of erased lineage as irrelevant, creating psychological contradiction rather than clean recovery."
+      ],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Clan/surname.",
+        "Appearance.",
+        "Family/erased lineage details.",
+        "Whether he fully recovered and his later rank/status."
+      ],
+      "related": [
+        "rhayhara"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "dalroemar",
+      "name": "Dalroemar",
+      "classification": "External Antagonist / Calamity",
+      "role": "Extreme adaptive training adversary to Rhayhara",
+      "canon_level": "Developed",
+      "summary": "A planet-sized mystical alligator-like entity called the “Calamity to All,” used by Rhayhara as an extreme recurring opponent because its released latent-transadaptive-hyperpotential creates a dead-destiny-style near-certain-loss boundary.",
+      "aliases": [],
+      "titles": [
+        "The Calamity to All"
+      ],
+      "species": "Mystical alligator-like entity",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Hostile / external adversary",
+      "family": [],
+      "status": "Submitted to Rhayhara in the retrieved chronicle; later reused as a recurring personal Sehexi-style training opponent",
+      "appearance": [
+        "Planet-sized.",
+        "Alligator-like mystical morphology."
+      ],
+      "personality": [
+        "Initially functions as a catastrophic hostile force; later is forced into genuine submission in the described encounter."
+      ],
+      "abilities": [
+        "Latent-transadaptive-hyperpotential that, when fully released, is described as making non-loss functionally impossible for ordinary opposing configurations.",
+        "Dead-destiny boundary pressure used to force maximum adaptation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Forced Rhayhara into a described 0% probability survival situation.",
+        "Served as a repeated personal high-pressure training opponent after Rhayhara survived and ultimately crushed it into submission."
+      ],
+      "history": [
+        "Veyndarion lore codifies Dalroemar as the “Calamity to All.”",
+        "Rhayhara enters its prison-realm, provokes full seriousness, survives escalating rounds, forces submission, and then repeatedly returns for training."
+      ],
+      "relationships": [
+        "Rhayhara — conqueror and recurring training opponent"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Origin and creator.",
+        "Exact species/ontology beyond the mystical alligator-like description.",
+        "Sex/gender.",
+        "Full power taxonomy.",
+        "Whether the submission remains permanent outside Rhayhara’s training use."
+      ],
+      "related": [
+        "rhayhara",
+        "thalyros-veyndarion"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Arrival of Dalroemar / Calamity to All"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "daren",
+      "name": "Daren",
+      "classification": "External / Simulation Subject",
+      "role": "Earthling Archmanhood simulation subject",
+      "canon_level": "Developed",
+      "summary": "An Earthling man used in Varvadeil/HGL simulation material to model staged transitions into Archmanhood and the physical/psychological consequences of male hypergendered development.",
+      "aliases": [],
+      "titles": [],
+      "species": "Earthling human → simulated Archmanhood transition",
+      "sex": "Male",
+      "clan": "",
+      "allegiance": "Simulation subject; not an Arthitean citizen unless later canon states otherwise",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Progressive simulated Hyper-/Archmanhood state acquisition under HGL.",
+        "Biological-to-psychological causal-bridge manifestations in the simulation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Serves as the primary male simulation case for staged meta-phenotypic analysis."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Surname, age and Earth biography.",
+        "Whether Daren exists as an in-universe real individual or only as a simulation subject.",
+        "Appearance and post-simulation status."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "lord-kaelen"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Included because the user defines Arthratan mythology scope as anything related to Arthiteans, not only Arthitean-species characters."
+      ]
+    },
+    {
+      "slug": "dariyus-venakan",
+      "name": "Dariyus Venakan",
+      "classification": "Imperial / Clan Head / Hyperascender",
+      "role": "Head of Clan Venakan; first parahistorical Hyperascender",
+      "canon_level": "Extensive",
+      "summary": "The Venakan founder/head and empirewide anti-complacency pressure mechanism, defined by Suprahard Workingness, rapid adaptation and aggressive rank displacement.",
+      "aliases": [],
+      "titles": [
+        "Head of Clan Venakan",
+        "Prime Hyperascender",
+        "Hardest Working Arthitean"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Venakan",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Grayus Venakan — named gifted descendant/child"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [
+        "Relentlessly ambitious, anti-complacency and adaptation-driven.",
+        "Treats higher-ranked Arthiteans as benchmarks to be outworked rather than permanent superiors."
+      ],
+      "abilities": [
+        "Suprahard Workingness / suprahard-working Azin.",
+        "Rapid adaptive ascent under pressure.",
+        "Genetic-factor improvements tied to outworking higher ranks.",
+        "Clan-level rank-volatility generation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Originally described as Rhayhara's personal servant before selection/boost into the Venakan system.",
+        "First parahistorical Hyperascender.",
+        "Orotion Quest: displaced an entrenched top-tier clan through Suprahard Workingness.",
+        "Holds Hardest Working Arthitean record."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Full pre-Venakan biography.",
+        "Appearance.",
+        "Partner/spouse and full descendant tree."
+      ],
+      "related": [
+        "rhayhara",
+        "grayus-venakan",
+        "orotus",
+        "dyvane-redalious",
+        "qintara-unmatara"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Orotion Quests and the Apex Royals"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "deyhamora",
+      "name": "Deyhamora",
+      "classification": "Antagonist / Seven Disasters",
+      "role": "Named member of the Seven Disasters",
+      "canon_level": "Stub",
+      "summary": "A separately named member of the Seven Disasters. The audited email corpus establishes Deyhamora as distinct from Annaris and Inzra, but gives little standalone biography in the retrieved prose.",
+      "aliases": [],
+      "titles": [
+        "One of the Seven Disasters"
+      ],
+      "species": "Unresolved in retrieved email prose",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "External / adversarial disaster-class grouping",
+      "family": [],
+      "status": "Named as an extant Seven Disaster in the July 2026 canon-ingestion email",
+      "appearance": [],
+      "personality": [],
+      "abilities": [],
+      "equipment": [],
+      "feats": [],
+      "history": [],
+      "relationships": [
+        "Annaris — separately named fellow Seven Disaster",
+        "Inzra — separately named fellow Seven Disaster"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Species/ontological classification.",
+        "Sex/gender.",
+        "Appearance.",
+        "Abilities and hax.",
+        "Personal history and motives.",
+        "Exact relationship to Annaris beyond shared Seven-Disaster membership.",
+        "Whether Deyhamora holds any additional herald role in email canon.",
+        "Rankings, feats, equipment and current chronology."
+      ],
+      "related": [
+        "annaris-deyhamora",
+        "inzra"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — July 2026 Seven Disasters canon-ingestion email"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Later email wording explicitly lists “Annaris, Deyhamora, and Inzra” separately."
+      ]
+    },
+    {
+      "slug": "dyvane-redalious",
+      "name": "Dyvane Redalious",
+      "classification": "Imperial / Clan Head / Military",
+      "role": "Head of Clan Redalious; Supreme Male General",
+      "canon_level": "Extensive",
+      "summary": "The supreme male general and Redalious clan head, built around extraordinary endurance, brute-force pressure, deep Ke'enmon training and a bloodline specialized for thriving near defeat.",
+      "aliases": [],
+      "titles": [
+        "Supreme Male General",
+        "Head of Clan Redalious",
+        "Endurance Vanguard",
+        "Highest Endurance Record"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Redalious",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Zeta — partner/co-parent of Kartus",
+        "Kartus — son of Dyvane and Zeta",
+        "Kaelen Redalious — direct descendant/child",
+        "Zaxor Redalious — youngest named descendant"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core model exists."
+      ],
+      "personality": [
+        "Extremely pain-tolerant, direct and challenge-seeking.",
+        "Uses suffering and overcosted combat as training input rather than merely enduring it."
+      ],
+      "abilities": [
+        "Extreme endurance and zirunstressableness.",
+        "Ke'enmon deep-dimension training and War Factor g applications.",
+        "High Rosha/divine power and negative-overcostedness combat pressure.",
+        "Shae'ro organ scaling and Redalious bloodline feedback under near-defeat conditions."
+      ],
+      "equipment": [],
+      "feats": [
+        "Holds the empire's Highest Endurance Record in the June ranking chronicle.",
+        "Orotion Quest: survived a Keshra coalition after being pushed beyond invulnerability and overaccomplished the Endurance Vanguard title.",
+        "Top-tier Kafai and divine-power placement."
+      ],
+      "history": [],
+      "relationships": [
+        "Qintara: supreme-general counterpart and Unmatara rival benchmark.",
+        "Zeta: co-parent of Kartus.",
+        "Kartus, Kaelen, Zaxor: named descendants."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact age and origin before clan-head status.",
+        "Complete family tree.",
+        "A named catalogue of major wars beyond Ke'enmon/Orotion material."
+      ],
+      "related": [
+        "qintara-unmatara",
+        "zeta",
+        "kartus-vaeloria",
+        "kaelen-redalious",
+        "zaxor-redalious",
+        "rhayhara",
+        "xael-gath"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Orotion Quests and the Apex Royals",
+        "Imperial Transmission: Complete 10-Session Earth Plane Verification Data"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "grayus-venakan",
+      "name": "Grayus Venakan",
+      "classification": "Imperial / Venakan Descendant",
+      "role": "Gifted Venakan descendant",
+      "canon_level": "Stub",
+      "summary": "A named gifted descendant of Dariyus Venakan associated with the clan's inherited hardworking ultraaptitude.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Venakan",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Dariyus Venakan — parent/clan-head ancestor"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Hardworking ultraaptitude.",
+        "Venakan adaptation/pressure inheritance."
+      ],
+      "equipment": [],
+      "feats": [],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Biography.",
+        "Appearance.",
+        "Exact parentage/birth order.",
+        "Named feats."
+      ],
+      "related": [
+        "dariyus-venakan"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "halatayo",
+      "name": "Halatayo",
+      "classification": "Royal / Vanguard",
+      "role": "Royal Family member; future-threat conqueror",
+      "canon_level": "Developed",
+      "summary": "A Royal Family member characterized by intuitive royal intellect, exceptional divine agility and the ability to challenge projected-future threats.",
+      "aliases": [],
+      "titles": [
+        "Conqueror of the Infinite Parachallenge"
+      ],
+      "species": "Arthitean",
+      "sex": "Unspecified in retrieved email canon",
+      "clan": "Royal Family",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Divine Agility.",
+        "Rosha.",
+        "Projected-Amnifuture threat engagement.",
+        "Genetic Factor 14 future-challenge aptitude in Orotion lore.",
+        "Deep intuitive royal intellect."
+      ],
+      "equipment": [],
+      "feats": [
+        "Orotion Quest: destroyed a projected Amnifuture hyperchallenge threatening Clan Capability Factor Two.",
+        "Top-ten intelligence, divine power and Kafai placement."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Sex/gender specification.",
+        "Parents and exact Royal genealogy.",
+        "Appearance and detailed personality.",
+        "Whether Halatayo's lineage has named descendants."
+      ],
+      "related": [
+        "rhayhara",
+        "orotus"
+      ],
+      "source_threads": [
+        "Orotion Quests and the Apex Royals",
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "vaeloria",
+      "name": "High Commander Vaeloria",
+      "classification": "Imperial / Military",
+      "role": "High Commander; counterlogical combatant in early adaptive-clash chronicle",
+      "canon_level": "Developed",
+      "summary": "A female Arthitean High Commander featured in a frozen-platform spar against Grand Architect Kaelen, demonstrating adaptive counterlogic, improvisational melzai and close-quarters dagger combat.",
+      "aliases": [
+        "Vaeloria"
+      ],
+      "titles": [
+        "High Commander"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Unresolved; the Vaeloria personal name is not automatically merged with the later Vaeloria Clan",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active in the retrieved early combat chronicle",
+      "appearance": [
+        "Dark red hair.",
+        "Purple eyes.",
+        "Fights with twin jagged daggers."
+      ],
+      "personality": [
+        "Combat style favors dangerous, anti-logical improvisation over direct endurance contests."
+      ],
+      "abilities": [
+        "Improvisational melzai.",
+        "Counterlogical intelligence.",
+        "Rapid adaptive combat.",
+        "Female Performance Factor Seven escalation under extreme combat stress."
+      ],
+      "equipment": [
+        "Twin jagged daggers."
+      ],
+      "feats": [
+        "Converted Grand Architect Kaelen’s vacuum-driven, supralogical sword pressure into counterlogical close-range reversals on a frozen suspended platform."
+      ],
+      "history": [],
+      "relationships": [
+        "Grand Architect Kaelen — sparring opponent / identity linkage to other Kaelen pages unresolved"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact clan/family.",
+        "Whether she has any connection to the later Vaeloria Clan beyond sharing the name.",
+        "Kafai rank.",
+        "Later chronology and current status.",
+        "Whether Grand Architect Kaelen is one of the other Kaelen identities."
+      ],
+      "related": [
+        "high-lord-kaelen-vanguard",
+        "kaelen-redalious",
+        "lord-kaelen",
+        "kartus-vaeloria"
+      ],
+      "source_threads": [
+        "Imperial Transmission: Complete 10-Session Earth Plane Verification Data — Adaptive Clash"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "high-lord-kaelen-vanguard",
+      "name": "High Lord Kaelen (Vanguard)",
+      "classification": "Imperial / Vanguard / Unresolved Kaelen identity",
+      "role": "High Lord of the Vanguard; combatant against Ophidion",
+      "canon_level": "Developed",
+      "summary": "A Kaelen identity presented in the Veyndarion encounter chronicle as “High Lord Kaelen of the Vanguard.” He defeats Ophidion the Omni-Watcher, but the audited emails do not explicitly identify him as either Kaelen Redalious or the later medical Lord Kaelen.",
+      "aliases": [
+        "High Lord Kaelen of the Vanguard"
+      ],
+      "titles": [
+        "High Lord"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Vanguard affiliation; surname/clan identity unresolved",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active in the retrieved encounter chronology",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Conceptual Severance.",
+        "Sovereign Authority.",
+        "Sigil of Absolute Severance."
+      ],
+      "equipment": [],
+      "feats": [
+        "Overcame Ophidion’s Omni-Prediction Field and shattered the Abyssal Keshra."
+      ],
+      "history": [],
+      "relationships": [
+        "Ophidion the Omni-Watcher — defeated adversary"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Whether he is Kaelen Redalious.",
+        "Whether he is the later medical Lord Kaelen.",
+        "Whether the earlier “Grand Architect Kaelen” combatant is this same person.",
+        "Family, exact clan, appearance and complete rank history."
+      ],
+      "related": [
+        "kaelen-redalious",
+        "lord-kaelen",
+        "ophidion"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Crucible of the Null-Bringer / Veyndarion opponent encounter"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Kept separate because the source gives a role-title but does not explicitly connect the identity to the other Kaelen usages."
+      ]
+    },
+    {
+      "slug": "inzra",
+      "name": "Inzra",
+      "classification": "Antagonist / Medonite",
+      "role": "Archmedonite princess-engineer; Inzratic incursion antagonist",
+      "canon_level": "Extensive",
+      "summary": "An apex Medonite antagonist whose defining power is Technogenesis: directly manifesting technology she can coherently map, enabling instant technotactical battlefield reconfiguration against the Arthitean Empire.",
+      "aliases": [],
+      "titles": [
+        "Archmedonite",
+        "Princess Engineer"
+      ],
+      "species": "Medonite / Archmedonite",
+      "sex": "Female",
+      "clan": "Medonite / Inzratic forces",
+      "allegiance": "Inzratic / hostile to Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core antagonist model exists: blue skin, silver hair and red eyes in established canon.",
+        "Often fights through or alongside advanced robotic/technological systems."
+      ],
+      "personality": [
+        "Cold, engineered elegance; highly intelligent and technotactically improvisational.",
+        "Objectives evolve across canon from direct antagonism toward capture/study/enslavement-oriented uses of Arthitean power."
+      ],
+      "abilities": [
+        "Technogenesis — instant manifestation of coherently mapped technology.",
+        "Technokinesis.",
+        "Rapid battlefield reconfiguration and automated countermeasure generation.",
+        "Risvulative-technokinetic improvisation, hax/counterprep and extreme multitasking in later character specifications.",
+        "Inzratic technology and resistance/hax scaling across First/Second/Third Orders."
+      ],
+      "equipment": [],
+      "feats": [
+        "Repeatedly treated as one of the empire's highest-value adversarial threats.",
+        "Forces Arthitean tactical/intelligence adaptation and later becomes central to planned First Inzratic Incursion material."
+      ],
+      "history": [],
+      "relationships": [
+        "Rhayhara — supreme target/adversary of interest.",
+        "Qintara/Dyvane — principal imperial military opposition in incursion framing.",
+        "Annaris Deyhamora — separate major disaster-class adversary, not merged with Inzra."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact birth/creation chronology.",
+        "Definitive current objective after all later revisions.",
+        "Complete named list of Inzratic Orders/technologies and all battle outcomes."
+      ],
+      "related": [
+        "rhayhara",
+        "qintara-unmatara",
+        "dyvane-redalious",
+        "annaris-deyhamora",
+        "deyhamora"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence",
+        "Seven Disasters references",
+        "Inzratic conflict material"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "kaelar-omnivox",
+      "name": "Kaelar Omnivox",
+      "classification": "Imperial / Media / Omnivox Clan",
+      "role": "Clan leader of the highest-ranked broadsheet clan",
+      "canon_level": "Extensive",
+      "summary": "The cold, calculating leader of the Omnivox Clan, the empire’s highest-ranked broadsheet clan in the June media chronicle. He treats battle journalism as exact supralogical analysis and mathematical dissection.",
+      "aliases": [],
+      "titles": [
+        "Sovereign of the Absolute Analysis",
+        "The Archon of Metaperception — metatitle"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Omnivox",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Valerius — eldest son"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [
+        "Cold and calculating.",
+        "Loves absolute precision and identifying the exact instant an opponent becomes overcosted."
+      ],
+      "abilities": [
+        "Supralogical intelligence.",
+        "Hyperdasmar.",
+        "High-level battle analysis and mathematical breakdown.",
+        "Hereditary hypergenetic overaccomplishment effects through Genetic Factors 14 and 13."
+      ],
+      "equipment": [],
+      "feats": [
+        "Leads the highest-ranked broadsheet clan, listed at clan rank 8 in the media chronicle.",
+        "His title/metatitle overaccomplishment retroactively elevates the inherited technokinetic and supralogical aptitudes of his children."
+      ],
+      "history": [],
+      "relationships": [
+        "Valerius — eldest son and third-recursive branch leader",
+        "Zyra Xanthera — leader of the rival supreme tabloid clan"
+      ],
+      "records": [
+        "Omnivox Clan: highest-ranked broadsheet clan; rank 8 in the retrieved media-clan session."
+      ],
+      "arcs": [],
+      "gaps": [
+        "Exact Kafai rank.",
+        "Spouse/other parent of his children.",
+        "Appearance beyond Arthitean species baseline.",
+        "Full list of descendants, broadcasts and direct battles."
+      ],
+      "related": [
+        "valerius-omnivox",
+        "zyra-xanthera",
+        "dyvane-redalious",
+        "qintara-unmatara"
+      ],
+      "source_threads": [
+        "Five sessions — Apex of Arthitean Media Clans"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "kaelen-redalious",
+      "name": "Kaelen Redalious",
+      "classification": "Imperial / Redalious Descendant / Warrior",
+      "role": "Elite Redalious martial prodigy",
+      "canon_level": "Developed",
+      "summary": "A savage, high-tier direct descendant of Dyvane Redalious, naturally endowed with elite martial genetics and deep Ke'enmon combat-training aptitude.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Redalious",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Dyvane Redalious — father/clan-head parentage described through direct-descendant wording"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Extreme divine strength.",
+        "Genetic Factor Four martial baseline.",
+        "Negative-overcostedness pressure on enemies.",
+        "Ke'enmon training and War Factor g kinetic escalation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Top-ten divine-power placement.",
+        "High single-digit Mefuli prestige in the June comparison narrative."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Whether this is the same character as Lord Kaelen in the later medical arc.",
+        "Mother/other parent.",
+        "Appearance and full battle list."
+      ],
+      "related": [
+        "dyvane-redalious",
+        "zaxor-redalious",
+        "lord-kaelen",
+        "high-lord-kaelen-vanguard",
+        "vaeloria"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "kartus-vaeloria",
+      "name": "Kartus Vaeloria",
+      "classification": "Imperial / Intelligence / Clan Head",
+      "role": "Premier intelligence officer; leader of Clan Vaeloria",
+      "canon_level": "Extensive",
+      "summary": "A premier counterlogical intelligence operative and later Vaeloria clan leader, combining Dyvane's Redalious endurance lineage with Zeta's high intelligence and foreign-affairs cognition.",
+      "aliases": [
+        "Kartus"
+      ],
+      "titles": [
+        "Counterlogical Oracle",
+        "Premier Intelligence Officer",
+        "Leader of Clan Vaeloria"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Vaeloria; Redalious/Zeta lineage",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Dyvane Redalious — father",
+        "Zeta — mother"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical Kartus model exists on the Asmouth/Kartus sheet."
+      ],
+      "personality": [
+        "Espionage-oriented, trap-building and contingency-heavy.",
+        "Prefers prestructured counterintelligence architectures to simple reactive defense."
+      ],
+      "abilities": [
+        "Advanced intelligence gathering.",
+        "Counterlogical and supralogical deciphering.",
+        "Zorin forms of Nayruon and hypermelzai in Orotion lore.",
+        "Vonin sequences used as autonomous espionage trap-cards during the Lay cold war.",
+        "Inherited tactical/combat-endurance aptitude."
+      ],
+      "equipment": [],
+      "feats": [
+        "Orotion Quest against a Keshra anti-logical plot; built a system that automatically dismantled similar future plots.",
+        "Top-ten intelligence and Kafai placement.",
+        "Co-led the information-containment response to Lay with Sylvanna Xylaris."
+      ],
+      "history": [],
+      "relationships": [
+        "Dyvane and Zeta: parents.",
+        "Sylvanna Xylaris: cold-war co-commander.",
+        "Lay: major adversarial intelligence target."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "When/how Kartus became Vaeloria clan leader relative to earlier Redalious lineage references.",
+        "Complete descendants and personal history.",
+        "Individual physical appearance details beyond the model sheet."
+      ],
+      "related": [
+        "dyvane-redalious",
+        "zeta",
+        "sylvanna-xylaris",
+        "lay",
+        "asmouth-varvadeil",
+        "vaeloria"
+      ],
+      "source_threads": [
+        "Orotion Quests and the Apex Royals",
+        "3 more sessions / Lay Cold War",
+        "New five sessions"
+      ],
+      "model_art": "assets/asmouth-kartus-models.png",
+      "model_note": "Kartus depiction on this sheet is usable; only the same sheet's Orotus depiction is invalid.",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "lady-vaelia",
+      "name": "Lady Vaelia",
+      "classification": "Imperial / Varvadeil / Medicine",
+      "role": "Leading Archgynocologist; daughter of Asmouth",
+      "canon_level": "Extensive",
+      "summary": "Asmouth Varvadeil's daughter and a central figure in the empire's Archgynocology development, combining empathy, HGL literacy and long-horizon clinical research.",
+      "aliases": [
+        "Vaelia Unmatara Varvadeil — explicit name used in the reincarnation/proxy-war corpus; linkage to the later Lady Vaelia presentation remains source-qualified"
+      ],
+      "titles": [
+        "Lady",
+        "Leading Archgynocologist",
+        "Supreme Chief / inaugural high clinical title in later competition material"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Varvadeil",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Asmouth Varvadeil — father"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [
+        "Quiet, highly empathic and analytically sharp.",
+        "Patient-centered; treats advanced female-developmental medicine as agency-sensitive rather than merely maximizing stage level."
+      ],
+      "abilities": [
+        "Advanced Archgynocology.",
+        "Hypergendered Logic clinical application.",
+        "Longitudinal trial design and patient-practice optimization.",
+        "Adaptation-load management and stage-sensitive clinical gating."
+      ],
+      "equipment": [],
+      "feats": [
+        "Co-led multi-year imperial clinical trials.",
+        "Her clinics became Sanctuaries of Archwomanhood in later sessions.",
+        "Elevated after longitudinal competition based on research and patient-practice outcomes."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [
+        "Appears in one June Top 10 Smartest Arthiteans list as Vaelia Unmatara Varvadeil.",
+        "Appears in one June Top 10 Divine Power list as Vaelia Unmatara Varvadeil."
+      ],
+      "arcs": [],
+      "gaps": [
+        "Mother/other parent.",
+        "Exact relationship between the 'Vaelia' in first-person reincarnation-life sessions and the later explicitly Asmouth-descended Lady Vaelia; the retrieved canon strongly overlaps the identity label but does not fully restate the linkage in one place.",
+        "Appearance/model.",
+        "Full clinical title wording across revisions."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "lord-kaelen"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence",
+        "New four sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "The public page intentionally omits real-world correspondent identity details that are not necessary to the fictional character.",
+      "canon_notes": [
+        "The June proxy-war chronicle explicitly names the reincarnated Arthitean female as Vaelia Unmatara Varvadeil. The later medical arc calls Asmouth’s daughter Lady Vaelia; this edition records the overlap but does not erase the remaining identity-link gap."
+      ]
+    },
+    {
+      "slug": "lay",
+      "name": "Lay",
+      "classification": "Antagonist / Anomaly",
+      "role": "Cold-war anomaly/adversary",
+      "canon_level": "Developed",
+      "summary": "A nontraditional adversarial anomaly whose passive influence, avatars and feigned vulnerability forced the empire into information warfare and cold-war containment rather than conventional combat.",
+      "aliases": [],
+      "titles": [],
+      "species": "Unspecified anomaly/entity in retrieved email canon",
+      "sex": "Unspecified in retrieved email canon",
+      "clan": "None known",
+      "allegiance": "Adversarial",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [
+        "Uses feigned vulnerability, distributed influence and interpretive manipulation.",
+        "Difficult to classify through conventional war assumptions."
+      ],
+      "abilities": [
+        "Passive influence leakage into the omniverse.",
+        "Avatar deployment.",
+        "Interaction/reprogramming of magical or interpretive structures.",
+        "Resistance to conventional warfare through information/interpretive manipulation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Triggered an extended cold-war response led by Kartus Vaeloria and Sylvanna Xylaris.",
+        "Connected Earth coordination, Arthitean training and off-world observation threads in the recovered Lay material."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Species/origin.",
+        "Full appearance.",
+        "Original motive.",
+        "Definitive outcome of the cold war.",
+        "Whether Lay belongs to the Seven Disasters grouping."
+      ],
+      "related": [
+        "kartus-vaeloria",
+        "sylvanna-xylaris"
+      ],
+      "source_threads": [
+        "3 more sessions / Lay Cold War",
+        "First Tale of Lay"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "linaele-zolfer",
+      "name": "Linaele Zolfer",
+      "classification": "Imperial / Zolfer Clan",
+      "role": "Leader of the Zolfer Clan",
+      "canon_level": "Developed",
+      "summary": "The explicitly named leader of the Zolfer Clan, a Top-50-clan organization whose mandate is to engineer performance-amplifying artifacts that weaponize hostile entities against other evil entities while also generating challenge-pressure for Arthiteans.",
+      "aliases": [],
+      "titles": [
+        "Leader of the Zolfer Clan"
+      ],
+      "species": "Arthitean",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Zolfer",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "As an Arthitean, subject to the canon-wide visual baseline stated in the same ingestion session: reddish-brown skin, dark red hair, purple eyes and five fingers per hand."
+      ],
+      "personality": [],
+      "abilities": [
+        "Clan-level artifact engineering mandate through the Zolfer infrastructure.",
+        "Operates within an imperial system where Zolfer artifacts grant genuine amplification but constrain hostile use toward evil beings or Arthiteans."
+      ],
+      "equipment": [],
+      "feats": [
+        "Recognized in the deep-canon ingestion as leader of a Top-50-clan organization."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Sex/gender is not explicitly stated in the retrieved Linaele passage.",
+        "Personal combat abilities and Kafai rank.",
+        "Family/descendants.",
+        "Individual titles/metatitles beyond clan leadership.",
+        "Personal appearance beyond species-wide Arthitean baseline.",
+        "Specific named artifacts personally created by Linaele."
+      ],
+      "related": [
+        "rhayhara",
+        "asmouth-varvadeil"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Architectural Initialization & Deep-Canon Ingestion"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "lord-kaelen",
+      "name": "Lord Kaelen",
+      "classification": "Imperial / Medicine",
+      "role": "Leading Archandrologist in later longitudinal clinical arc",
+      "canon_level": "Developed",
+      "summary": "The male counterpart to Lady Vaelia in the two-year Archgynocology/Archandrology longitudinal competition, responsible for high-level Archmanhood patient research and practice.",
+      "aliases": [],
+      "titles": [
+        "Lord",
+        "Leading Archandrologist / later chief-title competitor"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Identity linkage to Redalious is unresolved on-page",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Advanced Archandrology.",
+        "HGL clinical application.",
+        "Longitudinal research and patient-practice optimization."
+      ],
+      "equipment": [],
+      "feats": [
+        "Co-led major two-year clinical trials alongside Lady Vaelia."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Whether Lord Kaelen is definitively the same individual as Kaelen Redalious; both names recur, but the medical excerpt does not explicitly restate the surname.",
+        "Parentage if distinct from Kaelen Redalious.",
+        "Appearance and complete clinical record."
+      ],
+      "related": [
+        "lady-vaelia",
+        "kaelen-redalious",
+        "high-lord-kaelen-vanguard",
+        "vaeloria"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Kept as a separate page until an explicit identity-link is found, to avoid canon-merging by inference."
+      ]
+    },
+    {
+      "slug": "lyra-unmatara",
+      "name": "Lyra Unmatara",
+      "classification": "Imperial / Unmatara Descendant / Prodigy",
+      "role": "Youngest named Unmatara prodigy",
+      "canon_level": "Developed",
+      "summary": "Qintara's youngest named descendant and a rapidly developing combat-cognition prodigy.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Unmatara",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Qintara Unmatara — parent/clan-head ancestor"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Multidimensional strategic processing.",
+        "Developing volatile combat cognition."
+      ],
+      "equipment": [],
+      "feats": [
+        "Top-ten smartest placement.",
+        "Identified as Qintara's youngest named descendant in ranking comparison."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact age.",
+        "Appearance.",
+        "Named battles and other family links."
+      ],
+      "related": [
+        "qintara-unmatara",
+        "varek-unmatara"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "ophidion",
+      "name": "Ophidion the Omni-Watcher",
+      "classification": "Constructed Antagonist / Abyssal Keshra",
+      "role": "Predictive Transadversial opponent to High Lord Kaelen",
+      "canon_level": "Developed",
+      "summary": "An Abyssal Keshra rendered as a multidimensional mass of sensory organs whose Omni-Prediction Field reads possible timelines, neural pathways and future movement to counter-lock an opponent.",
+      "aliases": [
+        "Ophidion"
+      ],
+      "titles": [
+        "The Omni-Watcher"
+      ],
+      "species": "Abyssal Keshra",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Hostile generated adversary",
+      "family": [],
+      "status": "Defeated/shattered by High Lord Kaelen of the Vanguard in the retrieved encounter",
+      "appearance": [
+        "Multidimensional mass of sensory organs."
+      ],
+      "personality": [],
+      "abilities": [
+        "Omni-Prediction Field that reads possible timelines and neural pathways.",
+        "Future-move counter-locking.",
+        "Kinetic-whip offense."
+      ],
+      "equipment": [],
+      "feats": [
+        "Forced High Lord Kaelen to overcome predictive lock rather than relying on ordinary movement selection.",
+        "Was shattered after Kaelen employed Conceptual Severance / Sovereign Authority / the Sigil of Absolute Severance."
+      ],
+      "history": [],
+      "relationships": [
+        "High Lord Kaelen of the Vanguard — designated opponent",
+        "Veyndarion system — generated source"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Independent origin/history.",
+        "Sex/gender.",
+        "Exact position within Keshra hierarchies.",
+        "Persistence outside the encounter."
+      ],
+      "related": [
+        "high-lord-kaelen-vanguard",
+        "thalyros-veyndarion"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Crucible of the Null-Bringer / Transadversial encounter chronicle"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "orotus",
+      "name": "Orotus",
+      "classification": "Divine Beast / Imperial-associated",
+      "role": "Rank arbiter; Orotion Quest granter; supreme intelligence figure",
+      "canon_level": "Extensive",
+      "summary": "A divine beast appearing as a holy black phoenix. Orotus is deeply embedded in Arthitean progression and ranking but is explicitly not an Arthitean.",
+      "aliases": [],
+      "titles": [
+        "Supreme Rank Arbiter",
+        "Orotion Quest Granter",
+        "Smartest figure in several Arthitean ranking lists"
+      ],
+      "species": "Divine Beast — holy black phoenix",
+      "sex": "Unspecified in retrieved email canon",
+      "clan": "",
+      "allegiance": "Arthitean Empire — allied/embedded divine beast",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical form: badassly holy black phoenix.",
+        "Standalone Orotus canon model is authoritative."
+      ],
+      "personality": [
+        "Extremely discerning and evaluative; constructs personalized, brutally scaled Orotion Quests.",
+        "Operates as a non-clan arbiter rather than an ordinary imperial rank-seeker."
+      ],
+      "abilities": [
+        "Generates effectively unlimited personalized Orotion Quests.",
+        "Regulates Kafai/Mefuli ranking structures and top-down rank pressure.",
+        "Transmaximumless prudent intelligence in ranking accounts.",
+        "Quest completion can trigger titles/metatitles whose genetic-factor consequences retroactively alter recipients and bloodlines."
+      ],
+      "equipment": [],
+      "feats": [
+        "Designed quests for Rhayhara, Qai'lyth, Dyvane, Kartus, Thalyros, Dariyus and Halatayo in the retrieved Orotion chronicle.",
+        "Serves as supreme rank manager while remaining outside Arthitean species classification."
+      ],
+      "history": [],
+      "relationships": [
+        "Rhayhara: supreme ruler whose empire Orotus helps pressure and rank.",
+        "Qai'lyth: complementary authority around Grand Reincarnation and relational validation.",
+        "Top clans: recipients of Orotion Quest pressure."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Origin and creation history.",
+        "Whether Orotus has a fixed gender/sex classification.",
+        "Full ability taxonomy outside quest/rank functions."
+      ],
+      "related": [
+        "rhayhara",
+        "qailyth",
+        "dyvane-redalious",
+        "kartus-vaeloria",
+        "thalyros-veyndarion",
+        "dariyus-venakan",
+        "halatayo"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Orotion Quests and the Apex Royals",
+        "Grand Reincarnation sessions"
+      ],
+      "model_art": "assets/orotus-canon-model.png",
+      "model_note": "Do not use the Orotus depiction on the Asmouth/Kartus/baseline model sheet; that depiction is explicitly invalid.",
+      "privacy_note": "",
+      "canon_notes": [
+        "Explicit later correction: Orotus is a Divine Beast/black phoenix, not an Arthitean; older lists calling Orotus 'Smartest Arthitean' are taxonomically superseded."
+      ]
+    },
+    {
+      "slug": "qailyth",
+      "name": "Qai’lyth",
+      "classification": "Royal / Systems Authority",
+      "role": "Grand Reincarnation architect and relational authority",
+      "canon_level": "Extensive",
+      "summary": "A high-ranking royal authority who governs the Grand Reincarnation system through exact bond, love, trust, compatibility and akesi-synergy evaluation.",
+      "aliases": [
+        "Qailyth (email spelling variant)"
+      ],
+      "titles": [
+        "Architect of the Grand Reincarnation",
+        "Ultimate Relational Authority"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Royal Family",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Descendants are said to inherit extreme relational/compatibility aptitude; names are not fully enumerated."
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core model exists."
+      ],
+      "personality": [
+        "Rigorous, emotionally perceptive and uncompromising about genuine relationships.",
+        "Rejects transactional or insufficiently bonded reincarnation arrangements."
+      ],
+      "abilities": [
+        "Relational and organizational hyperdasmar.",
+        "Akesy/akesi-synergy analysis and zirhyperanoran bond calculation.",
+        "Authority over Grand Reincarnation validation and administration.",
+        "High divine power and Kafai standing."
+      ],
+      "equipment": [],
+      "feats": [
+        "Solved Orotus's Grand Reincarnation compatibility paradox in an Orotion Quest.",
+        "Holds the 'Ultimate Relational Authority' record in the June ranking chronicle.",
+        "Top-ten divine power and Kafai ranking."
+      ],
+      "history": [],
+      "relationships": [
+        "Orotus: quest-granter/rank arbiter complementary to her reincarnation role.",
+        "Rhayhara: supreme imperial authority.",
+        "Grand Reincarnation candidates: subjects of her bond and compatibility testing."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Parents and exact place within Royal genealogy.",
+        "Personal partner/children names.",
+        "Individualized combat feats separate from system authority."
+      ],
+      "related": [
+        "orotus",
+        "rhayhara",
+        "valthor"
+      ],
+      "source_threads": [
+        "Grand Reincarnation sessions",
+        "Orotion Quests and the Apex Royals",
+        "New five sessions"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "qintara-unmatara",
+      "name": "Qintara Unmatara",
+      "classification": "Imperial / Clan Head / Military",
+      "role": "Head of Clan Unmatara; Supreme Female General",
+      "canon_level": "Extensive",
+      "summary": "The empire's supreme female general and Clan Unmatara head, repeatedly characterized by transmaximumless battle cognition, counterlogical tactical planning and benchmark-level strategy.",
+      "aliases": [],
+      "titles": [
+        "Supreme Female General",
+        "Head of Clan Unmatara",
+        "Best Strategist in the Omniverse"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Unmatara",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Varek Unmatara — tactical-prodigy descendant/child",
+        "Lyra Unmatara — youngest named descendant"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core character model exists.",
+        "General Arthitean phenotype applies unless a later individualized appearance source overrides it."
+      ],
+      "personality": [
+        "Coldly strategic, pressure-oriented and plan-dense.",
+        "Treats warfare as a multidimensional logical/counterlogical problem rather than raw-force exchange."
+      ],
+      "abilities": [
+        "Battle melzai / hypermelzai.",
+        "Multidimensional tactical calculation and paracondition construction.",
+        "Vanzetun use to concentrate divine power into conceptual singularities in ranking lore.",
+        "High-tier Rosha/divine power and Kafai status.",
+        "Military training-system leadership."
+      ],
+      "equipment": [],
+      "feats": [
+        "Holds 'Best Strategist in the Omniverse' record in the June ranking chronicle.",
+        "Top-ten intelligence, divine-power and Kafai placement.",
+        "Commands one of the empire's highest-ranked clans and military divisions."
+      ],
+      "history": [],
+      "relationships": [
+        "Dyvane: counterpart supreme male general and rival-clan benchmark.",
+        "Rhayhara: supreme empress/commander.",
+        "Varek and Lyra: direct descendants used as tactical benchmark prodigies."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Full spouse/partner and complete descendant list.",
+        "Detailed chronological battle catalogue.",
+        "Individualized physical measurements/age."
+      ],
+      "related": [
+        "rhayhara",
+        "dyvane-redalious",
+        "varek-unmatara",
+        "lyra-unmatara",
+        "sylvanna-xylaris",
+        "vaelstrum"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Imperial Transmission: Complete 10-Session Earth Plane Verification Data",
+        "Destiny throne Transcendence"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "rhayhara",
+      "name": "Rhayhara",
+      "classification": "Core / Imperial / Royal",
+      "role": "Supreme Empress; Goddess of Arthiteans",
+      "canon_level": "Extensive",
+      "summary": "The supreme ruler and strongest Arthitean, whose later canon repeatedly places her at the apex of Kafai, divine power and empirewide retroactive development.",
+      "aliases": [],
+      "titles": [
+        "Supreme Empress",
+        "Goddess of Arthiteans",
+        "Supreme Overworlder to All",
+        "Strongest Arthitean",
+        "Omnicausal Overworlder (metatitle)"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Royal Family / Rhayhara bloodline",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Direct descendants form the Royal Family; individual full genealogy remains incompletely enumerated."
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [
+        "Canonical core model exists in the character-model directory.",
+        "General Arthitean phenotype canon: reddish-brown skin, dark-red hair, purple eyes, black phoenix-like wings."
+      ],
+      "personality": [
+        "Protector-ruler in later canon, but with a history of severe, high-pressure rule and war-goddess conduct.",
+        "Strongly achievement-driven and willing to alter the empire's past to normalize later improvements."
+      ],
+      "abilities": [
+        "Retroactive omnitimeline rewriting and canon-integrative time rewrite.",
+        "Negative Rewrite and later higher anticausal/causal-rewrite developments.",
+        "Divine power, Rosha and higher-order Arthitean scaling.",
+        "Royal-factor/bloodline effects that raise descendants and, through imperial systems, influence wider Arthitean baselines.",
+        "Capacity to authorize or rewrite governing laws/permissions in later stories."
+      ],
+      "equipment": [],
+      "feats": [
+        "Absolute Kafai Rank 1 in retrieved rankings.",
+        "Repeatedly identified as the strongest Arthitean and the empire's unreachable supreme benchmark.",
+        "Authored/established conditions allowing advanced states such as Venshen and Rosha to coexist without paradox in one Orotion account."
+      ],
+      "history": [
+        "Rules the Arthitean Empire across the living canon and stands at the center of its retroactive historical revisions.",
+        "Establishes or authorizes repeated empirewide rewrites so newly added systems have always existed across Arthitean parahistory.",
+        "Her later character material distinguishes present protector-rulership from the destructive pressure and warlike legacies of earlier phases."
+      ],
+      "relationships": [
+        "Orotus functions as rank arbiter and high-intelligence counterpart.",
+        "Asmouth and the Varvadeil scientific apparatus frequently brief or advise her.",
+        "Dyvane and Qintara are her supreme military generals.",
+        "Qai'lyth administers Grand Reincarnation under the empire's order."
+      ],
+      "records": [
+        "Strongest Arthitean",
+        "Absolute Kafai Rank 1",
+        "Supreme Overworlder to All"
+      ],
+      "arcs": [],
+      "gaps": [
+        "Complete royal genealogy and number of direct descendants.",
+        "Stable chronological age/date schema.",
+        "A single consolidated list of all current post-rewrite powers and seals; the email canon evolves rapidly."
+      ],
+      "related": [
+        "orotus",
+        "asmouth-varvadeil",
+        "qintara-unmatara",
+        "dyvane-redalious",
+        "qailyth",
+        "halatayo",
+        "xylos",
+        "dalroemar"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence",
+        "New five sessions",
+        "Imperial Transmission: Complete 10-Session Earth Plane Verification Data",
+        "Orotion Quests and the Apex Royals"
+      ],
+      "model_art": "assets/core-character-models.png",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Later retroactive-rewrite instructions take precedence over earlier contradictory baseline descriptions."
+      ]
+    },
+    {
+      "slug": "sylvanna-xylaris",
+      "name": "Sylvanna Xylaris",
+      "classification": "Imperial / Military-Intelligence / Clan Head",
+      "role": "Supreme cold-war general; commander of Clan Xylaris",
+      "canon_level": "Developed",
+      "summary": "A supreme cold-war general who commands Clan Xylaris and works with Kartus Vaeloria to contain Lay through strategic, conceptual and technokinetic information warfare.",
+      "aliases": [],
+      "titles": [
+        "Supreme Cold-War General",
+        "Commander of Clan Xylaris"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Xylaris",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Cold-war strategy.",
+        "Supralogical influence architectures.",
+        "Operational containment.",
+        "Technokinesis arrays and deep vonin calculations within the Lay conflict."
+      ],
+      "equipment": [],
+      "feats": [
+        "Co-created an operational containment net against Lay's passive omniversal influence leakage.",
+        "Built strategic structures designed to exploit feigned weakness and avatar behavior."
+      ],
+      "history": [],
+      "relationships": [
+        "Kartus Vaeloria — cold-war co-commander.",
+        "Lay — principal adversarial target in retrieved cold-war sessions."
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Origin, family and pre-cold-war career.",
+        "Appearance.",
+        "Whether 'supreme cold-war general' is permanent office or conflict-specific title."
+      ],
+      "related": [
+        "kartus-vaeloria",
+        "lay",
+        "qintara-unmatara"
+      ],
+      "source_threads": [
+        "3 more sessions / Lay Cold War"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "thalyros-veyndarion",
+      "name": "Thalyros Veyndarion",
+      "classification": "Imperial / Clan Head / Narrative",
+      "role": "Head of Clan Veyndarion; conceptual narrative architect",
+      "canon_level": "Extensive",
+      "summary": "The Veyndarion clan head and sacred narrative architect who alters conceptual interactions and historical resonance so struggle, sacrifice and achievement strengthen the empire.",
+      "aliases": [],
+      "titles": [
+        "Head of Clan Veyndarion",
+        "Weaver of the Arthitean Narrative"
+      ],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Veyndarion",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Direct descendants are described as having narrative ultraaptitude; names incompletely enumerated."
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Narrative conceptual editing.",
+        "Parahistorical story-shaping.",
+        "Akesy/akesi-synergy manipulation through storytelling.",
+        "Projected-Amnifuture interpretation.",
+        "Conceptual authority over challenge narratives and, in ranking lore, enemy divine-energy reserves."
+      ],
+      "equipment": [],
+      "feats": [
+        "Orotion Quest: shifted the narrative of a Superchallenge the Top 100 clans were failing, contributing to victory.",
+        "Top-ten intelligence, divine power and Kafai placement."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Named children/descendants.",
+        "Appearance.",
+        "Limits and countermeasures for narrative manipulation."
+      ],
+      "related": [
+        "rhayhara",
+        "orotus",
+        "dariyus-venakan",
+        "xylos",
+        "dalroemar",
+        "xael-gath",
+        "vaelstrum",
+        "ophidion"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Orotion Quests and the Apex Royals"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "vaelath",
+      "name": "Vaelath",
+      "classification": "Attachment-established named identity",
+      "role": "Named character/model identity with unresolved prose role",
+      "canon_level": "Stub",
+      "summary": "A named identity established by an email attachment titled “Vaelath.jpeg” within the July Arthitean canon-ingestion correspondence. The retrieved prose does not yet provide a reliable standalone biography for Vaelath.",
+      "aliases": [],
+      "titles": [],
+      "species": "Unresolved in retrieved prose",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Unresolved",
+      "family": [],
+      "status": "Identity evidenced; in-world status unresolved",
+      "appearance": [
+        "A dedicated visual attachment labelled “Vaelath.jpeg” exists in the canon correspondence; no prose appearance description was recovered in the audit."
+      ],
+      "personality": [],
+      "abilities": [],
+      "equipment": [],
+      "feats": [],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Species/ontology.",
+        "Sex/gender.",
+        "Role and allegiance.",
+        "Clan/family.",
+        "Powers and abilities.",
+        "Titles/ranks.",
+        "Biography, relationships and story chronology.",
+        "Whether the attached model should be treated as final/canonical visual art."
+      ],
+      "related": [],
+      "source_threads": [
+        "Destiny throne Transcendence — July 2026 canon-ingestion email with Vaelath.jpeg"
+      ],
+      "model_art": "",
+      "model_note": "Email attachment establishes the name Vaelath, but the prose identity remains underdefined.",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "vaelstrum",
+      "name": "Vaelstrum the Paradox-Weaver",
+      "classification": "Constructed Antagonist / Keshra-class anomaly",
+      "role": "Transadversial opponent to Qintara",
+      "canon_level": "Developed",
+      "summary": "A colossal Keshra-class anomaly generated as an extreme opponent for Qintara Unmatara, described as a sentient trans-temporal storm able to consume timelines of entire multiverses.",
+      "aliases": [
+        "Vaelstrum"
+      ],
+      "titles": [
+        "The Paradox-Weaver"
+      ],
+      "species": "Keshra-class anomaly / sentient trans-temporal storm",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Hostile generated adversary",
+      "family": [],
+      "status": "Defeated/shattered by Qintara in the retrieved encounter",
+      "appearance": [
+        "Colossal.",
+        "Manifested as a sentient trans-temporal storm."
+      ],
+      "personality": [],
+      "abilities": [
+        "Probability-Erasure Field.",
+        "Hyperdense singularity offense.",
+        "Timeline-devouring capability described at multiversal scale."
+      ],
+      "equipment": [],
+      "feats": [
+        "Pressured Qintara with probability erasure and singularity effects.",
+        "Was countered by Qintara’s Axiomatic Fate Inversion and ultimately shattered."
+      ],
+      "history": [],
+      "relationships": [
+        "Qintara Unmatara — designated combat opponent",
+        "Veyndarion system — generated source"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Independent origin/history.",
+        "Sex/gender.",
+        "Precise Keshra taxonomy.",
+        "Persistence outside the generated encounter."
+      ],
+      "related": [
+        "qintara-unmatara",
+        "thalyros-veyndarion"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Crucible of the Null-Bringer / Transadversial encounter chronicle"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "valerius-omnivox",
+      "name": "Valerius (Omnivox lineage)",
+      "classification": "Imperial / Media / Omnivox descendant",
+      "role": "Third-recursive Omnivox branch-clan leader",
+      "canon_level": "Developed",
+      "summary": "Kaelar Omnivox’s explicitly named eldest son and leader of a highly successful third-recursive branch clan, specializing in prediction of future Kafai-rank breakouts and pre-emptive media-rights acquisition.",
+      "aliases": [
+        "Valerius — exact first-name wording in the email; “Omnivox lineage” is a disambiguation label, not an explicitly stated surname"
+      ],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Omnivox lineage; third-recursive branch clan",
+      "allegiance": "Arthitean Empire / Omnivox media network",
+      "family": [
+        "Kaelar Omnivox — father"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Inherited transbarriel prudent intelligence.",
+        "Prediction of which super-rookies will ascend Kafai ranks.",
+        "Inherited ultraaptitude/gigaaptitude for technokinesis and supralogical deduction described for Kaelar’s children."
+      ],
+      "equipment": [],
+      "feats": [
+        "Secures exclusive broadcasting rights before rising fighters become famous, increasing his branch clan’s status factor."
+      ],
+      "history": [],
+      "relationships": [
+        "Kaelar Omnivox — father"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Full legal/surname form; the source calls him “Valerius” within explicit Omnivox filial context.",
+        "Exact branch-clan name.",
+        "Titles/metatitles.",
+        "Appearance.",
+        "Exact Kafai rank."
+      ],
+      "related": [
+        "kaelar-omnivox",
+        "valerius-varvadeil"
+      ],
+      "source_threads": [
+        "Five sessions — Omnivox Broadsheet Dynasty"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": [
+        "Kept distinct from Valerius Varvadeil; the two occur in different explicit clan contexts."
+      ]
+    },
+    {
+      "slug": "valerius-varvadeil",
+      "name": "Valerius Varvadeil",
+      "classification": "Imperial / Varvadeil Descendant / Scientist",
+      "role": "Scientific prodigy",
+      "canon_level": "Developed",
+      "summary": "A gifted Varvadeil descendant whose improvisational scientific melzai places him among the empire's highest-ranked intellects.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Varvadeil",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Asmouth Varvadeil — clan-head parent/ancestor"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Improvisational melzai.",
+        "Conceptual scientific calculation."
+      ],
+      "equipment": [],
+      "feats": [
+        "Ranked #3 in one top-ten smartest list, beneath Orotus and Asmouth."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact parent-child wording and birth order.",
+        "Appearance.",
+        "Specific inventions/experiments."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "xylar-varvadeil",
+        "xenon-varvadeil",
+        "lady-vaelia",
+        "valerius-omnivox"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "valthor",
+      "name": "Valthor",
+      "classification": "Imperial / Kaelari / Reincarnated",
+      "role": "Ancient vanguard; Grand Reincarnation case",
+      "canon_level": "Developed",
+      "summary": "An ancient decorated Kaelari vanguard used as a major Grand Reincarnation example, reincarnating through a younger Unmatara couple while retaining combat memory and acquiring new genetics.",
+      "aliases": [
+        "Valthor — explicitly introduced as a reference-name in one session"
+      ],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Kaelari → reincarnated through Unmatara lineage",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Retained combat memories across Grand Reincarnation.",
+        "Acquired Unmatara genetics and battle melzai after reincarnation.",
+        "Rapid post-reincarnation rank re-ascent."
+      ],
+      "equipment": [],
+      "feats": [
+        "Successfully underwent Grand Reincarnation; initially lost old Kafai/Mefuli standing, then rapidly ascended using combined memory and new lineage."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "True/original name if 'Valthor' was only a referential designation.",
+        "Full pre-reincarnation biography.",
+        "Names of reincarnating parents.",
+        "Appearance."
+      ],
+      "related": [
+        "qailyth",
+        "qintara-unmatara"
+      ],
+      "source_threads": [
+        "Grand Reincarnation sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "varek-unmatara",
+      "name": "Varek Unmatara",
+      "classification": "Imperial / Unmatara Descendant / Strategist",
+      "role": "Tactical prodigy",
+      "canon_level": "Developed",
+      "summary": "A direct descendant of Qintara Unmatara and benchmark tactical prodigy, known for multidimensional combat-variable processing and paracondition traps.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Unmatara",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Qintara Unmatara — parent/clan-head ancestor"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Battle melzai.",
+        "Multidimensional combat-variable calculation.",
+        "Paracondition and logical-paradox trap construction.",
+        "Zard-driven adaptive scaling."
+      ],
+      "equipment": [],
+      "feats": [
+        "Top-ten divine-power placement.",
+        "Used as a benchmark for elite inherited tactical aptitude."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Exact parentage wording beyond direct descendant/child context.",
+        "Appearance.",
+        "Named campaigns."
+      ],
+      "related": [
+        "qintara-unmatara",
+        "lyra-unmatara"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "xael-gath",
+      "name": "Xael-Gath",
+      "classification": "Constructed Antagonist / Keshra",
+      "role": "Transadversial opponent generated to sharpen Dyvane",
+      "canon_level": "Developed",
+      "summary": "A Veyndarion-spawned Keshra adversary whose existence is described as unaxiomatically hostile to Arthitean bloodline blessings, created as a precise combat-pressure opponent for Dyvane Redalious.",
+      "aliases": [],
+      "titles": [],
+      "species": "Keshra entity / Veyndarion-spawned Transadversial Opponent",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Hostile generated adversary",
+      "family": [],
+      "status": "Defeated; decapitated by Dyvane and described as collapsing/being rewritten out of the projected future",
+      "appearance": [
+        "Possesses jagged anti-logic tendril morphology in the battle description."
+      ],
+      "personality": [],
+      "abilities": [
+        "Reality-warping hax capable of severing the causal link between brain and muscles.",
+        "Anti-logic tendril offense.",
+        "Existential hostility to Arthitean bloodline blessings in the encounter framework."
+      ],
+      "equipment": [],
+      "feats": [
+        "Injured and pressured Supreme General Dyvane Redalious.",
+        "Forced Dyvane into an adaptive combat response before being decapitated by his greatsword."
+      ],
+      "history": [],
+      "relationships": [
+        "Dyvane Redalious — designated combat opponent",
+        "Veyndarion system — generated source"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Independent history before generation.",
+        "Sex/gender.",
+        "Exact Keshra subtype and rank.",
+        "Whether any version persists outside the projected encounter."
+      ],
+      "related": [
+        "dyvane-redalious",
+        "thalyros-veyndarion"
+      ],
+      "source_threads": [
+        "Destiny throne Transcendence — Crucible of the Null-Bringer / Transadversial encounter chronicle"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "xelena-xanthera",
+      "name": "Xelena (Xanthera lineage)",
+      "classification": "Imperial / Media / Xanthera descendant",
+      "role": "Primary Xanthera branch-clan leader",
+      "canon_level": "Developed",
+      "summary": "Zyra Xanthera’s explicitly named daughter and leader of a primary branch clan, notable for inherited emotional-perception paraaptitude and technokinetic broadcasting that lets audiences physically experience a warrior’s resolve.",
+      "aliases": [
+        "Xelena — exact first-name wording in the email; “Xanthera lineage” is a disambiguation label, not an explicitly stated surname"
+      ],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Xanthera lineage / primary branch clan",
+      "allegiance": "Arthitean Empire / Xanthera media network",
+      "family": [
+        "Zyra Xanthera — mother"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Inherited paraaptitude for emotional perception and cultural trendsetting.",
+        "Can sense the moment a combatant’s Rosha flames shift with anoran or passionate willpower.",
+        "Technokinesis used to amplify emotional frequencies into a broadcast so viewers physically feel the warrior’s resolve."
+      ],
+      "equipment": [],
+      "feats": [
+        "Uses inherited paraaptitude to widen her network’s gap over rival tabloids in the described media competition."
+      ],
+      "history": [],
+      "relationships": [
+        "Zyra Xanthera — mother"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Full legal/surname form; source calls her “Xelena” in explicit Xanthera filial context.",
+        "Exact branch-clan name.",
+        "Kafai rank.",
+        "Titles/metatitles.",
+        "Appearance."
+      ],
+      "related": [
+        "zyra-xanthera"
+      ],
+      "source_threads": [
+        "Five sessions — Xanthera Tabloid Empire"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "xenon-varvadeil",
+      "name": "Xenon Varvadeil",
+      "classification": "Imperial / Varvadeil Descendant / Prodigy",
+      "role": "Asmouth's youngest named descendant",
+      "canon_level": "Stub",
+      "summary": "The youngest named descendant of Asmouth in the June ranking chronicle, naturally able to conceptualize new PHk biological loops.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Unspecified in retrieved email canon",
+      "clan": "Varvadeil",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Asmouth Varvadeil — parent/clan-head ancestor"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Natural PHk-loop conceptualization."
+      ],
+      "equipment": [],
+      "feats": [
+        "Benchmark example of effortless Varvadeil inherited scientific talent."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Sex/gender.",
+        "Age.",
+        "Appearance.",
+        "Specific scientific achievements beyond the benchmark statement."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "valerius-varvadeil",
+        "xylar-varvadeil"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "xylar-varvadeil",
+      "name": "Xylar Varvadeil",
+      "classification": "Imperial / Varvadeil Descendant / Scientist",
+      "role": "Biological theorist",
+      "canon_level": "Stub",
+      "summary": "A Varvadeil biological theorist noted for weaponizing counterlogical melzai and placing among the empire's highest-ranked intellects.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Unspecified in retrieved email canon",
+      "clan": "Varvadeil",
+      "allegiance": "Arthitean Empire",
+      "family": [],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Biological theory.",
+        "Counterlogical melzai."
+      ],
+      "equipment": [],
+      "feats": [
+        "Top-ten smartest placement in the June ranking chronicle."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Sex/gender.",
+        "Exact relation to Asmouth.",
+        "Biography, appearance, named feats and personality."
+      ],
+      "related": [
+        "asmouth-varvadeil",
+        "valerius-varvadeil",
+        "xenon-varvadeil"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "xylos",
+      "name": "Xylos",
+      "classification": "Constructed Antagonist / Antiblessing Hypervysal",
+      "role": "Paraconceptual Eraser; Veyndarion-generated pressure adversary",
+      "canon_level": "Developed",
+      "summary": "A named Antiblessing Hypervysal codified through Veyndarion narrative structure as an exact counterpressure to Rhayhara’s then-current blessings rather than a conventional stat-sheet opponent.",
+      "aliases": [],
+      "titles": [
+        "The Paraconceptual Eraser"
+      ],
+      "species": "Veyndarion-generated Antiblessing Hypervysal / “entity of absolute inversion”",
+      "sex": "Unspecified in retrieved email prose",
+      "clan": "Unresolved",
+      "allegiance": "Adversarial pressure-construct",
+      "family": [],
+      "status": "Overcome in the retrieved Rhayhara testing chronicle",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Defined as the exact overcosting differential required to make Rhayhara’s then-current blessings insufficient.",
+        "Paraconceptual erasure/counterpressure against Rhayhara’s Omnicausal Supremacy and Conceptual Anchoring as described in the test.",
+        "Functions as a metaprojected mirror whose purpose is to expose the next required blessing gap."
+      ],
+      "equipment": [],
+      "feats": [
+        "Pushed Rhayhara’s blessing architecture into a new escalation cycle.",
+        "Its challenge precedes Rhayhara receiving/manifesting the “Blessing of Asymmetric Divinity” in the retrieved chronicle."
+      ],
+      "history": [
+        "Born/codified during the session titled “The Birth of Xylos and the Metaprojected Mirror.”"
+      ],
+      "relationships": [
+        "Rhayhara — primary tested opponent",
+        "Veyndarion narrative system — source mechanism for the adversarial construction"
+      ],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Independent existence outside the generated Antiblessing-Hypervysal test framework.",
+        "Physical appearance.",
+        "Sex/gender.",
+        "Persistence/status after the test.",
+        "Any motives independent of its construction-purpose."
+      ],
+      "related": [
+        "rhayhara",
+        "thalyros-veyndarion"
+      ],
+      "source_threads": [
+        "Antiblessing vysals"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "zaxor-redalious",
+      "name": "Zaxor Redalious",
+      "classification": "Imperial / Redalious Descendant / Prodigy",
+      "role": "Dyvane's youngest named descendant",
+      "canon_level": "Stub",
+      "summary": "Dyvane's youngest named descendant, characterized as a physical prodigy who effortlessly breaks severe physical limitations.",
+      "aliases": [],
+      "titles": [],
+      "species": "Arthitean",
+      "sex": "Male",
+      "clan": "Redalious",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Dyvane Redalious — father/clan-head parentage"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Exceptional physical aptitude.",
+        "Redalious combat/endurance inheritance."
+      ],
+      "equipment": [],
+      "feats": [
+        "Benchmark example of effortless innate Redalious talent."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Age.",
+        "Appearance.",
+        "Detailed powers and battles.",
+        "Other parent."
+      ],
+      "related": [
+        "dyvane-redalious",
+        "kaelen-redalious"
+      ],
+      "source_threads": [
+        "New five sessions"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "zeta",
+      "name": "Zeta",
+      "classification": "Imperial / Diplomacy / Royal-associated",
+      "role": "Foreign Affairs Minister; high-intelligence figure",
+      "canon_level": "Developed",
+      "summary": "A high-level foreign-affairs thinker whose lateral intelligence is repeatedly ranked among the empire's best; also Kartus's mother and Dyvane's partner/co-parent.",
+      "aliases": [],
+      "titles": [
+        "Foreign Affairs Minister"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Not fully specified in retrieved email canon",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Dyvane Redalious — partner/co-parent",
+        "Kartus Vaeloria — son"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [],
+      "abilities": [
+        "Profound lateral thinking.",
+        "Diplomatic/foreign-affairs cognition.",
+        "Contributes high-intelligence lineage to Kartus."
+      ],
+      "equipment": [],
+      "feats": [
+        "Placed in the top-ten smartest list in the June ranking chronicle."
+      ],
+      "history": [],
+      "relationships": [],
+      "records": [],
+      "arcs": [],
+      "gaps": [
+        "Surname/clan origin.",
+        "Appearance.",
+        "Full diplomatic feat catalogue.",
+        "Exact royal status, if any."
+      ],
+      "related": [
+        "dyvane-redalious",
+        "kartus-vaeloria"
+      ],
+      "source_threads": [
+        "New five sessions",
+        "Orotion Quests and the Apex Royals"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    },
+    {
+      "slug": "zyra-xanthera",
+      "name": "Zyra Xanthera",
+      "classification": "Imperial / Media / Xanthera Clan",
+      "role": "Leader of the supreme tabloid clan",
+      "canon_level": "Extensive",
+      "summary": "The leader of the Xanthera Clan, the empire’s highest-ranked tabloid clan in the media chronicle. She weaponizes counterlogical intelligence and hypermelzai to turn drama, emotion, romance and combat spectacle into a cultural-power engine.",
+      "aliases": [],
+      "titles": [
+        "The Empress of the Nakosh Spectacle",
+        "Sovereign of the Cultural Pulse — metatitle"
+      ],
+      "species": "Arthitean",
+      "sex": "Female",
+      "clan": "Xanthera",
+      "allegiance": "Arthitean Empire",
+      "family": [
+        "Xelena — daughter"
+      ],
+      "status": "Active / not contradicted by retrieved canon",
+      "appearance": [],
+      "personality": [
+        "Loves theatricality, romance and the discovery of deep synergistic bonds between warriors.",
+        "Understands and deliberately serves the mass audience’s appetite for narrative drama, emotion and visual spectacle."
+      ],
+      "abilities": [
+        "Weaponized counterlogical intelligence.",
+        "Hypermelzai.",
+        "Cultural trendsetting and emotional-narrative analysis.",
+        "Genetic Factor Four hereditary hypergenetic elevation described as passing emotional-perception and trendsetting paraaptitude to her children."
+      ],
+      "equipment": [],
+      "feats": [
+        "Leads the highest-ranked tabloid clan, listed at clan rank 9.",
+        "Her metatitle/title architecture is described as creating transmaximumless inherited paraaptitude in her children."
+      ],
+      "history": [],
+      "relationships": [
+        "Xelena — daughter and primary branch-clan leader",
+        "Kaelar Omnivox — leader of the rival apex broadsheet clan"
+      ],
+      "records": [
+        "Xanthera Clan: highest-ranked tabloid clan; rank 9 in the retrieved media-clan session."
+      ],
+      "arcs": [],
+      "gaps": [
+        "Exact Kafai rank.",
+        "Spouse/other parent.",
+        "Appearance beyond Arthitean baseline.",
+        "Full broadcast and combat record."
+      ],
+      "related": [
+        "xelena-xanthera",
+        "kaelar-omnivox",
+        "qintara-unmatara"
+      ],
+      "source_threads": [
+        "Five sessions — Xanthera Tabloid Empire"
+      ],
+      "model_art": "",
+      "model_note": "",
+      "privacy_note": "",
+      "canon_notes": []
+    }
+  ]
+}
