@@ -31,4 +31,4 @@ jobs:
           curl -sSIL --max-time 20 https://arthratanmythology.com/ | sed -n '1,30p' || true
           echo "=== certificate subject/issuer/dates ==="
           echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates || true
-          # scheduled certificate readiness probe 2026-09-01T10:42+01:00
+          # scheduled certificate readiness probe 2026-09-01T11:46+01:00
