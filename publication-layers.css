@@ -1,0 +1,338 @@
+/* UI-001 — Global source / explanation publication language
+   Source canon must remain visually and semantically distinct from authored interpretation. */
+
+:root {
+  --layer-radius: 16px;
+  --layer-pad-y: 18px;
+  --layer-pad-x: 20px;
+  --layer-source: #e7c875;
+  --layer-source-line: #d7af52;
+  --layer-source-bg: rgba(36, 27, 12, .72);
+  --layer-explanation: #c8aeff;
+  --layer-explanation-line: #9b79df;
+  --layer-explanation-bg: rgba(29, 21, 44, .72);
+  --layer-formalization: #9cd9ff;
+  --layer-formalization-line: #5ba8d7;
+  --layer-formalization-bg: rgba(14, 31, 44, .74);
+  --layer-example: #aee9c7;
+  --layer-example-line: #62b98a;
+  --layer-example-bg: rgba(15, 37, 28, .7);
+  --layer-context: #d6c8e3;
+  --layer-context-line: #81718f;
+  --layer-context-bg: rgba(27, 24, 31, .76);
+  --layer-crossref: #b7cfff;
+  --layer-crossref-line: #6f92d6;
+  --layer-crossref-bg: rgba(17, 28, 49, .74);
+  --layer-supersession: #ffc18f;
+  --layer-supersession-line: #c87543;
+  --layer-supersession-bg: rgba(48, 25, 15, .76);
+  --layer-unknown: #d2c8d7;
+  --layer-unknown-line: #817588;
+  --layer-unknown-bg: rgba(24, 22, 26, .72);
+  --layer-provenance: #b9b0c2;
+  --layer-provenance-line: #635a6d;
+  --layer-provenance-bg: rgba(17, 15, 20, .78);
+}
+
+.content-layer,
+.canon-block {
+  --layer-accent: var(--layer-context);
+  --layer-line: var(--layer-context-line);
+  --layer-bg: var(--layer-context-bg);
+  position: relative;
+  min-width: 0;
+  margin-block: 14px;
+  padding: var(--layer-pad-y) var(--layer-pad-x);
+  border: 1px solid color-mix(in srgb, var(--layer-line) 62%, transparent);
+  border-left: 4px solid var(--layer-line);
+  border-radius: var(--layer-radius);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--layer-bg) 96%, transparent), rgba(8, 7, 11, .72));
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .16);
+  color: #e2d9e5;
+  overflow-wrap: anywhere;
+}
+
+.content-layer > :first-child,
+.canon-block > :first-child { margin-top: 0; }
+.content-layer > :last-child,
+.canon-block > :last-child { margin-bottom: 0; }
+
+.content-layer__label,
+.layer-label,
+.canon-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 10px;
+  padding: 4px 8px;
+  border: 1px solid color-mix(in srgb, var(--layer-line) 58%, transparent);
+  border-radius: 999px;
+  color: var(--layer-accent);
+  background: color-mix(in srgb, var(--layer-bg) 88%, #09080c 12%);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.content-layer__title,
+.canon-block__title {
+  margin: 0 0 8px;
+  color: #f2e9f4;
+  font: 600 1.12rem/1.35 Georgia, "Times New Roman", serif;
+}
+
+.content-layer__body,
+.canon-block__body {
+  max-width: 78ch;
+}
+
+.content-layer a,
+.canon-block a {
+  color: color-mix(in srgb, var(--layer-accent) 78%, white 22%);
+  text-decoration-color: color-mix(in srgb, var(--layer-accent) 58%, transparent);
+  text-underline-offset: .18em;
+}
+
+.content-layer a:hover,
+.canon-block a:hover { text-decoration-thickness: 2px; }
+.content-layer a:focus-visible,
+.canon-block a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--layer-accent) 62%, transparent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* SOURCE CANON — verbatim source, never model-authored prose. */
+.source-canon,
+.layer-source,
+[data-content-layer="source"],
+[data-content-layer="source-canon"] {
+  --layer-accent: var(--layer-source);
+  --layer-line: var(--layer-source-line);
+  --layer-bg: var(--layer-source-bg);
+}
+
+.source-canon,
+.layer-source,
+[data-content-layer="source"],
+[data-content-layer="source-canon"] {
+  box-shadow: inset 0 0 0 1px rgba(231, 200, 117, .08), 0 14px 34px rgba(0, 0, 0, .18);
+}
+
+.source-canon blockquote,
+.layer-source blockquote,
+[data-content-layer="source"] blockquote,
+[data-content-layer="source-canon"] blockquote {
+  margin-inline: 0;
+  padding-inline-start: 16px;
+  border-inline-start: 2px solid color-mix(in srgb, var(--layer-source-line) 72%, transparent);
+}
+
+/* EXPLANATION — reader-oriented interpretation, never quotation. */
+.explanation,
+.layer-explanation,
+[data-content-layer="explanation"] {
+  --layer-accent: var(--layer-explanation);
+  --layer-line: var(--layer-explanation-line);
+  --layer-bg: var(--layer-explanation-bg);
+}
+
+/* FORMALIZATION — equations, logical notation, schemas derived from canon. */
+.formalization,
+.layer-formalization,
+[data-content-layer="formalization"] {
+  --layer-accent: var(--layer-formalization);
+  --layer-line: var(--layer-formalization-line);
+  --layer-bg: var(--layer-formalization-bg);
+}
+.formalization pre,
+.formalization code,
+.layer-formalization pre,
+.layer-formalization code,
+[data-content-layer="formalization"] pre,
+[data-content-layer="formalization"] code {
+  font-family: "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+.formalization pre,
+.layer-formalization pre,
+[data-content-layer="formalization"] pre {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* EXAMPLE — illustrative material, explicitly not additional canon unless sourced. */
+.example-block,
+.layer-example,
+[data-content-layer="example"] {
+  --layer-accent: var(--layer-example);
+  --layer-line: var(--layer-example-line);
+  --layer-bg: var(--layer-example-bg);
+}
+
+/* CONTEXT — supplementary orientation or background. */
+.context-block,
+.layer-context,
+[data-content-layer="context"] {
+  --layer-accent: var(--layer-context);
+  --layer-line: var(--layer-context-line);
+  --layer-bg: var(--layer-context-bg);
+}
+
+/* CROSSREFERENCE — links and relationships to other canon. */
+.crossreference,
+.cross-reference,
+.layer-crossreference,
+[data-content-layer="crossreference"] {
+  --layer-accent: var(--layer-crossref);
+  --layer-line: var(--layer-crossref-line);
+  --layer-bg: var(--layer-crossref-bg);
+}
+.crossreference ul,
+.cross-reference ul,
+.layer-crossreference ul,
+[data-content-layer="crossreference"] ul {
+  margin-block: 8px 0;
+  padding-inline-start: 1.2rem;
+}
+
+/* SUPERSESSION / CORRECTION / CHRONOLOGY — source remains visible; later state is explicit. */
+.supersession,
+.correction,
+.chronology-note,
+.layer-supersession,
+[data-content-layer="supersession"],
+[data-content-layer="correction"],
+[data-content-layer="chronology"] {
+  --layer-accent: var(--layer-supersession);
+  --layer-line: var(--layer-supersession-line);
+  --layer-bg: var(--layer-supersession-bg);
+}
+
+/* UNKNOWN / GAP — never silently fill missing canon. */
+.unknown,
+.information-gap,
+.layer-unknown,
+[data-content-layer="unknown"],
+[data-content-layer="gap"] {
+  --layer-accent: var(--layer-unknown);
+  --layer-line: var(--layer-unknown-line);
+  --layer-bg: var(--layer-unknown-bg);
+  border-style: dashed;
+}
+
+/* PROVENANCE — source identity, locators, archive IDs and evidence trail. */
+.provenance,
+.source-provenance,
+.layer-provenance,
+[data-content-layer="provenance"] {
+  --layer-accent: var(--layer-provenance);
+  --layer-line: var(--layer-provenance-line);
+  --layer-bg: var(--layer-provenance-bg);
+  font-size: .9rem;
+  color: #c9c0cd;
+}
+.provenance code,
+.source-provenance code,
+.layer-provenance code,
+[data-content-layer="provenance"] code {
+  font-size: .86em;
+  color: #e5dbe9;
+}
+
+/* Compact inline badges use the same semantic vocabulary. */
+.layer-badge {
+  --layer-accent: var(--layer-context);
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 4px 8px;
+  border: 1px solid color-mix(in srgb, var(--layer-accent) 48%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--layer-accent) 84%, white 16%);
+  background: rgba(10, 8, 13, .8);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+.layer-badge--source { --layer-accent: var(--layer-source); }
+.layer-badge--explanation { --layer-accent: var(--layer-explanation); }
+.layer-badge--formalization { --layer-accent: var(--layer-formalization); }
+.layer-badge--example { --layer-accent: var(--layer-example); }
+.layer-badge--context { --layer-accent: var(--layer-context); }
+.layer-badge--crossreference { --layer-accent: var(--layer-crossref); }
+.layer-badge--supersession { --layer-accent: var(--layer-supersession); }
+.layer-badge--unknown { --layer-accent: var(--layer-unknown); }
+.layer-badge--provenance { --layer-accent: var(--layer-provenance); }
+
+/* Semantic legend component for reader pages and onboarding. */
+.content-layer-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 14px 20px;
+  padding: 12px;
+  border: 1px solid rgba(85, 72, 96, .58);
+  border-radius: 14px;
+  background: rgba(10, 8, 13, .72);
+}
+.content-layer-legend__title {
+  flex: 1 0 100%;
+  margin: 0 0 2px;
+  color: #d8cedd;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Bridge existing source-reader markup into the publication language without changing source text. */
+.tx-source {
+  border-color: color-mix(in srgb, var(--layer-source-line) 58%, #30263a 42%);
+  box-shadow: inset 4px 0 0 var(--layer-source-line), 0 12px 32px rgba(0, 0, 0, .14);
+}
+.tx-source::selection { background: rgba(215, 175, 82, .34); }
+.archive-content .source-note {
+  color: #bdb2c5;
+  border-inline-start: 2px solid var(--layer-provenance-line);
+  padding-inline-start: 10px;
+}
+.formula {
+  border-color: color-mix(in srgb, var(--layer-formalization-line) 56%, #342744 44%);
+  box-shadow: inset 3px 0 0 var(--layer-formalization-line);
+}
+
+@supports not (color: color-mix(in srgb, white, black)) {
+  .content-layer,
+  .canon-block { border-color: var(--layer-line); background: var(--layer-bg); }
+  .content-layer__label,
+  .layer-label,
+  .canon-label { border-color: var(--layer-line); background: var(--layer-bg); }
+  .content-layer a,
+  .canon-block a { color: var(--layer-accent); }
+  .layer-badge { border-color: var(--layer-accent); color: var(--layer-accent); }
+}
+
+@media (max-width: 700px) {
+  .content-layer,
+  .canon-block {
+    --layer-pad-y: 15px;
+    --layer-pad-x: 15px;
+    margin-block: 12px;
+    border-radius: 13px;
+  }
+  .content-layer__body,
+  .canon-block__body { max-width: none; }
+  .content-layer-legend { padding: 10px; }
+}
+
+@media (prefers-contrast: more) {
+  .content-layer,
+  .canon-block { border-width: 2px; border-left-width: 5px; }
+  .content-layer__label,
+  .layer-label,
+  .canon-label,
+  .layer-badge { border-width: 2px; }
+}
