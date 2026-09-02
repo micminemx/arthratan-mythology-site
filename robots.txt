@@ -1,2 +1,19 @@
+# Assistant access is intentionally allowed while general search indexing remains gated.
+# OAI-SearchBot enables ChatGPT Search discovery; ChatGPT-User covers user-initiated visits.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Explicitly allow the Google-Extended control token implicated by assistant/browser tooling.
+User-agent: Google-Extended
+Allow: /
+
+# Training access remains opted out unless explicitly enabled later.
+User-agent: GPTBot
+Disallow: /
+
+# Keep the broader pre-release crawl/indexing gate in place until SEO-002 / final QA.
 User-agent: *
 Disallow: /
