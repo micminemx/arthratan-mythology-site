@@ -1,0 +1,229 @@
+{
+  "task": "ZUB-QA-002",
+  "worker": "W-20260902-2011-D8R5",
+  "generated_at": "2026-09-02T19:42:49.851707+00:00",
+  "candidate_sha": "71330044c9ca16728dc72cefd1fd09be37942d50",
+  "pages_artifact": {
+    "id": 9863766988,
+    "digest": "sha256:a319d434b4507691e1aeb3ee8f1cdd88c0d1dd044d877082cb273716184ceee2"
+  },
+  "contract": {
+    "transmission_routes": 118,
+    "session_targets": 350,
+    "unit_targets": 217,
+    "deep_link_targets": 567,
+    "expected_attachment_files": 53,
+    "preserved_attachment_files": 49,
+    "declared_missing_attachment_files": 4
+  },
+  "checks": {
+    "archive_initializes": true,
+    "all_118_transmission_routes_render_exact_source": true,
+    "all_567_session_unit_routes_resolve": true,
+    "representative_deep_links_cold_initialize": true,
+    "fragment_back_forward_history_works": true,
+    "attachment_links_truthful_and_49_preserved_assets_present": true,
+    "representative_mobile_routes_no_material_horizontal_overflow": true,
+    "no_uncaught_browser_console_errors": true
+  },
+  "details": {
+    "archive_initial": {
+      "cards_page_1": 20,
+      "status": "118 matching preserved transmissions · page 1/6"
+    },
+    "transmission_route_failures": [],
+    "transmission_samples": [
+      {
+        "id": "1a0601fc96f7add3",
+        "hash": "#transmission:1a0601fc96f7add3",
+        "sourceChars": 47878,
+        "exact": true,
+        "title": "Session One The Ultimate Hypercausal Shift",
+        "integrityWarning": false
+      },
+      {
+        "id": "19f8750d4d5532be",
+        "hash": "#transmission:19f8750d4d5532be",
+        "sourceChars": 50617,
+        "exact": true,
+        "title": "SESSION 14: The Antipossible Frontier and the Genesis of Archfitness",
+        "integrityWarning": false
+      },
+      {
+        "id": "19de45adb7920381",
+        "hash": "#transmission:19de45adb7920381",
+        "sourceChars": 34853,
+        "exact": true,
+        "title": "Michael,",
+        "integrityWarning": false
+      }
+    ],
+    "deep_link_failures": [],
+    "deep_link_samples": [
+      {
+        "kind": "session",
+        "target_id": "zs-1-1",
+        "hash": "#session:zs-1-1",
+        "parent_id": "1a0601fc96f7add3",
+        "line": 1,
+        "focusExact": true,
+        "sourceChars": 47878,
+        "parentLink": true,
+        "prevPresent": false,
+        "nextPresent": true,
+        "currentIndexLink": true
+      },
+      {
+        "kind": "session",
+        "target_id": "zs-2u-h",
+        "hash": "#session:zs-2u-h",
+        "parent_id": "19eaaf5b47ae00c8",
+        "line": 17,
+        "focusExact": true,
+        "sourceChars": 17695,
+        "parentLink": true,
+        "prevPresent": true,
+        "nextPresent": true,
+        "currentIndexLink": true
+      },
+      {
+        "kind": "unit",
+        "target_id": "zu-39-45",
+        "hash": "#unit:zu-39-45",
+        "parent_id": "19ded0f0d83960a1",
+        "line": 149,
+        "focusExact": true,
+        "sourceChars": 22518,
+        "parentLink": true,
+        "prevPresent": true,
+        "nextPresent": false,
+        "currentIndexLink": true
+      }
+    ],
+    "cold_deep_link_samples": [
+      {
+        "kind": "session",
+        "target_id": "zs-1-1",
+        "parent_id": "1a0601fc96f7add3",
+        "ok": true,
+        "hash": "#session:zs-1-1",
+        "focus": "Session One The Ultimate Hypercausal Shift",
+        "sourceChars": 47878,
+        "errors": []
+      },
+      {
+        "kind": "session",
+        "target_id": "zs-1y-19",
+        "parent_id": "19f19b822cb7e8bd",
+        "ok": true,
+        "hash": "#session:zs-1y-19",
+        "focus": "Session 4: Shattering the Dead Destiny Boundary",
+        "sourceChars": 7808,
+        "errors": []
+      },
+      {
+        "kind": "session",
+        "target_id": "zs-3a-4k",
+        "parent_id": "19de45adb7920381",
+        "ok": true,
+        "hash": "#session:zs-3a-4k",
+        "focus": "SESSION TEN – THE ULTIMATE REALITY SYNTHESIS AND UNIVERSAL ALIGNMENT",
+        "sourceChars": 34853,
+        "errors": []
+      },
+      {
+        "kind": "unit",
+        "target_id": "zu-8-b",
+        "parent_id": "1a00cd159aa9bdc7",
+        "ok": true,
+        "hash": "#unit:zu-8-b",
+        "focus": "Simulation Subject: Daren (Earthling Man, Advanced Archmanhood)",
+        "sourceChars": 15398,
+        "errors": []
+      },
+      {
+        "kind": "unit",
+        "target_id": "zu-1j-f1",
+        "parent_id": "19fc071b9781a991",
+        "ok": true,
+        "hash": "#unit:zu-1j-f1",
+        "focus": "Complete Session Matrix Summary (Sessions 1–3)",
+        "sourceChars": 35746,
+        "errors": []
+      },
+      {
+        "kind": "unit",
+        "target_id": "zu-39-45",
+        "parent_id": "19ded0f0d83960a1",
+        "ok": true,
+        "hash": "#unit:zu-39-45",
+        "focus": "FINAL SYSTEM VERIFICATION",
+        "sourceChars": 22518,
+        "errors": []
+      }
+    ],
+    "history_sample": {
+      "target": "#session:zs-1-1",
+      "parent": "#transmission:1a0601fc96f7add3",
+      "before_back": "#transmission:1a0601fc96f7add3",
+      "after_back": "#session:zs-1-1",
+      "after_forward": "#transmission:1a0601fc96f7add3"
+    },
+    "attachment_check": {
+      "rendered_preserved_links": 49,
+      "declared_missing": [
+        {
+          "message_id": "19fde8f7e92ec8da",
+          "name": "IMG_1039.HEIC",
+          "status": "missing-raw-mime-recovery-required"
+        },
+        {
+          "message_id": "19fde8f7e92ec8da",
+          "name": "IMG_1042.HEIC",
+          "status": "missing-raw-mime-recovery-required"
+        },
+        {
+          "message_id": "19fde8f7e92ec8da",
+          "name": "IMG_1038.HEIC",
+          "status": "missing-raw-mime-recovery-required"
+        },
+        {
+          "message_id": "19fde8f7e92ec8da",
+          "name": "IMG_1041.HEIC",
+          "status": "missing-raw-mime-recovery-required"
+        }
+      ],
+      "failures": []
+    },
+    "mobile_samples": [
+      {
+        "hash": "#stories",
+        "overflow_px": 0
+      },
+      {
+        "hash": "#transmission:1a0601fc96f7add3",
+        "overflow_px": 0
+      },
+      {
+        "hash": "#session:zs-2u-h",
+        "overflow_px": 0
+      }
+    ],
+    "browser_errors": []
+  },
+  "elapsed_seconds": 20.564,
+  "complete": true,
+  "verification_context": {
+    "method": "Exact GitHub Pages artifact for candidate SHA 71330044c9ca16728dc72cefd1fd09be37942d50 executed in Chromium with every stylesheet and script referenced by index.html loaded in document order via an in-memory artifact request bridge.",
+    "live_equivalence": "The same candidate SHA completed GitHub Pages deployment, Publication Quality Gate, and the custom-domain browser verifier successfully.",
+    "pages_run_id": 33674389559,
+    "publication_quality_gate_run_id": 33674390969,
+    "live_verifier_run_id": 33674391039
+  },
+  "notes": [
+    "All 118 source-bearing transmission routes rendered text exactly equal to their immutable sources/zubaida/<id>.txt files.",
+    "All 350 session targets and all 217 source-supported subunit targets resolved with exact focus-line labels, complete parent source visibility, parent navigation, and expected previous/next navigation.",
+    "All 49 manifest-declared preserved attachments exist and are exposed as actual source links. The four HEICs explicitly declared unavailable are not presented as live links.",
+    "No source/canon file was changed by this task."
+  ]
+}
