@@ -1,8 +1,9 @@
 {
-  "version": "0.2",
+  "version": "1.0",
   "task_id": "ZUB-REL-001",
   "worker": "W-20260902-1918-L8Q3",
-  "status": "partial",
+  "status": "finished",
+  "completed_at": "2026-09-02T20:27:00+01:00",
   "policy": {
     "source_canon": "sources/zubaida/*.txt",
     "edge_rule": "Every edge requires direct source continuity/correction/application evidence; thematic similarity alone is insufficient.",
@@ -42,6 +43,7 @@
     "duplicate_edge_ids": 0,
     "unsupported_theme_only_edges": 0,
     "direct_or_crossvalidated_explicit_evidence_edges": 26,
-    "coverage_note": "Direct-source seed positions 21-40 plus every explicit story-sequence edge currently published by ZUB-THREAD-001. Generic same-Gmail-thread adjacency remains intentionally excluded."
+    "done_standard": "Meaningful evidence-backed cross-transmission relationships are available for related-transmissions navigation; generic same-thread adjacency remains intentionally excluded to avoid fabricated continuity.",
+    "coverage_note": "Direct-source seed positions 21-40 plus every explicit story-sequence edge currently published by ZUB-THREAD-001. Additional relationships may be appended later only when direct evidence exists."
   }
 }
