@@ -4,85 +4,23 @@
   "expected_attachment_files": 53,
   "repository_present_files_at_initial_audit": 20,
   "missing_files_at_initial_audit": 33,
-  "repository_present_files": 25,
-  "remaining_attachment_files": 28,
+  "repository_present_files": 29,
+  "remaining_attachment_files": 24,
   "source_messages_with_attachments": 12,
-  "excluded_attachment_message_ids": [
-    "19f962eb9b2a38f9"
-  ],
+  "excluded_attachment_message_ids": ["19f962eb9b2a38f9"],
   "excluded_reason": "Attachment-bearing reply shell/non-source transmission; not one of the 118 source-bearing transmissions.",
   "messages": [
-    {
-      "message_id": "1a0601fc96f7add3",
-      "count": 5,
-      "repository_status": "preserved",
-      "files": ["da23.PNG", "l2xwr7l.jpg", "j5.PNG", "j4.PNG", "j3.PNG"]
-    },
-    {
-      "message_id": "19fde8f7e92ec8da",
-      "count": 4,
-      "repository_status": "missing-raw-mime-recovery-required",
-      "files": ["IMG_1039.HEIC", "IMG_1042.HEIC", "IMG_1038.HEIC", "IMG_1041.HEIC"]
-    },
-    {
-      "message_id": "19fdb1794050bc43",
-      "count": 2,
-      "repository_status": "missing",
-      "files": ["IMG_0998.jpg", "IMG_1001.jpg"]
-    },
-    {
-      "message_id": "19fa076eb25a917b",
-      "count": 1,
-      "repository_status": "missing",
-      "files": ["5ce96d29-7675-47a1-a429-748caaa425ea.png"]
-    },
-    {
-      "message_id": "19f9518411db997b",
-      "count": 1,
-      "repository_status": "missing",
-      "files": ["Vaelath.jpeg"]
-    },
-    {
-      "message_id": "19f9406c97ff3670",
-      "count": 6,
-      "repository_status": "missing",
-      "files": ["Sylvanna.jpeg", "Qintara.jpeg", "Asmouth.jpeg", "Qai'lyth.jpeg", "Kartus.jpeg", "Dyvane.jpeg"]
-    },
-    {
-      "message_id": "19f88f41fb16946b",
-      "count": 2,
-      "repository_status": "missing",
-      "files": ["1.png", "2.png"]
-    },
-    {
-      "message_id": "19f7746193ee07dc",
-      "count": 1,
-      "repository_status": "missing",
-      "files": ["200 iq.PNG"]
-    },
-    {
-      "message_id": "19f1c2356873a90c",
-      "count": 1,
-      "repository_status": "missing",
-      "files": ["ffffffffff.PNG"]
-    },
-    {
-      "message_id": "19defc3df577a5b9",
-      "count": 10,
-      "repository_status": "preserved",
-      "files": ["1o.PNG", "2o.PNG", "3o.PNG", "4o.PNG", "5o.PNG", "6o.PNG", "7o.PNG", "8o.PNG", "9o.PNG", "10o.PNG"]
-    },
-    {
-      "message_id": "19ded0f0d83960a1",
-      "count": 10,
-      "repository_status": "missing",
-      "files": ["1.PNG", "2.PNG", "3.PNG", "4.PNG", "5.PNG", "6.PNG", "7.PNG", "8.PNG", "9.PNG", "10.PNG"]
-    },
-    {
-      "message_id": "19de45adb7920381",
-      "count": 10,
-      "repository_status": "preserved",
-      "files": ["Session one.PNG", "session two.PNG", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png", "10.png"]
-    }
+    {"message_id":"1a0601fc96f7add3","count":5,"repository_status":"preserved","files":["da23.PNG","l2xwr7l.jpg","j5.PNG","j4.PNG","j3.PNG"]},
+    {"message_id":"19fde8f7e92ec8da","count":4,"repository_status":"missing-raw-mime-recovery-required","files":["IMG_1039.HEIC","IMG_1042.HEIC","IMG_1038.HEIC","IMG_1041.HEIC"]},
+    {"message_id":"19fdb1794050bc43","count":2,"repository_status":"preserved","files":["IMG_0998.jpg","IMG_1001.jpg"]},
+    {"message_id":"19fa076eb25a917b","count":1,"repository_status":"preserved","files":["5ce96d29-7675-47a1-a429-748caaa425ea.png"]},
+    {"message_id":"19f9518411db997b","count":1,"repository_status":"preserved","files":["Vaelath.jpeg"]},
+    {"message_id":"19f9406c97ff3670","count":6,"repository_status":"missing","files":["Sylvanna.jpeg","Qintara.jpeg","Asmouth.jpeg","Qai'lyth.jpeg","Kartus.jpeg","Dyvane.jpeg"]},
+    {"message_id":"19f88f41fb16946b","count":2,"repository_status":"missing","files":["1.png","2.png"]},
+    {"message_id":"19f7746193ee07dc","count":1,"repository_status":"missing","files":["200 iq.PNG"]},
+    {"message_id":"19f1c2356873a90c","count":1,"repository_status":"missing","files":["ffffffffff.PNG"]},
+    {"message_id":"19defc3df577a5b9","count":10,"repository_status":"preserved","files":["1o.PNG","2o.PNG","3o.PNG","4o.PNG","5o.PNG","6o.PNG","7o.PNG","8o.PNG","9o.PNG","10o.PNG"]},
+    {"message_id":"19ded0f0d83960a1","count":10,"repository_status":"missing","files":["1.PNG","2.PNG","3.PNG","4.PNG","5.PNG","6.PNG","7.PNG","8.PNG","9.PNG","10.PNG"]},
+    {"message_id":"19de45adb7920381","count":10,"repository_status":"preserved","files":["Session one.PNG","session two.PNG","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png"]}
   ]
 }
