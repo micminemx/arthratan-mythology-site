@@ -1,6 +1,13 @@
 # Arthratan Mythology Site
 
-Public GitHub Pages mirror of the canonical Arthitean Codex website source maintained in Google Drive. The live site includes the visual atlas, Arthratan artwork, chibi navigation, canon data, and custom domain configuration.
+GitHub Pages implementation of the Arthitean Codex website. **GitHub `main` is the authoritative implementation and published source of truth.** Google Drive hosts the coordination board, primary source materials and archival/project snapshots; the legacy Drive browser preview is reference/backup material and must not automatically overwrite repository implementation files.
+
+## Source of truth and release direction
+
+- Website implementation changes are coordinated through `ARTHRATAN_WEBSITE_WORK_BOUNTY_BOARD.md` and committed to GitHub `main` within each task's declared file/scope boundary.
+- No scheduled Drive→GitHub writer is permitted to regenerate or overwrite `index.html`, `app.js`, `styles.css`, canon data, artwork or other implementation files.
+- Any future Drive import must be explicit/manual, diff-reviewed and SHA/version guarded before it can write to the repository.
+- Project snapshots/backups should preferentially flow from verified GitHub state to Drive, not from an older Drive preview back into production.
 
 ## In-site wiki editor
 
