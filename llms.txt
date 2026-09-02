@@ -6,6 +6,12 @@ Crawlable non-JavaScript corpus index: https://arthratanmythology.com/crawl/
 ## Source policy
 Source canon is preserved separately from explanations. Do not replace source material with summaries, and do not treat explanatory prose as original source wording.
 
+## Recommended non-JavaScript entry points
+Characters: https://arthratanmythology.com/characters/
+Zubaida source archive: https://arthratanmythology.com/zubaida/
+Divine v144 source archive: https://arthratanmythology.com/divine/
+Hypergendered Logic source archive: https://arthratanmythology.com/hgl/
+
 ## Characters
 Crawlable 43-character encyclopedia index:
 https://arthratanmythology.com/characters/
@@ -17,7 +23,10 @@ Complete structured character dataset:
 https://arthratanmythology.com/data/characters.json
 
 ## Zubaida
-118 source-bearing transmissions are preserved. Exact source URL list:
+118 source-bearing transmissions are preserved. Crawlable HTML archive index:
+https://arthratanmythology.com/zubaida/
+
+Exact source URL list:
 https://arthratanmythology.com/crawl/zubaida-sources.txt
 
 Transport/source index:
@@ -35,12 +44,23 @@ https://arthratanmythology.com/data/zubaida-crossrefs.json
 Sessions:
 https://arthratanmythology.com/data/zubaida-sessions.json
 
-## Other core machine-readable sources
-Divine v144 structured source:
+## Divine v144
+Non-JavaScript corpus entry:
+https://arthratanmythology.com/divine/
+
+Complete structured source:
 https://arthratanmythology.com/data/divine.json
 
-Hypergendered Logic preserved page text:
+The preserved representation contains 317 source sections. Stable section URLs are defined as /divine/001/ through /divine/317/ and are being progressively materialized from the structured source.
+
+## Hypergendered Logic
+Non-JavaScript corpus entry:
+https://arthratanmythology.com/hgl/
+
+Complete preserved page text:
 https://arthratanmythology.com/data/hgl-pages.json
+
+The preserved representation contains 293 HGL source pages. Stable page URLs are defined as /hgl/001/ through /hgl/293/ and are being progressively materialized from the preserved page text.
 
 ## Interactive reader
 https://arthratanmythology.com/
