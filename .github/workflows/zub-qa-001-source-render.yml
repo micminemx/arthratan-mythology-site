@@ -1,0 +1,68 @@
+name: ZUB-QA-001 Source Render Completeness
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/zub-qa-001-source-render.mjs'
+      - '.github/workflows/zub-qa-001-source-render.yml'
+      - 'archive.js'
+      - 'archive.css'
+      - 'data/zubaida-index.json'
+      - 'data/zubaida-nonsource.json'
+      - 'sources/zubaida/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zub-qa-001-source-render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-zubaida-source-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Chromium verifier
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Compare all 118 live rendered source panels to preserved source
+        env:
+          ZUB_QA_BASE_URL: https://arthratanmythology.com/
+          ZUB_QA_REPORT: zub-qa-001-source-render-report.json
+          EXPECTED_SHA: ${{ github.sha }}
+        run: node scripts/zub-qa-001-source-render.mjs
+
+      - name: Publish validation summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f zub-qa-001-source-render-report.json ]; then
+            echo '## ZUB-QA-001 — verbatim source-to-render completeness' >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo "Candidate: \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat zub-qa-001-source-render-report.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zub-qa-001-source-render-${{ github.sha }}
+          path: zub-qa-001-source-render-report.json
+          if-no-files-found: warn
