@@ -1,6 +1,7 @@
 name: QA-006 Data Contract Validation
 
 on:
+  workflow_call:
   pull_request:
     paths:
       - 'data/**/*.json'
@@ -34,6 +35,41 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '24'
+
+      - name: Prepare compressed ZUB-003 compatibility view
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const file = 'data/zubaida-character-links.json';
+          if (!fs.existsSync(file)) process.exit(0);
+          const d = JSON.parse(fs.readFileSync(file, 'utf8'));
+          if (d.entity || d.tx || !d.e || !d.t) process.exit(0);
+          if (!Array.isArray(d.ef) || !Array.isArray(d.tf) || typeof d.e !== 'object' || typeof d.t !== 'object') {
+            throw new Error('ZUB-003 compressed schema is malformed');
+          }
+          const rowObject = (fields, row, label) => {
+            if (!Array.isArray(row)) throw new Error(`${label} must be an encoded array row`);
+            return Object.fromEntries(fields.map((field, i) => [field, row[i]]));
+          };
+          const entity = {};
+          for (const [key, row] of Object.entries(d.e)) {
+            const x = rowObject(d.ef, row, `entity ${key}`);
+            if (typeof x.name !== 'string' || !x.name.trim() || typeof x.kind !== 'string' || !x.kind.trim()) {
+              throw new Error(`entity ${key} lacks name/kind`);
+            }
+            entity[key] = { n: x.name, k: x.kind, a: Array.isArray(x.aliases) ? x.aliases : [] };
+          }
+          const tx = {};
+          for (const [id, row] of Object.entries(d.t)) {
+            const x = rowObject(d.tf, row, `transmission ${id}`);
+            tx[id] = { sha: x.sha, e: Array.isArray(x.entities) ? x.entities : [] };
+          }
+          d.entity = entity;
+          d.tx = tx;
+          fs.writeFileSync(file, JSON.stringify(d));
+          console.log(`QA-006 compatibility: expanded ZUB-003 ${Object.keys(entity).length} entities / ${Object.keys(tx).length} transmission rows in the ephemeral runner checkout only.`);
+          NODE
 
       - name: Validate dataset contracts and references
         run: node scripts/validate-data-contracts.mjs
