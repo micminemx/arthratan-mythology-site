@@ -4,8 +4,8 @@
   "expected_attachment_files": 53,
   "repository_present_files_at_initial_audit": 20,
   "missing_files_at_initial_audit": 33,
-  "repository_present_files": 39,
-  "remaining_attachment_files": 14,
+  "repository_present_files": 49,
+  "remaining_attachment_files": 4,
   "source_messages_with_attachments": 12,
   "excluded_attachment_message_ids": ["19f962eb9b2a38f9"],
   "excluded_reason": "Attachment-bearing reply shell/non-source transmission; not one of the 118 source-bearing transmissions.",
@@ -20,7 +20,7 @@
     {"message_id":"19f7746193ee07dc","count":1,"repository_status":"preserved","files":["200 iq.PNG"]},
     {"message_id":"19f1c2356873a90c","count":1,"repository_status":"preserved","files":["ffffffffff.PNG"]},
     {"message_id":"19defc3df577a5b9","count":10,"repository_status":"preserved","files":["1o.PNG","2o.PNG","3o.PNG","4o.PNG","5o.PNG","6o.PNG","7o.PNG","8o.PNG","9o.PNG","10o.PNG"]},
-    {"message_id":"19ded0f0d83960a1","count":10,"repository_status":"missing","files":["1.PNG","2.PNG","3.PNG","4.PNG","5.PNG","6.PNG","7.PNG","8.PNG","9.PNG","10.PNG"]},
+    {"message_id":"19ded0f0d83960a1","count":10,"repository_status":"preserved","files":["1.PNG","2.PNG","3.PNG","4.PNG","5.PNG","6.PNG","7.PNG","8.PNG","9.PNG","10.PNG"]},
     {"message_id":"19de45adb7920381","count":10,"repository_status":"preserved","files":["Session one.PNG","session two.PNG","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png"]}
   ]
 }
