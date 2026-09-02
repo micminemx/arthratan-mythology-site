@@ -1,0 +1,81 @@
+name: Verify live Zubaida archive
+on:
+  push:
+    paths:
+      - '.github/workflows/verify-live-archive.yml'
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install headless browser
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install chromium
+      - name: Verify live archive
+        shell: bash
+        run: |
+          cat > /tmp/verify.mjs <<'NODE'
+          import fs from 'node:fs';
+          import { chromium } from 'playwright';
+          const base='https://arthratanmythology.com/';
+          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+          let deployed=false,lastIndex='';
+          for(let i=0;i<24;i++){
+            try{
+              const r=await fetch(base,{cache:'no-store'});lastIndex=await r.text();
+              if(r.ok&&lastIndex.includes('archive.js?b=20260902b')){deployed=true;break}
+            }catch{}
+            await sleep(5000);
+          }
+          const report={generated:'2026-09-02',base,deployed_cache_version:deployed,checks:{},details:{}};
+          if(!deployed){report.error='Timed out before GitHub Pages served archive.js?b=20260902b';fs.writeFileSync('data/zubaida-live-verification.json',JSON.stringify(report,null,2)+'\n');process.exitCode=1;}
+          else{
+            const browser=await chromium.launch({headless:true});
+            const page=await browser.newPage({viewport:{width:1440,height:1100}});
+            const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
+            await page.goto(base+'#stories',{waitUntil:'networkidle'});
+            await page.waitForSelector('.transmission-card h3',{timeout:30000});
+            const stats=await page.locator('.transmission-stat b').allTextContents();
+            const status=await page.locator('#txStatus').textContent();
+            const firstTitle=await page.locator('.transmission-card h3').first().textContent();
+            report.details.story_stats=stats;report.details.story_status=status;report.details.first_title=firstTitle;
+            report.checks.story_stats_128_118_10=JSON.stringify(stats.slice(0,3))===JSON.stringify(['128','118','10']);
+            report.checks.story_status_reports_118=String(status).includes('118 matching preserved transmissions');
+            report.checks.first_title_is_source_body=!/^From:/i.test(String(firstTitle||''));
+            await page.goto(base+'#transmission:1a0601fc96f7add3',{waitUntil:'networkidle'});
+            await page.waitForSelector('.tx-source',{timeout:30000});
+            const attachmentNames=await page.locator('.tx-attachments .tx-source-link').allTextContents();
+            report.details.five_attachment_names=attachmentNames;
+            report.checks.five_attachment_reader=attachmentNames.length===5&&attachmentNames.includes('da23.PNG')&&attachmentNames.includes('j3.PNG');
+            await page.goto(base+'#transmission:19f962eb9b2a38f9',{waitUntil:'networkidle'});
+            await page.waitForSelector('.tx-reader h1',{timeout:30000});
+            const nonTitle=await page.locator('.tx-reader h1').textContent();
+            const nonText=await page.locator('.tx-reader').textContent();
+            report.details.nonsource_title=nonTitle;
+            report.checks.nonsource_provenance=/quoted-only reply shell/i.test(String(nonTitle||''))&&/not counted as a source transmission/i.test(String(nonText||''));
+            const hgl=await fetch(base+'data/hgl-pages.json',{cache:'no-store'});const divine=await fetch(base+'data/divine.json',{cache:'no-store'});
+            report.checks.hgl_dataset_live=hgl.ok;report.checks.divine_dataset_live=divine.ok;
+            report.details.browser_errors=errors;
+            report.checks.no_browser_errors=errors.length===0;
+            report.complete=Object.values(report.checks).every(Boolean);
+            await browser.close();
+            fs.writeFileSync('data/zubaida-live-verification.json',JSON.stringify(report,null,2)+'\n');
+            if(!report.complete)process.exitCode=1;
+          }
+          NODE
+          node /tmp/verify.mjs || true
+      - name: Commit live verification report
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/zubaida-live-verification.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'Record live Zubaida archive verification'
+          git push
