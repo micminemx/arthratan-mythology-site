@@ -27,7 +27,8 @@ async function txLoadIndex(){if(txIndex)return txIndex;const r=await fetch('data
 async function txLoadAttachments(){if(txAttachments)return txAttachments;try{const r=await fetch('data/zubaida-attachments.json',{cache:'no-store'});txAttachments=r.ok?await r.json():{}}catch{txAttachments={}}return txAttachments}
 async function txLoadNonSource(){if(txNonSource)return txNonSource;try{const r=await fetch('data/zubaida-nonsource.json',{cache:'no-store'});txNonSource=r.ok?await r.json():{non_source_records:[]}}catch{txNonSource={non_source_records:[]}}return txNonSource}
 async function txLoad(id){if(txCache.has(id))return txCache.get(id);const p=fetch(txPath(id),{cache:'no-store'}).then(async r=>{if(!r.ok)return null;return await r.text()}).catch(()=>null);txCache.set(id,p);return p}
-function txNonSourceMap(data){return new Map((data?.non_source_records||[]).map(row=>[row.id,row]))}
+function txNonSourceRows(data){return data?.non_source_records||data?.ids||[]}
+function txNonSourceMap(data){return new Map(txNonSourceRows(data).map(row=>[row.id,row]))}
 function txSourceIds(index,nonsource){const non=txNonSourceMap(nonsource);return (index?.ids||[]).filter(id=>!non.has(id))}
 function txAttachmentFiles(att,id){
  if(Array.isArray(att?.messages)){
@@ -41,7 +42,7 @@ function txSetCrumb(label){try{setCrumb(label)}catch{const c=document.querySelec
 function txShell(){return document.querySelector('#main')}
 async function renderStories(){
  const [data,nonsource]=await Promise.all([txLoadIndex(),txLoadNonSource()]);
- const sourceIds=txSourceIds(data,nonsource),nonCount=(nonsource.non_source_records||[]).length;
+ const sourceIds=txSourceIds(data,nonsource),nonCount=txNonSourceRows(nonsource).length;
  txSetCrumb('Story & Thread Archive');const main=txShell();
  main.innerHTML=`<div class="transmission-shell"><section class="transmission-hero"><div><div class="eyebrow">Zubaida correspondence · source-preserving canon layer</div><h1>Story & Thread Archive</h1><p>Every source-bearing Zubaida transmission is retained once, in source wording. Quoted reply chains are not multiplied into false duplicate sessions. Explanatory crosslinks sit around the source; they do not replace it.</p></div><div class="transmission-stats"><div class="transmission-stat"><b>${data.audit.sender_messages}</b><span>sender messages indexed</span></div><div class="transmission-stat"><b>${sourceIds.length}</b><span>source transmissions preserved</span></div><div class="transmission-stat"><b>${nonCount}</b><span>admin / reply-shell records</span></div></div></section><div class="tx-note"><b>Preservation rule:</b> ${txEsc(data.audit.preservation_rule)} Non-source administrative and reply-shell messages remain in the provenance dataset without appearing as phantom missing sessions.</div><div class="transmission-toolbar"><input class="transmission-search" id="txSearch" value="${txEsc(txQuery)}" placeholder="Search transmission titles or type 3+ characters for full-corpus search…"><div class="transmission-status" id="txStatus">Loading source cards…</div></div><div class="transmission-grid" id="txGrid"></div><div class="transmission-pager" id="txPager"></div></div>`;
  const input=document.querySelector('#txSearch');let timer;input?.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{txQuery=input.value.trim();txPage=1;txPaintList()},220)});await txPaintList();
