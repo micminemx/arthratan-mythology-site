@@ -6,7 +6,11 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-# Explicitly allow the Google-Extended control token implicated by assistant/browser tooling.
+# Google-Extended is a policy token; Google fetches with its normal crawler identities.
+# Allow Googlebot to fetch the site while the HTML noindex gate still prevents Search indexing.
+User-agent: Googlebot
+Allow: /
+
 User-agent: Google-Extended
 Allow: /
 
