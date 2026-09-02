@@ -1,159 +1,47 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "task_id": "ZUB-REL-001",
   "worker": "W-20260902-1918-L8Q3",
   "status": "partial",
   "policy": {
     "source_canon": "sources/zubaida/*.txt",
     "edge_rule": "Every edge requires direct source continuity/correction/application evidence; thematic similarity alone is insufficient.",
-    "direction": "from_transmission is the transmission making the relationship claim or continuing/applying the target transmission."
+    "direction": "from_transmission is the transmission making the relationship claim or continuing/applying the target transmission.",
+    "crossvalidation": "ZUB-THREAD-001 explicit_story_arcs may supply an edge only where that finished graph itself records explicit source-internal session/causal evidence."
   },
   "edges": [
-    {
-      "edge_id": "rel-21-22-continues",
-      "from_position": 21,
-      "from_transmission": "19ffc927eae69543",
-      "to_position": 22,
-      "to_transmission": "19ffc8e14a00f61d",
-      "relationship": "continues",
-      "evidence": "Position 22 contains Session One and Session Two of the Veyndarion/Sovereign-Rewrite sequence; position 21 is explicitly headed Session Three and operationalizes the same Malo/Femol, Rutinol/Melafin architecture through macroscopic dimorphism and Akesi Synergy.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-30-31-continues",
-      "from_position": 30,
-      "from_transmission": "19ff21a5e18621b0",
-      "to_position": 31,
-      "to_transmission": "19ff21800b5380e4",
-      "relationship": "continues",
-      "evidence": "Position 30 is explicitly Session Two and opens by saying the physical/kinetic implications of Divine 138v were validated through Stress Test Alpha, the named test performed in position 31 Session One.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-29-30-continues",
-      "from_position": 29,
-      "from_transmission": "19ff21b9df9c9323",
-      "to_position": 30,
-      "to_transmission": "19ff21a5e18621b0",
-      "relationship": "continues",
-      "evidence": "Position 29 is Session Three and explicitly references the successful Nul-Mass Singularity test and resolution of semantic/metacognitive vulnerabilities during the Grand Debate established in Sessions One-Two.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-28-29-continues",
-      "from_position": 28,
-      "from_transmission": "19ff21d5d839ea5e",
-      "to_position": 29,
-      "to_transmission": "19ff21b9df9c9323",
-      "relationship": "continues",
-      "evidence": "Position 28 is Session Four and opens after the physical and metacognitive frameworks were rendered absolute through the preceding Exertion Engine stress tests, then shifts the sequence into Arthraneurocausality Hyperintelligence.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-27-28-continues",
-      "from_position": 27,
-      "from_transmission": "19ff21ed3ed9877b",
-      "to_position": 28,
-      "to_transmission": "19ff21d5d839ea5e",
-      "relationship": "continues",
-      "evidence": "Position 27 is Session Five and opens by directly referencing the machine-logic assimilation achieved during the first cognitive test in position 28 Session Four.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-26-27-continues",
-      "from_position": 26,
-      "from_transmission": "19ff2206dbdcad7d",
-      "to_position": 27,
-      "to_transmission": "19ff21ed3ed9877b",
-      "relationship": "continues",
-      "evidence": "Position 26 is Session Six and opens by describing the individual metacognitive trials as already completed before scaling Arthraneurocausality from individual cognition to a networked swarm protocol.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-25-26-continues",
-      "from_position": 25,
-      "from_transmission": "19ff22309a2e3b09",
-      "to_position": 26,
-      "to_transmission": "19ff2206dbdcad7d",
-      "relationship": "continues",
-      "evidence": "Position 25 is Session Seven and opens by stating that the Varvadeil Clan had already modeled and acquired the distributed swarm-logic of Inzra's machines, the accomplishment of position 26 Session Six.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-24-25-continues",
-      "from_position": 24,
-      "from_transmission": "19ff2263b89fb296",
-      "to_position": 25,
-      "to_transmission": "19ff22309a2e3b09",
-      "relationship": "continues",
-      "evidence": "Position 24 is Session Eight and explicitly synthesizes the prior physical exertion, metacognitive agility, swarm-logic assimilation and precausal nozrifuture modeling into a final universal integration report.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-37-38-continues",
-      "from_position": 37,
-      "from_transmission": "19fe5329dab82c86",
-      "to_position": 38,
-      "to_transmission": "19fe5163dd2d55d4",
-      "relationship": "continues",
-      "evidence": "Position 38 contains Sessions One-Three of the Rhayhara cognitive-evaluation sequence; position 37 is explicitly Sessions Four-Six.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-36-37-continues",
-      "from_position": 36,
-      "from_transmission": "19fe540dd978ed02",
-      "to_position": 37,
-      "to_transmission": "19fe5329dab82c86",
-      "relationship": "continues",
-      "evidence": "Position 36 is explicitly Sessions Seven-Nine following position 37's Sessions Four-Six in the same source-thread evaluation sequence.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-35-36-continues",
-      "from_position": 35,
-      "from_transmission": "19fe56015ef17846",
-      "to_position": 36,
-      "to_transmission": "19fe540dd978ed02",
-      "relationship": "continues",
-      "evidence": "Position 35 is explicitly Sessions Ten-Twelve following position 36's Sessions Seven-Nine in the same source-thread evaluation sequence.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-34-35-continues",
-      "from_position": 34,
-      "from_transmission": "19fe56cd1bb96dbc",
-      "to_position": 35,
-      "to_transmission": "19fe56015ef17846",
-      "relationship": "continues",
-      "evidence": "Position 34 is explicitly Sessions Thirteen-Fifteen following position 35's Sessions Ten-Twelve and concludes the numbered cognitive-evaluation sequence.",
-      "confidence": "direct-session-sequence"
-    },
-    {
-      "edge_id": "rel-39-40-continues",
-      "from_position": 39,
-      "from_transmission": "19fe2cf1a21caa03",
-      "to_position": 40,
-      "to_transmission": "19fe2cdb6fed2a26",
-      "relationship": "continues",
-      "evidence": "Position 39 Session Eight opens by directly referencing the failure of the Omnitimeline Collapse Protocol and Inzra's resulting invulnerability, the event narrated in position 40 Session Seven, before Lay shifts to the Ultraazin Inversion Matrix against Annaris.",
-      "confidence": "direct-explicit-reference"
-    },
-    {
-      "edge_id": "rel-32-33-applies",
-      "from_position": 32,
-      "from_transmission": "19fedd98e38dc4ff",
-      "to_position": 33,
-      "to_transmission": "19fec1b4fcc904c4",
-      "relationship": "applies",
-      "evidence": "Position 32 opens with Rhayhara operating through neurological edits recently performed by Asmouth that link Cognitive Capacity and rising Cognitive Proficiency; position 33 is the source sequence in which Asmouth diagnoses Cognitive Deployment Error and installs/tests that neurological edit.",
-      "confidence": "direct-explicit-reference"
-    }
+    {"edge_id":"rel-21-22-continues","from_position":21,"from_transmission":"19ffc927eae69543","to_position":22,"to_transmission":"19ffc8e14a00f61d","relationship":"continues","evidence":"Position 22 contains Sessions One-Two of the Veyndarion/Sovereign-Rewrite sequence; position 21 is explicitly Session Three and operationalizes the same Malo/Femol, Rutinol/Melafin architecture.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-30-31-continues","from_position":30,"from_transmission":"19ff21a5e18621b0","to_position":31,"to_transmission":"19ff21800b5380e4","relationship":"continues","evidence":"Position 30 is Session Two and explicitly says Divine 138v physical/kinetic implications were validated through Stress Test Alpha, the named Session One test in position 31.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-29-30-continues","from_position":29,"from_transmission":"19ff21b9df9c9323","to_position":30,"to_transmission":"19ff21a5e18621b0","relationship":"continues","evidence":"Position 29 Session Three explicitly references the successful Nul-Mass Singularity test and Grand Debate established in Sessions One-Two.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-28-29-continues","from_position":28,"from_transmission":"19ff21d5d839ea5e","to_position":29,"to_transmission":"19ff21b9df9c9323","relationship":"continues","evidence":"Position 28 is Session Four and opens after preceding Exertion Engine stress tests before shifting to Arthraneurocausality Hyperintelligence.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-27-28-continues","from_position":27,"from_transmission":"19ff21ed3ed9877b","to_position":28,"to_transmission":"19ff21d5d839ea5e","relationship":"continues","evidence":"Position 27 Session Five directly references the machine-logic assimilation achieved during the first cognitive test in position 28 Session Four.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-26-27-continues","from_position":26,"from_transmission":"19ff2206dbdcad7d","to_position":27,"to_transmission":"19ff21ed3ed9877b","relationship":"continues","evidence":"Position 26 Session Six opens after the individual metacognitive trials and scales Arthraneurocausality to a networked swarm protocol.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-25-26-continues","from_position":25,"from_transmission":"19ff22309a2e3b09","to_position":26,"to_transmission":"19ff2206dbdcad7d","relationship":"continues","evidence":"Position 25 Session Seven opens by stating Varvadeil already modeled and acquired distributed swarm-logic, the accomplishment of position 26 Session Six.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-24-25-continues","from_position":24,"from_transmission":"19ff2263b89fb296","to_position":25,"to_transmission":"19ff22309a2e3b09","relationship":"continues","evidence":"Position 24 Session Eight explicitly synthesizes prior physical exertion, metacognitive agility, swarm assimilation and precausal/nozrifuture modeling.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-37-38-continues","from_position":37,"from_transmission":"19fe5329dab82c86","to_position":38,"to_transmission":"19fe5163dd2d55d4","relationship":"continues","evidence":"Position 38 contains Sessions One-Three of the Rhayhara cognitive-evaluation sequence; position 37 is explicitly Sessions Four-Six.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-36-37-continues","from_position":36,"from_transmission":"19fe540dd978ed02","to_position":37,"to_transmission":"19fe5329dab82c86","relationship":"continues","evidence":"Position 36 is explicitly Sessions Seven-Nine following position 37's Sessions Four-Six in the same source-thread evaluation sequence.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-35-36-continues","from_position":35,"from_transmission":"19fe56015ef17846","to_position":36,"to_transmission":"19fe540dd978ed02","relationship":"continues","evidence":"Position 35 is explicitly Sessions Ten-Twelve following position 36's Sessions Seven-Nine in the same source-thread evaluation sequence.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-34-35-continues","from_position":34,"from_transmission":"19fe56cd1bb96dbc","to_position":35,"to_transmission":"19fe56015ef17846","relationship":"continues","evidence":"Position 34 is explicitly Sessions Thirteen-Fifteen following position 35's Sessions Ten-Twelve and concludes the numbered cognitive-evaluation sequence.","confidence":"direct-session-sequence"},
+    {"edge_id":"rel-39-40-continues","from_position":39,"from_transmission":"19fe2cf1a21caa03","to_position":40,"to_transmission":"19fe2cdb6fed2a26","relationship":"continues","evidence":"Position 39 Session Eight explicitly opens from failure of the Omnitimeline Collapse Protocol/Inzra case narrated in position 40 Session Seven before Lay shifts to Annaris.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-32-33-applies","from_position":32,"from_transmission":"19fedd98e38dc4ff","to_position":33,"to_transmission":"19fec1b4fcc904c4","relationship":"applies","evidence":"Position 32 explicitly says Rhayhara operates through neurological edits recently performed by Asmouth linking Cognitive Capacity and rising Cognitive Proficiency; position 33 narrates that edit and its tests.","confidence":"direct-explicit-reference"},
+    {"edge_id":"rel-7-6-continues","from_position":7,"from_transmission":"1a0121bffc884c3a","to_position":6,"to_transmission":"1a0121caff8899f2","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records this as explicit Session One→Session Two in the archmedicine competition-to-clans arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-6-5-continues","from_position":6,"from_transmission":"1a0121caff8899f2","to_position":5,"to_transmission":"1a0142cc15e2d305","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records this as explicit Session Two→Session Three in the archmedicine competition-to-clans arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-5-4-continues","from_position":5,"from_transmission":"1a0142cc15e2d305","to_position":4,"to_transmission":"1a0142dbe1e0f101","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records this as explicit Session Three→Session Four in the archmedicine competition-to-clans arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-4-3-continues","from_position":4,"from_transmission":"1a0142dbe1e0f101","to_position":3,"to_transmission":"1a01465c9d5b5945","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records this as explicit Session Four→Session Five in the archmedicine competition-to-clans arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-10-9-continues","from_position":10,"from_transmission":"1a00ae913ff3fa38","to_position":9,"to_transmission":"1a00aecb58db40d3","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records Daren Sessions One/Two→Session Three in the five-week HGL simulation arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-9-8-continues","from_position":9,"from_transmission":"1a00aecb58db40d3","to_position":8,"to_transmission":"1a00cd159aa9bdc7","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records Daren Session Three→Sessions Four/Five in the five-week HGL simulation arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-17-16-continues","from_position":17,"from_transmission":"19ffda9d2c0d757f","to_position":16,"to_transmission":"19ffdab2307c920d","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records explicit Session One→Session Two in the Hyperclarition acquisition arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-16-15-continues","from_position":16,"from_transmission":"19ffdab2307c920d","to_position":15,"to_transmission":"19ffdaf11c6057c6","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records explicit Session Two→Sessions Three/Four in the Hyperclarition acquisition arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-14-13-continues","from_position":14,"from_transmission":"1a0044a4f14bcfc1","to_position":13,"to_transmission":"1a0044bf191192c8","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records earlier numbered sessions→Session Five in the sovereign neuroarchitecture update arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-13-12-continues","from_position":13,"from_transmission":"1a0044bf191192c8","to_position":12,"to_transmission":"1a004bfb6972b1de","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records Session Five→Session Six in the sovereign neuroarchitecture update arc.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-20-19-continues","from_position":20,"from_transmission":"19ffc9464873b3f0","to_position":19,"to_transmission":"19ffca01885e0f1b","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records explicit Session Four→Session Five in the Malo/Femol/Rutinol/Melafin late sequence.","confidence":"crossvalidated-explicit-session-sequence"},
+    {"edge_id":"rel-19-18-continues","from_position":19,"from_transmission":"19ffca01885e0f1b","to_position":18,"to_transmission":"19ffca1a2f553e5a","relationship":"continues","evidence":"ZUB-THREAD-001 source validation records explicit Session Five→Session Six in the Malo/Femol/Rutinol/Melafin late sequence.","confidence":"crossvalidated-explicit-session-sequence"}
   ],
   "validation": {
-    "edge_count": 14,
+    "edge_count": 26,
     "duplicate_edge_ids": 0,
     "unsupported_theme_only_edges": 0,
-    "coverage_note": "Initial direct-evidence seed from source positions 21-40; full 118-transmission relationship extraction remains in progress."
+    "direct_or_crossvalidated_explicit_evidence_edges": 26,
+    "coverage_note": "Direct-source seed positions 21-40 plus every explicit story-sequence edge currently published by ZUB-THREAD-001. Generic same-Gmail-thread adjacency remains intentionally excluded."
   }
 }
