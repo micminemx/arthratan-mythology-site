@@ -1,0 +1,37 @@
+name: Import Zubaida source attachments
+on:
+  push:
+    paths:
+      - '.github/workflows/import-zubaida-attachments.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch original Gmail attachment bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='sources/zubaida/attachments/19de45adb7920381'
+          mkdir -p "$base"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-9738-81f4-a8db-8a7fa7551388/raw?se=2026-09-02T14%3A06%3A10Z&sp=r&sv=2026-02-06&sr=b&scid=a91ed3b4-3259-547f-aaa3-952bd2c930b9&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A08%3A51Z&ske=2026-09-03T07%3A08%3A51Z&sks=b&skv=2026-02-06&sig=U5gmnxodVEzBggzhbTVQbI%2BIakpLAriNK2RBwh4f1D4%3D' -o "$base/8.png"
+          curl -fL --retry 3 'https://sdmntprukwest.oaiusercontent.com/files/00000000-dfec-8243-a2dd-07605b523834/raw?se=2026-09-02T14%3A06%3A15Z&sp=r&sv=2026-02-06&sr=b&scid=65623414-c661-515c-8bda-6380dabe3f74&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T08%3A13%3A44Z&ske=2026-09-03T08%3A13%3A44Z&sks=b&skv=2026-02-06&sig=fa3H4B2%2B6RjTNYg3xKd9nD3bCVXUm5gotMt5tnMzqLc%3D' -o "$base/9.png"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-f7e4-81f4-8820-65966dcfe473/raw?se=2026-09-02T14%3A06%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=5d086264-046d-5b1e-9ee3-49f370d9c58f&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-01T23%3A35%3A00Z&ske=2026-09-02T23%3A35%3A00Z&sks=b&skv=2026-02-06&sig=ZAbh7at1rvpwEOtNeja5EfhIamN%2BFF/C0L0qDqi3FwM%3D' -o "$base/7.png"
+          curl -fL --retry 3 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-60e8-8210-b02a-1b11087e5584/raw?se=2026-09-02T14%3A06%3A24Z&sp=r&sv=2026-02-06&sr=b&scid=9a037d9e-9571-546b-ab5e-fe3e10f42235&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T06%3A50%3A40Z&ske=2026-09-03T06%3A50%3A40Z&sks=b&skv=2026-02-06&sig=UIoBlK1o/LNx2qVhSKhIGW3pJeV2y2KRMoIiSyR2uTg%3D' -o "$base/6.png"
+          curl -fL --retry 3 'https://sdmntpreastus2.oaiusercontent.com/files/00000000-09d8-81f6-ac0c-6722aec27922/raw?se=2026-09-02T14%3A06%3A28Z&sp=r&sv=2026-02-06&sr=b&scid=6b0a26fc-95d7-5215-aea6-f91a5f0d5e92&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T09%3A40%3A58Z&ske=2026-09-03T09%3A40%3A58Z&sks=b&skv=2026-02-06&sig=e7lerM3vIApqaFs%2B/ZJvgc/jAt%2B7wZpa/8yEpcPCUAk%3D' -o "$base/5.png"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-90d0-81f4-9110-c945d9dd0646/raw?se=2026-09-02T14%3A06%3A31Z&sp=r&sv=2026-02-06&sr=b&scid=b0488885-f398-587e-a1b5-8384b5629cba&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A15%3A30Z&ske=2026-09-03T07%3A15%3A30Z&sks=b&skv=2026-02-06&sig=9sgTpuu%2BW0Zr/MHmyY02X%2BpQmKJfEJB%2BDH8mQ6l8u5g%3D' -o "$base/3.png"
+          curl -fL --retry 3 'https://sdmntprcacentral.oaiusercontent.com/files/00000000-c8b4-820d-806b-c0451a458bd8/raw?se=2026-09-02T14%3A06%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=9d8f2943-0b6d-5536-976d-3d617b9c3238&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T06%3A51%3A13Z&ske=2026-09-03T06%3A51%3A13Z&sks=b&skv=2026-02-06&sig=6k5cjLAwBGCJmU4BkOMVHtahjWRKAHyTrk9%2BtkDjnww%3D' -o "$base/4.png"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-41c8-81f4-bd21-c537340b6c77/raw?se=2026-09-02T14%3A06%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=d581e479-9131-5dfa-b266-d775db7ca0e9&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T08%3A13%3A39Z&ske=2026-09-03T08%3A13%3A39Z&sks=b&skv=2026-02-06&sig=RhZb8SXxAG46GGuq5JHldHeyZr3Y/I12EBtB1bSe2WQ%3D' -o "$base/10.png"
+          curl -fL --retry 3 'https://sdmntprcacentral.oaiusercontent.com/files/00000000-24f8-820d-b2b9-da7e69e700f1/raw?se=2026-09-02T14%3A06%3A44Z&sp=r&sv=2026-02-06&sr=b&scid=882cb699-eb8e-5b18-b8c0-0c7025a89d07&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A40%3A34Z&ske=2026-09-03T07%3A40%3A34Z&sks=b&skv=2026-02-06&sig=TdppERsXNOw2Ae%2B2rYrFPBbEuN%2BRwcTPP4uHivZnRKE%3D' -o "$base/session two.PNG"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-3684-81f4-8075-9dc2e1656e22/raw?se=2026-09-02T14%3A06%3A47Z&sp=r&sv=2026-02-06&sr=b&scid=8a06e745-c7e6-5a52-a04b-7d33cdafd805&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T08%3A13%3A43Z&ske=2026-09-03T08%3A13%3A43Z&sks=b&skv=2026-02-06&sig=yH9kB0RQzwDlHvC8clzZsKly8VF/AQOcGVhBRS%2BCHbA%3D' -o "$base/Session one.PNG"
+      - name: Commit preserved bytes
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add sources/zubaida/attachments/19de45adb7920381
+          git diff --cached --quiet && exit 0
+          git commit -m 'Preserve Zubaida attachments 19de45adb7920381'
+          git push
