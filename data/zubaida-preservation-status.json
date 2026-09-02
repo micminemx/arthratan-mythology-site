@@ -3,8 +3,8 @@
   "canonical_sender_messages": 128,
   "source_bearing_transmissions": 118,
   "non_source_or_reply_shell_messages": 10,
-  "preserved_source_files": 102,
-  "remaining_source_files": 16,
+  "preserved_source_files": 103,
+  "remaining_source_files": 15,
   "preservation_rule": "Retain each new Zubaida-authored transmission once. Preserve the complete new top-level body; remove quoted reply chains only to prevent duplication. Never summarize source text in place of preservation.",
   "sync_policy": "Commit completed preservation packets directly to main in small atomic commits; update this checkpoint after each preservation batch.",
   "non_source_registry": "data/zubaida-nonsource.json",
@@ -13,7 +13,6 @@
     "19f810f599ae9ccc",
     "19f7d9faf4778440",
     "19f78745609dd2f6",
-    "19ee4d2713ef9ab2",
     "19ee316d9a81b6b3",
     "19ec2fd5372c1fb2",
     "19eaaf5b47ae00c8",
@@ -27,8 +26,8 @@
     "19e56867bf1bf3d3"
   ],
   "latest_preserved_batch": [
-    "19ea19028cbe67ef",
-    "19eac0adfb5e15a8"
+    "19eac0adfb5e15a8",
+    "19ee4d2713ef9ab2"
   ],
   "post_source_tasks": [
     "reconcile all Gmail attachments with sources/zubaida/attachments",
