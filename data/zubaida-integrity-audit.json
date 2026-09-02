@@ -1,27 +1,16 @@
 {
   "generated": "2026-09-02",
-  "head": "256338db0902e7e7460cb6a96c7ebac6e566fdb2",
+  "head": "e3640afa086c4cfd7c0fd354f67e0661bace0634",
   "counts": {
     "sender_messages": 128,
-    "source_bearing_ids": 128,
-    "classified_nonsource_ids": 0,
+    "source_bearing_ids": 118,
+    "classified_nonsource_ids": 10,
     "source_text_files": 118,
     "expected_attachment_files": 53,
     "actual_attachment_files": 49,
     "missing_attachment_files": 4
   },
-  "missing_source_ids": [
-    "19ded5f9f4ede101",
-    "19deda84207247fe",
-    "19df33a65dcbc98b",
-    "19df42d4e7cafd86",
-    "19df801d8d21df0a",
-    "19e75604dcc74c8c",
-    "19e7cf404021ff3e",
-    "19e9d8031a621d58",
-    "19eb20592a8c2149",
-    "19f962eb9b2a38f9"
-  ],
+  "missing_source_ids": [],
   "unexpected_source_files": [],
   "missing_attachment_paths": [
     "sources/zubaida/attachments/19fde8f7e92ec8da/IMG_1038.HEIC",
@@ -31,11 +20,11 @@
   ],
   "unexpected_attachment_paths": [],
   "checks": {
-    "sender_message_count_is_128": false,
-    "source_id_count_is_118": false,
-    "nonsource_count_is_10": false,
+    "sender_message_count_is_128": true,
+    "source_id_count_is_118": true,
+    "nonsource_count_is_10": true,
     "source_file_count_is_118": true,
-    "no_missing_source_files": false,
+    "no_missing_source_files": true,
     "no_unexpected_source_files": true,
     "ledger_expected_attachment_count_is_53": true,
     "attachment_tree_matches_ledger": false,
@@ -45,7 +34,7 @@
     "reader_no_longer_labels_missing_as_pending": true,
     "archive_cache_busted": true
   },
-  "source_layer_complete": false,
+  "source_layer_complete": true,
   "attachment_layer_complete": false,
   "complete": false,
   "preservation_status_remaining_source_files": 0
