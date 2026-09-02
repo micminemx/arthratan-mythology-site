@@ -14,19 +14,20 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p 'sources/zubaida/attachments/19fdb1794050bc43'
-          mkdir -p 'sources/zubaida/attachments/19fa076eb25a917b'
-          mkdir -p 'sources/zubaida/attachments/19f9518411db997b'
-          curl -fL --retry 3 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-1378-8210-9878-99534afc7e4c/raw?se=2026-09-02T16%3A47%3A34Z&sp=r&sv=2026-02-06&sr=b&scid=278cee78-80e3-5c72-9081-fb12dc8c336f&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-01T23%3A28%3A02Z&ske=2026-09-02T23%3A28%3A02Z&sks=b&skv=2026-02-06&sig=qh/tOM7a4pc3x/%2BO6bPviQ5ry2GJmitddjLix0M4NKg%3D' -o 'sources/zubaida/attachments/19fdb1794050bc43/IMG_0998.jpg'
-          curl -fL --retry 3 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-7538-8210-b00b-c69ab14a31a6/raw?se=2026-09-02T16%3A47%3A38Z&sp=r&sv=2026-02-06&sr=b&scid=58897600-95b4-5d3a-9118-ceaac785a21d&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T09%3A40%3A51Z&ske=2026-09-03T09%3A40%3A51Z&sks=b&skv=2026-02-06&sig=y0OZql2SKJ2as4nliAbsODSy3b4AAVb6diNyUDVqbu4%3D' -o 'sources/zubaida/attachments/19fdb1794050bc43/IMG_1001.jpg'
-          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-f080-81f4-9cf8-b88da4eb44aa/raw?se=2026-09-02T16%3A47%3A46Z&sp=r&sv=2026-02-06&sr=b&scid=88bf787a-17cb-5366-a6a1-35519feeab3a&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A15%3A30Z&ske=2026-09-03T07%3A15%3A30Z&sks=b&skv=2026-02-06&sig=WMbGpby7foa9zxBVY%2BAE2cm7zHGXa6KakAcLPYJ4itI%3D' -o 'sources/zubaida/attachments/19fa076eb25a917b/5ce96d29-7675-47a1-a429-748caaa425ea.png'
-          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-349c-81f4-9196-8e3633af03b9/raw?se=2026-09-02T16%3A47%3A50Z&sp=r&sv=2026-02-06&sr=b&scid=2a3cfa2d-ce67-5243-a32d-932438a1d793&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T10%3A31%3A19Z&ske=2026-09-03T10%3A31%3A19Z&sks=b&skv=2026-02-06&sig=H3wdjW%2B96pFIepEYjloFeVfmFCWSDU3oj2ULtMriKZM%3D' -o 'sources/zubaida/attachments/19f9518411db997b/Vaelath.jpeg'
+          base='sources/zubaida/attachments/19f9406c97ff3670'
+          mkdir -p "$base"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-db24-81f4-81eb-9b0ec2df5fef/raw?se=2026-09-02T16%3A49%3A07Z&sp=r&sv=2026-02-06&sr=b&scid=fd8ef35b-de22-56e1-8a49-a235ba3390cf&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T08%3A50%3A31Z&ske=2026-09-03T08%3A50%3A31Z&sks=b&skv=2026-02-06&sig=26lkcJs15wzsh9vjaBXuBwcAhnZ%2BfQ5CPrJWlElf/cE%3D' -o "$base/Sylvanna.jpeg"
+          curl -fL --retry 3 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-0bec-8210-9e10-d3aea7f5956d/raw?se=2026-09-02T16%3A49%3A11Z&sp=r&sv=2026-02-06&sr=b&scid=2bd6b331-239d-5d65-99dd-78474e198a23&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T06%3A36%3A49Z&ske=2026-09-03T06%3A36%3A49Z&sks=b&skv=2026-02-06&sig=chfZovYLkUMXwl2BTjgNan5tSKoevT/qitpV/fbv450%3D' -o "$base/Qintara.jpeg"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-dbc8-81f4-b6fe-1fe6b5a5337c/raw?se=2026-09-02T16%3A49%3A15Z&sp=r&sv=2026-02-06&sr=b&scid=7298fd81-99ec-541f-95db-9c3c13620faf&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A39%3A54Z&ske=2026-09-03T07%3A39%3A54Z&sks=b&skv=2026-02-06&sig=B00jkBs2TjpIEynVpxRfJi9ep8C5sx1Jpt%2BWVs2ZFYw%3D' -o "$base/Asmouth.jpeg"
+          curl -fL --retry 3 'https://sdmntprukwest.oaiusercontent.com/files/00000000-de7c-8243-a510-958b99bfc0f8/raw?se=2026-09-02T16%3A49%3A21Z&sp=r&sv=2026-02-06&sr=b&scid=cf99c848-b137-52b6-83ed-86ea470069f5&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T07%3A15%3A31Z&ske=2026-09-03T07%3A15%3A31Z&sks=b&skv=2026-02-06&sig=d1OR8wbDCc3/YRpO8PpIYishNlBjCzZqZPPjqiC7ovA%3D' -o "$base/Qai'lyth.jpeg"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-2408-81f4-ae85-7e9b91a919d4/raw?se=2026-09-02T16%3A49%3A25Z&sp=r&sv=2026-02-06&sr=b&scid=0a76d879-5238-5701-ad74-0659ac4e0267&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T06%3A50%3A37Z&ske=2026-09-03T06%3A50%3A37Z&sks=b&skv=2026-02-06&sig=/s6g4wZstPPiCsEeBVbjY/h%2BFWqJCcBPg2jgdlb9xIY%3D' -o "$base/Kartus.jpeg"
+          curl -fL --retry 3 'https://sdmntprnortheu.oaiusercontent.com/files/00000000-6028-81f4-a010-2af9fe8b6eac/raw?se=2026-09-02T16%3A49%3A28Z&sp=r&sv=2026-02-06&sr=b&scid=68cc2cff-0d40-561d-b9e1-2a2a8656ac5f&skoid=56822d8b-6cfd-42ed-a00d-1452dca42036&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-02T05%3A57%3A47Z&ske=2026-09-03T05%3A57%3A47Z&sks=b&skv=2026-02-06&sig=dWFWPiF%2B24WtP5QiODtQN/%2BuX3CBANjQqyBYxMSKUjk%3D' -o "$base/Dyvane.jpeg"
       - name: Commit preserved bytes
         shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add sources/zubaida/attachments/19fdb1794050bc43 sources/zubaida/attachments/19fa076eb25a917b sources/zubaida/attachments/19f9518411db997b
+          git add sources/zubaida/attachments/19f9406c97ff3670
           git diff --cached --quiet && exit 0
-          git commit -m 'Preserve Zubaida attachment batch 19fdb-19f951'
+          git commit -m 'Preserve Zubaida character-reference attachments 19f9406c97ff3670'
           git push
