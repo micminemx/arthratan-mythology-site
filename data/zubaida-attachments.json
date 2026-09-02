@@ -2,8 +2,10 @@
   "updated": "2026-09-02",
   "scope": "Real file attachments on the 118 preserved source-bearing Zubaida transmissions; reply-shell/non-source messages are excluded.",
   "expected_attachment_files": 53,
-  "repository_present_files_at_audit": 20,
-  "missing_files_at_audit": 33,
+  "repository_present_files_at_initial_audit": 20,
+  "missing_files_at_initial_audit": 33,
+  "repository_present_files": 25,
+  "remaining_attachment_files": 28,
   "source_messages_with_attachments": 12,
   "excluded_attachment_message_ids": [
     "19f962eb9b2a38f9"
@@ -13,7 +15,7 @@
     {
       "message_id": "1a0601fc96f7add3",
       "count": 5,
-      "repository_status": "missing",
+      "repository_status": "preserved",
       "files": ["da23.PNG", "l2xwr7l.jpg", "j5.PNG", "j4.PNG", "j3.PNG"]
     },
     {
