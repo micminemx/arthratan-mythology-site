@@ -42,8 +42,12 @@ jobs:
           fi
           echo "=== GitHub Pages API state after ==="
           gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '{status,cname,https_enforced,protected_domain_state,pending_domain_unverified_at,https_certificate}' || true
-          echo "=== HTTPS headers ==="
+          echo "=== Apex HTTPS headers ==="
           curl -sSIL --max-time 20 https://arthratanmythology.com/ | sed -n '1,30p' || true
-          echo "=== certificate subject/issuer/dates ==="
-          echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates || true
-          echo "=== recovery probe 2026-09-02T06:00+01:00 ==="
+          echo "=== Apex certificate ==="
+          echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName || true
+          echo "=== WWW HTTPS headers ==="
+          curl -sSIL --max-time 20 https://www.arthratanmythology.com/ | sed -n '1,30p' || true
+          echo "=== WWW certificate ==="
+          echo | openssl s_client -servername www.arthratanmythology.com -connect www.arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName || true
+          echo "=== recovery probe 2026-09-02T06:08+01:00 ==="
