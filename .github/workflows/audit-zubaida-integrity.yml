@@ -18,13 +18,14 @@ jobs:
       - name: Generate integrity report
         shell: python
         run: |
-          import json, pathlib, re, subprocess
+          import json, pathlib, subprocess
           root = pathlib.Path('.')
           index = json.loads((root/'data/zubaida-index.json').read_text(encoding='utf-8'))
           nonsource = json.loads((root/'data/zubaida-nonsource.json').read_text(encoding='utf-8'))
           ledger = json.loads((root/'data/zubaida-attachments.json').read_text(encoding='utf-8'))
           status = json.loads((root/'data/zubaida-preservation-status.json').read_text(encoding='utf-8'))
-          non_ids = {r['id'] for r in nonsource.get('non_source_records', [])}
+          non_rows = nonsource.get('non_source_records') or nonsource.get('ids') or []
+          non_ids = {r['id'] for r in non_rows}
           source_ids = [i for i in index.get('ids', []) if i not in non_ids]
           source_files = sorted(p.stem for p in (root/'sources/zubaida').glob('*.txt'))
           missing_sources = sorted(set(source_ids)-set(source_files))
@@ -40,8 +41,8 @@ jobs:
           archive=(root/'archive.js').read_text(encoding='utf-8')
           html=(root/'index.html').read_text(encoding='utf-8')
           checks={
-            'sender_message_count_is_128': index.get('count')==128 and index.get('audit',{}).get('sender_messages')==128,
-            'source_id_count_is_118': len(source_ids)==118,
+            'sender_message_count_is_128': len(index.get('ids',[]))==128 and index.get('audit',{}).get('sender_messages')==128,
+            'source_id_count_is_118': len(source_ids)==118 and index.get('audit',{}).get('source_bearing_transmissions')==118,
             'nonsource_count_is_10': len(non_ids)==10,
             'source_file_count_is_118': len(source_files)==118,
             'no_missing_source_files': not missing_sources,
@@ -49,10 +50,10 @@ jobs:
             'ledger_expected_attachment_count_is_53': len(expected_attachments)==53 and ledger.get('expected_attachment_files')==53,
             'attachment_tree_matches_ledger': not missing_attachments and not unexpected_attachments,
             'reader_has_source_body_parser': 'function txParseTransmission' in archive,
-            'reader_filters_nonsource_records': 'function txSourceIds' in archive and 'txLoadNonSource' in archive,
+            'reader_filters_nonsource_records': 'function txSourceIds' in archive and 'function txNonSourceRows' in archive and 'txLoadNonSource' in archive,
             'reader_supports_attachment_ledger_schema': 'function txAttachmentFiles' in archive and 'att?.messages' in archive,
             'reader_no_longer_labels_missing_as_pending': 'source text is not yet present in the publication package' not in archive,
-            'archive_cache_busted': 'archive.js?b=20260902a' in html,
+            'archive_cache_busted': 'archive.js?b=20260902b' in html,
           }
           report={
             'generated':'2026-09-02',
