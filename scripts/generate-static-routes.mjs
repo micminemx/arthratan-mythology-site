@@ -27,7 +27,8 @@ for(const id of sourceIds){
   const m=metaById.get(id)||{};
   const source=m.source_file || `sources/zubaida/${id}.txt`;
   const text=fs.readFileSync(path.join(ROOT,source),'utf8');
-  const heading=m.canonical_display_heading || m.subject || `Zubaida transmission ${id}`;
+  const firstSourceLine=text.split(/\r?\n/).map(x=>x.trim()).find(Boolean);
+  const heading=m.canonical_display_heading || m.subject || firstSourceLine || `Zubaida transmission ${id}`;
   const canonical=`${ORIGIN}/zubaida/${id}/`;
   const html=shell({title:`${heading} — Arthratan Mythology`,description:`Verbatim preserved Zubaida source transmission ${id}, with provenance and a link to the interactive Arthratan Mythology archive.`,canonical,kind:'Zubaida source transmission',body:`<h1>${esc(heading)}</h1><p class="meta">Transmission ID: <code>${esc(id)}</code>${m.source_date?.iso?` · ${esc(m.source_date.iso)}`:''}</p><p class="notice"><strong>Source canon.</strong> The text below is the preserved source, not a model-written summary. <a href="/#transmission:${encodeURIComponent(id)}">Open the enhanced interactive reader</a>.</p><h2>Verbatim preserved source</h2><pre class="source">${esc(text)}</pre><p class="meta">Provenance file: <a href="${sourceLink(source)}">${esc(source)}</a></p>`});
   write(`zubaida/${id}/index.html`,html);
@@ -44,16 +45,26 @@ for(const c of chars){
 }
 
 const divine=readJSON('data/divine.json');
+const renderDivineBlock = b => {
+  if(!b) return '';
+  if(b.type==='p') return `<p>${esc(b.text||'')}</p>`;
+  if(b.type==='table'){
+    const rows=(b.rows||[]).map((row,ri)=>`<tr>${(row||[]).map(cell=>ri===0?`<th>${esc(cell)}</th>`:`<td>${esc(cell)}</td>`).join('')}</tr>`).join('');
+    return `<div style="overflow:auto"><table border="1" cellspacing="0" cellpadding="6">${rows}</table></div>`;
+  }
+  return `<pre class="source">${esc(JSON.stringify(b,null,2))}</pre>`;
+};
 (divine.sections||[]).forEach((s,i)=>{
   const n=i+1,key=String(n).padStart(3,'0'),heading=s.heading||s.title||`Divine v144 section ${n}`,canonical=`${ORIGIN}/divine/${key}/`;
-  const paras=(s.paragraphs||[]).map(p=>`<p>${esc(typeof p==='string'?p:(p.text||JSON.stringify(p)))}</p>`).join('');
-  const body=`<h1>${esc(heading)}</h1><p class="meta">Divine v144 · section ${n} of ${divine.sections.length}</p><div>${paras}</div><p class="meta">Structured source: <a href="/data/divine.json">data/divine.json</a></p>`;
+  const sourceHtml=(s.blocks||s.paragraphs||[]).map(b=>typeof b==='string'?`<p>${esc(b)}</p>`:renderDivineBlock(b)).join('');
+  const body=`<h1>${esc(heading)}</h1><p class="meta">Divine v144 · section ${n} of ${divine.sections.length}</p><div>${sourceHtml}</div><p class="meta">Structured source: <a href="/data/divine.json">data/divine.json</a></p>`;
   write(`divine/${key}/index.html`,shell({title:`${heading} — Divine v144`,description:`Crawlable Divine v144 source section ${n} in the Arthratan Mythology Codex.`,canonical,kind:'Divine v144 source archive',body}));
   addRoute('divine',key,`/divine/${key}/`,'data/divine.json',heading);
 });
 
 const hgl=readJSON('data/hgl-pages.json');
-(hgl||[]).forEach((p,i)=>{
+const hglPages=Array.isArray(hgl)?hgl:(hgl.pages||[]);
+hglPages.forEach((p,i)=>{
   const n=p.page||i+1,key=String(n).padStart(3,'0'),canonical=`${ORIGIN}/hgl/${key}/`,heading=`Hypergendered Logic — page ${n}`;
   const body=`<h1>${heading}</h1><p class="meta">Source PDF: ${esc(p.source_pdf||'Hypergendered Logic')}</p><pre class="source">${esc(p.text||'')}</pre><p class="meta">Structured source: <a href="/data/hgl-pages.json">data/hgl-pages.json</a></p>`;
   write(`hgl/${key}/index.html`,shell({title:`${heading} — Arthratan Mythology`,description:`Crawlable preserved Hypergendered Logic source page ${n}.`,canonical,kind:'HGL source archive',body}));
