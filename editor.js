@@ -6,6 +6,9 @@
   const DEFAULT_REPOSITORY = 'micminemx/arthratan-mythology-site';
   const DEFAULT_BRANCH = 'main';
   const KDF_ITERATIONS = 600000;
+  const DEVICE_DB = 'arthratan-wiki-device';
+  const DEVICE_STORE = 'credentials';
+  const DEVICE_RECORD = 'editor-access';
   const ALLOWED_INLINE = new Set(['B', 'STRONG', 'EM', 'I', 'BR', 'SUP', 'SUB', 'CODE']);
   const EDIT_SELECTORS = [
     'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'li', 'pre', 'td', 'summary',
@@ -21,7 +24,8 @@
   let editorConfig = null;
   let siteEdits = emptyEdits();
   let token = '';
-  let editorName = sessionStorage.getItem('arthratanEditorName') || '';
+  let editorName = localStorage.getItem('arthratanEditorName') || sessionStorage.getItem('arthratanEditorName') || '';
+  let deviceRemembered = false;
   let editing = false;
   let dirty = false;
   let saving = false;
@@ -219,6 +223,77 @@
     return new TextEncoder().encode(`arthratan-editor:v1:${config.repository}:${config.branch}`);
   }
 
+  function deviceContext(config = editorConfig) {
+    return new TextEncoder().encode(`arthratan-device:v1:${config.repository}:${config.branch}:${config.cipher?.data || 'unconfigured'}`);
+  }
+
+  function openDeviceDb() {
+    return new Promise((resolve, reject) => {
+      if (!('indexedDB' in window)) return reject(new Error('Remembering this device is not supported by this browser.'));
+      const request = indexedDB.open(DEVICE_DB, 1);
+      request.onupgradeneeded = () => request.result.createObjectStore(DEVICE_STORE, {keyPath: 'id'});
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async function deviceRecord(mode, value) {
+    const db = await openDeviceDb();
+    return new Promise((resolve, reject) => {
+      const transaction = db.transaction(DEVICE_STORE, mode === 'get' ? 'readonly' : 'readwrite');
+      const store = transaction.objectStore(DEVICE_STORE);
+      const request = mode === 'get' ? store.get(DEVICE_RECORD) : mode === 'delete' ? store.delete(DEVICE_RECORD) : store.put(value);
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+      transaction.oncomplete = () => db.close();
+    });
+  }
+
+  async function rememberDeviceToken(rawToken) {
+    const key = await crypto.subtle.generateKey({name: 'AES-GCM', length: 256}, false, ['encrypt', 'decrypt']);
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const encrypted = await crypto.subtle.encrypt(
+      {name: 'AES-GCM', iv, additionalData: deviceContext()},
+      key,
+      new TextEncoder().encode(rawToken)
+    );
+    await deviceRecord('put', {
+      id: DEVICE_RECORD,
+      key,
+      iv: bytesToBase64(iv),
+      data: bytesToBase64(new Uint8Array(encrypted)),
+      context: bytesToBase64(deviceContext()),
+      editorName
+    });
+    deviceRemembered = true;
+  }
+
+  async function recoverDeviceToken() {
+    const record = await deviceRecord('get');
+    if (!record || record.context !== bytesToBase64(deviceContext())) return '';
+    const decrypted = await crypto.subtle.decrypt(
+      {name: 'AES-GCM', iv: base64ToBytes(record.iv), additionalData: deviceContext()},
+      record.key,
+      base64ToBytes(record.data)
+    );
+    editorName = record.editorName || editorName;
+    return new TextDecoder().decode(decrypted);
+  }
+
+  async function forgetDeviceToken() {
+    try { await deviceRecord('delete'); } catch (error) { console.warn('Unable to forget device access', error); }
+    deviceRemembered = false;
+  }
+
+  async function detectRememberedDevice() {
+    try {
+      const record = await deviceRecord('get');
+      deviceRemembered = Boolean(record && record.context === bytesToBase64(deviceContext()));
+    } catch {
+      deviceRemembered = false;
+    }
+  }
+
   async function deriveKey(passphrase, salt, iterations) {
     const material = await crypto.subtle.importKey('raw', new TextEncoder().encode(passphrase), 'PBKDF2', false, ['deriveKey']);
     return crypto.subtle.deriveKey(
@@ -407,7 +482,7 @@
     toolbar.id = 'wikiToolbar';
     toolbar.className = 'wiki-toolbar';
     toolbar.hidden = true;
-    toolbar.innerHTML = '<div class="wiki-toolbar-status"><b>Editing this page</b><span>Select highlighted text and type.</span></div><button id="wikiCancel" class="wiki-secondary" type="button">Cancel</button><button id="wikiLock" class="wiki-secondary" type="button">Lock editor</button><button id="wikiSave" class="wiki-primary" type="button">Save & publish</button>';
+    toolbar.innerHTML = '<div class="wiki-toolbar-status"><b>Editing this page</b><span>Select highlighted text and type.</span></div><button id="wikiCancel" class="wiki-secondary" type="button">Cancel</button><button id="wikiLock" class="wiki-secondary" type="button">Lock & forget</button><button id="wikiSave" class="wiki-primary" type="button">Save & publish</button>';
     document.body.appendChild(toolbar);
 
     editButton.addEventListener('click', openEditor);
@@ -416,10 +491,11 @@
     document.getElementById('wikiCancel').addEventListener('click', () => {
       if (!dirty || confirm('Discard the unsaved changes on this page?')) stopEditing({restore: true});
     });
-    document.getElementById('wikiLock').addEventListener('click', () => {
+    document.getElementById('wikiLock').addEventListener('click', async () => {
       if (dirty && !confirm('Discard the unsaved changes and lock the editor?')) return;
       stopEditing({restore: true});
       token = '';
+      await forgetDeviceToken();
       editButton.classList.remove('is-unlocked');
       editButton.textContent = 'Edit page';
     });
@@ -447,11 +523,32 @@
     });
   }
 
-  function openEditor() {
+  async function openEditor() {
     if (editing) return;
     if (token) {
       startEditing();
       return;
+    }
+    if (deviceRemembered && editorConfig?.configured) {
+      const editButton = document.getElementById('wikiEditButton');
+      editButton.disabled = true;
+      editButton.textContent = 'Unlocking…';
+      try {
+        token = await recoverDeviceToken();
+        if (!token) throw new Error('Saved device access is no longer current.');
+        await verifyRepositoryAccess(token, editorConfig);
+        editButton.classList.add('is-unlocked');
+        editButton.textContent = `Edit as ${editorName}`;
+        startEditing();
+        return;
+      } catch (error) {
+        console.warn(error);
+        token = '';
+        await forgetDeviceToken();
+      } finally {
+        editButton.disabled = false;
+        if (!token) editButton.textContent = 'Edit page';
+      }
     }
     if (!editorConfig?.configured) showSetup();
     else showUnlock();
@@ -476,6 +573,7 @@
       <form id="wikiUnlockForm">
         <label class="wiki-field"><span>Editor name</span><input id="wikiEditorName" autocomplete="name" value="${escapeAttribute(editorName)}" required></label>
         <label class="wiki-field"><span>Shared editor passphrase</span><input id="wikiPassphrase" type="password" autocomplete="current-password" required></label>
+        <label class="wiki-check"><input id="wikiRememberDevice" type="checkbox" checked><span>Remember this private device<small>Future visits will open editing with one press. Leave this off on a shared phone or computer.</small></span></label>
         <div class="wiki-error" id="wikiFormError" role="alert"></div>
         <div class="wiki-dialog-actions"><button class="wiki-primary" type="submit">Unlock editor</button><button class="wiki-secondary" id="wikiUnlockCancel" type="button">Cancel</button></div>
       </form>`);
@@ -494,6 +592,10 @@
         await verifyRepositoryAccess(token, editorConfig);
         editorName = name;
         sessionStorage.setItem('arthratanEditorName', editorName);
+        localStorage.setItem('arthratanEditorName', editorName);
+        if (document.getElementById('wikiRememberDevice').checked) {
+          try { await rememberDeviceToken(token); } catch (rememberError) { console.warn('This browser could not remember editor access', rememberError); }
+        }
         document.getElementById('wikiEditButton').classList.add('is-unlocked');
         document.getElementById('wikiEditButton').textContent = `Edit as ${editorName}`;
         closeDialog();
@@ -537,6 +639,7 @@
           <button class="wiki-secondary" id="wikiGeneratePass" type="button">Generate</button>
         </div>
         <label class="wiki-field"><span>Confirm shared passphrase</span><input id="wikiSetupPassConfirm" type="password" autocomplete="new-password" minlength="20" required></label>
+        <label class="wiki-check"><input id="wikiSetupRemember" type="checkbox" checked><span>Remember this private device<small>Future visits will open editing with one press.</small></span></label>
         <div class="wiki-error" id="wikiFormError" role="alert"></div>
         <div class="wiki-dialog-actions"><button class="wiki-primary" type="submit">Encrypt & activate editor</button><button class="wiki-secondary" id="wikiSetupCancel" type="button">Cancel</button></div>
       </form>`);
@@ -573,6 +676,10 @@
         token = rawToken;
         editorName = name;
         sessionStorage.setItem('arthratanEditorName', editorName);
+        localStorage.setItem('arthratanEditorName', editorName);
+        if (document.getElementById('wikiSetupRemember').checked) {
+          try { await rememberDeviceToken(token); } catch (rememberError) { console.warn('This browser could not remember editor access', rememberError); }
+        }
         document.getElementById('wikiEditButton').classList.add('is-unlocked');
         document.getElementById('wikiEditButton').textContent = `Edit as ${editorName}`;
         document.getElementById('wikiSetupToken').value = '';
@@ -594,6 +701,7 @@
       fetchJson(EDITS_URL, emptyEdits())
     ]);
     siteEdits = {...emptyEdits(), ...siteEdits, pages: siteEdits.pages || {}, chrome: siteEdits.chrome || {slots: {}}};
+    if (editorConfig?.configured) await detectRememberedDevice();
     applyEdits();
     observer = new MutationObserver(queueHydrate);
     observer.observe(document.getElementById('main'), {childList: true, subtree: true});
