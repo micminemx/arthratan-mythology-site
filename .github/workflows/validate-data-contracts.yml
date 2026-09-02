@@ -1,0 +1,39 @@
+name: QA-006 Data Contract Validation
+
+on:
+  pull_request:
+    paths:
+      - 'data/**/*.json'
+      - 'scripts/validate-data-contracts.mjs'
+      - '.github/workflows/validate-data-contracts.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**/*.json'
+      - 'scripts/validate-data-contracts.mjs'
+      - '.github/workflows/validate-data-contracts.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qa-006-data-contracts-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-data-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate dataset contracts and references
+        run: node scripts/validate-data-contracts.mjs
