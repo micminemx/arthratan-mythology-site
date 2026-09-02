@@ -3,13 +3,14 @@
   "canonical_sender_messages": 128,
   "source_bearing_transmissions": 118,
   "non_source_or_reply_shell_messages": 10,
-  "preserved_source_files": 90,
-  "remaining_source_files": 28,
+  "preserved_source_files": 93,
+  "remaining_source_files": 25,
   "preservation_rule": "Retain each new Zubaida-authored transmission once. Preserve the complete new top-level body; remove quoted reply chains only to prevent duplication. Never summarize source text in place of preservation.",
   "sync_policy": "Commit completed preservation packets directly to main in small atomic commits; update this checkpoint after each preservation batch.",
   "latest_preserved_batch": [
-    "19ebdf5c2d46c894",
-    "19eb92b5bb44b764"
+    "19eb127ca13484b2",
+    "19eacd8e1382f217",
+    "19e7cd57129cb418"
   ],
   "next_priority": [
     "19ee316d9a81b6b3",
@@ -20,8 +21,8 @@
     "19f8750d4d5532be",
     "19f810f599ae9ccc",
     "19f7d9faf4778440",
-    "19eb127ca13484b2",
-    "19eacd8e1382f217"
+    "19e7b1ae42d2b9f4",
+    "19ea8dbac2dea56e"
   ],
   "post_source_tasks": [
     "explicitly classify the 10 non-source/reply-shell message IDs in zubaida-index.json",
