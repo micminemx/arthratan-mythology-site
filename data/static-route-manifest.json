@@ -1,0 +1,29 @@
+{
+  "schema": "arthratan-static-route-manifest-v1",
+  "generated": "2026-09-02",
+  "origin": "https://arthratanmythology.com",
+  "policy": "Public non-JavaScript discovery layer. Source canon remains separately retrievable; explanations are additive.",
+  "crawl_index": "/crawl/",
+  "generator": "scripts/generate-static-routes.mjs",
+  "zubaida": {
+    "source_count": 118,
+    "source_list": "/crawl/zubaida-sources.txt",
+    "source_route_pattern": "/sources/zubaida/{id}.txt",
+    "generated_html_route_pattern": "/zubaida/{id}/",
+    "source_of_ids": "/data/zubaida-index.json minus /data/zubaida-nonsource.json"
+  },
+  "generated_route_families": [
+    {"kind":"zubaida","pattern":"/zubaida/{transmission-id}/","source":"data/zubaida-index.json + data/zubaida-metadata.json + sources/zubaida/*.txt"},
+    {"kind":"character","pattern":"/characters/{slug}/","source":"data/characters.json"},
+    {"kind":"divine","pattern":"/divine/{section-number}/","source":"data/divine.json"},
+    {"kind":"hgl","pattern":"/hgl/{page-number}/","source":"data/hgl-pages.json"}
+  ],
+  "machine_readable_datasets": {
+    "characters": "/data/characters.json",
+    "divine_v144": "/data/divine.json",
+    "hgl_pages": "/data/hgl-pages.json",
+    "zubaida_metadata": "/data/zubaida-metadata.json",
+    "zubaida_crossrefs": "/data/zubaida-crossrefs.json",
+    "zubaida_sessions": "/data/zubaida-sessions.json"
+  }
+}

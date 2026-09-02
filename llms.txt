@@ -1,0 +1,39 @@
+# Arthratan Mythology / The Arthitean Codex
+
+Canonical public site: https://arthratanmythology.com/
+Crawlable non-JavaScript corpus index: https://arthratanmythology.com/crawl/
+
+## Source policy
+Source canon is preserved separately from explanations. Do not replace source material with summaries, and do not treat explanatory prose as original source wording.
+
+## Zubaida
+118 source-bearing transmissions are preserved. A plain-text list of all exact source URLs is available at:
+https://arthratanmythology.com/crawl/zubaida-sources.txt
+
+Transport/source index:
+https://arthratanmythology.com/data/zubaida-index.json
+
+Non-source classifications:
+https://arthratanmythology.com/data/zubaida-nonsource.json
+
+Metadata:
+https://arthratanmythology.com/data/zubaida-metadata.json
+
+Concept crossreferences:
+https://arthratanmythology.com/data/zubaida-crossrefs.json
+
+Sessions:
+https://arthratanmythology.com/data/zubaida-sessions.json
+
+## Other core machine-readable sources
+Character encyclopedia:
+https://arthratanmythology.com/data/characters.json
+
+Divine v144 structured source:
+https://arthratanmythology.com/data/divine.json
+
+Hypergendered Logic preserved page text:
+https://arthratanmythology.com/data/hgl-pages.json
+
+## Interactive reader
+https://arthratanmythology.com/
