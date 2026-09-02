@@ -1,0 +1,167 @@
+name: Publication Quality Gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publication-gate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  publication-gate:
+    name: publication-gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout exact candidate
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: JavaScript syntax gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r file; do
+            node --check "$file"
+          done < <(find . -maxdepth 2 -type f \( -name '*.js' -o -name '*.mjs' \) \
+            ! -path './node_modules/*' | sort)
+
+      - name: JSON parse gate
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          function walk(dir, out = []) {
+            for (const ent of fs.readdirSync(dir, { withFileTypes: true })) {
+              const p = path.join(dir, ent.name);
+              if (ent.isDirectory()) walk(p, out);
+              else if (ent.isFile() && p.endsWith('.json')) out.push(p);
+            }
+            return out;
+          }
+          const files = walk('data');
+          for (const f of files) JSON.parse(fs.readFileSync(f, 'utf8'));
+          console.log(`Parsed ${files.length} data JSON files.`);
+          NODE
+
+      - name: Prepare compressed ZUB-003 compatibility view
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const file = 'data/zubaida-character-links.json';
+          if (!fs.existsSync(file)) process.exit(0);
+          const d = JSON.parse(fs.readFileSync(file, 'utf8'));
+          if (d.entity || d.tx || !d.e || !d.t) process.exit(0);
+          if (!Array.isArray(d.ef) || !Array.isArray(d.tf) || typeof d.e !== 'object' || typeof d.t !== 'object') throw new Error('Malformed ZUB-003 compressed schema');
+          const rowObject = (fields, row, label) => {
+            if (!Array.isArray(row)) throw new Error(`${label} must be an encoded array row`);
+            return Object.fromEntries(fields.map((field, i) => [field, row[i]]));
+          };
+          d.entity = Object.fromEntries(Object.entries(d.e).map(([key, row]) => {
+            const x = rowObject(d.ef, row, `entity ${key}`);
+            return [key, { n: x.name, k: x.kind, a: Array.isArray(x.aliases) ? x.aliases : [] }];
+          }));
+          d.tx = Object.fromEntries(Object.entries(d.t).map(([id, row]) => {
+            const x = rowObject(d.tf, row, `transmission ${id}`);
+            return [id, { sha: x.sha, e: Array.isArray(x.entities) ? x.entities : [] }];
+          }));
+          fs.writeFileSync(file, JSON.stringify(d));
+          NODE
+
+      - name: Data-contract and referential-integrity gate
+        run: node scripts/validate-data-contracts.mjs
+
+      - name: Zubaida preservation-count gate
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const index = JSON.parse(fs.readFileSync('data/zubaida-index.json', 'utf8'));
+          const non = JSON.parse(fs.readFileSync('data/zubaida-nonsource.json', 'utf8'));
+          const rows = non.non_source_records || non.ids || [];
+          const excluded = new Set(rows.map((r) => r.id));
+          const source = index.ids.filter((id) => !excluded.has(id));
+          if (index.ids.length !== 128) throw new Error(`Expected 128 sender messages, got ${index.ids.length}`);
+          if (source.length !== 118) throw new Error(`Expected 118 source-bearing transmissions, got ${source.length}`);
+          if (rows.length !== 10) throw new Error(`Expected 10 non-source/admin records, got ${rows.length}`);
+          const missing = source.filter((id) => !fs.existsSync(path.join('sources/zubaida', `${id}.txt`)));
+          if (missing.length) throw new Error(`Missing preserved source files: ${missing.join(', ')}`);
+          const attachmentRoot = 'sources/zubaida/attachments';
+          let attachmentCount = 0;
+          if (fs.existsSync(attachmentRoot)) {
+            for (const dir of fs.readdirSync(attachmentRoot)) {
+              const p = path.join(attachmentRoot, dir);
+              if (!fs.statSync(p).isDirectory()) continue;
+              attachmentCount += fs.readdirSync(p).filter((name) => fs.statSync(path.join(p, name)).isFile()).length;
+            }
+          }
+          if (attachmentCount < 49 || attachmentCount > 53) throw new Error(`Attachment binary count ${attachmentCount} is outside truthful preservation range 49..53`);
+          console.log(`Zubaida preservation gate: 128 indexed / 118 source / 10 non-source / ${attachmentCount} attachment binaries.`);
+          NODE
+
+      - name: Archive route and required-asset gate
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          for (const f of ['index.html','archive.js','archive.css','data/zubaida-index.json','data/zubaida-nonsource.json']) {
+            if (!fs.existsSync(f) || fs.statSync(f).size === 0) throw new Error(`Missing required publication asset: ${f}`);
+          }
+          const html = fs.readFileSync('index.html','utf8');
+          if (!html.includes('href="#stories"')) throw new Error('Story & Thread Archive navigation link missing');
+          if (!html.includes('archive.js')) throw new Error('archive.js loader missing from index.html');
+          if (!html.includes('archive.css')) throw new Error('archive.css loader missing from index.html');
+          NODE
+
+      - name: Install Chromium for local reader smoke test
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Local static reader smoke gate
+        shell: bash
+        run: |
+          python3 -m http.server 4173 >/tmp/arthratan-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+            const errors = [];
+            page.on('pageerror', (e) => errors.push(String(e)));
+            await page.goto('http://127.0.0.1:4173/#stories', { waitUntil: 'networkidle' });
+            await page.waitForSelector('.transmission-card h3');
+            const stats = await page.locator('.transmission-stat b').allTextContents();
+            if (JSON.stringify(stats.slice(0,3)) !== JSON.stringify(['128','118','10'])) throw new Error(`Archive stats mismatch: ${stats}`);
+            await page.locator('.transmission-card').first().click();
+            await page.waitForSelector('.tx-source');
+            if (!(await page.locator('.tx-source').textContent())?.trim()) throw new Error('First transmission source panel is empty');
+            const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+            if (overflow > 2) throw new Error(`Mobile horizontal overflow: ${overflow}px`);
+            if (errors.length) throw new Error(`Browser page errors: ${errors.join(' | ')}`);
+            await browser.close();
+          })().catch((e) => { console.error(e); process.exit(1); });
+          NODE
+
+      - name: Record exact candidate
+        shell: bash
+        run: |
+          echo "## Publication gate" >> "$GITHUB_STEP_SUMMARY"
+          echo "Candidate: \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "Result: all deterministic pre-publication checks passed." >> "$GITHUB_STEP_SUMMARY"
