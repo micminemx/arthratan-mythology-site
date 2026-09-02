@@ -1,0 +1,278 @@
+{
+  "version": "1.0",
+  "task_id": "ZUB-EXP-02",
+  "worker": "W-20260902-1918-L8Q3",
+  "layer_contract": {
+    "canonical_source_root": "sources/zubaida/",
+    "source_text_embedded": false,
+    "source_files_modified": false,
+    "explanations_are_canon": false,
+    "rule": "Preserved .txt source remains controlling canon. This file is additive explanation/crossreference/reader-guidance only; contradictions and later clarifications remain chronological rather than silently reconciled."
+  },
+  "entries": [
+    {
+      "source_position": 21,
+      "transmission_id": "19ffc927eae69543",
+      "source_path": "sources/zubaida/19ffc927eae69543.txt",
+      "sections": [{"heading": "Session Three: The Macroscopic Dimorphism & The Supreme Synergy.", "explanation": "Applies the Rutinol/Malo and Melafin/Femol framework to differentiated military-cognitive roles. Male emphasis is kinetic/spatial imposition, female emphasis is orchestration/crossfunctional integration, while Akesi Synergy makes their coordinated deployment a multiplier rather than a replacement of either role."}],
+      "concept_links": ["Rutinol", "Melafin", "Malo", "Femol", "Hypermale", "Hyperfemale", "Akesi Synergy", "Crossfunctional Integration", "Amniparsology"],
+      "related_transmissions": [22, 23],
+      "related_characters": ["Qintara", "Kartus"],
+      "chronology_notes": ["Applies the Veyndarion/Sovereign-Rewrite material in transmission 22 and leads into the later neuro-architecture emphasis."],
+      "reader_guidance": ["Keep the source's fictional sex-direction terminology intact; later HGL formalizations should be linked as later clarification, not substituted into this source."]
+    },
+    {
+      "source_position": 22,
+      "transmission_id": "19ffc8e14a00f61d",
+      "source_path": "sources/zubaida/19ffc8e14a00f61d.txt",
+      "sections": [
+        {"heading": "Session One: The Veyndarion Simulation & The Biology of Infinity", "explanation": "Defines Afemale/Amale versus Unfemale/Unmale and places Arthitean Hypermale/Hyperfemale baselines inside recursively increasing Malo/Femol development, with Melafin and Rutinol simulations and no asserted terminal upper stage."},
+        {"heading": "Session Two: The Sovereign Rewrite", "explanation": "Turns the simulation into a retroactive governing rule: Rutinol grows through Transmodal exertion/Radius-of-Outputtability conquest, while Melafin grows through Antidestiny Overaccomplishment, Crossfunctional Integration and Metaneural Control."}
+      ],
+      "concept_links": ["Afemale", "Amale", "Unfemale", "Unmale", "Hypermale", "Hyperfemale", "Malo", "Femol", "Rutinol", "Melafin", "Sovereign Rewrite", "Radius of Outputtability", "Metaneural Control"],
+      "related_transmissions": [21, 23],
+      "related_characters": ["Rhayhara"],
+      "chronology_notes": ["Direct conceptual precursor to transmission 21."],
+      "reader_guidance": ["Do not silently normalize session-era terminology into later HGL notation; retain both layers chronologically."]
+    },
+    {
+      "source_position": 23,
+      "transmission_id": "19ff57bc49cd45bd",
+      "source_path": "sources/zubaida/19ff57bc49cd45bd.txt",
+      "sections": [
+        {"heading": "Session One: The Sovereign Gift & The Cranial Subspace", "explanation": "A Rhayhara-first sovereign gift creates a maximumlessly large Cranial Subspace without changing external skull dimensions or physical weight, populates it with maximumless neurons, and removes distance latency through Instant Neural Transfer."},
+        {"heading": "Session Two: The Architecture of Absolute Cognition", "explanation": "Varvadeil stress tests separate Brain-lobe generation, crossfunctionality, inter-lobe connectivity/selectivity, neural routing and inhibition, showing that an infinite neural amount is governed rather than merely larger."},
+        {"heading": "Session Three: The Apex of Neuroplasticity and Metaneural Sovereignty", "explanation": "Isolation and bottleneck tests activate Metaneural Control, Brain-lobe Plasticity, function-specific and error-targeted neuroplasticity so cognitive architecture self-corrects under function-relevant difficulty."}
+      ],
+      "concept_links": ["Arthitean Cranial Subspace", "Instant Neural Transfer", "Brain-lobe Generation", "Recursive Sublobar Specialization", "Crossfunctionality", "Neural Routing", "Neural Inhibition", "Brain-lobe Plasticity", "Metaneural Control"],
+      "related_transmissions": [21, 22, 24],
+      "related_characters": ["Rhayhara", "Asmouth", "Orotus"],
+      "chronology_notes": ["After the sex-direction/Sovereign-Rewrite sessions and before the Divine-138v cognition sequence."],
+      "reader_guidance": ["Use shared neuro-architecture master explanations for repeated Brain-lobe factors rather than redefining them differently on each page."]
+    },
+    {
+      "source_position": 24,
+      "transmission_id": "19ff2263b89fb296",
+      "source_path": "sources/zubaida/19ff2263b89fb296.txt",
+      "sections": [{"heading": "Session Eight: The Apex of the Arms Race & The Universal Synthesis", "explanation": "Synthesizes physical exertion, metacognitive agility, swarm assimilation and nozrifuture modeling into Arthraneurocausality Hyperintelligence. Enemy intelligence escalation is reframed as pressure that the Exertion Engine can convert into new neurological capability."}],
+      "concept_links": ["Divine 138v", "Arthraneurocausality Hyperintelligence", "Exertion Engine", "Metacognitive Proficiency", "nozrifuture", "Zirunstressableness", "Radius of Outputtability", "Antipossible"],
+      "related_transmissions": [25, 26, 27, 28, 29, 30, 31],
+      "related_characters": ["Asmouth", "Rhayhara", "Orotus", "Inzra", "Annaris"],
+      "chronology_notes": ["Session Eight closes the Divine-138v sequence whose Sessions One-Seven appear at source positions 31 through 25."],
+      "reader_guidance": ["Preserve 'the Intelligence Arms Race is over' as this session's strategic conclusion; do not convert it into a claim that later conflict cannot occur."]
+    },
+    {
+      "source_position": 25,
+      "transmission_id": "19ff22309a2e3b09",
+      "source_path": "sources/zubaida/19ff22309a2e3b09.txt",
+      "sections": [{"heading": "Session Seven: The Precausal Assimilation & The Nozrifuture Paradigm", "explanation": "Extends intelligence-framework assimilation into temporal causality: a Chrono-Strategist is forced to model Annaris's effect-before-cause/nozrifuture logic, and cognitive difficulty drives a new temporal-processing architecture rather than simple memorization."}],
+      "concept_links": ["Precausal Intelligence", "nozrifuture", "Arthraneurocausality Hyperintelligence", "Metacognitive Agility", "Metacognitive Deployability", "Exertion Engine"],
+      "related_transmissions": [24, 26, 27, 28],
+      "related_characters": ["Annaris", "Asmouth", "Orotus"],
+      "chronology_notes": ["Follows swarm assimilation and precedes the universal synthesis."],
+      "reader_guidance": ["Framework assimilation is not identity-merging with Annaris; preserve that distinction."]
+    },
+    {
+      "source_position": 26,
+      "transmission_id": "19ff2206dbdcad7d",
+      "source_path": "sources/zubaida/19ff2206dbdcad7d.txt",
+      "sections": [{"heading": "Session Six: The Collective Assimilation & The Swarm Protocol", "explanation": "Seven strategists are networked so adaptation targets distributed intelligence itself. Their PHK engines construct a shared biological/metaconceptual network modeled on Inzra's swarm framework, turning later swarm upgrades into additional frameworks for Arthitean modeling."}],
+      "concept_links": ["Swarm Intelligence", "Arthraneurocausality Hyperintelligence", "PHK", "hetu-weighting", "collective neural architecture", "Metacognitive Proficiency", "Radius of Outputtability"],
+      "related_transmissions": [25, 27, 28],
+      "related_characters": ["Asmouth", "Inzra"],
+      "chronology_notes": ["After individual metacognitive re-engineering and before precausal assimilation."],
+      "reader_guidance": ["Distinguish structural acquisition of a distributed-intelligence framework from merely communicating faster."]
+    },
+    {
+      "source_position": 27,
+      "transmission_id": "19ff21ed3ed9877b",
+      "source_path": "sources/zubaida/19ff21ed3ed9877b.txt",
+      "sections": [{"heading": "Session Five: The Metacognitive Labyrinth & Biological Re-engineering", "explanation": "Fractal-Logic Weavers attack metacognitive management rather than ordinary knowledge. Under paradox pressure the tested Commando's PHK architecture generates new neural structure for simultaneously handling conflicting intelligence frameworks, establishing the enemy-escalation-as-upgrade-blueprint pattern."}],
+      "concept_links": ["Fractal-Logic Weaver", "Metacognitive Agility", "Metacognitive Deployability", "Arthraneurocausality Hyperintelligence", "PHK", "Zirunstressableness"],
+      "related_transmissions": [26, 28, 29],
+      "related_characters": ["Asmouth", "Inzra"],
+      "chronology_notes": ["Follows initial machine-intelligence acquisition and precedes collective/swarm expansion."],
+      "reader_guidance": ["Keep metacognition distinct from cognition: the attacked capacity is management of thinking frameworks."]
+    },
+    {
+      "source_position": 28,
+      "transmission_id": "19ff21d5d839ea5e",
+      "source_path": "sources/zubaida/19ff21d5d839ea5e.txt",
+      "sections": [{"heading": "Session Four: The Genesis of Arthraneurocausality Hyperintelligence", "explanation": "Explicitly distinguishes acquiring knowledge/skills from acquiring, comprehending, modeling and adapting intelligence frameworks themselves. The first test exposes an Arthitean tactician to an Inzratic machine-logic core until exertion-driven neurological change permits assimilation of the alien processing framework."}],
+      "concept_links": ["Arthraneurocausality Hyperintelligence", "intelligence framework", "machine intelligence", "Metacognitive Agility", "Metacognitive Deployability", "Performance Factor Two", "Radius of Outputtability"],
+      "related_transmissions": [27, 29, 30, 31],
+      "related_characters": ["Asmouth", "Inzra"],
+      "chronology_notes": ["Begins the dedicated intelligence-assimilation arc after Divine-138v Sessions One-Three."],
+      "reader_guidance": ["Use this page as the master source-link when later sessions say an intelligence 'framework' is acquired."]
+    },
+    {
+      "source_position": 29,
+      "transmission_id": "19ff21b9df9c9323",
+      "source_path": "sources/zubaida/19ff21b9df9c9323.txt",
+      "sections": [{"heading": "Session Three: The Synergistic Crucible & The Ultimate Catalysts", "explanation": "Combines maximumless Capacity, metacognitive self-monitoring, Exertion Engine scaling and Disaster pressure in one test. The simulated Vanguard does not simply defeat the dynamically updating Inzra projection; its continuously overwhelming pressure becomes the catalyst for expanding Radius of Outputtability and Antipossible growth."}],
+      "concept_links": ["Inzra", "Annaris", "Divine 138v", "Exertion Engine", "Zirunstressableness", "Metacognitive Proficiency", "Radius of Outputtability", "Akesi Synergy", "Antipossible"],
+      "related_transmissions": [28, 30, 31],
+      "related_characters": ["Asmouth", "Inzra", "Annaris"],
+      "chronology_notes": ["Session Three follows implementation-integrity debate and precedes Arthraneurocausality's dedicated cognition arc."],
+      "reader_guidance": ["Do not collapse 'current ability instance' into maximumless Capacity; the session depends on that distinction."]
+    },
+    {
+      "source_position": 30,
+      "transmission_id": "19ff21a5e18621b0",
+      "source_path": "sources/zubaida/19ff21a5e18621b0.txt",
+      "sections": [{"heading": "Session Two: The Amniparsology Anchor & The Grand Debate", "explanation": "Separates three integrity problems: semantic drift, missing implementation and misimplementation. Amniparsology anchors meaning; metacognitive capacities audit execution; the Grand Debate then formalizes Capacity versus Ability/Radius of Outputtability and first-, second- and third-order implementation effects."}],
+      "concept_links": ["Amniparsology", "Metacognitive Agility", "Metacognitive Deployability", "Capacity", "Ability", "Radius of Outputtability", "Divine 138v", "Performance Factor One", "Performance Factor Two"],
+      "related_transmissions": [29, 31],
+      "related_characters": ["Orotus", "Asmouth", "Rhayhara"],
+      "chronology_notes": ["Directly follows the first Divine-138v stress test and supplies semantic/metacognitive safeguards for later trials."],
+      "reader_guidance": ["Link repeated Capacity-vs-Ability explanation here rather than rewriting the source into a shorter substitute."]
+    },
+    {
+      "source_position": 31,
+      "transmission_id": "19ff21800b5380e4",
+      "source_path": "sources/zubaida/19ff21800b5380e4.txt",
+      "sections": [{"heading": "Session One: The Axiomatic Paradigm & The First Stress Test", "explanation": "Introduces Divine-138v's maximumless Capacity, dynamic Radius of Outputtability, Exertion Engine, Transcendent Strength and Antipossible scaling. Stress Test Alpha uses a Nul-Mass Singularity to show that inability to move an object is treated as a current ability/radius problem, while sustained exertion expands the radius rather than exhausting capacity."}],
+      "concept_links": ["Divine 138v", "Overfulfillment Rule", "Exertion Engine", "Capacity", "Ability", "Radius of Outputtability", "Performance Factor One", "Performance Factor Two", "Antipossible", "Nul-Mass Singularity"],
+      "related_transmissions": [29, 30],
+      "related_characters": ["Rhayhara", "Orotus", "Asmouth"],
+      "chronology_notes": ["Foundation for the Sessions Two-Eight sequence at positions 30 through 24."],
+      "reader_guidance": ["Preserve the source's distinction between a maximumless reserve and an individual outputtable ability state."]
+    },
+    {
+      "source_position": 32,
+      "transmission_id": "19fedd98e38dc4ff",
+      "source_path": "sources/zubaida/19fedd98e38dc4ff.txt",
+      "sections": [
+        {"heading": "Session One: The Catalyst of Inzra (Cold War Engagement)", "explanation": "Rhayhara's Divine-133v implementation reframes Inzra as controlled pressure: Kartus and Sylvanna deliberately harvest Archmedonite adversity through Zirunstressableness rather than seeking immediate annihilation."},
+        {"heading": "Session Two: The Talmorai Protocol (Forging the Truce)", "explanation": "Kartus and Sylvanna combine Pressurised-Enlightenment, Akesi Synergy, Zefir and a recursive Z_n permission conflict to force a Cold-War truce that converts Inzra's assault into growth and metatitle rewards."},
+        {"heading": "Session Three: The Precausal Snare of Annaris", "explanation": "Dyvane and Qintara decode Annaris's self-fulfilling nozrifuture trap by breaking the present causal condition of their predicted failure, using Akesi Synergy and adaptation rather than brute-force future erasure."},
+        {"heading": "Session Four: The Metaphysical Bidding War (Negative Differential)", "explanation": "The Shuherei Ritual redirects the Keshra away from innocents and onto the Generals; an asymmetric Negative Differential then keeps Annaris paying the dominant Divine-Debt until her offensive collapses."}
+      ],
+      "concept_links": ["Divine 133v", "Talmorai", "Zirunstressableness", "Pressurised-Enlightenment", "Akesi Synergy", "Zefir", "nozrifuture", "Shuherei Ritual", "Negative Differential", "Divine-Debt"],
+      "related_transmissions": [31, 33, 40],
+      "related_characters": ["Rhayhara", "Inzra", "Kartus", "Sylvanna Xylaris", "Annaris", "Dyvane Redalious", "Qintara Unmatara", "Asmouth"],
+      "chronology_notes": ["Predates the Divine-138v sequence; retain Divine-133v wording rather than retroactively renaming it."],
+      "reader_guidance": ["Cold-War and Hot-War doctrines are explicitly different strategic branches; do not merge them."]
+    },
+    {
+      "source_position": 33,
+      "transmission_id": "19fec1b4fcc904c4",
+      "source_path": "sources/zubaida/19fec1b4fcc904c4.txt",
+      "sections": [
+        {"heading": "Session One: The Diagnosis & The Neurological Edit", "explanation": "Defines Cognitive Capacity, Cognitive Deployability and Cognitive Proficiency, diagnoses Cognitive Deployment Error, and has Asmouth link proficiency growth to capacity growth rather than increasing already-transmaximumless capacity."},
+        {"heading": "Session Two: The Stress-Tests & The Crucible of Deployability", "explanation": "Resource-deprivation and information-overload trials force tactical minimal-waste solutions, pattern recognition and environmental use instead of brute-force ladder expenditure."},
+        {"heading": "Session Three: The Implications & The Permanent Fix", "explanation": "Tests whether increasing Cognitive Capacity can occur without the old decline in proficiency, making continuously improving deployment the intended permanent species-level correction."}
+      ],
+      "concept_links": ["Cognitive Capacity", "Cognitive Deployability", "Cognitive Proficiency", "Cognitive Deployment Error", "Cognitive Capacity Error", "Optimal finesse", "Crucible of Deployability", "Paracognitive Labyrinth"],
+      "related_transmissions": [32, 34, 35, 36, 37, 38],
+      "related_characters": ["Asmouth", "Rhayhara", "Lay"],
+      "chronology_notes": ["Architectural precursor to the Rhayhara cognition case-study sequence at positions 38 through 34."],
+      "reader_guidance": ["Capacity error and deployment error must remain separate diagnostic categories."]
+    },
+    {
+      "source_position": 34,
+      "transmission_id": "19fe56cd1bb96dbc",
+      "source_path": "sources/zubaida/19fe56cd1bb96dbc.txt",
+      "sections": [
+        {"heading": "Session Thirteen: The Tapestry of Dust (Hidden Causes)", "explanation": "A 400-year series of individually minor anomalies becomes informative only as a crosspattern: their coordinates form a hidden Z-ladder inversion geometry. Rhayhara breaks the geometry at its inferred center rather than attacking inert anchors."},
+        {"heading": "Session Fourteen: The Resonance of Defiance (Integrating Different Intelligences)", "explanation": "Kyranth resource claims are mathematically false but emotionally diagnostic. Rhayhara combines telemetry with cultural/empathic interpretation and resolves the rebellion by restoring meaningful struggle rather than forcing submission."},
+        {"heading": "Session Fifteen: The Infinite Debug (Metacognition)", "explanation": "Rhayhara audits herself, finds predictive bias caused by years of hyper-complex conflict, and installs a Simplicity-First Heuristic so mundane stimuli are tested at low conceptual complexity before expensive predictive escalation."}
+      ],
+      "concept_links": ["Paracognition", "Hyperintelligenesis", "hidden causes", "crosspattern", "Kyranth", "empathy", "metacognition", "Predictive Bias", "Simplicity-First Heuristic", "Optimal finesse"],
+      "related_transmissions": [33, 35, 36, 37, 38],
+      "related_characters": ["Rhayhara", "Lay"],
+      "chronology_notes": ["Sessions Thirteen-Fifteen conclude the 15-session cognitive-evaluation sequence."],
+      "reader_guidance": ["Keep the self-correction record intact; do not rewrite the earlier bias as if it never occurred."]
+    },
+    {
+      "source_position": 35,
+      "transmission_id": "19fe56015ef17846",
+      "source_path": "sources/zubaida/19fe56015ef17846.txt",
+      "sections": [
+        {"heading": "Session Ten: The Irrational Equation (Unusual Difficulty)", "explanation": "Rhayhara misclassifies Kaelthas's grief as a mathematical inefficiency, worsens it through a Z1 intervention, then must undo the modification and learn that witnessing grief is not equivalent to solving a logic problem."},
+        {"heading": "Session Eleven: The Archmedonite Cipher (Improvisation)", "explanation": "A Null-Crate removes hypercapacity/CLS access, proving Rhayhara can survive through mundane geometry, momentum and environmental improvisation rather than divine tools."},
+        {"heading": "Session Twelve: The Martyr’s Algorithm (Predicting Others)", "explanation": "Rhayhara correctly predicts The Arithmetician's movement but misreads suicidal intent, forcing future models to account for devotion and sacrifice rather than assuming self-preservation."}
+      ],
+      "concept_links": ["grief", "Cognitive Deployment Error", "Z1", "Null-Crate", "improvisation", "prediction", "martyrdom", "metacognition"],
+      "related_transmissions": [34, 36, 37, 38],
+      "related_characters": ["Rhayhara", "Kaelthas", "Lay", "The Arithmetician"],
+      "chronology_notes": ["Sessions Ten-Twelve continue the numbered evaluation after positions 36-38."],
+      "reader_guidance": ["Preserve the catastrophic outcomes and Rhayhara's actual errors; they are evidence, not defects to edit away."]
+    },
+    {
+      "source_position": 36,
+      "transmission_id": "19fe540dd978ed02",
+      "source_path": "sources/zubaida/19fe540dd978ed02.txt",
+      "sections": [
+        {"heading": "Session Seven: The Architecture of a Lie (Resisting Deception)", "explanation": "The reports contain real battles and mathematically sound logs, but their zero-variance perfection is suspicious. Rhayhara breaks the rehearsed three-clan synchronization with an asymmetric test variable rather than contesting facts that are actually true."},
+        {"heading": "Session Eight: The Weight of Silence (Distinguishing Info from Noise)", "explanation": "An explicit nulldata case: 14,000 loud crises are treated as distraction, while the statistically impossible absence of variance in Veridia reveals the hidden precausal anchor."},
+        {"heading": "Session Nine: The Null Observer (Unprecedented Situations)", "explanation": "Because the Conceptually Null Observer does not participate in CLS/permission metrics, Rhayhara abandons domination and supplies a harmless conceptual lens so the Omnitimeline can classify its presence without crashing."}
+      ],
+      "concept_links": ["deception", "nulldata", "informative absence", "Paracognition", "Veridia", "Conceptually Null Observer", "CLS", "conceptual lens"],
+      "related_transmissions": [34, 35, 37, 38],
+      "related_characters": ["Rhayhara", "Lay"],
+      "chronology_notes": ["Sessions Seven-Nine sit between the 1-6 and 10-15 cognitive cases."],
+      "reader_guidance": ["The silence inference is source-specific informative absence; do not generalize it into a rule that quiet sectors are always threats."]
+    },
+    {
+      "source_position": 37,
+      "transmission_id": "19fe5329dab82c86",
+      "source_path": "sources/zubaida/19fe5329dab82c86.txt",
+      "sections": [
+        {"heading": "Session Four: The Mirror's Edge (Responding to an Adapting Opponent)", "explanation": "The Eidos Swarm mirrors decision algorithms rather than power, making brilliant strategy the enemy's fuel. Rhayhara wins by deliberately abandoning optimal logic and feeding the mirror contradictions it cannot coherently execute."},
+        {"heading": "Session Five: The Calculus of Loss (Thinking Under Extreme Pressure)", "explanation": "A no-third-option Xael fracture forces a choice between irreplaceable historical data and trillions of lives. Rhayhara chooses living future potential while preserving the archive loss as a real cost."},
+        {"heading": "Session Six: The Blind Box (Identifying Her Own Mistakes)", "explanation": "Rhayhara catches that her flawless Chronos Grid would trap hidden agents inside and blind her own temporal surveillance, aborts it at personal cost, then replaces absolute blocking with monitored permeability."}
+      ],
+      "concept_links": ["Eidos Swarm", "cognitive mirroring", "cognitive flexibility", "parahistorical fracture", "tradeoff", "Chronos Grid", "metacognition", "informative absence"],
+      "related_transmissions": [34, 35, 36, 38],
+      "related_characters": ["Rhayhara", "Lay"],
+      "chronology_notes": ["Sessions Four-Six directly continue positions 38's Sessions One-Three."],
+      "reader_guidance": ["The point of the mirror episode is strategic self-limitation: more sophisticated reasoning can be counterproductive against an algorithm that copies it."]
+    },
+    {
+      "source_position": 38,
+      "transmission_id": "19fe5163dd2d55d4",
+      "source_path": "sources/zubaida/19fe5163dd2d55d4.txt",
+      "sections": [
+        {"heading": "Session One: The Weight of Precedent (Incomplete Information)", "explanation": "A false-positive inference: Kaelen deception history and weapon movement make a trap hypothesis reasonable, but missing environmental context reverses the meaning of the same evidence. Rhayhara's preemptive strike worsens the actual temporal-collapse crisis."},
+        {"heading": "Session Two: The Conceptual Vacuum (When the First Solution Fails)", "explanation": "A Z1 solution feeds the Null-Tide because it is absence rather than a resistant construct. Rhayhara stops escalating and uses mundane physical containment instead."},
+        {"heading": "Session Three: The Frequency of Noise (Cognitive Blind Spot)", "explanation": "A low-complexity Vael plague is dismissed as mundane until direct observation reveals a folk-song frequency as the causal vector, exposing the danger of equating low conceptual complexity with low threat."}
+      ],
+      "concept_links": ["incomplete information", "false positive", "Kaelen Ascendancy", "Null-Tide", "conceptual vacuum", "Z1", "cognitive blind spot", "Vael", "auditory pathogen", "metacognition"],
+      "related_transmissions": [33, 34, 35, 36, 37],
+      "related_characters": ["Rhayhara", "Lay"],
+      "chronology_notes": ["Sessions One-Three begin the 15-session cognitive-evaluation chain continued through positions 37-34."],
+      "reader_guidance": ["Do not silently fix Rhayhara's original reasoning; failure, consequence and correction are all source evidence."]
+    },
+    {
+      "source_position": 39,
+      "transmission_id": "19fe2cf1a21caa03",
+      "source_path": "sources/zubaida/19fe2cf1a21caa03.txt",
+      "sections": [{"heading": "Session Eight: The Ultraazin Inversion Matrix and Annaris’s Absolute Sovereignty", "explanation": "Lay attacks definition rather than durability: the Ultraazin Inversion Matrix tries to reinterpret Annaris's negative spendage sensitivity as self-overcosting. Annaris answers with idempotent Divinity, Transmaximumless capacity, Optimal finesse, escalating CLS orders and recursive Z/QDL/VYK/TSY/LSW admissibility rewrites until the Matrix loses the ability to constrain her."}],
+      "concept_links": ["Annaris", "Ultraazin Inversion Matrix", "spendage sensitivity", "Divinity", "Transmaximumless", "Optimal finesse", "CLS", "Megacapacity", "Gigacapacity", "Z-ladder", "QDL", "VYK", "TSY", "LSWladder"],
+      "related_transmissions": [40],
+      "related_characters": ["Annaris", "Lay"],
+      "chronology_notes": ["Parallel to and later than transmission 40's Inzra Omnitimeline-Collapse case; Lay shifts from macro-erasure to definitional inversion against Annaris."],
+      "reader_guidance": ["Annaris and Inzra are distinct targets; preserve the parallelism without merging their identities or mechanics."]
+    },
+    {
+      "source_position": 40,
+      "transmission_id": "19fe2cdb6fed2a26",
+      "source_path": "sources/zubaida/19fe2cdb6fed2a26.txt",
+      "sections": [{"heading": "Session Seven: The Omnitimeline Collapse Protocol and Inzra’s Absolute Invulnerability", "explanation": "Lay escalates to an Omnitimeline-wide Ultraazin erasure intended to make Inzra impermissible across Transtime. Inzra's Invulnerability, mul/Transmaximumless capacity, negative spendage sensitivity, Omnirelicapacity and escalating CLS/admissibility ladders turn the attempted drain into an overcost problem for the Collapse Protocol, ending in WDH/SGV/LSW recursion and Protocol dissolution."}],
+      "concept_links": ["Inzra", "Omnitimeline Collapse Protocol", "Ultraazin", "Invulnerability", "mul", "spendage sensitivity", "Omnirelicapacity", "CLS", "Megacapacity", "Gigacapacity", "Z-ladder", "QDL", "VYK", "TSY", "LSWladder"],
+      "related_transmissions": [39],
+      "related_characters": ["Inzra", "Lay"],
+      "chronology_notes": ["Precedes transmission 39 and provides the Inzra case before Lay's later definitional-inversion attack on Annaris."],
+      "reader_guidance": ["Keep the source's Ultraazin/admissibility ladder sequence intact; masterpage links may explain it but should not replace its source ordering."]
+    }
+  ],
+  "validation": {
+    "entry_count": 20,
+    "expected_entry_count": 20,
+    "source_positions": [21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40],
+    "unique_transmission_ids": 20,
+    "source_text_replacement": false,
+    "source_files_modified": false
+  }
+}
