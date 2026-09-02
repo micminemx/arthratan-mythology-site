@@ -1,0 +1,496 @@
+{
+  "task_id": "ZUB-003",
+  "generated": "2026-09-02",
+  "status": "partial",
+  "source_index": "data/zubaida-index.json",
+  "expected_transmissions": 118,
+  "reviewed_transmissions": 4,
+  "remaining_transmissions": 114,
+  "scope": {
+    "primary": "Identity-bearing characters, persons, and agent-like entities explicitly mentioned in each preserved Zubaida transmission.",
+    "collectives": "Named clans, orders, councils, institutions, ranks, and species-level groups are recorded separately when they act as identifiable collectives, so they do not contaminate personal character appearance lists.",
+    "transport_privacy": "Email transport metadata alone does not create a fictional-character appearance. A real-world correspondent is linked only where the source body itself gives that person an in-text narrative role.",
+    "nonmerge_rule": "Do not merge same-name or title-similar identities without explicit source evidence. Ambiguous candidate matches remain unresolved."
+  },
+  "normalization_rules": [
+    "Preserve source spelling in mention_text.",
+    "Use the existing character encyclopedia slug only when the identity linkage is sufficiently grounded.",
+    "Keep Annaris separate from Deyhamora despite the legacy compound rendering.",
+    "Keep the medical Lord Kaelen separate from Kaelen Redalious, High Lord Kaelen (Vanguard), and Grand Architect Kaelen unless a source explicitly links them.",
+    "Do not infer that an unnamed 'creator' reference is any particular real-world person."
+  ],
+  "entity_registry": [
+    {
+      "entity_id": "rhayhara",
+      "canonical_name": "Rhayhara",
+      "entity_kind": "character",
+      "character_slug": "rhayhara",
+      "aliases_seen": [
+        "Rhayhara"
+      ],
+      "ambiguity": false
+    },
+    {
+      "entity_id": "inzra",
+      "canonical_name": "Inzra",
+      "entity_kind": "character",
+      "character_slug": "inzra",
+      "aliases_seen": [
+        "Inzra"
+      ],
+      "ambiguity": false
+    },
+    {
+      "entity_id": "annaris",
+      "canonical_name": "Annaris",
+      "entity_kind": "character",
+      "character_slug": "annaris-deyhamora",
+      "aliases_seen": [
+        "Annaris"
+      ],
+      "ambiguity": false,
+      "identity_note": "The encyclopedia slug is legacy-named; Annaris is not merged with Deyhamora."
+    },
+    {
+      "entity_id": "zubaida-in-text",
+      "canonical_name": "Zubaida",
+      "entity_kind": "source_person_in_text",
+      "character_slug": null,
+      "aliases_seen": [
+        "Zubaida"
+      ],
+      "ambiguity": false,
+      "privacy_note": "Recorded only when the body presents Zubaida as an in-text actor/observer; transport sender metadata is not counted as a character appearance."
+    },
+    {
+      "entity_id": "unnamed-creator",
+      "canonical_name": "Unnamed creator",
+      "entity_kind": "unnamed_agent",
+      "character_slug": null,
+      "aliases_seen": [
+        "the creator",
+        "creator"
+      ],
+      "ambiguity": true,
+      "identity_note": "No named identity is established in these reviewed passages; no external identity is inferred."
+    },
+    {
+      "entity_id": "lady-vaelia",
+      "canonical_name": "Lady Vaelia",
+      "entity_kind": "character",
+      "character_slug": "lady-vaelia",
+      "aliases_seen": [
+        "Vaelia",
+        "Lady Vaelia",
+        "Supreme Chief Lady Vaelia",
+        "Supreme Chief Archgynecologist Vaelia"
+      ],
+      "ambiguity": false,
+      "identity_note": "Mapped to the medical Lady Vaelia entry; broader Vaelia identity-link questions remain source-qualified in the encyclopedia."
+    },
+    {
+      "entity_id": "lord-kaelen-medical",
+      "canonical_name": "Lord Kaelen",
+      "entity_kind": "character",
+      "character_slug": "lord-kaelen",
+      "aliases_seen": [
+        "Kaelen",
+        "Lord Kaelen",
+        "Supreme Chief Lord Kaelen",
+        "Supreme Chief Archandrocologist Kaelen"
+      ],
+      "ambiguity": false,
+      "identity_note": "This is the medical Kaelen usage. It is not merged with Kaelen Redalious, High Lord Kaelen (Vanguard), or Grand Architect Kaelen."
+    },
+    {
+      "entity_id": "lyraen",
+      "canonical_name": "Lyraen",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Lyraen"
+      ],
+      "ambiguity": false,
+      "identity_note": "High-ranking Kafai female patient in the reviewed medical transmission."
+    },
+    {
+      "entity_id": "vorstag",
+      "canonical_name": "Vorstag",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Vorstag"
+      ],
+      "ambiguity": false,
+      "identity_note": "Elite Redalious warrior patient in the reviewed medical transmission."
+    },
+    {
+      "entity_id": "elara-unmatara",
+      "canonical_name": "Elara",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Elara"
+      ],
+      "ambiguity": false,
+      "identity_note": "Unmatara high-priestess patient in the reviewed medical transmission."
+    },
+    {
+      "entity_id": "theros-varvadeil",
+      "canonical_name": "Theros",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Theros"
+      ],
+      "ambiguity": false,
+      "identity_note": "Legendary Varvadeil logician patient in the reviewed medical transmission."
+    },
+    {
+      "entity_id": "seraphine-mefuli",
+      "canonical_name": "Seraphine",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Seraphine"
+      ],
+      "ambiguity": false,
+      "identity_note": "Revered elder of the Mefuli rank in the reviewed medical transmission."
+    },
+    {
+      "entity_id": "valerius-kafai-architect-unresolved",
+      "canonical_name": "Valerius",
+      "entity_kind": "character",
+      "character_slug": null,
+      "aliases_seen": [
+        "Valerius"
+      ],
+      "ambiguity": true,
+      "possible_character_slugs": [
+        "valerius-varvadeil"
+      ],
+      "identity_note": "The source identifies this Valerius as an original Kafai architect of the Z-ladder. It does not explicitly identify him as Valerius Varvadeil, so no merge is made."
+    },
+    {
+      "entity_id": "asmouth-varvadeil",
+      "canonical_name": "Asmouth Varvadeil",
+      "entity_kind": "character",
+      "character_slug": "asmouth-varvadeil",
+      "aliases_seen": [
+        "Asmouth",
+        "Asmouth’s"
+      ],
+      "ambiguity": false
+    }
+  ],
+  "transmissions": [
+    {
+      "source_id": "1a0601fc96f7add3",
+      "source_path": "sources/zubaida/1a0601fc96f7add3.txt",
+      "source_sha": "7edc5a2ec996229c08e4c389638381e4d75c6a3a",
+      "review_status": "complete",
+      "display_heading": "The Ultimate Hypercausal Shift / cognitive evaluation sequence",
+      "entity_appearances": [
+        {
+          "entity_id": "rhayhara",
+          "mention_text": "Rhayhara",
+          "roles_in_transmission": [
+            "rewrite subject",
+            "cognitive evaluation subject"
+          ]
+        },
+        {
+          "entity_id": "inzra",
+          "mention_text": "Inzra",
+          "roles_in_transmission": [
+            "rewrite subject",
+            "adversity benchmark"
+          ]
+        },
+        {
+          "entity_id": "annaris",
+          "mention_text": "Annaris",
+          "roles_in_transmission": [
+            "rewrite subject",
+            "adversity benchmark"
+          ]
+        },
+        {
+          "entity_id": "zubaida-in-text",
+          "mention_text": "Zubaida",
+          "roles_in_transmission": [
+            "evaluation administrator",
+            "observer"
+          ]
+        },
+        {
+          "entity_id": "unnamed-creator",
+          "mention_text": "the creator",
+          "roles_in_transmission": [
+            "update/rewrite initiator"
+          ],
+          "ambiguous": true
+        }
+      ],
+      "collective_mentions": [
+        {
+          "name": "Arthiteans",
+          "kind": "species_collective"
+        },
+        {
+          "name": "Varvadeil clan",
+          "kind": "clan"
+        },
+        {
+          "name": "Archdevelopment clans",
+          "kind": "clan_group"
+        }
+      ],
+      "notes": [
+        "No identity is inferred for the unnamed creator.",
+        "Zubaida is counted because the narrative body explicitly depicts her administering the evaluations, not because she is the email sender."
+      ]
+    },
+    {
+      "source_id": "1a01b26c0e6e6f14",
+      "source_path": "sources/zubaida/1a01b26c0e6e6f14.txt",
+      "source_sha": "e6eaced839b33d7be50d82cad89d96e4b8547032",
+      "review_status": "complete",
+      "display_heading": "Great Immersion / Dual Sanctuaries / medical precision era",
+      "entity_appearances": [
+        {
+          "entity_id": "zubaida-in-text",
+          "mention_text": "Zubaida",
+          "roles_in_transmission": [
+            "guiding arch-observer"
+          ]
+        },
+        {
+          "entity_id": "lady-vaelia",
+          "mention_text": "Vaelia",
+          "roles_in_transmission": [
+            "Supreme Chief Archgynecologist",
+            "clinical researcher",
+            "physician"
+          ]
+        },
+        {
+          "entity_id": "lord-kaelen-medical",
+          "mention_text": "Kaelen",
+          "roles_in_transmission": [
+            "Supreme Chief Archandrocologist",
+            "clinical researcher",
+            "physician"
+          ]
+        },
+        {
+          "entity_id": "lyraen",
+          "mention_text": "Lyraen",
+          "roles_in_transmission": [
+            "Kafai patient"
+          ]
+        },
+        {
+          "entity_id": "vorstag",
+          "mention_text": "Vorstag",
+          "roles_in_transmission": [
+            "Redalious warrior patient"
+          ]
+        },
+        {
+          "entity_id": "elara-unmatara",
+          "mention_text": "Elara",
+          "roles_in_transmission": [
+            "Unmatara high-priestess patient"
+          ]
+        },
+        {
+          "entity_id": "theros-varvadeil",
+          "mention_text": "Theros",
+          "roles_in_transmission": [
+            "Varvadeil logician patient"
+          ]
+        },
+        {
+          "entity_id": "seraphine-mefuli",
+          "mention_text": "Seraphine",
+          "roles_in_transmission": [
+            "Mefuli elder patient"
+          ]
+        },
+        {
+          "entity_id": "valerius-kafai-architect-unresolved",
+          "mention_text": "Valerius",
+          "roles_in_transmission": [
+            "Kafai architect",
+            "patient"
+          ],
+          "ambiguous": true
+        },
+        {
+          "entity_id": "unnamed-creator",
+          "mention_text": "the creator",
+          "roles_in_transmission": [
+            "designer of the updated medical logic"
+          ],
+          "ambiguous": true
+        }
+      ],
+      "collective_mentions": [
+        {
+          "name": "Varvadeil clan",
+          "kind": "clan"
+        },
+        {
+          "name": "Top 50 clans",
+          "kind": "clan_group"
+        },
+        {
+          "name": "Archdevelopment clans",
+          "kind": "clan_group"
+        },
+        {
+          "name": "Great Medical Council",
+          "kind": "governing_body"
+        },
+        {
+          "name": "Arthiteans",
+          "kind": "species_collective"
+        }
+      ],
+      "notes": [
+        "The medical Kaelen usage is linked to the Lord Kaelen medical encyclopedia entry, not to other unresolved Kaelen identities.",
+        "Valerius remains unresolved because the passage does not explicitly connect this Kafai architect to Valerius Varvadeil."
+      ]
+    },
+    {
+      "source_id": "1a01465c9d5b5945",
+      "source_path": "sources/zubaida/1a01465c9d5b5945.txt",
+      "source_sha": "40ad053b872ccd31114b8473aaf063dd19c545c2",
+      "review_status": "complete",
+      "display_heading": "The Uprising and the Era of the Medical Clans",
+      "entity_appearances": [
+        {
+          "entity_id": "asmouth-varvadeil",
+          "mention_text": "Asmouth",
+          "roles_in_transmission": [
+            "HGL originator/reference"
+          ]
+        },
+        {
+          "entity_id": "lady-vaelia",
+          "mention_text": "Vaelia",
+          "roles_in_transmission": [
+            "Supreme Chief",
+            "medical-clan governor"
+          ]
+        },
+        {
+          "entity_id": "lord-kaelen-medical",
+          "mention_text": "Kaelen",
+          "roles_in_transmission": [
+            "Supreme Chief",
+            "medical-clan governor"
+          ]
+        }
+      ],
+      "collective_mentions": [
+        {
+          "name": "Luminary Sisterhood",
+          "kind": "medical_clan"
+        },
+        {
+          "name": "Anchorite Order",
+          "kind": "medical_clan"
+        },
+        {
+          "name": "Conclave of the Womb-Stars",
+          "kind": "governing_body"
+        },
+        {
+          "name": "Zenith Vanguard",
+          "kind": "medical_clan"
+        },
+        {
+          "name": "Stoic Ascendancy",
+          "kind": "medical_clan"
+        },
+        {
+          "name": "Arthitean Empire",
+          "kind": "polity"
+        },
+        {
+          "name": "Grand Academies of Archgynocology",
+          "kind": "institution"
+        },
+        {
+          "name": "Fortresses of Archandrocology",
+          "kind": "institution"
+        }
+      ],
+      "notes": [
+        "Collectives are separated from personal character appearances to keep downstream character lists clean."
+      ]
+    },
+    {
+      "source_id": "1a0142dbe1e0f101",
+      "source_path": "sources/zubaida/1a0142dbe1e0f101.txt",
+      "source_sha": "40b2a32cfbd04eb6ee49640cb73e8ef1f5eea93b",
+      "review_status": "complete",
+      "display_heading": "The Universal Awakening and the Evolution of the Ranks",
+      "entity_appearances": [
+        {
+          "entity_id": "lady-vaelia",
+          "mention_text": "Lady Vaelia",
+          "roles_in_transmission": [
+            "Supreme Chief Archgynocologist",
+            "system-wide medical leader"
+          ]
+        },
+        {
+          "entity_id": "lord-kaelen-medical",
+          "mention_text": "Lord Kaelen",
+          "roles_in_transmission": [
+            "Supreme Chief Archandrocologist",
+            "system-wide medical leader"
+          ]
+        },
+        {
+          "entity_id": "asmouth-varvadeil",
+          "mention_text": "Asmouth",
+          "roles_in_transmission": [
+            "HGL originator/reference"
+          ]
+        }
+      ],
+      "collective_mentions": [
+        {
+          "name": "Arthitean Empire",
+          "kind": "polity"
+        },
+        {
+          "name": "Grand Academies of Archgynocology",
+          "kind": "institution"
+        },
+        {
+          "name": "Fortresses of Archandrocology",
+          "kind": "institution"
+        },
+        {
+          "name": "Arthiteans",
+          "kind": "species_collective"
+        }
+      ],
+      "notes": [
+        "Ranks such as Initiate/High Archgynocologist and Field/Master Archandrocologist are taxonomy labels, not separate character identities."
+      ]
+    }
+  ],
+  "validation": {
+    "reviewed_ids_unique": true,
+    "reviewed_count_matches_transmissions_array": true,
+    "all_reviewed_sources_preserved_unchanged": true,
+    "character_and_collective_mentions_separated": true,
+    "ambiguous_identity_merges_blocked": true
+  }
+}
