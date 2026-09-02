@@ -10,27 +10,40 @@ on:
 
 permissions:
   contents: read
-  pages: read
+  pages: write
 
 jobs:
   diagnose:
     runs-on: ubuntu-latest
     steps:
-      - name: Query public DNS and live origin
+      - name: Diagnose DNS and enforce HTTPS when certificate is ready
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
           echo "=== arthratanmythology.com A ==="
           curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=A" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
-          echo "=== arthratanmythology.com AAAA ==="
-          curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=AAAA" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== www.arthratanmythology.com CNAME ==="
+          curl -fsSL "https://dns.google/resolve?name=www.arthratanmythology.com&type=CNAME" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
+          echo "=== www.arthratanmythology.com A ==="
+          curl -fsSL "https://dns.google/resolve?name=www.arthratanmythology.com&type=A" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
           echo "=== arthratanmythology.com CAA ==="
           curl -fsSL "https://dns.google/resolve?name=arthratanmythology.com&type=CAA" | jq -r '.Answer[]? | [.name,.type,.TTL,.data] | @tsv'
-          echo "=== GitHub Pages API state ==="
+          echo "=== GitHub Pages API state before ==="
+          gh api "repos/${GITHUB_REPOSITORY}/pages" > /tmp/pages.json
+          jq '{status,cname,https_enforced,protected_domain_state,pending_domain_unverified_at,https_certificate}' /tmp/pages.json
+          cert_state=$(jq -r '.https_certificate.state // empty' /tmp/pages.json)
+          enforced=$(jq -r '.https_enforced // false' /tmp/pages.json)
+          if [ "$cert_state" = "approved" ] && [ "$enforced" != "true" ]; then
+            echo "Certificate approved; attempting to enable HTTPS enforcement through GitHub Pages API."
+            gh api --method PUT -H "Accept: application/vnd.github+json" "repos/${GITHUB_REPOSITORY}/pages" -f https_enforced=true || true
+          else
+            echo "No HTTPS change needed/possible yet: certificate_state=${cert_state:-none}, https_enforced=$enforced"
+          fi
+          echo "=== GitHub Pages API state after ==="
           gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '{status,cname,https_enforced,protected_domain_state,pending_domain_unverified_at,https_certificate}' || true
           echo "=== HTTPS headers ==="
           curl -sSIL --max-time 20 https://arthratanmythology.com/ | sed -n '1,30p' || true
           echo "=== certificate subject/issuer/dates ==="
           echo | openssl s_client -servername arthratanmythology.com -connect arthratanmythology.com:443 2>/dev/null | openssl x509 -noout -subject -issuer -dates || true
-          echo "=== automation probe 2026-09-02T04:47Z ==="
+          echo "=== recovery probe 2026-09-02T06:00+01:00 ==="
