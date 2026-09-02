@@ -1,11 +1,12 @@
 (()=>{
 const TX_PER_PAGE=20;
-let txIndex=null,txAttachments=null,txNonSource=null,txPage=1,txQuery='';
+let txIndex=null,txAttachments=null,txNonSource=null,txSessionModel=null,txPage=1,txQuery='';
 const txCache=new Map();
 const txEsc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const txPath=id=>`sources/zubaida/${id}.txt`;
 const txAttachmentPath=(id,name)=>`sources/zubaida/attachments/${encodeURIComponent(id)}/${encodeURIComponent(name).replace(/'/g,'%27')}`;
 function txRoute(){return (location.hash||'').slice(1)}
+function txOwnRoute(h=txRoute()){return h==='stories'||h.startsWith('transmission:')||h.startsWith('session:')||h.startsWith('unit:')}
 function txParseTransmission(text){
  const raw=String(text||'');
  const marker='[NON-QUOTED ZUBAIDA TRANSMISSION]';
@@ -27,6 +28,38 @@ async function txLoadIndex(){if(txIndex)return txIndex;const r=await fetch('data
 async function txLoadAttachments(){if(txAttachments)return txAttachments;try{const r=await fetch('data/zubaida-attachments.json',{cache:'no-store'});txAttachments=r.ok?await r.json():{}}catch{txAttachments={}}return txAttachments}
 async function txLoadNonSource(){if(txNonSource)return txNonSource;try{const r=await fetch('data/zubaida-nonsource.json',{cache:'no-store'});txNonSource=r.ok?await r.json():{non_source_records:[]}}catch{txNonSource={non_source_records:[]}}return txNonSource}
 async function txLoad(id){if(txCache.has(id))return txCache.get(id);const p=fetch(txPath(id),{cache:'no-store'}).then(async r=>{if(!r.ok)return null;return await r.text()}).catch(()=>null);txCache.set(id,p);return p}
+function txB36(value){const n=parseInt(String(value||''),36);return Number.isFinite(n)?n:0}
+function txRows(value){return String(value||'').split(/\r?\n/).filter(Boolean).map(row=>row.split('\t'))}
+async function txLoadSessionModel(){
+ if(txSessionModel)return txSessionModel;
+ const [sessionsRes,routesRes]=await Promise.all([
+  fetch('data/zubaida-sessions.json',{cache:'no-store'}),
+  fetch('data/zubaida-session-routes.json',{cache:'no-store'})
+ ]);
+ if(!sessionsRes.ok||!routesRes.ok)throw new Error('Session navigation manifest unavailable');
+ const data=await sessionsRes.json(),routes=await routesRes.json();
+ const transmissions=txRows(data.t).map((row,i)=>({order:i+1,id:row[0],headingLine:txB36(row[2])}));
+ const parentByOrder=new Map(transmissions.map(row=>[row.order,row]));
+ const types=Array.isArray(data?.codec?.types)?data.codec.types:[];
+ const sessions=txRows(data.s).map(row=>{
+  const [o,l,end,num,group]=row,order=txB36(o),line=txB36(l),parent=parentByOrder.get(order);
+  return{kind:'session',targetId:`zs-${o}-${l}`,hash:`#session:zs-${o}-${l}`,order,line,end:txB36(end),number:num,group:group==='1',parentId:parent?.id||''};
+ });
+ const units=txRows(data.u).map(row=>{
+  const [o,l,parentLine,typeCode]=row,order=txB36(o),line=txB36(l),parent=parentByOrder.get(order),typeIndex=txB36(typeCode);
+  return{kind:'unit',targetId:`zu-${o}-${l}`,hash:`#unit:zu-${o}-${l}`,order,line,parentLine:txB36(parentLine),unitType:types[typeIndex]||'source unit',parentId:parent?.id||''};
+ });
+ const all=[...sessions,...units].sort((a,b)=>a.order-b.order||a.line-b.line||(a.kind==='session'?-1:1));
+ const byTarget=new Map(all.map(row=>[row.targetId,row]));
+ const byParent=new Map();all.forEach(row=>{if(!byParent.has(row.parentId))byParent.set(row.parentId,[]);byParent.get(row.parentId).push(row)});
+ const sessionNav=sessions.slice().sort((a,b)=>a.order-b.order||a.line-b.line);
+ const unitNav=units.slice().sort((a,b)=>a.order-b.order||a.line-b.line);
+ const expected=Number(routes?.coverage?.targets||0);
+ if(expected&&expected!==all.length)console.warn(`Session route coverage mismatch: expected ${expected}, decoded ${all.length}`);
+ if(all.some(row=>!row.parentId))console.warn('Session route manifest contains orphan parent references');
+ txSessionModel={data,routes,transmissions,sessions,units,all,byTarget,byParent,sessionNav,unitNav};
+ return txSessionModel;
+}
 function txNonSourceRows(data){return data?.non_source_records||data?.ids||[]}
 function txNonSourceMap(data){return new Map(txNonSourceRows(data).map(row=>[row.id,row]))}
 function txSourceIds(index,nonsource){const non=txNonSourceMap(nonsource);return (index?.ids||[]).filter(id=>!non.has(id))}
@@ -40,6 +73,29 @@ function txAttachmentFiles(att,id){
 }
 function txSetCrumb(label){try{setCrumb(label)}catch{const c=document.querySelector('#crumbs');if(c)c.textContent=label}}
 function txShell(){return document.querySelector('#main')}
+function txLineLabel(raw,line){const value=String(raw||'').split(/\r?\n/)[Math.max(0,line-1)]??'';return value.trim()||`Source line ${line}`}
+function txTargetLabel(target,raw){
+ const exact=txLineLabel(raw,target.line);
+ if(target.kind==='session')return target.number?`Session ${target.number}: ${exact}`:exact;
+ return `${String(target.unitType||'source unit').replace(/_/g,' ')}: ${exact}`;
+}
+function txTargetHref(target){return target.kind==='session'?`#session:${target.targetId}`:`#unit:${target.targetId}`}
+function txSessionIndex(model,id,raw,focus){
+ const rows=model?.byParent?.get(id)||[];if(!rows.length)return'';
+ const sessions=rows.filter(row=>row.kind==='session'),units=rows.filter(row=>row.kind==='unit');
+ const renderGroup=(title,list)=>list.length?`<div class="tx-session-group"><h3>${txEsc(title)}</h3><div class="tx-session-links">${list.map(row=>`<a class="tx-session-link${focus?.targetId===row.targetId?' is-current':''}" href="${txTargetHref(row)}"${focus?.targetId===row.targetId?' aria-current="location"':''}><span>${txEsc(txTargetLabel(row,raw))}</span><small>line ${row.line} · ${txEsc(row.targetId)}</small></a>`).join('')}</div></div>`:'';
+ return `<details class="tx-session-index"${rows.length<=10?' open':''}><summary><span>Sessions &amp; source units</span><small>${sessions.length} session target${sessions.length===1?'':'s'} · ${units.length} subunit target${units.length===1?'':'s'}</small></summary><div class="tx-session-index-body"><p>These links point into the complete preserved transmission. Labels are read directly from the source line; no missing boundaries are invented.</p>${renderGroup('Sessions',sessions)}${renderGroup('Source-supported subunits',units)}</div></details>`;
+}
+function txFocusNav(model,target,raw){
+ const list=target.kind==='session'?model.sessionNav:model.unitNav,index=list.findIndex(row=>row.targetId===target.targetId),prev=index>0?list[index-1]:null,next=index>=0&&index<list.length-1?list[index+1]:null,kindLabel=target.kind==='session'?'session':'source unit';
+ return `<section class="tx-focus-card" aria-label="Deep-link context"><div><div class="eyebrow">Source-supported ${txEsc(kindLabel)} deep link</div><h2>${txEsc(txTargetLabel(target,raw))}</h2><p>This target is anchored to source line ${target.line} inside the complete parent transmission. The source panel below remains the full preserved transmission.</p></div><nav class="tx-focus-nav" aria-label="${txEsc(kindLabel)} navigation">${prev?`<a class="tx-source-link" href="${txTargetHref(prev)}">← Previous ${txEsc(kindLabel)}</a>`:''}<a class="tx-source-link" href="#transmission:${txEsc(target.parentId)}">Parent transmission</a>${next?`<a class="tx-source-link" href="${txTargetHref(next)}">Next ${txEsc(kindLabel)} →</a>`:''}</nav></section>`;
+}
+function txRenderSource(raw,focus){
+ if(!focus)return txEsc(raw);
+ const lines=String(raw||'').split(/\r?\n/);
+ return lines.map((line,i)=>i+1===focus.line?`<span class="tx-source-focus" id="${txEsc(focus.targetId)}" tabindex="-1">${txEsc(line)}</span>`:txEsc(line)).join('\n');
+}
+function txScrollFocus(target){if(!target)return;requestAnimationFrame(()=>requestAnimationFrame(()=>document.getElementById(target.targetId)?.scrollIntoView({block:'center'})))}
 async function renderStories(){
  const [data,nonsource]=await Promise.all([txLoadIndex(),txLoadNonSource()]);
  const sourceIds=txSourceIds(data,nonsource),nonCount=txNonSourceRows(nonsource).length;
@@ -63,13 +119,20 @@ function txRenderNonSource(record){
  const represented=record?.represented_by?`<a class="tx-source-link" href="#transmission:${txEsc(record.represented_by)}">Open represented source transmission</a>`:'';
  return `<div class="tx-reader"><button class="tx-back" onclick="location.hash='#stories'">← Story & Thread Archive</button><div class="eyebrow" style="margin-top:22px">Zubaida correspondence · provenance-only record</div><h1>${txEsc(record?.classification||'Non-source correspondence record')}</h1><div class="tx-provenance"><span>Gmail source ID ${txEsc(record?.id||'')}</span><span>not counted as a source transmission</span></div><div class="tx-note" style="margin-top:18px">${txEsc(record?.note||record?.reason||'This message contains no new Zubaida-authored canon source body after reply-chain deduplication.')}</div>${represented}</div>`;
 }
-async function renderTransmission(id){
- txSetCrumb('Zubaida Transmission');const main=txShell();main.innerHTML=`<div class="tx-reader"><button class="tx-back" id="txBack">← Story & Thread Archive</button><div class="tx-missing" style="margin-top:18px">Loading preserved source…</div></div>`;document.querySelector('#txBack').onclick=()=>location.hash='#stories';
- const [text,att,nonsource]=await Promise.all([txLoad(id),txLoadAttachments(),txLoadNonSource()]);if(txRoute()!==`transmission:${id}`)return;
+async function renderTransmission(id,focus=null){
+ txSetCrumb(focus?`Zubaida ${focus.kind==='session'?'Session':'Source Unit'}`:'Zubaida Transmission');const main=txShell();main.innerHTML=`<div class="tx-reader"><button class="tx-back" id="txBack">← Story & Thread Archive</button><div class="tx-missing" style="margin-top:18px">Loading preserved source…</div></div>`;document.querySelector('#txBack').onclick=()=>location.hash='#stories';
+ const [text,att,nonsource,sessionModel]=await Promise.all([txLoad(id),txLoadAttachments(),txLoadNonSource(),txLoadSessionModel().catch(err=>{console.warn(err);return null})]);
+ const expected=focus?`${focus.kind}:${focus.targetId}`:`transmission:${id}`;if(txRoute()!==expected)return;
  if(!text){const record=txNonSourceMap(nonsource).get(id);if(record){main.innerHTML=txRenderNonSource(record);return}main.innerHTML=`<div class="tx-reader"><button class="tx-back" onclick="location.hash='#stories'">← Story & Thread Archive</button><div class="tx-missing" style="margin-top:18px"><b>Integrity warning:</b> ${txEsc(id)}<br><br>This ID is neither a preserved source transmission nor a classified non-source correspondence record.</div></div>`;return}
- const parsed=txParseTransmission(text),title=txFirstLine(text),files=txAttachmentFiles(att,id);main.innerHTML=`<div class="tx-reader"><div class="tx-reader-head"><button class="tx-back" id="txBack2">← Story & Thread Archive</button><div class="eyebrow" style="margin-top:22px">Zubaida transmission · verbatim source layer</div><h1>${txEsc(title)}</h1><div class="tx-provenance"><span>Gmail source ID ${txEsc(id)}</span><span>quoted reply-chain removed</span><span>source wording retained</span>${parsed.meta.subject?`<span>${txEsc(parsed.meta.subject)}</span>`:''}</div></div><div class="tx-note">The source below is kept separate from Codex explanation. Crossreferential explanation may be added around it, but this panel is the preservation layer.</div><pre class="tx-source">${txEsc(parsed.raw)}</pre>${files.length?`<section class="tx-attachments"><h2>Original attachments</h2>${files.map(f=>`<a class="tx-source-link" href="${txEsc(f.path)}" target="_blank" rel="noopener">${txEsc(f.name)}</a>`).join('')}</section>`:''}</div>`;document.querySelector('#txBack2').onclick=()=>location.hash='#stories';
+ const parsed=txParseTransmission(text),title=txFirstLine(text),files=txAttachmentFiles(att,id),sessionIndex=sessionModel?txSessionIndex(sessionModel,id,parsed.raw,focus):'',focusCard=focus&&sessionModel?txFocusNav(sessionModel,focus,parsed.raw):'';
+ main.innerHTML=`<div class="tx-reader"><div class="tx-reader-head"><button class="tx-back" id="txBack2">← Story & Thread Archive</button><div class="eyebrow" style="margin-top:22px">Zubaida transmission · verbatim source layer</div><h1>${txEsc(title)}</h1><div class="tx-provenance"><span>Gmail source ID ${txEsc(id)}</span><span>quoted reply-chain removed</span><span>source wording retained</span>${parsed.meta.subject?`<span>${txEsc(parsed.meta.subject)}</span>`:''}</div></div>${focusCard}<div class="tx-note">The source below is kept separate from Codex explanation. Crossreferential explanation may be added around it, but this panel is the preservation layer.</div>${sessionIndex}<pre class="tx-source">${txRenderSource(parsed.raw,focus)}</pre>${files.length?`<section class="tx-attachments"><h2>Original attachments</h2>${files.map(f=>`<a class="tx-source-link" href="${txEsc(f.path)}" target="_blank" rel="noopener">${txEsc(f.name)}</a>`).join('')}</section>`:''}</div>`;document.querySelector('#txBack2').onclick=()=>location.hash='#stories';txScrollFocus(focus);
 }
-async function txHandle(){const h=txRoute();if(h==='stories')return renderStories();if(h.startsWith('transmission:'))return renderTransmission(h.slice('transmission:'.length))}
-window.addEventListener('hashchange',e=>{const h=txRoute();if(h==='stories'||h.startsWith('transmission:')){e.stopImmediatePropagation();txHandle().catch(err=>{console.error(err);txShell().innerHTML=`<div class="card"><h3>Archive rendering error</h3><p>${txEsc(err.message)}</p></div>`})}},true);
-if(txRoute()==='stories'||txRoute().startsWith('transmission:'))[0,120,500,950].forEach(ms=>setTimeout(()=>{if(txRoute()==='stories'||txRoute().startsWith('transmission:'))txHandle()},ms));
+async function renderSessionTarget(kind,targetId){
+ const model=await txLoadSessionModel(),target=model.byTarget.get(targetId),main=txShell();
+ if(!target||target.kind!==kind){txSetCrumb('Zubaida Session Navigation');main.innerHTML=`<div class="tx-reader"><button class="tx-back" onclick="location.hash='#stories'">← Story & Thread Archive</button><div class="tx-missing" style="margin-top:18px"><b>Session-route integrity warning:</b> ${txEsc(targetId)}<br><br>This target is not established by the committed Zubaida session manifest.</div></div>`;return}
+ return renderTransmission(target.parentId,target);
+}
+async function txHandle(){const h=txRoute();if(h==='stories')return renderStories();if(h.startsWith('transmission:'))return renderTransmission(h.slice('transmission:'.length));if(h.startsWith('session:'))return renderSessionTarget('session',h.slice('session:'.length));if(h.startsWith('unit:'))return renderSessionTarget('unit',h.slice('unit:'.length))}
+window.addEventListener('hashchange',e=>{const h=txRoute();if(txOwnRoute(h)){e.stopImmediatePropagation();txHandle().catch(err=>{console.error(err);txShell().innerHTML=`<div class="card"><h3>Archive rendering error</h3><p>${txEsc(err.message)}</p></div>`})}},true);
+if(txOwnRoute())[0,120,500,950].forEach(ms=>setTimeout(()=>{if(txOwnRoute())txHandle()},ms));
 })();
