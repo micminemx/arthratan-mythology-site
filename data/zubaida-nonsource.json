@@ -1,0 +1,16 @@
+{
+  "updated": "2026-09-02",
+  "rule": "These sender messages are retained in the master Gmail index for provenance but intentionally do not receive canon source .txt files because they contain only acknowledgments, access/technical coordination, quoted-only reply context, or a standalone implementation/code handoff rather than a new Arthratan-mythology session transmission.",
+  "ids": [
+    {"id":"19f962eb9b2a38f9","classification":"quoted-only reply shell"},
+    {"id":"19e9d8031a621d58","classification":"technical-access apology / operational coordination"},
+    {"id":"19eb20592a8c2149","classification":"document-access / booking coordination before quoted instructions"},
+    {"id":"19e7cf404021ff3e","classification":"emoji acknowledgment before quoted request"},
+    {"id":"19e75604dcc74c8c","classification":"emoji acknowledgment before quoted correction"},
+    {"id":"19df801d8d21df0a","classification":"brief acknowledgment before quoted prior transmission"},
+    {"id":"19df33a65dcbc98b","classification":"brief implementation acknowledgment before quoted chain"},
+    {"id":"19deda84207247fe","classification":"Colab-access confirmation only"},
+    {"id":"19ded5f9f4ede101","classification":"Colab environment/access handoff rather than new mythology session"},
+    {"id":"19df42d4e7cafd86","classification":"standalone V3.0 financial-engine code handoff rather than a new Arthratan-mythology session"}
+  ]
+}
