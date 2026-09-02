@@ -227,14 +227,14 @@ function hpart(p){
 function hglExp(core) {
   for(const [f,d] of docs){
     if(!/^data\/hgl-explanations-parts-\d{3}-\d{3}\.json$/.test(f))continue;
-    const rr=d.owned_major_part_range,r=Array.isArray(rr)?{start:rr[0],end:rr[1]}:rr,maxParts=core?.parts??95;
+    const rr=d.owned_major_part_range??d.owned,r=Array.isArray(rr)?{start:rr[0],end:rr[1]}:rr,maxParts=core?.parts??95;
     if(!O(r)||!between(r.start,1,maxParts)||!between(r.end,1,maxParts)||r.start>r.end){fail(f,"owned_major_part_range","invalid range");continue;}
-    const width=r.end-r.start+1,s=d.source_contract??{};
-    const toc=s.toc_source??s.toc,pages=s.page_source??s.pages,count=s.source_page_count??s.source_pages,immutable=s.source_is_immutable??s.source_immutable,separate=s.explanation_layer_only??s.explanations_separate;
+    const width=r.end-r.start+1,s=d.source_contract??d.source??{};
+    const toc=s.toc_source??s.toc,pages=s.page_source??s.pages,count=s.source_page_count??s.source_pages??s.count,immutable=s.source_is_immutable??s.source_immutable??s.immutable,separate=s.explanation_layer_only??s.explanations_separate??s.explanation_only;
     pointer(f,"source_contract.toc",toc);pointer(f,"source_contract.pages",pages);
     if(count!==(core?.pages??293))fail(f,"source_contract.source_pages",`${count} != ${core?.pages??293}`);
     if(immutable!==true||separate!==true)fail(f,"source_contract","source must be immutable and explanations separate");
-    const c=d.coverage??{},done=A(c.completed_major_parts??c.completed),remaining=A(c.remaining_major_parts??c.remaining),dc=c.completed_major_part_count??c.count,oc=c.owned_major_part_count??c.owned;
+    const c=d.coverage??{},done=A(c.completed_major_parts??c.completed??c.done),remaining=A(c.remaining_major_parts??c.remaining),dc=c.completed_major_part_count??c.count,oc=c.owned_major_part_count??c.owned;
     if(dc!==done.length||oc!==width)fail(f,"coverage","declared counts do not match lists/range");
     const D=new Set(done),R=new Set(remaining);
     if(D.size!==done.length||R.size!==remaining.length)fail(f,"coverage","duplicate completed/remaining part");
@@ -250,8 +250,12 @@ function hglExp(core) {
       if(typeof x.id!=="string"||!/^hgl-part-\d+$/.test(x.id))fail(f,rec,`invalid part id ${x.id}`);
       else{if(seenId.has(x.id))fail(f,rec,"duplicate part id");seenId.add(x.id);if(idNum(x.id,"hgl-part-")!==x.n-1)fail(f,rec,"part id does not match major-part number");}
       if(!between(x.start,1,core?.pages??293)||!between(x.end,1,core?.pages??293)||x.start>x.end)fail(f,rec,`invalid page range ${x.start}..${x.end}`);
-      const links=Array.isArray(p?.crosslinks)?p.crosslinks:(p?.crosslink?[p.crosslink]:[]);
-      for(const [j,l] of links.entries()){const target=typeof l==="string"?l:l?.target,n=idNum(target,"hgl-part-");if(!between(n,0,maxParts-1))fail(f,`${rec}.crosslinks[${j}]`,`invalid target ${target}`);}
+      const links=Array.isArray(p?.crosslinks)?p.crosslinks:(p?.crosslink?[p.crosslink]:(p?.link!==undefined?[p.link]:[]));
+      for(const [j,l] of links.entries()){
+        if(Number.isInteger(l)){if(!between(l,1,maxParts))fail(f,`${rec}.crosslinks[${j}]`,`invalid major-part link ${l}`);continue;}
+        const target=typeof l==="string"?l:l?.target,n=idNum(target,"hgl-part-");
+        if(!between(n,0,maxParts-1))fail(f,`${rec}.crosslinks[${j}]`,`invalid target ${target}`);
+      }
     }
   }
 }
