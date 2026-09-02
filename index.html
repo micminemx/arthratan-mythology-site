@@ -1,44 +1,48 @@
 <!doctype html>
-<!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="noindex,nofollow,noarchive" name="robots"/><meta content="#0b0910" name="theme-color"/>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#0b0910">
 <title>The Arthitean Codex</title>
-<link href="styles.css" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="editor.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="app-shell">
-<aside class="sidebar" id="sidebar">
-<div class="brand"><div class="brand-mark"><img alt="" src="assets/art/chibi-codex.webp"/></div><div><strong>ARTHITEAN CODEX</strong><small>Arthratan mythology · living canon</small></div></div>
-<button aria-label="Close navigation" class="mobile-close" id="closeNav">×</button>
-<nav id="nav">
-<a data-route="home" href="#home"><img alt="" src="assets/art/chibi-codex.webp"/><span>Sanctuary</span></a>
-<a data-route="atlas" href="#atlas"><img alt="" src="assets/art/chibi-sources.webp"/><span>Visual Atlas</span></a>
-<div class="nav-label">Foundations</div>
-<a data-route="scaling" href="#scaling"><img alt="" src="assets/art/chibi-scaling.webp"/><span>Metagovernance &amp; Scaling</span></a>
-<a data-route="negative-rewrite" href="#negative-rewrite"><img alt="" src="assets/art/chibi-negative-rewrite.webp"/><span>Negative Rewrite</span></a>
-<div class="nav-label">People &amp; Biology</div>
-<a data-route="arthiteans" href="#arthiteans"><img alt="" src="assets/art/chibi-arthiteans.webp"/><span>Arthitean Ontostates</span></a>
-<a data-route="rhayhara" href="#rhayhara"><img alt="" src="assets/art/chibi-rhayhara.webp"/><span>Rhayhara</span></a>
-<div class="nav-label">Formal Systems</div>
-<a data-route="hgl" href="#hgl"><img alt="" src="assets/art/chibi-hgl.webp"/><span>Hypergendered Logic</span></a>
-<a data-route="divine" href="#divine"><img alt="" src="assets/art/chibi-codex.webp"/><span>Divine v144 Archive</span></a>
-<a data-route="hgl-archive" href="#hgl-archive"><img alt="" src="assets/art/chibi-hgl.webp"/><span>HGL Archive</span></a>
-<div class="nav-label">Discovery</div>
-<a data-route="search" href="#search"><img alt="" src="assets/art/chibi-search.webp"/><span>Search the Codex</span></a>
-<a data-route="sources" href="#sources"><img alt="" src="assets/art/chibi-sources.webp"/><span>Sources &amp; Provenance</span></a>
-</nav>
-<div class="sidebar-foot"><span class="status-dot"></span><span>Unlisted · noindex</span></div>
-</aside>
-<div class="main-wrap">
-<header class="topbar"><button aria-label="Open navigation" class="menu-btn" id="openNav">☰</button><div class="breadcrumbs" id="crumbs">Sanctuary</div><div class="top-actions"><button class="ghost art-mini-action" id="shareBtn"><img alt="" src="assets/art/chibi-search.webp"/>Copy view link</button></div></header>
-<main id="main" tabindex="-1"></main>
-<footer><span>The Arthitean Codex · living visual canon</span><span>Source-preserving conversion · 28 Aug 2026</span></footer>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="brand-mark"><img src="assets/art/chibi-codex.webp" alt=""></div><div><strong>ARTHITEAN CODEX</strong><small>Arthratan mythology · living canon</small></div></div>
+    <button class="mobile-close" id="closeNav" aria-label="Close navigation">×</button>
+    <nav id="nav">
+      <a href="#home" data-route="home"><img src="assets/art/chibi-codex.webp" alt=""><span>Sanctuary</span></a>
+      <a href="#atlas" data-route="atlas"><img src="assets/art/chibi-sources.webp" alt=""><span>Visual Atlas</span></a>
+      <div class="nav-label">Foundations</div>
+      <a href="#scaling" data-route="scaling"><img src="assets/art/chibi-scaling.webp" alt=""><span>Metagovernance & Scaling</span></a>
+      <a href="#negative-rewrite" data-route="negative-rewrite"><img src="assets/art/chibi-negative-rewrite.webp" alt=""><span>Negative Rewrite</span></a>
+      <a href="#causal-ontology" data-route="causal-ontology"><img src="assets/art/chibi-negative-rewrite.webp" alt=""><span>Causality &amp; Parahistory</span></a>
+      <div class="nav-label">People & Biology</div>
+      <a href="#characters" data-route="characters"><img src="assets/art/chibi-arthiteans.webp" alt=""><span>Character Encyclopedia</span></a>
+      <a href="#stories" data-route="stories"><img src="assets/art/chibi-sources.webp" alt=""><span>Story &amp; Thread Archive</span></a>
+      <a href="#arthiteans" data-route="arthiteans"><img src="assets/art/chibi-arthiteans.webp" alt=""><span>Arthitean Ontostates</span></a>
+      <a href="#rhayhara" data-route="rhayhara"><img src="assets/art/chibi-rhayhara.webp" alt=""><span>Rhayhara</span></a>
+      <div class="nav-label">Formal Systems</div>
+      <a href="#hgl" data-route="hgl"><img src="assets/art/chibi-hgl.webp" alt=""><span>Hypergendered Logic</span></a>
+      <a href="#divine" data-route="divine"><img src="assets/art/chibi-codex.webp" alt=""><span>Divine v144 Archive</span></a>
+      <a href="#hgl-archive" data-route="hgl-archive"><img src="assets/art/chibi-hgl.webp" alt=""><span>HGL Archive</span></a>
+      <div class="nav-label">Discovery</div>
+      <a href="#search" data-route="search"><img src="assets/art/chibi-search.webp" alt=""><span>Search the Codex</span></a>
+      <a href="#sources" data-route="sources"><img src="assets/art/chibi-sources.webp" alt=""><span>Sources & Provenance</span></a>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span><span>Unlisted · noindex</span></div>
+  </aside>
+  <div class="main-wrap">
+    <header class="topbar"><button id="openNav" class="menu-btn" aria-label="Open navigation">☰</button><div class="breadcrumbs" id="crumbs">Sanctuary</div><div class="top-actions"><button id="shareBtn" class="ghost art-mini-action"><img src="assets/art/chibi-search.webp" alt="">Copy view link</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>The Arthitean Codex · living visual canon</span><span>Source-preserving conversion · updated 2 Sep 2026</span></footer>
+  </div>
 </div>
-</div>
-<div aria-live="polite" id="toast" role="status"></div>
+<div id="toast" role="status" aria-live="polite"></div>
 <script src="app.js"></script>
+<script src="editor.js"></script>
 </body></html>
+
