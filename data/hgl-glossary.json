@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "task_id": "HGL-001",
+  "status": "partial-audit",
+  "scope": "Normalized glossary/audit data only; preserved HGL source datasets remain read-only.",
+  "source": {
+    "hgl_pages": "data/hgl-pages.json",
+    "hgl_pages_sha": "c4d0c177810c55abc1fc81355c09cb074a677c9d",
+    "hgl_toc": "data/hgl-toc.json",
+    "hgl_toc_sha": "0675e26ce0b8b8e229cd6e9866e8371eb873303d",
+    "source_page_count": 293,
+    "authority_note": "Later explicit authoritative revisions supersede conflicting earlier formulas. This seed follows Parts XLIII-XLV for successor/profile/quality/superinheritance geometry and retains earlier PA/IH/PH/Gamma definitions where not superseded."
+  },
+  "entries": [
+    {
+      "id": "pa",
+      "term": "PA",
+      "label": "Developmental causal mode",
+      "kind": "operator",
+      "signature": "PA: InnerCondition -> DevelopmentalMode",
+      "definition": "Marks physiology/anatomy as necessarily developable due to the designated inner condition taken as one causal basis. Compound operands remain causally irreducible rather than decomposing into separate PA routes.",
+      "source_refs": [{"page": 6, "section": "Part I — PA: developmental causal mode"}, {"page": 8, "section": "3. PA Irreducibility"}]
+    },
+    {
+      "id": "ih",
+      "term": "IH",
+      "label": "Inheritance / provenance",
+      "kind": "operator",
+      "signature": "IH: InheritableSource -> InheritedPropertyStructure",
+      "definition": "Carries inheritable logical/state properties forward while preserving the operand as their inheritance source; source identity and nesting depth remain constitutive information.",
+      "typed_forms": ["IH_C(condition)", "IH_S(state)"],
+      "source_refs": [{"page": 7, "section": "Part I — IH: inheritance/provenance"}, {"page": 9, "section": "Condition-source IH versus state-source IH"}]
+    },
+    {
+      "id": "ph",
+      "term": "PH",
+      "label": "Irreducible phenotype-profile possession",
+      "kind": "operator",
+      "signature": "PH: PhenotypeSource -> IrreduciblePhenotypePossession",
+      "definition": "States that the bearer irreducibly possesses the complete HGL phenotype-profile canonically associated with the operand as a whole-profile of that source.",
+      "source_refs": [{"page": 7, "section": "Part I — PH: irreducible phenotype-profile possession"}, {"page": 9, "section": "5. PH phenotype-profile irreducibility"}, {"page": 21, "section": "PH-1 through PH-8"}]
+    },
+    {
+      "id": "gamma",
+      "term": "Γ",
+      "label": "Archstage global meta-phenotype",
+      "kind": "metaexpression operator",
+      "symbols": ["Γ^F_n", "Γ^M_n"],
+      "definition": "Stage-level rule-function governing which concrete phenotypic outputs are biologically admissible across the organism. Globality means universal governance, not identical local output.",
+      "source_refs": [{"page": 4, "section": "The fourth layer: global Archwomanhood/Archmanhood meta-phenotype Γ"}, {"page": 7, "section": "1A. Biological Metaexpressability"}]
+    },
+    {
+      "id": "stage-necessity",
+      "term": "□",
+      "label": "Stage-relative biological necessity",
+      "kind": "modal operator",
+      "definition": "The proposition holds in every phenotype realization permitted by the current Γ stage-regime; this is stage-biological, not unrestricted metaphysical, necessity.",
+      "source_refs": [{"page": 4, "section": "Γ modal extension"}]
+    },
+    {
+      "id": "stage-possibility",
+      "term": "◇",
+      "label": "Stage-relative biological possibility",
+      "kind": "modal operator",
+      "definition": "The proposition holds in at least one phenotype realization permitted by the current Γ stage-regime.",
+      "source_refs": [{"page": 4, "section": "Γ modal extension"}]
+    },
+    {
+      "id": "ud",
+      "term": "UD",
+      "label": "Unflaw predicate",
+      "kind": "quality predicate",
+      "definition": "The physically instantiated feature significantly increases the quality of the whole physical structure/form. UD is globally demanding and is not the logical negation of FD.",
+      "source_refs": [{"page": 214, "section": "238. Flaw and Unflaw: exact canonical definitions"}, {"page": 254, "section": "355-356. Single-UD successor principle / nonredundancy"}]
+    },
+    {
+      "id": "fd",
+      "term": "FD",
+      "label": "Flaw predicate",
+      "kind": "quality predicate",
+      "definition": "The physically instantiated feature decreases quality in at least one relevant physical extent, region, component, relation or organized part. FD may coexist with UD unless an extra incompatibility axiom is adopted.",
+      "source_refs": [{"page": 214, "section": "238. Flaw and Unflaw: exact canonical definitions"}]
+    },
+    {
+      "id": "sih",
+      "term": "SIH",
+      "label": "Superinheritance",
+      "kind": "operator family",
+      "canonical_form": "SIH_axis(X[a])",
+      "definition": "Typed source-preserving closure over an entire source axis/domain, retaining each member as a separately indexed inherited source rather than replacing the domain with its terminal state.",
+      "source_refs": [{"page": 237, "section": "Part XLII — 303. SIH exact canonical definition"}, {"page": 238, "section": "305-307. SIH noncollapse, negation scope, axis typing"}]
+    },
+    {
+      "id": "bsih",
+      "term": "BSIH",
+      "label": "Bounded Superinheritance",
+      "kind": "operator family",
+      "formula": "BSIH_i(X;[a,b))",
+      "definition": "Superinherits every state on typed source axis i whose coordinate beta satisfies a <= beta < b, preserving coordinate, polarity, category, dimensional order and source key.",
+      "source_refs": [{"page": 268, "section": "394. Bounded Superinheritance and Prefix Superinheritance"}]
+    },
+    {
+      "id": "psih",
+      "term": "PSIH",
+      "label": "Prefix Superinheritance",
+      "kind": "operator family",
+      "formula": "PSIH_i(X;<lambda) := BSIH_i(X;[1,lambda))",
+      "definition": "Historical predecessor closure for a limit coordinate. It excludes the target and all future coordinates, preventing self/future-inheritance contamination.",
+      "source_refs": [{"page": 268, "section": "394. Bounded Superinheritance and Prefix Superinheritance"}, {"page": 269, "section": "395. Prefix non-selfinheritance and non-futureinheritance theorems"}]
+    },
+    {
+      "id": "lscc",
+      "term": "LSCC",
+      "label": "Limit-State Closure Constructor",
+      "kind": "constructor",
+      "definition": "Constructs first-class female/male limit states from typed predecessor domains rather than a literal infinitary Boolean string, preserving indexed provenance and enabling successor-after-limit recursion.",
+      "source_refs": [{"page": 226, "section": "Part XLI — 270. Limit-State Closure Constructor"}, {"page": 254, "section": "358. Limit-stage closure under Profile Exclusion"}]
+    },
+    {
+      "id": "hyperomega",
+      "term": "Ω_H / Hyperomega",
+      "label": "Minor-hypercategory saturation bound",
+      "kind": "boundary",
+      "definition": "Typed HGL boundary completing a local minor-hypercategory axis. It is not a largest mathematical ordinal and is not identical to the next category seed.",
+      "source_refs": [{"page": 188, "section": "Hyperomega definition / 184. Strict category-lift transitions"}]
+    }
+  ],
+  "core_distinctions": [
+    {"id": "pa-negation-scope", "lhs": "PA(NOT φ)", "relation": "not-identical", "rhs": "NOT PA(φ)", "source_refs": [{"page": 8, "section": "Primitive modes / negation scope"}]},
+    {"id": "ih-negation-scope", "lhs": "IH(NOT Z)", "relation": "not-identical", "rhs": "NOT IH(Z)", "source_refs": [{"page": 9, "section": "IH inheritance laws"}, {"page": 253, "section": "353. NOT PH(opposite) is not PH(NOT opposite)"}]},
+    {"id": "ph-negation-scope", "lhs": "PH(NOT Z)", "relation": "not-identical", "rhs": "NOT PH(Z)", "source_refs": [{"page": 9, "section": "PH negation scope"}, {"page": 253, "section": "353. NOT PH(opposite) is not PH(NOT opposite)"}]},
+    {"id": "sih-negation-scope", "lhs": "SIH(NOT X)", "relation": "not-identical", "rhs": "NOT SIH(X)", "source_refs": [{"page": 238, "section": "306. Negation scope under SIH"}]},
+    {"id": "psih-negation-scope", "lhs": "PSIH_i(NOT X;<lambda)", "relation": "not-identical", "rhs": "NOT PSIH_i(X;<lambda)", "source_refs": [{"page": 268, "section": "394. Bounded/Prefix Superinheritance"}]}
+  ],
+  "anti_collapse_laws": [
+    {"id": "pa-conjunction-nondistribution", "law": "PA(A AND B) != PA(A) AND PA(B)", "source_refs": [{"page": 8, "section": "3. PA Irreducibility"}]},
+    {"id": "ih-projection-not-converse", "law": "IH(Z) => Z; Z does not generally imply IH(Z)", "source_refs": [{"page": 8, "section": "4. IH inheritance laws"}]},
+    {"id": "ih-no-flattening", "law": "IH(IH(Z)) is not flattened to IH(Z)", "source_refs": [{"page": 9, "section": "IH inheritance laws"}]},
+    {"id": "ph-nondistribution", "law": "PH(A AND B) != PH(A) AND PH(B)", "source_refs": [{"page": 9, "section": "PH does not distribute over compound sources"}]},
+    {"id": "ph-not-pa", "law": "PH(S) != PA(S)", "source_refs": [{"page": 10, "section": "PH is not PA"}, {"page": 21, "section": "PH-5 No PA collapse"}]},
+    {"id": "ph-not-ih", "law": "PH(S) != IH(S)", "source_refs": [{"page": 10, "section": "PH is not IH"}, {"page": 21, "section": "PH-6 No IH collapse"}]},
+    {"id": "sih-not-terminal-ih", "law": "SIH_axis(X[a]) != IH(X[Omega]) in provenance-sensitive state identity", "source_refs": [{"page": 238, "section": "305. Superinheritance Noncollapse Axiom"}]},
+    {"id": "strict-supra-hyper-lift", "law": "SF^Omega_H != HF1", "source_refs": [{"page": 188, "section": "184. Strict category-lift transitions"}, {"page": 196, "section": "203. First Hyperfemale"}]},
+    {"id": "category-membership-not-percentage", "law": "Ordinal advancement within a category != degree/percentage of category membership", "source_refs": [{"page": 189, "section": "185. Category membership is binary"}]},
+    {"id": "coordinate-not-dimension", "law": "CoordinateStep(C<n>[alpha],C<n>[alpha+1]) != DimensionalLift(C_n,C_(n+1))", "source_refs": [{"page": 268, "section": "392. Four different kinds of developmental movement"}, {"page": 269, "section": "396. Axis Coordinate Successor Constructor"}]},
+    {"id": "psih-not-tail-sih", "law": "PSIH_i(X;<lambda) != SIH_i(X[1]) when lambda is below the axis endpoint", "source_refs": [{"page": 268, "section": "394. Bounded/Prefix Superinheritance"}]}
+  ],
+  "canonical_constructions": [
+    {"id": "sf1", "formula": "SF1 = PA(x AND NOT y)", "authority": "Part XLIII", "source_refs": [{"page": 253, "section": "352. Exact corrected foundational formulas"}]},
+    {"id": "sm1", "formula": "SM1 = PA(NOT x AND y)", "authority": "Part XLIII", "source_refs": [{"page": 253, "section": "352. Exact corrected foundational formulas"}]},
+    {"id": "sf2", "formula": "SF2 = IH(SF1) AND IH(NOT SM1) AND PH(SF1) AND NOT PH(SM1) AND UD(SF1) AND PA(x) AND PA(NOT y) AND NOT FD(SF1)", "outer_conjuncts": 8, "authority": "Part XLIII", "source_refs": [{"page": 253, "section": "352. Exact corrected foundational formulas"}]},
+    {"id": "supra-successor", "formula": "SF^(alpha+1) = IH(SF^alpha) AND IH(NOT SM^alpha) AND PH(SF^alpha) AND NOT PH(SM^alpha) AND UD(SF^alpha) AND NOT FD(SF^alpha), alpha>=2; male mirror exact", "outer_conjuncts": 6, "authority": "Parts XLIII-XLIV", "source_refs": [{"page": 253, "section": "352. Exact corrected foundational formulas"}, {"page": 261, "section": "372. Six-role Supra successor signature"}]},
+    {"id": "hf1-seed", "formula": "HF1 = SIH_axis(SF1) AND SIH_axis(NOT SM1); male mirror exact", "authority": "Parts XLII-XLV", "source_refs": [{"page": 261, "section": "Appendix BH canonical quick reference"}, {"page": 267, "section": "Part XLV authority"}]},
+    {"id": "hyper-coordinate-successor", "formula": "HF<n>[alpha+1,...] = IH(own prior coordinate) AND IH(NOT opposite prior coordinate) AND PH(own prior coordinate) AND NOT PH(opposite prior coordinate) AND UD(own prior coordinate); male mirror exact", "roles": ["IH-own", "IH-NOT-opposite", "PH-own", "NOT-PH-opposite", "UD-own"], "authority": "Part XLV", "source_refs": [{"page": 269, "section": "397. Hyper coordinate-successor schema"}]}
+  ],
+  "category_ladder": {
+    "order": ["Supra", "Hyper", "Ultra", "Apex"],
+    "female_symbols": ["SF", "HF", "UF", "AF"],
+    "male_symbols": ["SM", "HM", "UM", "AM"],
+    "membership_semantics": "Binary membership; ordinal/coordinate advancement is not partial membership in the current or next category.",
+    "source_refs": [{"page": 1, "section": "Authoritative precedence note"}, {"page": 189, "section": "185. Category membership is binary"}, {"page": 261, "section": "Appendix BN final canonical quick reference"}]
+  },
+  "audit_notes": [
+    "Initial seed covers the foundational operators, current negation/provenance/profile distinctions, SIH/BSIH/PSIH, current Supra successor topology and major anti-collapse laws.",
+    "Remaining HGL-001 work: enumerate later predicates/constructors/quality bridges/metaexpressive address terms through all 293 pages, deduplicate aliases, attach supersession metadata, and add source-part IDs for every entry."
+  ]
+}
