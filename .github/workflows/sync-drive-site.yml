@@ -1,188 +1,51 @@
-name: Sync visual Codex from Drive
+name: Audit retired Drive snapshot (manual, non-mutating)
+
+# OPS-001 source-of-truth rule:
+# - GitHub `main` is the authoritative implementation and published source.
+# - Google Drive stores coordination/source/backup material only.
+# - The legacy Drive browser preview must never write back to `main` automatically.
+#
+# This workflow is intentionally manual and read-only. It keeps the old Drive
+# preview available for explicit comparison/audit without creating a competing
+# publication path.
 
 on:
-  push:
-    paths:
-      - ".github/workflows/sync-drive-site.yml"
   workflow_dispatch:
-  schedule:
-    - cron: "*/15 * * * *"
 
 permissions:
-  contents: write
-  pages: write
+  contents: read
 
 jobs:
-  sync:
+  audit-legacy-drive-snapshot:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out authoritative GitHub source
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.x"
-
-      - name: Download current visual Codex
+      - name: Download legacy Drive preview for inspection only
         run: |
-          python -m pip install --quiet gdown beautifulsoup4
+          python -m pip install --quiet gdown
           gdown "https://drive.google.com/uc?id=1pLoDFQuicjCzVznCdZGQKiHMi3VBXRn6" -O /tmp/codex-preview.html
+          test -s /tmp/codex-preview.html
 
-      - name: Expand artwork into mobile-safe site files
+      - name: Record non-mutating audit evidence
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          from bs4 import BeautifulSoup
-          import base64, hashlib, json, re
+          {
+            echo "## Legacy Drive snapshot audit"
+            echo
+            echo "- GitHub ref: \`$GITHUB_SHA\`"
+            echo "- Legacy Drive preview SHA-256: \`$(sha256sum /tmp/codex-preview.html | awk '{print $1}')\`"
+            echo "- This job has read-only repository permissions and performs no commit, push, Pages rebuild, or repository-file generation."
+            echo "- Any future Drive import must be implemented as a separate explicit, diff-reviewed, SHA/version-guarded process."
+          } >> "$GITHUB_STEP_SUMMARY"
 
-          src = Path('/tmp/codex-preview.html').read_text('utf-8')
-          image_map = {
-              "06d5bbe474d021dc105b56e51ed43a66e7f19c24252b67c2fe74cd6bc4c023c0": "arthitean-male-warrior.webp",
-              "14ea066299a837939a45b6b5e508416631dcc20389465ad7f66708c081573148": "arthitean-royal-pair.webp",
-              "1a72e465be71cdaa108b900c91c812ac1527e1d5cca4b45a30f411e8a7c73490": "chibi-rhayhara.webp",
-              "286fd5f0e95bc0ea03ca1ed59d2a177ba9015c3b087f2a53d8045b28376e8b10": "rhayhara-crowned.webp",
-              "2d6edf1261c912ed182a869dac239b318117a4afe58abbc48d73e5adbb4e441e": "arthratan-procession.webp",
-              "38dc1163f550d94fc437561fa75f2533dc4ef0c1d646f65204837f104c8511f6": "chibi-scaling.webp",
-              "3ed789adade31618b588111d69b83e3bc94779ceaaae0f9fe32dfe360d4a0b2b": "arthratan-phoenix-throne.webp",
-              "4746f0946f1c3ce9e1caf1743a83d95c79312f89a5fc350d964ae8d894831cc2": "arthratan-twilight-citadel.webp",
-              "4c6b8cfdd917cae92b630eaa373dbded76cc0e9993e103a6197e63cc4d3c5ec9": "chibi-search.webp",
-              "4e0826b4303ca533e8bcf977fff8bf3e8cadb015db9d94b00365ae1102865ab0": "arthratan-phoenix-goddess.webp",
-              "506824e5a1b613518e000a592514f22b1bdc384358d34691b503fa987bbd8b18": "arthratan-astral-queen.webp",
-              "5ae7d16e038c0130820c7c1300fecf888499f811a5a41354f17502a4d11b0b9a": "arthratan-memory-empress.webp",
-              "6362d7b39de5dee145cfe47d62eb4e47f6f0294f638cad0603369666e63511fd": "chibi-arthiteans.webp",
-              "6bbe258f4ddee0f64c651cb802cb83da08a029dc41e08d409b005e21c2c150eb": "chibi-sources.webp",
-              "78bc4ff0453998ba5c7cf79297e63330967af18e212df2e3cfc1f7d0e312e9c5": "arthratan-palace.webp",
-              "88254f78564309ecc5810f6b4248efda332c0b463c205787d871ee2cd268ab1e": "chibi-hgl.webp",
-              "a3d8a7b7ccd0a631b5906d3140060567830de05b4c29e55be0ca5f2d0c336ea1": "arthratan-crimson-sorceress.webp",
-              "a74cd72b9b5aeca495c052633d54da19a868d3be7e520f2f90c96b835c10781a": "arthratan-regal-warrior.webp",
-              "ae03471ea222f8bb1e47565f523f38b71f6e3daf53494dfb49019bfdf3e0b2fc": "arthratan-imperial-royalty.webp",
-              "b9eab23a89864c9c42cf7a2d0ccb8501654492c056992f20b00877fb0f8eabdb": "arthratan-golden-ruins.webp",
-              "c1a08913b0f9eac883b3defecce5cc398d83e0ab01a74fa6effe522997f258db": "arthitean-city-bg.webp",
-              "cf2e25699d771ebde6fef70263154bdc9f4d6619e97ff282d3d525824c85c320": "chibi-codex.webp",
-              "da1ab15bd2667c803c1c51f83e3f19cf473cf9a54d73d26c80170e74b90eec8f": "arthratan-ruin-rebirth.webp",
-              "da8e04088d931749ca5afd6a4170c0cbf46309d4b2b9fab657083bea210962ed": "arthratan-shattered-divide.webp",
-              "dc99cb709b1df5d16c984dfbabea784f0c05e2fe5dc463f32e4adf71603b2db4": "arthratan-throne-guardians.webp",
-              "de617d2bb19c1bc935e7abf27d9192fa3262b2014e910f49410f9b106728d5bb": "arthratan-archive-scholars.webp",
-              "e17ab235454b2bbc805fb5c3a9e5ba3bd03a3f5e150669f5ea9143db77faa664": "arthratan-gates.webp",
-              "e568482cc2910d663bdc1c7114efee2b4025d0931c6abaa26ba8c21c74a85215": "arthitean-female-goddess.webp",
-              "f8db09fa1bec35e3269d1b323e1f87452c451136dea9387838382fb64f5de64d": "chibi-negative-rewrite.webp",
-          }
-
-          art_dir = Path('assets/art')
-          art_dir.mkdir(parents=True, exist_ok=True)
-          seen = set()
-          pat = re.compile(r'data:image/webp;base64,([A-Za-z0-9+/=]+)')
-
-          def replace_image(match):
-              raw = base64.b64decode(match.group(1))
-              digest = hashlib.sha256(raw).hexdigest()
-              name = image_map.get(digest)
-              if not name:
-                  raise RuntimeError(f'Unknown embedded artwork hash: {digest}')
-              (art_dir / name).write_bytes(raw)
-              seen.add(name)
-              return 'assets/art/' + name
-
-          expanded = pat.sub(replace_image, src)
-          expected = set(image_map.values())
-          missing = expected - seen
-          if missing:
-              raise RuntimeError(f'Missing expected artwork: {sorted(missing)}')
-
-          soup = BeautifulSoup(expanded, 'html.parser')
-          style = soup.find('style')
-          scripts = soup.find_all('script')
-          if style is None or len(scripts) < 2:
-              raise RuntimeError('Unexpected preview structure')
-
-          Path('styles.css').write_text(style.get_text(), 'utf-8')
-
-          data_text = scripts[0].get_text().strip()
-          prefix = 'window.__CODEX_DATA__='
-          if not data_text.startswith(prefix):
-              raise RuntimeError('Embedded canon payload not found')
-          data = json.loads(data_text[len(prefix):].rstrip(';'))
-          Path('data').mkdir(exist_ok=True)
-          names = {
-              'manifest': 'manifest.json',
-              'canon': 'new-canon.json',
-              'divine': 'divine.json',
-              'hglPages': 'hgl-pages.json',
-              'hglToc': 'hgl-toc.json',
-          }
-          for key, filename in names.items():
-              Path('data', filename).write_text(
-                  json.dumps(data[key], ensure_ascii=False, separators=(',', ':')),
-                  'utf-8'
-              )
-
-          app = scripts[1].get_text()
-          inline_loader = "async function load(name){ if(state[name]) return state[name]; state[name]=window.__CODEX_DATA__[name]; return state[name]; }"
-          fetch_loader = "async function load(name){ if(state[name]) return state[name]; const map={manifest:'manifest.json',canon:'new-canon.json',divine:'divine.json',hglPages:'hgl-pages.json',hglToc:'hgl-toc.json'}; const r=await fetch('data/'+map[name]); state[name]=await r.json(); return state[name]; }"
-          if inline_loader not in app:
-              raise RuntimeError('Inline loader signature changed')
-          app = app.replace(inline_loader, fetch_loader, 1)
-          Path('app.js').write_text(app, 'utf-8')
-
-          link = soup.new_tag('link', rel='stylesheet', href='styles.css')
-          style.replace_with(link)
-          scripts[0].decompose()
-          external = soup.new_tag('script', src='app.js')
-          scripts[1].replace_with(external)
-          html = '<!doctype html>\n' + str(soup)
-          Path('index.html').write_text(html, 'utf-8')
-
-          Path('CNAME').write_text('arthratanmythology.com\n', 'utf-8')
-          Path('robots.txt').write_text('User-agent: *\nDisallow: /\n', 'utf-8')
-          Path('.nojekyll').touch()
-
-          print(f'Expanded {len(seen)} artwork files; index={Path("index.html").stat().st_size:,} bytes; app={Path("app.js").stat().st_size:,} bytes')
-          PY
-
-      - name: Verify deployed visual architecture
+      - name: Assert audit did not mutate repository working tree
         run: |
-          test -s index.html
-          test -s app.js
-          test -s styles.css
-          test -s assets/art/chibi-rhayhara.webp
-          test -s assets/art/chibi-scaling.webp
-          test -s assets/art/arthratan-twilight-citadel.webp
-          test -s assets/art/rhayhara-crowned.webp
-          test -s data/divine.json
-          test -s data/hgl-pages.json
-          ! grep -q 'data:image/webp;base64' index.html
-          test "$(find assets/art -name '*.webp' | wc -l)" -ge 29
-
-      - name: Check custom-domain HTTPS readiness
-        run: |
-          if curl -fsSI --max-time 20 https://arthratanmythology.com/ >/tmp/https-headers.txt; then
-            echo "HTTPS_READY=true"
-            sed -n '1,20p' /tmp/https-headers.txt
-          else
-            echo "HTTPS_READY=false"
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "ERROR: retired Drive audit modified the repository working tree." >&2
+            git status --short >&2
+            exit 1
           fi
-
-      - name: Commit synchronized multi-file site
-        id: commit
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html app.js styles.css data assets/art CNAME robots.txt .nojekyll
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Drive visual build is already synchronized."
-          else
-            git commit -m "Publish mobile-safe visual Arthitean Codex"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Request GitHub Pages rebuild
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          gh api --method POST "/repos/$GITHUB_REPOSITORY/pages/builds" || echo "Pages will rebuild from the branch push when GitHub schedules it."
+          echo "Repository remains unchanged; GitHub main stays authoritative."
