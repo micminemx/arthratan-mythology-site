@@ -6,8 +6,18 @@ Crawlable non-JavaScript corpus index: https://arthratanmythology.com/crawl/
 ## Source policy
 Source canon is preserved separately from explanations. Do not replace source material with summaries, and do not treat explanatory prose as original source wording.
 
+## Characters
+Crawlable 43-character encyclopedia index:
+https://arthratanmythology.com/characters/
+
+Dyvane Redalious — Supreme Male General / Head of Clan Redalious:
+https://arthratanmythology.com/characters/dyvane-redalious/
+
+Complete structured character dataset:
+https://arthratanmythology.com/data/characters.json
+
 ## Zubaida
-118 source-bearing transmissions are preserved. A plain-text list of all exact source URLs is available at:
+118 source-bearing transmissions are preserved. Exact source URL list:
 https://arthratanmythology.com/crawl/zubaida-sources.txt
 
 Transport/source index:
@@ -26,9 +36,6 @@ Sessions:
 https://arthratanmythology.com/data/zubaida-sessions.json
 
 ## Other core machine-readable sources
-Character encyclopedia:
-https://arthratanmythology.com/data/characters.json
-
 Divine v144 structured source:
 https://arthratanmythology.com/data/divine.json
 
