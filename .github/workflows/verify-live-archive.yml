@@ -1,81 +1,211 @@
-name: Verify live Zubaida archive
+name: Verify live Zubaida source archive
+
 on:
+  workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
+      - 'index.html'
+      - 'archive.js'
+      - 'archive.css'
+      - 'data/zubaida-index.json'
+      - 'data/zubaida-nonsource.json'
+      - 'data/zubaida-attachments.json'
+      - 'sources/zubaida/**'
       - '.github/workflows/verify-live-archive.yml'
+
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: zubaida-live-source-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  verify:
+  verify-live-source-archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 12
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout exact candidate
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - name: Install headless browser
+          node-version: '24'
+
+      - name: Install Chromium verifier
         run: |
           npm install --no-save playwright@1.55.0
           npx playwright install chromium
-      - name: Verify live archive
+
+      - name: Verify custom-domain source archive in Chromium
         shell: bash
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
         run: |
-          cat > /tmp/verify.mjs <<'NODE'
+          cat > /tmp/verify-live.mjs <<'NODE'
           import fs from 'node:fs';
+          import crypto from 'node:crypto';
           import { chromium } from 'playwright';
-          const base='https://arthratanmythology.com/';
-          const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-          let deployed=false,lastIndex='';
-          for(let i=0;i<24;i++){
-            try{
-              const r=await fetch(base,{cache:'no-store'});lastIndex=await r.text();
-              if(r.ok&&lastIndex.includes('archive.js?b=20260902b')){deployed=true;break}
-            }catch{}
+
+          const base = 'https://arthratanmythology.com/';
+          const expectedSha = process.env.EXPECTED_SHA;
+          const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+          const digest = (x) => crypto.createHash('sha256').update(x).digest('hex');
+          const report = {
+            generated_at: new Date().toISOString(),
+            expected_sha: expectedSha,
+            base,
+            checks: {},
+            details: {},
+          };
+          const check = (name, ok, detail = undefined) => {
+            report.checks[name] = Boolean(ok);
+            if (detail !== undefined) report.details[name] = detail;
+          };
+
+          const publicationFiles = [
+            'index.html',
+            'archive.js',
+            'archive.css',
+            'data/zubaida-index.json',
+            'data/zubaida-nonsource.json',
+          ];
+          let publicationMatch = false;
+          let publicationDiff = [];
+          for (let attempt = 0; attempt < 36; attempt++) {
+            publicationDiff = [];
+            for (const rel of publicationFiles) {
+              const local = fs.readFileSync(rel);
+              const res = await fetch(base + rel + '?release=' + encodeURIComponent(expectedSha), { cache: 'no-store' });
+              const live = res.ok ? Buffer.from(await res.arrayBuffer()) : Buffer.alloc(0);
+              if (!res.ok || digest(local) !== digest(live)) publicationDiff.push({ rel, status: res.status, local: digest(local), live: digest(live) });
+            }
+            if (publicationDiff.length === 0) { publicationMatch = true; break; }
             await sleep(5000);
           }
-          const report={generated:'2026-09-02',base,deployed_cache_version:deployed,checks:{},details:{}};
-          if(!deployed){report.error='Timed out before GitHub Pages served archive.js?b=20260902b';fs.writeFileSync('data/zubaida-live-verification.json',JSON.stringify(report,null,2)+'\n');process.exitCode=1;}
-          else{
-            const browser=await chromium.launch({headless:true});
-            const page=await browser.newPage({viewport:{width:1440,height:1100}});
-            const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text())});
-            await page.goto(base+'#stories',{waitUntil:'networkidle'});
-            await page.waitForSelector('.transmission-card h3',{timeout:30000});
-            const stats=await page.locator('.transmission-stat b').allTextContents();
-            const status=await page.locator('#txStatus').textContent();
-            const firstTitle=await page.locator('.transmission-card h3').first().textContent();
-            report.details.story_stats=stats;report.details.story_status=status;report.details.first_title=firstTitle;
-            report.checks.story_stats_128_118_10=JSON.stringify(stats.slice(0,3))===JSON.stringify(['128','118','10']);
-            report.checks.story_status_reports_118=String(status).includes('118 matching preserved transmissions');
-            report.checks.first_title_is_source_body=!/^From:/i.test(String(firstTitle||''));
-            await page.goto(base+'#transmission:1a0601fc96f7add3',{waitUntil:'networkidle'});
-            await page.waitForSelector('.tx-source',{timeout:30000});
-            const attachmentNames=await page.locator('.tx-attachments .tx-source-link').allTextContents();
-            report.details.five_attachment_names=attachmentNames;
-            report.checks.five_attachment_reader=attachmentNames.length===5&&attachmentNames.includes('da23.PNG')&&attachmentNames.includes('j3.PNG');
-            await page.goto(base+'#transmission:19f962eb9b2a38f9',{waitUntil:'networkidle'});
-            await page.waitForSelector('.tx-reader h1',{timeout:30000});
-            const nonTitle=await page.locator('.tx-reader h1').textContent();
-            const nonText=await page.locator('.tx-reader').textContent();
-            report.details.nonsource_title=nonTitle;
-            report.checks.nonsource_provenance=/quoted-only reply shell/i.test(String(nonTitle||''))&&/not counted as a source transmission/i.test(String(nonText||''));
-            const hgl=await fetch(base+'data/hgl-pages.json',{cache:'no-store'});const divine=await fetch(base+'data/divine.json',{cache:'no-store'});
-            report.checks.hgl_dataset_live=hgl.ok;report.checks.divine_dataset_live=divine.ok;
-            report.details.browser_errors=errors;
-            report.checks.no_browser_errors=errors.length===0;
-            report.complete=Object.values(report.checks).every(Boolean);
-            await browser.close();
-            fs.writeFileSync('data/zubaida-live-verification.json',JSON.stringify(report,null,2)+'\n');
-            if(!report.complete)process.exitCode=1;
+          check('custom_domain_matches_candidate_surface', publicationMatch, publicationDiff);
+          if (!publicationMatch) {
+            fs.writeFileSync('zubaida-live-verification.json', JSON.stringify(report, null, 2) + '\n');
+            process.exit(1);
           }
+
+          const browser = await chromium.launch({ headless: true });
+          const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+          const browserErrors = [];
+          page.on('pageerror', (e) => browserErrors.push('pageerror: ' + String(e)));
+          page.on('console', (m) => { if (m.type() === 'error') browserErrors.push('console: ' + m.text()); });
+
+          const home = await page.goto(base + '?release=' + encodeURIComponent(expectedSha), { waitUntil: 'networkidle', timeout: 45000 });
+          check('homepage_loads', Boolean(home?.ok()));
+          check('story_archive_visible_in_navigation', await page.locator('a[href="#stories"]').count() > 0);
+
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#stories', { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.transmission-card h3', { timeout: 30000 });
+          const stats = await page.locator('.transmission-stat b').allTextContents();
+          const status = String(await page.locator('#txStatus').textContent());
+          check('archive_opens', await page.locator('h1').filter({ hasText: 'Story & Thread Archive' }).count() > 0);
+          check('archive_reports_128_118_10', JSON.stringify(stats.slice(0, 3)) === JSON.stringify(['128', '118', '10']), stats);
+          check('archive_list_accounts_for_118_sources', status.includes('118 matching preserved transmissions'), status);
+
+          const corpus = await page.evaluate(async () => {
+            const [ir, nr] = await Promise.all([
+              fetch('data/zubaida-index.json', { cache: 'no-store' }),
+              fetch('data/zubaida-nonsource.json', { cache: 'no-store' }),
+            ]);
+            const index = await ir.json();
+            const non = await nr.json();
+            const rows = non.non_source_records || non.ids || [];
+            const excluded = new Set(rows.map((r) => r.id));
+            return { ids: index.ids.filter((id) => !excluded.has(id)), nonIds: [...excluded] };
+          });
+          check('derived_source_count_is_118', corpus.ids.length === 118, corpus.ids.length);
+          check('derived_nonsource_count_is_10', corpus.nonIds.length === 10, corpus.nonIds.length);
+
+          const crawl = await page.evaluate(async (ids) => {
+            const failures = [];
+            for (const id of ids) {
+              const r = await fetch(`sources/zubaida/${id}.txt`, { cache: 'no-store' });
+              const text = r.ok ? await r.text() : '';
+              if (!r.ok || !text.trim()) failures.push({ id, status: r.status, bytes: text.length });
+            }
+            return failures;
+          }, corpus.ids);
+          check('all_118_source_files_publicly_reachable', crawl.length === 0, crawl);
+
+          const sampleIds = [corpus.ids[0], corpus.ids[Math.floor(corpus.ids.length / 2)], corpus.ids.at(-1)];
+          const sampleResults = [];
+          for (const id of sampleIds) {
+            await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#transmission:' + id, { waitUntil: 'networkidle', timeout: 45000 });
+            await page.waitForSelector('.tx-source', { timeout: 30000 });
+            const rendered = await page.locator('.tx-source').textContent();
+            const source = await page.evaluate(async (x) => await (await fetch(`sources/zubaida/${x}.txt`, { cache: 'no-store' })).text(), id);
+            sampleResults.push({ id, exact: rendered === source, rendered_chars: rendered?.length || 0, source_chars: source.length });
+          }
+          check('first_middle_final_source_render_exactly', sampleResults.every((x) => x.exact && x.source_chars > 0), sampleResults);
+
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#stories', { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('#txSearch', { timeout: 30000 });
+          const searchNeedle = corpus.ids[Math.floor(corpus.ids.length / 2)].slice(0, 8);
+          await page.locator('#txSearch').fill(searchNeedle);
+          await page.waitForTimeout(800);
+          const searchStatus = String(await page.locator('#txStatus').textContent());
+          check('archive_search_works', searchStatus.includes('1 matching preserved transmission'), { searchNeedle, searchStatus });
+
+          const directId = sampleIds[1];
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#transmission:' + directId, { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.tx-source', { timeout: 30000 });
+          await page.reload({ waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.tx-source', { timeout: 30000 });
+          check('transmission_deep_link_survives_reload', page.url().includes('#transmission:' + directId));
+
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#stories', { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.transmission-card', { timeout: 30000 });
+          await page.locator('.transmission-card').first().click();
+          await page.waitForSelector('.tx-source', { timeout: 30000 });
+          await page.goBack({ waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.transmission-card', { timeout: 30000 });
+          const backOk = page.url().includes('#stories');
+          await page.goForward({ waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.tx-source', { timeout: 30000 });
+          check('browser_back_forward_works', backOk && page.url().includes('#transmission:'));
+
+          await page.setViewportSize({ width: 390, height: 844 });
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#stories', { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.transmission-card', { timeout: 30000 });
+          const archiveOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+          await page.goto(base + '?release=' + encodeURIComponent(expectedSha) + '#transmission:' + sampleIds[0], { waitUntil: 'networkidle', timeout: 45000 });
+          await page.waitForSelector('.tx-source', { timeout: 30000 });
+          const readerOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+          check('mobile_has_no_material_horizontal_overflow', archiveOverflow <= 2 && readerOverflow <= 2, { archiveOverflow, readerOverflow });
+
+          check('no_uncaught_browser_console_errors', browserErrors.length === 0, browserErrors);
+          report.complete = Object.values(report.checks).every(Boolean);
+          await browser.close();
+          fs.writeFileSync('zubaida-live-verification.json', JSON.stringify(report, null, 2) + '\n');
+          if (!report.complete) process.exit(1);
           NODE
-          node /tmp/verify.mjs || true
-      - name: Commit live verification report
+          node /tmp/verify-live.mjs
+
+      - name: Publish verification summary
+        if: always()
         shell: bash
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/zubaida-live-verification.json
-          git diff --cached --quiet && exit 0
-          git commit -m 'Record live Zubaida archive verification'
-          git push
+          if [ -f zubaida-live-verification.json ]; then
+            echo '## Zubaida custom-domain verification' >> "$GITHUB_STEP_SUMMARY"
+            echo '' >> "$GITHUB_STEP_SUMMARY"
+            echo "Candidate: \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat zubaida-live-verification.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: zubaida-live-verification-${{ github.sha }}
+          path: zubaida-live-verification.json
+          if-no-files-found: warn
