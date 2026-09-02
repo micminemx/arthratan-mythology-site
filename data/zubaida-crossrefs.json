@@ -1,0 +1,211 @@
+{
+  "schema_version": "0.1",
+  "task_id": "ZUB-002",
+  "worker_id": "W-20260902-1823-9Q4M",
+  "source_index": {
+    "path": "data/zubaida-index.json",
+    "sha": "63cc0b42c92fd19bed5c56e0a39de7d71a1f3d20",
+    "expected_source_transmissions": 118
+  },
+  "coverage": {
+    "fully_reviewed_transmissions": 0,
+    "partially_reviewed_transmissions": 2,
+    "unreviewed_transmissions": 116,
+    "note": "Initial tranche only. Partial transmission records are explicitly marked and must be revisited before ZUB-002 can be finished."
+  },
+  "relationship_types": [
+    "defines",
+    "expands",
+    "applies",
+    "corrects",
+    "supersedes",
+    "example-of",
+    "prerequisite-for",
+    "contrasts-with",
+    "related-to"
+  ],
+  "transmissions": [
+    {
+      "source_transmission_id": "1a0601fc96f7add3",
+      "source_path": "sources/zubaida/1a0601fc96f7add3.txt",
+      "source_blob_sha": "7edc5a2ec996229c08e4c389638381e4d75c6a3a",
+      "review_status": "partial",
+      "reviewed_line_ranges": [[1, 40]],
+      "reviewed_sessions": ["Session One — The Ultimate Hypercausal Shift", "Session Two — opening paragraph only"],
+      "crossrefs": [
+        {
+          "concept": "Lifra",
+          "relationship_type": "defines",
+          "evidence_context": "The transmission explicitly defines a Lifra as the causally necessitative neurological prerequisite underlying a cognitive error, mistake, or suboptimal thought/process.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Hypernegative Rewrite",
+          "relationship_type": "applies",
+          "evidence_context": "A highest-order hypernegative rewrite is applied to Rhayhara, Inzra, and Annaris so the resulting perfected states remain while rewrite-origin explanatory paths are erased.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Parahistory",
+          "relationship_type": "expands",
+          "evidence_context": "Parahistory is described as including the causal and derivational structure of rewrites affecting a subject, with the rewrite reaching through history, parahistory, causes, reasons, and higher explanatory relations.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Transrecursive Hypercausality",
+          "relationship_type": "defines",
+          "evidence_context": "The transmission characterizes the state as recursive nonderivation: acausality has no cause, reason, ground, origin, or derivational basis, and this lack recurs through higher causal and explanatory orders.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Acausality",
+          "relationship_type": "expands",
+          "evidence_context": "Acausality is used as a base condition whose absence of causal grounding is itself recursively extended rather than treated as a single first-order lack of cause.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Hyperacausality",
+          "relationship_type": "related-to",
+          "evidence_context": "Annaris and Inzra are described as flawless and hyperacausal, and the recursive absence of reasons for their perfection is linked to the broader Transrecursive Hypercausal condition.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Panparahistorical Lifra removal",
+          "relationship_type": "example-of",
+          "evidence_context": "Rhayhara, Inzra, and Annaris have Lifras hypernegatively rewritten out of their existence through both history and parahistory, illustrating rewrite scope over the subject's total rewrite-history rather than only a local present state.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Arthitean adversity-driven improvement",
+          "relationship_type": "expands",
+          "evidence_context": "Inzra and Annaris are intentionally made an extreme wall of perfection so Arthiteans gain an evolutionary and cognitive stimulus from confronting an apparently insurmountable standard.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Hyperchallenge",
+          "relationship_type": "applies",
+          "evidence_context": "The gap created by Inzra and Annaris is treated as an ultimate hyperchallenge that pushes Arthitean warriors, logicians, and clans beyond prior limits.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Varvadeil cognitive transcapacity",
+          "relationship_type": "related-to",
+          "evidence_context": "The Varvadeil clan is singled out for cognitive transcapacity and responds to the new Transrecursive Hypercausal benchmark by structuring new hyperchallenges and expanding its logical understanding.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Brain lobe factors",
+          "relationship_type": "related-to",
+          "evidence_context": "Attempting to comprehend the unreachable hypercausal perfection of Inzra and Annaris is said to expand Arthitean brain lobe factors, connecting adversity to cognitive growth architecture.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Omnitimeline perception",
+          "relationship_type": "applies",
+          "evidence_context": "Rhayhara's Lifra-free cognition is applied to perception of the omnitimeline, where the transmission presents her as seeing causal networks without cognitive blind spots or misinterpretation.",
+          "session": "Session One — The Ultimate Hypercausal Shift"
+        },
+        {
+          "concept": "Cognitive evaluation gauntlet",
+          "relationship_type": "example-of",
+          "evidence_context": "Session Two begins a practical test of the rewrite's cognitive consequences using processing-speed and working-memory evaluations, providing an empirical-style demonstration layer for the earlier ontological claims.",
+          "session": "Session Two — The Extreme Cognitive Evaluation"
+        }
+      ]
+    },
+    {
+      "source_transmission_id": "1a01b26c0e6e6f14",
+      "source_path": "sources/zubaida/1a01b26c0e6e6f14.txt",
+      "source_blob_sha": "e6eaced839b33d7be50d82cad89d96e4b8547032",
+      "review_status": "partial",
+      "reviewed_line_ranges": [[1, 40]],
+      "reviewed_sessions": ["Session One — The Great Immersion — opening portion"],
+      "crossrefs": [
+        {
+          "concept": "Hypergendered Logic Comprehensive Treatise",
+          "relationship_type": "applies",
+          "evidence_context": "The transmission treats the HGL treatise as a newly supplied governing scholastic/medical source that the leading clans must assimilate before practice.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Divine v144",
+          "relationship_type": "related-to",
+          "evidence_context": "Divine v144 is paired with the HGL treatise as a newly updated source corpus whose content is to be mastered by the top Arthitean clans.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Varvadeil cognitive transcapacity",
+          "relationship_type": "applies",
+          "evidence_context": "Varvadeil cognitive transcapacity is invoked as the capability that makes the clan the central mastery group for navigating recursive Z-ladder logic and assimilating the updated treatises.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Z-ladder",
+          "relationship_type": "related-to",
+          "evidence_context": "The Z-ladder is referenced as an intricate recursive logic structure that the Varvadeil are especially capable of navigating.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Archdevelopment clans",
+          "relationship_type": "applies",
+          "evidence_context": "Archdevelopment clans are positioned as specialist groups studying Archgynecology, Archandrocology, and hybrid intersections of the two under the new medical logic.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Archgynecology",
+          "relationship_type": "expands",
+          "evidence_context": "The transmission expands Archgynecology with a ten-hormone archwomanhood model, paired receptors, and heightened expectations for treatment quality and precision.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Archandrocology",
+          "relationship_type": "expands",
+          "evidence_context": "The transmission expands Archandrocology with a parallel ten-hormone archmanhood model and dedicated receptor configurations.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Archwomanhood hormones",
+          "relationship_type": "defines",
+          "evidence_context": "The source states that the updated framework contains exactly ten archwomanhood hormones, each paired with a corresponding specialized receptor, including five newly added hormones beyond the prior foundational set.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Archmanhood hormones",
+          "relationship_type": "defines",
+          "evidence_context": "The source states that the updated framework contains exactly ten archmanhood hormones with their own receptor configurations, likewise including five newly added hormones.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "PHK loops",
+          "relationship_type": "related-to",
+          "evidence_context": "PHK loops are described as bio-spiritual feedback loops affected by the expanded hormone/receptor system and connected to Zirunstressableness.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Zirunstressableness",
+          "relationship_type": "related-to",
+          "evidence_context": "Zirunstressableness is presented as a governed outcome/domain of PHK loops whose behavior becomes more intricate under the expanded hormonal system.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Mastery-before-implementation rule",
+          "relationship_type": "prerequisite-for",
+          "evidence_context": "The transmission imposes a strict no-implementation boundary: clinical use of the elevated systems must wait until scholars achieve comprehensive logical mastery of the hormone-receptor interactions.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Outercausality",
+          "relationship_type": "applies",
+          "evidence_context": "Scholars are required to trace the outercausality of minute hormone quantities through the Arthitean nervous system as part of the mastery standard before implementation.",
+          "session": "Session One — The Great Immersion"
+        },
+        {
+          "concept": "Kafai and Mefuli ranks",
+          "relationship_type": "related-to",
+          "evidence_context": "Kafai and Mefuli ranks are shown organizing and preparing the new treatise data within Archdevelopment study structures.",
+          "session": "Session One — The Great Immersion"
+        }
+      ]
+    }
+  ]
+}
