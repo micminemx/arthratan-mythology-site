@@ -1,6 +1,17 @@
 {
   "version": 1,
-  "configured": false,
+  "configured": true,
   "repository": "micminemx/arthratan-mythology-site",
-  "branch": "main"
+  "branch": "main",
+  "kdf": {
+    "name": "PBKDF2",
+    "hash": "SHA-256",
+    "iterations": 600000,
+    "salt": "lJdIlqvl4Jzfbhb4RCIUhQ=="
+  },
+  "cipher": {
+    "name": "AES-GCM",
+    "iv": "FjMovcLrGc2DNE1M",
+    "data": "3gFajtBNoX1F3uEQSzTs1GD7XvdUNszYRN4Iem31g9bqOAwXI+4DdoNQv2NCnr3yShsEFGYzWdfaftV5hP2iP/ZQ3PWdOE/LdGI6jTTLaPKx3ICgdKRXv9l3UbtWtqnpfZsWR0lp12zJOeB9tA=="
+  }
 }
