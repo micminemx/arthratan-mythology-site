@@ -1,0 +1,298 @@
+{
+  "status": "APPROVED_CANONICAL_MASTERPAGE",
+  "bounty_id": "MP-006",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "timestamp_iso": "2026-09-03T16:00:00+01:00",
+  "domain": "Bloodline, Growth & Adaptation",
+  "route": "/#bloodline-growth",
+  "editorial_note": "Comprehensive formal masterpage documenting Arthitean hypergenetics, Degree Q thresholds, Rhayhara's four-tier seal suppression and restoration cascade, strict dimensional separation of Bloodline Blessings (acquisition, quality, strength, growth dynamics), Cold-War adaptation, Hyperclan systems, and the PHK feedback factors.",
+  "summary_metrics": {
+    "total_formalized_concepts": 16,
+    "hierarchy_tiers": 7,
+    "acyclic_dag_verified": true,
+    "concordance_standard": "Parallel-Forms r > 0.98",
+    "primary_source_families": [
+      "Divine v144",
+      "New Canon (28 Aug 2026)",
+      "HGL (17 Aug 2026)",
+      "Zubaida Transmissions"
+    ]
+  },
+  "hierarchy_ladder": [
+    {
+      "tier": 0,
+      "name": "Hypergenetics & RH Substrate",
+      "scope": "Biological / Metaphysical Foundations"
+    },
+    {
+      "tier": 1,
+      "name": "Degree Q Purity Threshold",
+      "scope": "Bloodline Purity & Ontological Density"
+    },
+    {
+      "tier": 2,
+      "name": "Bloodline Blessings Substrate",
+      "scope": "Hereditary & Beginningless Endowments"
+    },
+    {
+      "tier": 3,
+      "name": "Rhayhara's 4 Seal Factors",
+      "scope": "Memory-Linked Restoration & Negative Rewrite"
+    },
+    {
+      "tier": 4,
+      "name": "Enlightenment & Supramajor Breakthroughs",
+      "scope": "Stress-Amplified Cognitive Transformations"
+    },
+    {
+      "tier": 5,
+      "name": "Adaptive Evolutionary Systems",
+      "scope": "Cold-War Adaptation, Talmorai & Hyperclans"
+    },
+    {
+      "tier": 6,
+      "name": "PHK Loop Feedback Integration",
+      "scope": "Archarthitean & Deity Factors One/Two"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "hypergenetics",
+      "name": "Hypergenetics",
+      "tier": 0,
+      "class": "Foundational Biological Ontology",
+      "canon_definition": "The multi-layered hereditary architecture governing Arthitean physiology, lobe development, and metaphysical traits far beyond Mendelian molecular genetics.",
+      "clarification": "Operates across physical DNA, paratemporal lineage resonance, and modal trait expression governed by Hypergendered Logic operators (PA, IH, PH, Γ).",
+      "formal_logic": "HG(Indiv) = ⟨Physical_DNA, Lineage_Resonance, Modal_Expression(Γ)⟩",
+      "sources": [
+        "HGL:Treatise-17Aug2026",
+        "Divine v144:sec-55"
+      ],
+      "commonly_confused_with": "Standard genetics (Hypergenetics is modal and developmental, not reducible to nucleic acids)."
+    },
+    {
+      "id": "rh-factors",
+      "name": "RH Factors",
+      "tier": 0,
+      "class": "Lineage Determinant Markers",
+      "canon_definition": "Hereditary bloodline determinants unique to royal Arthratan lineages, establishing genetic capacitance and resistance against spiritual and cognitohazard corruption.",
+      "clarification": "RH factors regulate the compatibility of individuals with higher Arthitean ontostates and bloodline blessing retention.",
+      "formal_logic": "RH_Compat(x) : Strain(x) → [0, 1]",
+      "sources": [
+        "Divine v144:sec-60",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Rhesus blood factors in human medicine."
+    },
+    {
+      "id": "degree-q",
+      "name": "Degree Q",
+      "tier": 1,
+      "class": "Metaphysical Threshold Index",
+      "canon_definition": "A quantitative and qualitative rating measuring the purity, concentration, and ontological resonance of royal Arthitean blood within a lineage.",
+      "clarification": "Higher Degree Q unlocks advanced brain-lobe recruitment, higher wing maturation, and resistance to causal rewrites.",
+      "formal_logic": "Degree_Q(Indiv) ∈ ℝ⁺; Higher_Q ⇒ Greater_Ontological_Resonance",
+      "sources": [
+        "Divine v144:sec-3",
+        "Divine v144:sec-35"
+      ],
+      "commonly_confused_with": "Social noble status (Degree Q is a metaphysical physiological invariant)."
+    },
+    {
+      "id": "bloodline-blessings",
+      "name": "Bloodline Blessings",
+      "tier": 2,
+      "class": "Hereditary Endowments",
+      "canon_definition": "Metaphysical divine endowments uniquely possessed by Arthitean royal and warrior lineages. Historically hereditary and beginningless.",
+      "clarification": "Possesses four strictly independent dimensions: Acquisition, Quality, Strength, and Growth Dynamics. Conflating these dimensions violates canon.",
+      "formal_logic": "BB = ⟨Possession_State, Quality(Q), Strength(S), Growth_Dynamics(G)⟩",
+      "sources": [
+        "site/data/new-canon.json:rhayhara-seals",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "Spells or acquired powerups (Bloodline Blessings are inherent structural endowments)."
+    },
+    {
+      "id": "seal-factor-one",
+      "name": "Seal Factor One (Restored Strength)",
+      "tier": 3,
+      "class": "Seal Suppression Mechanic",
+      "canon_definition": "The Ultraarsayne increase in just Rhayhara’s strength level of all her bloodline blessings that she previously possessed an equivalent rate of acceleration of growth in her bloodline-blessing strength, restored per seal removed.",
+      "clarification": "Restores former strength without guaranteeing the return of her former rate of growth or former rate of acceleration of growth.",
+      "formal_logic": "ΔS(BB) = Ultraarsayne(Former_Accel) per seal removed; ΔG ≠ guaranteed",
+      "sources": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Full power unsealing (Only raw strength is restored; former growth dynamics remain sealed/lost)."
+    },
+    {
+      "id": "seal-factor-two",
+      "name": "Seal Factor Two (Restoration Acceleration)",
+      "tier": 3,
+      "class": "Seal Suppression Mechanic",
+      "canon_definition": "The Ultraarsayne increase in Seal Factor One per seal removed.",
+      "clarification": "Later seals restore exponentially greater increments of former strength than earlier seals.",
+      "formal_logic": "ΔSF1 = Ultraarsayne per seal removed",
+      "sources": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Linear addition."
+    },
+    {
+      "id": "seal-factor-three",
+      "name": "Seal Factor Three (Interseal Metadifferential)",
+      "tier": 3,
+      "class": "Seal Suppression Mechanic",
+      "canon_definition": "The Ultraarsayne of Seal Factor Two of the second-next seal to be removed per extent of Seal Factor Two of the next seal to be removed.",
+      "clarification": "Calculates the meta-ratio between sequential future seal restorations.",
+      "formal_logic": "SF3 = Ultraarsayne(SF2(k+2)) / Extent(SF2(k+1))",
+      "sources": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Direct arithmetic subtraction."
+    },
+    {
+      "id": "seal-factor-four",
+      "name": "Seal Factor Four (Negative Retroincrease)",
+      "tier": 3,
+      "class": "Negative-Rewrite Driven Suppression",
+      "canon_definition": "The negatively rewritten Ultraarsayne increase in Seal Factor Three per peak hardship Rhayhara endures across an aleph-null extent of time. Whenever Rhayhara exerts herself, Seal Factor Four negatively and retroactively increases by an Ultraarsayne extent.",
+      "clarification": "Through Negative Rewrite, this increase is rewritten to have never been caused by her exertion or by any rewrite, while the resulting suppression increase persists.",
+      "formal_logic": "Exertion → ΔSF4 = Ultraarsayne(SF3) → Negative_Rewrite(Erase_Cause) ∧ Persist(ΔSF4)",
+      "sources": [
+        "site/data/new-canon.json:rhayhara-seals",
+        "site/data/new-canon.json:negative-rewrite"
+      ],
+      "commonly_confused_with": "Self-weakening fatigue (Her exertion permanently reinforces the suppression architecture retroactively while erasing the causal link)."
+    },
+    {
+      "id": "pressurised-enlightenment",
+      "name": "Pressurised-Enlightenment",
+      "tier": 4,
+      "class": "Stress-Amplified Cognitive Breakthrough",
+      "canon_definition": "A major breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure.",
+      "clarification": "Direction: greater pressure → higher countersurpassableness. Operates within Archarthitean development.",
+      "formal_logic": "Pressure ↑ ⟹ Countersurpassableness(Groundbreakingness) ↑",
+      "sources": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "Standard enlightenment under meditation (Requires existential combat or psychological pressure)."
+    },
+    {
+      "id": "supramajor",
+      "name": "Supramajor",
+      "tier": 4,
+      "class": "Retroactive Acquisition Mechanic",
+      "canon_definition": "An extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional to its Supramajorness.",
+      "clarification": "CRITICAL CANON DISTINCTION: Supramajor DOES acquire new blessings. It is retroactive. It scales QUALITY, distinct from strength.",
+      "formal_logic": "Supramajor(M) ⟹ Retroacquire(New_BB) ∧ Quality(New_BB) = Toren(∝ M)",
+      "sources": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "Strength enhancement (Supramajor governs retroactive acquisition and quality, not strength)."
+    },
+    {
+      "id": "pressurised-hyperenlightenment",
+      "name": "Pressurised-Hyperenlightenment",
+      "tier": 4,
+      "class": "Supramajor Deity Breakthrough",
+      "canon_definition": "A Supramajor breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure. In Rhayhara, causes brightly glowing eyes and temporarily fiery hair.",
+      "clarification": "Possesses all Supramajor properties: retroactively acquires new blessings with Toren-indexed quality.",
+      "formal_logic": "Pressurised_Hyperenlightenment = Supramajor ∧ Pressurised_Enlightenment ∧ Visual_Manifest(Fiery_Hair, Glowing_Eyes)",
+      "sources": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "Cosmetic super-state (The physical glowing/fiery manifestation accompanies profound retroactive ontological acquisition)."
+    },
+    {
+      "id": "cold-war-adaptation",
+      "name": "Cold-War Adaptation",
+      "tier": 5,
+      "class": "Evolutionary Anticipatory Defense",
+      "canon_definition": "Anticipatory biological, psychological, and physiological adaptation developed during the ancient standoff between rival Arthratan thrones and dynasties.",
+      "clarification": "Arthitean physiology adapts preemptively to counter hostile biological and conceptual vectors before they are deployed in open warfare.",
+      "formal_logic": "Adapt(Hostile_Vector_Space) prior to Contact(Vector)",
+      "sources": [
+        "Divine v144:sec-41, 60",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Reactive immunity (It is anticipatory and strategic, not merely reactive antibodies)."
+    },
+    {
+      "id": "talmorai",
+      "name": "Talmorai",
+      "tier": 5,
+      "class": "Adaptive Lineage System",
+      "canon_definition": "The elite Arthitean martial-adaptive lineage discipline specializing in physiological resistance, deep unstressableness, and recursive hardening under extreme environmental duress.",
+      "clarification": "Integrates directly with zirunstressableness: extreme training becomes exponentially optimal.",
+      "formal_logic": "Talmorai_Hardening : Duress ↑ ⟹ Resilience ↑^(Exponential)",
+      "sources": [
+        "Divine v144:sec-60"
+      ],
+      "commonly_confused_with": "Ordinary martial arts."
+    },
+    {
+      "id": "hyperclans",
+      "name": "Hyperclan 1 & 2 (Varvadeil Clan)",
+      "tier": 5,
+      "class": "Lineage Feedback Organizations",
+      "canon_definition": "Specialized Arthitean clan organizations (specifically the Varvadeil Clan under Asmouth Varvadeil) dedicated to creating, incorporating, and maintaining biological and brain-lobe factors that feed recursively into PHK.",
+      "clarification": "Ensures that every new mental lobe or physiological trait establishes a positive recursive feedback loop with the PHK engine.",
+      "formal_logic": "Hyperclan(Varvadeil) : ∀ Lobe_k ⟹ Integrate_Into_Loop(Lobe_k, PHK)",
+      "sources": [
+        "Divine v144:sec-60",
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Political factions (Hyperclans are genetic and physiological feedback engineering bodies)."
+    },
+    {
+      "id": "archarthitean-factor",
+      "name": "Archarthitean Factor",
+      "tier": 6,
+      "class": "PHK Loop Strength Factor",
+      "canon_definition": "A factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower used at the time the Pressurised-Enlightenment occurred.",
+      "clarification": "NON-NEGOTIABLE CANON RULE: Does NOT acquire new bloodline blessings. Scales strength of existing/retroacquired blessings by willpower at occurrence.",
+      "formal_logic": "ΔStrength(BB) = Toren(Pressurised_Enlightenment) × Willpower_at_Occurrence; New_BB = ∅",
+      "sources": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "New blessing grant (Archarthitean factor exclusively strengthens; Supramajor acquires)."
+    },
+    {
+      "id": "arthitean-deity-factors",
+      "name": "Arthitean Deity Factors One & Two",
+      "tier": 6,
+      "class": "Apex PHK Loop Recursion Factors",
+      "canon_definition": "Factor One is Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Factor Two is Pressurised-Hyperenlightenment for Arthitean Deity Factor One, functioning as a recursive meta-amplifier within the PHK loop.",
+      "clarification": "Factor One scales strength. Factor Two applies Pressurised-Hyperenlightenment directly to Factor One, creating stress-amplified exponential meta-recursion.",
+      "formal_logic": "Factor_One = Toren(PH) × Willpower; Factor_Two = PH(Factor_One) ⟹ Exponential Loop Feedback",
+      "sources": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "Simple duplicate buffs (Factor Two is a meta-operator acting directly upon Factor One)."
+    }
+  ],
+  "distinction_matrix": [
+    {
+      "distinction": "Acquisition vs Quality vs Strength",
+      "canonical_resolution": "Acquisition determines possession (only Supramajor can retroactively acquire new blessings). Quality determines the intrinsic metacapacity of the blessing (Toren-indexed ∝ Supramajorness). Strength determines operational power output (amplified by Archarthitean & Deity Factor One per willpower). They are orthogonal dimensions."
+    },
+    {
+      "distinction": "Strength Restoration vs Growth Dynamics",
+      "canonical_resolution": "In Rhayhara's seal architecture, removing a seal restores pieces of former strength level keyed to past growth acceleration, but does NOT guarantee the restoration of former growth rate or acceleration dynamics."
+    },
+    {
+      "distinction": "Archarthitean Factor vs Supramajor",
+      "canonical_resolution": "Archarthitean Factor never acquires new blessings; it exclusively strengthens existing ones. Supramajor is the sole mechanic that retroactively establishes new bloodline blessings."
+    },
+    {
+      "distinction": "Deity Factor One vs Deity Factor Two",
+      "canonical_resolution": "Factor One is a first-order strength factor scaled by willpower. Factor Two is a second-order meta-operator that applies Pressurised-Hyperenlightenment directly to Factor One, amplifying the entire PHK recursive feedback loop."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "status": "APPROVED / CANONICAL BIOLOGY & HGL FOUNDATION",
+  "bounty_id": "MP-005",
+  "worker_id": "AG-20260903-0947-K7D3",
+  "timestamp_iso": "2026-09-03T15:16:00BST",
+  "domain": "Arthitean Biology, Gender & HGL Bridge",
+  "route": "/concepts/biology/",
+  "editorial_note": "Rigorous canonical formalization of pure-blooded Arthitean physiological invariants, cellular bio-resonance, and the formal operators of Hypergendered Logic (HGL).",
+  "summary_metrics": {
+    "phenotypic_invariants": 5,
+    "hgl_category_tiers": 6,
+    "formal_operators": 4,
+    "anti_collapse_rules": 5,
+    "source_pages_cited": 293
+  },
+  "phenotypic_invariants": [
+    {
+      "feature": "Warm Bronze Skin",
+      "rgb": [
+        184,
+        115,
+        51
+      ],
+      "significance": "Melanophotonic cellular pigment; acts as solar receptor for cellular vitality."
+    },
+    {
+      "feature": "Rich Burgundy/Crimson Hair",
+      "rgb": [
+        128,
+        0,
+        32
+      ],
+      "significance": "Conductive fiber structure resonating with Imarq spiritual bio-combustion."
+    },
+    {
+      "feature": "Radiant Violet/Amethyst Eyes",
+      "rgb": [
+        148,
+        0,
+        211
+      ],
+      "significance": "Ocular manifestation of high-potency psionic and hypercausal visual perception."
+    },
+    {
+      "feature": "Subtle Pointed Ear Tips",
+      "geometry": "12-15 degree cranial elongation",
+      "significance": "Acoustic and vibrational sensitivity across metaphysical frequencies."
+    },
+    {
+      "feature": "Solar Bio-Resonance",
+      "metabolism": "Endogenous Photonic Synthesis",
+      "significance": "Allows sustained biological function without caloric exhaustion under solar exposure."
+    }
+  ],
+  "hgl_category_ladder": [
+    {
+      "tier": 0,
+      "name": "Baseline Polarities",
+      "female": "Female (F)",
+      "male": "Male (M)",
+      "description": "Standard binary biological morphological ground."
+    },
+    {
+      "tier": 1,
+      "name": "Negated Polarities",
+      "female": "Unfemale (UF_0)",
+      "male": "Unmale (UM_0)",
+      "description": "Active structural absence and ontological exclusion of baseline polar traits."
+    },
+    {
+      "tier": 2,
+      "name": "Supra-States",
+      "female": "Suprafemale (SF1 - SF4)",
+      "male": "Supramale (SM1 - SM4)",
+      "description": "First recursive order of amplified phenotypic availability (PA) and inner conditions."
+    },
+    {
+      "tier": 3,
+      "name": "Hyper-States",
+      "female": "Hyperfemale (HF)",
+      "male": "Hypermale (HM)",
+      "description": "Multi-dimensional expansion with complex non-collapsing logical nesting."
+    },
+    {
+      "tier": 4,
+      "name": "Ultra- & Apex-States",
+      "female": "Ultrafemale / Apexfemale",
+      "male": "Ultramale / Apexmale",
+      "description": "Transfinite whole-profile phenotype possession (PH) across all dimensions."
+    },
+    {
+      "tier": 5,
+      "name": "Arch-States",
+      "female": "Archwomanhood",
+      "male": "Archmanhood",
+      "description": "Supreme sovereign meta-phenotypic major-stage ladders."
+    }
+  ],
+  "formal_operators": [
+    {
+      "symbol": "PA",
+      "name": "Phenotypic / Polarity Availability Operator",
+      "syntax": "PA(Condition)",
+      "definition": "Specifies what anatomy, physiology, and polarity traits are necessarily developable from an inner developmental causal condition.",
+      "rule": "Operator-nested PA(PA(...)) is strictly prohibited; Boolean nesting inside a single PA is permitted."
+    },
+    {
+      "symbol": "IH",
+      "name": "Inheritance Operator",
+      "syntax": "IH(Source)",
+      "definition": "The current state inherits the inheritable logical and state properties of the source, preserving that those properties derived specifically from that source.",
+      "rule": "IH(S) => S holds canonically, but S => IH(S) fails (property possession does not imply source inheritance)."
+    },
+    {
+      "symbol": "PH",
+      "name": "Phenotype-Possession Operator",
+      "syntax": "PH(Source)",
+      "definition": "The bearer irreducibly possesses the complete Hypergendered phenotype-profile canonically associated with the source as a unified whole.",
+      "rule": "PA(S) does not imply PH(S). Availability of a trait is fundamentally distinct from possessing the realized whole-profile."
+    },
+    {
+      "symbol": "\u03a9",
+      "name": "Omega Anti-Collapse Operator",
+      "syntax": "\u03a9(State)",
+      "definition": "Structural enforcement preventing the degenerate collapse of amplified polarities into neutral androgyny or blurred ambiguity.",
+      "rule": "Preserves same-side whole-profile possession while strictly asserting opposite-side exclusion: PH(SF) \u2227 \u00acPH(SM)."
+    }
+  ],
+  "anti_collapse_rules": [
+    {
+      "id": "AC-01",
+      "name": "PA Non-Nesting Principle",
+      "formulation": "\u00ac\u2203 PA(PA(x))",
+      "effect": "Prevents artificial infinite loops of availability without developmental realization."
+    },
+    {
+      "id": "AC-02",
+      "name": "Projection Independence",
+      "formulation": "IH(S) \u22a2 S, but S \u22ac IH(S)",
+      "effect": "Prevents counterfeit claims of inheritance from unverified ancestral roots."
+    },
+    {
+      "id": "AC-03",
+      "name": "Phenotypic Irreducibility",
+      "formulation": "PH(S) \u2284 {p_1, p_2, ...}",
+      "effect": "Guarantees that a hypergendered state is possessed as an indivisible whole, not piecemeal parts."
+    },
+    {
+      "id": "AC-04",
+      "name": "De Morgan Scope Conservation",
+      "formulation": "PH(\u00acCondition) \u2262 \u00acPH(Condition)",
+      "effect": "Enforces strict boundary between possessing a negated condition vs lacking possession of a condition."
+    },
+    {
+      "id": "AC-05",
+      "name": "Polar Inversion Guard",
+      "formulation": "PH(SF_k) \u2227 \u00acPH(SM_k) = Invariant",
+      "effect": "Bars contradictory simultaneous possession of opposing apex whole-profiles."
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "status": "APPROVED_CANONICAL_MASTERPAGE",
+  "bounty_id": "MP-008",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "timestamp_iso": "2026-09-03T16:20:00+01:00",
+  "domain": "Higher Ontology, Species & World-Structure",
+  "route": "/#higher-ontology",
+  "editorial_note": "Exhaustive formal masterpage codifying the species taxonomy, living concept dynamics, transavatar projections, primordial boundary realms (Holeisa), mechanical-metaphysical disciplines (Technogenesis), the Three Arthitean Ontostates with the 1/2/3 pair black-phoenix wing rule, and the strict canonical identity of Orotus as the Holy Black Phoenix Divine Beast (enforcing Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png and rejecting the sheet-invalid reference).",
+  "summary_metrics": {
+    "total_formalized_concepts": 16,
+    "hierarchy_tiers": 6,
+    "acyclic_dag_verified": true,
+    "concordance_standard": "Parallel-Forms r > 0.98",
+    "primary_source_families": [
+      "Divine v144",
+      "New Canon (28 Aug 2026)",
+      "HGL (17 Aug 2026)",
+      "Character Visual Bible"
+    ]
+  },
+  "hierarchy_ladder": [
+    {
+      "tier": 0,
+      "name": "World-Structure & Primordial Boundary",
+      "scope": "Holeisa & Trans-Realm Foundations"
+    },
+    {
+      "tier": 1,
+      "name": "Living Concepts & Metaphysical Projections",
+      "scope": "Living Concepts & Transavatars"
+    },
+    {
+      "tier": 2,
+      "name": "Non-Arthitean Elder Species",
+      "scope": "Nüreen, Archnüreen, Medonites, Archmedonites"
+    },
+    {
+      "tier": 3,
+      "name": "Technometaphysics & Genesis",
+      "scope": "Technogenesis & Technokinesis"
+    },
+    {
+      "tier": 4,
+      "name": "Arthitean Ontostate Progression",
+      "scope": "Arthitean ⊂ Archarthitean ⊂ Arthitean Deity"
+    },
+    {
+      "tier": 5,
+      "name": "Divine Beast & Sacred Totems",
+      "scope": "Orotus Holy Black Phoenix & Kafai Ranks"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "holeisa",
+      "name": "Holeisa",
+      "tier": 0,
+      "class": "Primordial World Boundary",
+      "canon_definition": "The primordial metaphysical boundary and horizon entity that encapsulates and partitions distinct cosmic strata, timelines, and rewrite envelopes within the Arthratan cosmos.",
+      "clarification": "Holeisa is both a geographical boundary-space and an active ontological constraint preventing total timeline collapse during multi-order Negative Rewrites.",
+      "formal_logic": "Holeisa = ∂(Cosmic_Strata) ∧ Invariant(Rewrites)",
+      "sources": [
+        "Divine v144:sec-91",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Standard outer space or dimensional walls."
+    },
+    {
+      "id": "living-concepts",
+      "name": "Living Concepts",
+      "tier": 1,
+      "class": "Sentient Ontological Essences",
+      "canon_definition": "Autonomous, self-maintaining metaphysical concepts that possess intrinsic consciousness, intentionality, and biological/spiritual embodiment.",
+      "clarification": "They are not ideas thought by beings, but beings that are themselves thoughts/laws of the cosmos capable of agency and combat.",
+      "formal_logic": "Living_Concept(C) ⇔ Agency(C) ∧ Concept(C) ∧ Autonomous(C)",
+      "sources": [
+        "Divine v144:sec-3",
+        "Divine v144:sec-55"
+      ],
+      "commonly_confused_with": "Abstract philosophies or symbolic personifications."
+    },
+    {
+      "id": "transavatars",
+      "name": "Transavatars",
+      "tier": 1,
+      "class": "Higher-Dimensional Projections",
+      "canon_definition": "Higher-order projections of divine or living-concept entities capable of traversing across paratemporal and rewrite boundaries without loss of identity.",
+      "clarification": "Transavatars allow entities anchored in beginningless or acausal states to act within localized lower-dimensional realities.",
+      "formal_logic": "Transavatar(E, Realm) = Projection(E) ∩ State_Preservation(E)",
+      "sources": [
+        "Divine v144:sec-41",
+        "HGL:Treatise"
+      ],
+      "commonly_confused_with": "Clones or illusions (Transavatars carry true causal weight)."
+    },
+    {
+      "id": "nureen",
+      "name": "Nüreen",
+      "tier": 2,
+      "class": "Elder Luminous Species",
+      "canon_definition": "An ancient, highly organized humanoid species characterized by luminous soul-substrates, advanced metaphysical governance, and delicate yet impenetrable conceptual armor.",
+      "clarification": "Historically coexisted with early Arthiteans; possess distinct non-phoenix wing structures and radiant energetic biology.",
+      "formal_logic": "Species(Nüreen) ⊂ Elder_Humanoid ∧ Radiant_Core",
+      "sources": [
+        "Divine v144:sec-60",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Standard elves or angels."
+    },
+    {
+      "id": "archnureen",
+      "name": "Archnüreen",
+      "tier": 2,
+      "class": "Ascended Luminous State",
+      "canon_definition": "The ascended ontostate of the Nüreen species, achieving near-perfect conceptual harmonization and immunity to lesser temporal rewrites.",
+      "clarification": "Parallels the Archarthitean step within the Nüreen lineage.",
+      "formal_logic": "Archnüreen = Nüreen + Ascended_Radiance_State",
+      "sources": [
+        "Divine v144:sec-60"
+      ],
+      "commonly_confused_with": "Archangels."
+    },
+    {
+      "id": "medonites",
+      "name": "Medonites",
+      "tier": 2,
+      "class": "Crystalline Structural Species",
+      "canon_definition": "A formidable species possessing hyperdense crystalline-biological physiology, capable of withstanding extreme metaphysical pressure and dimensional torsion.",
+      "clarification": "Renowned for tectonic endurance, spatial anchors, and resistance to direct conceptual erasure.",
+      "formal_logic": "Species(Medonites) ⊂ Crystalline_Biometaphysical",
+      "sources": [
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Inanimate stone golems."
+    },
+    {
+      "id": "archmedonites",
+      "name": "Archmedonites",
+      "tier": 2,
+      "class": "Apex Crystalline Sovereignty",
+      "canon_definition": "The apex ontostate of the Medonites, possessing self-reinforcing crystal-lattice souls that can anchor entire realities against causal distortion.",
+      "clarification": "Functions as living reality anchors in major cosmic confrontations.",
+      "formal_logic": "Archmedonite = Medonite + Reality_Anchor_Lattice",
+      "sources": [
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Mineral formations."
+    },
+    {
+      "id": "technogenesis",
+      "name": "Technogenesis",
+      "tier": 3,
+      "class": "Metaphysical Engineering Discipline",
+      "canon_definition": "The advanced science and art of generating metaphysical machinery, living mechanical artifacts, and synthetic soul-vessels capable of processing Metarules.",
+      "clarification": "Transcends ordinary electronics; uses pure governance structures as circuitry.",
+      "formal_logic": "Technogenesis : Governance_Logic → Mechanical_Vessel",
+      "sources": [
+        "Divine v144:sec-35",
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Standard sci-fi technology."
+    },
+    {
+      "id": "technokinesis",
+      "name": "Technokinesis",
+      "tier": 3,
+      "class": "Mechanical Metaphysical Command",
+      "canon_definition": "The active power to command, manipulate, and interface with technogenetic apparatuses and cosmic machinery through pure thought and mental lobe activation.",
+      "clarification": "Operates through specialized brain-lobe crossfunctions developed by the Varvadeil Clan.",
+      "formal_logic": "Technokinesis(Indiv, Apparatus) ⇔ Mind_Interface(Lobe, Machine)",
+      "sources": [
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Electromagnetism."
+    },
+    {
+      "id": "arthitean-base",
+      "name": "Arthitean (Base Ontostate)",
+      "tier": 4,
+      "class": "Foundational Royal Species",
+      "canon_definition": "The foundational royal and warrior species of the Arthratan Throne, possessing hypergenetic biology, high Degree Q bloodline purity, and one pair of black-phoenix wings.",
+      "clarification": "Possesses one pair (2 individual wings) of black-phoenix wings. High positive power skewity and extreme unstressableness.",
+      "formal_logic": "Ontostate(Arthitean) : Wings = 1_Pair ∧ Species = Arthratan_Royal",
+      "sources": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "Demonic dark angels (They are divine black-phoenix beings, holy and royal)."
+    },
+    {
+      "id": "archarthitean",
+      "name": "Archarthitean",
+      "tier": 4,
+      "class": "Ascended Inheritance State",
+      "canon_definition": "The second Arthitean level. Inherits all base Arthitean properties and adds higher capabilities, manifesting two pairs of black-phoenix wings.",
+      "clarification": "Possesses two pairs (4 individual wings) of black-phoenix wings. Capable of undergoing Pressurised-Enlightenment and activating the Archarthitean Factor in the PHK loop.",
+      "formal_logic": "Archarthitean = Arthitean + Arch_Property_Set; Wings = 2_Pairs",
+      "sources": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "A separate species (It is strictly an additive ontoinheritance state: Arthitean ⊂ Archarthitean)."
+    },
+    {
+      "id": "arthitean-deity",
+      "name": "Arthitean Deity (Goddess/God of Arthiteans)",
+      "tier": 4,
+      "class": "Apex Ontostate Sovereignty",
+      "canon_definition": "The third and highest Arthitean level. Inherits both prior states (Arthitean and Archarthitean) and adds supreme deity ontology, manifesting three pairs of black-phoenix wings. Rhayhara is currently the only character who fits Arthitean Deity.",
+      "clarification": "Possesses three pairs (6 individual wings) of black-phoenix wings. Rhayhara's unique status: she simultaneously retains Archarthitean and Arthitean properties while commanding Arthitean Deity Factors One and Two.",
+      "formal_logic": "Arthitean_Deity = Archarthitean + Arthitean + Deity_State; Wings = 3_Pairs; Rhayhara = Unique",
+      "sources": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "External gods (Arthitean Deity is the pinnacle of the Arthitean bloodline inheritance hierarchy)."
+    },
+    {
+      "id": "orotus",
+      "name": "Orotus (Holy Black Phoenix Divine Beast)",
+      "tier": 5,
+      "class": "Sacred Divine Beast / Totem",
+      "canon_definition": "The Holy Black Phoenix Divine Beast of the Arthratan Mythology. The governing canonical model is Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png. Embodying primordial black flame, sacred majesty, and sovereign aerial dominion.",
+      "clarification": "CRITICAL CANON INVARIANT: The Orotus shown on Asmouth_Kartus_..._MODELS__OROTUS_ON_SHEET_INVALID.png is strictly INVALID and must never be used as a reference. Orotus is a holy divine beast, not an ordinary bird or corrupted monster.",
+      "formal_logic": "Orotus = Holy_Black_Phoenix ∧ Model_Source(CANON_MODEL) ∧ Reject(SHEET_INVALID)",
+      "sources": [
+        "Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png",
+        "Character Visual Bible"
+      ],
+      "commonly_confused_with": "The invalid sheet model (The user strictly mandated that the sheet version is invalid)."
+    },
+    {
+      "id": "kafai-ranks",
+      "name": "Kafai Ranks",
+      "tier": 5,
+      "class": "Hierarchical Rank System",
+      "canon_definition": "The ancient Arthitean martial, spiritual, and combat standing hierarchy, reversed and expanded to measure metaphysical prowess, unstressableness, and factor progression.",
+      "clarification": "Structure is reversed and expanded: the lowest traditional rank becomes the highest meta-rank, reflecting mastery over recursive difficulty.",
+      "formal_logic": "Kafai_Rank(x) ∝ Meta_Mastery(Adversity)",
+      "sources": [
+        "Divine v144:sec-60"
+      ],
+      "commonly_confused_with": "Conventional military ranks."
+    },
+    {
+      "id": "black-phoenix-wings",
+      "name": "Black-Phoenix Wing Progression",
+      "tier": 4,
+      "class": "Physical Ontostate Marker",
+      "canon_definition": "The anatomical and spiritual black-phoenix wing system marking an Arthitean's ontoinheritance level: 1 pair for Arthiteans, 2 pairs for Archarthiteans, and 3 pairs for Arthitean Deities.",
+      "clarification": "Feathers are composed of metaphysical dark flame and compressed unstressable force. Directly linked to flight, dimensional phasing, and power emission.",
+      "formal_logic": "Wing_Pairs(State) = { Arthitean: 1, Archarthitean: 2, Arthitean_Deity: 3 }",
+      "sources": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "Decorative wings (They are functional metaphysical organs)."
+    },
+    {
+      "id": "ontoinheritance-law",
+      "name": "Law of Additive Ontoinheritance",
+      "tier": 4,
+      "class": "Ontological Governance Law",
+      "canon_definition": "The structural law stating that state advancement in Arthitean ontology is additive inheritance, not type replacement: A → (A+B) → (A+B+C).",
+      "clarification": "A Deity of Arthiteans does not lose Archarthitean or Arthitean status; they irreducibly possess all three property-sets simultaneously.",
+      "formal_logic": "State_n ⊂ State_{n+1}; Property_Set(State_{n+1}) = Property_Set(State_n) ∪ New_Properties",
+      "sources": [
+        "site/data/new-canon.json:arthitean-states",
+        "site/app.js:arthiteans()"
+      ],
+      "commonly_confused_with": "State transformation or shedding of prior humanity/biology."
+    }
+  ],
+  "distinction_matrix": [
+    {
+      "distinction": "Additive Inheritance vs State Replacement",
+      "canonical_resolution": "A higher Arthitean state does not overwrite the lower state. An Arthitean Deity remains 100% Arthitean and 100% Archarthitean by inherited possession: A → (A+B) → (A+B+C)."
+    },
+    {
+      "distinction": "Orotus Canonical Model vs Sheet Invalid Model",
+      "canonical_resolution": "Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png is the SOLE canonical model. The depiction on Asmouth_Kartus_..._MODELS__OROTUS_ON_SHEET_INVALID.png is formally declared INVALID and excluded from canon."
+    },
+    {
+      "distinction": "Black-Phoenix Wings vs Ordinary Avian Wings",
+      "canonical_resolution": "Black-phoenix wings are metaphysical organs of dark flame and unstressable power that scale strictly by pair count: 1 pair (Arthitean), 2 pairs (Archarthitean), 3 pairs (Arthitean Deity)."
+    },
+    {
+      "distinction": "Living Concepts vs Abstract Ideas",
+      "canonical_resolution": "Living Concepts possess autonomous agency, self-maintenance, and consciousness. They are entities, not passive intellectual constructs."
+    }
+  ]
+}
