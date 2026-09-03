@@ -125,6 +125,17 @@
       ]
     },
     {
+      "id": "archarthitean-membership",
+      "name": "Archarthitean Membership",
+      "title": "Archarthitean Membership",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#clans",
+      "definition": "Archarthiteans are the clan leaders of the Top 50 Clans and all of their direct descendants.",
+      "sources": [
+        "User canon update · 3 September 2026"
+      ]
+    },
+    {
       "id": "benzshin-oaths",
       "name": "Benzshin Meritocratic Oaths",
       "title": "Benzshin Meritocratic Oaths",
