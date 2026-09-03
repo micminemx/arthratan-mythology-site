@@ -130,7 +130,18 @@
       "title": "Archarthitean Membership",
       "domain": "Culture, Clans, Institutions & Warfare",
       "route": "/concepts/culture/#clans",
-      "definition": "Archarthiteans are the clan leaders of the Top 50 Clans and all of their direct descendants.",
+      "definition": "Archarthiteans are the clan leaders of the Top 50 Clans and all of their direct descendants. This status is contingent on the clan remaining in the Top 50 rather than being permanently guaranteed by lineage alone.",
+      "sources": [
+        "User canon update · 3 September 2026"
+      ]
+    },
+    {
+      "id": "archarthitean-rank-contingency",
+      "name": "Top-50 Archarthitean Rank-Contingency Law",
+      "title": "Top-50 Archarthitean Rank-Contingency Law",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#clans",
+      "definition": "If a Top 50 Clan drops out of the Top 50, Rhayhara demotes that clan's leader and every direct descendant whose Archarthiteanhood derives from that leader from Archarthitean to Arthitean. Their respective Archarthitean abilities are lost during demotion, but results already gained through those abilities remain. If that clan leader brings the clan back into the Top 50, the leader and those direct descendants regain their Archarthiteanhood and respective Archarthitean abilities. Rhayhara uses this reversible status law to intensify the drive both to enter the Top 50 and to remain there.",
       "sources": [
         "User canon update · 3 September 2026"
       ]
