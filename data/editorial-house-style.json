@@ -1,0 +1,96 @@
+{
+  "status": "APPROVED_EDITORIAL_HOUSE_STYLE",
+  "bounty_id": "EDIT-001",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "timestamp_iso": "2026-09-03T17:35:00+01:00",
+  "domain": "Cross-Worker Editorial QA & Terminology Governance",
+  "house_style_rules": [
+    {
+      "rule_id": "RULE-SOURCE-PRESERVATION",
+      "principle": "Preserved Source Text is Immutable",
+      "enforcement": "Never edit, abbreviate, or modernize source text blocks from Zubaida transmissions, Divine v144, or HGL pages. All commentary must reside in designated clarification or masterpage layers."
+    },
+    {
+      "rule_id": "RULE-APOSSIBLE-ALL",
+      "principle": "Strict Use of 'All' in Apossible Definitions",
+      "enforcement": "Always use 'All' instead of 'totality'. Never define Apossible as merely 'the Metarule governing Impossible'."
+    },
+    {
+      "rule_id": "RULE-TOREN-BOUNDS",
+      "principle": "Toren Odd-Power Interleaving Bounds",
+      "enforcement": "Toren n must always be described as interleaving between Apossible^(2n-1) and Apossible^(2n+1). It is an extent, not an integer step."
+    },
+    {
+      "rule_id": "RULE-BLESSINGS-DIMENSIONS",
+      "principle": "Orthogonal Bloodline Blessing Mechanics",
+      "enforcement": "Strictly separate Blessing Acquisition (retroactive via Supramajor), Quality (Toren-indexed), Strength (Archarthitean & Deity Factor One), and Growth Dynamics (separately tracked)."
+    },
+    {
+      "rule_id": "RULE-WING-PAIR-COUNT",
+      "principle": "Black-Phoenix Wing Progression",
+      "enforcement": "Arthitean = 1 pair (2 wings); Archarthitean = 2 pairs (4 wings); Arthitean Deity = 3 pairs (6 wings). Rhayhara is currently the sole Arthitean Deity."
+    },
+    {
+      "rule_id": "RULE-OROTUS-MODEL-LOCK",
+      "principle": "Orotus Canonical Model Authority",
+      "enforcement": "Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png is the sole canonical reference. The sheet-invalid model is strictly repudiated."
+    }
+  ],
+  "compoterm_lexicon": {
+    "zirTranscendent": {
+      "type": "Compoterm Prefix",
+      "definition": "Transcendent beyond conventional metaphysical thresholds; preserved verbatim in Divine v144."
+    },
+    "zirunstressableness": {
+      "type": "Compoterm Noun",
+      "definition": "Property where adversity and difficulty increase the rate of improvement; core driver of the PHK engine."
+    },
+    "ziradaptive-surpassingness": {
+      "type": "Compoterm Noun",
+      "definition": "Dynamic adaptive capability surpassing anticipated evolutionary vectors."
+    },
+    "zirSieextent": {
+      "type": "Compoterm Extent",
+      "definition": "High-order qualitative scale index in Divine v144 Section 35."
+    },
+    "ultralearning-lifras": {
+      "type": "Compoterm Compound",
+      "definition": "Causal cognitive acquisition and memory unsealing discipline."
+    },
+    "Transrecursive-Hypercausality": {
+      "type": "Compoterm Ontology",
+      "definition": "Precedence formulation blocking causes, grounds, and derivational bases across all meta-orders."
+    },
+    "Pressurised-Enlightenment": {
+      "type": "Canonical Orthography",
+      "definition": "Primary UK spelling enforced across canon; 'Pressurized' accepted as secondary search alias."
+    },
+    "Pressurised-Hyperenlightenment": {
+      "type": "Canonical Orthography",
+      "definition": "Supramajor breakthrough in Enlightenment scaling under pressure; accompanied by Rhayhara fiery hair and glowing eyes."
+    }
+  },
+  "terminology_normalization_map": {
+    "pressurized enlightenment": "Pressurised-Enlightenment",
+    "pressurised hyperenlightenment": "Pressurised-Hyperenlightenment",
+    "arthitean god": "Arthitean Deity",
+    "goddess of arthiteans": "Arthitean Deity (Rhayhara)",
+    "black phoenix wing": "Black-Phoenix Wings (1 pair, 2 pairs, or 3 pairs)",
+    "lydextent": "Lydrextent (historical) / Apossible & Toren (contemporary)",
+    "ultra arsayne": "Ultraarsayne",
+    "hyper arsayne": "Hyperarsayne",
+    "supra arsayne": "Supraarsayne"
+  },
+  "centralized_masterpage_redirects": {
+    "negative rewrite questions": "/#causality",
+    "rules and metarules": "/#scaling",
+    "apossible and toren": "/#scaling",
+    "antipossibility coordinates": "/#scaling",
+    "bloodline blessings architecture": "/#bloodline-growth",
+    "rhayhara seal factors": "/#bloodline-growth",
+    "phk loop and factors": "/#bloodline-growth",
+    "living concepts and transavatars": "/#higher-ontology",
+    "three arthitean ontostates": "/#higher-ontology",
+    "orotus holy black phoenix": "/#higher-ontology"
+  }
+}
