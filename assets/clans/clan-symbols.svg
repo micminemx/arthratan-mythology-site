@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="redalious" viewBox="0 0 64 64"><path d="M12 10h40v22c0 13-8 20-20 24C20 52 12 45 12 32Z"/><path d="M32 14v35M20 29h24"/></symbol>
+<symbol id="unmatara" viewBox="0 0 64 64"><path d="M32 6 46 26 32 46 18 26Z"/><path d="M32 9v46m-8-10 8 10 8-10"/></symbol>
+<symbol id="varvadeil" viewBox="0 0 64 64"><path d="m32 7 20 12v26L32 57 12 45V19Z"/><circle cx="32" cy="32" r="6"/><path d="M32 13v13M19 22l8 7m18-7-8 7M19 42l8-7m18 7-8-7M32 51V38"/></symbol>
+<symbol id="vaeloria" viewBox="0 0 64 64"><path d="M7 32c7-11 15-16 25-16s18 5 25 16c-7 11-15 16-25 16S14 43 7 32Z"/><circle cx="32" cy="32" r="7"/><path d="M50 14 43 22M14 50l7-8"/></symbol>
+<symbol id="xylaris" viewBox="0 0 64 64"><circle cx="12" cy="18" r="4"/><circle cx="12" cy="46" r="4"/><circle cx="32" cy="32" r="4"/><circle cx="52" cy="14" r="4"/><circle cx="52" cy="50" r="4"/><path d="m16 20 12 9m-12 15 12-9m8-5 12-13m-12 19 12 11"/></symbol>
+<symbol id="venakan" viewBox="0 0 64 64"><path d="m14 47 18-18 18 18M18 33l14-14 14 14M24 19l8-8 8 8"/><path d="M10 54h44"/></symbol>
+<symbol id="omnivox" viewBox="0 0 64 64"><rect x="18" y="13" width="28" height="38" rx="2"/><path d="M23 21h18M23 28h18M23 35h11M9 22c-6 6-6 14 0 20M55 22c6 6 6 14 0 20"/></symbol>
+<symbol id="xanthera" viewBox="0 0 64 64"><path d="m32 8 5 14 15-6-8 13 13 7-15 3 4 15-12-9-9 11 1-15-15-1 13-8-9-12 15 4Z"/><path d="M7 15c7-7 13-9 20-8M57 49c-7 7-13 9-20 8"/></symbol>
+<symbol id="veyndarion" viewBox="0 0 64 64"><path d="M10 15c18 0 12 34 32 34 7 0 11-4 12-10M54 15c-18 0-12 34-32 34-7 0-11-4-12-10"/><path d="M17 25h30M17 39h30"/></symbol>
+<symbol id="luminary-sisterhood" viewBox="0 0 64 64"><ellipse cx="32" cy="37" rx="9" ry="15"/><path d="M32 6v12M13 17l9 9M51 17l-9 9M7 36h12M57 36H45"/></symbol>
+<symbol id="anchorite-order" viewBox="0 0 64 64"><circle cx="32" cy="32" r="8"/><circle cx="32" cy="32" r="17"/><circle cx="32" cy="32" r="26"/><path d="M32 6v52M6 32h52"/></symbol>
+<symbol id="zenith-vanguard" viewBox="0 0 64 64"><path d="M8 52 32 12l24 40Z"/><path d="M32 46V18m-7 9 7-9 7 9"/></symbol>
+<symbol id="stoic-ascendancy" viewBox="0 0 64 64"><path d="M10 50h44M15 42h34M20 34h24"/><rect x="27" y="10" width="10" height="24"/></symbol>
+</defs></svg>
