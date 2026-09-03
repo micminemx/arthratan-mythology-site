@@ -1,0 +1,143 @@
+{
+  "version": "CLAN-001 v0.2 supplemental tranche — 3 September 2026",
+  "status": "SOURCE-CONFIRMED BRANCH / COALITION / SPECIALIST CLAN ADDITIONS",
+  "source_note": "These entities were explicitly identified in the Zubaida clan-ranking/proxy-war corpus after the first encyclopedia tranche. Unknown leadership or branch details are left unknown rather than inferred.",
+  "clans": [
+    {
+      "id": "vanguard-branch-1",
+      "name": "Vanguard Branch 1",
+      "category": "Redalious immediate branch clan",
+      "leader": "Immediate branch leader not named in the reviewed source",
+      "rank_evidence": "Explicitly listed among the Top 10 highest-ranked Arthitean clan bodies and described as the most successful immediate branch of Redalious.",
+      "purpose": "Serve as the foremost immediate Redalious branch-clan benchmark, proving that descendants can convert Benzshin pressure and proxy-war performance into elite clan rank rather than relying on main-clan privilege.",
+      "doctrine": [
+        "Redalious branch prestige must be earned through performance, hardship and proxy-war superiority.",
+        "A branch's value is demonstrated by Clan Capability Factor Two, clan merit and the ability to defeat rival branches at comparable or more prestigious recursion depths.",
+        "Immediate-branch status is not a retirement from Benzshin pressure; rank remains performance-sensitive and can be challenged by deeper recursive branches."
+      ],
+      "structure": [
+        "An immediate branch of the Redalious main clan within the recursively extensible Benzshin branch architecture.",
+        "Branch-clan descendants can themselves enter Benzshin and generate branch-of-branch clans without a terminal recursion depth.",
+        "High merit can move members toward the main clan; poor relative merit can move them farther down the recursive branch ladder."
+      ],
+      "performance": [
+        "Source labels it the most successful immediate Redalious branch and places it within the apex Top-10 clan ranking set.",
+        "Its ranking exists inside the same violently volatile proxy-war system in which even a 674th-recursive Unmatara branch defeating a 76th-recursive Redalious branch is treated as a major superiority proof.",
+        "Branch victories feed clan merit and the wider Redalious improvement architecture."
+      ],
+      "members": ["Named individual leader and roster are not established in the reviewed transmission."],
+      "relationships": [
+        "Main-clan allegiance: Redalious Clan.",
+        "Primary systemic rivalry: Unmatara recursive branches, especially under Redalious–Unmatara proxy-war comparison."
+      ],
+      "training": ["Entering Benzshin", "Proxy clan wars", "Ke'enmon-linked military adversity", "Merit-sensitive recursive branch progression"],
+      "unknowns": ["Leader identity", "Exact descendant roster", "Current rank after later clan-ranking changes", "Exact branch founding event"],
+      "sources": ["19eb373264c0f94c", "19eb92b5bb44b764"],
+      "symbol": {"src":"/assets/clans/vanguard-branch-1.svg","alt":"A forward bastion spear nested inside a Redalious-style shield outline","rationale":"The inherited shield geometry signals Redalious origin, while the forward spear marks this branch as the leading immediate vanguard created to prove itself independently."}
+    },
+    {
+      "id": "tactician-branch-1",
+      "name": "Tactician Branch 1",
+      "category": "Unmatara immediate branch clan",
+      "leader": "Immediate branch leader not named in the reviewed source",
+      "rank_evidence": "Explicitly listed among the Top 10 highest-ranked Arthitean clan bodies and described as the most successful immediate branch of Unmatara.",
+      "purpose": "Act as the premier immediate Unmatara branch-clan proof of merit, combining Benzshin hardship with Unmatara strategic/counterlogical doctrine to compete independently in the clan ranking system.",
+      "doctrine": [
+        "Use strategic and counterlogical superiority to turn branch-level resource disadvantage into proxy-war victories.",
+        "Treat branch rank as earned evidence of the descendant's capacity to lead rather than a hereditary entitlement.",
+        "Exploit the recursive branch system as an endless ladder of stronger comparative tests."
+      ],
+      "structure": [
+        "An immediate branch of the Unmatara main clan within the recursive Benzshin structure.",
+        "Its descendants can generate deeper branch clans, while merit can move members inward toward the main clan or outward to deeper recursion.",
+        "It remains loyal to the Unmatara main clan while competing as a separately ranked clan body."
+      ],
+      "performance": [
+        "Source calls it the most successful immediate Unmatara branch and includes it in the apex Top-10 clan list.",
+        "The same source states that Unmatara held a micro-advantage in proxy wars at that time through descendants using hypermelzai and counterlogical intelligence against Redalious branches.",
+        "Its broader branch ecology feeds Unmatara clan merit, Imarq vibrancy and systemic improvement."
+      ],
+      "members": ["Named individual leader and roster are not established in the reviewed transmission."],
+      "relationships": [
+        "Main-clan allegiance: Unmatara Clan.",
+        "Primary systemic rivalry: Redalious recursive branches, including Vanguard Branch 1 as the closest named apex analogue."
+      ],
+      "training": ["Entering Benzshin", "Proxy clan wars", "Battle Melzai / counterlogical branch strategy", "Merit-sensitive recursive branch progression"],
+      "unknowns": ["Leader identity", "Exact descendant roster", "Current rank after later clan-ranking changes", "Exact branch founding event"],
+      "sources": ["19eb373264c0f94c", "19eb92b5bb44b764"],
+      "symbol": {"src":"/assets/clans/tactician-branch-1.svg","alt":"A branching tactical diamond converging on an upward point","rationale":"The branching geometry represents multiple counterlogical routes collapsing into one superior tactical solution, while the upward point represents Benzshin ascent toward the Unmatara main clan."}
+    },
+    {
+      "id": "benzshin-elite",
+      "name": "Benzshin Elite",
+      "category": "Coalition clan of returning heirs",
+      "leader": "Coalition leadership not named in the reviewed source",
+      "rank_evidence": "Explicitly listed among the Top 10 highest-ranked Arthitean clan bodies and defined as a coalition clan of returning heirs who conquered the deep proxy wars.",
+      "purpose": "Institutionalize the highest proven outcomes of Benzshin by bringing together heirs whose legitimacy was earned through deep recursive branch hardship rather than protected main-clan status.",
+      "doctrine": [
+        "Leadership legitimacy must be demonstrated by conquering the abyss of Benzshin.",
+        "Clan prestige is earned through survived hardship, proxy-war success, clan merit and demonstrated capability under scarce branch resources.",
+        "Returning heirs are valuable because they bring back independently forged titles, metatitles, skills and bloodline-improvement outcomes."
+      ],
+      "structure": [
+        "A coalition clan rather than a normal single-lineage main clan.",
+        "Membership is described through returning heirs who have conquered deep proxy wars; exact admission law is not stated.",
+        "Its existence demonstrates that the clan ranking system can recognize cross-lineage coalition structures as clan bodies."
+      ],
+      "performance": [
+        "Ranked in the cited Top-10 clan list despite not being a conventional main clan.",
+        "Its status embodies the empire's anti-nepotism principle: elite standing follows validated Benzshin performance.",
+        "The source frames deep proxy-war conquest as the qualification underlying the coalition's prestige."
+      ],
+      "members": ["Individual member names are not specified in the reviewed clan-ranking transmission; membership is described collectively as returning heirs."],
+      "relationships": ["Draws proven heirs from the wider apex-clan Benzshin ecosystem rather than being presented as a single-parent branch."],
+      "training": ["Deep Benzshin recursion", "Proxy clan wars", "Clan-merit accumulation", "Independent branch leadership under reduced privilege"],
+      "unknowns": ["Named leader", "Named member roster", "Whether membership is permanent", "Exact relationship to each contributing main clan", "Current rank"],
+      "sources": ["19eb373264c0f94c"],
+      "symbol": {"src":"/assets/clans/benzshin-elite.svg","alt":"Three converging branch paths rising through a broken lower ring","rationale":"Multiple paths represent heirs from different branch histories; the broken lower ring represents conquering the abyss of Benzshin before converging into an elite coalition."}
+    },
+    {
+      "id": "sehexi-wardens",
+      "name": "Sehexi Wardens",
+      "category": "Specialist Sehexi infrastructure clan",
+      "leader": "Clan leader not named in the reviewed source",
+      "rank_evidence": "Explicitly listed in a Top 10 highest-ranked Arthitean clans source and defined as a clan dedicated entirely to maintaining the Sehexi training rooms.",
+      "purpose": "Maintain the Sehexi training-room infrastructure that enables extreme Arthitean stress testing, projected challenges and developmental pressure across the empire.",
+      "doctrine": [
+        "Treat training infrastructure as a clan-level strategic responsibility rather than a passive support service.",
+        "Preserve the reliability of environments where Arthiteans deliberately encounter pressures capable of forcing breakthrough-level adaptation."
+      ],
+      "structure": ["A specialist clan organized around Sehexi-room maintenance; internal branch and leadership structure are not specified in the reviewed source."],
+      "performance": ["Its inclusion in the cited Top-10 clan ranking indicates that infrastructure stewardship can generate clan-level prestige comparable to major war, science and narrative clans."],
+      "members": ["No named member is established in the reviewed source."],
+      "relationships": ["Supports empire-wide training systems used by multiple clans and elite Arthiteans; exact client/oversight relationships remain open."],
+      "training": ["Sehexi maintenance", "Extreme training-environment reliability", "Stress-room systems stewardship"],
+      "unknowns": ["Leader", "Named members", "Top-50 continuity across later ranking snapshots", "Technical maintenance doctrine", "Branch structure"],
+      "sources": ["19eb373264c0f94c"],
+      "symbol": {"src":"/assets/clans/sehexi-wardens.svg","alt":"A chamber frame enclosing a central pressure core","rationale":"The enclosed core represents the controlled extremity of a Sehexi room; the outer frame represents the Wardens' duty to preserve and contain the training infrastructure."}
+    },
+    {
+      "id": "keshra-hunters",
+      "name": "Keshra Hunters",
+      "category": "Specialized military ritual clan",
+      "leader": "Clan leader not named in the reviewed source",
+      "rank_evidence": "Explicitly listed in a Top 10 highest-ranked Arthitean clans source and defined as a specialized military clan focused purely on the Shuherei rituals.",
+      "purpose": "Concentrate clan-level military specialization on the Shuherei ritual system and the Keshra-linked combat pressures associated with elite Arthitean advancement.",
+      "doctrine": [
+        "Specialize rather than generalize: the clan's defining canonical focus is the Shuherei ritual system.",
+        "Operate within an empire where Keshra conflict and extreme combat adversity are repeatedly used as drivers of endurance, physiology and divine-power records."
+      ],
+      "structure": ["A specialized military clan; source does not provide its internal branch tree, leader or descendant roster."],
+      "performance": [
+        "Included in the cited Top-10 clan list, indicating that narrow ritual-military specialization can achieve apex clan prestige.",
+        "The same ranking corpus links Keshra combat adversity to elite divine-power records, but it does not assign every such feat specifically to this clan."
+      ],
+      "members": ["No named member is established in the reviewed source."],
+      "relationships": ["Operates within the wider military/clan ecosystem; exact formal relationship to Redalious, Unmatara and imperial Shuherei authorities remains unestablished."],
+      "training": ["Shuherei rituals", "Keshra-focused military specialization", "Extreme-combat adversity"],
+      "unknowns": ["Leader", "Named members", "Exact Shuherei procedure", "Branch structure", "Current rank", "Whether all Keshra combat operations fall under this clan"],
+      "sources": ["19eb373264c0f94c", "19eb92b5bb44b764"],
+      "symbol": {"src":"/assets/clans/keshra-hunters.svg","alt":"A ritual ring crossed by two inward hunting vectors","rationale":"The ring represents ritual specialization; the converging vectors represent disciplined hunting pressure directed toward Keshra-linked military trials."}
+    }
+  ]
+}
