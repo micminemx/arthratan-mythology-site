@@ -1,7 +1,7 @@
 {
   "version": 1,
   "task": "SEARCH-001",
-  "generated_from_commit": "cf4235104fa12fb656206b8ea9f65e7c55db78ce",
+  "generated_from_commit": "cb0176024fa82bf67ef6efbc3306bbb4fdbb2092",
   "source_rule": "Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.",
   "normalization": "Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.",
   "records": 802,
