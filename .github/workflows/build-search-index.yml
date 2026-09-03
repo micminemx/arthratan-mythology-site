@@ -1,0 +1,84 @@
+name: SEARCH-001 Unified Search Corpus
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'sources/zubaida/**'
+      - 'characters/**'
+      - 'divine/**'
+      - 'hgl/**'
+      - 'scripts/build-search-index.py'
+      - '.github/workflows/build-search-index.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: search-index-main
+  cancel-in-progress: true
+
+jobs:
+  build-search-index:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate deterministic search shards
+        env:
+          SEARCH_SOURCE_COMMIT: ${{ github.sha }}
+        run: python scripts/build-search-index.py
+
+      - name: Validate search corpus contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path('.')
+          manifest=json.load(open(root/'data/search-index.json', encoding='utf-8'))
+          meta=manifest['meta']
+          assert meta['records'] == sum(s['records'] for s in manifest['shards'])
+          assert meta['coverage']['characters'] == 43
+          assert meta['coverage']['zubaida_source_transmissions'] == 118
+          assert meta['coverage']['divine_sections'] == 317
+          assert meta['coverage']['hgl_pages'] == 293
+          assert meta['validation']['unique_ids'] is True
+          assert meta['validation']['routes_present'] is True
+          assert meta['validation']['source_paths_present'] is True
+          records=[]
+          for shard in manifest['shards']:
+              p=root/shard['path'].lstrip('/')
+              assert p.exists(), p
+              payload=json.load(open(p, encoding='utf-8'))
+              assert len(payload['records']) == shard['records']
+              records.extend(payload['records'])
+          ids=[r['id'] for r in records]
+          assert len(ids) == len(set(ids)) == meta['records']
+          dyvane=[r for r in records if r['title'].casefold() == 'dyvane redalious']
+          assert dyvane and dyvane[0]['route'] == '/characters/dyvane-redalious/'
+          assert any('hypernegative rewrite' in (r['title']+' '+' '.join(r['keywords'])).casefold() for r in records)
+          print(f"validated {meta['records']} unified records across {len(manifest['shards'])} shards")
+          PY
+
+      - name: Commit generated search data when changed
+        run: |
+          if git diff --quiet -- data/search-index.json data/search-index-meta.json data/search-index-*.json; then
+            echo 'Search corpus already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/search-index.json data/search-index-meta.json data/search-index-*.json
+          git commit -m 'SEARCH-001: regenerate unified search corpus'
+          git push
