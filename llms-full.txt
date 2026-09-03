@@ -1,0 +1,45 @@
+# The Arthitean Codex / Arthratan Mythology — Full LLM Canonical Reference (llms-full.txt)
+
+> Comprehensive reference edition for Arthratan mythological canon, character dossiers, clan doctrines, and ontological mechanics.
+
+## 1. Machine-Native Data Endpoints
+- AI Corpus (NDJSON, 4.4 MB): https://arthratanmythology.com/ai/corpus.jsonl
+- AI Index (Plaintext): https://arthratanmythology.com/ai/index.txt
+- Manifest: https://arthratanmythology.com/ai/index.json
+- Dyvane Redalious Entity Dossier: https://arthratanmythology.com/ai/entities/dyvane-redalious.json
+- Complete Non-JS Crawler Directory: https://arthratanmythology.com/crawl/
+- Canonical Sitemap: https://arthratanmythology.com/sitemap.xml
+
+## 2. Supreme General Dyvane Redalious (Full Dossier & Combat Chronicles)
+- Canonical URL: https://arthratanmythology.com/characters/dyvane-redalious/
+- Titles: Supreme Male General, Head of Clan Redalious, Endurance Vanguard, Highest Endurance Record.
+- Armaments & Appearance: Wields the Redalious Vanguard Greatsword / Heavy Broadsword; heavy blackened steel plate armor with gold filigree; reddish-brown skin; dark red hair; purple eyes burning with high Dukraness; five fingers.
+- Clarification: Dyvane does NOT wield a war hammer. "Halatayo" is a royal conqueror, NOT a weapon. "Flames of amurai" is an internet distortion of the purple flames of Nakosh.
+- Core Mechanics:
+  * Zirunstressableness & PHK Loop: Biological feedback converting physical trauma, pain, and negative-overcostedness into immediate, permanent invulnerability scaling.
+  * Hyperdasmar & Transcendent Processing Power: Mathematical decomposition of battle parameters, probability curves, and theoretical constraint cage construction.
+  * Superhax (Conceptual Reflection Mastery): Inverts and reflects incoming reality-warping hax at the meta-causal tier.
+  * Negative Overcostedness Differential: Forces defensive structures to expend an unsustainable amount of transcapacity, bankrupting barriers upon physical contact.
+  * Venshen: Enforces an opponent's continued survival as an inescapable ultraconceptual paradox (UC-paradox), executing clean decapitations with axiomatic perfect hetu-attributability.
+- Canonical Battle Chronicles:
+  * Chronicle 1 (Duel with Xael-Gath in Ke'enmon Subdimension): Inverted brain-to-muscle causal severance via Superhax; shattered infinite Hypercapacity barrier erasing millions of fleets; regenerated anti-logic tendril wound in <1 ms; decapitated Xael-Gath via Venshen UC-paradox. Provenance: /sources/zubaida/19fa076eb25a917b.txt
+  * Chronicle 2 (Apocalyptic Keshra Hive): Mathematical constraint caging under morphing omniversal physics; recursive decomposition algorithms; Male Performance Factor 4 cognitive ascension. Provenance: /sources/zubaida/19e56867bf1bf3d3.txt
+  * Chronicle 3 (Orotion Quest of Maximum Suffering): Survived beyond invulnerability threshold to earn Endurance Vanguard title, retroactively raising descendant bloodline genetics. Provenance: /sources/zubaida/19ebdf5c2d46c894.txt
+  * Chronicle 4 (Ke'enmon Subdimension 4 Campaigns): Frontline defense against disaster threats using purple flames of Nakosh channeled through the Shae'ro organ. Provenance: /sources/zubaida/19fd6196dcecbba1.txt
+
+## 3. Supreme Empress Rhayhara
+- Canonical URL: https://arthratanmythology.com/characters/rhayhara/
+- Titles: Supreme Empress, Goddess of Arthiteans, Omnicausal Overworlder.
+- Station: Absolute Kafai Rank 1. Unreachable supreme benchmark. Authorizes empirewide retroactive parahistorical development, timeline revisions, and Archarthiteanhood state machine transitions.
+
+## 4. Clan Redalious (Imperial Clan #1)
+- Canonical URL: https://arthratanmythology.com/clans/redalious/
+- Role: Physical anvil of the Arthitean military hierarchy. Specializes in zirunstressableness, branch-clan recursion (d=76), and proxy-war arbitration.
+
+## 5. Causal & Growth Operators
+- Hypernegative Rewrite: https://arthratanmythology.com/masterpages/hypernegative-rewrite/
+  * Formalization: `∀ e ∈ ExplanatoryOrders: ¬RewriteGround(e, X) ∧ X = Persist`. Infinite recursive explanatory erasure without terminal depth.
+- Negative Rewrite: https://arthratanmythology.com/masterpages/negative-rewrite/
+  * Formalization: `Rewrite(T -> T') ∧ Erase(Cause(Rewrite)) => NaturalState(T')`.
+- Supramajor: https://arthratanmythology.com/masterpages/supramajor/
+  * Formalization: `Supramajor(M) ⟹ Retroacquire(New_BB) ∧ Quality(New_BB) = Toren(∝ M)`. Retroactively acquires new bloodline blessings and scales their quality index.

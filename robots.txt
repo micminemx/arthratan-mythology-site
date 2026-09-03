@@ -1,8 +1,49 @@
-# Public crawling and discovery are allowed.
-# Keep OpenAI training crawl opted out unless explicitly enabled later.
-User-agent: GPTBot
-Disallow: /
+# robots.txt for arthratanmythology.com
+# Explicitly allow full access for search engines, AI retrieval, and browsing crawlers.
 
+# Google & Gemini AI Browsing / Scraping Agents
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-InspectionTool
+Allow: /
+
+# OpenAI & ChatGPT Browsing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic & Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Microsoft Bing & IndexNow
+User-agent: Bingbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Default Allow for all other legitimate crawlers
 User-agent: *
 Allow: /
 
