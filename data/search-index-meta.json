@@ -1,13 +1,13 @@
 {
   "version": 1,
   "task": "SEARCH-001",
-  "generated_from_commit": "37566a739089e568dbb3c538c59a304c3117bb9a",
+  "generated_from_commit": "unspecified-build-snapshot",
   "source_rule": "Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.",
   "normalization": "Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.",
-  "records": 802,
+  "records": 884,
   "counts": {
     "character": 43,
-    "concept": 19,
+    "concept": 101,
     "divine": 317,
     "hgl": 293,
     "living-canon": 8,
@@ -20,7 +20,7 @@
     "divine_sections": 317,
     "hgl_pages": 293,
     "living_canon_sections": 8,
-    "causal_concepts": 6,
+    "causal_concepts": 14,
     "hgl_glossary_entries": 13
   },
   "validation": {
@@ -70,7 +70,7 @@
         "living-canon",
         "provenance"
       ],
-      "records": 31
+      "records": 113
     }
   ]
 }

@@ -110,5 +110,75 @@
       "definition": "Grand public festivities commemorating breakthrough achievements in Kafai ranking, celebrating hyperascenders and reinforcing imperial unity.",
       "significance": "Sociological balancing of extreme competitive pressure through collective triumph."
     }
+  ],
+  "concepts": [
+    {
+      "id": "clan-system",
+      "name": "Arthitean Imperial Clan Hierarchy",
+      "title": "Arthitean Imperial Clan Hierarchy",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#clans",
+      "definition": "The multi-tier meritocratic lineage structure governing the Top 50 Clans of the Arthitean Empire, balancing absolute imperial sovereignty with lineage autonomy.",
+      "sources": [
+        "19f9518411db997b",
+        "ZUB-001"
+      ]
+    },
+    {
+      "id": "benzshin-oaths",
+      "name": "Benzshin Meritocratic Oaths",
+      "title": "Benzshin Meritocratic Oaths",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#benzshin",
+      "definition": "Sacred contractual oaths binding clan warriors and scholars to higher imperial duties and anti-destiny overaccomplishment.",
+      "sources": [
+        "19f9518411db997b"
+      ]
+    },
+    {
+      "id": "orotion-quests",
+      "name": "Orotion Quests",
+      "title": "Orotion Quests",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#orotion-quests",
+      "definition": "Spiritual and martial trials undertaken in honor of Orotus the Holy Black Phoenix Divine Beast to unlock bloodline blessings.",
+      "sources": [
+        "19f9406c97ff3670",
+        "19ffdaf11c6057c6"
+      ]
+    },
+    {
+      "id": "proxy-wars-doctrine",
+      "name": "Cold-War Proxy Warfare Architecture",
+      "title": "Cold-War Proxy Warfare Architecture",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#proxy-wars",
+      "definition": "The strategic imperial doctrine of sub-existential proxy conflicts, preventing total cosmic annihilation while securing dominance over transadversarial powers.",
+      "sources": [
+        "19f9518411db997b"
+      ]
+    },
+    {
+      "id": "keenmon-discipline",
+      "name": "Ke'enmon Martial Discipline",
+      "title": "Ke'enmon Martial Discipline",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#keenmon",
+      "definition": "High-order combat meditation and reflex synchronization allowing pure-blooded Arthiteans to deploy Melzai and Dasmar under extreme combat pressure.",
+      "sources": [
+        "19f9518411db997b"
+      ]
+    },
+    {
+      "id": "grand-reincarnation",
+      "name": "Grand Reincarnation Architecture",
+      "title": "Grand Reincarnation Architecture",
+      "domain": "Culture, Clans, Institutions & Warfare",
+      "route": "/concepts/culture/#reincarnation",
+      "definition": "The metaphysical cycle preserving heroic Arthitean souls across parahistory and recursive timelines without memory or capability loss.",
+      "sources": [
+        "19f9518411db997b"
+      ]
+    }
   ]
 }

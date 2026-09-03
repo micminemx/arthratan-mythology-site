@@ -1,5 +1,5 @@
 # Arthitean Codex unified search index
-# 802 records; JavaScript not required
+# 884 records; JavaScript not required
 # Format: title | type | route | aliases | source/data path
 # Canonical site: https://arthratanmythology.com/
 
@@ -46,21 +46,103 @@ Xylos | character | /characters/xylos/ | The Paraconceptual Eraser | /data/chara
 Zaxor Redalious | character | /characters/zaxor-redalious/ |  | /data/characters.json
 Zeta | character | /characters/zeta/ | Foreign Affairs Minister | /data/characters.json
 Zyra Xanthera | character | /characters/zyra-xanthera/ | The Empress of the Nakosh Spectacle; Sovereign of the Cultural Pulse — metatitle | /data/characters.json
+Acausality | concept | /#masterpage:acausality |  | /data/masterpages.json
+Antagocognition | concept | /#masterpage:antagocognition |  | /data/masterpages.json
+Antaintelligence & Antahyperintelligence | concept | /#masterpage:antaintelligence |  | /data/masterpages.json
+Anticausal, Hyperanticausal & Ultraanticausal Improvement | concept | /#masterpage:anticausal-improvement |  | /data/masterpages.json
+Antipossibility Families (A(k, n)) | concept | /#masterpage:antipossibility-families |  | /data/masterpages.json
+Antipossible | concept | /#masterpage:antipossible |  | /data/masterpages.json
+Antiprecausality | concept | /#masterpage:antiprecausality |  | /data/masterpages.json
+Apossible | concept | /#masterpage:apossible |  | /data/masterpages.json
+Archarthitean | concept | /#masterpage:archarthitean |  | /data/masterpages.json
+Archarthitean Factor | concept | /#masterpage:archarthitean-factor |  | /data/masterpages.json
+Archmedonites | concept | /#masterpage:archmedonites |  | /data/masterpages.json
+Archnüreen | concept | /#masterpage:archnureen |  | /data/masterpages.json
+Arsayne | concept | /#masterpage:arsayne |  | /data/masterpages.json
+Arthitean (Base Ontostate) | concept | /#masterpage:arthitean-base |  | /data/masterpages.json
+Arthitean Deity (Goddess/God of Arthiteans) | concept | /#masterpage:arthitean-deity |  | /data/masterpages.json
+Arthitean Deity Factors One & Two | concept | /#masterpage:arthitean-deity-factors |  | /data/masterpages.json
+Arthitean Imperial Clan Hierarchy | concept | /#masterpage:clan-system |  | /data/masterpages.json
+Arthitean Phenotypic Invariants | concept | /#masterpage:phenotypic-invariants |  | /data/masterpages.json
+Benzshin Meritocratic Oaths | concept | /#masterpage:benzshin-oaths |  | /data/masterpages.json
+Black-Phoenix Wing Progression | concept | /#masterpage:black-phoenix-wings |  | /data/masterpages.json
+Bloodline Blessings | concept | /#masterpage:bloodline-blessings |  | /data/masterpages.json
 BSIH — Bounded Superinheritance | concept | /hgl/ | BSIH | /data/hgl-glossary.json
-Causal Precedence Terms | concept | /#scaling |  | /data/causal-ontology.json
+Cogniscience | concept | /#masterpage:cogniscience |  | /data/masterpages.json
+Cold-War Adaptation | concept | /#masterpage:cold-war-adaptation |  | /data/masterpages.json
+Cold-War Proxy Warfare Architecture | concept | /#masterpage:proxy-wars-doctrine |  | /data/masterpages.json
+Crosspattern Recognition & Metacrosspatterns | concept | /#masterpage:crosspattern-recognition |  | /data/masterpages.json
+Degree Q | concept | /#masterpage:degree-q |  | /data/masterpages.json
 FD — Flaw predicate | concept | /hgl/ | FD | /data/hgl-glossary.json
-Hypernegative Rewrite | concept | /#negative-rewrite |  | /data/causal-ontology.json
+Gamma Realization Map Operator (Γ) | concept | /#masterpage:operator-gamma |  | /data/masterpages.json
+Grand Reincarnation Architecture | concept | /#masterpage:grand-reincarnation |  | /data/masterpages.json
+Greater- and Lesser-Orders | concept | /#masterpage:greater-lesser-orders |  | /data/masterpages.json
+HGL Anti-Collapse Rules | concept | /#masterpage:anti-collapse-rules |  | /data/masterpages.json
+Higher Apossible Orders (Apossiblen) | concept | /#masterpage:higher-apossible |  | /data/masterpages.json
+Holeisa | concept | /#masterpage:holeisa |  | /data/masterpages.json
+Hyperacausality | concept | /#masterpage:hyperacausality |  | /data/masterpages.json
+Hyperarsayne | concept | /#masterpage:hyperarsayne |  | /data/masterpages.json
+Hyperclan 1 & 2 (Varvadeil Clan) | concept | /#masterpage:hyperclans |  | /data/masterpages.json
+Hypergenetics | concept | /#masterpage:hypergenetics |  | /data/masterpages.json
+Hyperinferring & Hyperdeducing | concept | /#masterpage:hyperinferring-deducing |  | /data/masterpages.json
+Hyperlearning | concept | /#masterpage:hyperlearning |  | /data/masterpages.json
+Hypernegative Rewrite | concept | /#masterpage:hypernegative-rewrite |  | /data/masterpages.json
 IH — Inheritance / provenance | concept | /hgl/ | IH | /data/hgl-glossary.json
+Impossibility-Governance | concept | /#masterpage:impossibility-governance |  | /data/masterpages.json
+Infracausality & Infracause | concept | /#masterpage:infracausality |  | /data/masterpages.json
+Inheritance Operator (IH) | concept | /#masterpage:operator-ih |  | /data/masterpages.json
+Kafai Ranks | concept | /#masterpage:kafai-ranks |  | /data/masterpages.json
+Ke'enmon Martial Discipline | concept | /#masterpage:keenmon-discipline |  | /data/masterpages.json
+Law of Additive Ontoinheritance | concept | /#masterpage:ontoinheritance-law |  | /data/masterpages.json
+Learning | concept | /#masterpage:learning |  | /data/masterpages.json
+Lifra & Error-Cause Mechanics | concept | /#masterpage:lifra |  | /data/masterpages.json
+Living Concepts | concept | /#masterpage:living-concepts |  | /data/masterpages.json
 LSCC — Limit-State Closure Constructor | concept | /hgl/ | LSCC | /data/hgl-glossary.json
+Lydrextent Ladder | concept | /#masterpage:lydrextent |  | /data/masterpages.json
+Medonites | concept | /#masterpage:medonites |  | /data/masterpages.json
+Metagovernance Depth | concept | /#masterpage:metagovernance-depth |  | /data/masterpages.json
+Metalearning | concept | /#masterpage:metalearning |  | /data/masterpages.json
+Metarules | concept | /#masterpage:metarules |  | /data/masterpages.json
+Modus-Tollens Causalities | concept | /#masterpage:modus-tollens-causality |  | /data/masterpages.json
+Negative Rewrite | concept | /#masterpage:negative-rewrite |  | /data/masterpages.json
+Nullmetapattern Recognition | concept | /#masterpage:nullmetapattern-recognition |  | /data/masterpages.json
+Nullpattern Recognition | concept | /#masterpage:nullpattern-recognition |  | /data/masterpages.json
+Nullrecognition | concept | /#masterpage:nullrecognition |  | /data/masterpages.json
+Nüreen | concept | /#masterpage:nureen |  | /data/masterpages.json
+Orotion Quests | concept | /#masterpage:orotion-quests |  | /data/masterpages.json
+Orotus (Holy Black Phoenix Divine Beast) | concept | /#masterpage:orotus |  | /data/masterpages.json
+Outercausality Stage 1 | concept | /#masterpage:outercausality-stage-1 |  | /data/masterpages.json
 PA — Developmental causal mode | concept | /hgl/ | PA | /data/hgl-glossary.json
-Parahistory | concept | /#scaling |  | /data/causal-ontology.json
-Paratime | concept | /#scaling |  | /data/causal-ontology.json
+Parahistory | concept | /#masterpage:parahistory |  | /data/masterpages.json
+Paratime | concept | /#masterpage:paratime |  | /data/masterpages.json
+Parse, Cogniparse & Technocogniparse | concept | /#masterpage:technocogniparse |  | /data/masterpages.json
 PH — Irreducible phenotype-profile possession | concept | /hgl/ | PH | /data/hgl-glossary.json
+Phenotype-Possession Operator (PH) | concept | /#masterpage:operator-ph |  | /data/masterpages.json
+Polarity Availability Operator (PA) | concept | /#masterpage:operator-pa |  | /data/masterpages.json
+Pressurised-Enlightenment | concept | /#masterpage:pressurised-enlightenment |  | /data/masterpages.json
+Pressurised-Hyperenlightenment | concept | /#masterpage:pressurised-hyperenlightenment |  | /data/masterpages.json
 PSIH — Prefix Superinheritance | concept | /hgl/ | PSIH | /data/hgl-glossary.json
+Recursive Metarules (Metarulesn) | concept | /#masterpage:recursive-metarules |  | /data/masterpages.json
+RH Factors | concept | /#masterpage:rh-factors |  | /data/masterpages.json
+Risvulation | concept | /#masterpage:risvulation |  | /data/masterpages.json
+Rules | concept | /#masterpage:rules |  | /data/masterpages.json
+Seal Factor Four (Negative Retroincrease) | concept | /#masterpage:seal-factor-four |  | /data/masterpages.json
+Seal Factor One (Restored Strength) | concept | /#masterpage:seal-factor-one |  | /data/masterpages.json
+Seal Factor Three (Interseal Metadifferential) | concept | /#masterpage:seal-factor-three |  | /data/masterpages.json
+Seal Factor Two (Restoration Acceleration) | concept | /#masterpage:seal-factor-two |  | /data/masterpages.json
 SIH — Superinheritance | concept | /hgl/ | SIH | /data/hgl-glossary.json
-Transrecursive Hypercausality | concept | /#scaling |  | /data/causal-ontology.json
+Supraarsayne | concept | /#masterpage:supraarsayne |  | /data/masterpages.json
+Supracause & Asupracausal | concept | /#masterpage:supracause-asupracausal |  | /data/masterpages.json
+Supramajor | concept | /#masterpage:supramajor |  | /data/masterpages.json
+Talmorai | concept | /#masterpage:talmorai |  | /data/masterpages.json
+Technogenesis | concept | /#masterpage:technogenesis |  | /data/masterpages.json
+Technokinesis | concept | /#masterpage:technokinesis |  | /data/masterpages.json
+Toren Scaling Hierarchy (Toren 1–5) | concept | /#masterpage:toren |  | /data/masterpages.json
+Transavatars | concept | /#masterpage:transavatars |  | /data/masterpages.json
+Transrecursive Hypercausality | concept | /#masterpage:transrecursive-hypercausality |  | /data/masterpages.json
 UD — Unflaw predicate | concept | /hgl/ | UD | /data/hgl-glossary.json
-Ultralearning & Lifras | concept | /#scaling |  | /data/causal-ontology.json
+Ultraarsayne | concept | /#masterpage:ultraarsayne |  | /data/masterpages.json
+Ultralearning | concept | /#masterpage:ultralearning |  | /data/masterpages.json
 Γ — Archstage global meta-phenotype | concept | /hgl/ | Γ | /data/hgl-glossary.json
 Ω_H / Hyperomega — Minor-hypercategory saturation bound | concept | /hgl/ | Ω_H / Hyperomega | /data/hgl-glossary.json
 □ — Stage-relative biological necessity | concept | /hgl/ | □ | /data/hgl-glossary.json

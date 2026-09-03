@@ -3,7 +3,7 @@ const state={manifest:null,canon:null,divine:null,hglPages:null,hglToc:null};
 const $=s=>document.querySelector(s); const main=$('#main');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const slug=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-async function load(name){ if(state[name]) return state[name]; const map={manifest:'manifest.json',canon:'new-canon.json',divine:'divine.json',hglPages:'hgl-pages.json',hglToc:'hgl-toc.json'}; const r=await fetch('data/'+map[name]); state[name]=await r.json(); return state[name]; }
+async function load(name){ if(state[name]) return state[name]; const map={manifest:'manifest.json',canon:'new-canon.json',divine:'divine.json',hglPages:'hgl-pages.json',hglToc:'hgl-toc.json',masterpages:'masterpages.json'}; const file=map[name]||(name.endsWith('.json')?name:name+'.json'); const r=await fetch('data/'+file); state[name]=await r.json(); return state[name]; }
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
 function setCrumb(x){$('#crumbs').textContent=x; document.title=x+' · The Arthitean Codex'; [...document.querySelectorAll('#nav a')].forEach(a=>a.classList.toggle('active',location.hash.startsWith(a.getAttribute('href'))));}
 function routeTo(hash){location.hash=hash;}
@@ -78,5 +78,104 @@ ${artBanner('assets/art/arthratan-golden-ruins.webp','Arthratan provenance','The
 <div class="warning">This site is deliberately marked <b>noindex / nofollow</b>. It is intended to be accessed through its direct link rather than public search discovery.</div>
 <div class="section-head"><h2>Visual provenance</h2><p>The Drive source package preserves the two original comparison plates embedded in Divine v144. The live site uses new vector artwork so every living-canon depiction can include the specified black phoenix wings and monumental Arthitean visual language.</p></div><a class="secondary art-action" href="https://drive.google.com/drive/folders/1k6fpEF3Zi_tBhtWRUR7wCs8NbKojkCpq" target="_blank" rel="noopener"><img src="assets/art/chibi-sources.webp" alt=""><span>Open the Drive project</span></a>`}
 
-async function router(){window.scrollTo(0,0);const h=(location.hash||'#home').slice(1);try{if(h==='home')return home();if(h==='atlas')return atlas();if(h==='scaling')return scaling();if(h==='negative-rewrite')return negativeRewrite();if(h==='arthiteans')return arthiteans();if(h==='rhayhara')return rhayhara();if(h==='hgl')return hgl();if(h==='divine')return divine();if(h==='hgl-archive')return hglArchive();if(h==='search')return searchPage();if(h==='sources')return sources();if(h.startsWith('divine-section:')){setCrumb('Divine v144 Archive');return renderDivineArchive(h.split(':')[1])}if(h.startsWith('hgl-part:')){return hglArchive(h.split(':')[1])}if(h.startsWith('hgl-page-direct:')){return hglDirect(Number(h.split(':')[1]))}return home();}catch(e){console.error(e);main.innerHTML=`<div class="card"><h3>Codex rendering error</h3><p>${esc(e.message)}</p></div>`}}
+
+// MP-009: MASTERPAGE HUB & DYNAMIC MASTERPAGE RENDERER
+async function masterpagesHub(){
+  const d = await load('masterpages');
+  setCrumb('Masterpages Directory');
+  const domains = {};
+  d.masterpages.forEach(m => {
+    if(!domains[m.domain_name]) domains[m.domain_name] = [];
+    domains[m.domain_name].push(m);
+  });
+
+  let domainHtml = '';
+  for(const [dName, mList] of Object.entries(domains)){
+    domainHtml += `<div class="section-head"><h2>${esc(dName)}</h2><p>${mList.length} canonical masterpages</p></div>
+    <div class="grid two concept-grid">
+      ${mList.map(m => `
+        <a class="card concept-card" href="#masterpage:${m.id}">
+          <div class="micro">${esc(m.class)}</div>
+          <h3>${esc(m.title)}</h3>
+          <p>${esc(m.summary)}</p>
+          <span class="concept-link">Open masterpage entry →</span>
+        </a>
+      `).join('')}
+    </div>`;
+  }
+
+  main.innerHTML = pageIntro('Canonical concept atlas · Source vs explanation · Formal ontology','Masterpages Directory','Authoritative masterpages unifying verbatim source canon, explanatory analysis, mathematical formalization, and character links.','assets/art/chibi-scaling.webp') + `
+  <div class="warning"><b>Source-vs-Explanation Invariant:</b> Masterpages enforce strict visual and structural separation between verbatim source canon (gold panels) and non-canonical explanatory commentary (teal panels).</div>
+  ${domainHtml}
+  `;
+}
+
+async function masterpageView(id){
+  const d = await load('masterpages');
+  const m = d.masterpages.find(x => x.id === id);
+  if(!m) return masterpagesHub();
+  setCrumb(m.title);
+
+  const canonHtml = (m.source_canon || []).map(p => `<p style="margin-bottom:12px">${esc(p)}</p>`).join('');
+  const formalHtml = m.formalization && m.formalization.length ? `
+    <div class="section-head"><h2>Formal Compression & Logic</h2></div>
+    <div class="formula-stack">
+      ${m.formalization.map(f => `<div class="formula">${esc(f)}</div>`).join('')}
+    </div>
+  ` : '';
+
+  const relatedHtml = m.related_concepts && m.related_concepts.length ? `
+    <div class="section-head"><h2>Related Masterpages</h2></div>
+    <div class="concept-nav">
+      ${m.related_concepts.map(cid => `<a href="#masterpage:${cid}">${esc(cid)}</a>`).join('')}
+    </div>
+  ` : '';
+
+  const charsHtml = m.related_characters && m.related_characters.length ? `
+    <div class="section-head"><h2>Embodied & Associated Characters</h2></div>
+    <div class="grid three">
+      ${m.related_characters.map(cslug => `
+        <a class="card clickable" href="/characters/${cslug}/">
+          <div class="micro">CANONICAL EMBODIMENT</div>
+          <h3>${esc(cslug.replace(/-/g, ' ').toUpperCase())}</h3>
+          <span class="concept-link">View character dossier →</span>
+        </a>
+      `).join('')}
+    </div>
+  ` : '';
+
+  main.innerHTML = pageIntro(m.class, m.title, m.summary, 'assets/art/chibi-scaling.webp') + `
+    <div class="concept-nav"><a href="#masterpages">← Masterpages directory</a><a href="#masterpages">${esc(m.domain_name)}</a></div>
+
+    <div class="section-head"><h2 style="color:#FFD700">Verbatim Source Canon</h2><p>Primary authoritative text, normalized only for typography.</p></div>
+    <div class="card" style="border-left:4px solid #FFD700; background:rgba(255,215,0,0.04)">${canonHtml || '<p>No verbatim fragment recorded.</p>'}</div>
+
+    <div class="section-head"><h2 style="color:#00FFCC">Explanatory & Causal Analysis</h2><p>Non-canonical interpretive analysis to make the underlying mechanics inspectable.</p></div>
+    <div class="card" style="border-left:4px solid #00FFCC; background:rgba(0,255,204,0.04)">
+      <div class="micro">INTERPRETIVE LAYER · EXPLANATION ONLY</div>
+      <p>${esc(m.explanation || 'No secondary analysis recorded.')}</p>
+    </div>
+
+    ${formalHtml}
+
+    ${m.commonly_confused_with ? `
+    <div class="section-head"><h2>Commonly Confused With</h2><p>Semantic boundary disambiguation to prevent category errors.</p></div>
+    <div class="card" style="border-left:4px solid #FF3366; background:rgba(255,51,102,0.04)">
+      <div class="micro">ANTI-CONFLATION BOUNDARY</div>
+      <p>${esc(m.commonly_confused_with)}</p>
+    </div>` : ''}
+
+    ${charsHtml}
+    ${relatedHtml}
+
+    <div class="section-head"><h2>Documented Source Occurrences</h2></div>
+    <div class="card">
+      <ul style="margin:0; padding-left:20px; color:#C0C0D0">
+        ${(m.source_occurrences || []).map(s => `<li>${esc(s)}</li>`).join('')}
+      </ul>
+    </div>
+  `;
+}
+
+async function router(){window.scrollTo(0,0);const h=(location.hash||'#home').slice(1);try{if(h.startsWith('masterpage:'))return masterpageView(h.slice(11));if(h==='masterpages')return masterpagesHub();if(h==='home')return home();if(h==='atlas')return atlas();if(h==='scaling')return scaling();if(h==='negative-rewrite')return negativeRewrite();if(h==='arthiteans')return arthiteans();if(h==='rhayhara')return rhayhara();if(h==='hgl')return hgl();if(h==='divine')return divine();if(h==='hgl-archive')return hglArchive();if(h==='search')return searchPage();if(h==='sources')return sources();if(h.startsWith('divine-section:')){setCrumb('Divine v144 Archive');return renderDivineArchive(h.split(':')[1])}if(h.startsWith('hgl-part:')){return hglArchive(h.split(':')[1])}if(h.startsWith('hgl-page-direct:')){return hglDirect(Number(h.split(':')[1]))}return home();}catch(e){console.error(e);main.innerHTML=`<div class="card"><h3>Codex rendering error</h3><p>${esc(e.message)}</p></div>`}}
 window.addEventListener('hashchange',router);$('#shareBtn').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast('Current view link copied')}catch{toast('Copy unavailable — use browser share')}};$('#openNav').onclick=()=>$('#sidebar').classList.add('open');$('#closeNav').onclick=()=>$('#sidebar').classList.remove('open');document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>$('#sidebar').classList.remove('open')));router();

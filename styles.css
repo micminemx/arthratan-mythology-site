@@ -37,3 +37,13 @@
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-actions .art-action{backdrop-filter:blur(8px)}
 @media(max-width:900px){#nav a{grid-template-columns:38px minmax(0,1fr)}#nav a img{width:34px;height:34px}.gateway-card{grid-template-columns:82px 1fr}.gateway-chibi{width:82px;height:82px}.arthratan-mosaic{grid-template-columns:1fr}.arthratan-mosaic .art-card:nth-child(3n){grid-column:auto}.archive-art-head{grid-template-columns:120px 1fr}.archive-art-head img{width:120px;height:100px}}
 @media(max-width:600px){.gateway-card{grid-template-columns:68px 1fr;min-height:130px}.gateway-chibi{width:68px;height:68px}.archive-art-head{grid-template-columns:1fr}.archive-art-head img{width:100%;height:170px}.archive-art-head h1{font-size:31px!important}.art-action span{white-space:normal}}
+
+
+/* Masterpages & Concept Ontology Styles (MP-009) */
+.concept-card{display:block;text-decoration:none;color:inherit}
+.concept-link{display:inline-block;margin-top:14px;color:#e4b76f;font-size:12px;font-weight:800;letter-spacing:.04em}
+.concept-nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.concept-nav a{color:#d8cfdd;text-decoration:none;border:1px solid #42364d;background:#121017;border-radius:999px;padding:8px 12px;font-size:13px}
+.concept-nav a:hover{border-color:#e4b76f;color:#f3d79f}
+.formula-stack{display:grid;gap:10px}
+.formula{font-family:monospace;background:#18141f;border:1px solid #3d3148;padding:10px 14px;border-radius:8px;color:#f0c7ff;font-size:14px}

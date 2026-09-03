@@ -60,9 +60,20 @@ for s in load('new-canon.json').get('sections',[]):
     body=' '.join(s.get('body',[])); route={'negative-rewrite':'/#negative-rewrite','arthitean-states':'/#arthiteans','metagovernance':'/#scaling'}.get(s['id'],'/#scaling')
     add(id='living:'+s['id'], type='living-canon', title=s['title'], aliases=[], route=route, source_id=s['id'], source_path='/data/new-canon.json', snippet=body, keywords=keyword_terms(s['title'],s.get('kicker',''),body))
 
-for c in load('causal-ontology.json').get('concepts',[]):
-    body=' '.join(c.get('canon',[])+c.get('formal',[])+[c.get('summary',''),c.get('clarification','')]); route='/#negative-rewrite' if 'rewrite' in c['id'] else '/#scaling'
-    add(id='concept:'+c['id'], type='concept', title=c['title'], aliases=[], route=route, source_id=c['id'], source_path='/data/causal-ontology.json', snippet=c.get('summary') or body, keywords=keyword_terms(c['title'],body))
+# Masterpages and conceptual ontology indexation
+if (D/'masterpages.json').exists():
+    for mp in load('masterpages.json').get('masterpages', []):
+        cid = mp['id']
+        body = ' '.join(mp.get('source_canon', []) + mp.get('formalization', []) + [mp.get('summary', ''), mp.get('explanation', '')])
+        title = mp.get('title') or mp.get('name') or cid
+        route = f"/#masterpage:{cid}"
+        add(id='concept:'+cid, type='concept', title=title, aliases=mp.get('aliases', []), route=route, source_id=cid, source_path='/data/masterpages.json', snippet=mp.get('summary') or body, keywords=keyword_terms(title, body))
+else:
+    for c in load('causal-ontology.json').get('concepts', []):
+        body = ' '.join(c.get('canon', []) + c.get('formal', []) + [c.get('summary', ''), c.get('clarification', '')])
+        title = c.get('title') or c.get('name') or c.get('id')
+        route = '/#negative-rewrite' if 'rewrite' in c['id'] else '/#scaling'
+        add(id='concept:'+c['id'], type='concept', title=title, aliases=c.get('aliases', []), route=route, source_id=c['id'], source_path='/data/causal-ontology.json', snippet=c.get('summary') or body, keywords=keyword_terms(title, body))
 
 hg=load('hgl-glossary.json')
 for e in hg.get('entries',[]):

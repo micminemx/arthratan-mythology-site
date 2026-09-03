@@ -1,1093 +1,178 @@
 {
-  "version": "1.0.0",
-  "total_masterpages": 60,
+  "version": 2,
+  "total_masterpages": 88,
   "domains": [
+    "Arthitean Biology, Gender & HGL Bridge",
     "Bloodline & Growth",
     "Causality & Parahistory",
     "Cognition & Improvement",
+    "Culture, Clans, Institutions & Warfare",
+    "Higher Ontology, Species & World-Structure",
     "Scaling & Metagovernance"
   ],
   "masterpages": [
     {
-      "id": "negative-rewrite",
-      "title": "Negative Rewrite",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Causal-erasure operator",
-      "summary": "An operation where a state or timeline is rewritten, and the rewrite itself retroactively removes its own surviving causal provenance so tha...",
+      "id": "phenotypic-invariants",
+      "title": "Arthitean Phenotypic Invariants",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "The immutable, transbarriel physical and physiological mandate of all pure-blooded Arthiteans: reddish-brown celestial bronze skin, dark red crimson hair, piercing purple eyes, strictly humanoid anatomy with exactly five fingers per hand, and waste-f...",
       "source_canon": [
-        "An operation where a state or timeline is rewritten, and the rewrite itself retroactively removes its own surviving causal provenance so that it was never caused as a rewrite."
-      ],
-      "explanation": "Unlike standard timeline alterations that leave an active rewritelog or paradox trace, Negative Rewrite erases the fact that an alteration occurred. The modified state appears as having always been the natural state.",
-      "formalization": [
-        "Rewrite(T -> T') ∧ Erase(Cause(Rewrite)) => NaturalState(T')"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Hypernegative Rewrite (Negative Rewrite handles first-order provenance; Hypernegative handles infinite explanatory orders)."
-    },
-    {
-      "id": "hypernegative-rewrite",
-      "title": "Hypernegative Rewrite",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Infinite-depth explanatory erasure",
-      "summary": "An update implemented across the fundamental structures of reality where if the reason why a cause is not a rewrite would itself be a rewrit...",
-      "source_canon": [
-        "An update implemented across the fundamental structures of reality where if the reason why a cause is not a rewrite would itself be a rewrite, that reason is conceptually rewritten so that it was never a rewrite, applying recursively across every explanatory order without terminal depth."
-      ],
-      "explanation": "Produces absolute rewrite-originlessness. The resulting effect X remains real and permanent, while no causal, reasonal, metacausal, metareasonal, or recursively higher explanatory path can truthfully terminate in or derive its rewrite status from a rewrite.",
-      "formalization": [
-        "∀ e ∈ ExplanatoryOrders: ¬RewriteGround(e, X) ∧ X = Persist"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Mere memory wiping or simple timeline branching."
-    },
-    {
-      "id": "parahistory",
-      "title": "Parahistory",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Rewrite-derivational network",
-      "summary": "The total causal-derivational structure of rewrites affecting a subject or domain, including every rewrite of any kind and every higher-orde...",
-      "source_canon": [
-        "The total causal-derivational structure of rewrites affecting a subject or domain, including every rewrite of any kind and every higher-order rewrite causally responsible for producing, modifying, replacing, retrocausing, beginninglessifying, or determining another rewrite."
-      ],
-      "explanation": "Parahistory is a multi-dimensional directed acyclic graph (or hypergraph) of rewrites. A beginningless history can itself possess a higher-order parahistorical cause that caused that history to have never had a beginning.",
-      "formalization": [
-        "Parahistory(S) = { (R_i, R_j) | R_i causally produces or alters R_j on domain S }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19e56867bf1bf3d3.txt",
-        "site/sources/zubaida/1a0601fc96f7add3.txt"
-      ],
-      "commonly_confused_with": "Linear timeline or historical chronicle."
-    },
-    {
-      "id": "paratime",
-      "title": "Paratime",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Intertimeline causal ordering",
-      "summary": "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline. Earlier paratemporal entries cause l...",
-      "source_canon": [
-        "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline. Earlier paratemporal entries cause later entries, and later entries are caused by earlier entries. The Arthitean Empire exists outside paratime while existing in time."
-      ],
-      "explanation": "The Empire possesses internal time (past, present, future) without being a sequence of paratemporal versions. A single pantemporal Hypernegative Rewrite establishes invariants across all Empire time simultaneously.",
-      "formalization": [
-        "T_a ≺_paratime T_b ⇔ T_a causally produces T_b; Empire ∈ Time ∧ Empire ∉ Paratime"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19f22dbf39b171ec.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Multiverse parallel dimensions."
-    },
-    {
-      "id": "acausality",
-      "title": "Acausality",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Origin-independency",
-      "summary": "The absolute property of lacking an antecedent cause or origin-event in the causal sequence....",
-      "source_canon": [
-        "The absolute property of lacking an antecedent cause or origin-event in the causal sequence."
-      ],
-      "explanation": "Acausality establishes that a state or entity is uncaused. It does not automatically imply hyperacausality or transrecursive hypercausality.",
-      "formalization": [
-        "¬∃c: c => S"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
-      ],
-      "commonly_confused_with": "Antiprecausality (Antiprecausality means nothing precedes S; acausality means nothing causes S)."
-    },
-    {
-      "id": "hyperacausality",
-      "title": "Hyperacausality",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Meta-order acausality",
-      "summary": "The state where the acausality of something itself lacks any cause or reason explaining why or how it is acausal....",
-      "source_canon": [
-        "The state where the acausality of something itself lacks any cause or reason explaining why or how it is acausal."
-      ],
-      "explanation": "Closes the second-order causal loophole where an opponent argues: 'Entity X is acausal, but I caused it to be acausal, so I control it.' Hyperacausality removes the cause of the acausality.",
-      "formalization": [
-        "¬∃c: c => (¬∃k: k => S)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Standard first-order acausality."
-    },
-    {
-      "id": "antiprecausality",
-      "title": "Antiprecausality",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Sequence predecessorlessness",
-      "summary": "Antiprecausal means that nothing precedes the subject in any sequence of causality or metacausality. Parahistorologically Antiprecausal mean...",
-      "source_canon": [
-        "Antiprecausal means that nothing precedes the subject in any sequence of causality or metacausality. Parahistorologically Antiprecausal means nothing precedes the subject in its parahistory."
-      ],
-      "explanation": "Predecessorlessness in sequence order. An entity can be antiprecausal (first in line) while still having non-preceding ontological grounds, which is why acausality is distinct and complementary.",
-      "formalization": [
-        "¬∃c: c ≺_seq S"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Acausality."
-    },
-    {
-      "id": "supracause-asupracausal",
-      "title": "Supracause & Asupracausal",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Reasonal causality",
-      "summary": "Supracause means a cause for a reason for something. Asupracausal means lacking a cause for a reason for something. Supracausality is the ca...",
-      "source_canon": [
-        "Supracause means a cause for a reason for something. Asupracausal means lacking a cause for a reason for something. Supracausality is the causality of the acausality of something."
-      ],
-      "explanation": "Governs the interface between abstract reasons and concrete causal mechanisms.",
-      "formalization": [
-        "Supracause(S) = Cause(Reason(S)); Asupracausal(S) = ¬∃c: c => Reason(S)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19ef0e52f69e4ad4.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Infracausality."
-    },
-    {
-      "id": "infracausality",
-      "title": "Infracausality & Infracause",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Sub-causal mechanics",
-      "summary": "Infracausality is the acausality of the causality of something. An infracause is the foundational non-contingent root underlying a causal me...",
-      "source_canon": [
-        "Infracausality is the acausality of the causality of something. An infracause is the foundational non-contingent root underlying a causal mechanism."
-      ],
-      "explanation": "Where causality operates as a function, infracausality denotes that the function itself operates without causal antecedents.",
-      "formalization": [
-        "Infracausality(S) = Acausality(Causality(S))"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
-      ],
-      "commonly_confused_with": "Supracausality."
-    },
-    {
-      "id": "transrecursive-hypercausality",
-      "title": "Transrecursive Hypercausality",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Supreme nonderivation operator",
-      "summary": "A state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivat...",
-      "source_canon": [
-        "A state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivation holds recursively at every higher causal and explanatory order without terminal depth."
-      ],
-      "explanation": "The absolute peak of causal independence in the Arthitean Codex. Closes all meta-theoretical regresses across causality, metacausality, reasonal logic, and parahistorical derivation.",
-      "formalization": [
-        "∀ n ≥ 0: Nonderivation(Order_n(S)) ∧ ¬∃Reason(Order_n(S))"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Simple omnipotence or ungrounded existence."
-    },
-    {
-      "id": "modus-tollens-causality",
-      "title": "Modus-Tollens Causalities",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Contrapositive causal necessity",
-      "summary": "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (¬C) ...",
-      "source_canon": [
-        "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (¬C) that would prevent E, and necessitates the existence of any prerequisite (P) required for E."
-      ],
-      "explanation": "Based on classical Modus Tollens (P => Q ⊢ ¬Q => ¬P). If Imperial victory is invariant (V = TRUE), then any attack A that entails ¬V is rendered counterfactually impossible and neutralized at the root.",
-      "formalization": [
-        "(C => ¬Invariant) ∧ Invariant => ¬C"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Hypergendered Logic",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Conventional fate or destiny (Modus-Tollens causality is active ontological enforcement, not passive prophecy)."
-    },
-    {
-      "id": "anticausal-improvement",
-      "title": "Anticausal, Hyperanticausal & Ultraanticausal Improvement",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Trans-developmental acceleration",
-      "summary": "Anticausal Improvement is self-enhancement occurring without an antecedent external cause. Hyperanticausal Improvement lacks any cause for t...",
-      "source_canon": [
-        "Anticausal Improvement is self-enhancement occurring without an antecedent external cause. Hyperanticausal Improvement lacks any cause for that anticausal enhancement. Ultraanticausal Improvement operates across all parahistorical orders and cognitive dimensions, compounding metalearning without error-friction."
-      ],
-      "explanation": "Associated directly with Ultralearning and the panparahistorical exclusion of Lifras (necessitative error-causes). Guarantees instantaneous, frictionless cognitive and ontological mastery.",
-      "formalization": [
-        "Improve(S, t) without Cause(Improve(S, t)); ∀ meta-orders: Compounding(Improvement)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19e56867bf1bf3d3.txt",
-        "causal-ontology.json"
-      ],
-      "commonly_confused_with": "Standard training or gradual power scaling."
-    },
-    {
-      "id": "lifra",
-      "title": "Lifras (Necessitative Error-Causes)",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Necessitative causes for anything that the observer perceives as cognitive errors, mistakes, or suboptimalities. Under Rhayhara's reign, all...",
-      "source_canon": [
-        "Necessitative causes for anything that the observer perceives as cognitive errors, mistakes, or suboptimalities. Under Rhayhara's reign, all Lifras are hypernegatively excluded across all parahistory."
+        "The immutable, transbarriel physical and physiological mandate of all pure-blooded Arthiteans: reddish-brown celestial bronze skin, dark red crimson hair, piercing purple eyes, strictly humanoid anatomy with exactly five fingers per hand, and waste-free cellular metabolism."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt"
+        "19f9518411db997b"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "outercausality-stage-1",
-      "title": "Outercausality Stage 1",
-      "domain_key": "CAUSALITY",
-      "domain_name": "Causality & Parahistory",
-      "class": "Meta-ontological state",
-      "summary": "A state that entirely transcends the conceptually allowable limits of the concepts of causality, acausality, metacausality, metaacausality, ...",
+      "id": "operator-gamma",
+      "title": "Gamma Realization Map Operator (Γ)",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "The canonical projection function mapping formal constitutive category and polarity states to observable physical outputs, governed by strict non-injectivity.",
       "source_canon": [
-        "A state that entirely transcends the conceptually allowable limits of the concepts of causality, acausality, metacausality, metaacausality, supracausality, and infracausality."
-      ],
-      "explanation": "Simulated and stress-tested by Clan Varvadeil against high-tier conceptual threats. Renders conceptual erasure and acausality-negation attacks structurally irrelevant.",
-      "formalization": [
-        "Outercausal(S) => S ∉ (Causality ∪ Acausality ∪ Supracausality ∪ Infracausality)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
-      ],
-      "commonly_confused_with": "Mere immunity to magic."
-    },
-    {
-      "id": "rules",
-      "title": "Rules",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Constitutive Governance Structure",
-      "summary": "Governance-structures that determine what is allowed, disallowed, valid, invalid, possible, impossible, or otherwise classifiable within the...",
-      "source_canon": [
-        "Governance-structures that determine what is allowed, disallowed, valid, invalid, possible, impossible, or otherwise classifiable within their designated governed scope."
-      ],
-      "explanation": "Rules establish the baseline boundary conditions of a domain. They do not govern themselves; they operate at governance-depth 0.",
-      "formalization": [
-        "Rule(R) : Domain(D) → {Valid, Invalid, Possible, Impossible}"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:metagovernance",
-        "Divine v144:sec-9"
-      ],
-      "commonly_confused_with": "Physical laws or universal constants (Rules are metaphysical governance structures, not empirical physics)."
-    },
-    {
-      "id": "metarules",
-      "title": "Metarules",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "First-Order Governance Over Governance",
-      "summary": "The rules that govern Rules. They determine what rules are valid, how rules interact, and how rules can be modified, bounded, or classified....",
-      "source_canon": [
-        "The rules that govern Rules. They determine what rules are valid, how rules interact, and how rules can be modified, bounded, or classified."
-      ],
-      "explanation": "Operating at governance-depth 1, Metarules turn ordinary Rules into their governed object.",
-      "formalization": [
-        "MR¹ : Set(R) → Set(Valid_R)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:metagovernance",
-        "Divine v144:sec-9"
-      ],
-      "commonly_confused_with": "More powerful rules (Metarules are a type-level ascent, not simply stronger rules within the same level)."
-    },
-    {
-      "id": "recursive-metarules",
-      "title": "Recursive Metarules (Metarulesⁿ)",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Higher-Order Governance Recursion",
-      "summary": "For every integer n ≥ 2, Metarulesⁿ are the rules governing Metarules⁽ⁿ⁻¹⁾. Metarules² govern Metarules; Metarules³ govern Metarules²; the r...",
-      "source_canon": [
-        "For every integer n ≥ 2, Metarulesⁿ are the rules governing Metarules⁽ⁿ⁻¹⁾. Metarules² govern Metarules; Metarules³ govern Metarules²; the recursion continues without a terminal order."
-      ],
-      "explanation": "Governance depth increases linearly with the exponent: depth = n. There is no terminal maximum order.",
-      "formalization": [
-        "MRⁿ : Set(MRⁿ⁻¹) → Set(Valid_MRⁿ⁻¹) ∀ n ≥ 2"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:metagovernance",
-        "Divine v144:sec-9"
-      ],
-      "commonly_confused_with": "Fixed meta-hierarchies (This ladder is strictly open-ended and unbounded)."
-    },
-    {
-      "id": "metagovernance-depth",
-      "title": "Metagovernance Depth",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Index of Governance Recursion",
-      "summary": "The recursive order at which governance is applied to governance. Ordinary Rules are governance-depth 0, Metarules are governance-depth 1, M...",
-      "source_canon": [
-        "The recursive order at which governance is applied to governance. Ordinary Rules are governance-depth 0, Metarules are governance-depth 1, Metarules² are governance-depth 2, and so forth."
-      ],
-      "explanation": "A scalar metric measuring how many meta-reflective layers of governance separate a statement from the base domain.",
-      "formalization": [
-        "Depth(R) = 0; Depth(MRⁿ) = n"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:metagovernance"
-      ],
-      "commonly_confused_with": "Dimensional scaling (Measures governance type-ascent, not spatial or temporal dimensions)."
-    },
-    {
-      "id": "impossibility-governance",
-      "title": "Impossibility-Governance",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Modal Boundary Foundation",
-      "summary": "The Rules-and-Metarules structure that determines what can be classified, contained, or represented as impossible....",
-      "source_canon": [
-        "The Rules-and-Metarules structure that determines what can be classified, contained, or represented as impossible."
-      ],
-      "explanation": "Impossibility is not an absolute void; it is a governed classification produced by an underlying governance basis.",
-      "formalization": [
-        "IG(B) = { φ | Classified_As_Impossible(φ, Basis=B) }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:metagovernance",
-        "Divine v144:sec-8"
-      ],
-      "commonly_confused_with": "Logical contradiction (Impossibility-governance is the system that decides which states are classified as impossible)."
-    },
-    {
-      "id": "antipossible",
-      "title": "Antipossible",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Non-Containment Classification",
-      "summary": "An extent or degree so high that the rules governing what can qualify as impossible do not allow that extent or degree to be classified, con...",
-      "source_canon": [
-        "An extent or degree so high that the rules governing what can qualify as impossible do not allow that extent or degree to be classified, contained, or represented as impossible. Antipossible does not therefore mean possible."
-      ],
-      "explanation": "It represents an escape from the possibility/impossibility dualism of a specific governance basis. It is strictly non-collapsible into possible.",
-      "formalization": [
-        "Antipossible(x) ⇔ ¬Can_Contain_As_Impossible(IG, x) ∧ ¬Possible(x)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:antipossibility",
-        "Divine v144:sec-8"
-      ],
-      "commonly_confused_with": "Possible (The canon explicitly defines: Antipossible does not mean possible)."
-    },
-    {
-      "id": "antipossibility-families",
-      "title": "Antipossibility Families (A(k, n))",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Biordinal Modal Space",
-      "summary": "A complete recursively ordered ladder generated from one impossibility-governance basis. Let A(k,n) denote family k, intrafamily order n. Fa...",
-      "source_canon": [
-        "A complete recursively ordered ladder generated from one impossibility-governance basis. Let A(k,n) denote family k, intrafamily order n. Family k+1 begins when the complete impossibility-governance ladder of family k becomes the governed object of the next higher impossibility-governance basis."
-      ],
-      "explanation": "Family-Order Supremacy: every state in family k+1 is strictly higher in family order than every state in family k, regardless of intrafamily order n.",
-      "formalization": [
-        "∀ k, n, m: A(k+1, m) > A(k, n)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:antipossibility"
-      ],
-      "commonly_confused_with": "Standard 2D grids (Family order strictly dominates intrafamily order)."
-    },
-    {
-      "id": "lydrextent",
-      "title": "Lydrextent Ladder",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Biordinal Diagonal Extent",
-      "summary": "The diagonal extent-ladder across Antipossibility-family order and Antipossibility intrafamily order. Lydrextent n has exact Antipossibility...",
-      "source_canon": [
-        "The diagonal extent-ladder across Antipossibility-family order and Antipossibility intrafamily order. Lydrextent n has exact Antipossibility coordinate A(n,n). Lydrextent 1=A(1,1), Lydrextent 2=A(2,2), Lydrextent 3=A(3,3), and so forth."
-      ],
-      "explanation": "Each step simultaneously advances both the outer family coordinate and the inner Antipossibility-order coordinate. HistoricallyParticipates in Rhayhara's seal architecture.",
-      "formalization": [
-        "L_n ↔ A(n, n)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:lydrextent",
-        "Divine v144:sec-35, 60"
-      ],
-      "commonly_confused_with": "Single-index cardinalities (Advances biordinal family and intrafamily depth together)."
-    },
-    {
-      "id": "arsayne",
-      "title": "Arsayne",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Post-Lydrextent Totality Surpassingness",
-      "summary": "Arsayne 1 is the smallest extent or degree large enough to go beyond all possible and impossible Metarule^Lydrextent numbers. Arsayne 2 has ...",
-      "source_canon": [
-        "Arsayne 1 is the smallest extent or degree large enough to go beyond all possible and impossible Metarule^Lydrextent numbers. Arsayne 2 has Arsayne-1 extent of metaexpectation-surpassingness; Arsayne 3 has Arsayne-2 extent; the ladder continues recursively."
-      ],
-      "explanation": "Historical totality scaling framework preceding the Apossible/Toren reconciliation.",
-      "formalization": [
-        "Arsayne(1) > { x | x ∈ Metarule^(L_n) }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:arsayne"
-      ],
-      "commonly_confused_with": "Simple exponential growth (Surpasses the complete Metarule-indexed totality of Lydrextent)."
-    },
-    {
-      "id": "supraarsayne",
-      "title": "Supraarsayne",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Higher Totality Recursion",
-      "summary": "Supraarsayne 1 is the smallest extent sufficient to go beyond all possible and impossible Metarule^Arsayne numbers. Higher Supraarsayne orde...",
-      "source_canon": [
-        "Supraarsayne 1 is the smallest extent sufficient to go beyond all possible and impossible Metarule^Arsayne numbers. Higher Supraarsayne orders recurse by metaexpectation-surpassingness."
-      ],
-      "explanation": "Applies totality recursion over the complete Arsayne ladder.",
-      "formalization": [
-        "Supraarsayne(1) > { x | x ∈ Metarule^(Arsayne) }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:arsayne"
-      ],
-      "commonly_confused_with": "Arsayne multiplications."
-    },
-    {
-      "id": "hyperarsayne",
-      "title": "Hyperarsayne",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Higher Totality Recursion",
-      "summary": "Hyperarsayne 1 goes beyond all possible and impossible Metarule^Supraarsayne numbers. Higher Hyperarsayne orders recurse by metaexpectation-...",
-      "source_canon": [
-        "Hyperarsayne 1 goes beyond all possible and impossible Metarule^Supraarsayne numbers. Higher Hyperarsayne orders recurse by metaexpectation-surpassingness."
-      ],
-      "explanation": "Applies totality recursion over the complete Supraarsayne ladder.",
-      "formalization": [
-        "Hyperarsayne(1) > { x | x ∈ Metarule^(Supraarsayne) }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:arsayne"
-      ],
-      "commonly_confused_with": "Supraarsayne variations."
-    },
-    {
-      "id": "ultraarsayne",
-      "title": "Ultraarsayne",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Apex Historical Totality Scale",
-      "summary": "Ultraarsayne 1 goes beyond all possible and impossible Metarule^Hyperarsayne numbers. Higher Ultraarsayne orders recurse by metaexpectation-...",
-      "source_canon": [
-        "Ultraarsayne 1 goes beyond all possible and impossible Metarule^Hyperarsayne numbers. Higher Ultraarsayne orders recurse by metaexpectation-surpassingness."
-      ],
-      "explanation": "The apex scale of the historical Arsayne framework. Explicitly governs Rhayhara's sealed bloodline architecture (Seal Factors 1-4). Preserved historically.",
-      "formalization": [
-        "Ultraarsayne(1) > { x | x ∈ Metarule^(Hyperarsayne) }"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/data/new-canon.json:arsayne",
-        "site/data/new-canon.json:rhayhara-seals"
-      ],
-      "commonly_confused_with": "Contemporary Apossible/Toren scaling (Ultraarsayne is the historical seal-governing scale, now superseded by Apossible/Toren for global hierarchy)."
-    },
-    {
-      "id": "apossible",
-      "title": "Apossible",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Categorical Attribution Master Structure",
-      "summary": "Apossible is All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attr...",
-      "source_canon": [
-        "Apossible is All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attributable to any recursively ordered Impossible levels of Metarules."
-      ],
-      "explanation": "CRITICAL CANON INVARIANT: Uses 'All', never 'totality'. Not merely 'the Metarule governing Impossible'. Preserves categorical attribution across all recursive levels of Possible and Impossible.",
-      "formalization": [
-        "Apossible = All(Categorically_Attributable(Possible, MRⁿ)) ∧ All(Categorically_Attributable(Impossible, MRⁿ))"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:apossible-toren"
-      ],
-      "commonly_confused_with": "Totality (Totality is explicitly rejected because some infinities do not possess a completed-whole interpretation); or 'Metarule governing Impossible' (which loses the categorical attribution structure)."
-    },
-    {
-      "id": "higher-apossible",
-      "title": "Higher Apossible Orders (Apossibleⁿ)",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Cumulative Recursive Attribution",
-      "summary": "Apossible² is All recursive Possible levels Metarule of Apossible, All recursive Impossible levels Metarule of Apossible, and All recursive ...",
-      "source_canon": [
-        "Apossible² is All recursive Possible levels Metarule of Apossible, All recursive Impossible levels Metarule of Apossible, and All recursive Apossible levels Metarule of Apossible. Higher orders continue cumulating lower Apossible orders."
-      ],
-      "explanation": "Higher orders recursively include all lower-order Apossible attribution branches without terminal bound.",
-      "formalization": [
-        "Apossibleⁿ = All(Possible_MR(Apossibleⁿ⁻¹)) ∧ All(Impossible_MR(Apossibleⁿ⁻¹)) ∧ ⋀_{j=1}^{n-1} All(Apossibleʲ_MR(Apossibleⁿ⁻¹))"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:apossible-toren"
-      ],
-      "commonly_confused_with": "Numerical exponentiation (Represents recursive cumulative category-attribution, not arithmetic powers)."
-    },
-    {
-      "id": "toren",
-      "title": "Toren Scaling Hierarchy (Toren 1–5)",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Interleaving Extent Strata",
-      "summary": "Toren 1 is an extent or degree so high that it goes beyond what is Apossible but is below what is Apossible³. Toren 2 goes beyond Apossible³...",
-      "source_canon": [
-        "Toren 1 is an extent or degree so high that it goes beyond what is Apossible but is below what is Apossible³. Toren 2 goes beyond Apossible³ but below Apossible⁵; Toren 3 beyond Apossible⁵ but below Apossible⁷; Toren 4 beyond Apossible⁷ but below Apossible⁹; Toren 5 beyond Apossible⁹ but below Apossible¹¹."
-      ],
-      "explanation": "Shorthand representation: Apossible^(2n−1) < Toren n < Apossible^(2n+1). Governs Bloodline Blessing quality in Supramajor breakthroughs and strength scaling in Archarthitean/Deity Factors.",
-      "formalization": [
-        "Apossible^(2n−1) < Toren(n) < Apossible^(2n+1) ∀ n ≥ 1"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:apossible-toren"
-      ],
-      "commonly_confused_with": "Cardinal steps (Toren is an extent that specifically interleaves between odd Apossible orders)."
-    },
-    {
-      "id": "greater-lesser-orders",
-      "title": "Greater- and Lesser-Orders",
-      "domain_key": "SCALING",
-      "domain_name": "Scaling & Metagovernance",
-      "class": "Metrological Comparison Framework",
-      "summary": "Relational framework establishing strict precedence and domination rules between categorical attribution structures (Apossible) and extent s...",
-      "source_canon": [
-        "Relational framework establishing strict precedence and domination rules between categorical attribution structures (Apossible) and extent strata (Toren)."
-      ],
-      "explanation": "Ensures no scale ambiguity: Toren n is bounded between odd Apossible orders and cannot collapse into an arithmetic integer.",
-      "formalization": [
-        "Order_Rank(Apossible^(2n-1)) < Order_Rank(Toren n) < Order_Rank(Apossible^(2n+1))"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:apossible-toren"
-      ],
-      "commonly_confused_with": "Standard ordinal numbers."
-    },
-    {
-      "id": "learning",
-      "title": "Learning",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "The direct acquisition of domain knowledge, situational competencies, or behavioral proficiencies through observation, training, or transmis...",
-      "source_canon": [
-        "The direct acquisition of domain knowledge, situational competencies, or behavioral proficiencies through observation, training, or transmission intake."
+        "The canonical projection function mapping formal constitutive category and polarity states to observable physical outputs, governed by strict non-injectivity."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "Living Canon",
-        "Divine v144"
+        "HGL-001",
+        "hgl-pages:252,266,267"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "metalearning",
-      "title": "Metalearning",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Learning how to learn; the systematic optimization and calibration of the acquisition function itself to reduce time and resource expenditur...",
+      "id": "anti-collapse-rules",
+      "title": "HGL Anti-Collapse Rules",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "The five structural mathematical principles preventing degenerate collapse, unauthorized nesting, and category conflation in Hypergendered Logic.",
       "source_canon": [
-        "Learning how to learn; the systematic optimization and calibration of the acquisition function itself to reduce time and resource expenditure on subsequent learning cycles."
+        "The five structural mathematical principles preventing degenerate collapse, unauthorized nesting, and category conflation in Hypergendered Logic."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/sources/zubaida/19e56867bf1bf3d3.txt"
+        "HGL-001",
+        "hgl-pages:268-275"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "hyperlearning",
-      "title": "Hyperlearning",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Simultaneous, non-interfering parallel cognitive assimilation across diverse metaphysical, tactical, spiritual, and physical domains simulta...",
+      "id": "operator-ih",
+      "title": "Inheritance Operator (IH)",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "Modal operator asserting that the current state inherits inheritable logical and state properties derived specifically from an authoritative source.",
       "source_canon": [
-        "Simultaneous, non-interfering parallel cognitive assimilation across diverse metaphysical, tactical, spiritual, and physical domains simultaneously."
+        "Modal operator asserting that the current state inherits inheritable logical and state properties derived specifically from an authoritative source."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/sources/zubaida/19fcb50fc92e37f3.txt"
+        "HGL-001",
+        "hgl-pages"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "ultralearning",
-      "title": "Ultralearning",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Dual-compounding object-learning and metalearning where both the mastery of the subject and the mastery of how to learn it compoundingly imp...",
+      "id": "operator-ph",
+      "title": "Phenotype-Possession Operator (PH)",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "Constitutive operator asserting that the bearer irreducibly possesses the complete hypergendered phenotype-profile as an indivisible whole.",
       "source_canon": [
-        "Dual-compounding object-learning and metalearning where both the mastery of the subject and the mastery of how to learn it compoundingly improve all future learning across all states and parahistorical orders."
+        "Constitutive operator asserting that the bearer irreducibly possesses the complete hypergendered phenotype-profile as an indivisible whole."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/sources/zubaida/1a0601fc96f7add3.txt",
-        "causal-ontology.json"
+        "HGL-001",
+        "hgl-pages"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "cogniscience",
-      "title": "Cogniscience",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "The formal scientific and metaphysical study of cognitive structures, mind-states, neural manifolds, and consciousness expansion mechanisms....",
+      "id": "operator-pa",
+      "title": "Polarity Availability Operator (PA)",
+      "domain_key": "BIOLOGY",
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "class": "Canonical Principle",
+      "summary": "Modal operator specifying what anatomy, physiology, and polarity traits are necessarily developable from an inner developmental causal condition.",
       "source_canon": [
-        "The formal scientific and metaphysical study of cognitive structures, mind-states, neural manifolds, and consciousness expansion mechanisms."
+        "Modal operator specifying what anatomy, physiology, and polarity traits are necessarily developable from an inner developmental causal condition."
       ],
       "explanation": "",
       "formalization": [],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "Living Canon"
+        "HGL-001",
+        "hgl-pages"
       ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
+      "commonly_confused_with": ""
     },
     {
-      "id": "hyperinferring-deducing",
-      "title": "Hyperinferring & Hyperdeducing",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "The capacity to extract granular, infallible conclusions from microscopic, non-obvious, or entirely absent data traces with zero false-posit...",
-      "source_canon": [
-        "The capacity to extract granular, infallible conclusions from microscopic, non-obvious, or entirely absent data traces with zero false-positives and zero false-negatives."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19fd8d193b40cda8.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "nullrecognition",
-      "title": "Nullrecognition",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "The conscious recognition of informative absence; noticing what is specifically missing, unstated, or unperformed in a system or dataset....",
-      "source_canon": [
-        "The conscious recognition of informative absence; noticing what is specifically missing, unstated, or unperformed in a system or dataset."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Living Canon Directives"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "nullpattern-recognition",
-      "title": "Nullpattern Recognition",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Recognition of recurrent, relational, sequential, conditional, or co-occurring structure among multiple informational absences....",
-      "source_canon": [
-        "Recognition of recurrent, relational, sequential, conditional, or co-occurring structure among multiple informational absences."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Living Canon Directives",
-        "site/sources/zubaida/19fd8d193b40cda8.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "nullmetapattern-recognition",
-      "title": "Nullmetapattern Recognition",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Recognition of recurrent structure across multiple nullpatterns, revealing macro-level strategic doctrines from omitted activity alone....",
-      "source_canon": [
-        "Recognition of recurrent structure across multiple nullpatterns, revealing macro-level strategic doctrines from omitted activity alone."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Living Canon Directives"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "crosspattern-recognition",
-      "title": "Crosspattern Recognition & Metacrosspatterns",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Recognizing recurrent, relational, sequential, conditional, or co-occurring structure across informational instances AND informational absen...",
-      "source_canon": [
-        "Recognizing recurrent, relational, sequential, conditional, or co-occurring structure across informational instances AND informational absences together as a unified whole. Metacrosspatterns extend this across multiple crosspattern networks."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Living Canon Directives"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "antaintelligence",
-      "title": "Antaintelligence & Antahyperintelligence",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "A metric and capability where an entity's general intelligence (G) expands exponentially in direct proportion to the complexity and intensit...",
-      "source_canon": [
-        "A metric and capability where an entity's general intelligence (G) expands exponentially in direct proportion to the complexity and intensity of adversarial pressure (A) applied against it."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19fd8d193b40cda8.txt",
-        "site/sources/zubaida/19fdb1794050bc43.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "antagocognition",
-      "title": "Antagocognition",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Inherent cognitive resistance to being outwitted or trapped; an epistemic dynamic where any hostile plan conceived against the user is autom...",
-      "source_canon": [
-        "Inherent cognitive resistance to being outwitted or trapped; an epistemic dynamic where any hostile plan conceived against the user is automatically transformed into a step that fulfills the user's objectives."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19fcb50fc92e37f3.txt",
-        "site/sources/zubaida/19fe28425ab9c96a.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "risvulation",
-      "title": "Risvulation",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "A hyper-advanced mode of lateral thinking that systematically harmonizes irrational, structurally non-obvious objectives with bottomless com...",
-      "source_canon": [
-        "A hyper-advanced mode of lateral thinking that systematically harmonizes irrational, structurally non-obvious objectives with bottomless computational depth to reverse-engineer infallible pathways."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19fcb50fc92e37f3.txt",
-        "site/sources/zubaida/19fd8d193b40cda8.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "technocogniparse",
-      "title": "Parse, Cogniparse & Technocogniparse",
-      "domain_key": "COGNITION",
-      "domain_name": "Cognition & Improvement",
-      "class": "Ontological Framework",
-      "summary": "Cogniparse is real-time metaphysical and conceptual breakdown. Technocogniparse translates the spiritual, narrative, and ontological propert...",
-      "source_canon": [
-        "Cogniparse is real-time metaphysical and conceptual breakdown. Technocogniparse translates the spiritual, narrative, and ontological properties of enemies into executable mechanical algorithms and countermeasures."
-      ],
-      "explanation": "",
-      "formalization": [],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "site/sources/zubaida/19fcad5f75d055c8.txt",
-        "site/sources/zubaida/19fcb50fc92e37f3.txt"
-      ],
-      "commonly_confused_with": "Conflating ontological properties with ordinary physical manifestations."
-    },
-    {
-      "id": "hypergenetics",
-      "title": "Hypergenetics",
+      "id": "archarthitean-factor",
+      "title": "Archarthitean Factor",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Foundational Biological Ontology",
-      "summary": "The multi-layered hereditary architecture governing Arthitean physiology, lobe development, and metaphysical traits far beyond Mendelian mol...",
+      "class": "PHK Loop Strength Factor",
+      "summary": "A factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower used at the time the Pressurised-Enlightenment occurred.",
       "source_canon": [
-        "The multi-layered hereditary architecture governing Arthitean physiology, lobe development, and metaphysical traits far beyond Mendelian molecular genetics."
+        "A factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower used at the time the Pressurised-Enlightenment occurred."
       ],
-      "explanation": "Operates across physical DNA, paratemporal lineage resonance, and modal trait expression governed by Hypergendered Logic operators (PA, IH, PH, Γ).",
+      "explanation": "NON-NEGOTIABLE CANON RULE: Does NOT acquire new bloodline blessings. Scales strength of existing/retroacquired blessings by willpower at occurrence.",
       "formalization": [
-        "HG(Indiv) = ⟨Physical_DNA, Lineage_Resonance, Modal_Expression(Γ)⟩"
+        "ΔStrength(BB) = Toren(Pressurised_Enlightenment) × Willpower_at_Occurrence; New_BB = ∅"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "HGL:Treatise-17Aug2026",
-        "Divine v144:sec-55"
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
       ],
-      "commonly_confused_with": "Standard genetics (Hypergenetics is modal and developmental, not reducible to nucleic acids)."
+      "commonly_confused_with": "New blessing grant (Archarthitean factor exclusively strengthens; Supramajor acquires)."
     },
     {
-      "id": "rh-factors",
-      "title": "RH Factors",
+      "id": "arthitean-deity-factors",
+      "title": "Arthitean Deity Factors One & Two",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Lineage Determinant Markers",
-      "summary": "Hereditary bloodline determinants unique to royal Arthratan lineages, establishing genetic capacitance and resistance against spiritual and ...",
+      "class": "Apex PHK Loop Recursion Factors",
+      "summary": "Factor One is Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Factor Two is Pressurised-Hyperenlightenment for Arthitean Deity Factor One, functioning as a recursive meta-amplifier withi...",
       "source_canon": [
-        "Hereditary bloodline determinants unique to royal Arthratan lineages, establishing genetic capacitance and resistance against spiritual and cognitohazard corruption."
+        "Factor One is Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Factor Two is Pressurised-Hyperenlightenment for Arthitean Deity Factor One, functioning as a recursive meta-amplifier within the PHK loop."
       ],
-      "explanation": "RH factors regulate the compatibility of individuals with higher Arthitean ontostates and bloodline blessing retention.",
+      "explanation": "Factor One scales strength. Factor Two applies Pressurised-Hyperenlightenment directly to Factor One, creating stress-amplified exponential meta-recursion.",
       "formalization": [
-        "RH_Compat(x) : Strain(x) → [0, 1]"
+        "Factor_One = Toren(PH) × Willpower; Factor_Two = PH(Factor_One) ⟹ Exponential Loop Feedback"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "Divine v144:sec-60",
-        "Zubaida Transmissions"
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
       ],
-      "commonly_confused_with": "Rhesus blood factors in human medicine."
-    },
-    {
-      "id": "degree-q",
-      "title": "Degree Q",
-      "domain_key": "BLOODLINE",
-      "domain_name": "Bloodline & Growth",
-      "class": "Metaphysical Threshold Index",
-      "summary": "A quantitative and qualitative rating measuring the purity, concentration, and ontological resonance of royal Arthitean blood within a linea...",
-      "source_canon": [
-        "A quantitative and qualitative rating measuring the purity, concentration, and ontological resonance of royal Arthitean blood within a lineage."
-      ],
-      "explanation": "Higher Degree Q unlocks advanced brain-lobe recruitment, higher wing maturation, and resistance to causal rewrites.",
-      "formalization": [
-        "Degree_Q(Indiv) ∈ ℝ⁺; Higher_Q ⇒ Greater_Ontological_Resonance"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "Divine v144:sec-3",
-        "Divine v144:sec-35"
-      ],
-      "commonly_confused_with": "Social noble status (Degree Q is a metaphysical physiological invariant)."
+      "commonly_confused_with": "Simple duplicate buffs (Factor Two is a meta-operator acting directly upon Factor One)."
     },
     {
       "id": "bloodline-blessings",
@@ -1095,7 +180,7 @@
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
       "class": "Hereditary Endowments",
-      "summary": "Metaphysical divine endowments uniquely possessed by Arthitean royal and warrior lineages. Historically hereditary and beginningless....",
+      "summary": "Metaphysical divine endowments uniquely possessed by Arthitean royal and warrior lineages. Historically hereditary and beginningless.",
       "source_canon": [
         "Metaphysical divine endowments uniquely possessed by Arthitean royal and warrior lineages. Historically hereditary and beginningless."
       ],
@@ -1114,97 +199,92 @@
       "commonly_confused_with": "Spells or acquired powerups (Bloodline Blessings are inherent structural endowments)."
     },
     {
-      "id": "seal-factor-one",
-      "title": "Seal Factor One (Restored Strength)",
+      "id": "cold-war-adaptation",
+      "title": "Cold-War Adaptation",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Seal Suppression Mechanic",
-      "summary": "The Ultraarsayne increase in just Rhayhara’s strength level of all her bloodline blessings that she previously possessed an equivalent rate ...",
+      "class": "Evolutionary Anticipatory Defense",
+      "summary": "Anticipatory biological, psychological, and physiological adaptation developed during the ancient standoff between rival Arthratan thrones and dynasties.",
       "source_canon": [
-        "The Ultraarsayne increase in just Rhayhara’s strength level of all her bloodline blessings that she previously possessed an equivalent rate of acceleration of growth in her bloodline-blessing strength, restored per seal removed."
+        "Anticipatory biological, psychological, and physiological adaptation developed during the ancient standoff between rival Arthratan thrones and dynasties."
       ],
-      "explanation": "Restores former strength without guaranteeing the return of her former rate of growth or former rate of acceleration of growth.",
+      "explanation": "Arthitean physiology adapts preemptively to counter hostile biological and conceptual vectors before they are deployed in open warfare.",
       "formalization": [
-        "ΔS(BB) = Ultraarsayne(Former_Accel) per seal removed; ΔG ≠ guaranteed"
+        "Adapt(Hostile_Vector_Space) prior to Contact(Vector)"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/data/new-canon.json:rhayhara-seals"
+        "Divine v144:sec-41, 60",
+        "Zubaida Transmissions"
       ],
-      "commonly_confused_with": "Full power unsealing (Only raw strength is restored; former growth dynamics remain sealed/lost)."
+      "commonly_confused_with": "Reactive immunity (It is anticipatory and strategic, not merely reactive antibodies)."
     },
     {
-      "id": "seal-factor-two",
-      "title": "Seal Factor Two (Restoration Acceleration)",
+      "id": "degree-q",
+      "title": "Degree Q",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Seal Suppression Mechanic",
-      "summary": "The Ultraarsayne increase in Seal Factor One per seal removed....",
+      "class": "Metaphysical Threshold Index",
+      "summary": "A quantitative and qualitative rating measuring the purity, concentration, and ontological resonance of royal Arthitean blood within a lineage.",
       "source_canon": [
-        "The Ultraarsayne increase in Seal Factor One per seal removed."
+        "A quantitative and qualitative rating measuring the purity, concentration, and ontological resonance of royal Arthitean blood within a lineage."
       ],
-      "explanation": "Later seals restore exponentially greater increments of former strength than earlier seals.",
+      "explanation": "Higher Degree Q unlocks advanced brain-lobe recruitment, higher wing maturation, and resistance to causal rewrites.",
       "formalization": [
-        "ΔSF1 = Ultraarsayne per seal removed"
+        "Degree_Q(Indiv) ∈ ℝ⁺; Higher_Q ⇒ Greater_Ontological_Resonance"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/data/new-canon.json:rhayhara-seals"
+        "Divine v144:sec-3",
+        "Divine v144:sec-35"
       ],
-      "commonly_confused_with": "Linear addition."
+      "commonly_confused_with": "Social noble status (Degree Q is a metaphysical physiological invariant)."
     },
     {
-      "id": "seal-factor-three",
-      "title": "Seal Factor Three (Interseal Metadifferential)",
+      "id": "hyperclans",
+      "title": "Hyperclan 1 & 2 (Varvadeil Clan)",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Seal Suppression Mechanic",
-      "summary": "The Ultraarsayne of Seal Factor Two of the second-next seal to be removed per extent of Seal Factor Two of the next seal to be removed....",
+      "class": "Lineage Feedback Organizations",
+      "summary": "Specialized Arthitean clan organizations (specifically the Varvadeil Clan under Asmouth Varvadeil) dedicated to creating, incorporating, and maintaining biological and brain-lobe factors that feed recursively into PHK.",
       "source_canon": [
-        "The Ultraarsayne of Seal Factor Two of the second-next seal to be removed per extent of Seal Factor Two of the next seal to be removed."
+        "Specialized Arthitean clan organizations (specifically the Varvadeil Clan under Asmouth Varvadeil) dedicated to creating, incorporating, and maintaining biological and brain-lobe factors that feed recursively into PHK."
       ],
-      "explanation": "Calculates the meta-ratio between sequential future seal restorations.",
+      "explanation": "Ensures that every new mental lobe or physiological trait establishes a positive recursive feedback loop with the PHK engine.",
       "formalization": [
-        "SF3 = Ultraarsayne(SF2(k+2)) / Extent(SF2(k+1))"
+        "Hyperclan(Varvadeil) : ∀ Lobe_k ⟹ Integrate_Into_Loop(Lobe_k, PHK)"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/data/new-canon.json:rhayhara-seals"
+        "Divine v144:sec-60",
+        "Divine v144:sec-91"
       ],
-      "commonly_confused_with": "Direct arithmetic subtraction."
+      "commonly_confused_with": "Political factions (Hyperclans are genetic and physiological feedback engineering bodies)."
     },
     {
-      "id": "seal-factor-four",
-      "title": "Seal Factor Four (Negative Retroincrease)",
+      "id": "hypergenetics",
+      "title": "Hypergenetics",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Negative-Rewrite Driven Suppression",
-      "summary": "The negatively rewritten Ultraarsayne increase in Seal Factor Three per peak hardship Rhayhara endures across an aleph-null extent of time. ...",
+      "class": "Foundational Biological Ontology",
+      "summary": "The multi-layered hereditary architecture governing Arthitean physiology, lobe development, and metaphysical traits far beyond Mendelian molecular genetics.",
       "source_canon": [
-        "The negatively rewritten Ultraarsayne increase in Seal Factor Three per peak hardship Rhayhara endures across an aleph-null extent of time. Whenever Rhayhara exerts herself, Seal Factor Four negatively and retroactively increases by an Ultraarsayne extent."
+        "The multi-layered hereditary architecture governing Arthitean physiology, lobe development, and metaphysical traits far beyond Mendelian molecular genetics."
       ],
-      "explanation": "Through Negative Rewrite, this increase is rewritten to have never been caused by her exertion or by any rewrite, while the resulting suppression increase persists.",
+      "explanation": "Operates across physical DNA, paratemporal lineage resonance, and modal trait expression governed by Hypergendered Logic operators (PA, IH, PH, Γ).",
       "formalization": [
-        "Exertion → ΔSF4 = Ultraarsayne(SF3) → Negative_Rewrite(Erase_Cause) ∧ Persist(ΔSF4)"
+        "HG(Indiv) = ⟨Physical_DNA, Lineage_Resonance, Modal_Expression(Γ)⟩"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
-        "site/data/new-canon.json:rhayhara-seals",
-        "site/data/new-canon.json:negative-rewrite"
+        "HGL:Treatise-17Aug2026",
+        "Divine v144:sec-55"
       ],
-      "commonly_confused_with": "Self-weakening fatigue (Her exertion permanently reinforces the suppression architecture retroactively while erasing the causal link)."
+      "commonly_confused_with": "Standard genetics (Hypergenetics is modal and developmental, not reducible to nucleic acids)."
     },
     {
       "id": "pressurised-enlightenment",
@@ -1212,7 +292,7 @@
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
       "class": "Stress-Amplified Cognitive Breakthrough",
-      "summary": "A major breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under gre...",
+      "summary": "A major breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure.",
       "source_canon": [
         "A major breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure."
       ],
@@ -1221,9 +301,7 @@
         "Pressure ↑ ⟹ Countersurpassableness(Groundbreakingness) ↑"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
         "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
         "site/data/new-canon.json:enlightenment-phk-factors"
@@ -1231,36 +309,12 @@
       "commonly_confused_with": "Standard enlightenment under meditation (Requires existential combat or psychological pressure)."
     },
     {
-      "id": "supramajor",
-      "title": "Supramajor",
-      "domain_key": "BLOODLINE",
-      "domain_name": "Bloodline & Growth",
-      "class": "Retroactive Acquisition Mechanic",
-      "summary": "An extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional...",
-      "source_canon": [
-        "An extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional to its Supramajorness."
-      ],
-      "explanation": "CRITICAL CANON DISTINCTION: Supramajor DOES acquire new blessings. It is retroactive. It scales QUALITY, distinct from strength.",
-      "formalization": [
-        "Supramajor(M) ⟹ Retroacquire(New_BB) ∧ Quality(New_BB) = Toren(∝ M)"
-      ],
-      "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
-      "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:enlightenment-phk-factors"
-      ],
-      "commonly_confused_with": "Strength enhancement (Supramajor governs retroactive acquisition and quality, not strength)."
-    },
-    {
       "id": "pressurised-hyperenlightenment",
       "title": "Pressurised-Hyperenlightenment",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
       "class": "Supramajor Deity Breakthrough",
-      "summary": "A Supramajor breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when unde...",
+      "summary": "A Supramajor breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure. In Rhayhara, causes brightly glowing eyes and temporarily fiery hair.",
       "source_canon": [
         "A Supramajor breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure. In Rhayhara, causes brightly glowing eyes and temporarily fiery hair."
       ],
@@ -1279,28 +333,141 @@
       "commonly_confused_with": "Cosmetic super-state (The physical glowing/fiery manifestation accompanies profound retroactive ontological acquisition)."
     },
     {
-      "id": "cold-war-adaptation",
-      "title": "Cold-War Adaptation",
+      "id": "rh-factors",
+      "title": "RH Factors",
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
-      "class": "Evolutionary Anticipatory Defense",
-      "summary": "Anticipatory biological, psychological, and physiological adaptation developed during the ancient standoff between rival Arthratan thrones a...",
+      "class": "Lineage Determinant Markers",
+      "summary": "Hereditary bloodline determinants unique to royal Arthratan lineages, establishing genetic capacitance and resistance against spiritual and cognitohazard corruption.",
       "source_canon": [
-        "Anticipatory biological, psychological, and physiological adaptation developed during the ancient standoff between rival Arthratan thrones and dynasties."
+        "Hereditary bloodline determinants unique to royal Arthratan lineages, establishing genetic capacitance and resistance against spiritual and cognitohazard corruption."
       ],
-      "explanation": "Arthitean physiology adapts preemptively to counter hostile biological and conceptual vectors before they are deployed in open warfare.",
+      "explanation": "RH factors regulate the compatibility of individuals with higher Arthitean ontostates and bloodline blessing retention.",
       "formalization": [
-        "Adapt(Hostile_Vector_Space) prior to Contact(Vector)"
+        "RH_Compat(x) : Strain(x) → [0, 1]"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-60",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Rhesus blood factors in human medicine."
+    },
+    {
+      "id": "seal-factor-four",
+      "title": "Seal Factor Four (Negative Retroincrease)",
+      "domain_key": "BLOODLINE",
+      "domain_name": "Bloodline & Growth",
+      "class": "Negative-Rewrite Driven Suppression",
+      "summary": "The negatively rewritten Ultraarsayne increase in Seal Factor Three per peak hardship Rhayhara endures across an aleph-null extent of time. Whenever Rhayhara exerts herself, Seal Factor Four negatively and retroactively increases by an Ultraarsayne e...",
+      "source_canon": [
+        "The negatively rewritten Ultraarsayne increase in Seal Factor Three per peak hardship Rhayhara endures across an aleph-null extent of time. Whenever Rhayhara exerts herself, Seal Factor Four negatively and retroactively increases by an Ultraarsayne extent."
+      ],
+      "explanation": "Through Negative Rewrite, this increase is rewritten to have never been caused by her exertion or by any rewrite, while the resulting suppression increase persists.",
+      "formalization": [
+        "Exertion → ΔSF4 = Ultraarsayne(SF3) → Negative_Rewrite(Erase_Cause) ∧ Persist(ΔSF4)"
       ],
       "related_concepts": [],
       "related_characters": [
         "empress-rhayhara"
       ],
       "source_occurrences": [
-        "Divine v144:sec-41, 60",
-        "Zubaida Transmissions"
+        "site/data/new-canon.json:rhayhara-seals",
+        "site/data/new-canon.json:negative-rewrite"
       ],
-      "commonly_confused_with": "Reactive immunity (It is anticipatory and strategic, not merely reactive antibodies)."
+      "commonly_confused_with": "Self-weakening fatigue (Her exertion permanently reinforces the suppression architecture retroactively while erasing the causal link)."
+    },
+    {
+      "id": "seal-factor-one",
+      "title": "Seal Factor One (Restored Strength)",
+      "domain_key": "BLOODLINE",
+      "domain_name": "Bloodline & Growth",
+      "class": "Seal Suppression Mechanic",
+      "summary": "The Ultraarsayne increase in just Rhayhara’s strength level of all her bloodline blessings that she previously possessed an equivalent rate of acceleration of growth in her bloodline-blessing strength, restored per seal removed.",
+      "source_canon": [
+        "The Ultraarsayne increase in just Rhayhara’s strength level of all her bloodline blessings that she previously possessed an equivalent rate of acceleration of growth in her bloodline-blessing strength, restored per seal removed."
+      ],
+      "explanation": "Restores former strength without guaranteeing the return of her former rate of growth or former rate of acceleration of growth.",
+      "formalization": [
+        "ΔS(BB) = Ultraarsayne(Former_Accel) per seal removed; ΔG ≠ guaranteed"
+      ],
+      "related_concepts": [],
+      "related_characters": [
+        "empress-rhayhara"
+      ],
+      "source_occurrences": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Full power unsealing (Only raw strength is restored; former growth dynamics remain sealed/lost)."
+    },
+    {
+      "id": "seal-factor-three",
+      "title": "Seal Factor Three (Interseal Metadifferential)",
+      "domain_key": "BLOODLINE",
+      "domain_name": "Bloodline & Growth",
+      "class": "Seal Suppression Mechanic",
+      "summary": "The Ultraarsayne of Seal Factor Two of the second-next seal to be removed per extent of Seal Factor Two of the next seal to be removed.",
+      "source_canon": [
+        "The Ultraarsayne of Seal Factor Two of the second-next seal to be removed per extent of Seal Factor Two of the next seal to be removed."
+      ],
+      "explanation": "Calculates the meta-ratio between sequential future seal restorations.",
+      "formalization": [
+        "SF3 = Ultraarsayne(SF2(k+2)) / Extent(SF2(k+1))"
+      ],
+      "related_concepts": [],
+      "related_characters": [
+        "empress-rhayhara"
+      ],
+      "source_occurrences": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Direct arithmetic subtraction."
+    },
+    {
+      "id": "seal-factor-two",
+      "title": "Seal Factor Two (Restoration Acceleration)",
+      "domain_key": "BLOODLINE",
+      "domain_name": "Bloodline & Growth",
+      "class": "Seal Suppression Mechanic",
+      "summary": "The Ultraarsayne increase in Seal Factor One per seal removed.",
+      "source_canon": [
+        "The Ultraarsayne increase in Seal Factor One per seal removed."
+      ],
+      "explanation": "Later seals restore exponentially greater increments of former strength than earlier seals.",
+      "formalization": [
+        "ΔSF1 = Ultraarsayne per seal removed"
+      ],
+      "related_concepts": [],
+      "related_characters": [
+        "empress-rhayhara"
+      ],
+      "source_occurrences": [
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Linear addition."
+    },
+    {
+      "id": "supramajor",
+      "title": "Supramajor",
+      "domain_key": "BLOODLINE",
+      "domain_name": "Bloodline & Growth",
+      "class": "Retroactive Acquisition Mechanic",
+      "summary": "An extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional to its Supramajorness.",
+      "source_canon": [
+        "An extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional to its Supramajorness."
+      ],
+      "explanation": "CRITICAL CANON DISTINCTION: Supramajor DOES acquire new blessings. It is retroactive. It scales QUALITY, distinct from strength.",
+      "formalization": [
+        "Supramajor(M) ⟹ Retroacquire(New_BB) ∧ Quality(New_BB) = Toren(∝ M)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:enlightenment-phk-factors"
+      ],
+      "commonly_confused_with": "Strength enhancement (Supramajor governs retroactive acquisition and quality, not strength)."
     },
     {
       "id": "talmorai",
@@ -1308,7 +475,7 @@
       "domain_key": "BLOODLINE",
       "domain_name": "Bloodline & Growth",
       "class": "Adaptive Lineage System",
-      "summary": "The elite Arthitean martial-adaptive lineage discipline specializing in physiological resistance, deep unstressableness, and recursive harde...",
+      "summary": "The elite Arthitean martial-adaptive lineage discipline specializing in physiological resistance, deep unstressableness, and recursive hardening under extreme environmental duress.",
       "source_canon": [
         "The elite Arthitean martial-adaptive lineage discipline specializing in physiological resistance, deep unstressableness, and recursive hardening under extreme environmental duress."
       ],
@@ -1317,85 +484,1437 @@
         "Talmorai_Hardening : Duress ↑ ⟹ Resilience ↑^(Exponential)"
       ],
       "related_concepts": [],
-      "related_characters": [
-        "empress-rhayhara"
-      ],
+      "related_characters": [],
       "source_occurrences": [
         "Divine v144:sec-60"
       ],
       "commonly_confused_with": "Ordinary martial arts."
     },
     {
-      "id": "hyperclans",
-      "title": "Hyperclan 1 & 2 (Varvadeil Clan)",
-      "domain_key": "BLOODLINE",
-      "domain_name": "Bloodline & Growth",
-      "class": "Lineage Feedback Organizations",
-      "summary": "Specialized Arthitean clan organizations (specifically the Varvadeil Clan under Asmouth Varvadeil) dedicated to creating, incorporating, and...",
+      "id": "acausality",
+      "title": "Acausality",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Origin-independency",
+      "summary": "The absolute property of lacking an antecedent cause or origin-event in the causal sequence.",
       "source_canon": [
-        "Specialized Arthitean clan organizations (specifically the Varvadeil Clan under Asmouth Varvadeil) dedicated to creating, incorporating, and maintaining biological and brain-lobe factors that feed recursively into PHK."
+        "The absolute property of lacking an antecedent cause or origin-event in the causal sequence."
       ],
-      "explanation": "Ensures that every new mental lobe or physiological trait establishes a positive recursive feedback loop with the PHK engine.",
+      "explanation": "Acausality establishes that a state or entity is uncaused. It does not automatically imply hyperacausality or transrecursive hypercausality.",
       "formalization": [
-        "Hyperclan(Varvadeil) : ∀ Lobe_k ⟹ Integrate_Into_Loop(Lobe_k, PHK)"
+        "¬∃c: c => S"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
+      ],
+      "commonly_confused_with": "Antiprecausality (Antiprecausality means nothing precedes S; acausality means nothing causes S)."
+    },
+    {
+      "id": "anticausal-improvement",
+      "title": "Anticausal, Hyperanticausal & Ultraanticausal Improvement",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Trans-developmental acceleration",
+      "summary": "Anticausal Improvement is self-enhancement occurring without an antecedent external cause. Hyperanticausal Improvement lacks any cause for that anticausal enhancement. Ultraanticausal Improvement operates across all parahistorical orders and cognitiv...",
+      "source_canon": [
+        "Anticausal Improvement is self-enhancement occurring without an antecedent external cause. Hyperanticausal Improvement lacks any cause for that anticausal enhancement. Ultraanticausal Improvement operates across all parahistorical orders and cognitive dimensions, compounding metalearning without error-friction."
+      ],
+      "explanation": "Associated directly with Ultralearning and the panparahistorical exclusion of Lifras (necessitative error-causes). Guarantees instantaneous, frictionless cognitive and ontological mastery.",
+      "formalization": [
+        "Improve(S, t) without Cause(Improve(S, t)); ∀ meta-orders: Compounding(Improvement)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19e56867bf1bf3d3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Standard training or gradual power scaling."
+    },
+    {
+      "id": "antiprecausality",
+      "title": "Antiprecausality",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Sequence predecessorlessness",
+      "summary": "Antiprecausal means that nothing precedes the subject in any sequence of causality or metacausality. Parahistorologically Antiprecausal means nothing precedes the subject in its parahistory.",
+      "source_canon": [
+        "Antiprecausal means that nothing precedes the subject in any sequence of causality or metacausality. Parahistorologically Antiprecausal means nothing precedes the subject in its parahistory."
+      ],
+      "explanation": "Predecessorlessness in sequence order. An entity can be antiprecausal (first in line) while still having non-preceding ontological grounds, which is why acausality is distinct and complementary.",
+      "formalization": [
+        "¬∃c: c ≺_seq S"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Acausality."
+    },
+    {
+      "id": "hyperacausality",
+      "title": "Hyperacausality",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Meta-order acausality",
+      "summary": "The state where the acausality of something itself lacks any cause or reason explaining why or how it is acausal.",
+      "source_canon": [
+        "The state where the acausality of something itself lacks any cause or reason explaining why or how it is acausal."
+      ],
+      "explanation": "Closes the second-order causal loophole where an opponent argues: 'Entity X is acausal, but I caused it to be acausal, so I control it.' Hyperacausality removes the cause of the acausality.",
+      "formalization": [
+        "¬∃c: c => (¬∃k: k => S)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/1a0601fc96f7add3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Standard first-order acausality."
+    },
+    {
+      "id": "hypernegative-rewrite",
+      "title": "Hypernegative Rewrite",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Infinite-depth explanatory erasure",
+      "summary": "An effect-producing rewrite whose rewrite-origin is recursively excluded at every causal, reasonal, and mixed explanatory order while the effect remains real.",
+      "source_canon": [
+        "An update implemented across the fundamental structures of reality where if the reason why a cause is not a rewrite would itself be a rewrite, that reason is conceptually rewritten so that it was never a rewrite, applying recursively across every explanatory order without terminal depth."
+      ],
+      "explanation": "Produces absolute rewrite-originlessness. The resulting effect X remains real and permanent, while no causal, reasonal, metacausal, metareasonal, or recursively higher explanatory path can truthfully terminate in or derive its rewrite status from a rewrite.",
+      "formalization": [
+        "∀ e ∈ ExplanatoryOrders: ¬RewriteGround(e, X) ∧ X = Persist"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/1a0601fc96f7add3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Mere memory wiping or simple timeline branching."
+    },
+    {
+      "id": "infracausality",
+      "title": "Infracausality & Infracause",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Sub-causal mechanics",
+      "summary": "Infracausality is the acausality of the causality of something. An infracause is the foundational non-contingent root underlying a causal mechanism.",
+      "source_canon": [
+        "Infracausality is the acausality of the causality of something. An infracause is the foundational non-contingent root underlying a causal mechanism."
+      ],
+      "explanation": "Where causality operates as a function, infracausality denotes that the function itself operates without causal antecedents.",
+      "formalization": [
+        "Infracausality(S) = Acausality(Causality(S))"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
+      ],
+      "commonly_confused_with": "Supracausality."
+    },
+    {
+      "id": "lifra",
+      "title": "Lifra & Error-Cause Mechanics",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Necessitative imperfection factor",
+      "summary": "Lifras are necessitative causes for anything that the observer perceives as cognitive errors, mistakes, or suboptimalities.",
+      "source_canon": [
+        "Lifras are necessitative causes for anything that the observer perceives as cognitive errors, mistakes, or suboptimalities."
+      ],
+      "explanation": "Under Empress Rhayhara's reign, all Lifras are Hypernegatively Rewritten so they have never existed across any order of her parahistorical being.",
+      "formalization": [
+        "Lifra(L) => Error(E); HypernegativeRewrite(¬∃L) => ¬∃E"
       ],
       "related_concepts": [],
       "related_characters": [
         "empress-rhayhara"
       ],
       "source_occurrences": [
-        "Divine v144:sec-60",
+        "site/sources/zubaida/1a0601fc96f7add3.txt"
+      ],
+      "commonly_confused_with": "Psychological flaws or random bad luck."
+    },
+    {
+      "id": "modus-tollens-causality",
+      "title": "Modus-Tollens Causalities",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Contrapositive causal necessity",
+      "summary": "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (¬C) that would prevent E, and necessitates the existence of any prerequisite (P) required for E.",
+      "source_canon": [
+        "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (¬C) that would prevent E, and necessitates the existence of any prerequisite (P) required for E."
+      ],
+      "explanation": "Based on classical Modus Tollens (P => Q ⊢ ¬Q => ¬P). If Imperial victory is invariant (V = TRUE), then any attack A that entails ¬V is rendered counterfactually impossible and neutralized at the root.",
+      "formalization": [
+        "(C => ¬Invariant) ∧ Invariant => ¬C"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Hypergendered Logic",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Conventional fate or destiny (Modus-Tollens causality is active ontological enforcement, not passive prophecy)."
+    },
+    {
+      "id": "negative-rewrite",
+      "title": "Negative Rewrite",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Causal-erasure operator",
+      "summary": "An operation where a state or timeline is rewritten, and the rewrite itself retroactively removes its own surviving causal provenance so that it was never caused as a rewrite.",
+      "source_canon": [
+        "An operation where a state or timeline is rewritten, and the rewrite itself retroactively removes its own surviving causal provenance so that it was never caused as a rewrite."
+      ],
+      "explanation": "Unlike standard timeline alterations that leave an active rewritelog or paradox trace, Negative Rewrite erases the fact that an alteration occurred. The modified state appears as having always been the natural state.",
+      "formalization": [
+        "Rewrite(T -> T') ∧ Erase(Cause(Rewrite)) => NaturalState(T')"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/1a0601fc96f7add3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Hypernegative Rewrite (Negative Rewrite handles first-order provenance; Hypernegative handles infinite explanatory orders)."
+    },
+    {
+      "id": "outercausality-stage-1",
+      "title": "Outercausality Stage 1",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Meta-ontological state",
+      "summary": "A state that entirely transcends the conceptually allowable limits of the concepts of causality, acausality, metacausality, metaacausality, supracausality, and infracausality.",
+      "source_canon": [
+        "A state that entirely transcends the conceptually allowable limits of the concepts of causality, acausality, metacausality, metaacausality, supracausality, and infracausality."
+      ],
+      "explanation": "Simulated and stress-tested by Clan Varvadeil against high-tier conceptual threats. Renders conceptual erasure and acausality-negation attacks structurally irrelevant.",
+      "formalization": [
+        "Outercausal(S) => S ∉ (Causality ∪ Acausality ∪ Supracausality ∪ Infracausality)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19ef0e52f69e4ad4.txt"
+      ],
+      "commonly_confused_with": "Mere immunity to magic."
+    },
+    {
+      "id": "parahistory",
+      "title": "Parahistory",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Rewrite-derivational network",
+      "summary": "The total causal-derivational structure of rewrites affecting a subject or domain, including rewrites of histories, ordering relations, and whole rewrite-structures.",
+      "source_canon": [
+        "The total causal-derivational structure of rewrites affecting a subject or domain, including every rewrite of any kind and every higher-order rewrite causally responsible for producing, modifying, replacing, retrocausing, beginninglessifying, or determining another rewrite."
+      ],
+      "explanation": "Parahistory is a multi-dimensional directed acyclic graph (or hypergraph) of rewrites. A beginningless history can itself possess a higher-order parahistorical cause that caused that history to have never had a beginning.",
+      "formalization": [
+        "Parahistory(S) = { (R_i, R_j) | R_i causally produces or alters R_j on domain S }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19e56867bf1bf3d3.txt",
+        "site/sources/zubaida/1a0601fc96f7add3.txt"
+      ],
+      "commonly_confused_with": "Linear timeline or historical chronicle."
+    },
+    {
+      "id": "paratime",
+      "title": "Paratime",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Intertimeline causal ordering",
+      "summary": "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline.",
+      "source_canon": [
+        "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline. Earlier paratemporal entries cause later entries, and later entries are caused by earlier entries. The Arthitean Empire exists outside paratime while existing in time."
+      ],
+      "explanation": "The Empire possesses internal time (past, present, future) without being a sequence of paratemporal versions. A single pantemporal Hypernegative Rewrite establishes invariants across all Empire time simultaneously.",
+      "formalization": [
+        "T_a ≺_paratime T_b ⇔ T_a causally produces T_b; Empire ∈ Time ∧ Empire ∉ Paratime"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19f22dbf39b171ec.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Multiverse parallel dimensions."
+    },
+    {
+      "id": "supracause-asupracausal",
+      "title": "Supracause & Asupracausal",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Reasonal causality",
+      "summary": "Supracause means a cause for a reason for something. Asupracausal means lacking a cause for a reason for something. Supracausality is the causality of the acausality of something.",
+      "source_canon": [
+        "Supracause means a cause for a reason for something. Asupracausal means lacking a cause for a reason for something. Supracausality is the causality of the acausality of something."
+      ],
+      "explanation": "Governs the interface between abstract reasons and concrete causal mechanisms.",
+      "formalization": [
+        "Supracause(S) = Cause(Reason(S)); Asupracausal(S) = ¬∃c: c => Reason(S)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19ef0e52f69e4ad4.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Infracausality."
+    },
+    {
+      "id": "transrecursive-hypercausality",
+      "title": "Transrecursive Hypercausality",
+      "domain_key": "CAUSALITY",
+      "domain_name": "Causality & Parahistory",
+      "class": "Supreme nonderivation operator",
+      "summary": "Acausality and its explanatory nongrounding hold at every recursively higher causal and reasonal order.",
+      "source_canon": [
+        "A state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivation holds recursively at every higher causal and explanatory order without terminal depth."
+      ],
+      "explanation": "The absolute peak of causal independence in the Arthitean Codex. Closes all meta-theoretical regresses across causality, metacausality, reasonal logic, and parahistorical derivation.",
+      "formalization": [
+        "∀ n ≥ 0: Nonderivation(Order_n(S)) ∧ ¬∃Reason(Order_n(S))"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/1a0601fc96f7add3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Simple omnipotence or ungrounded existence."
+    },
+    {
+      "id": "antagocognition",
+      "title": "Antagocognition",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Subversive Shielding",
+      "summary": "Inherent cognitive resistance to being outwitted or trapped; an epistemic dynamic where any hostile plan conceived against the user is automatically transformed into a step that fulfills the user's objectives.",
+      "source_canon": [
+        "Inherent cognitive resistance to being outwitted or trapped; an epistemic dynamic where any hostile plan conceived against the user is automatically transformed into a step that fulfills the user's objectives."
+      ],
+      "explanation": "Active offensive-defensive cognitive inversion.",
+      "formalization": [
+        "Antago(M) => Subvert(Enemy_M)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fcb50fc92e37f3.txt",
+        "site/sources/zubaida/19fe28425ab9c96a.txt"
+      ],
+      "commonly_confused_with": "Active offensive-defensive cognitive inversion."
+    },
+    {
+      "id": "antaintelligence",
+      "title": "Antaintelligence & Antahyperintelligence",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Adversarial Cognition",
+      "summary": "A metric and capability where an entity's general intelligence (G) expands exponentially in direct proportion to the complexity and intensity of adversarial pressure (A) applied against it.",
+      "source_canon": [
+        "A metric and capability where an entity's general intelligence (G) expands exponentially in direct proportion to the complexity and intensity of adversarial pressure (A) applied against it."
+      ],
+      "explanation": "Adversarial opposition directly accelerates the intellect rather than degrading or overwhelming it.",
+      "formalization": [
+        "F_AG = ΔG / ΔA (Growth per Adversarial Pressure)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fd8d193b40cda8.txt",
+        "site/sources/zubaida/19fdb1794050bc43.txt"
+      ],
+      "commonly_confused_with": "Adversarial opposition directly accelerates the intellect rather than degrading or overwhelming it."
+    },
+    {
+      "id": "cogniscience",
+      "title": "Cogniscience",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Systemic Discipline",
+      "summary": "The formal scientific and metaphysical study of cognitive structures, mind-states, neural manifolds, and consciousness expansion mechanisms.",
+      "source_canon": [
+        "The formal scientific and metaphysical study of cognitive structures, mind-states, neural manifolds, and consciousness expansion mechanisms."
+      ],
+      "explanation": "The overarching theoretical domain governing all cognitive mechanics.",
+      "formalization": [
+        "Science(Cognitive Architectures & Epistemic Dynamics)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon"
+      ],
+      "commonly_confused_with": "The overarching theoretical domain governing all cognitive mechanics."
+    },
+    {
+      "id": "crosspattern-recognition",
+      "title": "Crosspattern Recognition & Metacrosspatterns",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Absence Epistemology Tier 4 (Supreme)",
+      "summary": "Recognizing recurrent, relational, sequential, conditional, or co-occurring structure across informational instances AND informational absences together as a unified whole. Metacrosspatterns extend this across multiple crosspattern networks.",
+      "source_canon": [
+        "Recognizing recurrent, relational, sequential, conditional, or co-occurring structure across informational instances AND informational absences together as a unified whole. Metacrosspatterns extend this across multiple crosspattern networks."
+      ],
+      "explanation": "Yields substantially more information than standard pattern recognition by synthesizing signal and silence simultaneously.",
+      "formalization": [
+        "CPR = Pattern({Presence_i} ∪ {Absence_j}); MCPR = Pattern({CPR_m})"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon Directives"
+      ],
+      "commonly_confused_with": "Yields substantially more information than standard pattern recognition by synthesizing signal and silence simultaneously."
+    },
+    {
+      "id": "hyperinferring-deducing",
+      "title": "Hyperinferring & Hyperdeducing",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Latent Logic",
+      "summary": "The capacity to extract granular, infallible conclusions from microscopic, non-obvious, or entirely absent data traces with zero false-positives and zero false-negatives.",
+      "source_canon": [
+        "The capacity to extract granular, infallible conclusions from microscopic, non-obvious, or entirely absent data traces with zero false-positives and zero false-negatives."
+      ],
+      "explanation": "Unlike probabilistic estimation, hyperinference produces deterministic certainties.",
+      "formalization": [
+        "Inference(Zero_Trace) => Exact_Truth"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fd8d193b40cda8.txt"
+      ],
+      "commonly_confused_with": "Unlike probabilistic estimation, hyperinference produces deterministic certainties."
+    },
+    {
+      "id": "hyperlearning",
+      "title": "Hyperlearning",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Multi-Dimensional",
+      "summary": "Simultaneous, non-interfering parallel cognitive assimilation across diverse metaphysical, tactical, spiritual, and physical domains simultaneously.",
+      "source_canon": [
+        "Simultaneous, non-interfering parallel cognitive assimilation across diverse metaphysical, tactical, spiritual, and physical domains simultaneously."
+      ],
+      "explanation": "Expands breadth and dimensionality of learning without cognitive bottle-necking.",
+      "formalization": [
+        "HL = ⨂_i ML_i across Ontological Planes"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fcb50fc92e37f3.txt"
+      ],
+      "commonly_confused_with": "Expands breadth and dimensionality of learning without cognitive bottle-necking."
+    },
+    {
+      "id": "learning",
+      "title": "Learning",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Object-Level",
+      "summary": "The direct acquisition of domain knowledge, situational competencies, or behavioral proficiencies through observation, training, or transmission intake.",
+      "source_canon": [
+        "The direct acquisition of domain knowledge, situational competencies, or behavioral proficiencies through observation, training, or transmission intake."
+      ],
+      "explanation": "Operates at the object level; does not modify the rate of subsequent learning.",
+      "formalization": [
+        "L: Context -> Knowledge"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon",
+        "Divine v144"
+      ],
+      "commonly_confused_with": "Operates at the object level; does not modify the rate of subsequent learning."
+    },
+    {
+      "id": "metalearning",
+      "title": "Metalearning",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Second-Order",
+      "summary": "Learning how to learn; the systematic optimization and calibration of the acquisition function itself to reduce time and resource expenditure on subsequent learning cycles.",
+      "source_canon": [
+        "Learning how to learn; the systematic optimization and calibration of the acquisition function itself to reduce time and resource expenditure on subsequent learning cycles."
+      ],
+      "explanation": "Enhances the efficiency curve of object learning but remains subject to cognitive friction unless paired with Lifra exclusion.",
+      "formalization": [
+        "ML = dL / dt = f(L)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19e56867bf1bf3d3.txt"
+      ],
+      "commonly_confused_with": "Enhances the efficiency curve of object learning but remains subject to cognitive friction unless paired with Lifra exclusion."
+    },
+    {
+      "id": "nullmetapattern-recognition",
+      "title": "Nullmetapattern Recognition",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Absence Epistemology Tier 3",
+      "summary": "Recognition of recurrent structure across multiple nullpatterns, revealing macro-level strategic doctrines from omitted activity alone.",
+      "source_canon": [
+        "Recognition of recurrent structure across multiple nullpatterns, revealing macro-level strategic doctrines from omitted activity alone."
+      ],
+      "explanation": "Higher-order meta-analysis of void patterns.",
+      "formalization": [
+        "NMPR = Pattern({Nullpattern_1, Nullpattern_2, ...})"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon Directives"
+      ],
+      "commonly_confused_with": "Higher-order meta-analysis of void patterns."
+    },
+    {
+      "id": "nullpattern-recognition",
+      "title": "Nullpattern Recognition",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Absence Epistemology Tier 2",
+      "summary": "Recognition of recurrent, relational, sequential, conditional, or co-occurring structure among multiple informational absences.",
+      "source_canon": [
+        "Recognition of recurrent, relational, sequential, conditional, or co-occurring structure among multiple informational absences."
+      ],
+      "explanation": "Detects structural shapes formed purely by voids and deliberate non-actions.",
+      "formalization": [
+        "NPR = Pattern({Absence_1, Absence_2, ..., Absence_k})"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon Directives",
+        "site/sources/zubaida/19fd8d193b40cda8.txt"
+      ],
+      "commonly_confused_with": "Detects structural shapes formed purely by voids and deliberate non-actions."
+    },
+    {
+      "id": "nullrecognition",
+      "title": "Nullrecognition",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Absence Epistemology Tier 1",
+      "summary": "The conscious recognition of informative absence; noticing what is specifically missing, unstated, or unperformed in a system or dataset.",
+      "source_canon": [
+        "The conscious recognition of informative absence; noticing what is specifically missing, unstated, or unperformed in a system or dataset."
+      ],
+      "explanation": "First-order identification of a missing signal.",
+      "formalization": [
+        "NR = Detect(Informative_Absence)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Living Canon Directives"
+      ],
+      "commonly_confused_with": "First-order identification of a missing signal."
+    },
+    {
+      "id": "technocogniparse",
+      "title": "Parse, Cogniparse & Technocogniparse",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Structural Ingestion",
+      "summary": "Cogniparse is real-time metaphysical and conceptual breakdown. Technocogniparse translates the spiritual, narrative, and ontological properties of enemies into executable mechanical algorithms and countermeasures.",
+      "source_canon": [
+        "Cogniparse is real-time metaphysical and conceptual breakdown. Technocogniparse translates the spiritual, narrative, and ontological properties of enemies into executable mechanical algorithms and countermeasures."
+      ],
+      "explanation": "Bridges conceptual understanding directly into applied technical and operational neutralization.",
+      "formalization": [
+        "Technocogniparse: Entity_Properties -> Executable_Blueprints"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fcad5f75d055c8.txt",
+        "site/sources/zubaida/19fcb50fc92e37f3.txt"
+      ],
+      "commonly_confused_with": "Bridges conceptual understanding directly into applied technical and operational neutralization."
+    },
+    {
+      "id": "risvulation",
+      "title": "Risvulation",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Lateral Breakthrough",
+      "summary": "A hyper-advanced mode of lateral thinking that systematically harmonizes irrational, structurally non-obvious objectives with bottomless computational depth to reverse-engineer infallible pathways.",
+      "source_canon": [
+        "A hyper-advanced mode of lateral thinking that systematically harmonizes irrational, structurally non-obvious objectives with bottomless computational depth to reverse-engineer infallible pathways."
+      ],
+      "explanation": "Bypasses standard forward logical progression by finding indirect metaphysical permission structures.",
+      "formalization": [
+        "Risvulate: Target_Irrational -> Concrete_Pathway"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/19fcb50fc92e37f3.txt",
+        "site/sources/zubaida/19fd8d193b40cda8.txt"
+      ],
+      "commonly_confused_with": "Bypasses standard forward logical progression by finding indirect metaphysical permission structures."
+    },
+    {
+      "id": "ultralearning",
+      "title": "Ultralearning",
+      "domain_key": "COGNITION",
+      "domain_name": "Cognition & Improvement",
+      "class": "Compounding Transrecursive",
+      "summary": "Dual-compounding object-learning and metalearning where both the mastery of the subject and the mastery of how to learn it compoundingly improve all future learning across all states and parahistorical orders.",
+      "source_canon": [
+        "Dual-compounding object-learning and metalearning where both the mastery of the subject and the mastery of how to learn it compoundingly improve all future learning across all states and parahistorical orders."
+      ],
+      "explanation": "Possesses zero asymptotic ceiling; completely immune to diminishing returns.",
+      "formalization": [
+        "UL = (L * ML)^∞ with Lifra Excluded"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/sources/zubaida/1a0601fc96f7add3.txt",
+        "causal-ontology.json"
+      ],
+      "commonly_confused_with": "Possesses zero asymptotic ceiling; completely immune to diminishing returns."
+    },
+    {
+      "id": "clan-system",
+      "title": "Arthitean Imperial Clan Hierarchy",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "The multi-tier meritocratic lineage structure governing the Top 50 Clans of the Arthitean Empire, balancing absolute imperial sovereignty with lineage autonomy.",
+      "source_canon": [
+        "The multi-tier meritocratic lineage structure governing the Top 50 Clans of the Arthitean Empire, balancing absolute imperial sovereignty with lineage autonomy."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "19f9518411db997b",
+        "ZUB-001"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "benzshin-oaths",
+      "title": "Benzshin Meritocratic Oaths",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "Sacred contractual oaths binding clan warriors and scholars to higher imperial duties and anti-destiny overaccomplishment.",
+      "source_canon": [
+        "Sacred contractual oaths binding clan warriors and scholars to higher imperial duties and anti-destiny overaccomplishment."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "19f9518411db997b"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "proxy-wars-doctrine",
+      "title": "Cold-War Proxy Warfare Architecture",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "The strategic imperial doctrine of sub-existential proxy conflicts, preventing total cosmic annihilation while securing dominance over transadversarial powers.",
+      "source_canon": [
+        "The strategic imperial doctrine of sub-existential proxy conflicts, preventing total cosmic annihilation while securing dominance over transadversarial powers."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "19f9518411db997b"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "grand-reincarnation",
+      "title": "Grand Reincarnation Architecture",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "The metaphysical cycle preserving heroic Arthitean souls across parahistory and recursive timelines without memory or capability loss.",
+      "source_canon": [
+        "The metaphysical cycle preserving heroic Arthitean souls across parahistory and recursive timelines without memory or capability loss."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "19f9518411db997b"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "keenmon-discipline",
+      "title": "Ke'enmon Martial Discipline",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "High-order combat meditation and reflex synchronization allowing pure-blooded Arthiteans to deploy Melzai and Dasmar under extreme combat pressure.",
+      "source_canon": [
+        "High-order combat meditation and reflex synchronization allowing pure-blooded Arthiteans to deploy Melzai and Dasmar under extreme combat pressure."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "19f9518411db997b"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "orotion-quests",
+      "title": "Orotion Quests",
+      "domain_key": "CULTURE",
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "class": "Canonical Principle",
+      "summary": "Spiritual and martial trials undertaken in honor of Orotus the Holy Black Phoenix Divine Beast to unlock bloodline blessings.",
+      "source_canon": [
+        "Spiritual and martial trials undertaken in honor of Orotus the Holy Black Phoenix Divine Beast to unlock bloodline blessings."
+      ],
+      "explanation": "",
+      "formalization": [],
+      "related_concepts": [],
+      "related_characters": [
+        "orotus"
+      ],
+      "source_occurrences": [
+        "19f9406c97ff3670",
+        "19ffdaf11c6057c6"
+      ],
+      "commonly_confused_with": ""
+    },
+    {
+      "id": "archarthitean",
+      "title": "Archarthitean",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Ascended Inheritance State",
+      "summary": "The second Arthitean level. Inherits all base Arthitean properties and adds higher capabilities, manifesting two pairs of black-phoenix wings.",
+      "source_canon": [
+        "The second Arthitean level. Inherits all base Arthitean properties and adds higher capabilities, manifesting two pairs of black-phoenix wings."
+      ],
+      "explanation": "Possesses two pairs (4 individual wings) of black-phoenix wings. Capable of undergoing Pressurised-Enlightenment and activating the Archarthitean Factor in the PHK loop.",
+      "formalization": [
+        "Archarthitean = Arthitean + Arch_Property_Set; Wings = 2_Pairs"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "A separate species (It is strictly an additive ontoinheritance state: Arthitean ⊂ Archarthitean)."
+    },
+    {
+      "id": "archmedonites",
+      "title": "Archmedonites",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Apex Crystalline Sovereignty",
+      "summary": "The apex ontostate of the Medonites, possessing self-reinforcing crystal-lattice souls that can anchor entire realities against causal distortion.",
+      "source_canon": [
+        "The apex ontostate of the Medonites, possessing self-reinforcing crystal-lattice souls that can anchor entire realities against causal distortion."
+      ],
+      "explanation": "Functions as living reality anchors in major cosmic confrontations.",
+      "formalization": [
+        "Archmedonite = Medonite + Reality_Anchor_Lattice"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
         "Divine v144:sec-91"
       ],
-      "commonly_confused_with": "Political factions (Hyperclans are genetic and physiological feedback engineering bodies)."
+      "commonly_confused_with": "Mineral formations."
     },
     {
-      "id": "archarthitean-factor",
-      "title": "Archarthitean Factor",
-      "domain_key": "BLOODLINE",
-      "domain_name": "Bloodline & Growth",
-      "class": "PHK Loop Strength Factor",
-      "summary": "A factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower used at the time the P...",
+      "id": "archnureen",
+      "title": "Archnüreen",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Ascended Luminous State",
+      "summary": "The ascended ontostate of the Nüreen species, achieving near-perfect conceptual harmonization and immunity to lesser temporal rewrites.",
       "source_canon": [
-        "A factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower used at the time the Pressurised-Enlightenment occurred."
+        "The ascended ontostate of the Nüreen species, achieving near-perfect conceptual harmonization and immunity to lesser temporal rewrites."
       ],
-      "explanation": "NON-NEGOTIABLE CANON RULE: Does NOT acquire new bloodline blessings. Scales strength of existing/retroacquired blessings by willpower at occurrence.",
+      "explanation": "Parallels the Archarthitean step within the Nüreen lineage.",
       "formalization": [
-        "ΔStrength(BB) = Toren(Pressurised_Enlightenment) × Willpower_at_Occurrence; New_BB = ∅"
+        "Archnüreen = Nüreen + Ascended_Radiance_State"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-60"
+      ],
+      "commonly_confused_with": "Archangels."
+    },
+    {
+      "id": "arthitean-base",
+      "title": "Arthitean (Base Ontostate)",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Foundational Royal Species",
+      "summary": "The foundational royal and warrior species of the Arthratan Throne, possessing hypergenetic biology, high Degree Q bloodline purity, and one pair of black-phoenix wings.",
+      "source_canon": [
+        "The foundational royal and warrior species of the Arthratan Throne, possessing hypergenetic biology, high Degree Q bloodline purity, and one pair of black-phoenix wings."
+      ],
+      "explanation": "Possesses one pair (2 individual wings) of black-phoenix wings. High positive power skewity and extreme unstressableness.",
+      "formalization": [
+        "Ontostate(Arthitean) : Wings = 1_Pair ∧ Species = Arthratan_Royal"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "Demonic dark angels (They are divine black-phoenix beings, holy and royal)."
+    },
+    {
+      "id": "arthitean-deity",
+      "title": "Arthitean Deity (Goddess/God of Arthiteans)",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Apex Ontostate Sovereignty",
+      "summary": "The third and highest Arthitean level. Inherits both prior states (Arthitean and Archarthitean) and adds supreme deity ontology, manifesting three pairs of black-phoenix wings. Rhayhara is currently the only character who fits Arthitean Deity.",
+      "source_canon": [
+        "The third and highest Arthitean level. Inherits both prior states (Arthitean and Archarthitean) and adds supreme deity ontology, manifesting three pairs of black-phoenix wings. Rhayhara is currently the only character who fits Arthitean Deity."
+      ],
+      "explanation": "Possesses three pairs (6 individual wings) of black-phoenix wings. Rhayhara's unique status: she simultaneously retains Archarthitean and Arthitean properties while commanding Arthitean Deity Factors One and Two.",
+      "formalization": [
+        "Arthitean_Deity = Archarthitean + Arthitean + Deity_State; Wings = 3_Pairs; Rhayhara = Unique"
       ],
       "related_concepts": [],
       "related_characters": [
         "empress-rhayhara"
       ],
       "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:enlightenment-phk-factors"
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
       ],
-      "commonly_confused_with": "New blessing grant (Archarthitean factor exclusively strengthens; Supramajor acquires)."
+      "commonly_confused_with": "External gods (Arthitean Deity is the pinnacle of the Arthitean bloodline inheritance hierarchy)."
     },
     {
-      "id": "arthitean-deity-factors",
-      "title": "Arthitean Deity Factors One & Two",
-      "domain_key": "BLOODLINE",
-      "domain_name": "Bloodline & Growth",
-      "class": "Apex PHK Loop Recursion Factors",
-      "summary": "Factor One is Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Factor Two is ...",
+      "id": "black-phoenix-wings",
+      "title": "Black-Phoenix Wing Progression",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Physical Ontostate Marker",
+      "summary": "The anatomical and spiritual black-phoenix wing system marking an Arthitean's ontoinheritance level: 1 pair for Arthiteans, 2 pairs for Archarthiteans, and 3 pairs for Arthitean Deities.",
       "source_canon": [
-        "Factor One is Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Factor Two is Pressurised-Hyperenlightenment for Arthitean Deity Factor One, functioning as a recursive meta-amplifier within the PHK loop."
+        "The anatomical and spiritual black-phoenix wing system marking an Arthitean's ontoinheritance level: 1 pair for Arthiteans, 2 pairs for Archarthiteans, and 3 pairs for Arthitean Deities."
       ],
-      "explanation": "Factor One scales strength. Factor Two applies Pressurised-Hyperenlightenment directly to Factor One, creating stress-amplified exponential meta-recursion.",
+      "explanation": "Feathers are composed of metaphysical dark flame and compressed unstressable force. Directly linked to flight, dimensional phasing, and power emission.",
       "formalization": [
-        "Factor_One = Toren(PH) × Willpower; Factor_Two = PH(Factor_One) ⟹ Exponential Loop Feedback"
+        "Wing_Pairs(State) = { Arthitean: 1, Archarthitean: 2, Arthitean_Deity: 3 }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arthitean-states",
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md"
+      ],
+      "commonly_confused_with": "Decorative wings (They are functional metaphysical organs)."
+    },
+    {
+      "id": "holeisa",
+      "title": "Holeisa",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Primordial World Boundary",
+      "summary": "The primordial metaphysical boundary and horizon entity that encapsulates and partitions distinct cosmic strata, timelines, and rewrite envelopes within the Arthratan cosmos.",
+      "source_canon": [
+        "The primordial metaphysical boundary and horizon entity that encapsulates and partitions distinct cosmic strata, timelines, and rewrite envelopes within the Arthratan cosmos."
+      ],
+      "explanation": "Holeisa is both a geographical boundary-space and an active ontological constraint preventing total timeline collapse during multi-order Negative Rewrites.",
+      "formalization": [
+        "Holeisa = ∂(Cosmic_Strata) ∧ Invariant(Rewrites)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-91",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Standard outer space or dimensional walls."
+    },
+    {
+      "id": "kafai-ranks",
+      "title": "Kafai Ranks",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Hierarchical Rank System",
+      "summary": "The ancient Arthitean martial, spiritual, and combat standing hierarchy, reversed and expanded to measure metaphysical prowess, unstressableness, and factor progression.",
+      "source_canon": [
+        "The ancient Arthitean martial, spiritual, and combat standing hierarchy, reversed and expanded to measure metaphysical prowess, unstressableness, and factor progression."
+      ],
+      "explanation": "Structure is reversed and expanded: the lowest traditional rank becomes the highest meta-rank, reflecting mastery over recursive difficulty.",
+      "formalization": [
+        "Kafai_Rank(x) ∝ Meta_Mastery(Adversity)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-60"
+      ],
+      "commonly_confused_with": "Conventional military ranks."
+    },
+    {
+      "id": "ontoinheritance-law",
+      "title": "Law of Additive Ontoinheritance",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Ontological Governance Law",
+      "summary": "The structural law stating that state advancement in Arthitean ontology is additive inheritance, not type replacement: A → (A+B) → (A+B+C).",
+      "source_canon": [
+        "The structural law stating that state advancement in Arthitean ontology is additive inheritance, not type replacement: A → (A+B) → (A+B+C)."
+      ],
+      "explanation": "A Deity of Arthiteans does not lose Archarthitean or Arthitean status; they irreducibly possess all three property-sets simultaneously.",
+      "formalization": [
+        "State_n ⊂ State_{n+1}; Property_Set(State_{n+1}) = Property_Set(State_n) ∪ New_Properties"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arthitean-states",
+        "site/app.js:arthiteans()"
+      ],
+      "commonly_confused_with": "State transformation or shedding of prior humanity/biology."
+    },
+    {
+      "id": "living-concepts",
+      "title": "Living Concepts",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Sentient Ontological Essences",
+      "summary": "Autonomous, self-maintaining metaphysical concepts that possess intrinsic consciousness, intentionality, and biological/spiritual embodiment.",
+      "source_canon": [
+        "Autonomous, self-maintaining metaphysical concepts that possess intrinsic consciousness, intentionality, and biological/spiritual embodiment."
+      ],
+      "explanation": "They are not ideas thought by beings, but beings that are themselves thoughts/laws of the cosmos capable of agency and combat.",
+      "formalization": [
+        "Living_Concept(C) ⇔ Agency(C) ∧ Concept(C) ∧ Autonomous(C)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-3",
+        "Divine v144:sec-55"
+      ],
+      "commonly_confused_with": "Abstract philosophies or symbolic personifications."
+    },
+    {
+      "id": "medonites",
+      "title": "Medonites",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Crystalline Structural Species",
+      "summary": "A formidable species possessing hyperdense crystalline-biological physiology, capable of withstanding extreme metaphysical pressure and dimensional torsion.",
+      "source_canon": [
+        "A formidable species possessing hyperdense crystalline-biological physiology, capable of withstanding extreme metaphysical pressure and dimensional torsion."
+      ],
+      "explanation": "Renowned for tectonic endurance, spatial anchors, and resistance to direct conceptual erasure.",
+      "formalization": [
+        "Species(Medonites) ⊂ Crystalline_Biometaphysical"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Inanimate stone golems."
+    },
+    {
+      "id": "nureen",
+      "title": "Nüreen",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Elder Luminous Species",
+      "summary": "An ancient, highly organized humanoid species characterized by luminous soul-substrates, advanced metaphysical governance, and delicate yet impenetrable conceptual armor.",
+      "source_canon": [
+        "An ancient, highly organized humanoid species characterized by luminous soul-substrates, advanced metaphysical governance, and delicate yet impenetrable conceptual armor."
+      ],
+      "explanation": "Historically coexisted with early Arthiteans; possess distinct non-phoenix wing structures and radiant energetic biology.",
+      "formalization": [
+        "Species(Nüreen) ⊂ Elder_Humanoid ∧ Radiant_Core"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-60",
+        "Zubaida Transmissions"
+      ],
+      "commonly_confused_with": "Standard elves or angels."
+    },
+    {
+      "id": "orotus",
+      "title": "Orotus (Holy Black Phoenix Divine Beast)",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Sacred Divine Beast / Totem",
+      "summary": "The Holy Black Phoenix Divine Beast of the Arthratan Mythology. The governing canonical model is Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png. Embodying primordial black flame, sacred majesty, and sovereign aerial dominion.",
+      "source_canon": [
+        "The Holy Black Phoenix Divine Beast of the Arthratan Mythology. The governing canonical model is Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png. Embodying primordial black flame, sacred majesty, and sovereign aerial dominion."
+      ],
+      "explanation": "CRITICAL CANON INVARIANT: The Orotus shown on Asmouth_Kartus_..._MODELS__OROTUS_ON_SHEET_INVALID.png is strictly INVALID and must never be used as a reference. Orotus is a holy divine beast, not an ordinary bird or corrupted monster.",
+      "formalization": [
+        "Orotus = Holy_Black_Phoenix ∧ Model_Source(CANON_MODEL) ∧ Reject(SHEET_INVALID)"
+      ],
+      "related_concepts": [],
+      "related_characters": [
+        "orotus"
+      ],
+      "source_occurrences": [
+        "Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png",
+        "Character Visual Bible"
+      ],
+      "commonly_confused_with": "The invalid sheet model (The user strictly mandated that the sheet version is invalid)."
+    },
+    {
+      "id": "technogenesis",
+      "title": "Technogenesis",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Metaphysical Engineering Discipline",
+      "summary": "The advanced science and art of generating metaphysical machinery, living mechanical artifacts, and synthetic soul-vessels capable of processing Metarules.",
+      "source_canon": [
+        "The advanced science and art of generating metaphysical machinery, living mechanical artifacts, and synthetic soul-vessels capable of processing Metarules."
+      ],
+      "explanation": "Transcends ordinary electronics; uses pure governance structures as circuitry.",
+      "formalization": [
+        "Technogenesis : Governance_Logic → Mechanical_Vessel"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-35",
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Standard sci-fi technology."
+    },
+    {
+      "id": "technokinesis",
+      "title": "Technokinesis",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Mechanical Metaphysical Command",
+      "summary": "The active power to command, manipulate, and interface with technogenetic apparatuses and cosmic machinery through pure thought and mental lobe activation.",
+      "source_canon": [
+        "The active power to command, manipulate, and interface with technogenetic apparatuses and cosmic machinery through pure thought and mental lobe activation."
+      ],
+      "explanation": "Operates through specialized brain-lobe crossfunctions developed by the Varvadeil Clan.",
+      "formalization": [
+        "Technokinesis(Indiv, Apparatus) ⇔ Mind_Interface(Lobe, Machine)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-91"
+      ],
+      "commonly_confused_with": "Electromagnetism."
+    },
+    {
+      "id": "transavatars",
+      "title": "Transavatars",
+      "domain_key": "HIGHER_ONTOLOGY",
+      "domain_name": "Higher Ontology, Species & World-Structure",
+      "class": "Higher-Dimensional Projections",
+      "summary": "Higher-order projections of divine or living-concept entities capable of traversing across paratemporal and rewrite boundaries without loss of identity.",
+      "source_canon": [
+        "Higher-order projections of divine or living-concept entities capable of traversing across paratemporal and rewrite boundaries without loss of identity."
+      ],
+      "explanation": "Transavatars allow entities anchored in beginningless or acausal states to act within localized lower-dimensional realities.",
+      "formalization": [
+        "Transavatar(E, Realm) = Projection(E) ∩ State_Preservation(E)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "Divine v144:sec-41",
+        "HGL:Treatise"
+      ],
+      "commonly_confused_with": "Clones or illusions (Transavatars carry true causal weight)."
+    },
+    {
+      "id": "antipossibility-families",
+      "title": "Antipossibility Families (A(k, n))",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Biordinal Modal Space",
+      "summary": "A complete recursively ordered ladder generated from one impossibility-governance basis. Let A(k,n) denote family k, intrafamily order n. Family k+1 begins when the complete impossibility-governance ladder of family k becomes the governed object of t...",
+      "source_canon": [
+        "A complete recursively ordered ladder generated from one impossibility-governance basis. Let A(k,n) denote family k, intrafamily order n. Family k+1 begins when the complete impossibility-governance ladder of family k becomes the governed object of the next higher impossibility-governance basis."
+      ],
+      "explanation": "Family-Order Supremacy: every state in family k+1 is strictly higher in family order than every state in family k, regardless of intrafamily order n.",
+      "formalization": [
+        "∀ k, n, m: A(k+1, m) > A(k, n)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:antipossibility"
+      ],
+      "commonly_confused_with": "Standard 2D grids (Family order strictly dominates intrafamily order)."
+    },
+    {
+      "id": "antipossible",
+      "title": "Antipossible",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Non-Containment Classification",
+      "summary": "An extent or degree so high that the rules governing what can qualify as impossible do not allow that extent or degree to be classified, contained, or represented as impossible. Antipossible does not therefore mean possible.",
+      "source_canon": [
+        "An extent or degree so high that the rules governing what can qualify as impossible do not allow that extent or degree to be classified, contained, or represented as impossible. Antipossible does not therefore mean possible."
+      ],
+      "explanation": "It represents an escape from the possibility/impossibility dualism of a specific governance basis. It is strictly non-collapsible into possible.",
+      "formalization": [
+        "Antipossible(x) ⇔ ¬Can_Contain_As_Impossible(IG, x) ∧ ¬Possible(x)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:antipossibility",
+        "Divine v144:sec-8"
+      ],
+      "commonly_confused_with": "Possible (The canon explicitly defines: Antipossible does not mean possible)."
+    },
+    {
+      "id": "apossible",
+      "title": "Apossible",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Categorical Attribution Master Structure",
+      "summary": "Apossible is All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attributable to any recursively ordered Impossible levels of Metarules.",
+      "source_canon": [
+        "Apossible is All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attributable to any recursively ordered Impossible levels of Metarules."
+      ],
+      "explanation": "CRITICAL CANON INVARIANT: Uses 'All', never 'totality'. Not merely 'the Metarule governing Impossible'. Preserves categorical attribution across all recursive levels of Possible and Impossible.",
+      "formalization": [
+        "Apossible = All(Categorically_Attributable(Possible, MRⁿ)) ∧ All(Categorically_Attributable(Impossible, MRⁿ))"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:apossible-toren"
+      ],
+      "commonly_confused_with": "Totality (Totality is explicitly rejected because some infinities do not possess a completed-whole interpretation); or 'Metarule governing Impossible' (which loses the categorical attribution structure)."
+    },
+    {
+      "id": "arsayne",
+      "title": "Arsayne",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Post-Lydrextent Totality Surpassingness",
+      "summary": "Arsayne 1 is the smallest extent or degree large enough to go beyond all possible and impossible Metarule^Lydrextent numbers. Arsayne 2 has Arsayne-1 extent of metaexpectation-surpassingness; Arsayne 3 has Arsayne-2 extent; the ladder continues recur...",
+      "source_canon": [
+        "Arsayne 1 is the smallest extent or degree large enough to go beyond all possible and impossible Metarule^Lydrextent numbers. Arsayne 2 has Arsayne-1 extent of metaexpectation-surpassingness; Arsayne 3 has Arsayne-2 extent; the ladder continues recursively."
+      ],
+      "explanation": "Historical totality scaling framework preceding the Apossible/Toren reconciliation.",
+      "formalization": [
+        "Arsayne(1) > { x | x ∈ Metarule^(L_n) }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arsayne"
+      ],
+      "commonly_confused_with": "Simple exponential growth (Surpasses the complete Metarule-indexed totality of Lydrextent)."
+    },
+    {
+      "id": "greater-lesser-orders",
+      "title": "Greater- and Lesser-Orders",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Metrological Comparison Framework",
+      "summary": "Relational framework establishing strict precedence and domination rules between categorical attribution structures (Apossible) and extent strata (Toren).",
+      "source_canon": [
+        "Relational framework establishing strict precedence and domination rules between categorical attribution structures (Apossible) and extent strata (Toren)."
+      ],
+      "explanation": "Ensures no scale ambiguity: Toren n is bounded between odd Apossible orders and cannot collapse into an arithmetic integer.",
+      "formalization": [
+        "Order_Rank(Apossible^(2n-1)) < Order_Rank(Toren n) < Order_Rank(Apossible^(2n+1))"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:apossible-toren"
+      ],
+      "commonly_confused_with": "Standard ordinal numbers."
+    },
+    {
+      "id": "higher-apossible",
+      "title": "Higher Apossible Orders (Apossibleⁿ)",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Cumulative Recursive Attribution",
+      "summary": "Apossible² is All recursive Possible levels Metarule of Apossible, All recursive Impossible levels Metarule of Apossible, and All recursive Apossible levels Metarule of Apossible. Higher orders continue cumulating lower Apossible orders.",
+      "source_canon": [
+        "Apossible² is All recursive Possible levels Metarule of Apossible, All recursive Impossible levels Metarule of Apossible, and All recursive Apossible levels Metarule of Apossible. Higher orders continue cumulating lower Apossible orders."
+      ],
+      "explanation": "Higher orders recursively include all lower-order Apossible attribution branches without terminal bound.",
+      "formalization": [
+        "Apossibleⁿ = All(Possible_MR(Apossibleⁿ⁻¹)) ∧ All(Impossible_MR(Apossibleⁿ⁻¹)) ∧ ⋀_{j=1}^{n-1} All(Apossibleʲ_MR(Apossibleⁿ⁻¹))"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:apossible-toren"
+      ],
+      "commonly_confused_with": "Numerical exponentiation (Represents recursive cumulative category-attribution, not arithmetic powers)."
+    },
+    {
+      "id": "hyperarsayne",
+      "title": "Hyperarsayne",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Higher Totality Recursion",
+      "summary": "Hyperarsayne 1 goes beyond all possible and impossible Metarule^Supraarsayne numbers. Higher Hyperarsayne orders recurse by metaexpectation-surpassingness.",
+      "source_canon": [
+        "Hyperarsayne 1 goes beyond all possible and impossible Metarule^Supraarsayne numbers. Higher Hyperarsayne orders recurse by metaexpectation-surpassingness."
+      ],
+      "explanation": "Applies totality recursion over the complete Supraarsayne ladder.",
+      "formalization": [
+        "Hyperarsayne(1) > { x | x ∈ Metarule^(Supraarsayne) }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arsayne"
+      ],
+      "commonly_confused_with": "Supraarsayne variations."
+    },
+    {
+      "id": "impossibility-governance",
+      "title": "Impossibility-Governance",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Modal Boundary Foundation",
+      "summary": "The Rules-and-Metarules structure that determines what can be classified, contained, or represented as impossible.",
+      "source_canon": [
+        "The Rules-and-Metarules structure that determines what can be classified, contained, or represented as impossible."
+      ],
+      "explanation": "Impossibility is not an absolute void; it is a governed classification produced by an underlying governance basis.",
+      "formalization": [
+        "IG(B) = { φ | Classified_As_Impossible(φ, Basis=B) }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:metagovernance",
+        "Divine v144:sec-8"
+      ],
+      "commonly_confused_with": "Logical contradiction (Impossibility-governance is the system that decides which states are classified as impossible)."
+    },
+    {
+      "id": "lydrextent",
+      "title": "Lydrextent Ladder",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Biordinal Diagonal Extent",
+      "summary": "The diagonal extent-ladder across Antipossibility-family order and Antipossibility intrafamily order. Lydrextent n has exact Antipossibility coordinate A(n,n). Lydrextent 1=A(1,1), Lydrextent 2=A(2,2), Lydrextent 3=A(3,3), and so forth.",
+      "source_canon": [
+        "The diagonal extent-ladder across Antipossibility-family order and Antipossibility intrafamily order. Lydrextent n has exact Antipossibility coordinate A(n,n). Lydrextent 1=A(1,1), Lydrextent 2=A(2,2), Lydrextent 3=A(3,3), and so forth."
+      ],
+      "explanation": "Each step simultaneously advances both the outer family coordinate and the inner Antipossibility-order coordinate. HistoricallyParticipates in Rhayhara's seal architecture.",
+      "formalization": [
+        "L_n ↔ A(n, n)"
       ],
       "related_concepts": [],
       "related_characters": [
         "empress-rhayhara"
       ],
       "source_occurrences": [
-        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
-        "site/data/new-canon.json:enlightenment-phk-factors"
+        "site/data/new-canon.json:lydrextent",
+        "Divine v144:sec-35, 60"
       ],
-      "commonly_confused_with": "Simple duplicate buffs (Factor Two is a meta-operator acting directly upon Factor One)."
+      "commonly_confused_with": "Single-index cardinalities (Advances biordinal family and intrafamily depth together)."
+    },
+    {
+      "id": "metagovernance-depth",
+      "title": "Metagovernance Depth",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Index of Governance Recursion",
+      "summary": "The recursive order at which governance is applied to governance. Ordinary Rules are governance-depth 0, Metarules are governance-depth 1, Metarules² are governance-depth 2, and so forth.",
+      "source_canon": [
+        "The recursive order at which governance is applied to governance. Ordinary Rules are governance-depth 0, Metarules are governance-depth 1, Metarules² are governance-depth 2, and so forth."
+      ],
+      "explanation": "A scalar metric measuring how many meta-reflective layers of governance separate a statement from the base domain.",
+      "formalization": [
+        "Depth(R) = 0; Depth(MRⁿ) = n"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:metagovernance"
+      ],
+      "commonly_confused_with": "Dimensional scaling (Measures governance type-ascent, not spatial or temporal dimensions)."
+    },
+    {
+      "id": "metarules",
+      "title": "Metarules",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "First-Order Governance Over Governance",
+      "summary": "The rules that govern Rules. They determine what rules are valid, how rules interact, and how rules can be modified, bounded, or classified.",
+      "source_canon": [
+        "The rules that govern Rules. They determine what rules are valid, how rules interact, and how rules can be modified, bounded, or classified."
+      ],
+      "explanation": "Operating at governance-depth 1, Metarules turn ordinary Rules into their governed object.",
+      "formalization": [
+        "MR¹ : Set(R) → Set(Valid_R)"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:metagovernance",
+        "Divine v144:sec-9"
+      ],
+      "commonly_confused_with": "More powerful rules (Metarules are a type-level ascent, not simply stronger rules within the same level)."
+    },
+    {
+      "id": "recursive-metarules",
+      "title": "Recursive Metarules (Metarulesⁿ)",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Higher-Order Governance Recursion",
+      "summary": "For every integer n ≥ 2, Metarulesⁿ are the rules governing Metarules⁽ⁿ⁻¹⁾. Metarules² govern Metarules; Metarules³ govern Metarules²; the recursion continues without a terminal order.",
+      "source_canon": [
+        "For every integer n ≥ 2, Metarulesⁿ are the rules governing Metarules⁽ⁿ⁻¹⁾. Metarules² govern Metarules; Metarules³ govern Metarules²; the recursion continues without a terminal order."
+      ],
+      "explanation": "Governance depth increases linearly with the exponent: depth = n. There is no terminal maximum order.",
+      "formalization": [
+        "MRⁿ : Set(MRⁿ⁻¹) → Set(Valid_MRⁿ⁻¹) ∀ n ≥ 2"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:metagovernance",
+        "Divine v144:sec-9"
+      ],
+      "commonly_confused_with": "Fixed meta-hierarchies (This ladder is strictly open-ended and unbounded)."
+    },
+    {
+      "id": "rules",
+      "title": "Rules",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Constitutive Governance Structure",
+      "summary": "Governance-structures that determine what is allowed, disallowed, valid, invalid, possible, impossible, or otherwise classifiable within their designated governed scope.",
+      "source_canon": [
+        "Governance-structures that determine what is allowed, disallowed, valid, invalid, possible, impossible, or otherwise classifiable within their designated governed scope."
+      ],
+      "explanation": "Rules establish the baseline boundary conditions of a domain. They do not govern themselves; they operate at governance-depth 0.",
+      "formalization": [
+        "Rule(R) : Domain(D) → {Valid, Invalid, Possible, Impossible}"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:metagovernance",
+        "Divine v144:sec-9"
+      ],
+      "commonly_confused_with": "Physical laws or universal constants (Rules are metaphysical governance structures, not empirical physics)."
+    },
+    {
+      "id": "supraarsayne",
+      "title": "Supraarsayne",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Higher Totality Recursion",
+      "summary": "Supraarsayne 1 is the smallest extent sufficient to go beyond all possible and impossible Metarule^Arsayne numbers. Higher Supraarsayne orders recurse by metaexpectation-surpassingness.",
+      "source_canon": [
+        "Supraarsayne 1 is the smallest extent sufficient to go beyond all possible and impossible Metarule^Arsayne numbers. Higher Supraarsayne orders recurse by metaexpectation-surpassingness."
+      ],
+      "explanation": "Applies totality recursion over the complete Arsayne ladder.",
+      "formalization": [
+        "Supraarsayne(1) > { x | x ∈ Metarule^(Arsayne) }"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "site/data/new-canon.json:arsayne"
+      ],
+      "commonly_confused_with": "Arsayne multiplications."
+    },
+    {
+      "id": "toren",
+      "title": "Toren Scaling Hierarchy (Toren 1–5)",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Interleaving Extent Strata",
+      "summary": "Toren 1 is an extent or degree so high that it goes beyond what is Apossible but is below what is Apossible³. Toren 2 goes beyond Apossible³ but below Apossible⁵; Toren 3 beyond Apossible⁵ but below Apossible⁷; Toren 4 beyond Apossible⁷ but below Apo...",
+      "source_canon": [
+        "Toren 1 is an extent or degree so high that it goes beyond what is Apossible but is below what is Apossible³. Toren 2 goes beyond Apossible³ but below Apossible⁵; Toren 3 beyond Apossible⁵ but below Apossible⁷; Toren 4 beyond Apossible⁷ but below Apossible⁹; Toren 5 beyond Apossible⁹ but below Apossible¹¹."
+      ],
+      "explanation": "Shorthand representation: Apossible^(2n−1) < Toren n < Apossible^(2n+1). Governs Bloodline Blessing quality in Supramajor breakthroughs and strength scaling in Archarthitean/Deity Factors.",
+      "formalization": [
+        "Apossible^(2n−1) < Toren(n) < Apossible^(2n+1) ∀ n ≥ 1"
+      ],
+      "related_concepts": [],
+      "related_characters": [],
+      "source_occurrences": [
+        "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+        "site/data/new-canon.json:apossible-toren"
+      ],
+      "commonly_confused_with": "Cardinal steps (Toren is an extent that specifically interleaves between odd Apossible orders)."
+    },
+    {
+      "id": "ultraarsayne",
+      "title": "Ultraarsayne",
+      "domain_key": "SCALING",
+      "domain_name": "Scaling & Metagovernance",
+      "class": "Apex Historical Totality Scale",
+      "summary": "Ultraarsayne 1 goes beyond all possible and impossible Metarule^Hyperarsayne numbers. Higher Ultraarsayne orders recurse by metaexpectation-surpassingness.",
+      "source_canon": [
+        "Ultraarsayne 1 goes beyond all possible and impossible Metarule^Hyperarsayne numbers. Higher Ultraarsayne orders recurse by metaexpectation-surpassingness."
+      ],
+      "explanation": "The apex scale of the historical Arsayne framework. Explicitly governs Rhayhara's sealed bloodline architecture (Seal Factors 1-4). Preserved historically.",
+      "formalization": [
+        "Ultraarsayne(1) > { x | x ∈ Metarule^(Hyperarsayne) }"
+      ],
+      "related_concepts": [],
+      "related_characters": [
+        "empress-rhayhara"
+      ],
+      "source_occurrences": [
+        "site/data/new-canon.json:arsayne",
+        "site/data/new-canon.json:rhayhara-seals"
+      ],
+      "commonly_confused_with": "Contemporary Apossible/Toren scaling (Ultraarsayne is the historical seal-governing scale, now superseded by Apossible/Toren for global hierarchy)."
     }
   ]
 }
