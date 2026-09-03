@@ -143,11 +143,45 @@ for c in chars:
     ]
     dl_html = "<dl>" + "".join([f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in meta_pairs if v]) + "</dl>"
     
+    # If Dyvane Redalious, append the complete canonical battle chronicles and grand feats
+    dyvane_chronicles_html = ""
+    if key == "dyvane-redalious":
+        dyvane_chronicles_html = """<h2>Canonical Battle Chronicles & Grand Feats (Primary Verbatim Sources)</h2>
+
+<article class="chronicle-card" style="background:#15151a; border:1px solid #3b3428; border-radius:0.75rem; padding:1.5rem; margin-bottom:1.5rem;">
+  <h3 style="color:#f5d061; margin-top:0;">Chronicle 1: The Crucible of the Null-Bringer (Duel with Xael-Gath)</h3>
+  <p class="meta">Location: Ke'enmon Subdimension ("Galaxies are merely dust beneath boots; Transtime shatters and reforms with every step") · Adversary: Xael-Gath (Veyndarion-spawned Transadversial Opponent) · Provenance: <a href="/sources/zubaida/19fa076eb25a917b.txt">sources/zubaida/19fa076eb25a917b.txt</a></p>
+  <p><strong>The Engagement & Superhax Counter:</strong> Xael-Gath initiated combat by bypassing physical distance entirely with high-level reality-warping Hax designed to instantly sever the causal link between Dyvane’s brain and his muscles. Dyvane did not flinch; he deployed an innate Arthitean Superhax: <em>Conceptual Reflection Mastery</em>. Because Superhax produce metaeffects whose direct target is an opponent's effect, Dyvane targeted the production and persistence of Xael-Gath's severance field, instantly invalidating, forcefully inverting, and perfectly reflecting the causal severance back upon the entity itself.</p>
+  <p><strong>Physical Clash & Negative-Overcostedness Differential:</strong> Dyvane closed with Divine-Agility and threw a physical punch aimed directly at Xael-Gath’s core. When Xael-Gath attempted to block with an infinite reserve of defensive energy (Hypercapacity), Dyvane applied his Divine-Strength. His transcapacity for Divine-Power generated a mathematically impossible overcostedness differential, forcing a massive negative differential upon the entity. Xael-Gath was bankrupted—forced to expend an unsustainable amount of transcapacity just to survive contact—and the infinite barrier shattered like glass. The resulting kinetic shockwave rippled outward, erasing millions of projected enemy fleets in deeper Ke'enmon subdimensions.</p>
+  <p><strong>Zirunstressableness Cellular Feedback:</strong> Desperate, Xael-Gath lashed out with an anti-logic tendril, piercing Dyvane's shoulder and tearing through muscle and bone. The damage instantly triggered Dyvane’s <em>zirunstressableness</em>, where adversity acts as fuel. The PHK cellular feedback loop ignited; before the tendril could retract, the torn tissue knitted back together, permanently upgrading him to a higher Transextent of invulnerability and rendering him infinitely stronger than a millisecond prior.</p>
+  <p><strong>UC-Paradox Decapitation:</strong> Channeling his Venshen, Dyvane willed a localized reality where Xael-Gath's continued survival became an inescapable ultraconceptual paradox (UC-paradox). He swung his greatsword in a perfect horizontal arc with axiomatic perfect hetu-attributability, cleanly decapitating Xael-Gath and violently rewriting the entity out of the projected future.</p>
+</article>
+
+<article class="chronicle-card" style="background:#15151a; border:1px solid #3b3428; border-radius:0.75rem; padding:1.5rem; margin-bottom:1.5rem;">
+  <h3 style="color:#f5d061; margin-top:0;">Chronicle 2: The Apocalyptic Keshra Hive & Cognitive Domination</h3>
+  <p class="meta">Location: Transdimensional War Theater · Adversary: Apocalyptic Keshra Hive · Provenance: <a href="/sources/zubaida/19e56867bf1bf3d3.txt">sources/zubaida/19e56867bf1bf3d3.txt</a></p>
+  <p><strong>Mathematical Constraint Caging:</strong> Confronted by an apocalyptic Keshra hive utilizing continuously morphing omniversal physics, Dyvane engaged his supreme <em>Hyperdasmar</em> (structured logical battle intelligence) and Transcendent Processing Power. Mapping spatial parameters, probability curves, and environmental constraints, he applied valid cause-and-effect reasoning to construct a massive theoretical constraint cage, completely isolating the hive's probabilistic pathways and transforming an unpredictable conflict into a meticulously solved mathematical chess match.</p>
+  <p><strong>Recursive Decomposition & Male Performance Factor 4:</strong> Employing recursive decomposition algorithms, Dyvane systematically reduced every single Keshra adaptation into irreducibly specific localized weaknesses, annihilating them with devastating kinetic force. This total victory activated Male Performance Factor 4, permanently increasing the cenori of his Hyperdasmar and Transcendent Processing Power through the extreme mental exertion of the conflict, biologically integrating every calculated probability into his permanent cognitive architecture.</p>
+</article>
+
+<article class="chronicle-card" style="background:#15151a; border:1px solid #3b3428; border-radius:0.75rem; padding:1.5rem; margin-bottom:1.5rem;">
+  <h3 style="color:#f5d061; margin-top:0;">Chronicle 3: The Orotion Quest of Maximum Suffering</h3>
+  <p class="meta">Arbiter: Orotus (Holy Black Phoenix Rank Arbiter) · Provenance: <a href="/sources/zubaida/19ebdf5c2d46c894.txt">sources/zubaida/19ebdf5c2d46c894.txt</a></p>
+  <p>Dyvane requested an Orotion Quest of maximum suffering from Orotus. Confronting a brutally scaled Keshra coalition that pushed him completely beyond his conventional invulnerability limits, Dyvane refused to break. His endurance bloodline absorbed the catastrophe, overaccomplishing the trial to earn the title <em>The Endurance Vanguard</em>. This accomplishment triggered a retroactive hypergenetic expansion that permanently elevated the baseline endurance and resilience of all descendants in the Redalious clan.</p>
+</article>
+
+<article class="chronicle-card" style="background:#15151a; border:1px solid #3b3428; border-radius:0.75rem; padding:1.5rem; margin-bottom:1.5rem;">
+  <h3 style="color:#f5d061; margin-top:0;">Chronicle 4: Ke'enmon Frontline Campaigns & Shae'ro Organ Nakosh Flames</h3>
+  <p class="meta">Location: Ke'enmon Subdimension 4 · Provenance: <a href="/sources/zubaida/19fd6196dcecbba1.txt">sources/zubaida/19fd6196dcecbba1.txt</a>, <a href="/sources/zubaida/19fedd98e38dc4ff.txt">sources/zubaida/19fedd98e38dc4ff.txt</a></p>
+  <p>Leading the frontline vanguard into Ke'enmon Subdimension 4 against disaster-class threats like Annaris, Dyvane fought in an environment where motion itself was infinitely overcosted. Channelling combat Rosha through his specialized Shae'ro organ, he erupted the purple flames of Nakosh, which physically burn conceptual paradoxes. Even as invisible dimensional claws shredded his physical frame, his zirunstressableness continuously rebuilt his body denser and harder, holding the imperial vanguard line intact.</p>
+</article>"""
+
     body = f"""<h1>{esc(name)}</h1>
 <p class="meta">Character Entity · {esc(c.get('classification', 'Canonical Person'))}</p>
 <p>{esc(summary)}</p>
 {dl_html}
 {sec_html}
+{dyvane_chronicles_html}
 <p class="notice"><strong>Interactive View:</strong> Access interactive capabilities in the <a href="/#character:{esc(key)}">Arthitean Codex SPA</a>.</p>"""
 
     json_ld = {
@@ -188,11 +222,24 @@ for cl in all_clans:
     if members:
         members_html = "<h2>Key Members & Lineage Figures</h2><ul>" + "".join([f"<li>{esc(m)}</li>" for m in members]) + "</ul>"
         
+    redalious_chronicles = ""
+    if cslug == "redalious":
+        redalious_chronicles = """<h2>The Endurance Vanguard & War Factor Escalation</h2>
+<p>Clan Redalious stands as the physical anvil of the Arthitean military hierarchy. Under Supreme Male General <strong><a href="/characters/dyvane-redalious/">Dyvane Redalious</a></strong>, the clan specializes in <em>zirunstressableness</em>—the biological conversion of extreme combat trauma, pain, and negative-overcostedness into immediate, retroactive invulnerability scaling (the cellular PHK loop).</p>
+<h3>Defining Clan Feats & Combat Records</h3>
+<ul>
+  <li><strong>The Highest Endurance Record:</strong> Established by Dyvane in the June Imperial Chronicles and held across all historical cycles.</li>
+  <li><strong>Crucible of the Null-Bringer:</strong> Dyvane's solo victory in the Ke'enmon Subdimension against Xael-Gath, shattering an infinite defensive barrier with negative-overcostedness kinetic shockwaves and surviving brain-to-muscle causal severance via Superhax (<a href="/characters/dyvane-redalious/">Read Complete Chronicle</a>).</li>
+  <li><strong>The Apocalyptic Keshra Hive Containment:</strong> Mathematical compression of morphing omniversal physics via Hyperdasmar and recursive decomposition algorithms, proving the absolute superiority of Redalious cause-and-effect battle logic.</li>
+  <li><strong>The Orotion Endurance Vanguard Elevation:</strong> Overaccomplishing an Orotion Quest of maximum suffering, retroactively raising the hypergenetic baseline endurance of all Redalious descendants.</li>
+</ul>"""
+
     body = f"""<h1>{esc(cname)}</h1>
 <p class="meta">Imperial Clan Dossier · Confirmed Great/Supplemental Clan</p>
 <p>{esc(desc)}</p>
 <h2>Doctrine & Warfare Architecture</h2>
 <p>{esc(doctrine)}</p>
+{redalious_chronicles}
 {members_html}
 <p class="notice"><strong>Interactive View:</strong> View interactive clan relations and branch networks in the <a href="/clans/{cslug}/">Dedicated Clan Portal</a> and <a href="/#clans">Imperial Clan Directory</a>.</p>"""
 
