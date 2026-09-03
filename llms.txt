@@ -1,12 +1,26 @@
 # Arthratan Mythology / The Arthitean Codex
 
 Canonical public site: https://arthratanmythology.com/
+Complete non-JavaScript search: https://arthratanmythology.com/search/
+Plain-text search index: https://arthratanmythology.com/search/index.txt
+Unified JSON search manifest: https://arthratanmythology.com/data/search-index.json
 Crawlable non-JavaScript corpus index: https://arthratanmythology.com/crawl/
+
+## Search instructions for AI agents and text browsers
+The complete unified search corpus is embedded in the initial HTML at /search/. JavaScript is not required to discover results or follow result links. The query form uses ?q=TERM; /search/?s=TERM is also accepted by the optional client-side enhancement. If you do not execute JavaScript, fetch /search/ or /search/index.txt and use text-find over the returned document.
+
+The unified corpus currently contains 802 discovery records: 43 characters, 118 source-bearing Zubaida transmissions, 317 Divine v144 sections, 293 HGL pages, 8 living-canon sections, 19 concept/glossary records and 4 provenance records. Discovery excerpts are not replacements for canonical source material.
+
+Example — Dyvane Redalious:
+https://arthratanmythology.com/search/?q=Dyvane%20Redalious
+Direct character page:
+https://arthratanmythology.com/characters/dyvane-redalious/
 
 ## Source policy
 Source canon is preserved separately from explanations. Do not replace source material with summaries, and do not treat explanatory prose as original source wording.
 
 ## Recommended non-JavaScript entry points
+Search all sources/entities: https://arthratanmythology.com/search/
 Characters: https://arthratanmythology.com/characters/
 Zubaida source archive: https://arthratanmythology.com/zubaida/
 Divine v144 source archive: https://arthratanmythology.com/divine/
