@@ -134,13 +134,22 @@ async function masterpageView(id){
   const charsHtml = m.related_characters && m.related_characters.length ? `
     <div class="section-head"><h2>Embodied & Associated Characters</h2></div>
     <div class="grid three">
-      ${m.related_characters.map(cslug => `
-        <a class="card clickable" href="/characters/${cslug}/">
+      ${m.related_characters.map(cslug => {
+        const canonical = {
+          'empress-rhayhara':'rhayhara',
+          'asmouth':'asmouth-varvadeil',
+          'annaris':'annaris-deyhamora',
+          'orotus':'holy-black-phoenix',
+          'qai\'lyth':'qailyth'
+        }[cslug] || cslug;
+        const href = canonical === 'rhayhara' ? '#rhayhara' : `#character:${canonical}`;
+        return `
+        <a class="card clickable" href="${href}">
           <div class="micro">CANONICAL EMBODIMENT</div>
-          <h3>${esc(cslug.replace(/-/g, ' ').toUpperCase())}</h3>
+          <h3>${esc(canonical.replace(/-/g, ' ').toUpperCase())}</h3>
           <span class="concept-link">View character dossier →</span>
-        </a>
-      `).join('')}
+        </a>`;
+      }).join('')}
     </div>
   ` : '';
 
