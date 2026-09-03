@@ -12,17 +12,20 @@
       "benzshin_protocols_grounded": true,
       "redalious_unmatara_proxy_wars_grounded": true,
       "royal_family_distinct_from_clans": true,
-      "all_edges_provenance_backed": true
+      "all_edges_provenance_backed": true,
+      "zolfer_provenance_disambiguated": true,
+      "surname_to_clan_overpromotion_prevented": true
     },
     "summary_statistics": {
       "total_nodes": 32,
       "total_edges": 34,
-      "main_clans_count": 9,
+      "main_clans_count": 8,
       "branch_clans_count": 3,
       "persons_count": 14,
       "categories_count": 2,
       "institutions_count": 2,
-      "royal_family_count": 1
+      "royal_family_count": 1,
+      "specialist_clans_count": 1
     }
   },
   "nodes": [
@@ -105,14 +108,14 @@
     },
     {
       "id": "clan-zolfer",
-      "entity_type": "MAIN_CLAN",
-      "name": "Clan Zolfer",
+      "entity_type": "SPECIALIST_CLAN",
+      "name": "Zolfer Clan",
       "provenance": [
-        "characters.json:linaele-zolfer",
-        "divine.json:These artefacts synergistically improve the user"
+        "sources/zubaida/19fc071b9781a991.txt: verbatim diagram telemetry 'ANTAGOCOGNITION | ZOLFER CLAN | IMMUTABLE'",
+        "CLAN-ONTO-001: section 3.4 Specialist Antagocognition Clan"
       ],
-      "doctrine": "Top-50 artifact engineering clan; weaponizes hostile entities and engineers challenge-pressure artifacts.",
-      "canonical_status": "CANONICAL_MAIN_CLAN"
+      "doctrine": "Specialist Antagocognition clan attested in transmission 19fc071b9781a991 diagram telemetry. Specializes in antaintelligence and cognitive warfare under immutable lineage law. Downgraded from Main Clan to Specialist Clan per CLAN-QA-001 and CLAN-ONTO-001 disambiguation rules.",
+      "canonical_status": "CANONICAL_SPECIALIST_CLAN"
     },
     {
       "id": "clan-veyndarion",
@@ -459,10 +462,10 @@
       "relationship_type": "CLAN_HEAD",
       "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
       "sources": [
-        "characters.json:linaele-zolfer",
-        "divine.json:These artefacts synergistically improve"
+        "sources/zubaida/19fc071b9781a991.txt",
+        "characters.json:linaele-zolfer"
       ],
-      "evidence": "Linaele Zolfer is the leader of the Zolfer Clan (Top 50 clan)."
+      "evidence": "Linaele Zolfer is attested as member/head of Zolfer Clan in transmission 19fc071b9781a991 telemetry. Classified as Specialist Antagocognition Clan per CLAN-ONTO-001."
     },
     {
       "source": "person-valerius-omnivox",
