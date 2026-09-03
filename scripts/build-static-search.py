@@ -73,7 +73,7 @@ page = f'''<!doctype html>
 <title>Search the Arthitean Codex · Arthratan Mythology</title>
 <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebSite","name":"The Arthitean Codex","url":"https://arthratanmythology.com/","potentialAction":{{"@type":"SearchAction","target":"https://arthratanmythology.com/search/?q={{search_term_string}}","query-input":"required name=search_term_string"}}}}</script>
 <style>
-:root{{--bg:#0b0910;--panel:#15111d;--panel2:#1d1728;--text:#f6f0ff;--muted:#b9abc9;--accent:#d7a6ff;--line:#3a2d48;--link:#f0c7ff}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}}a{{color:var(--link)}}header,main,footer{{max-width:1180px;margin:auto;padding:20px}}header{{padding-top:32px}}nav{{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}}nav a{{text-decoration:none;border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:var(--panel)}}h1{{font-size:clamp(2rem,6vw,4.2rem);line-height:1.05;margin:.2em 0}}.lede{{max-width:850px;color:var(--muted);font-size:1.08rem}}.notice{{border-left:4px solid var(--accent);background:var(--panel);padding:14px 16px;margin:22px 0;border-radius:8px}}.tools{{position:sticky;top:0;z-index:3;background:rgba(11,9,16,.96);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(220px,2fr) minmax(180px,1fr);gap:10px}}input,select{{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text)}}.status{{grid-column:1/-1;color:var(--muted);font-size:.92rem}}.machine{{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 28px}}.result{{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:14px;padding:18px;margin:12px 0;scroll-margin-top:130px}}.result h2{{font-size:1.25rem;margin:5px 0 8px}}.result-meta{{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}}.type{{color:var(--accent);font-weight:700}}.aliases,.snippet,.provenance{{margin:.45rem 0}}.aliases,.provenance{{color:var(--muted);font-size:.9rem}}.provenance{{border-top:1px solid var(--line);padding-top:8px}}[hidden]{{display:none!important}}footer{{color:var(--muted);border-top:1px solid var(--line);margin-top:32px}}@media(max-width:650px){{.tools{{grid-template-columns:1fr}}}}
+:root{{--bg:#0b0910;--panel:#15111d;--panel2:#1d1728;--text:#f6f0ff;--muted:#b9abc9;--accent:#d7a6ff;--line:#3a2d48;--link:#f0c7ff}}*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}}a{{color:var(--link)}}header,main,footer{{max-width:1180px;margin:auto;padding:20px}}header{{padding-top:32px}}nav{{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}}nav a{{text-decoration:none;border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:var(--panel)}}h1{{font-size:clamp(2rem,6vw,4.2rem);line-height:1.05;margin:.2em 0}}.lede{{max-width:850px;color:var(--muted);font-size:1.08rem}}.notice{{border-left:4px solid var(--accent);background:var(--panel);padding:14px 16px;margin:22px 0;border-radius:8px}}.tools{{position:sticky;top:0;z-index:3;background:rgba(11,9,16,.96);backdrop-filter:blur(8px);padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(220px,2fr) minmax(180px,1fr);gap:10px}}input,select{{width:100%;font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text)}}.status{{grid-column:1/-1;color:var(--muted);font-size:.92rem}}.machine{{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 28px}}.result{{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:14px;padding:18px;margin:12px 0;scroll-margin-top:130px}}.result h2{{font-size:1.25rem;margin:5px 0 8px}}.result-meta{{display:flex;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}}.type{{color:var(--accent);font-weight:700}}.aliases,.snippet,.provenance{{margin:.45rem 0}}.aliases,.provenance{{color:var(--muted);font-size:.9rem}}.provenance{{border-top:1px solid var(--line);padding-top:8px}}mark{{background:#f4d35e;color:#130f17;padding:0 .08em;border-radius:.12em}}[hidden]{{display:none!important}}footer{{color:var(--muted);border-top:1px solid var(--line);margin-top:32px}}@media(max-width:650px){{.tools{{grid-template-columns:1fr}}}}
 </style>
 </head>
 <body>
@@ -103,12 +103,34 @@ page = f'''<!doctype html>
  q.value=params.get('q')||params.get('s')||'';
  type.value=params.get('type')||'';
  const norm=s=>(s||'').toLocaleLowerCase().normalize('NFKC').trim();
+ function clearMarks(root){{for(const m of root.querySelectorAll('mark'))m.replaceWith(document.createTextNode(m.textContent));root.normalize();}}
+ function highlightText(root,raw){{
+   const needle=norm(raw); if(!needle)return;
+   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+   const nodes=[]; while(walker.nextNode())nodes.push(walker.currentNode);
+   for(const node of nodes){{
+     const original=node.nodeValue, folded=norm(original); let start=0, hit=folded.indexOf(needle,start);
+     if(hit<0)continue;
+     const frag=document.createDocumentFragment(); let cursor=0;
+     while(hit>=0){{
+       frag.append(document.createTextNode(original.slice(cursor,hit)));
+       const mark=document.createElement('mark'); mark.textContent=original.slice(hit,hit+raw.length); frag.append(mark);
+       cursor=hit+raw.length; hit=folded.indexOf(needle,cursor);
+     }}
+     frag.append(document.createTextNode(original.slice(cursor))); node.replaceWith(frag);
+   }}
+ }}
  function apply(){{
-   const needle=norm(q.value), typ=type.value;
+   const raw=q.value.trim(), needle=norm(raw), typ=type.value;
    let shown=0;
-   for(const card of cards){{const okText=!needle||card.dataset.search.includes(needle);const okType=!typ||card.dataset.type===typ;card.hidden=!(okText&&okType);if(okText&&okType)shown++;}}
+   for(const card of cards){{
+     clearMarks(card);
+     const okText=!needle||card.dataset.search.includes(needle), okType=!typ||card.dataset.type===typ;
+     card.hidden=!(okText&&okType);
+     if(okText&&okType){{shown++;if(needle)for(const el of card.querySelectorAll('h2 a,.aliases,.snippet'))highlightText(el,raw);}}
+   }}
    status.textContent=needle||typ?`${{shown}} of ${{cards.length}} records match. All records remain encoded in the initial HTML.`:`All ${{cards.length}} records are present below.`;
-   const url=new URL(location.href); needle?url.searchParams.set('q',q.value.trim()):url.searchParams.delete('q'); typ?url.searchParams.set('type',typ):url.searchParams.delete('type'); url.searchParams.delete('s'); history.replaceState(null,'',url);
+   const url=new URL(location.href); needle?url.searchParams.set('q',raw):url.searchParams.delete('q'); typ?url.searchParams.set('type',typ):url.searchParams.delete('type'); url.searchParams.delete('s'); history.replaceState(null,'',url);
  }}
  q.addEventListener('input',apply); type.addEventListener('change',apply); apply();
 }})();
@@ -150,5 +172,6 @@ opensearch = '''<?xml version="1.0" encoding="UTF-8"?>
 assert 'Dyvane Redalious' in page
 assert 'href="/characters/dyvane-redalious/"' in page
 assert f'All {len(records)} records are present below.' in page
+assert 'highlightText' in page and '<mark>' not in page
 assert len(plain) == len(records) + 5
 print(f'generated static /search/ with {len(records)} initial-HTML records')
