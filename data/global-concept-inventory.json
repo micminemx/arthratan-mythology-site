@@ -1,0 +1,648 @@
+{
+  "manifest_version": "1.0.0",
+  "bounty_id": "MP-001",
+  "bounty_title": "Build global concept inventory / masterpage taxonomy",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "timestamp_iso": "2026-09-03T11:00:00+01:00",
+  "target_release_lane": "AG-PUB-001",
+  "summary_metrics": {
+    "total_canonical_domains": 8,
+    "total_core_concepts_cataloged": 24,
+    "total_cross_source_edges": 23,
+    "taxonomy_conformance_score": 100.0,
+    "unassigned_concept_gaps": 0
+  },
+  "domains": {
+    "DOM-01-CAUSALITY": {
+      "domain_name": "Causality, Rewrite & Parahistory",
+      "route_prefix": "/concepts/causality/",
+      "target_masterpage": "MP-002",
+      "description": "Ontological mechanics of temporal restructuring, timeline branching, retrocausal stabilization, and memory preservation.",
+      "concepts": [
+        {
+          "concept_id": "CPT-CAUS-001",
+          "name": "Negative Rewrite",
+          "aliases": [
+            "Total Erasure",
+            "Negative Ontological Revision",
+            "Null-Branch Collapsing"
+          ],
+          "definition": "The systemic ontological erasure of an event or entity from causality such that neither physical manifestation nor causal reverberations survive, except within quarantined Codex memory anchors.",
+          "source_occurrences": [
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 12, 45, 88"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Sections 42-49"
+            },
+            {
+              "source": "causal-ontology.json",
+              "ref": "concept_01"
+            }
+          ],
+          "dependencies": [
+            "CPT-CAUS-002",
+            "CPT-SCAL-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-CAUS-002",
+          "name": "Parahistory Stabilizer",
+          "aliases": [
+            "Causal Anchor",
+            "Timeline Lattice",
+            "Parahistoric Horizon"
+          ],
+          "definition": "A foundational constant maintained by Imperial architecture that prevents retrocausal cascades from disintegrating the contiguous reality of the Arthitean homeworld.",
+          "source_occurrences": [
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 3, 29, 104"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Sections 110-118"
+            }
+          ],
+          "dependencies": [
+            "CPT-ONTO-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-CAUS-003",
+          "name": "Retrocausal Invariance",
+          "aliases": [
+            "Immutable Event Core",
+            "Retrograde Causal Anchor"
+          ],
+          "definition": "The mathematical law dictating that certain core foundational events (such as the Coronation of Empress Rhayhara) cannot be undone regardless of chronological rewrite force.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 14, 201"
+            },
+            {
+              "source": "causal-ontology.json",
+              "ref": "concept_03"
+            }
+          ],
+          "dependencies": [
+            "CPT-SCAL-002"
+          ],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-02-SCALING": {
+      "domain_name": "Scaling, Governance & Impossibility",
+      "route_prefix": "/concepts/scaling/",
+      "target_masterpage": "MP-003",
+      "description": "Mathematical scaling laws, imperial constitutional governance, rank stratification, and impossibility horizons.",
+      "concepts": [
+        {
+          "concept_id": "CPT-SCAL-001",
+          "name": "Hierarchy of Invariance",
+          "aliases": [
+            "The Ascending Invariance Ladder",
+            "Stratified Sovereignty"
+          ],
+          "definition": "The governing law that lower ontological tiers can never impose existential modification upon higher tiers without catastrophic systemic rejection.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 1-12, 144"
+            },
+            {
+              "source": "HGL",
+              "ref": "Part 1, Theorems 3-7"
+            }
+          ],
+          "dependencies": [
+            "CPT-ONTO-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-SCAL-002",
+          "name": "Codex Impossibility Theorem",
+          "aliases": [
+            "The Null Boundary",
+            "Absolute Horizon"
+          ],
+          "definition": "Formalized mathematical proofs establishing that certain actions (e.g. creating ungrounded divine power without causal cost) are strictly impossible in the multiverse.",
+          "source_occurrences": [
+            {
+              "source": "HGL",
+              "ref": "Part 4, Pages 88-102"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Section 289"
+            }
+          ],
+          "dependencies": [
+            "CPT-SCAL-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-SCAL-003",
+          "name": "Rank Stratification Protocol",
+          "aliases": [
+            "Orotion Rank Arbiter Order",
+            "Imperial Caste Scale"
+          ],
+          "definition": "The formal grading system of sovereign potency judged and ratified by Orotus the Holy Black Phoenix.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Section 144"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 67"
+            }
+          ],
+          "dependencies": [
+            "CPT-ONTO-002"
+          ],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-03-COGNITION": {
+      "domain_name": "Cognition, Learning & Recursive Self-Improvement",
+      "route_prefix": "/concepts/cognition/",
+      "target_masterpage": "MP-004",
+      "description": "Architectural principles of recursive cognitive amplification, neural integration, and diagnostic foresight.",
+      "concepts": [
+        {
+          "concept_id": "CPT-COGN-001",
+          "name": "Recursive Self-Improvement Cycle",
+          "aliases": [
+            "Meta-Learning Spiral",
+            "Higher-Order Systemic Calibration"
+          ],
+          "definition": "The process whereby an intelligent agent or Codex system upgrades the underlying governance mechanisms of its own improvement capacity rather than making manual linear adjustments.",
+          "source_occurrences": [
+            {
+              "source": "Living Canon",
+              "ref": "System Prompt & Architecture Rules"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Sections 77-84"
+            }
+          ],
+          "dependencies": [
+            "CPT-COGN-002"
+          ],
+          "status": "SYSTEMIC_RULE"
+        },
+        {
+          "concept_id": "CPT-COGN-002",
+          "name": "Nullpattern Recognition",
+          "aliases": [
+            "Informative Absence Detection",
+            "Absence Co-occurrence Parsing"
+          ],
+          "definition": "The epistemic capability to extract rich systemic intelligence not from what is present, but from the structured, co-occurring absence of expected information.",
+          "source_occurrences": [
+            {
+              "source": "Living Canon",
+              "ref": "Ontological Directives"
+            },
+            {
+              "source": "HGL",
+              "ref": "Part 3, Invariance Rules"
+            }
+          ],
+          "dependencies": [],
+          "status": "SYSTEMIC_RULE"
+        },
+        {
+          "concept_id": "CPT-COGN-003",
+          "name": "Crosspattern Synthesis",
+          "aliases": [
+            "Relational Multi-Trait Invariant Network",
+            "Metacrosspattern Mapping"
+          ],
+          "definition": "Recognizing interconnected co-occurrences across informational presences and absences to deduce higher-order latent systemic truths.",
+          "source_occurrences": [
+            {
+              "source": "Living Canon",
+              "ref": "Ontological Directives"
+            },
+            {
+              "source": "HGL",
+              "ref": "Part 5"
+            }
+          ],
+          "dependencies": [
+            "CPT-COGN-002"
+          ],
+          "status": "SYSTEMIC_RULE"
+        }
+      ]
+    },
+    "DOM-04-BIOLOGY": {
+      "domain_name": "Arthitean Biology, Gender & HGL Bridge",
+      "route_prefix": "/concepts/biology/",
+      "target_masterpage": "MP-005",
+      "description": "Physiological invariants of pure-blooded Arthiteans, hypergendered logic, and cellular bioenergetics.",
+      "concepts": [
+        {
+          "concept_id": "CPT-BIOL-001",
+          "name": "Arthitean Phenotypic Baseline",
+          "aliases": [
+            "Bronze-Crimson-Violet Triad",
+            "Pure Arthitean Morphotype"
+          ],
+          "definition": "The inviolable morphological triad shared by all pure-blooded Arthiteans: warm bronze skin, cascading burgundy/crimson hair, and radiant violet/amethyst eyes with subtle pointed ear tips.",
+          "source_occurrences": [
+            {
+              "source": "Visual Model Sheets",
+              "ref": "Sheets 01, 02, 03"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Sections 19-25"
+            },
+            {
+              "source": "characters.json",
+              "ref": "Baselines"
+            }
+          ],
+          "dependencies": [
+            "CPT-BLOD-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-BIOL-002",
+          "name": "Hypergendered Logic (HGL)",
+          "aliases": [
+            "Ontological Polarity Calculus",
+            "Dual-Morphology Equilibrium"
+          ],
+          "definition": "The formal non-binary biological and metaphysical system governing spiritual polarization, caste affinity, and sovereign resonance in Arthitean metaphysics.",
+          "source_occurrences": [
+            {
+              "source": "Hypergendered_Logic_17_Aug_2026.pdf",
+              "ref": "Complete treatise (Pages 1-293)"
+            },
+            {
+              "source": "hgl-pages.json",
+              "ref": "Full index"
+            }
+          ],
+          "dependencies": [
+            "CPT-SCAL-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-BIOL-003",
+          "name": "Solar Bio-Resonance",
+          "aliases": [
+            "Photonic Cellular Infusion",
+            "Solar Hearth Metabolism"
+          ],
+          "definition": "The physiological capacity of Arthiteans to process direct solar radiation through their skin pigment, granting sustained vitality and resilience without standard metabolic exhaustion.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Section 92"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 51"
+            }
+          ],
+          "dependencies": [
+            "CPT-BIOL-001"
+          ],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-05-BLOODLINES": {
+      "domain_name": "Bloodlines, Growth & Lineage Adaptation",
+      "route_prefix": "/concepts/bloodlines/",
+      "target_masterpage": "MP-006",
+      "description": "Hereditary transmission of power, ancient clan lineages, sovereign genetics, and evolutionary adaptation.",
+      "concepts": [
+        {
+          "concept_id": "CPT-BLOD-001",
+          "name": "Clan Varvadeil Solar Sovereignty",
+          "aliases": [
+            "The Imperial Bloodline",
+            "Varvadeil Lineage"
+          ],
+          "definition": "The primordial imperial bloodline embodying living solar divinity, supreme command authority, and cosmic architecture, led by Empress Rhayhara and Lord Asmouth.",
+          "source_occurrences": [
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 1, 4, 18, 99"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Sections 10-35"
+            }
+          ],
+          "dependencies": [
+            "CPT-BIOL-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-BLOD-002",
+          "name": "Clan Unmatara Vanguard Tenacity",
+          "aliases": [
+            "The Spear Lineage",
+            "Unmatara Bloodline"
+          ],
+          "definition": "The martial bloodline of vanguard commanders characterized by indomitable battle resilience, two-handed polearm mastery, and physical sacrifice, led by General Qintara.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 55-68"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 33"
+            }
+          ],
+          "dependencies": [
+            "CPT-BIOL-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-BLOD-003",
+          "name": "Clan Redalious Warlord Mastery",
+          "aliases": [
+            "The Legion Lineage",
+            "Redalious Bloodline"
+          ],
+          "definition": "The strategic military bloodline specializing in heavy plate infantry warfare, cruciform greatswords, and battlefield discipline, led by General Dyvane.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 70-82"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 41"
+            }
+          ],
+          "dependencies": [
+            "CPT-BIOL-001"
+          ],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-06-CULTURE": {
+      "domain_name": "Culture, Clans, Institutions & Warfare",
+      "route_prefix": "/concepts/culture/",
+      "target_masterpage": "MP-007",
+      "description": "Societal structures, the four primary imperial clans, military command doctrine, and civil rituals.",
+      "concepts": [
+        {
+          "concept_id": "CPT-CULT-001",
+          "name": "The Four Imperial Clans",
+          "aliases": [
+            "Great Houses of the Codex",
+            "The Quadrant Pillars"
+          ],
+          "definition": "The institutional pillars of the Arthitean Empire: Clan Varvadeil (Imperial/Science), Clan Unmatara (Vanguard), Clan Redalious (Heavy Military), and Clan Vaeloria (Intelligence/Shadow).",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Comprehensive clan treatises"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 2, 7, 19, 84"
+            }
+          ],
+          "dependencies": [
+            "CPT-BLOD-001",
+            "CPT-BLOD-002",
+            "CPT-BLOD-003"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-CULT-002",
+          "name": "Clan Vaeloria Shadow Directorate",
+          "aliases": [
+            "The Spymaster Syndicate",
+            "Vaeloria Intelligence"
+          ],
+          "definition": "The covert state security, intelligence, and internal audit apparatus tasked with preempting heresy and subversion, commanded by Spymaster Kartus.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 101-112"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 62"
+            }
+          ],
+          "dependencies": [
+            "CPT-CULT-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-CULT-003",
+          "name": "Codex Reincarnation Architecture",
+          "aliases": [
+            "Soul Loom of the Codex",
+            "Reincarnation Registry"
+          ],
+          "definition": "The supreme metaphysical bureaucracy and spiritual recycling framework overseen by Qai'lyth to preserve heroic souls across generational cycles.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 150-175"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 91"
+            }
+          ],
+          "dependencies": [
+            "CPT-CAUS-002"
+          ],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-07-ONTOLOGY": {
+      "domain_name": "Higher Ontology, Species & World Structure",
+      "route_prefix": "/concepts/ontology/",
+      "target_masterpage": "MP-008",
+      "description": "Cosmic spheres, external civilizations, and divine beasts inhabiting the multiverse.",
+      "concepts": [
+        {
+          "concept_id": "CPT-ONTO-001",
+          "name": "The Arthitean Sphere Realm",
+          "aliases": [
+            "The Homeworld Sphere",
+            "Imperial Prime"
+          ],
+          "definition": "The sovereign central terrestrial sphere encased in golden solar atmospheric lattice where the capital of the Arthitean Empire stands.",
+          "source_occurrences": [
+            {
+              "source": "Divine v144",
+              "ref": "Sections 1-5"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 1"
+            }
+          ],
+          "dependencies": [],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-ONTO-002",
+          "name": "Orotus the Sunborn Phoenix",
+          "aliases": [
+            "The Holy Black Phoenix",
+            "Divine Beast Arbiter"
+          ],
+          "definition": "The primordial Divine Beast of the Empire with gold-tipped obsidian plumage and radiant violet eyes, acting as cosmic rank arbiter and guardian of the Sacred Solar Gate.",
+          "source_occurrences": [
+            {
+              "source": "Sheet 04 Visual Model",
+              "ref": "Sole Authoritative Ground Truth"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Section 144"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 67, 115"
+            }
+          ],
+          "dependencies": [
+            "CPT-ONTO-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-ONTO-003",
+          "name": "Archmedonite Technology",
+          "aliases": [
+            "Biomechanical Astral Craft",
+            "Slate-Blue Incursion"
+          ],
+          "definition": "The hyper-advanced cold biomechanical engineering utilized by Princess Inzra and the Archmedonite race, blending crystalline gyroscopes with obsidian conduits.",
+          "source_occurrences": [
+            {
+              "source": "Sheet 01 Visual Model",
+              "ref": "Inzra Model Specification"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 108-112"
+            }
+          ],
+          "dependencies": [],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-ONTO-004",
+          "name": "Archn\u00e9reen Crystalline Monasticism",
+          "aliases": [
+            "The Alabaster Priesthood",
+            "Porcelain Order"
+          ],
+          "definition": "The austere, emotionless monastic empire led by Annaris, distinguished by alabaster skin, levitating hexagonal spires, and astrological glyph halos.",
+          "source_occurrences": [
+            {
+              "source": "Sheet 01 Visual Model",
+              "ref": "Annaris Model Specification"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmissions 94-98"
+            }
+          ],
+          "dependencies": [],
+          "status": "CANON"
+        }
+      ]
+    },
+    "DOM-08-REGALIA": {
+      "domain_name": "Sacred Regalia, Apparatus & Artifacts",
+      "route_prefix": "/concepts/regalia/",
+      "target_masterpage": "MP-009",
+      "description": "Physical conduits of cosmic authority, solar sceptres, execution blades, and astrolabes.",
+      "concepts": [
+        {
+          "concept_id": "CPT-REGA-001",
+          "name": "Imperial Golden Solar Sceptre",
+          "aliases": [
+            "Sceptre of Empress Rhayhara",
+            "Solar Ring Staff"
+          ],
+          "definition": "The golden staff capped with an 8-pointed solar ring and central ruby crystal through which Empress Rhayhara channels empire-wide reality rewrites.",
+          "source_occurrences": [
+            {
+              "source": "Sheet 02 Turnarounds",
+              "ref": "Sceptre Isolated"
+            },
+            {
+              "source": "Zubaida",
+              "ref": "Transmission 4"
+            }
+          ],
+          "dependencies": [
+            "CPT-BLOD-001"
+          ],
+          "status": "CANON"
+        },
+        {
+          "concept_id": "CPT-REGA-002",
+          "name": "Sacred Solar Gate Halo",
+          "aliases": [
+            "Double Concentric Orotus Halo",
+            "Runic Star Halo"
+          ],
+          "definition": "The double concentric golden ring inscribed with sacred runes and 8 radiant spikes floating above Orotus the Holy Black Phoenix.",
+          "source_occurrences": [
+            {
+              "source": "Sheet 04 Visual Model",
+              "ref": "Solar Gate Isolated Diagram"
+            },
+            {
+              "source": "Divine v144",
+              "ref": "Section 144"
+            }
+          ],
+          "dependencies": [
+            "CPT-ONTO-002"
+          ],
+          "status": "CANON"
+        }
+      ]
+    }
+  },
+  "diagnostics": [
+    "diagnostic_01_concept_distribution_by_domain.png",
+    "diagnostic_02_cross_source_occurrence_heatmap.png",
+    "diagnostic_03_concept_dependency_dag_complexity.png",
+    "diagnostic_04_nullpattern_crosspattern_taxonomy_audit.png"
+  ]
+}
