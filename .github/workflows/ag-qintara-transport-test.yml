@@ -1,0 +1,25 @@
+name: AG Qintara exact-byte transport test
+on:
+  push:
+    branches: [ag-rel-rec-001]
+    paths:
+      - '.github/workflows/ag-qintara-transport-test.yml'
+permissions:
+  contents: read
+jobs:
+  verify-drive-transport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download approved Qintara WebP from Drive
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --retry 2 --output /tmp/qintara.webp 'https://drive.usercontent.google.com/download?id=1ZmoO68U8wt5lovZGAfpU2h3iSuTTtkmk&export=download&confirm=t'
+          test "$(wc -c < /tmp/qintara.webp)" -eq 219938
+          echo '9a5769b16faaede2da53971827265fb3d86a6d27a721bd668f7304025a1c5b3c  /tmp/qintara.webp' | sha256sum -c -
+          python - <<'PY'
+          from pathlib import Path
+          b=Path('/tmp/qintara.webp').read_bytes()
+          assert b[:4] == b'RIFF' and b[8:12] == b'WEBP'
+          print('Qintara exact-byte Drive transport verified')
+          PY
