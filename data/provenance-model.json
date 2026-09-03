@@ -1,0 +1,171 @@
+{
+  "status": "APPROVED_CANONICAL_PROVENANCE_MODEL",
+  "bounty_id": "PROV-001",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "timestamp_iso": "2026-09-03T17:15:00+01:00",
+  "domain": "Provenance, Attribution & Source Integrity",
+  "uri_schemes_supported": [
+    "arthratan:zubaida:<id>",
+    "arthratan:divine:<id>",
+    "arthratan:hgl:<part_id>:<page>",
+    "arthratan:new-canon:<section_id>",
+    "arthratan:character:<slug>",
+    "arthratan:masterpage:<domain>:<concept_id>"
+  ],
+  "provenance_tiers": {
+    "SOURCE_VERBATIM": {
+      "tier_level": 1,
+      "description": "Exact, unedited source text preserved from primary transmissions, divine treatises, or authorial briefs.",
+      "immutable": true,
+      "weight": 1.0
+    },
+    "AUTHORITATIVE_CLARIFICATION": {
+      "tier_level": 2,
+      "description": "Official authorial guidance, user briefs, or direct reconciliation statements that clarify or resolve source ambiguities.",
+      "immutable": true,
+      "weight": 0.95
+    },
+    "EDITORIAL_SYNTHESIS": {
+      "tier_level": 3,
+      "description": "Structured navigational aids, DAG hierarchies, distinction matrices, and summary explanations created by coordinated workers.",
+      "immutable": false,
+      "weight": 0.85
+    }
+  },
+  "corpus_anchors_inventory": {
+    "zubaida_transmissions": {
+      "total_anchors": 118,
+      "uri_pattern": "arthratan:zubaida:{id}",
+      "locator_format": "sources/zubaida/{id}.txt",
+      "coverage": "100.0%"
+    },
+    "divine_v144_archive": {
+      "total_anchors": 317,
+      "uri_pattern": "arthratan:divine:{id}",
+      "locator_format": "data/divine.json:sections[{id}]",
+      "coverage": "100.0%"
+    },
+    "hgl_treatise": {
+      "total_anchors": 388,
+      "uri_pattern": "arthratan:hgl:{part_id}:{page}",
+      "locator_format": "data/hgl-pages.json:page={page} / data/hgl-toc.json:part={part_id}",
+      "coverage": "100.0%"
+    },
+    "new_canon_foundation": {
+      "total_anchors": 10,
+      "uri_pattern": "arthratan:new-canon:{section_id}",
+      "locator_format": "data/new-canon.json:sections[{section_id}]",
+      "coverage": "100.0%"
+    },
+    "masterpage_taxonomies": {
+      "total_anchors": 62,
+      "uri_pattern": "arthratan:masterpage:{domain}:{concept_id}",
+      "locator_format": "data/{domain}.json:concepts[{concept_id}]",
+      "coverage": "100.0%"
+    }
+  },
+  "provenance_claim_mappings": [
+    {
+      "claim_id": "CLAIM-APOSSIBLE-DEF",
+      "subject": "Apossible Base Definition",
+      "tier": "AUTHORITATIVE_CLARIFICATION",
+      "verbatim_anchor": "arthratan:new-canon:apossible-toren",
+      "source_brief": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md (lines 89-93)",
+      "statement": "Apossible is All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attributable to any recursively ordered Impossible levels of Metarules.",
+      "invariants_enforced": [
+        "Uses 'All' (never 'totality')",
+        "Dual categorical attribution",
+        "Rejects 'Metarule governing Impossible'"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-TOREN-RECURRENCE",
+      "subject": "Toren Recurrence Relation",
+      "tier": "AUTHORITATIVE_CLARIFICATION",
+      "verbatim_anchor": "arthratan:new-canon:apossible-toren",
+      "source_brief": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md (lines 124-138)",
+      "statement": "Toren n interleaves between odd Apossible orders: Apossible^(2n-1) < Toren n < Apossible^(2n+1) for n >= 1.",
+      "invariants_enforced": [
+        "Odd Apossible bound",
+        "Extent not integer"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-BLESSING-SUPRAMAJOR",
+      "subject": "Supramajor Retroactive Acquisition",
+      "tier": "AUTHORITATIVE_CLARIFICATION",
+      "verbatim_anchor": "arthratan:new-canon:enlightenment-phk-factors",
+      "source_brief": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md (lines 185-198)",
+      "statement": "Supramajor describes an extent of majorness so great that it retroactively acquires new Bloodline Blessings whose quality has a Toren index directly proportional to its Supramajorness.",
+      "invariants_enforced": [
+        "Does acquire new blessings",
+        "Retroactive acquisition",
+        "Scales quality, not strength"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-ARCH-FACTOR-STRENGTH",
+      "subject": "Archarthitean Factor Strength Scaling",
+      "tier": "AUTHORITATIVE_CLARIFICATION",
+      "verbatim_anchor": "arthratan:new-canon:enlightenment-phk-factors",
+      "source_brief": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md (lines 169-183)",
+      "statement": "Archarthitean Factor is a factor in the PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower at occurrence. Does not acquire new blessings.",
+      "invariants_enforced": [
+        "Does NOT acquire new blessings",
+        "Scales strength",
+        "Willpower-scaled"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-ONTOSTATE-WINGS",
+      "subject": "Black-Phoenix Wing Progression",
+      "tier": "AUTHORITATIVE_CLARIFICATION",
+      "verbatim_anchor": "arthratan:new-canon:arthitean-states",
+      "source_brief": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md (lines 158-166)",
+      "statement": "Arthitean = 1 pair black-phoenix wings; Archarthitean = 2 pairs; Arthitean Deity = 3 pairs; Rhayhara is currently the sole Arthitean Deity.",
+      "invariants_enforced": [
+        "1/2/3 pair count",
+        "Rhayhara unique Deity",
+        "Additive inheritance"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-OROTUS-CANON-MODEL",
+      "subject": "Orotus Canonical Model",
+      "tier": "SOURCE_VERBATIM",
+      "verbatim_anchor": "arthratan:masterpage:higher-ontology:orotus",
+      "source_brief": "User Hard Rule & Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png",
+      "statement": "Orotus is a divine beast / holy black phoenix. The governing canonical model is Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png. The sheet model is strictly invalid.",
+      "invariants_enforced": [
+        "Enforce CANON_MODEL",
+        "Reject SHEET_INVALID"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-RHAYHARA-SEALS",
+      "subject": "Rhayhara Four Seal Factors",
+      "tier": "SOURCE_VERBATIM",
+      "verbatim_anchor": "arthratan:new-canon:rhayhara-seals",
+      "source_brief": "site/data/new-canon.json:rhayhara-seals",
+      "statement": "Four Seal Factors govern Rhayhara's memory-linked unsealing: Restored former strength, Restoration acceleration, Interseal metadifferential, and Negative-rewrite retroincrease.",
+      "invariants_enforced": [
+        "Ultraarsayne scale",
+        "Negative rewrite erasure of cause",
+        "Memory descent"
+      ]
+    },
+    {
+      "claim_id": "CLAIM-PHK-RECURSION-LOOP",
+      "subject": "PHK Stress-Amplified Feedback Loop",
+      "tier": "SOURCE_VERBATIM",
+      "verbatim_anchor": "arthratan:divine:divine-60",
+      "source_brief": "Divine v144 section 60",
+      "statement": "PHK increases Physiology factors; Physiology factors increase PHK faster. Difficulty and suffering feed the rate at which growth feeds growth.",
+      "invariants_enforced": [
+        "Exponential recursion",
+        "Adversity amplification",
+        "Varvadeil Clan loop integration"
+      ]
+    }
+  ]
+}

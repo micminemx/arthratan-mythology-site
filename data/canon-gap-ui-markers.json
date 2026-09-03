@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "bounty_id": "PROV-003",
+  "css_classes": {
+    "canon-gap-container": "display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; padding: 1.25rem; background: rgba(26, 20, 16, 0.65); border: 1px solid #d4af37; border-left: 4px solid #c82828; border-radius: 4px;",
+    "canon-gap-header": "font-family: 'Cinzel', serif; font-size: 0.95rem; font-weight: 700; color: #e6c875; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem;",
+    "canon-gap-badge": "display: inline-block; padding: 0.2rem 0.55rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; border-radius: 3px; border: 1px solid rgba(212, 175, 55, 0.4);",
+    "badge-gap-phenotype": "background: rgba(180, 80, 50, 0.25); color: #f09070; border-color: #b45032;",
+    "badge-gap-lineage": "background: rgba(140, 60, 160, 0.25); color: #d090f0; border-color: #8c3ca0;",
+    "badge-gap-chronology": "background: rgba(50, 120, 180, 0.25); color: #80c0f0; border-color: #3278b4;",
+    "badge-gap-ontology": "background: rgba(40, 160, 120, 0.25); color: #70f0c0; border-color: #28a078;",
+    "badge-gap-correlation": "background: rgba(200, 140, 30, 0.25); color: #f0c860; border-color: #c88c1e;",
+    "badge-gap-mechanism": "background: rgba(160, 40, 60, 0.25); color: #f07080; border-color: #a0283c;"
+  },
+  "html_templates": {
+    "callout_box": "<div class=\"canon-gap-container\">\n  <div class=\"canon-gap-header\">\n    <span class=\"canon-gap-icon\">&#9888;</span>\n    <span>Canon Boundary / Unrecorded Information</span>\n  </div>\n  <p class=\"canon-gap-text\">{verbatim_gap_statement}</p>\n  <span class=\"canon-gap-badge {badge_class}\">{badge_text}</span>\n</div>",
+    "inline_badge": "<span class=\"canon-gap-badge {badge_class}\" title=\"{tooltip}\">&#9888; {badge_text}</span>"
+  }
+}

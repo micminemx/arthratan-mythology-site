@@ -1,0 +1,128 @@
+{
+  "status": "APPROVED / AUTHORITATIVE SUPERSESSION CHRONOLOGY",
+  "bounty_id": "PROV-002",
+  "worker_id": "AG-20260903-0947-K7D3",
+  "timestamp_iso": "2026-09-03T16:48:00BST",
+  "title": "Arthratan Codex Supersession & Correction Chronology",
+  "editorial_principle": "Preserve older historical source evidence in full; render 'Later Authoritative Clarification' panels in the UI rather than silently rewriting history.",
+  "summary_metrics": {
+    "total_records": 7,
+    "quarantined_artifacts": 1,
+    "mathematical_formalizations": 3,
+    "ontological_refinements": 3
+  },
+  "supersessions": [
+    {
+      "id": "SUP-001",
+      "subject": "Orotus Divine Beast vs Humanoid Sheet Depiction",
+      "type": "QUARANTINE & CORRECTION",
+      "date_established": "2026-08-30",
+      "legacy_evidence": {
+        "source_ref": "Visual Model Sheet 03: Asmouth_Kartus_Arthitean_Baselines_Dukra_Andronative_MODELS__OROTUS_ON_SHEET_INVALID.png",
+        "content_summary": "Sheet 03 contained an unapproved humanoid depiction labeled Orotus alongside Asmouth and Kartus."
+      },
+      "authoritative_clarification": {
+        "source_ref": "Canonical Model: Orotus_Divine_Beast_Holy_Black_Phoenix_CANON_MODEL.png & Bounty Board Special Hard Rule",
+        "verdict": "Orotus is an inviolable Divine Beast / Holy Black Phoenix. The humanoid figure on Sheet 03 is an invalid artifact that must remain strictly quarantined.",
+        "action": "Quarantine invalid sheet, tag all occurrences, enforce zero publication of humanoid Orotus as canon."
+      },
+      "ui_directive": "Display warning banner when Sheet 03 is viewed, explicitly pointing to the canonical Holy Black Phoenix model."
+    },
+    {
+      "id": "SUP-002",
+      "subject": "Apossible and Toren Ontological Factor Hierarchy",
+      "type": "ONTOLOGICAL REFINEMENT",
+      "date_established": "2026-09-03",
+      "legacy_evidence": {
+        "source_ref": "Early Divine Drafts & Fragmentary Zubaida Transmissions",
+        "content_summary": "Toren and Apossible were referenced loosely without precise structural precedence."
+      },
+      "authoritative_clarification": {
+        "source_ref": "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md & CANON-REV-001",
+        "verdict": "Toren is established as the foundational ground of impossible structures, while Apossible governs dynamic trans-modal reality fields.",
+        "action": "Integrate hierarchical link from Toren baseline to Apossible operational fields across masterpages."
+      },
+      "ui_directive": "Render 'Later Authoritative Clarification' panel linking older mentions to the unified factor taxonomy."
+    },
+    {
+      "id": "SUP-003",
+      "subject": "PHK Integration: Universal Inclusion vs Equal-Rate Improvement",
+      "type": "MATHEMATICAL FORMALIZATION",
+      "date_established": "2026-08-28",
+      "legacy_evidence": {
+        "source_ref": "Early Pre-v144 Enlightenment Discussions",
+        "content_summary": "Ambiguity over whether universal inclusion in enlightenment meant all entities progress at identical rates."
+      },
+      "authoritative_clarification": {
+        "source_ref": "Divine v144 Section 254 (PHK Integration)",
+        "verdict": "Universal Inclusion does NOT mean equal-rate improvement. Entities scale along asymmetric trajectories optimized for their roles.",
+        "action": "Crosslink all Divine sections discussing enlightenment to Section 254."
+      },
+      "ui_directive": "Attach 'Asymmetric Scaling Invariant' tag to enlightenment sections."
+    },
+    {
+      "id": "SUP-004",
+      "subject": "Negative vs Hypernegative Rewrite & Lifra Exclusion",
+      "type": "ONTOLOGICAL REFINEMENT",
+      "date_established": "2026-09-01",
+      "legacy_evidence": {
+        "source_ref": "Early Temporal Mechanics & Timeline Records",
+        "content_summary": "Timeline changes were framed as paradox loops or retroactive modifications."
+      },
+      "authoritative_clarification": {
+        "source_ref": "site/sources/zubaida/1a0601fc96f7add3.txt & Causal Ontology (MP-002)",
+        "verdict": "Rhayhara operates under Hypernegative Rewrite: prevented events and their necessitative causes (Lifras) are excised from ever having existed across all parahistory.",
+        "action": "Distinguish Negative Rewrite (Tier 4) from Hypernegative Rewrite (Tier 5) in all causal navigation."
+      },
+      "ui_directive": "Render comparative causality precedence ladder linking legacy descriptions to hypernegative exclusion."
+    },
+    {
+      "id": "SUP-005",
+      "subject": "Hypergendered Logic (HGL) Operator Formalization",
+      "type": "MATHEMATICAL FORMALIZATION",
+      "date_established": "2026-08-17",
+      "legacy_evidence": {
+        "source_ref": "Pre-HGL Informal Character Descriptions",
+        "content_summary": "Gender amplification described informally without formal operator logic."
+      },
+      "authoritative_clarification": {
+        "source_ref": "Hypergendered Logic 293-page Treatise & MP-005",
+        "verdict": "Formal calculus defining PA (Availability), IH (Inheritance), PH (Whole-Profile Possession), and Omega (Anti-Collapse Invariants) with strict non-nesting rules.",
+        "action": "Map all character gender fields to formal HGL tiers."
+      },
+      "ui_directive": "Provide interactive operator breakdown tooltip on all gender-tier terms."
+    },
+    {
+      "id": "SUP-006",
+      "subject": "Antaintelligence Mathematical Quantification",
+      "type": "MATHEMATICAL FORMALIZATION",
+      "date_established": "2026-08-28",
+      "legacy_evidence": {
+        "source_ref": "Informal Tactical Records & Combat Accounts",
+        "content_summary": "Described subjectively as 'accelerating under adversarial pressure'."
+      },
+      "authoritative_clarification": {
+        "source_ref": "Divine v144 Sections 85\u201390 & Zubaida 19fd8d193b40cda8.txt",
+        "verdict": "Mathematically defined as F_AG = \u0394G / \u0394A (General intelligence growth per unit of adversarial pressure).",
+        "action": "Embed formal ratio in all Antaintelligence definitions."
+      },
+      "ui_directive": "Display mathematical formula card above combat tactical excerpts."
+    },
+    {
+      "id": "SUP-007",
+      "subject": "Task-Demand Gating on Antilobe Absence Monitoring",
+      "type": "ONTOLOGICAL REFINEMENT",
+      "date_established": "2026-08-28",
+      "legacy_evidence": {
+        "source_ref": "Early Antilobe Theory Notes",
+        "content_summary": "Raw antilobe firing was initially perceived as potential neural malfunction."
+      },
+      "authoritative_clarification": {
+        "source_ref": "Divine v144 Sections 168\u2013173 (Task-Demand Gating)",
+        "verdict": "Introduced demand variable d_X(T,t). Proves that idle lobes emit harmless background anti-activity; only demanded failure constitutes diagnostic error.",
+        "action": "Crosslink Antilobe records to task-demand truth tables."
+      },
+      "ui_directive": "Render Task-Demand truth table alongside Antilobe mentions."
+    }
+  ]
+}
