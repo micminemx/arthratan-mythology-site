@@ -1,0 +1,456 @@
+{
+  "access": "Public read-only HTTP; JavaScript and API keys are not required.",
+  "base_url": "https://arthratanmythology.com",
+  "corpus": {
+    "bytes": 4416456,
+    "path": "/ai/corpus.jsonl",
+    "sha256": "db3a99238834838e35abd5aee6c91be018dc572f555db782e8dcb1c1ae18a518"
+  },
+  "counts": {
+    "character": 43,
+    "concept": 19,
+    "divine": 317,
+    "hgl": 293,
+    "living-canon": 8,
+    "provenance": 4,
+    "zubaida": 118
+  },
+  "entities": [
+    {
+      "bytes": 71549,
+      "name": "Aliza",
+      "path": "/ai/entities/aliza.json",
+      "records": 22,
+      "sha256": "47eac39641c351f8b0c77595fc77d578891b15d75f78746c88770b6dba2a749f",
+      "slug": "aliza"
+    },
+    {
+      "bytes": 567761,
+      "name": "Annaris",
+      "path": "/ai/entities/annaris-deyhamora.json",
+      "records": 30,
+      "sha256": "e78e5bf4c83323208e37ef78f34baf7b370f7f9d29567fccb9ef33d895863698",
+      "slug": "annaris-deyhamora"
+    },
+    {
+      "bytes": 1464957,
+      "name": "Asmouth Varvadeil",
+      "path": "/ai/entities/asmouth-varvadeil.json",
+      "records": 88,
+      "sha256": "8a28463227e98bccf3cf26e0dc62ea63e71bfe32c2cf73a0a23053ee5e014a63",
+      "slug": "asmouth-varvadeil"
+    },
+    {
+      "bytes": 14390,
+      "name": "Commander Kaelthas",
+      "path": "/ai/entities/commander-kaelthas.json",
+      "records": 2,
+      "sha256": "84872902a54dfc3cff1e48ffbb06ea39293e6f207577ec5e6fa5edd867ff23ba",
+      "slug": "commander-kaelthas"
+    },
+    {
+      "bytes": 17060,
+      "name": "Dalroemar",
+      "path": "/ai/entities/dalroemar.json",
+      "records": 4,
+      "sha256": "3f76943d1b21abf3530cf7669af7474d5f7fbaefc84e3d8159a185167c091675",
+      "slug": "dalroemar"
+    },
+    {
+      "bytes": 46488,
+      "name": "Daren",
+      "path": "/ai/entities/daren.json",
+      "records": 5,
+      "sha256": "e673ec41e9c57b81f19e797a24e62cd1ff8bdeebd683fbd013cf5f10ff7388bc",
+      "slug": "daren"
+    },
+    {
+      "bytes": 780393,
+      "name": "Dariyus Venakan",
+      "path": "/ai/entities/dariyus-venakan.json",
+      "records": 38,
+      "sha256": "a73f6c563f81a093470cad87b7faf8aa1b37c643cac9fe6947b8bf59ab7f192e",
+      "slug": "dariyus-venakan"
+    },
+    {
+      "bytes": 517551,
+      "name": "Deyhamora",
+      "path": "/ai/entities/deyhamora.json",
+      "records": 13,
+      "sha256": "2ce17c2fa363e8c04507c1d4d1b71acdbbb1f1588c43b55daa10f25288e151ac",
+      "slug": "deyhamora"
+    },
+    {
+      "bytes": 1384982,
+      "name": "Dyvane Redalious",
+      "path": "/ai/entities/dyvane-redalious.json",
+      "records": 76,
+      "sha256": "d5f13816e0266dd77c96eb745f5e973cc9ea382a30d0a662953bbea92e7f2f4b",
+      "slug": "dyvane-redalious"
+    },
+    {
+      "bytes": 178119,
+      "name": "Grayus Venakan",
+      "path": "/ai/entities/grayus-venakan.json",
+      "records": 5,
+      "sha256": "4af8174d70c87552b84c4278e3a5faa7e61315a0524f5162bee43d239341fd48",
+      "slug": "grayus-venakan"
+    },
+    {
+      "bytes": 183207,
+      "name": "Halatayo",
+      "path": "/ai/entities/halatayo.json",
+      "records": 15,
+      "sha256": "14757959ab081df64c56ea753c1a13d36cabf3050fb845c7c3b514c2929dcd2b",
+      "slug": "halatayo"
+    },
+    {
+      "bytes": 495252,
+      "name": "High Commander Vaeloria",
+      "path": "/ai/entities/vaeloria.json",
+      "records": 29,
+      "sha256": "0a116a84294815dee64cd52d45c37bd9f3102bb7ab961c1356309408eb916687",
+      "slug": "vaeloria"
+    },
+    {
+      "bytes": 20798,
+      "name": "High Lord Kaelen (Vanguard)",
+      "path": "/ai/entities/high-lord-kaelen-vanguard.json",
+      "records": 4,
+      "sha256": "340306bf13a245d7c24259ce459d0269fe7ad71e5896ebaf232e70ed10306b1b",
+      "slug": "high-lord-kaelen-vanguard"
+    },
+    {
+      "bytes": 626565,
+      "name": "Inzra",
+      "path": "/ai/entities/inzra.json",
+      "records": 35,
+      "sha256": "aa31ca1aab371acc8b4666137c3000765fad6119ee34331d85541248a2007ba3",
+      "slug": "inzra"
+    },
+    {
+      "bytes": 120671,
+      "name": "Kaelar Omnivox",
+      "path": "/ai/entities/kaelar-omnivox.json",
+      "records": 8,
+      "sha256": "69961120d16181b9481c4f8303166ec36ab264af4706f004d2dd3f50e1f2b9f1",
+      "slug": "kaelar-omnivox"
+    },
+    {
+      "bytes": 609234,
+      "name": "Kaelen Redalious",
+      "path": "/ai/entities/kaelen-redalious.json",
+      "records": 30,
+      "sha256": "89cd3f7e68e46e8f451f9268e1cb87d95031078f08af5f683c50ab25d60640a3",
+      "slug": "kaelen-redalious"
+    },
+    {
+      "bytes": 563046,
+      "name": "Kartus Vaeloria",
+      "path": "/ai/entities/kartus-vaeloria.json",
+      "records": 48,
+      "sha256": "37d3f2f6223b1753a0d2da41118cd916d1e31b8b8a6d3f9990f68a2c56f6c31f",
+      "slug": "kartus-vaeloria"
+    },
+    {
+      "bytes": 52072,
+      "name": "Lady Vaelia",
+      "path": "/ai/entities/lady-vaelia.json",
+      "records": 8,
+      "sha256": "0aad2ab65fe4a0dbbe95f880873cf97f3a4989b6cbc1266ea0c5314ad14ab66b",
+      "slug": "lady-vaelia"
+    },
+    {
+      "bytes": 924913,
+      "name": "Lay",
+      "path": "/ai/entities/lay.json",
+      "records": 67,
+      "sha256": "c2be1bb49eb15c4b59d942aa1f9d45b7c2e2b1ccf856d2077876ba1e361f77f8",
+      "slug": "lay"
+    },
+    {
+      "bytes": 53863,
+      "name": "Linaele Zolfer",
+      "path": "/ai/entities/linaele-zolfer.json",
+      "records": 3,
+      "sha256": "1683a38f668a3bf6155a23a6215ada42f5f17efcc18752ee9106d700fb8bb796",
+      "slug": "linaele-zolfer"
+    },
+    {
+      "bytes": 127181,
+      "name": "Lord Kaelen",
+      "path": "/ai/entities/lord-kaelen.json",
+      "records": 12,
+      "sha256": "e0b7babb5eaa71f062cb8f0f9a5a19670ebf62654378bd6c862ac7669df987cd",
+      "slug": "lord-kaelen"
+    },
+    {
+      "bytes": 58984,
+      "name": "Lyra Unmatara",
+      "path": "/ai/entities/lyra-unmatara.json",
+      "records": 6,
+      "sha256": "4f2884993a5b39f8cbef5fc4bbcf87b81a12bee98f30f5efb21db47cc222abe8",
+      "slug": "lyra-unmatara"
+    },
+    {
+      "bytes": 21082,
+      "name": "Ophidion the Omni-Watcher",
+      "path": "/ai/entities/ophidion.json",
+      "records": 4,
+      "sha256": "b8ba7a0d92237bfc82ca5b69febeaabdc0c51540835ad5da62c3e3b93b925187",
+      "slug": "ophidion"
+    },
+    {
+      "bytes": 1055947,
+      "name": "Orotus",
+      "path": "/ai/entities/orotus.json",
+      "records": 58,
+      "sha256": "34cdcd2e88f298ab771e96a286eb4caafbac4e8094815e7e5362ee6f15045f6e",
+      "slug": "orotus"
+    },
+    {
+      "bytes": 420943,
+      "name": "Qai’lyth",
+      "path": "/ai/entities/qailyth.json",
+      "records": 26,
+      "sha256": "fb1134ee3d7e95972dd63e2881e4ddb8537438694fe128ac1ea8ffbc1de83741",
+      "slug": "qailyth"
+    },
+    {
+      "bytes": 1334185,
+      "name": "Qintara Unmatara",
+      "path": "/ai/entities/qintara-unmatara.json",
+      "records": 76,
+      "sha256": "818c7316fe9cadfba53f3313e518a0f20e27af579316ad092737d2242cb09ce5",
+      "slug": "qintara-unmatara"
+    },
+    {
+      "bytes": 2284476,
+      "name": "Rhayhara",
+      "path": "/ai/entities/rhayhara.json",
+      "records": 127,
+      "sha256": "cbf32df3ccbe5f5455b066b127333a7256df10718b8986181be4bae45cc7006e",
+      "slug": "rhayhara"
+    },
+    {
+      "bytes": 334218,
+      "name": "Sylvanna Xylaris",
+      "path": "/ai/entities/sylvanna-xylaris.json",
+      "records": 27,
+      "sha256": "f2caff3de5697772d153fbedc278eb1005d378e1b3587e97ce19ab5323e77da9",
+      "slug": "sylvanna-xylaris"
+    },
+    {
+      "bytes": 368799,
+      "name": "Thalyros Veyndarion",
+      "path": "/ai/entities/thalyros-veyndarion.json",
+      "records": 25,
+      "sha256": "b19da08a79b9aee9ff33563dfa713b0947b29c40e0ff0e3a203da926d829b28f",
+      "slug": "thalyros-veyndarion"
+    },
+    {
+      "bytes": 2022,
+      "name": "Vaelath",
+      "path": "/ai/entities/vaelath.json",
+      "records": 1,
+      "sha256": "d3bef39573b1f8cfd83607d088d86ea76171a87862fdba2d989455c5b13ef747",
+      "slug": "vaelath"
+    },
+    {
+      "bytes": 21648,
+      "name": "Vaelstrum the Paradox-Weaver",
+      "path": "/ai/entities/vaelstrum.json",
+      "records": 4,
+      "sha256": "397bc1b434c264742fc2bae9963b7c95918bac7576684b9a9ad75c7fc6f64d8d",
+      "slug": "vaelstrum"
+    },
+    {
+      "bytes": 308362,
+      "name": "Valerius (Omnivox lineage)",
+      "path": "/ai/entities/valerius-omnivox.json",
+      "records": 17,
+      "sha256": "288973d2cbd5cd4d2dbb06eaed16a3f9d0f435fbf854fe1f09df34ec1438684a",
+      "slug": "valerius-omnivox"
+    },
+    {
+      "bytes": 308212,
+      "name": "Valerius Varvadeil",
+      "path": "/ai/entities/valerius-varvadeil.json",
+      "records": 17,
+      "sha256": "375d8bdea7de937133a907c7ee150d5a4f89196c45afaf878a953bb3200e37dc",
+      "slug": "valerius-varvadeil"
+    },
+    {
+      "bytes": 13199,
+      "name": "Valthor",
+      "path": "/ai/entities/valthor.json",
+      "records": 3,
+      "sha256": "a11c8d7b7d9e5cd9d7f24617044802016cdc403db6673862ba5c6a2880a14471",
+      "slug": "valthor"
+    },
+    {
+      "bytes": 328442,
+      "name": "Varek Unmatara",
+      "path": "/ai/entities/varek-unmatara.json",
+      "records": 11,
+      "sha256": "f7e5282ecb0461430f93c6aded75a466a66db78705d4c059eab4bdc967b05626",
+      "slug": "varek-unmatara"
+    },
+    {
+      "bytes": 21688,
+      "name": "Xael-Gath",
+      "path": "/ai/entities/xael-gath.json",
+      "records": 4,
+      "sha256": "74a401ace9dff1537feb018e9a1a27e85662b24691e8c120b2a49f9ae7d30b83",
+      "slug": "xael-gath"
+    },
+    {
+      "bytes": 59235,
+      "name": "Xelena (Xanthera lineage)",
+      "path": "/ai/entities/xelena-xanthera.json",
+      "records": 6,
+      "sha256": "7e3c6c54eeb89723e8cfd9bfc0bad8d74357a1cf9588f22d764aa1b48cea0960",
+      "slug": "xelena-xanthera"
+    },
+    {
+      "bytes": 34768,
+      "name": "Xenon Varvadeil",
+      "path": "/ai/entities/xenon-varvadeil.json",
+      "records": 6,
+      "sha256": "e7c2293798313edfa54d8fc5d7ec910aaa5ec6c1cb9652097c01a814b6c89549",
+      "slug": "xenon-varvadeil"
+    },
+    {
+      "bytes": 50422,
+      "name": "Xylar Varvadeil",
+      "path": "/ai/entities/xylar-varvadeil.json",
+      "records": 7,
+      "sha256": "1d1d867089e94f7ee27775ed384b1a93ef644f170efcadce059df8a38993d4d2",
+      "slug": "xylar-varvadeil"
+    },
+    {
+      "bytes": 16338,
+      "name": "Xylos",
+      "path": "/ai/entities/xylos.json",
+      "records": 4,
+      "sha256": "be9c1a2e9ca54c3d56c0c58d2ae3dd26e385f4c94c9ff3d2d62e3885204d130a",
+      "slug": "xylos"
+    },
+    {
+      "bytes": 33170,
+      "name": "Zaxor Redalious",
+      "path": "/ai/entities/zaxor-redalious.json",
+      "records": 5,
+      "sha256": "b7bb301488538a662f4b1ac29c361f19a3e64558beeba2e05545b2ac574db88a",
+      "slug": "zaxor-redalious"
+    },
+    {
+      "bytes": 267622,
+      "name": "Zeta",
+      "path": "/ai/entities/zeta.json",
+      "records": 18,
+      "sha256": "18f600fe0dbf16d34b27e2722876d45921d02913cffbef03ba47fe33992700f3",
+      "slug": "zeta"
+    },
+    {
+      "bytes": 24621,
+      "name": "Zyra Xanthera",
+      "path": "/ai/entities/zyra-xanthera.json",
+      "records": 5,
+      "sha256": "2a8628b188b07a3004de4e89725f906db1d5303200accd86fe9edb9c83538275",
+      "slug": "zyra-xanthera"
+    }
+  ],
+  "generated_from_commit": "81c7ad4826b02db5ec8a6aa50ccd2adc206a3a44",
+  "record_count": 802,
+  "record_schema": [
+    "id",
+    "type",
+    "title",
+    "canonical_route",
+    "aliases",
+    "entities_mentioned",
+    "concepts",
+    "source_locator",
+    "full_text",
+    "text_length",
+    "word_count",
+    "text_sha256",
+    "chunk_id",
+    "chunk_offset",
+    "integrity"
+  ],
+  "shards": [
+    {
+      "bytes": 111400,
+      "path": "/ai/shards/character.jsonl",
+      "records": 43,
+      "sha256": "e482e6f6fc9095e131a326e8a4d4d71e987a0abe25438bae387419b290521aa7",
+      "type": "character"
+    },
+    {
+      "bytes": 2064221,
+      "path": "/ai/shards/zubaida.jsonl",
+      "records": 118,
+      "sha256": "f806f74a547efbf7fb29a17399bf4b203980d8a6129e1a7b160397c1757a89a6",
+      "type": "zubaida"
+    },
+    {
+      "bytes": 1228493,
+      "path": "/ai/shards/divine.jsonl",
+      "records": 317,
+      "sha256": "f63ff7d734cc110d71175997872b3335c512c5a5ae9ee107ce2619dcad25de01",
+      "type": "divine"
+    },
+    {
+      "bytes": 968435,
+      "path": "/ai/shards/hgl.jsonl",
+      "records": 293,
+      "sha256": "ea13cfc2a7c01d9cc56dd3d8133b05a09b912433d1a65cef0b188cfd77cf0169",
+      "type": "hgl"
+    },
+    {
+      "bytes": 12686,
+      "path": "/ai/shards/living_canon.jsonl",
+      "records": 8,
+      "sha256": "71ed38d006f15e84c0cbbac8f91b3fd4f7fa04816850bde790a3ab2869050aa5",
+      "type": "living-canon"
+    },
+    {
+      "bytes": 24754,
+      "path": "/ai/shards/concept.jsonl",
+      "records": 19,
+      "sha256": "441a52ee74203a14da373b51efa1949ea59f774b64b84b18fb4226addb437678",
+      "type": "concept"
+    },
+    {
+      "bytes": 6467,
+      "path": "/ai/shards/provenance.jsonl",
+      "records": 4,
+      "sha256": "1a1862b52fe7a20d4502231bce40278c1adee2f27b652741fcf57a62bf5ffe21",
+      "type": "provenance"
+    }
+  ],
+  "source_rule": "Machine retrieval is additive. Preserved source canon remains separately identifiable and retrievable through source_locator/canonical_route; explanatory data is not substituted for source evidence.",
+  "task": "AI-LIVE-001",
+  "validation": {
+    "dyvane_story_evidence_counts": {
+      "character": 12,
+      "divine": 11,
+      "zubaida": 53
+    },
+    "dyvane_story_evidence_records": 76,
+    "expected_counts": {
+      "character": 43,
+      "concept": 19,
+      "divine": 317,
+      "hgl": 293,
+      "living-canon": 8,
+      "provenance": 4,
+      "zubaida": 118
+    },
+    "record_hashes_verified": true,
+    "unique_ids": true
+  },
+  "version": 1
+}
