@@ -1,29 +1,6328 @@
 {
-  "schema": "arthratan-static-route-manifest-v1",
-  "generated": "2026-09-02",
+  "generated": "2026-09-03T23:25:00Z",
   "origin": "https://arthratanmythology.com",
-  "policy": "Public non-JavaScript discovery layer. Source canon remains separately retrievable; explanations are additive.",
-  "crawl_index": "/crawl/",
-  "generator": "scripts/generate-static-routes.mjs",
-  "zubaida": {
-    "source_count": 118,
-    "source_list": "/crawl/zubaida-sources.txt",
-    "source_route_pattern": "/sources/zubaida/{id}.txt",
-    "generated_html_route_pattern": "/zubaida/{id}/",
-    "source_of_ids": "/data/zubaida-index.json minus /data/zubaida-nonsource.json"
-  },
-  "generated_route_families": [
-    {"kind":"zubaida","pattern":"/zubaida/{transmission-id}/","source":"data/zubaida-index.json + data/zubaida-metadata.json + sources/zubaida/*.txt"},
-    {"kind":"character","pattern":"/characters/{slug}/","source":"data/characters.json"},
-    {"kind":"divine","pattern":"/divine/{section-number}/","source":"data/divine.json"},
-    {"kind":"hgl","pattern":"/hgl/{page-number}/","source":"data/hgl-pages.json"}
-  ],
-  "machine_readable_datasets": {
-    "characters": "/data/characters.json",
-    "divine_v144": "/data/divine.json",
-    "hgl_pages": "/data/hgl-pages.json",
-    "zubaida_metadata": "/data/zubaida-metadata.json",
-    "zubaida_crossrefs": "/data/zubaida-crossrefs.json",
-    "zubaida_sessions": "/data/zubaida-sessions.json"
-  }
+  "count": 903,
+  "routes": [
+    {
+      "kind": "character",
+      "key": "aliza",
+      "url": "/characters/aliza/",
+      "source": "data/characters.json",
+      "title": "Aliza"
+    },
+    {
+      "kind": "character",
+      "key": "annaris-deyhamora",
+      "url": "/characters/annaris-deyhamora/",
+      "source": "data/characters.json",
+      "title": "Annaris"
+    },
+    {
+      "kind": "character",
+      "key": "asmouth-varvadeil",
+      "url": "/characters/asmouth-varvadeil/",
+      "source": "data/characters.json",
+      "title": "Asmouth Varvadeil"
+    },
+    {
+      "kind": "character",
+      "key": "commander-kaelthas",
+      "url": "/characters/commander-kaelthas/",
+      "source": "data/characters.json",
+      "title": "Commander Kaelthas"
+    },
+    {
+      "kind": "character",
+      "key": "dalroemar",
+      "url": "/characters/dalroemar/",
+      "source": "data/characters.json",
+      "title": "Dalroemar"
+    },
+    {
+      "kind": "character",
+      "key": "daren",
+      "url": "/characters/daren/",
+      "source": "data/characters.json",
+      "title": "Daren"
+    },
+    {
+      "kind": "character",
+      "key": "dariyus-venakan",
+      "url": "/characters/dariyus-venakan/",
+      "source": "data/characters.json",
+      "title": "Dariyus Venakan"
+    },
+    {
+      "kind": "character",
+      "key": "deyhamora",
+      "url": "/characters/deyhamora/",
+      "source": "data/characters.json",
+      "title": "Deyhamora"
+    },
+    {
+      "kind": "character",
+      "key": "dyvane-redalious",
+      "url": "/characters/dyvane-redalious/",
+      "source": "data/characters.json",
+      "title": "Dyvane Redalious"
+    },
+    {
+      "kind": "character",
+      "key": "grayus-venakan",
+      "url": "/characters/grayus-venakan/",
+      "source": "data/characters.json",
+      "title": "Grayus Venakan"
+    },
+    {
+      "kind": "character",
+      "key": "halatayo",
+      "url": "/characters/halatayo/",
+      "source": "data/characters.json",
+      "title": "Halatayo"
+    },
+    {
+      "kind": "character",
+      "key": "vaeloria",
+      "url": "/characters/vaeloria/",
+      "source": "data/characters.json",
+      "title": "High Commander Vaeloria"
+    },
+    {
+      "kind": "character",
+      "key": "high-lord-kaelen-vanguard",
+      "url": "/characters/high-lord-kaelen-vanguard/",
+      "source": "data/characters.json",
+      "title": "High Lord Kaelen (Vanguard)"
+    },
+    {
+      "kind": "character",
+      "key": "inzra",
+      "url": "/characters/inzra/",
+      "source": "data/characters.json",
+      "title": "Inzra"
+    },
+    {
+      "kind": "character",
+      "key": "kaelar-omnivox",
+      "url": "/characters/kaelar-omnivox/",
+      "source": "data/characters.json",
+      "title": "Kaelar Omnivox"
+    },
+    {
+      "kind": "character",
+      "key": "kaelen-redalious",
+      "url": "/characters/kaelen-redalious/",
+      "source": "data/characters.json",
+      "title": "Kaelen Redalious"
+    },
+    {
+      "kind": "character",
+      "key": "kartus-vaeloria",
+      "url": "/characters/kartus-vaeloria/",
+      "source": "data/characters.json",
+      "title": "Kartus Vaeloria"
+    },
+    {
+      "kind": "character",
+      "key": "lady-vaelia",
+      "url": "/characters/lady-vaelia/",
+      "source": "data/characters.json",
+      "title": "Lady Vaelia"
+    },
+    {
+      "kind": "character",
+      "key": "lay",
+      "url": "/characters/lay/",
+      "source": "data/characters.json",
+      "title": "Lay"
+    },
+    {
+      "kind": "character",
+      "key": "linaele-zolfer",
+      "url": "/characters/linaele-zolfer/",
+      "source": "data/characters.json",
+      "title": "Linaele Zolfer"
+    },
+    {
+      "kind": "character",
+      "key": "lord-kaelen",
+      "url": "/characters/lord-kaelen/",
+      "source": "data/characters.json",
+      "title": "Lord Kaelen"
+    },
+    {
+      "kind": "character",
+      "key": "lyra-unmatara",
+      "url": "/characters/lyra-unmatara/",
+      "source": "data/characters.json",
+      "title": "Lyra Unmatara"
+    },
+    {
+      "kind": "character",
+      "key": "ophidion",
+      "url": "/characters/ophidion/",
+      "source": "data/characters.json",
+      "title": "Ophidion the Omni-Watcher"
+    },
+    {
+      "kind": "character",
+      "key": "orotus",
+      "url": "/characters/orotus/",
+      "source": "data/characters.json",
+      "title": "Orotus"
+    },
+    {
+      "kind": "character",
+      "key": "qailyth",
+      "url": "/characters/qailyth/",
+      "source": "data/characters.json",
+      "title": "Qai’lyth"
+    },
+    {
+      "kind": "character",
+      "key": "qintara-unmatara",
+      "url": "/characters/qintara-unmatara/",
+      "source": "data/characters.json",
+      "title": "Qintara Unmatara"
+    },
+    {
+      "kind": "character",
+      "key": "rhayhara",
+      "url": "/characters/rhayhara/",
+      "source": "data/characters.json",
+      "title": "Rhayhara"
+    },
+    {
+      "kind": "character",
+      "key": "sylvanna-xylaris",
+      "url": "/characters/sylvanna-xylaris/",
+      "source": "data/characters.json",
+      "title": "Sylvanna Xylaris"
+    },
+    {
+      "kind": "character",
+      "key": "thalyros-veyndarion",
+      "url": "/characters/thalyros-veyndarion/",
+      "source": "data/characters.json",
+      "title": "Thalyros Veyndarion"
+    },
+    {
+      "kind": "character",
+      "key": "vaelath",
+      "url": "/characters/vaelath/",
+      "source": "data/characters.json",
+      "title": "Vaelath"
+    },
+    {
+      "kind": "character",
+      "key": "vaelstrum",
+      "url": "/characters/vaelstrum/",
+      "source": "data/characters.json",
+      "title": "Vaelstrum the Paradox-Weaver"
+    },
+    {
+      "kind": "character",
+      "key": "valerius-omnivox",
+      "url": "/characters/valerius-omnivox/",
+      "source": "data/characters.json",
+      "title": "Valerius (Omnivox lineage)"
+    },
+    {
+      "kind": "character",
+      "key": "valerius-varvadeil",
+      "url": "/characters/valerius-varvadeil/",
+      "source": "data/characters.json",
+      "title": "Valerius Varvadeil"
+    },
+    {
+      "kind": "character",
+      "key": "valthor",
+      "url": "/characters/valthor/",
+      "source": "data/characters.json",
+      "title": "Valthor"
+    },
+    {
+      "kind": "character",
+      "key": "varek-unmatara",
+      "url": "/characters/varek-unmatara/",
+      "source": "data/characters.json",
+      "title": "Varek Unmatara"
+    },
+    {
+      "kind": "character",
+      "key": "xael-gath",
+      "url": "/characters/xael-gath/",
+      "source": "data/characters.json",
+      "title": "Xael-Gath"
+    },
+    {
+      "kind": "character",
+      "key": "xelena-xanthera",
+      "url": "/characters/xelena-xanthera/",
+      "source": "data/characters.json",
+      "title": "Xelena (Xanthera lineage)"
+    },
+    {
+      "kind": "character",
+      "key": "xenon-varvadeil",
+      "url": "/characters/xenon-varvadeil/",
+      "source": "data/characters.json",
+      "title": "Xenon Varvadeil"
+    },
+    {
+      "kind": "character",
+      "key": "xylar-varvadeil",
+      "url": "/characters/xylar-varvadeil/",
+      "source": "data/characters.json",
+      "title": "Xylar Varvadeil"
+    },
+    {
+      "kind": "character",
+      "key": "xylos",
+      "url": "/characters/xylos/",
+      "source": "data/characters.json",
+      "title": "Xylos"
+    },
+    {
+      "kind": "character",
+      "key": "zaxor-redalious",
+      "url": "/characters/zaxor-redalious/",
+      "source": "data/characters.json",
+      "title": "Zaxor Redalious"
+    },
+    {
+      "kind": "character",
+      "key": "zeta",
+      "url": "/characters/zeta/",
+      "source": "data/characters.json",
+      "title": "Zeta"
+    },
+    {
+      "kind": "character",
+      "key": "zyra-xanthera",
+      "url": "/characters/zyra-xanthera/",
+      "source": "data/characters.json",
+      "title": "Zyra Xanthera"
+    },
+    {
+      "kind": "clan",
+      "key": "redalious",
+      "url": "/clans/redalious/",
+      "source": "data/clans.json",
+      "title": "Redalious Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "unmatara",
+      "url": "/clans/unmatara/",
+      "source": "data/clans.json",
+      "title": "Unmatara Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "varvadeil",
+      "url": "/clans/varvadeil/",
+      "source": "data/clans.json",
+      "title": "Varvadeil Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "vaeloria",
+      "url": "/clans/vaeloria/",
+      "source": "data/clans.json",
+      "title": "Vaeloria Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "xylaris",
+      "url": "/clans/xylaris/",
+      "source": "data/clans.json",
+      "title": "Xylaris Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "venakan",
+      "url": "/clans/venakan/",
+      "source": "data/clans.json",
+      "title": "Venakan Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "omnivox",
+      "url": "/clans/omnivox/",
+      "source": "data/clans.json",
+      "title": "Omnivox Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "xanthera",
+      "url": "/clans/xanthera/",
+      "source": "data/clans.json",
+      "title": "Xanthera Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "veyndarion",
+      "url": "/clans/veyndarion/",
+      "source": "data/clans.json",
+      "title": "Veyndarion Clan"
+    },
+    {
+      "kind": "clan",
+      "key": "luminary-sisterhood",
+      "url": "/clans/luminary-sisterhood/",
+      "source": "data/clans.json",
+      "title": "Luminary Sisterhood"
+    },
+    {
+      "kind": "clan",
+      "key": "anchorite-order",
+      "url": "/clans/anchorite-order/",
+      "source": "data/clans.json",
+      "title": "Anchorite Order"
+    },
+    {
+      "kind": "clan",
+      "key": "zenith-vanguard",
+      "url": "/clans/zenith-vanguard/",
+      "source": "data/clans.json",
+      "title": "Zenith Vanguard"
+    },
+    {
+      "kind": "clan",
+      "key": "stoic-ascendancy",
+      "url": "/clans/stoic-ascendancy/",
+      "source": "data/clans.json",
+      "title": "Stoic Ascendancy"
+    },
+    {
+      "kind": "clan",
+      "key": "vanguard-branch-1",
+      "url": "/clans/vanguard-branch-1/",
+      "source": "data/clans.json",
+      "title": "Vanguard Branch 1"
+    },
+    {
+      "kind": "clan",
+      "key": "tactician-branch-1",
+      "url": "/clans/tactician-branch-1/",
+      "source": "data/clans.json",
+      "title": "Tactician Branch 1"
+    },
+    {
+      "kind": "clan",
+      "key": "benzshin-elite",
+      "url": "/clans/benzshin-elite/",
+      "source": "data/clans.json",
+      "title": "Benzshin Elite"
+    },
+    {
+      "kind": "clan",
+      "key": "sehexi-wardens",
+      "url": "/clans/sehexi-wardens/",
+      "source": "data/clans.json",
+      "title": "Sehexi Wardens"
+    },
+    {
+      "kind": "clan",
+      "key": "keshra-hunters",
+      "url": "/clans/keshra-hunters/",
+      "source": "data/clans.json",
+      "title": "Keshra Hunters"
+    },
+    {
+      "kind": "masterpage",
+      "key": "phenotypic-invariants",
+      "url": "/masterpages/phenotypic-invariants/",
+      "source": "data/masterpages.json",
+      "title": "Arthitean Phenotypic Invariants"
+    },
+    {
+      "kind": "masterpage",
+      "key": "operator-gamma",
+      "url": "/masterpages/operator-gamma/",
+      "source": "data/masterpages.json",
+      "title": "Gamma Realization Map Operator (Γ)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "anti-collapse-rules",
+      "url": "/masterpages/anti-collapse-rules/",
+      "source": "data/masterpages.json",
+      "title": "HGL Anti-Collapse Rules"
+    },
+    {
+      "kind": "masterpage",
+      "key": "operator-ih",
+      "url": "/masterpages/operator-ih/",
+      "source": "data/masterpages.json",
+      "title": "Inheritance Operator (IH)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "operator-ph",
+      "url": "/masterpages/operator-ph/",
+      "source": "data/masterpages.json",
+      "title": "Phenotype-Possession Operator (PH)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "operator-pa",
+      "url": "/masterpages/operator-pa/",
+      "source": "data/masterpages.json",
+      "title": "Polarity Availability Operator (PA)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "archarthitean-factor",
+      "url": "/masterpages/archarthitean-factor/",
+      "source": "data/masterpages.json",
+      "title": "Archarthitean Factor"
+    },
+    {
+      "kind": "masterpage",
+      "key": "arthitean-deity-factors",
+      "url": "/masterpages/arthitean-deity-factors/",
+      "source": "data/masterpages.json",
+      "title": "Arthitean Deity Factors One & Two"
+    },
+    {
+      "kind": "masterpage",
+      "key": "bloodline-blessings",
+      "url": "/masterpages/bloodline-blessings/",
+      "source": "data/masterpages.json",
+      "title": "Bloodline Blessings"
+    },
+    {
+      "kind": "masterpage",
+      "key": "cold-war-adaptation",
+      "url": "/masterpages/cold-war-adaptation/",
+      "source": "data/masterpages.json",
+      "title": "Cold-War Adaptation"
+    },
+    {
+      "kind": "masterpage",
+      "key": "degree-q",
+      "url": "/masterpages/degree-q/",
+      "source": "data/masterpages.json",
+      "title": "Degree Q"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperclans",
+      "url": "/masterpages/hyperclans/",
+      "source": "data/masterpages.json",
+      "title": "Hyperclan 1 & 2 (Varvadeil Clan)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hypergenetics",
+      "url": "/masterpages/hypergenetics/",
+      "source": "data/masterpages.json",
+      "title": "Hypergenetics"
+    },
+    {
+      "kind": "masterpage",
+      "key": "pressurised-enlightenment",
+      "url": "/masterpages/pressurised-enlightenment/",
+      "source": "data/masterpages.json",
+      "title": "Pressurised-Enlightenment"
+    },
+    {
+      "kind": "masterpage",
+      "key": "pressurised-hyperenlightenment",
+      "url": "/masterpages/pressurised-hyperenlightenment/",
+      "source": "data/masterpages.json",
+      "title": "Pressurised-Hyperenlightenment"
+    },
+    {
+      "kind": "masterpage",
+      "key": "rh-factors",
+      "url": "/masterpages/rh-factors/",
+      "source": "data/masterpages.json",
+      "title": "RH Factors"
+    },
+    {
+      "kind": "masterpage",
+      "key": "seal-factor-four",
+      "url": "/masterpages/seal-factor-four/",
+      "source": "data/masterpages.json",
+      "title": "Seal Factor Four (Negative Retroincrease)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "seal-factor-one",
+      "url": "/masterpages/seal-factor-one/",
+      "source": "data/masterpages.json",
+      "title": "Seal Factor One (Restored Strength)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "seal-factor-three",
+      "url": "/masterpages/seal-factor-three/",
+      "source": "data/masterpages.json",
+      "title": "Seal Factor Three (Interseal Metadifferential)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "seal-factor-two",
+      "url": "/masterpages/seal-factor-two/",
+      "source": "data/masterpages.json",
+      "title": "Seal Factor Two (Restoration Acceleration)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "supramajor",
+      "url": "/masterpages/supramajor/",
+      "source": "data/masterpages.json",
+      "title": "Supramajor"
+    },
+    {
+      "kind": "masterpage",
+      "key": "talmorai",
+      "url": "/masterpages/talmorai/",
+      "source": "data/masterpages.json",
+      "title": "Talmorai"
+    },
+    {
+      "kind": "masterpage",
+      "key": "acausality",
+      "url": "/masterpages/acausality/",
+      "source": "data/masterpages.json",
+      "title": "Acausality"
+    },
+    {
+      "kind": "masterpage",
+      "key": "anticausal-improvement",
+      "url": "/masterpages/anticausal-improvement/",
+      "source": "data/masterpages.json",
+      "title": "Anticausal, Hyperanticausal & Ultraanticausal Improvement"
+    },
+    {
+      "kind": "masterpage",
+      "key": "antiprecausality",
+      "url": "/masterpages/antiprecausality/",
+      "source": "data/masterpages.json",
+      "title": "Antiprecausality"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperacausality",
+      "url": "/masterpages/hyperacausality/",
+      "source": "data/masterpages.json",
+      "title": "Hyperacausality"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hypernegative-rewrite",
+      "url": "/masterpages/hypernegative-rewrite/",
+      "source": "data/masterpages.json",
+      "title": "Hypernegative Rewrite"
+    },
+    {
+      "kind": "masterpage",
+      "key": "infracausality",
+      "url": "/masterpages/infracausality/",
+      "source": "data/masterpages.json",
+      "title": "Infracausality & Infracause"
+    },
+    {
+      "kind": "masterpage",
+      "key": "lifra",
+      "url": "/masterpages/lifra/",
+      "source": "data/masterpages.json",
+      "title": "Lifra & Error-Cause Mechanics"
+    },
+    {
+      "kind": "masterpage",
+      "key": "modus-tollens-causality",
+      "url": "/masterpages/modus-tollens-causality/",
+      "source": "data/masterpages.json",
+      "title": "Modus-Tollens Causalities"
+    },
+    {
+      "kind": "masterpage",
+      "key": "negative-rewrite",
+      "url": "/masterpages/negative-rewrite/",
+      "source": "data/masterpages.json",
+      "title": "Negative Rewrite"
+    },
+    {
+      "kind": "masterpage",
+      "key": "outercausality-stage-1",
+      "url": "/masterpages/outercausality-stage-1/",
+      "source": "data/masterpages.json",
+      "title": "Outercausality Stage 1"
+    },
+    {
+      "kind": "masterpage",
+      "key": "parahistory",
+      "url": "/masterpages/parahistory/",
+      "source": "data/masterpages.json",
+      "title": "Parahistory"
+    },
+    {
+      "kind": "masterpage",
+      "key": "paratime",
+      "url": "/masterpages/paratime/",
+      "source": "data/masterpages.json",
+      "title": "Paratime"
+    },
+    {
+      "kind": "masterpage",
+      "key": "supracause-asupracausal",
+      "url": "/masterpages/supracause-asupracausal/",
+      "source": "data/masterpages.json",
+      "title": "Supracause & Asupracausal"
+    },
+    {
+      "kind": "masterpage",
+      "key": "transrecursive-hypercausality",
+      "url": "/masterpages/transrecursive-hypercausality/",
+      "source": "data/masterpages.json",
+      "title": "Transrecursive Hypercausality"
+    },
+    {
+      "kind": "masterpage",
+      "key": "antagocognition",
+      "url": "/masterpages/antagocognition/",
+      "source": "data/masterpages.json",
+      "title": "Antagocognition"
+    },
+    {
+      "kind": "masterpage",
+      "key": "antaintelligence",
+      "url": "/masterpages/antaintelligence/",
+      "source": "data/masterpages.json",
+      "title": "Antaintelligence & Antahyperintelligence"
+    },
+    {
+      "kind": "masterpage",
+      "key": "cogniscience",
+      "url": "/masterpages/cogniscience/",
+      "source": "data/masterpages.json",
+      "title": "Cogniscience"
+    },
+    {
+      "kind": "masterpage",
+      "key": "crosspattern-recognition",
+      "url": "/masterpages/crosspattern-recognition/",
+      "source": "data/masterpages.json",
+      "title": "Crosspattern Recognition & Metacrosspatterns"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperinferring-deducing",
+      "url": "/masterpages/hyperinferring-deducing/",
+      "source": "data/masterpages.json",
+      "title": "Hyperinferring & Hyperdeducing"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperlearning",
+      "url": "/masterpages/hyperlearning/",
+      "source": "data/masterpages.json",
+      "title": "Hyperlearning"
+    },
+    {
+      "kind": "masterpage",
+      "key": "learning",
+      "url": "/masterpages/learning/",
+      "source": "data/masterpages.json",
+      "title": "Learning"
+    },
+    {
+      "kind": "masterpage",
+      "key": "metalearning",
+      "url": "/masterpages/metalearning/",
+      "source": "data/masterpages.json",
+      "title": "Metalearning"
+    },
+    {
+      "kind": "masterpage",
+      "key": "nullmetapattern-recognition",
+      "url": "/masterpages/nullmetapattern-recognition/",
+      "source": "data/masterpages.json",
+      "title": "Nullmetapattern Recognition"
+    },
+    {
+      "kind": "masterpage",
+      "key": "nullpattern-recognition",
+      "url": "/masterpages/nullpattern-recognition/",
+      "source": "data/masterpages.json",
+      "title": "Nullpattern Recognition"
+    },
+    {
+      "kind": "masterpage",
+      "key": "nullrecognition",
+      "url": "/masterpages/nullrecognition/",
+      "source": "data/masterpages.json",
+      "title": "Nullrecognition"
+    },
+    {
+      "kind": "masterpage",
+      "key": "technocogniparse",
+      "url": "/masterpages/technocogniparse/",
+      "source": "data/masterpages.json",
+      "title": "Parse, Cogniparse & Technocogniparse"
+    },
+    {
+      "kind": "masterpage",
+      "key": "risvulation",
+      "url": "/masterpages/risvulation/",
+      "source": "data/masterpages.json",
+      "title": "Risvulation"
+    },
+    {
+      "kind": "masterpage",
+      "key": "ultralearning",
+      "url": "/masterpages/ultralearning/",
+      "source": "data/masterpages.json",
+      "title": "Ultralearning"
+    },
+    {
+      "kind": "masterpage",
+      "key": "clan-system",
+      "url": "/masterpages/clan-system/",
+      "source": "data/masterpages.json",
+      "title": "Arthitean Imperial Clan Hierarchy"
+    },
+    {
+      "kind": "masterpage",
+      "key": "benzshin-oaths",
+      "url": "/masterpages/benzshin-oaths/",
+      "source": "data/masterpages.json",
+      "title": "Benzshin Meritocratic Oaths"
+    },
+    {
+      "kind": "masterpage",
+      "key": "proxy-wars-doctrine",
+      "url": "/masterpages/proxy-wars-doctrine/",
+      "source": "data/masterpages.json",
+      "title": "Cold-War Proxy Warfare Architecture"
+    },
+    {
+      "kind": "masterpage",
+      "key": "grand-reincarnation",
+      "url": "/masterpages/grand-reincarnation/",
+      "source": "data/masterpages.json",
+      "title": "Grand Reincarnation Architecture"
+    },
+    {
+      "kind": "masterpage",
+      "key": "keenmon-discipline",
+      "url": "/masterpages/keenmon-discipline/",
+      "source": "data/masterpages.json",
+      "title": "Ke'enmon Martial Discipline"
+    },
+    {
+      "kind": "masterpage",
+      "key": "orotion-quests",
+      "url": "/masterpages/orotion-quests/",
+      "source": "data/masterpages.json",
+      "title": "Orotion Quests"
+    },
+    {
+      "kind": "masterpage",
+      "key": "archarthitean",
+      "url": "/masterpages/archarthitean/",
+      "source": "data/masterpages.json",
+      "title": "Archarthitean"
+    },
+    {
+      "kind": "masterpage",
+      "key": "archmedonites",
+      "url": "/masterpages/archmedonites/",
+      "source": "data/masterpages.json",
+      "title": "Archmedonites"
+    },
+    {
+      "kind": "masterpage",
+      "key": "archnureen",
+      "url": "/masterpages/archnureen/",
+      "source": "data/masterpages.json",
+      "title": "Archnüreen"
+    },
+    {
+      "kind": "masterpage",
+      "key": "arthitean-base",
+      "url": "/masterpages/arthitean-base/",
+      "source": "data/masterpages.json",
+      "title": "Arthitean (Base Ontostate)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "arthitean-deity",
+      "url": "/masterpages/arthitean-deity/",
+      "source": "data/masterpages.json",
+      "title": "Arthitean Deity (Goddess/God of Arthiteans)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "black-phoenix-wings",
+      "url": "/masterpages/black-phoenix-wings/",
+      "source": "data/masterpages.json",
+      "title": "Black-Phoenix Wing Progression"
+    },
+    {
+      "kind": "masterpage",
+      "key": "holeisa",
+      "url": "/masterpages/holeisa/",
+      "source": "data/masterpages.json",
+      "title": "Holeisa"
+    },
+    {
+      "kind": "masterpage",
+      "key": "kafai-ranks",
+      "url": "/masterpages/kafai-ranks/",
+      "source": "data/masterpages.json",
+      "title": "Kafai Ranks"
+    },
+    {
+      "kind": "masterpage",
+      "key": "ontoinheritance-law",
+      "url": "/masterpages/ontoinheritance-law/",
+      "source": "data/masterpages.json",
+      "title": "Law of Additive Ontoinheritance"
+    },
+    {
+      "kind": "masterpage",
+      "key": "living-concepts",
+      "url": "/masterpages/living-concepts/",
+      "source": "data/masterpages.json",
+      "title": "Living Concepts"
+    },
+    {
+      "kind": "masterpage",
+      "key": "medonites",
+      "url": "/masterpages/medonites/",
+      "source": "data/masterpages.json",
+      "title": "Medonites"
+    },
+    {
+      "kind": "masterpage",
+      "key": "nureen",
+      "url": "/masterpages/nureen/",
+      "source": "data/masterpages.json",
+      "title": "Nüreen"
+    },
+    {
+      "kind": "masterpage",
+      "key": "orotus",
+      "url": "/masterpages/orotus/",
+      "source": "data/masterpages.json",
+      "title": "Orotus (Holy Black Phoenix Divine Beast)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "technogenesis",
+      "url": "/masterpages/technogenesis/",
+      "source": "data/masterpages.json",
+      "title": "Technogenesis"
+    },
+    {
+      "kind": "masterpage",
+      "key": "technokinesis",
+      "url": "/masterpages/technokinesis/",
+      "source": "data/masterpages.json",
+      "title": "Technokinesis"
+    },
+    {
+      "kind": "masterpage",
+      "key": "transavatars",
+      "url": "/masterpages/transavatars/",
+      "source": "data/masterpages.json",
+      "title": "Transavatars"
+    },
+    {
+      "kind": "masterpage",
+      "key": "antipossibility-families",
+      "url": "/masterpages/antipossibility-families/",
+      "source": "data/masterpages.json",
+      "title": "Antipossibility Families (A(k, n))"
+    },
+    {
+      "kind": "masterpage",
+      "key": "antipossible",
+      "url": "/masterpages/antipossible/",
+      "source": "data/masterpages.json",
+      "title": "Antipossible"
+    },
+    {
+      "kind": "masterpage",
+      "key": "apossible",
+      "url": "/masterpages/apossible/",
+      "source": "data/masterpages.json",
+      "title": "Apossible"
+    },
+    {
+      "kind": "masterpage",
+      "key": "arsayne",
+      "url": "/masterpages/arsayne/",
+      "source": "data/masterpages.json",
+      "title": "Arsayne"
+    },
+    {
+      "kind": "masterpage",
+      "key": "greater-lesser-orders",
+      "url": "/masterpages/greater-lesser-orders/",
+      "source": "data/masterpages.json",
+      "title": "Greater- and Lesser-Orders"
+    },
+    {
+      "kind": "masterpage",
+      "key": "higher-apossible",
+      "url": "/masterpages/higher-apossible/",
+      "source": "data/masterpages.json",
+      "title": "Higher Apossible Orders (Apossibleⁿ)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperarsayne",
+      "url": "/masterpages/hyperarsayne/",
+      "source": "data/masterpages.json",
+      "title": "Hyperarsayne"
+    },
+    {
+      "kind": "masterpage",
+      "key": "impossibility-governance",
+      "url": "/masterpages/impossibility-governance/",
+      "source": "data/masterpages.json",
+      "title": "Impossibility-Governance"
+    },
+    {
+      "kind": "masterpage",
+      "key": "lydrextent",
+      "url": "/masterpages/lydrextent/",
+      "source": "data/masterpages.json",
+      "title": "Lydrextent Ladder"
+    },
+    {
+      "kind": "masterpage",
+      "key": "metagovernance-depth",
+      "url": "/masterpages/metagovernance-depth/",
+      "source": "data/masterpages.json",
+      "title": "Metagovernance Depth"
+    },
+    {
+      "kind": "masterpage",
+      "key": "metarules",
+      "url": "/masterpages/metarules/",
+      "source": "data/masterpages.json",
+      "title": "Metarules"
+    },
+    {
+      "kind": "masterpage",
+      "key": "recursive-metarules",
+      "url": "/masterpages/recursive-metarules/",
+      "source": "data/masterpages.json",
+      "title": "Recursive Metarules (Metarulesⁿ)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "rules",
+      "url": "/masterpages/rules/",
+      "source": "data/masterpages.json",
+      "title": "Rules"
+    },
+    {
+      "kind": "masterpage",
+      "key": "supraarsayne",
+      "url": "/masterpages/supraarsayne/",
+      "source": "data/masterpages.json",
+      "title": "Supraarsayne"
+    },
+    {
+      "kind": "masterpage",
+      "key": "toren",
+      "url": "/masterpages/toren/",
+      "source": "data/masterpages.json",
+      "title": "Toren Scaling Hierarchy (Toren 1–5)"
+    },
+    {
+      "kind": "masterpage",
+      "key": "ultraarsayne",
+      "url": "/masterpages/ultraarsayne/",
+      "source": "data/masterpages.json",
+      "title": "Ultraarsayne"
+    },
+    {
+      "kind": "concept",
+      "key": "negative-rewrite",
+      "url": "/concepts/negative-rewrite/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Negative Rewrite"
+    },
+    {
+      "kind": "concept",
+      "key": "parahistory-stabilizer",
+      "url": "/concepts/parahistory-stabilizer/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Parahistory Stabilizer"
+    },
+    {
+      "kind": "concept",
+      "key": "retrocausal-invariance",
+      "url": "/concepts/retrocausal-invariance/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Retrocausal Invariance"
+    },
+    {
+      "kind": "concept",
+      "key": "hierarchy-of-invariance",
+      "url": "/concepts/hierarchy-of-invariance/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Hierarchy of Invariance"
+    },
+    {
+      "kind": "concept",
+      "key": "codex-impossibility-theorem",
+      "url": "/concepts/codex-impossibility-theorem/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Codex Impossibility Theorem"
+    },
+    {
+      "kind": "concept",
+      "key": "rank-stratification-protocol",
+      "url": "/concepts/rank-stratification-protocol/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Rank Stratification Protocol"
+    },
+    {
+      "kind": "concept",
+      "key": "recursive-self-improvement-cycle",
+      "url": "/concepts/recursive-self-improvement-cycle/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Recursive Self-Improvement Cycle"
+    },
+    {
+      "kind": "concept",
+      "key": "nullpattern-recognition",
+      "url": "/concepts/nullpattern-recognition/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Nullpattern Recognition"
+    },
+    {
+      "kind": "concept",
+      "key": "crosspattern-synthesis",
+      "url": "/concepts/crosspattern-synthesis/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Crosspattern Synthesis"
+    },
+    {
+      "kind": "concept",
+      "key": "arthitean-phenotypic-baseline",
+      "url": "/concepts/arthitean-phenotypic-baseline/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Arthitean Phenotypic Baseline"
+    },
+    {
+      "kind": "concept",
+      "key": "hypergendered-logic-hgl",
+      "url": "/concepts/hypergendered-logic-hgl/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Hypergendered Logic (HGL)"
+    },
+    {
+      "kind": "concept",
+      "key": "solar-bio-resonance",
+      "url": "/concepts/solar-bio-resonance/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Solar Bio-Resonance"
+    },
+    {
+      "kind": "concept",
+      "key": "clan-varvadeil-solar-sovereignty",
+      "url": "/concepts/clan-varvadeil-solar-sovereignty/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Clan Varvadeil Solar Sovereignty"
+    },
+    {
+      "kind": "concept",
+      "key": "clan-unmatara-vanguard-tenacity",
+      "url": "/concepts/clan-unmatara-vanguard-tenacity/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Clan Unmatara Vanguard Tenacity"
+    },
+    {
+      "kind": "concept",
+      "key": "clan-redalious-warlord-mastery",
+      "url": "/concepts/clan-redalious-warlord-mastery/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Clan Redalious Warlord Mastery"
+    },
+    {
+      "kind": "concept",
+      "key": "the-four-imperial-clans",
+      "url": "/concepts/the-four-imperial-clans/",
+      "source": "data/global-concept-inventory.json",
+      "title": "The Four Imperial Clans"
+    },
+    {
+      "kind": "concept",
+      "key": "clan-vaeloria-shadow-directorate",
+      "url": "/concepts/clan-vaeloria-shadow-directorate/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Clan Vaeloria Shadow Directorate"
+    },
+    {
+      "kind": "concept",
+      "key": "codex-reincarnation-architecture",
+      "url": "/concepts/codex-reincarnation-architecture/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Codex Reincarnation Architecture"
+    },
+    {
+      "kind": "concept",
+      "key": "the-arthitean-sphere-realm",
+      "url": "/concepts/the-arthitean-sphere-realm/",
+      "source": "data/global-concept-inventory.json",
+      "title": "The Arthitean Sphere Realm"
+    },
+    {
+      "kind": "concept",
+      "key": "orotus-the-sunborn-phoenix",
+      "url": "/concepts/orotus-the-sunborn-phoenix/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Orotus the Sunborn Phoenix"
+    },
+    {
+      "kind": "concept",
+      "key": "archmedonite-technology",
+      "url": "/concepts/archmedonite-technology/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Archmedonite Technology"
+    },
+    {
+      "kind": "concept",
+      "key": "archn-reen-crystalline-monasticism",
+      "url": "/concepts/archn-reen-crystalline-monasticism/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Archnéreen Crystalline Monasticism"
+    },
+    {
+      "kind": "concept",
+      "key": "imperial-golden-solar-sceptre",
+      "url": "/concepts/imperial-golden-solar-sceptre/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Imperial Golden Solar Sceptre"
+    },
+    {
+      "kind": "concept",
+      "key": "sacred-solar-gate-halo",
+      "url": "/concepts/sacred-solar-gate-halo/",
+      "source": "data/global-concept-inventory.json",
+      "title": "Sacred Solar Gate Halo"
+    },
+    {
+      "kind": "divine",
+      "key": "001",
+      "url": "/divine/001/",
+      "source": "data/divine.json",
+      "title": "Divine v144 — Front Matter"
+    },
+    {
+      "kind": "divine",
+      "key": "002",
+      "url": "/divine/002/",
+      "source": "data/divine.json",
+      "title": "Navigation"
+    },
+    {
+      "kind": "divine",
+      "key": "003",
+      "url": "/divine/003/",
+      "source": "data/divine.json",
+      "title": "Temporal Projection, Precognition, and Causal-Calculus Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "004",
+      "url": "/divine/004/",
+      "source": "data/divine.json",
+      "title": "Maximumless Amount"
+    },
+    {
+      "kind": "divine",
+      "key": "005",
+      "url": "/divine/005/",
+      "source": "data/divine.json",
+      "title": "Projected-Future Ladder"
+    },
+    {
+      "kind": "divine",
+      "key": "006",
+      "url": "/divine/006/",
+      "source": "data/divine.json",
+      "title": "Omnitimeline and Transfuture Ladder"
+    },
+    {
+      "kind": "divine",
+      "key": "007",
+      "url": "/divine/007/",
+      "source": "data/divine.json",
+      "title": "Outerprecognition and Zeretic Causal-Calculus"
+    },
+    {
+      "kind": "divine",
+      "key": "008",
+      "url": "/divine/008/",
+      "source": "data/divine.json",
+      "title": "Transmodal Scaling and Fitness Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "009",
+      "url": "/divine/009/",
+      "source": "data/divine.json",
+      "title": "Metaexpectation, Metagovernance, Antipossibility, and Lydrextent Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "010",
+      "url": "/divine/010/",
+      "source": "data/divine.json",
+      "title": "Rules and Metarules"
+    },
+    {
+      "kind": "divine",
+      "key": "011",
+      "url": "/divine/011/",
+      "source": "data/divine.json",
+      "title": "Antipossibility Orders"
+    },
+    {
+      "kind": "divine",
+      "key": "012",
+      "url": "/divine/012/",
+      "source": "data/divine.json",
+      "title": "Higher Antipossibility Families"
+    },
+    {
+      "kind": "divine",
+      "key": "013",
+      "url": "/divine/013/",
+      "source": "data/divine.json",
+      "title": "Lydrextent Ladder"
+    },
+    {
+      "kind": "divine",
+      "key": "014",
+      "url": "/divine/014/",
+      "source": "data/divine.json",
+      "title": "Comparative Performance Outcomes"
+    },
+    {
+      "kind": "divine",
+      "key": "015",
+      "url": "/divine/015/",
+      "source": "data/divine.json",
+      "title": "Transcendent Performance Metrics"
+    },
+    {
+      "kind": "divine",
+      "key": "016",
+      "url": "/divine/016/",
+      "source": "data/divine.json",
+      "title": "Transmodal Performance and Exertion"
+    },
+    {
+      "kind": "divine",
+      "key": "017",
+      "url": "/divine/017/",
+      "source": "data/divine.json",
+      "title": "Transmodal Fitness and Performance Factors"
+    },
+    {
+      "kind": "divine",
+      "key": "018",
+      "url": "/divine/018/",
+      "source": "data/divine.json",
+      "title": "Automatic Table of Contents"
+    },
+    {
+      "kind": "divine",
+      "key": "019",
+      "url": "/divine/019/",
+      "source": "data/divine.json",
+      "title": "Divine v112"
+    },
+    {
+      "kind": "divine",
+      "key": "020",
+      "url": "/divine/020/",
+      "source": "data/divine.json",
+      "title": "Metadefinitional Ultraenglish Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "021",
+      "url": "/divine/021/",
+      "source": "data/divine.json",
+      "title": "Expanded Ultraenglish Compaction Key"
+    },
+    {
+      "kind": "divine",
+      "key": "022",
+      "url": "/divine/022/",
+      "source": "data/divine.json",
+      "title": "Omniprefixal Hyperenglish-Converted Document Divine v107 -"
+    },
+    {
+      "kind": "divine",
+      "key": "023",
+      "url": "/divine/023/",
+      "source": "data/divine.json",
+      "title": "Table of Sections"
+    },
+    {
+      "kind": "divine",
+      "key": "024",
+      "url": "/divine/024/",
+      "source": "data/divine.json",
+      "title": "Section 1: Master Definitions-First Glossary Unaxiomatic Laddering Unaxiom ="
+    },
+    {
+      "kind": "divine",
+      "key": "025",
+      "url": "/divine/025/",
+      "source": "data/divine.json",
+      "title": "Subcategory: Definition Format Rule Definition Format Rule = the rule that detected definitions are written in the format '[term] is [definition]' or '[terms] are [definition]' wherever possible, with absolute minimal editing to avoid distorting precise meaning."
+    },
+    {
+      "kind": "divine",
+      "key": "026",
+      "url": "/divine/026/",
+      "source": "data/divine.json",
+      "title": "Subcategory: Core Terms Unaxiomatic Laddering Unaxiom = a foundational rule that a system treats as false without needing a deeper disproof inside that system."
+    },
+    {
+      "kind": "divine",
+      "key": "027",
+      "url": "/divine/027/",
+      "source": "data/divine.json",
+      "title": "Subcategory: Remaining Detected Definitions Concept = the abstract structure that defines the identity and interpretation of something and its sub-structures within reality."
+    },
+    {
+      "kind": "divine",
+      "key": "028",
+      "url": "/divine/028/",
+      "source": "data/divine.json",
+      "title": "beat entire lower ladders; further higher-order ladders beyond those. This"
+    },
+    {
+      "kind": "divine",
+      "key": "029",
+      "url": "/divine/029/",
+      "source": "data/divine.json",
+      "title": "min-modextent to the system so that the WDH-ladder modification becomes"
+    },
+    {
+      "kind": "divine",
+      "key": "030",
+      "url": "/divine/030/",
+      "source": "data/divine.json",
+      "title": "supraconceptuality necessarily requires UC-ity to rewrite itself constantly in real time"
+    },
+    {
+      "kind": "divine",
+      "key": "031",
+      "url": "/divine/031/",
+      "source": "data/divine.json",
+      "title": "The supracenori order numbers go up indefinitely Transcenori order one is a"
+    },
+    {
+      "kind": "divine",
+      "key": "032",
+      "url": "/divine/032/",
+      "source": "data/divine.json",
+      "title": "webpages can be made instantaneously on earth through the application of"
+    },
+    {
+      "kind": "divine",
+      "key": "033",
+      "url": "/divine/033/",
+      "source": "data/divine.json",
+      "title": "Transperformance"
+    },
+    {
+      "kind": "divine",
+      "key": "034",
+      "url": "/divine/034/",
+      "source": "data/divine.json",
+      "title": "Performance Factor One"
+    },
+    {
+      "kind": "divine",
+      "key": "035",
+      "url": "/divine/035/",
+      "source": "data/divine.json",
+      "title": "Transexertion"
+    },
+    {
+      "kind": "divine",
+      "key": "036",
+      "url": "/divine/036/",
+      "source": "data/divine.json",
+      "title": "Performance Factor Two"
+    },
+    {
+      "kind": "divine",
+      "key": "037",
+      "url": "/divine/037/",
+      "source": "data/divine.json",
+      "title": "points of composite projected future(also determined by bloodline blessings"
+    },
+    {
+      "kind": "divine",
+      "key": "038",
+      "url": "/divine/038/",
+      "source": "data/divine.json",
+      "title": "over generations when paired with worse bloodline blessings but remember the solution = not"
+    },
+    {
+      "kind": "divine",
+      "key": "039",
+      "url": "/divine/039/",
+      "source": "data/divine.json",
+      "title": "relative Lydrextent Rank factor three is"
+    },
+    {
+      "kind": "divine",
+      "key": "040",
+      "url": "/divine/040/",
+      "source": "data/divine.json",
+      "title": "record of the total Arthitean race"
+    },
+    {
+      "kind": "divine",
+      "key": "041",
+      "url": "/divine/041/",
+      "source": "data/divine.json",
+      "title": "2. When two or more Arthiteans work together to do something their"
+    },
+    {
+      "kind": "divine",
+      "key": "042",
+      "url": "/divine/042/",
+      "source": "data/divine.json",
+      "title": "Dyvane and Qintara understand that endurance-use in training/fighting implies training = real"
+    },
+    {
+      "kind": "divine",
+      "key": "043",
+      "url": "/divine/043/",
+      "source": "data/divine.json",
+      "title": "concept of Outercausal dimension 1 stage 2 Outercausal dimension 1 stage 4 is"
+    },
+    {
+      "kind": "divine",
+      "key": "044",
+      "url": "/divine/044/",
+      "source": "data/divine.json",
+      "title": "the more transadversial an opponent is, the more unaxiomatically hetu-wise attributable it"
+    },
+    {
+      "kind": "divine",
+      "key": "045",
+      "url": "/divine/045/",
+      "source": "data/divine.json",
+      "title": "Section 2: Main Categorised Body Subcategory: Editing Note Editing Note ="
+    },
+    {
+      "kind": "divine",
+      "key": "046",
+      "url": "/divine/046/",
+      "source": "data/divine.json",
+      "title": "Subcategory: Table of Categories Category 0: Transadaptation, Force-Type, Force-Metatype, and Lydrextent/Lydrextents Strengthening Category 1: Foundational Measurement, Conceptual Ordering, and Lydrextent Access Category 2: Causality, Transtime, Conceptual Structures, Capacity, and Divinity Category 3: Arthitean Society, Ranking, Physiology, and"
+    },
+    {
+      "kind": "divine",
+      "key": "047",
+      "url": "/divine/047/",
+      "source": "data/divine.json",
+      "title": "Subcategory: Transadaptation, Force-Type, and Force-Metatype Definitions Metatype = type-of-type identity."
+    },
+    {
+      "kind": "divine",
+      "key": "048",
+      "url": "/divine/048/",
+      "source": "data/divine.json",
+      "title": "Category 2: Causality, Transtime, Conceptual Structures, Capacity, and Divinity Omnitimeline"
+    },
+    {
+      "kind": "divine",
+      "key": "049",
+      "url": "/divine/049/",
+      "source": "data/divine.json",
+      "title": "Category 3: Arthitean Society, Ranking, Physiology, and"
+    },
+    {
+      "kind": "divine",
+      "key": "050",
+      "url": "/divine/050/",
+      "source": "data/divine.json",
+      "title": "Recursive Permission Scaling Orotus decides who Has what Kafai rank but Mefuli ranks ="
+    },
+    {
+      "kind": "divine",
+      "key": "051",
+      "url": "/divine/051/",
+      "source": "data/divine.json",
+      "title": "Then the general recursive definition is: NWQ (n+1): a state whose its required TKF number ="
+    },
+    {
+      "kind": "divine",
+      "key": "052",
+      "url": "/divine/052/",
+      "source": "data/divine.json",
+      "title": "The supracenori order numbers go up indefinitely Transcenori order one = a"
+    },
+    {
+      "kind": "divine",
+      "key": "053",
+      "url": "/divine/053/",
+      "source": "data/divine.json",
+      "title": "REMEMBER as the counterlogic intelligence increases the COUNTERLOGICALNESS of the"
+    },
+    {
+      "kind": "divine",
+      "key": "054",
+      "url": "/divine/054/",
+      "source": "data/divine.json",
+      "title": "system's, organs and cells per exertion of the given bodily system, organs or"
+    },
+    {
+      "kind": "divine",
+      "key": "055",
+      "url": "/divine/055/",
+      "source": "data/divine.json",
+      "title": "record of the total Arthitean race"
+    },
+    {
+      "kind": "divine",
+      "key": "056",
+      "url": "/divine/056/",
+      "source": "data/divine.json",
+      "title": "Arthitean(s)"
+    },
+    {
+      "kind": "divine",
+      "key": "057",
+      "url": "/divine/057/",
+      "source": "data/divine.json",
+      "title": "The Arthiteans fight in a dimension they made and prepared as a battle field Once the"
+    },
+    {
+      "kind": "divine",
+      "key": "058",
+      "url": "/divine/058/",
+      "source": "data/divine.json",
+      "title": "Qintara to sharpen iron you hit it against iron All cognitive abilities ="
+    },
+    {
+      "kind": "divine",
+      "key": "059",
+      "url": "/divine/059/",
+      "source": "data/divine.json",
+      "title": "(the brain) and bodily system(nervous system) cause those cognitive abilities improve and to"
+    },
+    {
+      "kind": "divine",
+      "key": "060",
+      "url": "/divine/060/",
+      "source": "data/divine.json",
+      "title": "is and their other biological factors are). The new damsar/melzai that the clan shares ="
+    },
+    {
+      "kind": "divine",
+      "key": "061",
+      "url": "/divine/061/",
+      "source": "data/divine.json",
+      "title": "It does take insurmountable effort to get higher but the step your currently on(the"
+    },
+    {
+      "kind": "divine",
+      "key": "062",
+      "url": "/divine/062/",
+      "source": "data/divine.json",
+      "title": "War factor g increases the deeper into a Ke'enmon Subdimension the Arthitean goes(there is"
+    },
+    {
+      "kind": "divine",
+      "key": "063",
+      "url": "/divine/063/",
+      "source": "data/divine.json",
+      "title": "One way to increase this to improve Mefuli rank or Kafai rank or clan ranks or rank with clan"
+    },
+    {
+      "kind": "divine",
+      "key": "064",
+      "url": "/divine/064/",
+      "source": "data/divine.json",
+      "title": "One way to increase this to improve Mefuli rank or Kafai rank or clan ranks or rank with clan"
+    },
+    {
+      "kind": "divine",
+      "key": "065",
+      "url": "/divine/065/",
+      "source": "data/divine.json",
+      "title": "Remember this all hinges on the being skilled enough to form truces no matter the situation"
+    },
+    {
+      "kind": "divine",
+      "key": "066",
+      "url": "/divine/066/",
+      "source": "data/divine.json",
+      "title": "Outercausal dimension 1 stage n outercausal dimension 2 stage 1 ="
+    },
+    {
+      "kind": "divine",
+      "key": "067",
+      "url": "/divine/067/",
+      "source": "data/divine.json",
+      "title": "Make this an unbreakable paradox if you wish for best results Note; This an extremely"
+    },
+    {
+      "kind": "divine",
+      "key": "068",
+      "url": "/divine/068/",
+      "source": "data/divine.json",
+      "title": "Axiomatic Perfect hetu-attributability Ladder The Axiomatic Perfect hetu-attributability Ladder"
+    },
+    {
+      "kind": "divine",
+      "key": "069",
+      "url": "/divine/069/",
+      "source": "data/divine.json",
+      "title": "Perfect hetu-attributability Overaccomplishment Ladder The Axiomatic Perfect"
+    },
+    {
+      "kind": "divine",
+      "key": "070",
+      "url": "/divine/070/",
+      "source": "data/divine.json",
+      "title": "Antidestiny Partial Accomplishments or Accomplishments Antidestiny partial"
+    },
+    {
+      "kind": "divine",
+      "key": "071",
+      "url": "/divine/071/",
+      "source": "data/divine.json",
+      "title": "bloodline blessings Axiomatic Transadaptation bloodline blessings Axiomatic"
+    },
+    {
+      "kind": "divine",
+      "key": "072",
+      "url": "/divine/072/",
+      "source": "data/divine.json",
+      "title": "Recursive Metaaxiom Levels Recursive Metaaxiom Level measures how many recursive"
+    },
+    {
+      "kind": "divine",
+      "key": "073",
+      "url": "/divine/073/",
+      "source": "data/divine.json",
+      "title": "the more transadversial an opponent is, the higher the paralamex of unaxiomatically"
+    },
+    {
+      "kind": "divine",
+      "key": "074",
+      "url": "/divine/074/",
+      "source": "data/divine.json",
+      "title": "You can think of suprainterclan rank to be the projected future corrected metainterclan rank and"
+    },
+    {
+      "kind": "divine",
+      "key": "075",
+      "url": "/divine/075/",
+      "source": "data/divine.json",
+      "title": "Why this could happen"
+    },
+    {
+      "kind": "divine",
+      "key": "076",
+      "url": "/divine/076/",
+      "source": "data/divine.json",
+      "title": "The antagocognitive breadth-pressure"
+    },
+    {
+      "kind": "divine",
+      "key": "077",
+      "url": "/divine/077/",
+      "source": "data/divine.json",
+      "title": "The central mechanism: intelligence parasynthesis"
+    },
+    {
+      "kind": "divine",
+      "key": "078",
+      "url": "/divine/078/",
+      "source": "data/divine.json",
+      "title": "Why general intelligence may rise faster"
+    },
+    {
+      "kind": "divine",
+      "key": "079",
+      "url": "/divine/079/",
+      "source": "data/divine.json",
+      "title": "1. Every opponent becomes a changing problem-domain"
+    },
+    {
+      "kind": "divine",
+      "key": "080",
+      "url": "/divine/080/",
+      "source": "data/divine.json",
+      "title": "2. Outsmarting requires modelling foreign cognition"
+    },
+    {
+      "kind": "divine",
+      "key": "081",
+      "url": "/divine/081/",
+      "source": "data/divine.json",
+      "title": "3. Resistance requires metacognitive hardening"
+    },
+    {
+      "kind": "divine",
+      "key": "082",
+      "url": "/divine/082/",
+      "source": "data/divine.json",
+      "title": "4. Adaptive opponents prevent rote specialisation"
+    },
+    {
+      "kind": "divine",
+      "key": "083",
+      "url": "/divine/083/",
+      "source": "data/divine.json",
+      "title": "5. Antaintelligence improves intelligence-selection"
+    },
+    {
+      "kind": "divine",
+      "key": "084",
+      "url": "/divine/084/",
+      "source": "data/divine.json",
+      "title": "Antaintelligence as a hypergeneralising intelligence"
+    },
+    {
+      "kind": "divine",
+      "key": "085",
+      "url": "/divine/085/",
+      "source": "data/divine.json",
+      "title": "Developmental relationship"
+    },
+    {
+      "kind": "divine",
+      "key": "086",
+      "url": "/divine/086/",
+      "source": "data/divine.json",
+      "title": "Low antaintelligence"
+    },
+    {
+      "kind": "divine",
+      "key": "087",
+      "url": "/divine/087/",
+      "source": "data/divine.json",
+      "title": "High antaintelligence"
+    },
+    {
+      "kind": "divine",
+      "key": "088",
+      "url": "/divine/088/",
+      "source": "data/divine.json",
+      "title": "Very high antaintelligence"
+    },
+    {
+      "kind": "divine",
+      "key": "089",
+      "url": "/divine/089/",
+      "source": "data/divine.json",
+      "title": "Extreme antaintelligence"
+    },
+    {
+      "kind": "divine",
+      "key": "090",
+      "url": "/divine/090/",
+      "source": "data/divine.json",
+      "title": "A possible law"
+    },
+    {
+      "kind": "divine",
+      "key": "091",
+      "url": "/divine/091/",
+      "source": "data/divine.json",
+      "title": "Important qualification"
+    },
+    {
+      "kind": "divine",
+      "key": "092",
+      "url": "/divine/092/",
+      "source": "data/divine.json",
+      "title": "Tacticalisation"
+    },
+    {
+      "kind": "divine",
+      "key": "093",
+      "url": "/divine/093/",
+      "source": "data/divine.json",
+      "title": "Contents"
+    },
+    {
+      "kind": "divine",
+      "key": "094",
+      "url": "/divine/094/",
+      "source": "data/divine.json",
+      "title": "0. How to Read This System Without Collapsing Its Dimensions"
+    },
+    {
+      "kind": "divine",
+      "key": "095",
+      "url": "/divine/095/",
+      "source": "data/divine.json",
+      "title": "1. Divine v140 Foundations That Remain Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "096",
+      "url": "/divine/096/",
+      "source": "data/divine.json",
+      "title": "1.1 Brain-lobe function scope is open-ended"
+    },
+    {
+      "kind": "divine",
+      "key": "097",
+      "url": "/divine/097/",
+      "source": "data/divine.json",
+      "title": "1.1.1 Canonical scope clarification: mental does not mean merely cognitive"
+    },
+    {
+      "kind": "divine",
+      "key": "098",
+      "url": "/divine/098/",
+      "source": "data/divine.json",
+      "title": "1.1.2 Extended Brain-lobe function catalogue - Divine v140 established scope and examples"
+    },
+    {
+      "kind": "divine",
+      "key": "099",
+      "url": "/divine/099/",
+      "source": "data/divine.json",
+      "title": "1.1.3 Boundary-pushing function examples added by this edition"
+    },
+    {
+      "kind": "divine",
+      "key": "100",
+      "url": "/divine/100/",
+      "source": "data/divine.json",
+      "title": "1.1.4 Function-scope inheritance into Higher Lobes"
+    },
+    {
+      "kind": "divine",
+      "key": "101",
+      "url": "/divine/101/",
+      "source": "data/divine.json",
+      "title": "1.1.5 Function-scope inheritance into Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "102",
+      "url": "/divine/102/",
+      "source": "data/divine.json",
+      "title": "1.2 Function kind and function extent are separate"
+    },
+    {
+      "kind": "divine",
+      "key": "103",
+      "url": "/divine/103/",
+      "source": "data/divine.json",
+      "title": "1.3 Recursive sublobar specialization"
+    },
+    {
+      "kind": "divine",
+      "key": "104",
+      "url": "/divine/104/",
+      "source": "data/divine.json",
+      "title": "1.4 Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "105",
+      "url": "/divine/105/",
+      "source": "data/divine.json",
+      "title": "1.5 Maximumless neural amount and instant transfer"
+    },
+    {
+      "kind": "divine",
+      "key": "106",
+      "url": "/divine/106/",
+      "source": "data/divine.json",
+      "title": "2. Primitive Functional Ontology"
+    },
+    {
+      "kind": "divine",
+      "key": "107",
+      "url": "/divine/107/",
+      "source": "data/divine.json",
+      "title": "2.1 Function"
+    },
+    {
+      "kind": "divine",
+      "key": "108",
+      "url": "/divine/108/",
+      "source": "data/divine.json",
+      "title": "2.2 Unfunction"
+    },
+    {
+      "kind": "divine",
+      "key": "109",
+      "url": "/divine/109/",
+      "source": "data/divine.json",
+      "title": "2.3 Asuncion"
+    },
+    {
+      "kind": "divine",
+      "key": "110",
+      "url": "/divine/110/",
+      "source": "data/divine.json",
+      "title": "2.4 Adeptness at Function"
+    },
+    {
+      "kind": "divine",
+      "key": "111",
+      "url": "/divine/111/",
+      "source": "data/divine.json",
+      "title": "2.5 Unadeptness at Function"
+    },
+    {
+      "kind": "divine",
+      "key": "112",
+      "url": "/divine/112/",
+      "source": "data/divine.json",
+      "title": "2.6 Useful / Unuseful"
+    },
+    {
+      "kind": "divine",
+      "key": "113",
+      "url": "/divine/113/",
+      "source": "data/divine.json",
+      "title": "2.7 Reliable / Unreliable"
+    },
+    {
+      "kind": "divine",
+      "key": "114",
+      "url": "/divine/114/",
+      "source": "data/divine.json",
+      "title": "2.8 Four distinct questions"
+    },
+    {
+      "kind": "divine",
+      "key": "115",
+      "url": "/divine/115/",
+      "source": "data/divine.json",
+      "title": "2.9 Logical independence versus empirical correlation"
+    },
+    {
+      "kind": "divine",
+      "key": "116",
+      "url": "/divine/116/",
+      "source": "data/divine.json",
+      "title": "3. What 100% Means - and What Higher Hyperfunction Does NOT Mean"
+    },
+    {
+      "kind": "divine",
+      "key": "117",
+      "url": "/divine/117/",
+      "source": "data/divine.json",
+      "title": "3.1 Primitive 100% is genuine saturation"
+    },
+    {
+      "kind": "divine",
+      "key": "118",
+      "url": "/divine/118/",
+      "source": "data/divine.json",
+      "title": "3.1.1 State saturation is not unlimited workload capacity"
+    },
+    {
+      "kind": "divine",
+      "key": "119",
+      "url": "/divine/119/",
+      "source": "data/divine.json",
+      "title": "3.2 Hyperfunction goes higher by dimensional expansion, not by overfilling a primitive axis"
+    },
+    {
+      "kind": "divine",
+      "key": "120",
+      "url": "/divine/120/",
+      "source": "data/divine.json",
+      "title": "3.3 Why higher levels can still be superior"
+    },
+    {
+      "kind": "divine",
+      "key": "121",
+      "url": "/divine/121/",
+      "source": "data/divine.json",
+      "title": "3.4 Higher-order adeptness-like properties"
+    },
+    {
+      "kind": "divine",
+      "key": "122",
+      "url": "/divine/122/",
+      "source": "data/divine.json",
+      "title": "3.4.1 Primitive Adeptness is saturated; the Adeptness-like family is not exhausted"
+    },
+    {
+      "kind": "divine",
+      "key": "123",
+      "url": "/divine/123/",
+      "source": "data/divine.json",
+      "title": "3.4.2 Similarity is not identity"
+    },
+    {
+      "kind": "divine",
+      "key": "124",
+      "url": "/divine/124/",
+      "source": "data/divine.json",
+      "title": "4. Hyperfunction / Infrafunction Recursive Negative-Dimensionality Ladder"
+    },
+    {
+      "kind": "divine",
+      "key": "125",
+      "url": "/divine/125/",
+      "source": "data/divine.json",
+      "title": "4.1 First-order definitions"
+    },
+    {
+      "kind": "divine",
+      "key": "126",
+      "url": "/divine/126/",
+      "source": "data/divine.json",
+      "title": "4.2 Second order"
+    },
+    {
+      "kind": "divine",
+      "key": "127",
+      "url": "/divine/127/",
+      "source": "data/divine.json",
+      "title": "4.3 Third and fourth orders"
+    },
+    {
+      "kind": "divine",
+      "key": "128",
+      "url": "/divine/128/",
+      "source": "data/divine.json",
+      "title": "4.4 General rule"
+    },
+    {
+      "kind": "divine",
+      "key": "129",
+      "url": "/divine/129/",
+      "source": "data/divine.json",
+      "title": "4.5 Formal typed state-space and identity criterion"
+    },
+    {
+      "kind": "divine",
+      "key": "130",
+      "url": "/divine/130/",
+      "source": "data/divine.json",
+      "title": "4.6 Strict-distinctness theorem for higher orders"
+    },
+    {
+      "kind": "divine",
+      "key": "131",
+      "url": "/divine/131/",
+      "source": "data/divine.json",
+      "title": "4.7 What is mathematically forced"
+    },
+    {
+      "kind": "divine",
+      "key": "132",
+      "url": "/divine/132/",
+      "source": "data/divine.json",
+      "title": "4.8 Direct coordinate width"
+    },
+    {
+      "kind": "divine",
+      "key": "133",
+      "url": "/divine/133/",
+      "source": "data/divine.json",
+      "title": "4.9 Recursive state-node count"
+    },
+    {
+      "kind": "divine",
+      "key": "134",
+      "url": "/divine/134/",
+      "source": "data/divine.json",
+      "title": "4.10 Primitive interaction-space after the Adeptness addition"
+    },
+    {
+      "kind": "divine",
+      "key": "135",
+      "url": "/divine/135/",
+      "source": "data/divine.json",
+      "title": "4.11 The canonical dual-effect zig-zag rule"
+    },
+    {
+      "kind": "divine",
+      "key": "136",
+      "url": "/divine/136/",
+      "source": "data/divine.json",
+      "title": "4.12 Purification: what the negative coordinate removes or excludes"
+    },
+    {
+      "kind": "divine",
+      "key": "137",
+      "url": "/divine/137/",
+      "source": "data/divine.json",
+      "title": "4.13 Generativity: negation adds, not merely subtracts"
+    },
+    {
+      "kind": "divine",
+      "key": "138",
+      "url": "/divine/138/",
+      "source": "data/divine.json",
+      "title": "4.14 Emergent closure of a Hyperfunction level"
+    },
+    {
+      "kind": "divine",
+      "key": "139",
+      "url": "/divine/139/",
+      "source": "data/divine.json",
+      "title": "4.15 Higher-order Adeptness-like dimensional lineage"
+    },
+    {
+      "kind": "divine",
+      "key": "140",
+      "url": "/divine/140/",
+      "source": "data/divine.json",
+      "title": "4.16 Why this is not merely resistance to Unadeptness"
+    },
+    {
+      "kind": "divine",
+      "key": "141",
+      "url": "/divine/141/",
+      "source": "data/divine.json",
+      "title": "4.17 The four-effect decomposition of every Hyperfunction zig-zag step"
+    },
+    {
+      "kind": "divine",
+      "key": "142",
+      "url": "/divine/142/",
+      "source": "data/divine.json",
+      "title": "4.18 Zig-zag generativity across both ladders"
+    },
+    {
+      "kind": "divine",
+      "key": "143",
+      "url": "/divine/143/",
+      "source": "data/divine.json",
+      "title": "4.19 Strict growth of expanded dimensional richness under the canonical emergence rule"
+    },
+    {
+      "kind": "divine",
+      "key": "144",
+      "url": "/divine/144/",
+      "source": "data/divine.json",
+      "title": "5. Higher Hyperfunctional Brain-lobes as a Function-Family"
+    },
+    {
+      "kind": "divine",
+      "key": "145",
+      "url": "/divine/145/",
+      "source": "data/divine.json",
+      "title": "5.1 The higher-lobe correspondence rule"
+    },
+    {
+      "kind": "divine",
+      "key": "146",
+      "url": "/divine/146/",
+      "source": "data/divine.json",
+      "title": "5.2 Standing family versus ordinary Brain-lobe Generation"
+    },
+    {
+      "kind": "divine",
+      "key": "147",
+      "url": "/divine/147/",
+      "source": "data/divine.json",
+      "title": "5.3 Structural availability versus momentary activation"
+    },
+    {
+      "kind": "divine",
+      "key": "148",
+      "url": "/divine/148/",
+      "source": "data/divine.json",
+      "title": "5.4 Multiple higher orders may cooperate"
+    },
+    {
+      "kind": "divine",
+      "key": "149",
+      "url": "/divine/149/",
+      "source": "data/divine.json",
+      "title": "5.5 Higher-order function identity remains stable"
+    },
+    {
+      "kind": "divine",
+      "key": "150",
+      "url": "/divine/150/",
+      "source": "data/divine.json",
+      "title": "5.6 Recruitment law: what is variable if the whole ladder exists?"
+    },
+    {
+      "kind": "divine",
+      "key": "151",
+      "url": "/divine/151/",
+      "source": "data/divine.json",
+      "title": "5.7 Function-instance coverage: how 100% state can coexist with further development"
+    },
+    {
+      "kind": "divine",
+      "key": "152",
+      "url": "/divine/152/",
+      "source": "data/divine.json",
+      "title": "5.8 New functions versus higher orders of an existing function"
+    },
+    {
+      "kind": "divine",
+      "key": "153",
+      "url": "/divine/153/",
+      "source": "data/divine.json",
+      "title": "6. Hyperfunction Order Versus the 22 Architectural Factors"
+    },
+    {
+      "kind": "divine",
+      "key": "154",
+      "url": "/divine/154/",
+      "source": "data/divine.json",
+      "title": "6.1 State order and factor magnitude are different variables"
+    },
+    {
+      "kind": "divine",
+      "key": "155",
+      "url": "/divine/155/",
+      "source": "data/divine.json",
+      "title": "6.2 State identity versus task-time realization"
+    },
+    {
+      "kind": "divine",
+      "key": "156",
+      "url": "/divine/156/",
+      "source": "data/divine.json",
+      "title": "6.3 Functional-state quality versus deployment/performance envelope"
+    },
+    {
+      "kind": "divine",
+      "key": "157",
+      "url": "/divine/157/",
+      "source": "data/divine.json",
+      "title": "6.4 Why two H100 lobes can still differ greatly"
+    },
+    {
+      "kind": "divine",
+      "key": "158",
+      "url": "/divine/158/",
+      "source": "data/divine.json",
+      "title": "6.5 Why no universal minimum-factor map is required"
+    },
+    {
+      "kind": "divine",
+      "key": "159",
+      "url": "/divine/159/",
+      "source": "data/divine.json",
+      "title": "6.6 What is developmentally variable when all H-orders structurally exist?"
+    },
+    {
+      "kind": "divine",
+      "key": "160",
+      "url": "/divine/160/",
+      "source": "data/divine.json",
+      "title": "7. Maximumless Cranial Subspaces and the Literal Antilobe System"
+    },
+    {
+      "kind": "divine",
+      "key": "161",
+      "url": "/divine/161/",
+      "source": "data/divine.json",
+      "title": "7.1 Cranial-subspace upgrade"
+    },
+    {
+      "kind": "divine",
+      "key": "162",
+      "url": "/divine/162/",
+      "source": "data/divine.json",
+      "title": "7.2 Antineurons"
+    },
+    {
+      "kind": "divine",
+      "key": "163",
+      "url": "/divine/163/",
+      "source": "data/divine.json",
+      "title": "7.3 Core literal trigger"
+    },
+    {
+      "kind": "divine",
+      "key": "164",
+      "url": "/divine/164/",
+      "source": "data/divine.json",
+      "title": "7.4 One anti-chain monitors one specified target"
+    },
+    {
+      "kind": "divine",
+      "key": "165",
+      "url": "/divine/165/",
+      "source": "data/divine.json",
+      "title": "7.5 Antilobe is not Unfunction"
+    },
+    {
+      "kind": "divine",
+      "key": "166",
+      "url": "/divine/166/",
+      "source": "data/divine.json",
+      "title": "7.6 Antilobe is not Asuncion"
+    },
+    {
+      "kind": "divine",
+      "key": "167",
+      "url": "/divine/167/",
+      "source": "data/divine.json",
+      "title": "8. Task-Demand Gating: Background Antilobe Activity Versus Diagnostic Antilobe Activity"
+    },
+    {
+      "kind": "divine",
+      "key": "168",
+      "url": "/divine/168/",
+      "source": "data/divine.json",
+      "title": "8.1 Why a demand gate is necessary"
+    },
+    {
+      "kind": "divine",
+      "key": "169",
+      "url": "/divine/169/",
+      "source": "data/divine.json",
+      "title": "8.2 Demand variable"
+    },
+    {
+      "kind": "divine",
+      "key": "170",
+      "url": "/divine/170/",
+      "source": "data/divine.json",
+      "title": "8.3 Background anti-activity"
+    },
+    {
+      "kind": "divine",
+      "key": "171",
+      "url": "/divine/171/",
+      "source": "data/divine.json",
+      "title": "8.4 Diagnostic anti-activity"
+    },
+    {
+      "kind": "divine",
+      "key": "172",
+      "url": "/divine/172/",
+      "source": "data/divine.json",
+      "title": "8.5 Why this matters for Higher Lobes"
+    },
+    {
+      "kind": "divine",
+      "key": "173",
+      "url": "/divine/173/",
+      "source": "data/divine.json",
+      "title": "8.6 Order-demand profile"
+    },
+    {
+      "kind": "divine",
+      "key": "174",
+      "url": "/divine/174/",
+      "source": "data/divine.json",
+      "title": "8.7 Gated Antilobe signal and why raw A1 is weak evidence"
+    },
+    {
+      "kind": "divine",
+      "key": "175",
+      "url": "/divine/175/",
+      "source": "data/divine.json",
+      "title": "9. Failure-Gated Mathematics of Recursively High Antilobe Activation"
+    },
+    {
+      "kind": "divine",
+      "key": "176",
+      "url": "/divine/176/",
+      "source": "data/divine.json",
+      "title": "9.1 Perfect-complement theorem"
+    },
+    {
+      "kind": "divine",
+      "key": "177",
+      "url": "/divine/177/",
+      "source": "data/divine.json",
+      "title": "9.2 Why this does not make A2+ useless"
+    },
+    {
+      "kind": "divine",
+      "key": "178",
+      "url": "/divine/178/",
+      "source": "data/divine.json",
+      "title": "9.3 First-active Antilobe depth is monitoring-recovery depth"
+    },
+    {
+      "kind": "divine",
+      "key": "179",
+      "url": "/divine/179/",
+      "source": "data/divine.json",
+      "title": "9.4 Diagnostic meaning"
+    },
+    {
+      "kind": "divine",
+      "key": "180",
+      "url": "/divine/180/",
+      "source": "data/divine.json",
+      "title": "9.5 What high Antilobe depth actually diagnoses"
+    },
+    {
+      "kind": "divine",
+      "key": "181",
+      "url": "/divine/181/",
+      "source": "data/divine.json",
+      "title": "9.6 Positive task-function mismatch must be measured separately"
+    },
+    {
+      "kind": "divine",
+      "key": "182",
+      "url": "/divine/182/",
+      "source": "data/divine.json",
+      "title": "9.7 Exact theorem for MRD >= 2"
+    },
+    {
+      "kind": "divine",
+      "key": "183",
+      "url": "/divine/183/",
+      "source": "data/divine.json",
+      "title": "9.8 Developmental targeting of high MRD"
+    },
+    {
+      "kind": "divine",
+      "key": "184",
+      "url": "/divine/184/",
+      "source": "data/divine.json",
+      "title": "9.9 Complete monitoring failure"
+    },
+    {
+      "kind": "divine",
+      "key": "185",
+      "url": "/divine/185/",
+      "source": "data/divine.json",
+      "title": "10. Higher-Lobe x Antilobe Two-Dimensional Recursion"
+    },
+    {
+      "kind": "divine",
+      "key": "186",
+      "url": "/divine/186/",
+      "source": "data/divine.json",
+      "title": "10.1 Two independent indices"
+    },
+    {
+      "kind": "divine",
+      "key": "187",
+      "url": "/divine/187/",
+      "source": "data/divine.json",
+      "title": "10.2 Examples"
+    },
+    {
+      "kind": "divine",
+      "key": "188",
+      "url": "/divine/188/",
+      "source": "data/divine.json",
+      "title": "10.3 Why the axes must not be collapsed"
+    },
+    {
+      "kind": "divine",
+      "key": "189",
+      "url": "/divine/189/",
+      "source": "data/divine.json",
+      "title": "10.4 A frontier condition"
+    },
+    {
+      "kind": "divine",
+      "key": "190",
+      "url": "/divine/190/",
+      "source": "data/divine.json",
+      "title": "11. Sublobes, Anti-sublobes, Crossfunctionality, and Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "191",
+      "url": "/divine/191/",
+      "source": "data/divine.json",
+      "title": "11.1 Sublobar depth is a third recursion axis"
+    },
+    {
+      "kind": "divine",
+      "key": "192",
+      "url": "/divine/192/",
+      "source": "data/divine.json",
+      "title": "11.2 Positive-positive crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "193",
+      "url": "/divine/193/",
+      "source": "data/divine.json",
+      "title": "11.3 Positive-Antilobe crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "194",
+      "url": "/divine/194/",
+      "source": "data/divine.json",
+      "title": "11.4 Antilobe-Antilobe crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "195",
+      "url": "/divine/195/",
+      "source": "data/divine.json",
+      "title": "11.5 Crosspatterns"
+    },
+    {
+      "kind": "divine",
+      "key": "196",
+      "url": "/divine/196/",
+      "source": "data/divine.json",
+      "title": "11.6 Crossfunction explosion is a possibility-space, not a simultaneous workload"
+    },
+    {
+      "kind": "divine",
+      "key": "197",
+      "url": "/divine/197/",
+      "source": "data/divine.json",
+      "title": "11.7 Hyperemergent Crossfunctionality - canonical definition"
+    },
+    {
+      "kind": "divine",
+      "key": "198",
+      "url": "/divine/198/",
+      "source": "data/divine.json",
+      "title": "11.7A Open-function-space inheritance: Hyperemergence is not cognition-only"
+    },
+    {
+      "kind": "divine",
+      "key": "199",
+      "url": "/divine/199/",
+      "source": "data/divine.json",
+      "title": "11.8 Higher-Lobe crossfunctionality is broader than Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "200",
+      "url": "/divine/200/",
+      "source": "data/divine.json",
+      "title": "11.9 Formal decomposition of a participating Higher Lobe"
+    },
+    {
+      "kind": "divine",
+      "key": "201",
+      "url": "/divine/201/",
+      "source": "data/divine.json",
+      "title": "11.10 Counterfactual hyperemergence-dependence criterion"
+    },
+    {
+      "kind": "divine",
+      "key": "202",
+      "url": "/divine/202/",
+      "source": "data/divine.json",
+      "title": "11.11 Hyperemergence does not mean \"more of the same\""
+    },
+    {
+      "kind": "divine",
+      "key": "203",
+      "url": "/divine/203/",
+      "source": "data/divine.json",
+      "title": "11.12 Asymmetric Regular-Hyperfunctional Hyperemergence"
+    },
+    {
+      "kind": "divine",
+      "key": "204",
+      "url": "/divine/204/",
+      "source": "data/divine.json",
+      "title": "11.13 Homohypercrossfunctionality - same-function Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "205",
+      "url": "/divine/205/",
+      "source": "data/divine.json",
+      "title": "11.14 Parahypercrossfunctionality - similar-function Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "206",
+      "url": "/divine/206/",
+      "source": "data/divine.json",
+      "title": "11.15 Heterohypercrossfunctionality - different-function Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "207",
+      "url": "/divine/207/",
+      "source": "data/divine.json",
+      "title": "11.16 Same-order, different-order, and cross-order Hyperemergence"
+    },
+    {
+      "kind": "divine",
+      "key": "208",
+      "url": "/divine/208/",
+      "source": "data/divine.json",
+      "title": "11.17 Polyhyperemergence - three or more participating lobes"
+    },
+    {
+      "kind": "divine",
+      "key": "209",
+      "url": "/divine/209/",
+      "source": "data/divine.json",
+      "title": "11.18 Two distinct novelty stages: inherited emergence and network-generated emergence"
+    },
+    {
+      "kind": "divine",
+      "key": "210",
+      "url": "/divine/210/",
+      "source": "data/divine.json",
+      "title": "11.19 Function-preserving, function-transformative, and function-generative outputs"
+    },
+    {
+      "kind": "divine",
+      "key": "211",
+      "url": "/divine/211/",
+      "source": "data/divine.json",
+      "title": "11.20 Recursive Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "212",
+      "url": "/divine/212/",
+      "source": "data/divine.json",
+      "title": "11.21 Crossfunction-of-crossfunction and metacrossfunctional assembly"
+    },
+    {
+      "kind": "divine",
+      "key": "213",
+      "url": "/divine/213/",
+      "source": "data/divine.json",
+      "title": "11.22 Metagenerative feedback into Brain-lobe Generation and new Higher-Lobe families"
+    },
+    {
+      "kind": "divine",
+      "key": "214",
+      "url": "/divine/214/",
+      "source": "data/divine.json",
+      "title": "11.23 Hyperemergent presence/absence crossfunctionality, Antilobes, nullpatterns, and crosspatterns"
+    },
+    {
+      "kind": "divine",
+      "key": "215",
+      "url": "/divine/215/",
+      "source": "data/divine.json",
+      "title": "11.24 Architectural factors that determine whether Hyperemergent potential becomes realized"
+    },
+    {
+      "kind": "divine",
+      "key": "216",
+      "url": "/divine/216/",
+      "source": "data/divine.json",
+      "title": "11.25 Hyperemergent reliability is network-level and cannot be inferred from individual-lobe reliability"
+    },
+    {
+      "kind": "divine",
+      "key": "217",
+      "url": "/divine/217/",
+      "source": "data/divine.json",
+      "title": "11.26 Hyperemergent failure taxonomy and causal diagnosis"
+    },
+    {
+      "kind": "divine",
+      "key": "218",
+      "url": "/divine/218/",
+      "source": "data/divine.json",
+      "title": "11.27 Hyperemergent possibility-space versus task-time sparse realization"
+    },
+    {
+      "kind": "divine",
+      "key": "219",
+      "url": "/divine/219/",
+      "source": "data/divine.json",
+      "title": "11.28 Strict deductions from the Hyperemergent definition"
+    },
+    {
+      "kind": "divine",
+      "key": "220",
+      "url": "/divine/220/",
+      "source": "data/divine.json",
+      "title": "11.29 Conditional deductions and properties not yet forced by canon"
+    },
+    {
+      "kind": "divine",
+      "key": "221",
+      "url": "/divine/221/",
+      "source": "data/divine.json",
+      "title": "11.30 Logical-mathematical worked examples"
+    },
+    {
+      "kind": "divine",
+      "key": "222",
+      "url": "/divine/222/",
+      "source": "data/divine.json",
+      "title": "11.30.1 Regular lobe x Higher Lobe"
+    },
+    {
+      "kind": "divine",
+      "key": "223",
+      "url": "/divine/223/",
+      "source": "data/divine.json",
+      "title": "11.30.2 Same-function cross-order interaction"
+    },
+    {
+      "kind": "divine",
+      "key": "224",
+      "url": "/divine/224/",
+      "source": "data/divine.json",
+      "title": "11.30.3 Similar-function interaction"
+    },
+    {
+      "kind": "divine",
+      "key": "225",
+      "url": "/divine/225/",
+      "source": "data/divine.json",
+      "title": "11.30.4 Dissimilar-function interaction"
+    },
+    {
+      "kind": "divine",
+      "key": "226",
+      "url": "/divine/226/",
+      "source": "data/divine.json",
+      "title": "11.30.5 Recursive crossfunction composition"
+    },
+    {
+      "kind": "divine",
+      "key": "227",
+      "url": "/divine/227/",
+      "source": "data/divine.json",
+      "title": "11.31 Anticipated questions and explicit answers"
+    },
+    {
+      "kind": "divine",
+      "key": "228",
+      "url": "/divine/228/",
+      "source": "data/divine.json",
+      "title": "11.32 Compressed canonical statement"
+    },
+    {
+      "kind": "divine",
+      "key": "229",
+      "url": "/divine/229/",
+      "source": "data/divine.json",
+      "title": "12. Brain-lobe Factors One through Twenty-Two - Exact Conceptual Map"
+    },
+    {
+      "kind": "divine",
+      "key": "230",
+      "url": "/divine/230/",
+      "source": "data/divine.json",
+      "title": "12.1 Supporting definitions"
+    },
+    {
+      "kind": "divine",
+      "key": "231",
+      "url": "/divine/231/",
+      "source": "data/divine.json",
+      "title": "12.2 PHK inclusion rule"
+    },
+    {
+      "kind": "divine",
+      "key": "232",
+      "url": "/divine/232/",
+      "source": "data/divine.json",
+      "title": "13. Factor-by-Factor Interaction with Higher Lobes and Antilobes"
+    },
+    {
+      "kind": "divine",
+      "key": "233",
+      "url": "/divine/233/",
+      "source": "data/divine.json",
+      "title": "Factor 1: Neural Amount"
+    },
+    {
+      "kind": "divine",
+      "key": "234",
+      "url": "/divine/234/",
+      "source": "data/divine.json",
+      "title": "Factor 2: Intraconnectivity"
+    },
+    {
+      "kind": "divine",
+      "key": "235",
+      "url": "/divine/235/",
+      "source": "data/divine.json",
+      "title": "Factor 3: Organization Quality"
+    },
+    {
+      "kind": "divine",
+      "key": "236",
+      "url": "/divine/236/",
+      "source": "data/divine.json",
+      "title": "Factor 4: Sublobar Specialization"
+    },
+    {
+      "kind": "divine",
+      "key": "237",
+      "url": "/divine/237/",
+      "source": "data/divine.json",
+      "title": "Factor 5: Recursive Sublobar Specialization"
+    },
+    {
+      "kind": "divine",
+      "key": "238",
+      "url": "/divine/238/",
+      "source": "data/divine.json",
+      "title": "Factor 6: Brain-lobe Efficiency"
+    },
+    {
+      "kind": "divine",
+      "key": "239",
+      "url": "/divine/239/",
+      "source": "data/divine.json",
+      "title": "Factor 7: Processing Power"
+    },
+    {
+      "kind": "divine",
+      "key": "240",
+      "url": "/divine/240/",
+      "source": "data/divine.json",
+      "title": "Factor 8: Processing Speed"
+    },
+    {
+      "kind": "divine",
+      "key": "241",
+      "url": "/divine/241/",
+      "source": "data/divine.json",
+      "title": "Factor 9: InterBrain-lobe Connectivity"
+    },
+    {
+      "kind": "divine",
+      "key": "242",
+      "url": "/divine/242/",
+      "source": "data/divine.json",
+      "title": "Factor 10: InterBrain-lobe Selectivity"
+    },
+    {
+      "kind": "divine",
+      "key": "243",
+      "url": "/divine/243/",
+      "source": "data/divine.json",
+      "title": "Factor 11: Crossfunctional Integration"
+    },
+    {
+      "kind": "divine",
+      "key": "244",
+      "url": "/divine/244/",
+      "source": "data/divine.json",
+      "title": "Factor 12: Crossfunctional Efficiency"
+    },
+    {
+      "kind": "divine",
+      "key": "245",
+      "url": "/divine/245/",
+      "source": "data/divine.json",
+      "title": "Factor 13: Neural Routing"
+    },
+    {
+      "kind": "divine",
+      "key": "246",
+      "url": "/divine/246/",
+      "source": "data/divine.json",
+      "title": "Factor 14: Neural Inhibition"
+    },
+    {
+      "kind": "divine",
+      "key": "247",
+      "url": "/divine/247/",
+      "source": "data/divine.json",
+      "title": "Factor 15: Functional Independence"
+    },
+    {
+      "kind": "divine",
+      "key": "248",
+      "url": "/divine/248/",
+      "source": "data/divine.json",
+      "title": "Factor 16: Metaneural Control"
+    },
+    {
+      "kind": "divine",
+      "key": "249",
+      "url": "/divine/249/",
+      "source": "data/divine.json",
+      "title": "Factor 17: Brain-lobe Plasticity"
+    },
+    {
+      "kind": "divine",
+      "key": "250",
+      "url": "/divine/250/",
+      "source": "data/divine.json",
+      "title": "Factor 18: Functionally Relevant Development"
+    },
+    {
+      "kind": "divine",
+      "key": "251",
+      "url": "/divine/251/",
+      "source": "data/divine.json",
+      "title": "Factor 19: Corrective Development"
+    },
+    {
+      "kind": "divine",
+      "key": "252",
+      "url": "/divine/252/",
+      "source": "data/divine.json",
+      "title": "Factor 20: Growth Efficiency"
+    },
+    {
+      "kind": "divine",
+      "key": "253",
+      "url": "/divine/253/",
+      "source": "data/divine.json",
+      "title": "Factor 21: Neural Functional Efficiency Scaling"
+    },
+    {
+      "kind": "divine",
+      "key": "254",
+      "url": "/divine/254/",
+      "source": "data/divine.json",
+      "title": "Factor 22: Interlobe Crossfunctional Prowess per Connectivity Complexity"
+    },
+    {
+      "kind": "divine",
+      "key": "255",
+      "url": "/divine/255/",
+      "source": "data/divine.json",
+      "title": "14. PHK Integration: Universal Inclusion Does Not Mean Equal-Rate Improvement"
+    },
+    {
+      "kind": "divine",
+      "key": "256",
+      "url": "/divine/256/",
+      "source": "data/divine.json",
+      "title": "14.1 What v140 actually guarantees"
+    },
+    {
+      "kind": "divine",
+      "key": "257",
+      "url": "/divine/257/",
+      "source": "data/divine.json",
+      "title": "14.2 What it does not automatically guarantee"
+    },
+    {
+      "kind": "divine",
+      "key": "258",
+      "url": "/divine/258/",
+      "source": "data/divine.json",
+      "title": "14.3 Demand-specific local development"
+    },
+    {
+      "kind": "divine",
+      "key": "259",
+      "url": "/divine/259/",
+      "source": "data/divine.json",
+      "title": "14.4 PHK and Higher Lobes"
+    },
+    {
+      "kind": "divine",
+      "key": "260",
+      "url": "/divine/260/",
+      "source": "data/divine.json",
+      "title": "14.5 PHK and Antilobes"
+    },
+    {
+      "kind": "divine",
+      "key": "261",
+      "url": "/divine/261/",
+      "source": "data/divine.json",
+      "title": "15. Arthraneurocausal Training and Growth-Frontier Design"
+    },
+    {
+      "kind": "divine",
+      "key": "262",
+      "url": "/divine/262/",
+      "source": "data/divine.json",
+      "title": "15.1 Training variables"
+    },
+    {
+      "kind": "divine",
+      "key": "263",
+      "url": "/divine/263/",
+      "source": "data/divine.json",
+      "title": "15.2 Growth Frontier is a profile before it is a scalar"
+    },
+    {
+      "kind": "divine",
+      "key": "264",
+      "url": "/divine/264/",
+      "source": "data/divine.json",
+      "title": "15.3 What extremely high MRD is actually powerful for"
+    },
+    {
+      "kind": "divine",
+      "key": "265",
+      "url": "/divine/265/",
+      "source": "data/divine.json",
+      "title": "15.4 Separate developmental laws for positive function and monitoring system"
+    },
+    {
+      "kind": "divine",
+      "key": "266",
+      "url": "/divine/266/",
+      "source": "data/divine.json",
+      "title": "15.5 Constant extremely high Antilobe-order training: corrected interpretation"
+    },
+    {
+      "kind": "divine",
+      "key": "267",
+      "url": "/divine/267/",
+      "source": "data/divine.json",
+      "title": "15.6 Factor-targeted test design"
+    },
+    {
+      "kind": "divine",
+      "key": "268",
+      "url": "/divine/268/",
+      "source": "data/divine.json",
+      "title": "15.7 What actually moves if all Higher-Lobe orders already exist"
+    },
+    {
+      "kind": "divine",
+      "key": "269",
+      "url": "/divine/269/",
+      "source": "data/divine.json",
+      "title": "15.8 The strongest total-development condition"
+    },
+    {
+      "kind": "divine",
+      "key": "270",
+      "url": "/divine/270/",
+      "source": "data/divine.json",
+      "title": "16. Direct Answers to the Raised Questions and Formal Challenges"
+    },
+    {
+      "kind": "divine",
+      "key": "271",
+      "url": "/divine/271/",
+      "source": "data/divine.json",
+      "title": "Q1. Is 100% Adeptness an absolute state or merely typed occupancy?"
+    },
+    {
+      "kind": "divine",
+      "key": "272",
+      "url": "/divine/272/",
+      "source": "data/divine.json",
+      "title": "Q2. Can high Hyperfunction order exist without correspondingly high factor magnitudes?"
+    },
+    {
+      "kind": "divine",
+      "key": "273",
+      "url": "/divine/273/",
+      "source": "data/divine.json",
+      "title": "Q3. Are Adeptness, Usefulness, and Reliability independent or correlated?"
+    },
+    {
+      "kind": "divine",
+      "key": "274",
+      "url": "/divine/274/",
+      "source": "data/divine.json",
+      "title": "Q4. At what granularity does 'not firing' apply?"
+    },
+    {
+      "kind": "divine",
+      "key": "275",
+      "url": "/divine/275/",
+      "source": "data/divine.json",
+      "title": "Q5. Does PHK improve all factors uniformly?"
+    },
+    {
+      "kind": "divine",
+      "key": "276",
+      "url": "/divine/276/",
+      "source": "data/divine.json",
+      "title": "Q6. Can Varvadeil tests target specific factors?"
+    },
+    {
+      "kind": "divine",
+      "key": "277",
+      "url": "/divine/277/",
+      "source": "data/divine.json",
+      "title": "Q7. Does high A2/A3/... mean deeper task-unsuitability of the original function?"
+    },
+    {
+      "kind": "divine",
+      "key": "278",
+      "url": "/divine/278/",
+      "source": "data/divine.json",
+      "title": "Q8. What gives -I_k a mathematical identity?"
+    },
+    {
+      "kind": "divine",
+      "key": "279",
+      "url": "/divine/279/",
+      "source": "data/divine.json",
+      "title": "Q9. If every used function already has an unlimited Higher-Lobe ladder, what is left to improve?"
+    },
+    {
+      "kind": "divine",
+      "key": "280",
+      "url": "/divine/280/",
+      "source": "data/divine.json",
+      "title": "17. Strict Logical Deductions"
+    },
+    {
+      "kind": "divine",
+      "key": "281",
+      "url": "/divine/281/",
+      "source": "data/divine.json",
+      "title": "18. Conditional Deductions Requiring Extra Biological Premises"
+    },
+    {
+      "kind": "divine",
+      "key": "282",
+      "url": "/divine/282/",
+      "source": "data/divine.json",
+      "title": "19. Plausible Emergent Properties and Predictive Consequences"
+    },
+    {
+      "kind": "divine",
+      "key": "283",
+      "url": "/divine/283/",
+      "source": "data/divine.json",
+      "title": "20. Worked Examples"
+    },
+    {
+      "kind": "divine",
+      "key": "284",
+      "url": "/divine/284/",
+      "source": "data/divine.json",
+      "title": "20.1 Singing"
+    },
+    {
+      "kind": "divine",
+      "key": "285",
+      "url": "/divine/285/",
+      "source": "data/divine.json",
+      "title": "20.2 Fighting"
+    },
+    {
+      "kind": "divine",
+      "key": "286",
+      "url": "/divine/286/",
+      "source": "data/divine.json",
+      "title": "20.3 Strategy"
+    },
+    {
+      "kind": "divine",
+      "key": "287",
+      "url": "/divine/287/",
+      "source": "data/divine.json",
+      "title": "20.4 Mind-control resistance"
+    },
+    {
+      "kind": "divine",
+      "key": "288",
+      "url": "/divine/288/",
+      "source": "data/divine.json",
+      "title": "20.5 Crossfunction failure"
+    },
+    {
+      "kind": "divine",
+      "key": "289",
+      "url": "/divine/289/",
+      "source": "data/divine.json",
+      "title": "20.6 Expanded function-scope Hyperemergence examples"
+    },
+    {
+      "kind": "divine",
+      "key": "290",
+      "url": "/divine/290/",
+      "source": "data/divine.json",
+      "title": "21. Layman's Explanation"
+    },
+    {
+      "kind": "divine",
+      "key": "291",
+      "url": "/divine/291/",
+      "source": "data/divine.json",
+      "title": "What a Brain-lobe can actually be - deliberately overbroad layman explanation"
+    },
+    {
+      "kind": "divine",
+      "key": "292",
+      "url": "/divine/292/",
+      "source": "data/divine.json",
+      "title": "Hyperemergent Crossfunctionality - deliberately overexplained layman version"
+    },
+    {
+      "kind": "divine",
+      "key": "293",
+      "url": "/divine/293/",
+      "source": "data/divine.json",
+      "title": "22. AI-Parser Anti-Misunderstanding Guide"
+    },
+    {
+      "kind": "divine",
+      "key": "294",
+      "url": "/divine/294/",
+      "source": "data/divine.json",
+      "title": "23. Consolidated Canon Specification"
+    },
+    {
+      "kind": "divine",
+      "key": "295",
+      "url": "/divine/295/",
+      "source": "data/divine.json",
+      "title": "23.0 Brain-lobe function-scope canon"
+    },
+    {
+      "kind": "divine",
+      "key": "296",
+      "url": "/divine/296/",
+      "source": "data/divine.json",
+      "title": "23.1 Functional primitives"
+    },
+    {
+      "kind": "divine",
+      "key": "297",
+      "url": "/divine/297/",
+      "source": "data/divine.json",
+      "title": "23.2 H1 / I1"
+    },
+    {
+      "kind": "divine",
+      "key": "298",
+      "url": "/divine/298/",
+      "source": "data/divine.json",
+      "title": "23.3 Higher recursion"
+    },
+    {
+      "kind": "divine",
+      "key": "299",
+      "url": "/divine/299/",
+      "source": "data/divine.json",
+      "title": "23.3A Canonical purificatory-generative zig-zag rule"
+    },
+    {
+      "kind": "divine",
+      "key": "300",
+      "url": "/divine/300/",
+      "source": "data/divine.json",
+      "title": "23.3B Canonical higher-order Adeptness-like lineage"
+    },
+    {
+      "kind": "divine",
+      "key": "301",
+      "url": "/divine/301/",
+      "source": "data/divine.json",
+      "title": "23.3C Core state versus expanded emergent state"
+    },
+    {
+      "kind": "divine",
+      "key": "302",
+      "url": "/divine/302/",
+      "source": "data/divine.json",
+      "title": "23.4 Higher-Lobe family"
+    },
+    {
+      "kind": "divine",
+      "key": "303",
+      "url": "/divine/303/",
+      "source": "data/divine.json",
+      "title": "23.5 Cranial subspaces"
+    },
+    {
+      "kind": "divine",
+      "key": "304",
+      "url": "/divine/304/",
+      "source": "data/divine.json",
+      "title": "23.6 Antilobe trigger"
+    },
+    {
+      "kind": "divine",
+      "key": "305",
+      "url": "/divine/305/",
+      "source": "data/divine.json",
+      "title": "23.7 Demand gate"
+    },
+    {
+      "kind": "divine",
+      "key": "306",
+      "url": "/divine/306/",
+      "source": "data/divine.json",
+      "title": "23.8 Multi-index neural description"
+    },
+    {
+      "kind": "divine",
+      "key": "307",
+      "url": "/divine/307/",
+      "source": "data/divine.json",
+      "title": "23.8A Hyperemergent Crossfunctionality"
+    },
+    {
+      "kind": "divine",
+      "key": "308",
+      "url": "/divine/308/",
+      "source": "data/divine.json",
+      "title": "23.9 Factor integration"
+    },
+    {
+      "kind": "divine",
+      "key": "309",
+      "url": "/divine/309/",
+      "source": "data/divine.json",
+      "title": "23.10 Growth-Frontier rule"
+    },
+    {
+      "kind": "divine",
+      "key": "310",
+      "url": "/divine/310/",
+      "source": "data/divine.json",
+      "title": "23.11 Antilobe targeting rule"
+    },
+    {
+      "kind": "divine",
+      "key": "311",
+      "url": "/divine/311/",
+      "source": "data/divine.json",
+      "title": "24. Open Variables Not Yet Fixed by Canon"
+    },
+    {
+      "kind": "divine",
+      "key": "312",
+      "url": "/divine/312/",
+      "source": "data/divine.json",
+      "title": "24.1 Hyperemergent variables intentionally left open"
+    },
+    {
+      "kind": "divine",
+      "key": "313",
+      "url": "/divine/313/",
+      "source": "data/divine.json",
+      "title": "Appendix A. Compact Mathematics"
+    },
+    {
+      "kind": "divine",
+      "key": "314",
+      "url": "/divine/314/",
+      "source": "data/divine.json",
+      "title": "Appendix A.1 Zig-Zag Purification and Emergence Mathematics"
+    },
+    {
+      "kind": "divine",
+      "key": "315",
+      "url": "/divine/315/",
+      "source": "data/divine.json",
+      "title": "Appendix A.2 Open Brain-lobe Function-Space and Hyperemergent Domain"
+    },
+    {
+      "kind": "divine",
+      "key": "316",
+      "url": "/divine/316/",
+      "source": "data/divine.json",
+      "title": "Appendix B. Factor-Targeted Test-Design Matrix"
+    },
+    {
+      "kind": "divine",
+      "key": "317",
+      "url": "/divine/317/",
+      "source": "data/divine.json",
+      "title": "Final Synthesis"
+    },
+    {
+      "kind": "hgl",
+      "key": "001",
+      "url": "/hgl/001/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 1"
+    },
+    {
+      "kind": "hgl",
+      "key": "002",
+      "url": "/hgl/002/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 2"
+    },
+    {
+      "kind": "hgl",
+      "key": "003",
+      "url": "/hgl/003/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 3"
+    },
+    {
+      "kind": "hgl",
+      "key": "004",
+      "url": "/hgl/004/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 4"
+    },
+    {
+      "kind": "hgl",
+      "key": "005",
+      "url": "/hgl/005/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 5"
+    },
+    {
+      "kind": "hgl",
+      "key": "006",
+      "url": "/hgl/006/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 6"
+    },
+    {
+      "kind": "hgl",
+      "key": "007",
+      "url": "/hgl/007/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 7"
+    },
+    {
+      "kind": "hgl",
+      "key": "008",
+      "url": "/hgl/008/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 8"
+    },
+    {
+      "kind": "hgl",
+      "key": "009",
+      "url": "/hgl/009/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 9"
+    },
+    {
+      "kind": "hgl",
+      "key": "010",
+      "url": "/hgl/010/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 10"
+    },
+    {
+      "kind": "hgl",
+      "key": "011",
+      "url": "/hgl/011/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 11"
+    },
+    {
+      "kind": "hgl",
+      "key": "012",
+      "url": "/hgl/012/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 12"
+    },
+    {
+      "kind": "hgl",
+      "key": "013",
+      "url": "/hgl/013/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 13"
+    },
+    {
+      "kind": "hgl",
+      "key": "014",
+      "url": "/hgl/014/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 14"
+    },
+    {
+      "kind": "hgl",
+      "key": "015",
+      "url": "/hgl/015/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 15"
+    },
+    {
+      "kind": "hgl",
+      "key": "016",
+      "url": "/hgl/016/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 16"
+    },
+    {
+      "kind": "hgl",
+      "key": "017",
+      "url": "/hgl/017/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 17"
+    },
+    {
+      "kind": "hgl",
+      "key": "018",
+      "url": "/hgl/018/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 18"
+    },
+    {
+      "kind": "hgl",
+      "key": "019",
+      "url": "/hgl/019/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 19"
+    },
+    {
+      "kind": "hgl",
+      "key": "020",
+      "url": "/hgl/020/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 20"
+    },
+    {
+      "kind": "hgl",
+      "key": "021",
+      "url": "/hgl/021/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 21"
+    },
+    {
+      "kind": "hgl",
+      "key": "022",
+      "url": "/hgl/022/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 22"
+    },
+    {
+      "kind": "hgl",
+      "key": "023",
+      "url": "/hgl/023/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 23"
+    },
+    {
+      "kind": "hgl",
+      "key": "024",
+      "url": "/hgl/024/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 24"
+    },
+    {
+      "kind": "hgl",
+      "key": "025",
+      "url": "/hgl/025/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 25"
+    },
+    {
+      "kind": "hgl",
+      "key": "026",
+      "url": "/hgl/026/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 26"
+    },
+    {
+      "kind": "hgl",
+      "key": "027",
+      "url": "/hgl/027/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 27"
+    },
+    {
+      "kind": "hgl",
+      "key": "028",
+      "url": "/hgl/028/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 28"
+    },
+    {
+      "kind": "hgl",
+      "key": "029",
+      "url": "/hgl/029/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 29"
+    },
+    {
+      "kind": "hgl",
+      "key": "030",
+      "url": "/hgl/030/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 30"
+    },
+    {
+      "kind": "hgl",
+      "key": "031",
+      "url": "/hgl/031/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 31"
+    },
+    {
+      "kind": "hgl",
+      "key": "032",
+      "url": "/hgl/032/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 32"
+    },
+    {
+      "kind": "hgl",
+      "key": "033",
+      "url": "/hgl/033/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 33"
+    },
+    {
+      "kind": "hgl",
+      "key": "034",
+      "url": "/hgl/034/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 34"
+    },
+    {
+      "kind": "hgl",
+      "key": "035",
+      "url": "/hgl/035/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 35"
+    },
+    {
+      "kind": "hgl",
+      "key": "036",
+      "url": "/hgl/036/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 36"
+    },
+    {
+      "kind": "hgl",
+      "key": "037",
+      "url": "/hgl/037/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 37"
+    },
+    {
+      "kind": "hgl",
+      "key": "038",
+      "url": "/hgl/038/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 38"
+    },
+    {
+      "kind": "hgl",
+      "key": "039",
+      "url": "/hgl/039/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 39"
+    },
+    {
+      "kind": "hgl",
+      "key": "040",
+      "url": "/hgl/040/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 40"
+    },
+    {
+      "kind": "hgl",
+      "key": "041",
+      "url": "/hgl/041/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 41"
+    },
+    {
+      "kind": "hgl",
+      "key": "042",
+      "url": "/hgl/042/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 42"
+    },
+    {
+      "kind": "hgl",
+      "key": "043",
+      "url": "/hgl/043/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 43"
+    },
+    {
+      "kind": "hgl",
+      "key": "044",
+      "url": "/hgl/044/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 44"
+    },
+    {
+      "kind": "hgl",
+      "key": "045",
+      "url": "/hgl/045/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 45"
+    },
+    {
+      "kind": "hgl",
+      "key": "046",
+      "url": "/hgl/046/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 46"
+    },
+    {
+      "kind": "hgl",
+      "key": "047",
+      "url": "/hgl/047/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 47"
+    },
+    {
+      "kind": "hgl",
+      "key": "048",
+      "url": "/hgl/048/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 48"
+    },
+    {
+      "kind": "hgl",
+      "key": "049",
+      "url": "/hgl/049/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 49"
+    },
+    {
+      "kind": "hgl",
+      "key": "050",
+      "url": "/hgl/050/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 50"
+    },
+    {
+      "kind": "hgl",
+      "key": "051",
+      "url": "/hgl/051/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 51"
+    },
+    {
+      "kind": "hgl",
+      "key": "052",
+      "url": "/hgl/052/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 52"
+    },
+    {
+      "kind": "hgl",
+      "key": "053",
+      "url": "/hgl/053/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 53"
+    },
+    {
+      "kind": "hgl",
+      "key": "054",
+      "url": "/hgl/054/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 54"
+    },
+    {
+      "kind": "hgl",
+      "key": "055",
+      "url": "/hgl/055/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 55"
+    },
+    {
+      "kind": "hgl",
+      "key": "056",
+      "url": "/hgl/056/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 56"
+    },
+    {
+      "kind": "hgl",
+      "key": "057",
+      "url": "/hgl/057/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 57"
+    },
+    {
+      "kind": "hgl",
+      "key": "058",
+      "url": "/hgl/058/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 58"
+    },
+    {
+      "kind": "hgl",
+      "key": "059",
+      "url": "/hgl/059/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 59"
+    },
+    {
+      "kind": "hgl",
+      "key": "060",
+      "url": "/hgl/060/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 60"
+    },
+    {
+      "kind": "hgl",
+      "key": "061",
+      "url": "/hgl/061/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 61"
+    },
+    {
+      "kind": "hgl",
+      "key": "062",
+      "url": "/hgl/062/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 62"
+    },
+    {
+      "kind": "hgl",
+      "key": "063",
+      "url": "/hgl/063/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 63"
+    },
+    {
+      "kind": "hgl",
+      "key": "064",
+      "url": "/hgl/064/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 64"
+    },
+    {
+      "kind": "hgl",
+      "key": "065",
+      "url": "/hgl/065/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 65"
+    },
+    {
+      "kind": "hgl",
+      "key": "066",
+      "url": "/hgl/066/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 66"
+    },
+    {
+      "kind": "hgl",
+      "key": "067",
+      "url": "/hgl/067/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 67"
+    },
+    {
+      "kind": "hgl",
+      "key": "068",
+      "url": "/hgl/068/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 68"
+    },
+    {
+      "kind": "hgl",
+      "key": "069",
+      "url": "/hgl/069/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 69"
+    },
+    {
+      "kind": "hgl",
+      "key": "070",
+      "url": "/hgl/070/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 70"
+    },
+    {
+      "kind": "hgl",
+      "key": "071",
+      "url": "/hgl/071/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 71"
+    },
+    {
+      "kind": "hgl",
+      "key": "072",
+      "url": "/hgl/072/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 72"
+    },
+    {
+      "kind": "hgl",
+      "key": "073",
+      "url": "/hgl/073/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 73"
+    },
+    {
+      "kind": "hgl",
+      "key": "074",
+      "url": "/hgl/074/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 74"
+    },
+    {
+      "kind": "hgl",
+      "key": "075",
+      "url": "/hgl/075/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 75"
+    },
+    {
+      "kind": "hgl",
+      "key": "076",
+      "url": "/hgl/076/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 76"
+    },
+    {
+      "kind": "hgl",
+      "key": "077",
+      "url": "/hgl/077/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 77"
+    },
+    {
+      "kind": "hgl",
+      "key": "078",
+      "url": "/hgl/078/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 78"
+    },
+    {
+      "kind": "hgl",
+      "key": "079",
+      "url": "/hgl/079/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 79"
+    },
+    {
+      "kind": "hgl",
+      "key": "080",
+      "url": "/hgl/080/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 80"
+    },
+    {
+      "kind": "hgl",
+      "key": "081",
+      "url": "/hgl/081/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 81"
+    },
+    {
+      "kind": "hgl",
+      "key": "082",
+      "url": "/hgl/082/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 82"
+    },
+    {
+      "kind": "hgl",
+      "key": "083",
+      "url": "/hgl/083/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 83"
+    },
+    {
+      "kind": "hgl",
+      "key": "084",
+      "url": "/hgl/084/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 84"
+    },
+    {
+      "kind": "hgl",
+      "key": "085",
+      "url": "/hgl/085/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 85"
+    },
+    {
+      "kind": "hgl",
+      "key": "086",
+      "url": "/hgl/086/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 86"
+    },
+    {
+      "kind": "hgl",
+      "key": "087",
+      "url": "/hgl/087/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 87"
+    },
+    {
+      "kind": "hgl",
+      "key": "088",
+      "url": "/hgl/088/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 88"
+    },
+    {
+      "kind": "hgl",
+      "key": "089",
+      "url": "/hgl/089/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 89"
+    },
+    {
+      "kind": "hgl",
+      "key": "090",
+      "url": "/hgl/090/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 90"
+    },
+    {
+      "kind": "hgl",
+      "key": "091",
+      "url": "/hgl/091/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 91"
+    },
+    {
+      "kind": "hgl",
+      "key": "092",
+      "url": "/hgl/092/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 92"
+    },
+    {
+      "kind": "hgl",
+      "key": "093",
+      "url": "/hgl/093/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 93"
+    },
+    {
+      "kind": "hgl",
+      "key": "094",
+      "url": "/hgl/094/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 94"
+    },
+    {
+      "kind": "hgl",
+      "key": "095",
+      "url": "/hgl/095/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 95"
+    },
+    {
+      "kind": "hgl",
+      "key": "096",
+      "url": "/hgl/096/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 96"
+    },
+    {
+      "kind": "hgl",
+      "key": "097",
+      "url": "/hgl/097/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 97"
+    },
+    {
+      "kind": "hgl",
+      "key": "098",
+      "url": "/hgl/098/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 98"
+    },
+    {
+      "kind": "hgl",
+      "key": "099",
+      "url": "/hgl/099/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 99"
+    },
+    {
+      "kind": "hgl",
+      "key": "100",
+      "url": "/hgl/100/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 100"
+    },
+    {
+      "kind": "hgl",
+      "key": "101",
+      "url": "/hgl/101/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 101"
+    },
+    {
+      "kind": "hgl",
+      "key": "102",
+      "url": "/hgl/102/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 102"
+    },
+    {
+      "kind": "hgl",
+      "key": "103",
+      "url": "/hgl/103/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 103"
+    },
+    {
+      "kind": "hgl",
+      "key": "104",
+      "url": "/hgl/104/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 104"
+    },
+    {
+      "kind": "hgl",
+      "key": "105",
+      "url": "/hgl/105/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 105"
+    },
+    {
+      "kind": "hgl",
+      "key": "106",
+      "url": "/hgl/106/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 106"
+    },
+    {
+      "kind": "hgl",
+      "key": "107",
+      "url": "/hgl/107/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 107"
+    },
+    {
+      "kind": "hgl",
+      "key": "108",
+      "url": "/hgl/108/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 108"
+    },
+    {
+      "kind": "hgl",
+      "key": "109",
+      "url": "/hgl/109/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 109"
+    },
+    {
+      "kind": "hgl",
+      "key": "110",
+      "url": "/hgl/110/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 110"
+    },
+    {
+      "kind": "hgl",
+      "key": "111",
+      "url": "/hgl/111/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 111"
+    },
+    {
+      "kind": "hgl",
+      "key": "112",
+      "url": "/hgl/112/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 112"
+    },
+    {
+      "kind": "hgl",
+      "key": "113",
+      "url": "/hgl/113/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 113"
+    },
+    {
+      "kind": "hgl",
+      "key": "114",
+      "url": "/hgl/114/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 114"
+    },
+    {
+      "kind": "hgl",
+      "key": "115",
+      "url": "/hgl/115/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 115"
+    },
+    {
+      "kind": "hgl",
+      "key": "116",
+      "url": "/hgl/116/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 116"
+    },
+    {
+      "kind": "hgl",
+      "key": "117",
+      "url": "/hgl/117/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 117"
+    },
+    {
+      "kind": "hgl",
+      "key": "118",
+      "url": "/hgl/118/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 118"
+    },
+    {
+      "kind": "hgl",
+      "key": "119",
+      "url": "/hgl/119/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 119"
+    },
+    {
+      "kind": "hgl",
+      "key": "120",
+      "url": "/hgl/120/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 120"
+    },
+    {
+      "kind": "hgl",
+      "key": "121",
+      "url": "/hgl/121/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 121"
+    },
+    {
+      "kind": "hgl",
+      "key": "122",
+      "url": "/hgl/122/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 122"
+    },
+    {
+      "kind": "hgl",
+      "key": "123",
+      "url": "/hgl/123/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 123"
+    },
+    {
+      "kind": "hgl",
+      "key": "124",
+      "url": "/hgl/124/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 124"
+    },
+    {
+      "kind": "hgl",
+      "key": "125",
+      "url": "/hgl/125/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 125"
+    },
+    {
+      "kind": "hgl",
+      "key": "126",
+      "url": "/hgl/126/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 126"
+    },
+    {
+      "kind": "hgl",
+      "key": "127",
+      "url": "/hgl/127/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 127"
+    },
+    {
+      "kind": "hgl",
+      "key": "128",
+      "url": "/hgl/128/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 128"
+    },
+    {
+      "kind": "hgl",
+      "key": "129",
+      "url": "/hgl/129/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 129"
+    },
+    {
+      "kind": "hgl",
+      "key": "130",
+      "url": "/hgl/130/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 130"
+    },
+    {
+      "kind": "hgl",
+      "key": "131",
+      "url": "/hgl/131/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 131"
+    },
+    {
+      "kind": "hgl",
+      "key": "132",
+      "url": "/hgl/132/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 132"
+    },
+    {
+      "kind": "hgl",
+      "key": "133",
+      "url": "/hgl/133/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 133"
+    },
+    {
+      "kind": "hgl",
+      "key": "134",
+      "url": "/hgl/134/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 134"
+    },
+    {
+      "kind": "hgl",
+      "key": "135",
+      "url": "/hgl/135/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 135"
+    },
+    {
+      "kind": "hgl",
+      "key": "136",
+      "url": "/hgl/136/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 136"
+    },
+    {
+      "kind": "hgl",
+      "key": "137",
+      "url": "/hgl/137/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 137"
+    },
+    {
+      "kind": "hgl",
+      "key": "138",
+      "url": "/hgl/138/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 138"
+    },
+    {
+      "kind": "hgl",
+      "key": "139",
+      "url": "/hgl/139/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 139"
+    },
+    {
+      "kind": "hgl",
+      "key": "140",
+      "url": "/hgl/140/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 140"
+    },
+    {
+      "kind": "hgl",
+      "key": "141",
+      "url": "/hgl/141/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 141"
+    },
+    {
+      "kind": "hgl",
+      "key": "142",
+      "url": "/hgl/142/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 142"
+    },
+    {
+      "kind": "hgl",
+      "key": "143",
+      "url": "/hgl/143/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 143"
+    },
+    {
+      "kind": "hgl",
+      "key": "144",
+      "url": "/hgl/144/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 144"
+    },
+    {
+      "kind": "hgl",
+      "key": "145",
+      "url": "/hgl/145/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 145"
+    },
+    {
+      "kind": "hgl",
+      "key": "146",
+      "url": "/hgl/146/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 146"
+    },
+    {
+      "kind": "hgl",
+      "key": "147",
+      "url": "/hgl/147/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 147"
+    },
+    {
+      "kind": "hgl",
+      "key": "148",
+      "url": "/hgl/148/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 148"
+    },
+    {
+      "kind": "hgl",
+      "key": "149",
+      "url": "/hgl/149/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 149"
+    },
+    {
+      "kind": "hgl",
+      "key": "150",
+      "url": "/hgl/150/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 150"
+    },
+    {
+      "kind": "hgl",
+      "key": "151",
+      "url": "/hgl/151/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 151"
+    },
+    {
+      "kind": "hgl",
+      "key": "152",
+      "url": "/hgl/152/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 152"
+    },
+    {
+      "kind": "hgl",
+      "key": "153",
+      "url": "/hgl/153/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 153"
+    },
+    {
+      "kind": "hgl",
+      "key": "154",
+      "url": "/hgl/154/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 154"
+    },
+    {
+      "kind": "hgl",
+      "key": "155",
+      "url": "/hgl/155/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 155"
+    },
+    {
+      "kind": "hgl",
+      "key": "156",
+      "url": "/hgl/156/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 156"
+    },
+    {
+      "kind": "hgl",
+      "key": "157",
+      "url": "/hgl/157/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 157"
+    },
+    {
+      "kind": "hgl",
+      "key": "158",
+      "url": "/hgl/158/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 158"
+    },
+    {
+      "kind": "hgl",
+      "key": "159",
+      "url": "/hgl/159/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 159"
+    },
+    {
+      "kind": "hgl",
+      "key": "160",
+      "url": "/hgl/160/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 160"
+    },
+    {
+      "kind": "hgl",
+      "key": "161",
+      "url": "/hgl/161/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 161"
+    },
+    {
+      "kind": "hgl",
+      "key": "162",
+      "url": "/hgl/162/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 162"
+    },
+    {
+      "kind": "hgl",
+      "key": "163",
+      "url": "/hgl/163/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 163"
+    },
+    {
+      "kind": "hgl",
+      "key": "164",
+      "url": "/hgl/164/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 164"
+    },
+    {
+      "kind": "hgl",
+      "key": "165",
+      "url": "/hgl/165/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 165"
+    },
+    {
+      "kind": "hgl",
+      "key": "166",
+      "url": "/hgl/166/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 166"
+    },
+    {
+      "kind": "hgl",
+      "key": "167",
+      "url": "/hgl/167/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 167"
+    },
+    {
+      "kind": "hgl",
+      "key": "168",
+      "url": "/hgl/168/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 168"
+    },
+    {
+      "kind": "hgl",
+      "key": "169",
+      "url": "/hgl/169/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 169"
+    },
+    {
+      "kind": "hgl",
+      "key": "170",
+      "url": "/hgl/170/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 170"
+    },
+    {
+      "kind": "hgl",
+      "key": "171",
+      "url": "/hgl/171/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 171"
+    },
+    {
+      "kind": "hgl",
+      "key": "172",
+      "url": "/hgl/172/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 172"
+    },
+    {
+      "kind": "hgl",
+      "key": "173",
+      "url": "/hgl/173/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 173"
+    },
+    {
+      "kind": "hgl",
+      "key": "174",
+      "url": "/hgl/174/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 174"
+    },
+    {
+      "kind": "hgl",
+      "key": "175",
+      "url": "/hgl/175/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 175"
+    },
+    {
+      "kind": "hgl",
+      "key": "176",
+      "url": "/hgl/176/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 176"
+    },
+    {
+      "kind": "hgl",
+      "key": "177",
+      "url": "/hgl/177/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 177"
+    },
+    {
+      "kind": "hgl",
+      "key": "178",
+      "url": "/hgl/178/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 178"
+    },
+    {
+      "kind": "hgl",
+      "key": "179",
+      "url": "/hgl/179/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 179"
+    },
+    {
+      "kind": "hgl",
+      "key": "180",
+      "url": "/hgl/180/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 180"
+    },
+    {
+      "kind": "hgl",
+      "key": "181",
+      "url": "/hgl/181/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 181"
+    },
+    {
+      "kind": "hgl",
+      "key": "182",
+      "url": "/hgl/182/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 182"
+    },
+    {
+      "kind": "hgl",
+      "key": "183",
+      "url": "/hgl/183/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 183"
+    },
+    {
+      "kind": "hgl",
+      "key": "184",
+      "url": "/hgl/184/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 184"
+    },
+    {
+      "kind": "hgl",
+      "key": "185",
+      "url": "/hgl/185/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 185"
+    },
+    {
+      "kind": "hgl",
+      "key": "186",
+      "url": "/hgl/186/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 186"
+    },
+    {
+      "kind": "hgl",
+      "key": "187",
+      "url": "/hgl/187/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 187"
+    },
+    {
+      "kind": "hgl",
+      "key": "188",
+      "url": "/hgl/188/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 188"
+    },
+    {
+      "kind": "hgl",
+      "key": "189",
+      "url": "/hgl/189/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 189"
+    },
+    {
+      "kind": "hgl",
+      "key": "190",
+      "url": "/hgl/190/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 190"
+    },
+    {
+      "kind": "hgl",
+      "key": "191",
+      "url": "/hgl/191/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 191"
+    },
+    {
+      "kind": "hgl",
+      "key": "192",
+      "url": "/hgl/192/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 192"
+    },
+    {
+      "kind": "hgl",
+      "key": "193",
+      "url": "/hgl/193/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 193"
+    },
+    {
+      "kind": "hgl",
+      "key": "194",
+      "url": "/hgl/194/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 194"
+    },
+    {
+      "kind": "hgl",
+      "key": "195",
+      "url": "/hgl/195/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 195"
+    },
+    {
+      "kind": "hgl",
+      "key": "196",
+      "url": "/hgl/196/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 196"
+    },
+    {
+      "kind": "hgl",
+      "key": "197",
+      "url": "/hgl/197/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 197"
+    },
+    {
+      "kind": "hgl",
+      "key": "198",
+      "url": "/hgl/198/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 198"
+    },
+    {
+      "kind": "hgl",
+      "key": "199",
+      "url": "/hgl/199/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 199"
+    },
+    {
+      "kind": "hgl",
+      "key": "200",
+      "url": "/hgl/200/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 200"
+    },
+    {
+      "kind": "hgl",
+      "key": "201",
+      "url": "/hgl/201/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 201"
+    },
+    {
+      "kind": "hgl",
+      "key": "202",
+      "url": "/hgl/202/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 202"
+    },
+    {
+      "kind": "hgl",
+      "key": "203",
+      "url": "/hgl/203/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 203"
+    },
+    {
+      "kind": "hgl",
+      "key": "204",
+      "url": "/hgl/204/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 204"
+    },
+    {
+      "kind": "hgl",
+      "key": "205",
+      "url": "/hgl/205/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 205"
+    },
+    {
+      "kind": "hgl",
+      "key": "206",
+      "url": "/hgl/206/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 206"
+    },
+    {
+      "kind": "hgl",
+      "key": "207",
+      "url": "/hgl/207/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 207"
+    },
+    {
+      "kind": "hgl",
+      "key": "208",
+      "url": "/hgl/208/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 208"
+    },
+    {
+      "kind": "hgl",
+      "key": "209",
+      "url": "/hgl/209/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 209"
+    },
+    {
+      "kind": "hgl",
+      "key": "210",
+      "url": "/hgl/210/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 210"
+    },
+    {
+      "kind": "hgl",
+      "key": "211",
+      "url": "/hgl/211/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 211"
+    },
+    {
+      "kind": "hgl",
+      "key": "212",
+      "url": "/hgl/212/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 212"
+    },
+    {
+      "kind": "hgl",
+      "key": "213",
+      "url": "/hgl/213/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 213"
+    },
+    {
+      "kind": "hgl",
+      "key": "214",
+      "url": "/hgl/214/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 214"
+    },
+    {
+      "kind": "hgl",
+      "key": "215",
+      "url": "/hgl/215/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 215"
+    },
+    {
+      "kind": "hgl",
+      "key": "216",
+      "url": "/hgl/216/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 216"
+    },
+    {
+      "kind": "hgl",
+      "key": "217",
+      "url": "/hgl/217/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 217"
+    },
+    {
+      "kind": "hgl",
+      "key": "218",
+      "url": "/hgl/218/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 218"
+    },
+    {
+      "kind": "hgl",
+      "key": "219",
+      "url": "/hgl/219/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 219"
+    },
+    {
+      "kind": "hgl",
+      "key": "220",
+      "url": "/hgl/220/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 220"
+    },
+    {
+      "kind": "hgl",
+      "key": "221",
+      "url": "/hgl/221/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 221"
+    },
+    {
+      "kind": "hgl",
+      "key": "222",
+      "url": "/hgl/222/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 222"
+    },
+    {
+      "kind": "hgl",
+      "key": "223",
+      "url": "/hgl/223/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 223"
+    },
+    {
+      "kind": "hgl",
+      "key": "224",
+      "url": "/hgl/224/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 224"
+    },
+    {
+      "kind": "hgl",
+      "key": "225",
+      "url": "/hgl/225/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 225"
+    },
+    {
+      "kind": "hgl",
+      "key": "226",
+      "url": "/hgl/226/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 226"
+    },
+    {
+      "kind": "hgl",
+      "key": "227",
+      "url": "/hgl/227/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 227"
+    },
+    {
+      "kind": "hgl",
+      "key": "228",
+      "url": "/hgl/228/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 228"
+    },
+    {
+      "kind": "hgl",
+      "key": "229",
+      "url": "/hgl/229/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 229"
+    },
+    {
+      "kind": "hgl",
+      "key": "230",
+      "url": "/hgl/230/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 230"
+    },
+    {
+      "kind": "hgl",
+      "key": "231",
+      "url": "/hgl/231/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 231"
+    },
+    {
+      "kind": "hgl",
+      "key": "232",
+      "url": "/hgl/232/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 232"
+    },
+    {
+      "kind": "hgl",
+      "key": "233",
+      "url": "/hgl/233/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 233"
+    },
+    {
+      "kind": "hgl",
+      "key": "234",
+      "url": "/hgl/234/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 234"
+    },
+    {
+      "kind": "hgl",
+      "key": "235",
+      "url": "/hgl/235/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 235"
+    },
+    {
+      "kind": "hgl",
+      "key": "236",
+      "url": "/hgl/236/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 236"
+    },
+    {
+      "kind": "hgl",
+      "key": "237",
+      "url": "/hgl/237/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 237"
+    },
+    {
+      "kind": "hgl",
+      "key": "238",
+      "url": "/hgl/238/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 238"
+    },
+    {
+      "kind": "hgl",
+      "key": "239",
+      "url": "/hgl/239/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 239"
+    },
+    {
+      "kind": "hgl",
+      "key": "240",
+      "url": "/hgl/240/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 240"
+    },
+    {
+      "kind": "hgl",
+      "key": "241",
+      "url": "/hgl/241/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 241"
+    },
+    {
+      "kind": "hgl",
+      "key": "242",
+      "url": "/hgl/242/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 242"
+    },
+    {
+      "kind": "hgl",
+      "key": "243",
+      "url": "/hgl/243/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 243"
+    },
+    {
+      "kind": "hgl",
+      "key": "244",
+      "url": "/hgl/244/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 244"
+    },
+    {
+      "kind": "hgl",
+      "key": "245",
+      "url": "/hgl/245/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 245"
+    },
+    {
+      "kind": "hgl",
+      "key": "246",
+      "url": "/hgl/246/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 246"
+    },
+    {
+      "kind": "hgl",
+      "key": "247",
+      "url": "/hgl/247/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 247"
+    },
+    {
+      "kind": "hgl",
+      "key": "248",
+      "url": "/hgl/248/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 248"
+    },
+    {
+      "kind": "hgl",
+      "key": "249",
+      "url": "/hgl/249/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 249"
+    },
+    {
+      "kind": "hgl",
+      "key": "250",
+      "url": "/hgl/250/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 250"
+    },
+    {
+      "kind": "hgl",
+      "key": "251",
+      "url": "/hgl/251/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 251"
+    },
+    {
+      "kind": "hgl",
+      "key": "252",
+      "url": "/hgl/252/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 252"
+    },
+    {
+      "kind": "hgl",
+      "key": "253",
+      "url": "/hgl/253/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 253"
+    },
+    {
+      "kind": "hgl",
+      "key": "254",
+      "url": "/hgl/254/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 254"
+    },
+    {
+      "kind": "hgl",
+      "key": "255",
+      "url": "/hgl/255/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 255"
+    },
+    {
+      "kind": "hgl",
+      "key": "256",
+      "url": "/hgl/256/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 256"
+    },
+    {
+      "kind": "hgl",
+      "key": "257",
+      "url": "/hgl/257/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 257"
+    },
+    {
+      "kind": "hgl",
+      "key": "258",
+      "url": "/hgl/258/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 258"
+    },
+    {
+      "kind": "hgl",
+      "key": "259",
+      "url": "/hgl/259/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 259"
+    },
+    {
+      "kind": "hgl",
+      "key": "260",
+      "url": "/hgl/260/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 260"
+    },
+    {
+      "kind": "hgl",
+      "key": "261",
+      "url": "/hgl/261/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 261"
+    },
+    {
+      "kind": "hgl",
+      "key": "262",
+      "url": "/hgl/262/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 262"
+    },
+    {
+      "kind": "hgl",
+      "key": "263",
+      "url": "/hgl/263/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 263"
+    },
+    {
+      "kind": "hgl",
+      "key": "264",
+      "url": "/hgl/264/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 264"
+    },
+    {
+      "kind": "hgl",
+      "key": "265",
+      "url": "/hgl/265/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 265"
+    },
+    {
+      "kind": "hgl",
+      "key": "266",
+      "url": "/hgl/266/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 266"
+    },
+    {
+      "kind": "hgl",
+      "key": "267",
+      "url": "/hgl/267/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 267"
+    },
+    {
+      "kind": "hgl",
+      "key": "268",
+      "url": "/hgl/268/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 268"
+    },
+    {
+      "kind": "hgl",
+      "key": "269",
+      "url": "/hgl/269/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 269"
+    },
+    {
+      "kind": "hgl",
+      "key": "270",
+      "url": "/hgl/270/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 270"
+    },
+    {
+      "kind": "hgl",
+      "key": "271",
+      "url": "/hgl/271/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 271"
+    },
+    {
+      "kind": "hgl",
+      "key": "272",
+      "url": "/hgl/272/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 272"
+    },
+    {
+      "kind": "hgl",
+      "key": "273",
+      "url": "/hgl/273/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 273"
+    },
+    {
+      "kind": "hgl",
+      "key": "274",
+      "url": "/hgl/274/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 274"
+    },
+    {
+      "kind": "hgl",
+      "key": "275",
+      "url": "/hgl/275/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 275"
+    },
+    {
+      "kind": "hgl",
+      "key": "276",
+      "url": "/hgl/276/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 276"
+    },
+    {
+      "kind": "hgl",
+      "key": "277",
+      "url": "/hgl/277/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 277"
+    },
+    {
+      "kind": "hgl",
+      "key": "278",
+      "url": "/hgl/278/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 278"
+    },
+    {
+      "kind": "hgl",
+      "key": "279",
+      "url": "/hgl/279/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 279"
+    },
+    {
+      "kind": "hgl",
+      "key": "280",
+      "url": "/hgl/280/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 280"
+    },
+    {
+      "kind": "hgl",
+      "key": "281",
+      "url": "/hgl/281/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 281"
+    },
+    {
+      "kind": "hgl",
+      "key": "282",
+      "url": "/hgl/282/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 282"
+    },
+    {
+      "kind": "hgl",
+      "key": "283",
+      "url": "/hgl/283/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 283"
+    },
+    {
+      "kind": "hgl",
+      "key": "284",
+      "url": "/hgl/284/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 284"
+    },
+    {
+      "kind": "hgl",
+      "key": "285",
+      "url": "/hgl/285/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 285"
+    },
+    {
+      "kind": "hgl",
+      "key": "286",
+      "url": "/hgl/286/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 286"
+    },
+    {
+      "kind": "hgl",
+      "key": "287",
+      "url": "/hgl/287/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 287"
+    },
+    {
+      "kind": "hgl",
+      "key": "288",
+      "url": "/hgl/288/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 288"
+    },
+    {
+      "kind": "hgl",
+      "key": "289",
+      "url": "/hgl/289/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 289"
+    },
+    {
+      "kind": "hgl",
+      "key": "290",
+      "url": "/hgl/290/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 290"
+    },
+    {
+      "kind": "hgl",
+      "key": "291",
+      "url": "/hgl/291/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 291"
+    },
+    {
+      "kind": "hgl",
+      "key": "292",
+      "url": "/hgl/292/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 292"
+    },
+    {
+      "kind": "hgl",
+      "key": "293",
+      "url": "/hgl/293/",
+      "source": "data/hgl-pages.json",
+      "title": "Hypergendered Logic — Page 293"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0601fc96f7add3",
+      "url": "/zubaida/1a0601fc96f7add3/",
+      "source": "sources/zubaida/1a0601fc96f7add3.txt",
+      "title": "Session One The Ultimate Hypercausal Shift"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a01b26c0e6e6f14",
+      "url": "/zubaida/1a01b26c0e6e6f14/",
+      "source": "sources/zubaida/1a01b26c0e6e6f14.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a01465c9d5b5945",
+      "url": "/zubaida/1a01465c9d5b5945/",
+      "source": "sources/zubaida/1a01465c9d5b5945.txt",
+      "title": "Session Five: The Uprising and the Era of the Medical Clans"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0142dbe1e0f101",
+      "url": "/zubaida/1a0142dbe1e0f101/",
+      "source": "sources/zubaida/1a0142dbe1e0f101.txt",
+      "title": "Session Four: The Universal Awakening and the Evolution of the Ranks"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0142cc15e2d305",
+      "url": "/zubaida/1a0142cc15e2d305/",
+      "source": "sources/zubaida/1a0142cc15e2d305.txt",
+      "title": "Session Three: The Crowning of the Supreme Chiefs"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0121caff8899f2",
+      "url": "/zubaida/1a0121caff8899f2/",
+      "source": "sources/zubaida/1a0121caff8899f2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0121bffc884c3a",
+      "url": "/zubaida/1a0121bffc884c3a/",
+      "source": "sources/zubaida/1a0121bffc884c3a.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a00cd159aa9bdc7",
+      "url": "/zubaida/1a00cd159aa9bdc7/",
+      "source": "sources/zubaida/1a00cd159aa9bdc7.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a00aecb58db40d3",
+      "url": "/zubaida/1a00aecb58db40d3/",
+      "source": "sources/zubaida/1a00aecb58db40d3.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a00ae913ff3fa38",
+      "url": "/zubaida/1a00ae913ff3fa38/",
+      "source": "sources/zubaida/1a00ae913ff3fa38.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a009f030decebdc",
+      "url": "/zubaida/1a009f030decebdc/",
+      "source": "sources/zubaida/1a009f030decebdc.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a004bfb6972b1de",
+      "url": "/zubaida/1a004bfb6972b1de/",
+      "source": "sources/zubaida/1a004bfb6972b1de.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0044bf191192c8",
+      "url": "/zubaida/1a0044bf191192c8/",
+      "source": "sources/zubaida/1a0044bf191192c8.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "1a0044a4f14bcfc1",
+      "url": "/zubaida/1a0044a4f14bcfc1/",
+      "source": "sources/zubaida/1a0044a4f14bcfc1.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffdaf11c6057c6",
+      "url": "/zubaida/19ffdaf11c6057c6/",
+      "source": "sources/zubaida/19ffdaf11c6057c6.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffdab2307c920d",
+      "url": "/zubaida/19ffdab2307c920d/",
+      "source": "sources/zubaida/19ffdab2307c920d.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffda9d2c0d757f",
+      "url": "/zubaida/19ffda9d2c0d757f/",
+      "source": "sources/zubaida/19ffda9d2c0d757f.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffca1a2f553e5a",
+      "url": "/zubaida/19ffca1a2f553e5a/",
+      "source": "sources/zubaida/19ffca1a2f553e5a.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffca01885e0f1b",
+      "url": "/zubaida/19ffca01885e0f1b/",
+      "source": "sources/zubaida/19ffca01885e0f1b.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffc9464873b3f0",
+      "url": "/zubaida/19ffc9464873b3f0/",
+      "source": "sources/zubaida/19ffc9464873b3f0.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffc927eae69543",
+      "url": "/zubaida/19ffc927eae69543/",
+      "source": "sources/zubaida/19ffc927eae69543.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ffc8e14a00f61d",
+      "url": "/zubaida/19ffc8e14a00f61d/",
+      "source": "sources/zubaida/19ffc8e14a00f61d.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff57bc49cd45bd",
+      "url": "/zubaida/19ff57bc49cd45bd/",
+      "source": "sources/zubaida/19ff57bc49cd45bd.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff2263b89fb296",
+      "url": "/zubaida/19ff2263b89fb296/",
+      "source": "sources/zubaida/19ff2263b89fb296.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff22309a2e3b09",
+      "url": "/zubaida/19ff22309a2e3b09/",
+      "source": "sources/zubaida/19ff22309a2e3b09.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff2206dbdcad7d",
+      "url": "/zubaida/19ff2206dbdcad7d/",
+      "source": "sources/zubaida/19ff2206dbdcad7d.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff21ed3ed9877b",
+      "url": "/zubaida/19ff21ed3ed9877b/",
+      "source": "sources/zubaida/19ff21ed3ed9877b.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff21d5d839ea5e",
+      "url": "/zubaida/19ff21d5d839ea5e/",
+      "source": "sources/zubaida/19ff21d5d839ea5e.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff21b9df9c9323",
+      "url": "/zubaida/19ff21b9df9c9323/",
+      "source": "sources/zubaida/19ff21b9df9c9323.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff21a5e18621b0",
+      "url": "/zubaida/19ff21a5e18621b0/",
+      "source": "sources/zubaida/19ff21a5e18621b0.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ff21800b5380e4",
+      "url": "/zubaida/19ff21800b5380e4/",
+      "source": "sources/zubaida/19ff21800b5380e4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fedd98e38dc4ff",
+      "url": "/zubaida/19fedd98e38dc4ff/",
+      "source": "sources/zubaida/19fedd98e38dc4ff.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fec1b4fcc904c4",
+      "url": "/zubaida/19fec1b4fcc904c4/",
+      "source": "sources/zubaida/19fec1b4fcc904c4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe56cd1bb96dbc",
+      "url": "/zubaida/19fe56cd1bb96dbc/",
+      "source": "sources/zubaida/19fe56cd1bb96dbc.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe56015ef17846",
+      "url": "/zubaida/19fe56015ef17846/",
+      "source": "sources/zubaida/19fe56015ef17846.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe540dd978ed02",
+      "url": "/zubaida/19fe540dd978ed02/",
+      "source": "sources/zubaida/19fe540dd978ed02.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe5329dab82c86",
+      "url": "/zubaida/19fe5329dab82c86/",
+      "source": "sources/zubaida/19fe5329dab82c86.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe5163dd2d55d4",
+      "url": "/zubaida/19fe5163dd2d55d4/",
+      "source": "sources/zubaida/19fe5163dd2d55d4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2cf1a21caa03",
+      "url": "/zubaida/19fe2cf1a21caa03/",
+      "source": "sources/zubaida/19fe2cf1a21caa03.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2cdb6fed2a26",
+      "url": "/zubaida/19fe2cdb6fed2a26/",
+      "source": "sources/zubaida/19fe2cdb6fed2a26.txt",
+      "title": "Session Seven: The Omnitimeline Collapse Protocol and Inzra’s Absolute Invulnerability"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2b3934748b8f",
+      "url": "/zubaida/19fe2b3934748b8f/",
+      "source": "sources/zubaida/19fe2b3934748b8f.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2a7a58adf5dc",
+      "url": "/zubaida/19fe2a7a58adf5dc/",
+      "source": "sources/zubaida/19fe2a7a58adf5dc.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2a3f60a6c5ce",
+      "url": "/zubaida/19fe2a3f60a6c5ce/",
+      "source": "sources/zubaida/19fe2a3f60a6c5ce.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe28425ab9c96a",
+      "url": "/zubaida/19fe28425ab9c96a/",
+      "source": "sources/zubaida/19fe28425ab9c96a.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fe2713b4030924",
+      "url": "/zubaida/19fe2713b4030924/",
+      "source": "sources/zubaida/19fe2713b4030924.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fde8f7e92ec8da",
+      "url": "/zubaida/19fde8f7e92ec8da/",
+      "source": "sources/zubaida/19fde8f7e92ec8da.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fdb1794050bc43",
+      "url": "/zubaida/19fdb1794050bc43/",
+      "source": "sources/zubaida/19fdb1794050bc43.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fd8d193b40cda8",
+      "url": "/zubaida/19fd8d193b40cda8/",
+      "source": "sources/zubaida/19fd8d193b40cda8.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fd6196dcecbba1",
+      "url": "/zubaida/19fd6196dcecbba1/",
+      "source": "sources/zubaida/19fd6196dcecbba1.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fd51c7627df797",
+      "url": "/zubaida/19fd51c7627df797/",
+      "source": "sources/zubaida/19fd51c7627df797.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fcb50fc92e37f3",
+      "url": "/zubaida/19fcb50fc92e37f3/",
+      "source": "sources/zubaida/19fcb50fc92e37f3.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fcad5f75d055c8",
+      "url": "/zubaida/19fcad5f75d055c8/",
+      "source": "sources/zubaida/19fcad5f75d055c8.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fc44a574e08325",
+      "url": "/zubaida/19fc44a574e08325/",
+      "source": "sources/zubaida/19fc44a574e08325.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fc3d4fa2bd6304",
+      "url": "/zubaida/19fc3d4fa2bd6304/",
+      "source": "sources/zubaida/19fc3d4fa2bd6304.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fc071b9781a991",
+      "url": "/zubaida/19fc071b9781a991/",
+      "source": "sources/zubaida/19fc071b9781a991.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19fa076eb25a917b",
+      "url": "/zubaida/19fa076eb25a917b/",
+      "source": "sources/zubaida/19fa076eb25a917b.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f9518411db997b",
+      "url": "/zubaida/19f9518411db997b/",
+      "source": "sources/zubaida/19f9518411db997b.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f9406c97ff3670",
+      "url": "/zubaida/19f9406c97ff3670/",
+      "source": "sources/zubaida/19f9406c97ff3670.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f88f41fb16946b",
+      "url": "/zubaida/19f88f41fb16946b/",
+      "source": "sources/zubaida/19f88f41fb16946b.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f8750d4d5532be",
+      "url": "/zubaida/19f8750d4d5532be/",
+      "source": "sources/zubaida/19f8750d4d5532be.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f810f599ae9ccc",
+      "url": "/zubaida/19f810f599ae9ccc/",
+      "source": "sources/zubaida/19f810f599ae9ccc.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f7d9faf4778440",
+      "url": "/zubaida/19f7d9faf4778440/",
+      "source": "sources/zubaida/19f7d9faf4778440.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f78745609dd2f6",
+      "url": "/zubaida/19f78745609dd2f6/",
+      "source": "sources/zubaida/19f78745609dd2f6.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f7746193ee07dc",
+      "url": "/zubaida/19f7746193ee07dc/",
+      "source": "sources/zubaida/19f7746193ee07dc.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f75011fdb61e6e",
+      "url": "/zubaida/19f75011fdb61e6e/",
+      "source": "sources/zubaida/19f75011fdb61e6e.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f7282ac958d4eb",
+      "url": "/zubaida/19f7282ac958d4eb/",
+      "source": "sources/zubaida/19f7282ac958d4eb.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f22dbf39b171ec",
+      "url": "/zubaida/19f22dbf39b171ec/",
+      "source": "sources/zubaida/19f22dbf39b171ec.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f1f5b33c478758",
+      "url": "/zubaida/19f1f5b33c478758/",
+      "source": "sources/zubaida/19f1f5b33c478758.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f1c2356873a90c",
+      "url": "/zubaida/19f1c2356873a90c/",
+      "source": "sources/zubaida/19f1c2356873a90c.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f19b822cb7e8bd",
+      "url": "/zubaida/19f19b822cb7e8bd/",
+      "source": "sources/zubaida/19f19b822cb7e8bd.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f0f39f1eb13e50",
+      "url": "/zubaida/19f0f39f1eb13e50/",
+      "source": "sources/zubaida/19f0f39f1eb13e50.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f0e8f96cb8730c",
+      "url": "/zubaida/19f0e8f96cb8730c/",
+      "source": "sources/zubaida/19f0e8f96cb8730c.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f0d1c0f4a5d5e5",
+      "url": "/zubaida/19f0d1c0f4a5d5e5/",
+      "source": "sources/zubaida/19f0d1c0f4a5d5e5.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f0a8992476696e",
+      "url": "/zubaida/19f0a8992476696e/",
+      "source": "sources/zubaida/19f0a8992476696e.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f0771a2a787113",
+      "url": "/zubaida/19f0771a2a787113/",
+      "source": "sources/zubaida/19f0771a2a787113.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19f02d6e58d0f044",
+      "url": "/zubaida/19f02d6e58d0f044/",
+      "source": "sources/zubaida/19f02d6e58d0f044.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19efe2cca24baa95",
+      "url": "/zubaida/19efe2cca24baa95/",
+      "source": "sources/zubaida/19efe2cca24baa95.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ef0e52f69e4ad4",
+      "url": "/zubaida/19ef0e52f69e4ad4/",
+      "source": "sources/zubaida/19ef0e52f69e4ad4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eef052eaceac85",
+      "url": "/zubaida/19eef052eaceac85/",
+      "source": "sources/zubaida/19eef052eaceac85.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eeb5f62f0e9896",
+      "url": "/zubaida/19eeb5f62f0e9896/",
+      "source": "sources/zubaida/19eeb5f62f0e9896.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eea5cf0776a76e",
+      "url": "/zubaida/19eea5cf0776a76e/",
+      "source": "sources/zubaida/19eea5cf0776a76e.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ee89b90de674e2",
+      "url": "/zubaida/19ee89b90de674e2/",
+      "source": "sources/zubaida/19ee89b90de674e2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ee4d2713ef9ab2",
+      "url": "/zubaida/19ee4d2713ef9ab2/",
+      "source": "sources/zubaida/19ee4d2713ef9ab2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ee316d9a81b6b3",
+      "url": "/zubaida/19ee316d9a81b6b3/",
+      "source": "sources/zubaida/19ee316d9a81b6b3.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19edd46368d53704",
+      "url": "/zubaida/19edd46368d53704/",
+      "source": "sources/zubaida/19edd46368d53704.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ed660f0676f023",
+      "url": "/zubaida/19ed660f0676f023/",
+      "source": "sources/zubaida/19ed660f0676f023.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ed334f66df13d4",
+      "url": "/zubaida/19ed334f66df13d4/",
+      "source": "sources/zubaida/19ed334f66df13d4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ed29b27616b92c",
+      "url": "/zubaida/19ed29b27616b92c/",
+      "source": "sources/zubaida/19ed29b27616b92c.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ed1dd4f8772a19",
+      "url": "/zubaida/19ed1dd4f8772a19/",
+      "source": "sources/zubaida/19ed1dd4f8772a19.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ec6ad4150de5b4",
+      "url": "/zubaida/19ec6ad4150de5b4/",
+      "source": "sources/zubaida/19ec6ad4150de5b4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ec3bead36c9204",
+      "url": "/zubaida/19ec3bead36c9204/",
+      "source": "sources/zubaida/19ec3bead36c9204.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ec2fd5372c1fb2",
+      "url": "/zubaida/19ec2fd5372c1fb2/",
+      "source": "sources/zubaida/19ec2fd5372c1fb2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ec13f48df3c768",
+      "url": "/zubaida/19ec13f48df3c768/",
+      "source": "sources/zubaida/19ec13f48df3c768.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ebe85bf8cf94ae",
+      "url": "/zubaida/19ebe85bf8cf94ae/",
+      "source": "sources/zubaida/19ebe85bf8cf94ae.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ebdf5c2d46c894",
+      "url": "/zubaida/19ebdf5c2d46c894/",
+      "source": "sources/zubaida/19ebdf5c2d46c894.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eb92b5bb44b764",
+      "url": "/zubaida/19eb92b5bb44b764/",
+      "source": "sources/zubaida/19eb92b5bb44b764.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eb373264c0f94c",
+      "url": "/zubaida/19eb373264c0f94c/",
+      "source": "sources/zubaida/19eb373264c0f94c.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eb2ad68d624272",
+      "url": "/zubaida/19eb2ad68d624272/",
+      "source": "sources/zubaida/19eb2ad68d624272.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eb127ca13484b2",
+      "url": "/zubaida/19eb127ca13484b2/",
+      "source": "sources/zubaida/19eb127ca13484b2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eacd8e1382f217",
+      "url": "/zubaida/19eacd8e1382f217/",
+      "source": "sources/zubaida/19eacd8e1382f217.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eac0adfb5e15a8",
+      "url": "/zubaida/19eac0adfb5e15a8/",
+      "source": "sources/zubaida/19eac0adfb5e15a8.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19eaaf5b47ae00c8",
+      "url": "/zubaida/19eaaf5b47ae00c8/",
+      "source": "sources/zubaida/19eaaf5b47ae00c8.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ea8dbac2dea56e",
+      "url": "/zubaida/19ea8dbac2dea56e/",
+      "source": "sources/zubaida/19ea8dbac2dea56e.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ea2e03249bd633",
+      "url": "/zubaida/19ea2e03249bd633/",
+      "source": "sources/zubaida/19ea2e03249bd633.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ea19028cbe67ef",
+      "url": "/zubaida/19ea19028cbe67ef/",
+      "source": "sources/zubaida/19ea19028cbe67ef.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e9f1a57baddaa2",
+      "url": "/zubaida/19e9f1a57baddaa2/",
+      "source": "sources/zubaida/19e9f1a57baddaa2.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e7cd57129cb418",
+      "url": "/zubaida/19e7cd57129cb418/",
+      "source": "sources/zubaida/19e7cd57129cb418.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e7b1ae42d2b9f4",
+      "url": "/zubaida/19e7b1ae42d2b9f4/",
+      "source": "sources/zubaida/19e7b1ae42d2b9f4.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e76e0f7681317c",
+      "url": "/zubaida/19e76e0f7681317c/",
+      "source": "sources/zubaida/19e76e0f7681317c.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e75cd022cc9fa6",
+      "url": "/zubaida/19e75cd022cc9fa6/",
+      "source": "sources/zubaida/19e75cd022cc9fa6.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e6ac84f1a5c268",
+      "url": "/zubaida/19e6ac84f1a5c268/",
+      "source": "sources/zubaida/19e6ac84f1a5c268.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e5bf2cf47cd855",
+      "url": "/zubaida/19e5bf2cf47cd855/",
+      "source": "sources/zubaida/19e5bf2cf47cd855.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e5b5bc268151ec",
+      "url": "/zubaida/19e5b5bc268151ec/",
+      "source": "sources/zubaida/19e5b5bc268151ec.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e57ef586da3075",
+      "url": "/zubaida/19e57ef586da3075/",
+      "source": "sources/zubaida/19e57ef586da3075.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19e56867bf1bf3d3",
+      "url": "/zubaida/19e56867bf1bf3d3/",
+      "source": "sources/zubaida/19e56867bf1bf3d3.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19defc3df577a5b9",
+      "url": "/zubaida/19defc3df577a5b9/",
+      "source": "sources/zubaida/19defc3df577a5b9.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19ded0f0d83960a1",
+      "url": "/zubaida/19ded0f0d83960a1/",
+      "source": "sources/zubaida/19ded0f0d83960a1.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "zubaida",
+      "key": "19de45adb7920381",
+      "url": "/zubaida/19de45adb7920381/",
+      "source": "sources/zubaida/19de45adb7920381.txt",
+      "title": "From: Zubaida Begum <guidancebyzubaida@gmail.com>"
+    },
+    {
+      "kind": "hub",
+      "key": "provenance",
+      "url": "/provenance/",
+      "source": "data/provenance-model.json",
+      "title": "Unified Provenance Model"
+    },
+    {
+      "kind": "hub",
+      "key": "chronology",
+      "url": "/chronology/",
+      "source": "data/canon-supersession-chronology.json",
+      "title": "Canon Supersession Chronology"
+    }
+  ]
 }
