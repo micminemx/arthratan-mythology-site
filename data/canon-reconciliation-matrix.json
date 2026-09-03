@@ -1,0 +1,71 @@
+{
+  "audit_timestamp": "2026-09-03T15:15:00+01:00",
+  "worker_id": "AG-20260903-0947-M4K9",
+  "target_bounty": "CANON-REV-001",
+  "provenance_sources_audited": [
+    "ANTIGRAVITY_CANON_UPDATE_APOSSIBLE_TOREN_ARTHITEAN_FACTORS.md",
+    "site/data/new-canon.json",
+    "site/app.js",
+    "site/data/characters.json",
+    "site/data/divine.json",
+    "site/data/hgl-pages.json",
+    "site/sources/zubaida/*.txt",
+    "site/data/causal-ontology.json",
+    "site/data/global-concept-inventory.json"
+  ],
+  "findings": {
+    "bloodline_blessings": {
+      "canonical_nature": "Metaphysical hereditary endowments unique to Arthitean royal and warrior bloodlines.",
+      "distinct_dimensions": {
+        "acquisition": "Whether the blessing is possessed. Historically hereditary/beginningless; now expandable retroactively via Supramajor.",
+        "quality": "The fundamental tier and metacapacity of the blessing. Toren-indexed directly proportionally to Supramajorness.",
+        "strength": "The operational power level of the blessing. Amplified by Archarthitean Factor and Deity Factor One per willpower at occurrence.",
+        "growth_dynamics": "Separately tracked from raw strength; former growth-rate and acceleration are not guaranteed to restore upon seal removal."
+      },
+      "occurrences_count": 988,
+      "key_provenance": "site/data/new-canon.json (rhayhara-seals), site/data/divine.json (sections 3, 35, 60)"
+    },
+    "enlightenment_family": {
+      "variants": [
+        "Pressurised-Enlightenment (UK canon)",
+        "Pressurized-Enlightenment (US variant)",
+        "Pressurised-Hyperenlightenment"
+      ],
+      "pressurised_enlightenment": "A major breakthrough in Enlightenment that scales higher in countersurpassableness of Unprecedentedness of groundbreakingness when under greater pressure.",
+      "pressurised_hyperenlightenment": "A Supramajor breakthrough in Enlightenment scaling higher in countersurpassableness under greater pressure, retroactively acquiring new Bloodline Blessings with Toren-indexed quality.",
+      "visual_manifestation": "Rhayhara's eyes briefly glow brightly and hair temporarily becomes fiery-like.",
+      "occurrences_count": 345
+    },
+    "phk_loop": {
+      "canonical_nature": "Stress-amplified exponential recursion: PHK ↑ → Physiology factors ↑ → PHK ↑ faster. Difficulty feeds the rate at which growth feeds growth.",
+      "varvadeil_clan_rule": "The Varvadeil clan incorporates biological and brain-lobe factors that create recursive improvement feedback loops into PHK.",
+      "archarthitean_factor": "Factor in PHK loop; Toren of Pressurised-Enlightenment for increasing Bloodline Blessing strength per willpower at occurrence (does NOT acquire new blessings).",
+      "arthitean_deity_factor_one": "Factor in PHK loop; Toren of Pressurised-Hyperenlightenment for increasing Bloodline Blessing strength per willpower at occurrence.",
+      "arthitean_deity_factor_two": "Pressurised-Hyperenlightenment for Arthitean Deity Factor One. In the PHK loop, Factor Two applies Pressurised-Hyperenlightenment directly to Factor One, recursively amplifying the feedback loop.",
+      "occurrences_count": 619
+    },
+    "ontostates_and_wings": {
+      "hierarchy": "Arthitean ⊂ Archarthitean ⊂ Arthitean Deity (additive inheritance: A → (A+B) → (A+B+C)).",
+      "wing_rules": {
+        "arthitean": "1 pair of black-phoenix wings",
+        "archarthitean": "2 pairs of black-phoenix wings",
+        "arthitean_deity": "3 pairs of black-phoenix wings (Rhayhara is currently the only Arthitean Deity)"
+      },
+      "rhayhara_status": "Currently the sole living Arthitean Deity, retaining Archarthitean and Arthitean properties with 3 pairs of black-phoenix wings."
+    },
+    "scaling_and_metagovernance": {
+      "metagovernance_foundation": "Rules (depth 0), Metarules (depth 1), Metarules² (depth 2), ..., Metarulesⁿ (depth n).",
+      "apossible_definition": "All things categorically attributable to any recursively ordered Possible levels of Metarules and All things categorically attributable to any recursively ordered Impossible levels of Metarules.",
+      "apossible_constraints": "Must use 'All' (NOT 'totality'). Must preserve categorical attribution and recursive levels. Reject 'Metarule governing Impossible'.",
+      "toren_ladder": {
+        "toren_1": "beyond Apossible, below Apossible³",
+        "toren_2": "beyond Apossible³, below Apossible⁵",
+        "toren_3": "beyond Apossible⁵, below Apossible⁷",
+        "toren_4": "beyond Apossible⁷, below Apossible⁹",
+        "toren_5": "beyond Apossible⁹, below Apossible¹¹",
+        "recurrence_shorthand": "Apossible^(2n-1) < Toren n < Apossible^(2n+1)"
+      },
+      "migration_policy": "Apossible and Toren supersede Lydrextent and Ultraarsayne for current scaling; Lydrextent/Arsayne retained historically in source texts and Rhayhara's legacy seal narrative."
+    }
+  }
+}

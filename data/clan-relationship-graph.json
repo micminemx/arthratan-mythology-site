@@ -1,0 +1,758 @@
+{
+  "metadata": {
+    "bounty_id": "CLAN-GRAPH-001",
+    "title": "Provenance-Backed Clan Relationship, Branch-Lineage & Proxy-War Graph",
+    "worker_id": "AG-20260903-2050-M8K2",
+    "timestamp_iso": "2026-09-03T21:15:00+01:00",
+    "status": "APPROVED_ORIGINAL_CONTRACT",
+    "acceptance_criteria_verification": {
+      "entity_distinction_preserved": true,
+      "zero_surname_promotions": true,
+      "branch_recursion_without_ceiling": true,
+      "benzshin_protocols_grounded": true,
+      "redalious_unmatara_proxy_wars_grounded": true,
+      "royal_family_distinct_from_clans": true,
+      "all_edges_provenance_backed": true
+    },
+    "summary_statistics": {
+      "total_nodes": 32,
+      "total_edges": 34,
+      "main_clans_count": 9,
+      "branch_clans_count": 3,
+      "persons_count": 14,
+      "categories_count": 2,
+      "institutions_count": 2,
+      "royal_family_count": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "clan-redalious",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Redalious",
+      "provenance": [
+        "divine.json:War factor g",
+        "characters.json:dyvane-redalious"
+      ],
+      "doctrine": "Endurance-Reality Axiom, War Factor c/g suppression, high aristocratic lineage, dual headship law.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-unmatara",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Unmatara",
+      "provenance": [
+        "divine.json:War factor g",
+        "characters.json:qintara-unmatara"
+      ],
+      "doctrine": "Frontline kinetic vanguard, highest kinetic kill ratio, War Factor c elevation.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-varvadeil",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Varvadeil",
+      "provenance": [
+        "culture-clans-ontology.json:clan-varvadeil",
+        "characters.json:asmouth-varvadeil"
+      ],
+      "doctrine": "Imperial logic hearth, outercausal research, metaphysical engineering.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-vaeloria",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Vaeloria",
+      "provenance": [
+        "culture-clans-ontology.json:clan-vaeloria",
+        "characters.json:high-commander-vaeloria"
+      ],
+      "doctrine": "Shadow directorate, counter-subversion, infallible truce engineering, Grand Reincarnation guardianship.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-venakan",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Venakan",
+      "provenance": [
+        "culture-clans-ontology.json:clan-venakan",
+        "characters.json:dariyus-venakan"
+      ],
+      "doctrine": "Venakan Celebratisation, prime hyperascenders, public pageantry and imperial effort baseline.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-omnivox",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Omnivox",
+      "provenance": [
+        "characters.json:kaelar-omnivox",
+        "divine.json:Extended Brain-lobe function catalogue"
+      ],
+      "doctrine": "Supreme broadsheet dynasty (Rank 8 in media chronicle), mathematical battle dissection, telepathic signal authentication.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-xanthera",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Xanthera",
+      "provenance": [
+        "characters.json:zyra-xanthera",
+        "divine.json:One way to increase this to improve Mefuli rank"
+      ],
+      "doctrine": "Supreme tabloid media clan, high-virality public dissemination, mass cultural broadcast.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-zolfer",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Zolfer",
+      "provenance": [
+        "characters.json:linaele-zolfer",
+        "divine.json:These artefacts synergistically improve the user"
+      ],
+      "doctrine": "Top-50 artifact engineering clan; weaponizes hostile entities and engineers challenge-pressure artifacts.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "clan-veyndarion",
+      "entity_type": "MAIN_CLAN",
+      "name": "Clan Veyndarion",
+      "provenance": [
+        "characters.json:thalyros-veyndarion"
+      ],
+      "doctrine": "Ancient aristocratic martial host; keepers of ancestral lore against cosmic calamities.",
+      "canonical_status": "CANONICAL_MAIN_CLAN"
+    },
+    {
+      "id": "branch-omnivox-rec3-valerius",
+      "entity_type": "BRANCH_CLAN",
+      "name": "Omnivox Third-Recursive Branch Clan (Valerius)",
+      "parent_clan": "clan-omnivox",
+      "recursion_depth": 3,
+      "leader": "person-valerius-omnivox",
+      "provenance": [
+        "characters.json:valerius-omnivox"
+      ],
+      "specialty": "Predictive acquisition of future Kafai-rank broadcast rights.",
+      "canonical_status": "CANONICAL_NAMED_BRANCH_CLAN"
+    },
+    {
+      "id": "branch-redalious-rec76",
+      "entity_type": "BRANCH_CLAN",
+      "name": "Redalious 76th-Recursive Branch Clan",
+      "parent_clan": "clan-redalious",
+      "recursion_depth": 76,
+      "provenance": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "specialty": "Shallow-depth benchmark branch deployed in proxy clan wars.",
+      "canonical_status": "CANONICAL_EXEMPLAR_BRANCH_CLAN"
+    },
+    {
+      "id": "branch-unmatara-rec674",
+      "entity_type": "BRANCH_CLAN",
+      "name": "Unmatara 674th-Recursive Branch Clan",
+      "parent_clan": "clan-unmatara",
+      "recursion_depth": 674,
+      "provenance": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "specialty": "Deep-recursion branch clan capable of defeating shallower rival branches in proxy wars.",
+      "canonical_status": "CANONICAL_EXEMPLAR_BRANCH_CLAN"
+    },
+    {
+      "id": "person-dyvane-redalious",
+      "entity_type": "PERSON",
+      "name": "Dyvane Redalious",
+      "role": "Clan Head of Clan Redalious; Supreme Male General; Highest Endurance Record holder",
+      "provenance": [
+        "characters.json:dyvane-redalious",
+        "divine.json:One way to increase this"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-zeta",
+      "entity_type": "PERSON",
+      "name": "Zeta",
+      "role": "Main wife of Dyvane; eligible female co-head under opposite-gender dual headship law",
+      "provenance": [
+        "divine.json:Section on Dual Headship",
+        "characters.json:dyvane-redalious"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-kartus",
+      "entity_type": "PERSON",
+      "name": "Kartus",
+      "role": "Son of Dyvane and Zeta; Spymaster and supreme male cold-war general in Clan Vaeloria",
+      "provenance": [
+        "characters.json:kartus-vaeloria",
+        "characters.json:dyvane-redalious"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-qintara-unmatara",
+      "entity_type": "PERSON",
+      "name": "Qintara Unmatara",
+      "role": "Clan Head of Clan Unmatara; Supreme Female General",
+      "provenance": [
+        "characters.json:qintara-unmatara",
+        "divine.json:One way to increase this"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-asmouth-varvadeil",
+      "entity_type": "PERSON",
+      "name": "Asmouth Varvadeil",
+      "role": "Clan Head of Clan Varvadeil; Supreme Scientific Architect",
+      "provenance": [
+        "characters.json:asmouth-varvadeil"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-kaelar-omnivox",
+      "entity_type": "PERSON",
+      "name": "Kaelar Omnivox",
+      "role": "Clan Head of Clan Omnivox; Sovereign of the Absolute Analysis; Archon of Metaperception",
+      "provenance": [
+        "characters.json:kaelar-omnivox"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-valerius-omnivox",
+      "entity_type": "PERSON",
+      "name": "Valerius (Omnivox lineage)",
+      "role": "Eldest son of Kaelar; leader of third-recursive Omnivox branch clan",
+      "provenance": [
+        "characters.json:valerius-omnivox"
+      ],
+      "disambiguation_note": "Kept strictly distinct from Valerius Varvadeil.",
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-valerius-varvadeil",
+      "entity_type": "PERSON",
+      "name": "Valerius Varvadeil",
+      "role": "Scientific prodigy within Clan Varvadeil",
+      "provenance": [
+        "characters.json:valerius-varvadeil"
+      ],
+      "disambiguation_note": "Kept strictly distinct from Valerius Omnivox.",
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-zyra-xanthera",
+      "entity_type": "PERSON",
+      "name": "Zyra Xanthera",
+      "role": "Leader of the supreme tabloid clan Clan Xanthera",
+      "provenance": [
+        "characters.json:zyra-xanthera"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-dariyus-venakan",
+      "entity_type": "PERSON",
+      "name": "Dariyus Venakan",
+      "role": "Prime Hyperascender; benchmark for suprahard workingness and celebratisation",
+      "provenance": [
+        "characters.json:dariyus-venakan"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-linaele-zolfer",
+      "entity_type": "PERSON",
+      "name": "Linaele Zolfer",
+      "role": "Leader of the Zolfer Clan; artifact engineer",
+      "provenance": [
+        "characters.json:linaele-zolfer",
+        "divine.json:Linaele Zolfer"
+      ],
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-valthor",
+      "entity_type": "PERSON",
+      "name": "Valthor",
+      "role": "Ancient vanguard individual; Grand Reincarnation subject (reincarnated through Unmatara lineage)",
+      "provenance": [
+        "characters.json:valthor"
+      ],
+      "disambiguation_note": "PERSON ONLY: Surname/reference name never promoted to a clan without direct evidence.",
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "royal-family-rhayhara",
+      "entity_type": "ROYAL_FAMILY",
+      "name": "Imperial Royal Family (Rhayhara Hearth)",
+      "provenance": [
+        "divine.json:(the brain) and bodily system: Rhayhara has a royal family... not a clan"
+      ],
+      "ruling_monarch": "Supreme Empress Rhayhara",
+      "distinct_from_clans": true,
+      "sovereign_powers": [
+        "Trans-universal imperial governance above traditional clans",
+        "Power to forcefully depose clan leaders and block succession",
+        "Azin trait ensuring Royal Family never falls behind clans in title/achievement acquisition"
+      ],
+      "canonical_status": "CANONICAL_ROYAL_FAMILY"
+    },
+    {
+      "id": "person-halatayo",
+      "entity_type": "PERSON",
+      "name": "Halatayo",
+      "role": "Close royal descendant of Supreme Empress Rhayhara; future-threat conqueror",
+      "provenance": [
+        "divine.json:(the brain) and bodily system",
+        "characters.json:halatayo"
+      ],
+      "disambiguation_note": "MEMBER OF ROYAL FAMILY: Never promoted to a clan.",
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "person-qailyth",
+      "entity_type": "PERSON",
+      "name": "Qai'lyth",
+      "role": "Close royal descendant of Supreme Empress Rhayhara",
+      "provenance": [
+        "divine.json:(the brain) and bodily system",
+        "characters.json:qailyth"
+      ],
+      "disambiguation_note": "MEMBER OF ROYAL FAMILY: Never promoted to a clan.",
+      "canonical_status": "CANONICAL_PERSON"
+    },
+    {
+      "id": "category-broadsheet-clans",
+      "entity_type": "CLAN_CATEGORY",
+      "name": "Broadsheet Media Clans",
+      "provenance": [
+        "divine.json:One way to increase this... competing clans that functions as cultural news spreaders some broadsheets"
+      ],
+      "description": "Clans dedicated to serious mathematical battle analysis, verified Kafai tracking, and analytical reporting.",
+      "canonical_status": "CANONICAL_CATEGORY"
+    },
+    {
+      "id": "category-tabloid-clans",
+      "entity_type": "CLAN_CATEGORY",
+      "name": "Tabloid News Clans",
+      "provenance": [
+        "divine.json:One way to increase this... some tabloids and some broadsheets"
+      ],
+      "description": "Clans dedicated to viral mass-market news, celebrity coverage, and sensational combat moments.",
+      "canonical_status": "CANONICAL_CATEGORY"
+    },
+    {
+      "id": "institution-benzshin-system",
+      "entity_type": "NON_CLAN_INSTITUTION",
+      "name": "The Benzshin Meritocratic System",
+      "provenance": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon: We'll call this process entering benzshin"
+      ],
+      "function": "Imperial protocol governing branch-clan formation, recursive demotion for inadequate performance, and merit-based ascent toward main clan.",
+      "canonical_status": "CANONICAL_INSTITUTION"
+    },
+    {
+      "id": "institution-keenmon-theater",
+      "entity_type": "NON_CLAN_INSTITUTION",
+      "name": "Ke'enmon Subdimensional Expeditionary Theater",
+      "provenance": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon",
+        "divine.json:In a separate dimension (the Ke'enmon)"
+      ],
+      "function": "High-risk dimensional combat zone against the Keshra where clans voluntarily deploy and War Factor g escalates.",
+      "canonical_status": "CANONICAL_INSTITUTION"
+    },
+    {
+      "id": "entity-dalroemar",
+      "entity_type": "EXTERNAL_ENTITY",
+      "name": "Dalroemar (Calamity to All)",
+      "role": "Planet-sized mystical alligator-like entity; extreme adaptive training adversary to Rhayhara",
+      "provenance": [
+        "characters.json:dalroemar"
+      ],
+      "disambiguation_note": "COSMIC CALAMITY / ADVERSARY: Not a clan and not an Arthitean citizen.",
+      "canonical_status": "CANONICAL_EXTERNAL_ENTITY"
+    }
+  ],
+  "edges": [
+    {
+      "source": "person-dyvane-redalious",
+      "target": "clan-redalious",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:dyvane-redalious"
+      ],
+      "evidence": "Head of Clan Redalious; Supreme Male General; holder of Highest Endurance Record."
+    },
+    {
+      "source": "person-zeta",
+      "target": "clan-redalious",
+      "relationship_type": "ELIGIBLE_CO_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:Section on Dual Headship"
+      ],
+      "evidence": "Main wife of Dyvane; eligible female co-head under opposite-gender dual headship law."
+    },
+    {
+      "source": "person-qintara-unmatara",
+      "target": "clan-unmatara",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:qintara-unmatara"
+      ],
+      "evidence": "Head of Clan Unmatara; Supreme Female General."
+    },
+    {
+      "source": "person-asmouth-varvadeil",
+      "target": "clan-varvadeil",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:asmouth-varvadeil"
+      ],
+      "evidence": "Head of Clan Varvadeil; supreme scientific architect."
+    },
+    {
+      "source": "person-kaelar-omnivox",
+      "target": "clan-omnivox",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:kaelar-omnivox"
+      ],
+      "evidence": "Clan leader of the highest-ranked broadsheet clan (Clan Rank 8)."
+    },
+    {
+      "source": "person-zyra-xanthera",
+      "target": "clan-xanthera",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:zyra-xanthera"
+      ],
+      "evidence": "Leader of the supreme tabloid clan Clan Xanthera."
+    },
+    {
+      "source": "person-dariyus-venakan",
+      "target": "clan-venakan",
+      "relationship_type": "CLAN_PRODIGY_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:dariyus-venakan"
+      ],
+      "evidence": "Prime Hyperascender; defining figure of Venakan Celebratisation."
+    },
+    {
+      "source": "person-linaele-zolfer",
+      "target": "clan-zolfer",
+      "relationship_type": "CLAN_HEAD",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:linaele-zolfer",
+        "divine.json:These artefacts synergistically improve"
+      ],
+      "evidence": "Linaele Zolfer is the leader of the Zolfer Clan (Top 50 clan)."
+    },
+    {
+      "source": "person-valerius-omnivox",
+      "target": "branch-omnivox-rec3-valerius",
+      "relationship_type": "BRANCH_LEADER",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:valerius-omnivox"
+      ],
+      "evidence": "Eldest son of Kaelar Omnivox and leader of highly successful third-recursive branch clan."
+    },
+    {
+      "source": "person-kartus",
+      "target": "person-dyvane-redalious",
+      "relationship_type": "SON_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:dyvane-redalious:family",
+        "characters.json:kartus-vaeloria:family"
+      ],
+      "evidence": "Kartus is explicitly the son of Dyvane Redalious and Zeta."
+    },
+    {
+      "source": "person-kartus",
+      "target": "person-zeta",
+      "relationship_type": "SON_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:dyvane-redalious:family"
+      ],
+      "evidence": "Kartus is born of Zeta, main wife of Dyvane."
+    },
+    {
+      "source": "person-kartus",
+      "target": "clan-vaeloria",
+      "relationship_type": "SPYMASTER_AND_GENERAL",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:kartus-vaeloria"
+      ],
+      "evidence": "Kartus serves as Spymaster and supreme male cold-war general within Clan Vaeloria."
+    },
+    {
+      "source": "person-valerius-omnivox",
+      "target": "person-kaelar-omnivox",
+      "relationship_type": "ELDEST_SON_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:valerius-omnivox:family"
+      ],
+      "evidence": "Kaelar Omnivox's explicitly named eldest son."
+    },
+    {
+      "source": "person-halatayo",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "ROYAL_FAMILY_DESCENDANT",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:(the brain) and bodily system"
+      ],
+      "evidence": "Rhayhara has a royal family (her close descendents: Qai'lyth, Halatayo and so forth)... not a clan."
+    },
+    {
+      "source": "person-qailyth",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "ROYAL_FAMILY_DESCENDANT",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:(the brain) and bodily system"
+      ],
+      "evidence": "Qai'lyth is explicitly named as close royal descendant of Rhayhara."
+    },
+    {
+      "source": "branch-omnivox-rec3-valerius",
+      "target": "clan-omnivox",
+      "relationship_type": "BRANCH_RECURSION_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "recursion_depth": 3,
+      "sources": [
+        "characters.json:valerius-omnivox"
+      ],
+      "evidence": "Third-recursive Omnivox branch-clan leader."
+    },
+    {
+      "source": "branch-redalious-rec76",
+      "target": "clan-redalious",
+      "relationship_type": "BRANCH_RECURSION_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "recursion_depth": 76,
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "76 branch clan recursion off the main Redalious clan."
+    },
+    {
+      "source": "branch-unmatara-rec674",
+      "target": "clan-unmatara",
+      "relationship_type": "BRANCH_RECURSION_OF",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "recursion_depth": 674,
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "674 branch clan recursion off the main Unmatara clan."
+    },
+    {
+      "source": "clan-redalious",
+      "target": "institution-benzshin-system",
+      "relationship_type": "ENTERING_BENZSHIN",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Descendants enter benzshin; inadequate performance forces member further down in recursive branch clan numbers."
+    },
+    {
+      "source": "clan-unmatara",
+      "target": "institution-benzshin-system",
+      "relationship_type": "ENTERING_BENZSHIN",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Branch clan leader descendants enter benzshin creating branch of branch clan recursively forever."
+    },
+    {
+      "source": "institution-benzshin-system",
+      "target": "clan-redalious",
+      "relationship_type": "BENZSHIN_ASCENT_MERIT",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Members can go down in branch number towards main clan through merit with mutual leader agreement."
+    },
+    {
+      "source": "institution-benzshin-system",
+      "target": "clan-unmatara",
+      "relationship_type": "BENZSHIN_ASCENT_MERIT",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Branch leaders of highest branch groups return to main clan and appoint successors."
+    },
+    {
+      "source": "branch-unmatara-rec674",
+      "target": "branch-redalious-rec76",
+      "relationship_type": "PROXY_CLAN_WAR_ENGAGEMENT",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Rivaling clans like Unmatara and Redalious engage in proxy clan wars where deeper recursive branches defeat shallower rival branches (e.g. 674th Unmatara branch beating 76th Redalious branch) to prove indirect superiority."
+    },
+    {
+      "source": "clan-redalious",
+      "target": "clan-unmatara",
+      "relationship_type": "COMPETITIVE_PROXY_RIVALRY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:War factor g increases the deeper into a Ke'enmon"
+      ],
+      "evidence": "Rivaling clans engage in proxy clan wars to test recursive branch resilience."
+    },
+    {
+      "source": "clan-redalious",
+      "target": "clan-unmatara",
+      "relationship_type": "FRONT_LINE_ALLIANCE_KEENMON",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:dyvane-redalious:related",
+        "characters.json:qintara-unmatara:related"
+      ],
+      "evidence": "Frontline vanguard command pairing fighting Keshra in Ke'enmon subdimensions."
+    },
+    {
+      "source": "clan-omnivox",
+      "target": "category-broadsheet-clans",
+      "relationship_type": "BELONGS_TO_CATEGORY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:kaelar-omnivox",
+        "divine.json:One way to increase this"
+      ],
+      "evidence": "Highest-ranked broadsheet clan in the imperial media chronicle."
+    },
+    {
+      "source": "clan-xanthera",
+      "target": "category-tabloid-clans",
+      "relationship_type": "BELONGS_TO_CATEGORY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:zyra-xanthera",
+        "divine.json:One way to increase this"
+      ],
+      "evidence": "Supreme tabloid clan in the imperial media chronicle."
+    },
+    {
+      "source": "clan-omnivox",
+      "target": "clan-xanthera",
+      "relationship_type": "MEDIA_RIVALRY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:kaelar-omnivox:relationships",
+        "divine.json:One way to increase this"
+      ],
+      "evidence": "Broadsheets and tabloids compete in clan rank and popularity of viewership for the news they spread."
+    },
+    {
+      "source": "clan-redalious",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "SOVEREIGN_FEALTY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:Rhayhara can also forcefully depose a clan leader"
+      ],
+      "evidence": "Rhayhara can forcefully depose clan leaders and block succession; absolute imperial allegiance."
+    },
+    {
+      "source": "clan-unmatara",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "SOVEREIGN_FEALTY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "divine.json:Rhayhara can also forcefully depose a clan leader"
+      ],
+      "evidence": "Vanguard devotion to the Supreme Empress."
+    },
+    {
+      "source": "clan-varvadeil",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "SOVEREIGN_FEALTY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:asmouth-varvadeil:allegiance"
+      ],
+      "evidence": "Allegiance to Arthitean Empire and Supreme Empress Rhayhara."
+    },
+    {
+      "source": "clan-vaeloria",
+      "target": "royal-family-rhayhara",
+      "relationship_type": "SOVEREIGN_FEALTY",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:high-commander-vaeloria:allegiance"
+      ],
+      "evidence": "Espionage fealty and counter-subversion security to the Empress."
+    },
+    {
+      "source": "clan-veyndarion",
+      "target": "entity-dalroemar",
+      "relationship_type": "ANCESTRAL_ENEMY_LORE",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:thalyros-veyndarion:history"
+      ],
+      "evidence": "Veyndarion lore codifies Dalroemar as the 'Calamity to All'."
+    },
+    {
+      "source": "person-valthor",
+      "target": "clan-unmatara",
+      "relationship_type": "REINCARNATED_THROUGH_LINEAGE",
+      "epistemic_status": "CANONICAL_SOURCE_PROVENANCE",
+      "sources": [
+        "characters.json:valthor:clan"
+      ],
+      "evidence": "Valthor is an ancient individual reincarnated through the Unmatara lineage; NOT a clan."
+    }
+  ],
+  "tested_surname_cases": [
+    {
+      "name": "Dalroemar",
+      "tested_result": "EXTERNAL_ENTITY",
+      "finding": "Planet-sized alligator entity ('Calamity to All') in Veyndarion lore; verified as external threat, NOT an Arthitean clan."
+    },
+    {
+      "name": "Valthor",
+      "tested_result": "PERSON",
+      "finding": "Ancient vanguard individual reincarnated through Unmatara lineage; verified as single person, NOT a clan."
+    },
+    {
+      "name": "Halatayo",
+      "tested_result": "PERSON (ROYAL FAMILY)",
+      "finding": "Close descendant of Supreme Empress Rhayhara; verified as Royal Family member (explicitly 'not a clan')."
+    },
+    {
+      "name": "Zolfer",
+      "tested_result": "MAIN_CLAN (Clan Zolfer)",
+      "finding": "Explicitly confirmed in characters.json ('Leader of the Zolfer Clan') and Divine v144 as Top-50 artifact engineering clan led by Linaele Zolfer."
+    }
+  ]
+}
