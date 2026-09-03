@@ -146,7 +146,8 @@ for c in chars:
     # If Dyvane Redalious, append the complete canonical battle chronicles and grand feats
     dyvane_chronicles_html = ""
     if key == "dyvane-redalious":
-        dyvane_chronicles_html = """<h2>Canonical Battle Chronicles & Grand Feats (Primary Verbatim Sources)</h2>
+        dyvane_chronicles_html = """<h2>Source-Grounded Battle Chronicles & Grand Feats</h2>
+<p class="notice"><strong>Epistemic Classification Note:</strong> The four narrative chronicles below represent structured, source-grounded battle syntheses derived directly from preserved canonical transmissions. Unedited, verbatim primary source transmissions remain separately retrievable via the direct provenance file links in each chronicle entry.</p>
 
 <article class="chronicle-card" style="background:#15151a; border:1px solid #3b3428; border-radius:0.75rem; padding:1.5rem; margin-bottom:1.5rem;">
   <h3 style="color:#f5d061; margin-top:0;">Chronicle 1: The Crucible of the Null-Bringer (Duel with Xael-Gath)</h3>
