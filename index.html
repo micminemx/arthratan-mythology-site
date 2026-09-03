@@ -51,4 +51,5 @@
 <script src="app.js"></script>
 <script src="archive.js"></script>
 <script src="readability-components.js"></script>
+<script>(function(){function legacySearch(){var p=new URLSearchParams(location.search),q=p.get('q')||p.get('s');if(location.hash==='#search'||(!location.hash&&p.get('s'))){var u=new URL('/search/',location.origin);if(q)u.searchParams.set('q',q);location.replace(u.href);}}window.addEventListener('hashchange',legacySearch);legacySearch();})();</script>
 </body></html>
