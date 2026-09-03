@@ -1,4 +1,4 @@
-name: SEARCH-001 Unified Search Corpus
+name: SEARCH-001/002 Unified Search Corpus
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ on:
       - 'divine/**'
       - 'hgl/**'
       - 'scripts/build-search-index.py'
+      - 'scripts/build-static-search.py'
       - '.github/workflows/build-search-index.yml'
 
 permissions:
@@ -40,7 +41,10 @@ jobs:
           SEARCH_SOURCE_COMMIT: ${{ github.sha }}
         run: python scripts/build-search-index.py
 
-      - name: Validate search corpus contract
+      - name: Generate static no-JavaScript search surface
+        run: python scripts/build-static-search.py
+
+      - name: Validate search corpus and static discovery contract
         run: |
           python - <<'PY'
           import json
@@ -68,17 +72,25 @@ jobs:
           dyvane=[r for r in records if r['title'].casefold() == 'dyvane redalious']
           assert dyvane and dyvane[0]['route'] == '/characters/dyvane-redalious/'
           assert any('hypernegative rewrite' in (r['title']+' '+' '.join(r['keywords'])).casefold() for r in records)
-          print(f"validated {meta['records']} unified records across {len(manifest['shards'])} shards")
+          page=(root/'search/index.html').read_text(encoding='utf-8')
+          plain=(root/'search/index.txt').read_text(encoding='utf-8')
+          assert '<main id="results"' in page
+          assert 'Dyvane Redalious' in page
+          assert 'href="/characters/dyvane-redalious/"' in page
+          assert 'JavaScript is optional' in page
+          assert 'Dyvane Redalious | character | /characters/dyvane-redalious/' in plain
+          assert (root/'search/opensearch.xml').exists()
+          print(f"validated {meta['records']} unified records and static /search/ discovery")
           PY
 
-      - name: Commit generated search data when changed
+      - name: Commit generated search data and static page when changed
         run: |
-          if git diff --quiet -- data/search-index.json data/search-index-meta.json data/search-index-*.json; then
-            echo 'Search corpus already current.'
+          if git diff --quiet -- data/search-index.json data/search-index-meta.json data/search-index-*.json search/index.html search/index.txt search/opensearch.xml; then
+            echo 'Search corpus and static search surface already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/search-index.json data/search-index-meta.json data/search-index-*.json
-          git commit -m 'SEARCH-001: regenerate unified search corpus'
+          git add data/search-index.json data/search-index-meta.json data/search-index-*.json search/index.html search/index.txt search/opensearch.xml
+          git commit -m 'SEARCH-002: regenerate static unified search'
           git push
