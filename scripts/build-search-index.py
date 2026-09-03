@@ -1,6 +1,7 @@
-import json, re, unicodedata, pathlib, collections
+import json, re, unicodedata, pathlib, collections, os
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 D=ROOT/'data'
+SOURCE_COMMIT=os.environ.get('SEARCH_SOURCE_COMMIT') or os.environ.get('GITHUB_SHA') or 'unspecified-build-snapshot'
 
 def load(n): return json.load(open(D/n,encoding='utf-8'))
 def norm(s):
@@ -43,7 +44,9 @@ for s in load('divine.json')['sections']:
 
 for pg in load('hgl-pages.json')['pages']:
     text=pg['text']; lines=[norm(x) for x in text.splitlines() if norm(x)]
-    add(id=f"hgl:{pg['page']}", type='hgl', title=f"Hypergendered Logic — page {pg['page']}", aliases=[], route=f"/hgl/{pg['page']:03d}/", source_id=str(pg['page']), source_path='/data/hgl-pages.json', snippet=' '.join(lines[:8]), keywords=keyword_terms(text))
+    hgl_static=ROOT/'hgl'/f"{pg['page']:03d}"/'index.html'
+    hgl_route=f"/hgl/{pg['page']:03d}/" if hgl_static.exists() else '/hgl/'
+    add(id=f"hgl:{pg['page']}", type='hgl', title=f"Hypergendered Logic — page {pg['page']}", aliases=[], route=hgl_route, source_id=str(pg['page']), source_path='/data/hgl-pages.json', snippet=' '.join(lines[:8]), keywords=keyword_terms(text))
 
 zi=load('zubaida-index.json'); srcdir=ROOT/'sources'/'zubaida'; existing={p.stem for p in srcdir.glob('*.txt')}; source_ids=[x for x in zi['ids'] if x in existing]
 assert len(source_ids)==118, len(source_ids)
@@ -73,7 +76,7 @@ priority={'character':100,'concept':90,'living-canon':80,'zubaida':70,'divine':6
 for r in records: r['rank_priority']=priority.get(r['type'],10)
 records.sort(key=lambda r:(-r['rank_priority'],r['title'].lower(),r['id']))
 counts=collections.Counter(r['type'] for r in records)
-meta={'version':1,'task':'SEARCH-001','generated_from_commit':'e1010e9cde4d476cc4367c1028d46625f3a1fe79','source_rule':'Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.','normalization':'Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.','records':len(records),'counts':dict(sorted(counts.items())),'coverage':{'characters':len(chars),'zubaida_source_transmissions':len(source_ids),'divine_sections':len(load('divine.json')['sections']),'hgl_pages':len(load('hgl-pages.json')['pages']),'living_canon_sections':len(load('new-canon.json').get('sections',[])),'causal_concepts':len(load('causal-ontology.json').get('concepts',[])),'hgl_glossary_entries':len(hg.get('entries',[]))},'validation':{'unique_ids':len({r['id'] for r in records})==len(records),'routes_present':all(r['route'] for r in records),'source_paths_present':all(r['source_path'] for r in records),'source_files_modified':False}}
+meta={'version':1,'task':'SEARCH-001','generated_from_commit':SOURCE_COMMIT,'source_rule':'Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.','normalization':'Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.','records':len(records),'counts':dict(sorted(counts.items())),'coverage':{'characters':len(chars),'zubaida_source_transmissions':len(source_ids),'divine_sections':len(load('divine.json')['sections']),'hgl_pages':len(load('hgl-pages.json')['pages']),'living_canon_sections':len(load('new-canon.json').get('sections',[])),'causal_concepts':len(load('causal-ontology.json').get('concepts',[])),'hgl_glossary_entries':len(hg.get('entries',[]))},'validation':{'unique_ids':len({r['id'] for r in records})==len(records),'routes_present':all(r['route'] for r in records),'source_paths_present':all(r['source_path'] for r in records),'source_files_modified':False}}
 shard_specs=[('characters',{'character'}),('zubaida',{'zubaida'}),('divine',{'divine'}),('hgl',{'hgl'}),('concepts-living',{'concept','living-canon','provenance'})]
 shards=[]
 for name,types in shard_specs:
