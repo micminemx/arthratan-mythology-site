@@ -22,7 +22,7 @@
     {
       "level": 1,
       "name": "Acausality",
-      "formula": "\u00ac\u2203c: c => S",
+      "formula": "¬∃c: c => S",
       "description": "Absolute absence of an origin-cause for subject S."
     },
     {
@@ -40,19 +40,19 @@
     {
       "level": 4,
       "name": "Hyperacausality",
-      "formula": "\u00ac\u2203c: c => Acausality(S)",
+      "formula": "¬∃c: c => Acausality(S)",
       "description": "The acausality of something itself lacks any cause explaining why or how it is acausal."
     },
     {
       "level": 5,
       "name": "Transrecursive Hypercausality",
-      "formula": "\u2200n \u2265 0: \u00ac\u2203c, r: (c => N_n \u2228 r => N_n)",
+      "formula": "∀n ≥ 0: ¬∃c, r: (c => N_n ∨ r => N_n)",
       "description": "Nonderivation and nongrounding hold recursively at every higher causal and reasonal meta-order without terminal depth."
     },
     {
       "level": 6,
       "name": "Outercausality Stage 1",
-      "formula": "Transcend(Causality \u222a Acausality \u222a Supracausality \u222a Infracausality)",
+      "formula": "Transcend(Causality ∪ Acausality ∪ Supracausality ∪ Infracausality)",
       "description": "State entirely transcending allowable limits of both causal and acausal frameworks."
     }
   ],
@@ -63,7 +63,7 @@
       "class": "Causal-erasure operator",
       "canon_definition": "An operation where a state or timeline is rewritten, and the rewrite itself retroactively removes its own surviving causal provenance so that it was never caused as a rewrite.",
       "clarification": "Unlike standard timeline alterations that leave an active rewritelog or paradox trace, Negative Rewrite erases the fact that an alteration occurred. The modified state appears as having always been the natural state.",
-      "formal_logic": "Rewrite(T -> T') \u2227 Erase(Cause(Rewrite)) => NaturalState(T')",
+      "formal_logic": "Rewrite(T -> T') ∧ Erase(Cause(Rewrite)) => NaturalState(T')",
       "sources": [
         "site/sources/zubaida/1a0601fc96f7add3.txt",
         "causal-ontology.json"
@@ -76,12 +76,29 @@
       "class": "Infinite-depth explanatory erasure",
       "canon_definition": "An update implemented across the fundamental structures of reality where if the reason why a cause is not a rewrite would itself be a rewrite, that reason is conceptually rewritten so that it was never a rewrite, applying recursively across every explanatory order without terminal depth.",
       "clarification": "Produces absolute rewrite-originlessness. The resulting effect X remains real and permanent, while no causal, reasonal, metacausal, metareasonal, or recursively higher explanatory path can truthfully terminate in or derive its rewrite status from a rewrite.",
-      "formal_logic": "\u2200 e \u2208 ExplanatoryOrders: \u00acRewriteGround(e, X) \u2227 X = Persist",
+      "formal_logic": "∀ e ∈ ExplanatoryOrders: ¬RewriteGround(e, X) ∧ X = Persist",
       "sources": [
         "site/sources/zubaida/1a0601fc96f7add3.txt",
         "causal-ontology.json"
       ],
-      "commonly_confused_with": "Mere memory wiping or simple timeline branching."
+      "commonly_confused_with": "Mere memory wiping or simple timeline branching.",
+      "title": "Hypernegative Rewrite",
+      "historical_summary": "An effect-producing rewrite whose rewrite-origin is recursively excluded at every causal, reasonal, and mixed explanatory order while the effect remains real.",
+      "summary": "An effect-producing rewrite whose rewrite-origin is recursively excluded at every causal, reasonal, and mixed explanatory order while the effect remains real.",
+      "verbatim_canon_source_history": [
+        "Hypernegative Rewrite is a rewrite in which an initial rewrite Y produces an effect X, after which another rewrite P conceptually erases both Y and P from ever qualifying as the rewrite-origin of X at any explanatory order.",
+        "This conceptual erasure applies not only to the direct cause of X, but recursively to every cause, reason, cause-for-reason, reason-for-cause, metacause, metareason, metacausal-reason, metareasonal-cause, and every recursively higher or mixed causal-reasonal relation through which the existence or state of X could ultimately be attributed to a rewrite.",
+        "Thus, even if the direct cause of X is rewritten so that it was never itself a rewrite, Hypernegative Rewrite does not stop there. If the reason why that cause is not a rewrite would itself be a rewrite, that reason is also conceptually rewritten so that it was never a rewrite. The same operation applies recursively to the cause of that reason, the reason for that cause, the cause of the reason for that cause, and every further explanatory order without terminal depth.",
+        "The resulting effect X remains real, while no causal, reasonal, metacausal, metareasonal, causal-reasonal, reasonal-causal, or recursively higher explanatory path can truthfully terminate in, depend upon, or derive its rewrite-status from a rewrite."
+      ],
+      "verbatim_source_canon": "Hypernegative Rewrite is a rewrite in which an initial rewrite Y produces an effect X, after which another rewrite P conceptually erases both Y and P from ever qualifying as the rewrite-origin of X at any explanatory order.\n\nThis conceptual erasure applies not only to the direct cause of X, but recursively to every cause, reason, cause-for-reason, reason-for-cause, metacause, metareason, metacausal-reason, metareasonal-cause, and every recursively higher or mixed causal-reasonal relation through which the existence or state of X could ultimately be attributed to a rewrite.\n\nThus, even if the direct cause of X is rewritten so that it was never itself a rewrite, Hypernegative Rewrite does not stop there. If the reason why that cause is not a rewrite would itself be a rewrite, that reason is also conceptually rewritten so that it was never a rewrite. The same operation applies recursively to the cause of that reason, the reason for that cause, the cause of the reason for that cause, and every further explanatory order without terminal depth.\n\nThe resulting effect X remains real, while no causal, reasonal, metacausal, metareasonal, causal-reasonal, reasonal-causal, or recursively higher explanatory path can truthfully terminate in, depend upon, or derive its rewrite-status from a rewrite.",
+      "historical_formal": [
+        "Y Γƒ╢ X",
+        "P Γƒ╢ ┬¼RewriteOrigin(Y, X) Γêº ┬¼RewriteOrigin(P, X)",
+        "X persists",
+        "ΓêÇ explanatory orders e: ┬¼RewriteGround(e, X)"
+      ],
+      "historical_clarification": "Negative Rewrite removes its own surviving causal provenance. Hypernegative Rewrite recursively blocks every higher explanation that would restore rewrite-provenance. It produces rewrite-originlessness, not mere hidden causation."
     },
     {
       "id": "parahistory",
@@ -94,7 +111,22 @@
         "site/sources/zubaida/19e56867bf1bf3d3.txt",
         "site/sources/zubaida/1a0601fc96f7add3.txt"
       ],
-      "commonly_confused_with": "Linear timeline or historical chronicle."
+      "commonly_confused_with": "Linear timeline or historical chronicle.",
+      "title": "Parahistory",
+      "historical_summary": "The total causal-derivational structure of rewrites affecting a subject or domain, including rewrites of histories, ordering relations, and whole rewrite-structures.",
+      "summary": "The total causal-derivational structure of rewrites affecting a subject or domain, including rewrites of histories, ordering relations, and whole rewrite-structures.",
+      "verbatim_canon_source_history": [
+        "Parahistory is the total causal-derivational structure of rewrites affecting a subject or domain, including every rewrite of any kind and every higher-order rewrite causally responsible for producing, modifying, replacing, retrocausing, beginninglessifying, or otherwise determining another rewrite or rewrite-structure.",
+        "Parahistory is not restricted to a single temporal sequence. It includes rewrite-chains, branching rewrite-networks, rewritten rewrite-chains, rewrites of the ordering relations between rewrites, and higher-order rewrites that generate or alter entire rewrite-structures.",
+        "A later parahistorical state therefore need not simply occur after an earlier one. It may exist because an earlier-order rewrite caused that state, its history, its causal ordering, or even its apparent beginninglessness to obtain.",
+        "Thus a beginningless rewrite-history may itself possess a higher-order parahistorical cause: a rewrite that caused that history to have never had a beginning."
+      ],
+      "verbatim_source_canon": "Parahistory is the total causal-derivational structure of rewrites affecting a subject or domain, including every rewrite of any kind and every higher-order rewrite causally responsible for producing, modifying, replacing, retrocausing, beginninglessifying, or otherwise determining another rewrite or rewrite-structure.\n\nParahistory is not restricted to a single temporal sequence. It includes rewrite-chains, branching rewrite-networks, rewritten rewrite-chains, rewrites of the ordering relations between rewrites, and higher-order rewrites that generate or alter entire rewrite-structures.\n\nA later parahistorical state therefore need not simply occur after an earlier one. It may exist because an earlier-order rewrite caused that state, its history, its causal ordering, or even its apparent beginninglessness to obtain.\n\nThus a beginningless rewrite-history may itself possess a higher-order parahistorical cause: a rewrite that caused that history to have never had a beginning.",
+      "historical_formal": [
+        "Parahistory(subject) = total rewrite-causal derivation graph affecting subject",
+        "Sequence Γèé Parahistory; Parahistory Γëá merely sequence"
+      ],
+      "historical_clarification": "This nonlinearly generalized definition is ontologically stronger and more precise than the earlier draft describing only timelines arranged from earlier cause to later effect."
     },
     {
       "id": "paratime",
@@ -102,12 +134,25 @@
       "class": "Intertimeline causal ordering",
       "canon_definition": "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline. Earlier paratemporal entries cause later entries, and later entries are caused by earlier entries. The Arthitean Empire exists outside paratime while existing in time.",
       "clarification": "The Empire possesses internal time (past, present, future) without being a sequence of paratemporal versions. A single pantemporal Hypernegative Rewrite establishes invariants across all Empire time simultaneously.",
-      "formal_logic": "T_a \u227a_paratime T_b \u21d4 T_a causally produces T_b; Empire \u2208 Time \u2227 Empire \u2209 Paratime",
+      "formal_logic": "T_a ≺_paratime T_b ⇔ T_a causally produces T_b; Empire ∈ Time ∧ Empire ∉ Paratime",
       "sources": [
         "site/sources/zubaida/19f22dbf39b171ec.txt",
         "causal-ontology.json"
       ],
-      "commonly_confused_with": "Multiverse parallel dimensions."
+      "commonly_confused_with": "Multiverse parallel dimensions.",
+      "title": "Paratime",
+      "historical_summary": "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline.",
+      "summary": "The causal ordering dimension in which timelines are ordered by which timeline causes another timeline.",
+      "verbatim_canon_source_history": [
+        "Paratime is the ordering of timelines by intertimeline causation: earlier paratemporal entries cause later entries, and later entries are caused by earlier entries.",
+        "The Arthitean Empire exists outside paratime while existing in time."
+      ],
+      "verbatim_source_canon": "Paratime is the ordering of timelines by intertimeline causation: earlier paratemporal entries cause later entries, and later entries are caused by earlier entries.\n\nThe Arthitean Empire exists outside paratime while existing in time.",
+      "historical_formal": [
+        "TΓéü Γë║ΓéÜ TΓéé iff TΓéü causally produces TΓéé",
+        "Empire Γêê Time Γêº Empire Γêë Paratime"
+      ],
+      "historical_clarification": "The Empire can possess ordinary internal past, present, and future without being regenerated as a succession of paratemporal Empire-versions. A single pantemporally scoped Hypernegative Rewrite can therefore establish a property throughout all Empire-time without requiring one operation per paratemporal version."
     },
     {
       "id": "acausality",
@@ -115,7 +160,7 @@
       "class": "Origin-independency",
       "canon_definition": "The absolute property of lacking an antecedent cause or origin-event in the causal sequence.",
       "clarification": "Acausality establishes that a state or entity is uncaused. It does not automatically imply hyperacausality or transrecursive hypercausality.",
-      "formal_logic": "\u00ac\u2203c: c => S",
+      "formal_logic": "¬∃c: c => S",
       "sources": [
         "site/sources/zubaida/19ef0e52f69e4ad4.txt"
       ],
@@ -127,7 +172,7 @@
       "class": "Meta-order acausality",
       "canon_definition": "The state where the acausality of something itself lacks any cause or reason explaining why or how it is acausal.",
       "clarification": "Closes the second-order causal loophole where an opponent argues: 'Entity X is acausal, but I caused it to be acausal, so I control it.' Hyperacausality removes the cause of the acausality.",
-      "formal_logic": "\u00ac\u2203c: c => (\u00ac\u2203k: k => S)",
+      "formal_logic": "¬∃c: c => (¬∃k: k => S)",
       "sources": [
         "site/sources/zubaida/1a0601fc96f7add3.txt",
         "causal-ontology.json"
@@ -140,7 +185,7 @@
       "class": "Sequence predecessorlessness",
       "canon_definition": "Antiprecausal means that nothing precedes the subject in any sequence of causality or metacausality. Parahistorologically Antiprecausal means nothing precedes the subject in its parahistory.",
       "clarification": "Predecessorlessness in sequence order. An entity can be antiprecausal (first in line) while still having non-preceding ontological grounds, which is why acausality is distinct and complementary.",
-      "formal_logic": "\u00ac\u2203c: c \u227a_seq S",
+      "formal_logic": "¬∃c: c ≺_seq S",
       "sources": [
         "causal-ontology.json"
       ],
@@ -152,7 +197,7 @@
       "class": "Reasonal causality",
       "canon_definition": "Supracause means a cause for a reason for something. Asupracausal means lacking a cause for a reason for something. Supracausality is the causality of the acausality of something.",
       "clarification": "Governs the interface between abstract reasons and concrete causal mechanisms.",
-      "formal_logic": "Supracause(S) = Cause(Reason(S)); Asupracausal(S) = \u00ac\u2203c: c => Reason(S)",
+      "formal_logic": "Supracause(S) = Cause(Reason(S)); Asupracausal(S) = ¬∃c: c => Reason(S)",
       "sources": [
         "site/sources/zubaida/19ef0e52f69e4ad4.txt",
         "causal-ontology.json"
@@ -177,20 +222,33 @@
       "class": "Supreme nonderivation operator",
       "canon_definition": "A state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivation holds recursively at every higher causal and explanatory order without terminal depth.",
       "clarification": "The absolute peak of causal independence in the Arthitean Codex. Closes all meta-theoretical regresses across causality, metacausality, reasonal logic, and parahistorical derivation.",
-      "formal_logic": "\u2200 n \u2265 0: Nonderivation(Order_n(S)) \u2227 \u00ac\u2203Reason(Order_n(S))",
+      "formal_logic": "∀ n ≥ 0: Nonderivation(Order_n(S)) ∧ ¬∃Reason(Order_n(S))",
       "sources": [
         "site/sources/zubaida/1a0601fc96f7add3.txt",
         "causal-ontology.json"
       ],
-      "commonly_confused_with": "Simple omnipotence or ungrounded existence."
+      "commonly_confused_with": "Simple omnipotence or ungrounded existence.",
+      "title": "Transrecursive Hypercausality",
+      "historical_summary": "Acausality and its explanatory nongrounding hold at every recursively higher causal and reasonal order.",
+      "summary": "Acausality and its explanatory nongrounding hold at every recursively higher causal and reasonal order.",
+      "verbatim_canon_source_history": [
+        "Transrecursive Hypercausality is a state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivation holds recursively at every higher causal and explanatory order, with each order lacking a cause and lacking a reason.",
+        "This necessarily entails that something which is Transrecursively Hypercausal is acausal and hyperacausal; has no reason for its acausality and hyperacausality; and has a lack of reason that is itself acausal and hyperacausal at every recursive level."
+      ],
+      "verbatim_source_canon": "Transrecursive Hypercausality is a state in which something's acausality possesses no cause, reason, ground, origin, prerequisite, or derivational basis, and this nonderivation holds recursively at every higher causal and explanatory order, with each order lacking a cause and lacking a reason.\n\nThis necessarily entails that something which is Transrecursively Hypercausal is acausal and hyperacausal; has no reason for its acausality and hyperacausality; and has a lack of reason that is itself acausal and hyperacausal at every recursive level.",
+      "historical_formal": [
+        "NΓéÇ = nonderivation(subject)",
+        "ΓêÇn ΓëÑ 0: NΓéÖ has neither cause nor reason, and NΓéÖΓéèΓéü = nonderivation(NΓéÖ)"
+      ],
+      "historical_clarification": "Of the proposed precedence formulations, this is the strongest because it closes the higher-order explanatory regress. Beginninglessness removes a first temporal member; acausality removes an origin-cause; hyperacausality removes a cause of that acausality; Transrecursive Hypercausality extends that nonderivation through every causal, reasonal, and mixed metaorder."
     },
     {
       "id": "modus-tollens-causality",
       "name": "Modus-Tollens Causalities",
       "class": "Contrapositive causal necessity",
-      "canon_definition": "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (\u00acC) that would prevent E, and necessitates the existence of any prerequisite (P) required for E.",
-      "clarification": "Based on classical Modus Tollens (P => Q \u22a2 \u00acQ => \u00acP). If Imperial victory is invariant (V = TRUE), then any attack A that entails \u00acV is rendered counterfactually impossible and neutralized at the root.",
-      "formal_logic": "(C => \u00acInvariant) \u2227 Invariant => \u00acC",
+      "canon_definition": "The formal causal mechanics where the ontological invariance of an effect (E) retrocausally forces the negation of any potential cause (¬C) that would prevent E, and necessitates the existence of any prerequisite (P) required for E.",
+      "clarification": "Based on classical Modus Tollens (P => Q ⊢ ¬Q => ¬P). If Imperial victory is invariant (V = TRUE), then any attack A that entails ¬V is rendered counterfactually impossible and neutralized at the root.",
+      "formal_logic": "(C => ¬Invariant) ∧ Invariant => ¬C",
       "sources": [
         "Hypergendered Logic",
         "causal-ontology.json"
@@ -203,7 +261,7 @@
       "class": "Trans-developmental acceleration",
       "canon_definition": "Anticausal Improvement is self-enhancement occurring without an antecedent external cause. Hyperanticausal Improvement lacks any cause for that anticausal enhancement. Ultraanticausal Improvement operates across all parahistorical orders and cognitive dimensions, compounding metalearning without error-friction.",
       "clarification": "Associated directly with Ultralearning and the panparahistorical exclusion of Lifras (necessitative error-causes). Guarantees instantaneous, frictionless cognitive and ontological mastery.",
-      "formal_logic": "Improve(S, t) without Cause(Improve(S, t)); \u2200 meta-orders: Compounding(Improvement)",
+      "formal_logic": "Improve(S, t) without Cause(Improve(S, t)); ∀ meta-orders: Compounding(Improvement)",
       "sources": [
         "site/sources/zubaida/19e56867bf1bf3d3.txt",
         "causal-ontology.json"
@@ -216,7 +274,7 @@
       "class": "Necessitative imperfection factor",
       "canon_definition": "Lifras are necessitative causes for anything that the observer perceives as cognitive errors, mistakes, or suboptimalities.",
       "clarification": "Under Empress Rhayhara's reign, all Lifras are Hypernegatively Rewritten so they have never existed across any order of her parahistorical being.",
-      "formal_logic": "Lifra(L) => Error(E); HypernegativeRewrite(\u00ac\u2203L) => \u00ac\u2203E",
+      "formal_logic": "Lifra(L) => Error(E); HypernegativeRewrite(¬∃L) => ¬∃E",
       "sources": [
         "site/sources/zubaida/1a0601fc96f7add3.txt"
       ],
@@ -228,7 +286,7 @@
       "class": "Meta-ontological state",
       "canon_definition": "A state that entirely transcends the conceptually allowable limits of the concepts of causality, acausality, metacausality, metaacausality, supracausality, and infracausality.",
       "clarification": "Simulated and stress-tested by Clan Varvadeil against high-tier conceptual threats. Renders conceptual erasure and acausality-negation attacks structurally irrelevant.",
-      "formal_logic": "Outercausal(S) => S \u2209 (Causality \u222a Acausality \u222a Supracausality \u222a Infracausality)",
+      "formal_logic": "Outercausal(S) => S ∉ (Causality ∪ Acausality ∪ Supracausality ∪ Infracausality)",
       "sources": [
         "site/sources/zubaida/19ef0e52f69e4ad4.txt"
       ],
@@ -268,5 +326,60 @@
       "pair": "Outercausality vs Acausality",
       "distinction": "Acausality operates within the causality framework as an inverse (absence of cause). Outercausality transcends the validity of the causal/acausal paradigm entirely."
     }
+  ],
+  "historical_status": "Post-v144 living canon ┬╖ normalized 2 September 2026",
+  "historical_editorial_note": "Repeated passages in the supplied canon were deduplicated. Canon definitions are preserved separately from interpretive clarification. The latest, fullest Parahistory definition supersedes the earlier linear-sequence drafts.",
+  "applications": [
+    {
+      "subject": "Rhayhara",
+      "slug": "rhayhara",
+      "statements": [
+        "RhayharaΓÇÖs parahistory is Hypernegatively Rewritten to be Transrecursively Hypercausal.",
+        "All of RhayharaΓÇÖs Lifras are continuously target-covered by Hypernegative Rewrite and excluded from all her existence throughout history and parahistory."
+      ]
+    },
+    {
+      "subject": "Annaris",
+      "slug": "annaris",
+      "statements": [
+        "AnnarisΓÇÖs parahistory is Hypernegatively Rewritten to be Transrecursively Hypercausal.",
+        "All of AnnarisΓÇÖs Lifras are continuously target-covered by Hypernegative Rewrite and excluded from all her existence throughout history and parahistory."
+      ]
+    },
+    {
+      "subject": "Inzra",
+      "slug": "inzra",
+      "statements": [
+        "InzraΓÇÖs parahistory is Hypernegatively Rewritten to be Transrecursively Hypercausal.",
+        "All of InzraΓÇÖs Lifras are continuously target-covered by Hypernegative Rewrite and excluded from all her existence throughout history and parahistory."
+      ]
+    }
+  ],
+  "precedence_comparison": [
+    [
+      "Parahistory has no beginning",
+      "Removes a first parahistorical state, but a higher-order rewrite could still cause the beginninglessness.",
+      1
+    ],
+    [
+      "Parahistory has no cause",
+      "Removes a direct causal origin, but does not independently close reasonal or metacausal explanations of that acausality.",
+      2
+    ],
+    [
+      "No cause and no cause for acausality at every recursive level",
+      "Closes recursive causal derivation, but is less explicit about reasons, grounds, origins, prerequisites, and mixed explanation.",
+      3
+    ],
+    [
+      "Acausal, hyperacausal, and reasonlessly so at every recursive level",
+      "Strongly covers causal and reasonal recursion, but remains a long conjunction rather than one defined operator.",
+      4
+    ],
+    [
+      "Parahistory is Transrecursively Hypercausal",
+      "Maximal specified precedence: causal, reasonal, grounded, originary, prerequisite, derivational, and recursively mixed nonderivation.",
+      5
+    ]
   ]
 }
