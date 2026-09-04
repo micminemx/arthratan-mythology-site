@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T19:39:43Z",
+  "generated": "2026-09-04T19:40:55Z",
   "origin": "https://arthratanmythology.com",
-  "count": 920,
+  "count": 921,
   "routes": [
     {
       "kind": "character",
@@ -6370,6 +6370,14 @@
       "url": "/myths/rhayhara-and-othrys-five-orthogonal-escalations/",
       "source": "myths/rhayhara-and-othrys-five-orthogonal-escalations/index.html",
       "title": "Rhayhara and Othrys: Five Orthogonal Escalations",
+      "canon_status": "canonical-narrative"
+    },
+    {
+      "kind": "myth",
+      "key": "rhayhara-inzra-annaris-six-clashes",
+      "url": "/myths/rhayhara-inzra-annaris-six-clashes/",
+      "source": "myths/rhayhara-inzra-annaris-six-clashes/index.html",
+      "title": "Rhayhara, Inzra and Annaris: Six Metaprojected Clashes",
       "canon_status": "canonical-narrative"
     },
     {
