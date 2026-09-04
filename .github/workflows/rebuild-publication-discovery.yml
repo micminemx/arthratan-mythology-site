@@ -33,24 +33,47 @@ jobs:
       - name: Regenerate comprehensive sitemap
         run: python scripts/generate-comprehensive-sitemap.py
 
-      - name: Verify canon/noncanon boundary and backlinks
+      - name: Verify canon boundary, route discovery and character backlinks
         shell: bash
         run: |
           set -euo pipefail
-          grep -Fq '/myths/rhayhara-and-othrys-five-orthogonal-escalations/' crawl/index.html
-          grep -Fq '/crossscaling/rhayhara-othrys-orthogonal-escalation/' crawl/index.html
-          grep -Fq 'CROSSSCALE-ONLY / NONCANON' crawl/index.html
-          grep -Fq '/myths/rhayhara-and-othrys-five-orthogonal-escalations/' characters/rhayhara/index.html
-          grep -Fq '/crossscaling/rhayhara-othrys-orthogonal-escalation/' characters/rhayhara/index.html
-          grep -Fq 'https://arthratanmythology.com/myths/rhayhara-and-othrys-five-orthogonal-escalations/' sitemap.xml
-          grep -Fq 'https://arthratanmythology.com/crossscaling/rhayhara-othrys-orthogonal-escalation/' sitemap.xml
           python - <<'PY'
-          import json
-          j=json.load(open('data/static-route-manifest.json',encoding='utf-8'))
-          by={r['url']:r for r in j['routes']}
-          assert by['/myths/rhayhara-and-othrys-five-orthogonal-escalations/']['canon_status']=='canonical-narrative'
-          assert by['/crossscaling/rhayhara-othrys-orthogonal-escalation/']['canon_status']=='noncanon-analytical'
-          print('Verified publication graph with',j['count'],'routes')
+          import json, pathlib, re
+          root=pathlib.Path('.')
+          manifest=json.load(open(root/'data/static-route-manifest.json',encoding='utf-8'))
+          publications=[r for r in manifest['routes'] if r.get('kind') in {'myth','crossscaling'}]
+          assert publications, 'No Myth/Crossscaling routes registered'
+          crawl=(root/'crawl/index.html').read_text(encoding='utf-8')
+          sitemap=(root/'sitemap.xml').read_text(encoding='utf-8')
+          char_re=re.compile(r'href\s*=\s*[\'\"](?:https://arthratanmythology\.com)?/characters/([^/\'\"?#]+)/?[\'\"]',re.I)
+          for r in publications:
+              source=root/r['source']
+              assert source.exists(), source
+              expected='canonical-narrative' if r['kind']=='myth' else 'noncanon-analytical'
+              assert r.get('canon_status')==expected,(r['url'],r.get('canon_status'))
+              assert r['url'] in crawl,r['url']
+              assert 'https://arthratanmythology.com'+r['url'] in sitemap,r['url']
+              text=source.read_text(encoding='utf-8')
+              if r['kind']=='crossscaling':
+                  assert 'CROSSSCALE-ONLY' in text.upper(),r['url']
+              if r['url'] in {'/myths/','/crossscaling/'}:
+                  continue
+              for slug in set(char_re.findall(text)):
+                  page=root/'characters'/slug/'index.html'
+                  assert page.exists(),(r['url'],slug)
+                  rendered=page.read_text(encoding='utf-8')
+                  assert r['url'] in rendered,(slug,r['url'])
+          # Canary coverage for the currently published battle graph.
+          canaries={
+              'dyvane-redalious':'/myths/dyvane-vs-xael-gath/',
+              'qintara-unmatara':'/myths/qintara-vs-vaelstrum/',
+              'high-lord-kaelen-vanguard':'/myths/high-lord-kaelen-vs-ophidion/',
+              'rhayhara':'/myths/rhayhara-and-othrys-five-orthogonal-escalations/',
+          }
+          for slug,url in canaries.items():
+              page=(root/'characters'/slug/'index.html').read_text(encoding='utf-8')
+              assert url in page,(slug,url)
+          print('Verified',len(publications),'publication routes and explicit character backlink graph')
           PY
 
       - name: Commit regenerated discovery surfaces
@@ -59,7 +82,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/static-route-manifest.json crawl/index.html sitemap.xml characters/rhayhara/index.html
+          git add data/static-route-manifest.json crawl/index.html sitemap.xml characters/
           if git diff --cached --quiet; then
             echo "Discovery surfaces already current."
             exit 0
