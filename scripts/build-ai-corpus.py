@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import collections
 import hashlib
+import html
 import json
 import os
 import pathlib
@@ -14,7 +15,7 @@ OUT = ROOT / "ai"
 SOURCE_COMMIT = os.environ.get("AI_SOURCE_COMMIT") or os.environ.get("GITHUB_SHA") or "unspecified-build-snapshot"
 BASE_URL = "https://arthratanmythology.com"
 
-EXPECTED = {
+BASE_EXPECTED = {
     "character": 43,
     "zubaida": 118,
     "divine": 317,
@@ -23,6 +24,7 @@ EXPECTED = {
     "concept": 19,
     "provenance": 4,
 }
+PUBLICATION_TYPES = ("myth", "crossscaling")
 
 def load(name):
     with (DATA / name).open(encoding="utf-8") as f:
@@ -43,6 +45,28 @@ def route_url(route):
     if not route.startswith("/"):
         route = "/" + route
     return BASE_URL + route
+
+def html_text(raw):
+    raw = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", raw)
+    raw = re.sub(r"(?i)<br\s*/?>", "\n", raw)
+    raw = re.sub(r"(?i)</(?:p|li|h[1-6]|section|article|div)>", "\n", raw)
+    raw = re.sub(r"(?s)<[^>]+>", " ", raw)
+    return norm(html.unescape(raw))
+
+def html_title(raw, fallback):
+    m = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", raw) or re.search(r"(?is)<title[^>]*>(.*?)</title>", raw)
+    return html_text(m.group(1)) if m else fallback
+
+def publication_pages(dirname):
+    root = ROOT / dirname
+    pages = []
+    hub = root / "index.html"
+    if hub.exists():
+        pages.append((f"{dirname}-index", hub, f"/{dirname}/"))
+    if root.exists():
+        for p in sorted(root.glob("*/index.html")):
+            pages.append((p.parent.name, p, f"/{dirname}/{p.parent.name}/"))
+    return pages
 
 records = []
 
@@ -87,7 +111,7 @@ z_index = load("zubaida-index.json")
 srcdir = ROOT / "sources" / "zubaida"
 existing = {p.stem for p in srcdir.glob("*.txt")}
 source_ids = [x for x in z_index["ids"] if x in existing]
-assert len(source_ids) == EXPECTED["zubaida"], f"Zubaida source count mismatch: {len(source_ids)}"
+assert len(source_ids) == BASE_EXPECTED["zubaida"], f"Zubaida source count mismatch: {len(source_ids)}"
 for pos, source_id in enumerate(source_ids, 1):
     raw = (srcdir / f"{source_id}.txt").read_text(encoding="utf-8", errors="strict")
     lines = [norm(x) for x in raw.splitlines() if norm(x)]
@@ -133,15 +157,43 @@ provenance = [
 for rid, title, route, locator, payload in provenance:
     add(id=rid, type="provenance", title=title, route=route, source_locator=locator, full_text=compact(payload))
 
+# Canonical narrative Myths and explicitly noncanon analytical Crossscaling are
+# additive retrieval layers. They are discovered from the current filesystem so the
+# corpus expands safely as agents publish new pages without changing hardcoded counts.
+publication_counts = {}
+for dirname, typ, status in [
+    ("myths", "myth", "CANON STATUS: canonical narrative realization. Primary evidence remains authoritative."),
+    ("crossscaling", "crossscaling", "CANON STATUS: CROSSSCALE-ONLY / NONCANON analytical interpretation. External benchmarks/totalizers are not Arthratan canon."),
+]:
+    pages = publication_pages(dirname)
+    publication_counts[typ] = len(pages)
+    for key, page, route in pages:
+        raw = page.read_text(encoding="utf-8", errors="replace")
+        body = html_text(raw)
+        add(
+            id=f"{typ}:{key}",
+            type=typ,
+            title=html_title(raw, key.replace("-", " ").title()),
+            route=route,
+            source_locator="/" + page.relative_to(ROOT).as_posix(),
+            full_text=status + "\n" + body,
+        )
+
 counts = collections.Counter(r["type"] for r in records)
-assert counts == collections.Counter(EXPECTED), f"AI corpus type counts mismatch: {dict(counts)}"
-assert len(records) == sum(EXPECTED.values()) == 802, len(records)
+base_counts = collections.Counter({k: counts[k] for k in BASE_EXPECTED})
+assert base_counts == collections.Counter(BASE_EXPECTED), f"AI base corpus type counts mismatch: {dict(base_counts)}"
+for typ in PUBLICATION_TYPES:
+    assert counts[typ] == publication_counts[typ], (typ, counts[typ], publication_counts[typ])
+expected_counts = dict(BASE_EXPECTED)
+expected_counts.update(publication_counts)
+assert len(records) == sum(expected_counts.values()), (len(records), expected_counts)
 assert len({r["id"] for r in records}) == len(records), "Duplicate record IDs"
 for r in records:
     assert r["text_length"] == len(r["full_text"])
     assert r["text_sha256"] == sha256_text(r["full_text"])
+assert all("NONCANON" in r["full_text"] for r in records if r["type"] == "crossscaling")
 
-order = {"character": 0, "zubaida": 1, "divine": 2, "hgl": 3, "living-canon": 4, "concept": 5, "provenance": 6}
+order = {"character": 0, "zubaida": 1, "divine": 2, "hgl": 3, "living-canon": 4, "myth": 5, "concept": 6, "provenance": 7, "crossscaling": 8}
 records.sort(key=lambda r: (order[r["type"]], r["id"]))
 
 if OUT.exists():
@@ -162,8 +214,10 @@ def write_jsonl(path, rows):
 
 corpus_meta = write_jsonl(OUT / "corpus.jsonl", records)
 shards = []
-for typ in EXPECTED:
+for typ in order:
     rows = [r for r in records if r["type"] == typ]
+    if not rows:
+        continue
     filename = typ.replace("-", "_") + ".jsonl"
     meta = write_jsonl(OUT / "shards" / filename, rows)
     shards.append({"type": typ, "path": f"/ai/shards/{filename}", "records": len(rows), **meta})
@@ -191,10 +245,11 @@ dyvane = next((x for x in entity_manifest if x["slug"] == "dyvane-redalious"), N
 assert dyvane is not None, "Dyvane character record missing"
 dyvane_doc = json.loads((OUT / "entities" / "dyvane-redalious.json").read_text(encoding="utf-8"))
 assert dyvane_doc["counts"].get("zubaida", 0) > 0, "Dyvane dossier lacks Zubaida story evidence"
-assert dyvane_doc["records"] > 1, "Dyvane dossier only contains profile-level evidence"
+assert dyvane_doc["counts"].get("myth", 0) > 0, "Dyvane dossier lacks published Myth evidence"
+assert dyvane_doc["counts"].get("crossscaling", 0) > 0, "Dyvane dossier lacks Crossscaling evidence"
 
 manifest = {
-    "version": 1,
+    "version": 2,
     "task": "AI-LIVE-001",
     "generated_from_commit": SOURCE_COMMIT,
     "base_url": BASE_URL,
@@ -204,9 +259,9 @@ manifest = {
     "shards": shards,
     "entities": entity_manifest,
     "record_schema": ["id", "type", "title", "canonical_route", "aliases", "entities_mentioned", "concepts", "source_locator", "full_text", "text_length", "word_count", "text_sha256", "chunk_id", "chunk_offset", "integrity"],
-    "source_rule": "Machine retrieval is additive. Preserved source canon remains separately identifiable and retrievable through source_locator/canonical_route; explanatory data is not substituted for source evidence.",
+    "source_rule": "Machine retrieval is additive. Primary/preserved source canon remains authoritative and separately retrievable. Myths are canonical narrative realizations. Crossscaling records are explicitly CROSSSCALE-ONLY / NONCANON analytical surfaces and must never be mistaken for native Arthratan objects or feats.",
     "access": "Public read-only HTTP; JavaScript and API keys are not required.",
-    "validation": {"expected_counts": EXPECTED, "unique_ids": True, "record_hashes_verified": True, "dyvane_story_evidence_records": dyvane_doc["records"], "dyvane_story_evidence_counts": dyvane_doc["counts"]},
+    "validation": {"expected_counts": expected_counts, "base_expected_counts": BASE_EXPECTED, "publication_counts_dynamic": publication_counts, "unique_ids": True, "record_hashes_verified": True, "crossscaling_noncanon_boundary_verified": True, "dyvane_story_evidence_records": dyvane_doc["records"], "dyvane_story_evidence_counts": dyvane_doc["counts"]},
 }
 write_json(OUT / "index.json", manifest, pretty=True)
 
@@ -219,14 +274,23 @@ index_lines = [
     f"Complete corpus (NDJSON): {BASE_URL}/ai/corpus.jsonl",
     f"Dyvane evidence dossier: {BASE_URL}/ai/entities/dyvane-redalious.json",
     "",
-    "Source families:",
+    "Source / publication families:",
 ]
-for typ in EXPECTED:
-    index_lines.append(f"- {typ}: {counts[typ]} records")
-index_lines += ["", "Retrieval guidance:", "- No JavaScript or API key is required for this public read-only corpus.", "- Search full_text and aliases, then cite canonical_route and source_locator.", "- For configured structured access, use the separately documented Arthratan Canon API."]
+for typ in order:
+    if counts[typ]:
+        index_lines.append(f"- {typ}: {counts[typ]} records")
+index_lines += [
+    "",
+    "Retrieval guidance:",
+    "- No JavaScript or API key is required for this public read-only corpus.",
+    "- Search full_text and aliases, then cite canonical_route and source_locator.",
+    "- Treat Myth as canonical narrative realization and follow its primary-evidence links for feat proof.",
+    "- Treat every crossscaling record as CROSSSCALE-ONLY / NONCANON analytical interpretation.",
+    "- For configured structured access, use the separately documented Arthratan Canon API.",
+]
 (OUT / "index.txt").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
 
-readme = f"""# Arthratan AI Retrieval Surface\n\nThis directory is generated by `scripts/build-ai-corpus.py` for **AI-LIVE-001**.\n\n- `index.json` — deterministic manifest, counts, hashes and schema.\n- `corpus.jsonl` — {len(records)} complete-text records.\n- `shards/` — source-type NDJSON shards.\n- `entities/` — precomputed entity evidence dossiers; use `dyvane-redalious.json` as the acceptance canary.\n- `index.txt` — plain-text discovery entry point.\n\nThe surface is public, read-only and requires neither JavaScript nor a secret key. Source canon is not replaced: each record exposes its canonical route and source locator.\n"""
+readme = f"""# Arthratan AI Retrieval Surface\n\nThis directory is generated by `scripts/build-ai-corpus.py` for **AI-LIVE-001**.\n\n- `index.json` — deterministic manifest, counts, hashes and schema.\n- `corpus.jsonl` — {len(records)} complete-text records.\n- `shards/` — source/publication-type NDJSON shards, including canonical Myths and explicitly noncanon Crossscaling.\n- `entities/` — precomputed entity evidence dossiers; use `dyvane-redalious.json` as the acceptance canary for Character → Myth → Crossscaling → primary-evidence retrieval.\n- `index.txt` — plain-text discovery entry point.\n\nThe surface is public, read-only and requires neither JavaScript nor a secret key. Primary source canon is not replaced: each record exposes its canonical route and source locator. Myth records are canonical narrative realizations; Crossscaling records are analytical and explicitly NONCANON.\n"""
 (OUT / "README.md").write_text(readme, encoding="utf-8")
 
 print(json.dumps({"records": len(records), "counts": dict(counts), "corpus": corpus_meta, "dyvane": dyvane_doc["counts"]}, indent=2))
