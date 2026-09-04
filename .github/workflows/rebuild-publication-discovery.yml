@@ -6,6 +6,7 @@ on:
       - "myths/**"
       - "crossscaling/**"
       - "scripts/register-publication-graph.py"
+      - "scripts/generate-static-routes.mjs"
       - "scripts/generate-comprehensive-sitemap.py"
       - ".github/workflows/rebuild-publication-discovery.yml"
 
@@ -63,7 +64,6 @@ jobs:
                   assert page.exists(),(r['url'],slug)
                   rendered=page.read_text(encoding='utf-8')
                   assert r['url'] in rendered,(slug,r['url'])
-          # Canary coverage for the currently published battle graph.
           canaries={
               'dyvane-redalious':'/myths/dyvane-vs-xael-gath/',
               'qintara-unmatara':'/myths/qintara-vs-vaelstrum/',
