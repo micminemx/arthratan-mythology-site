@@ -5,6 +5,9 @@ Idempotent and concurrency-safe at the route layer: current filesystem routes ar
 discovered every run, so newly published or removed Myth/Crossscaling pages do not
 require a hardcoded registry update. Myths are canonical narrative routes;
 Crossscaling routes are explicitly NONCANON analytical surfaces.
+
+A publication page whose canonical URL points at a different route is treated as a
+legacy/redirect alias and is intentionally excluded from canonical discovery lists.
 """
 from __future__ import annotations
 
@@ -22,6 +25,7 @@ RHAYHARA = ROOT / "characters" / "rhayhara" / "index.html"
 START = "<!-- PUBLICATION-GRAPH:START -->"
 END = "<!-- PUBLICATION-GRAPH:END -->"
 PUBLICATION_KINDS = {"myth", "crossscaling"}
+CANONICAL_ORIGIN = "https://arthratanmythology.com"
 
 
 def read(path: Path) -> str:
@@ -38,6 +42,25 @@ def page_title(path: Path, fallback: str) -> str:
     raw = m.group(1) if m else fallback
     raw = re.sub(r"<[^>]+>", "", raw)
     return html.unescape(re.sub(r"\s+", " ", raw)).strip()
+
+
+def canonical_route(path: Path) -> str | None:
+    """Return the same-origin canonical route when explicitly declared."""
+    text = read(path)
+    m = re.search(
+        r'<link\s+rel=["\']canonical["\']\s+href=["\']([^"\']+)["\']',
+        text,
+        flags=re.I,
+    )
+    if not m:
+        return None
+    href = html.unescape(m.group(1)).strip()
+    if href.startswith(CANONICAL_ORIGIN):
+        route = href[len(CANONICAL_ORIGIN):] or "/"
+        return route if route.startswith("/") else "/" + route
+    if href.startswith("/"):
+        return href
+    return None
 
 
 def discover_publication_routes() -> list[dict]:
@@ -64,10 +87,16 @@ def discover_publication_routes() -> list[dict]:
             index = child / "index.html"
             if not index.exists():
                 continue
+            route_url = f"/{dirname}/{child.name}/"
+            declared_canonical = canonical_route(index)
+            # Legacy aliases may remain as redirect pages for inbound links, but they
+            # must not be promoted as distinct canonical Myths/crossscales.
+            if declared_canonical and declared_canonical != route_url:
+                continue
             routes.append({
                 "kind": kind,
                 "key": child.name,
-                "url": f"/{dirname}/{child.name}/",
+                "url": route_url,
                 "source": f"{dirname}/{child.name}/index.html",
                 "title": page_title(index, child.name.replace("-", " ").title()),
                 "canon_status": canon_status,
