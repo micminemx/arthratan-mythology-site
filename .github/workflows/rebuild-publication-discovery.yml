@@ -1,0 +1,68 @@
+name: Rebuild publication discovery graph
+
+on:
+  push:
+    paths:
+      - "myths/**"
+      - "crossscaling/**"
+      - "scripts/register-publication-graph.py"
+      - "scripts/generate-comprehensive-sitemap.py"
+      - ".github/workflows/rebuild-publication-discovery.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication-discovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate publication-graph postprocessor
+        run: python -m py_compile scripts/register-publication-graph.py scripts/generate-comprehensive-sitemap.py
+
+      - name: Register Myth and Crossscaling discovery routes
+        run: python scripts/register-publication-graph.py
+
+      - name: Regenerate comprehensive sitemap
+        run: python scripts/generate-comprehensive-sitemap.py
+
+      - name: Verify canon/noncanon boundary and backlinks
+        shell: bash
+        run: |
+          set -euo pipefail
+          grep -Fq '/myths/rhayhara-and-othrys-five-orthogonal-escalations/' crawl/index.html
+          grep -Fq '/crossscaling/rhayhara-othrys-orthogonal-escalation/' crawl/index.html
+          grep -Fq 'CROSSSCALE-ONLY / NONCANON' crawl/index.html
+          grep -Fq '/myths/rhayhara-and-othrys-five-orthogonal-escalations/' characters/rhayhara/index.html
+          grep -Fq '/crossscaling/rhayhara-othrys-orthogonal-escalation/' characters/rhayhara/index.html
+          grep -Fq 'https://arthratanmythology.com/myths/rhayhara-and-othrys-five-orthogonal-escalations/' sitemap.xml
+          grep -Fq 'https://arthratanmythology.com/crossscaling/rhayhara-othrys-orthogonal-escalation/' sitemap.xml
+          python - <<'PY'
+          import json
+          j=json.load(open('data/static-route-manifest.json',encoding='utf-8'))
+          by={r['url']:r for r in j['routes']}
+          assert by['/myths/rhayhara-and-othrys-five-orthogonal-escalations/']['canon_status']=='canonical-narrative'
+          assert by['/crossscaling/rhayhara-othrys-orthogonal-escalation/']['canon_status']=='noncanon-analytical'
+          print('Verified publication graph with',j['count'],'routes')
+          PY
+
+      - name: Commit regenerated discovery surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/static-route-manifest.json crawl/index.html sitemap.xml characters/rhayhara/index.html
+          if git diff --cached --quiet; then
+            echo "Discovery surfaces already current."
+            exit 0
+          fi
+          git commit -m "Rebuild Myth and Crossscaling discovery graph"
+          git push
