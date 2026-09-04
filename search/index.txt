@@ -1,5 +1,5 @@
 # Arthitean Codex unified search index
-# 901 records; JavaScript not required
+# 903 records; JavaScript not required
 # Format: title | type | canon_status | route | aliases | source/data path
 # Canonical site: https://arthratanmythology.com/
 
@@ -282,6 +282,7 @@ Rhayhara and Othrys: Five Orthogonal Escalations | myth | canonical-narrative | 
 Rhayhara vs Dalroemar: Shattering the Dead-Destiny Boundary | myth | canonical-narrative | /myths/rhayhara-vs-dalroemar/ |  | /myths/rhayhara-vs-dalroemar/index.html
 Rhayhara vs the Eidos Swarm | myth | canonical-narrative | /myths/rhayhara-vs-the-eidos-swarm/ |  | /myths/rhayhara-vs-the-eidos-swarm/index.html
 Rhayhara's Ten Destiny-Defying Trials | myth | canonical-narrative | /myths/rhayharas-ten-destiny-defying-trials/ |  | /myths/rhayharas-ten-destiny-defying-trials/index.html
+Rhayhara, Inzra and Annaris: Six Metaprojected Clashes | myth | canonical-narrative | /myths/rhayhara-inzra-annaris-six-clashes/ |  | /myths/rhayhara-inzra-annaris-six-clashes/index.html
 (the brain) and bodily system(nervous system) cause those cognitive abilities improve and to | divine | canonical-source-or-dossier | /divine/059/ |  | /data/divine.json
 0. How to Read This System Without Collapsing Its Dimensions | divine | canonical-source-or-dossier | /divine/094/ |  | /data/divine.json
 1. Divine v140 Foundations That Remain Canon | divine | canonical-source-or-dossier | /divine/095/ |  | /data/divine.json
@@ -903,4 +904,5 @@ Master Crossscaling | crossscaling | noncanon-analytical | /crossscaling/ |  | /
 Qintara–Vaelstrum Resolution | crossscaling | noncanon-analytical | /crossscaling/qintara-vaelstrum-resolution/ |  | /crossscaling/qintara-vaelstrum-resolution/index.html
 Rhayhara–Dalroemar Dead-Destiny Reversal | crossscaling | noncanon-analytical | /crossscaling/rhayhara-dalroemar-dead-destiny-reversal/ |  | /crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html
 Rhayhara–Eidos Mirror-Fuel Inversion | crossscaling | noncanon-analytical | /crossscaling/rhayhara-eidos-mirror-fuel-inversion/ |  | /crossscaling/rhayhara-eidos-mirror-fuel-inversion/index.html
+Rhayhara–Inzra–Annaris Six-Clash Resolution | crossscaling | noncanon-analytical | /crossscaling/rhayhara-inzra-annaris-six-clashes/ |  | /crossscaling/rhayhara-inzra-annaris-six-clashes/index.html
 Rhayhara–Othrys Orthogonal Escalation Chain | crossscaling | noncanon-analytical | /crossscaling/rhayhara-othrys-orthogonal-escalation/ |  | /crossscaling/rhayhara-othrys-orthogonal-escalation/index.html
