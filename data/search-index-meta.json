@@ -1,7 +1,7 @@
 {
   "version": 3,
   "task": "SEARCH-003",
-  "generated_from_commit": "6ac3ebedd32068f2a001ffeda84cb725f6d2720a",
+  "generated_from_commit": "e3b3021aa96d61c81645e55627ec6209691a2321",
   "source_rule": "Discovery index only. Primary source canon remains authoritative. Myth records are canonical narrative realizations; Crossscaling records are explicitly noncanon analytical surfaces. canon_status is mandatory so retrieval clients can preserve that boundary. Follow route/source_path and linked primary evidence for proof.",
   "normalization": "Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.",
   "records": 901,
