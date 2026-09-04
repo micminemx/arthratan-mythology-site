@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T19:37:46Z",
+  "generated": "2026-09-04T19:39:12Z",
   "origin": "https://arthratanmythology.com",
-  "count": 919,
+  "count": 920,
   "routes": [
     {
       "kind": "character",
@@ -6410,6 +6410,14 @@
       "url": "/crossscaling/dyvane-xael-gath-resolution/",
       "source": "crossscaling/dyvane-xael-gath-resolution/index.html",
       "title": "Dyvane–Xael-Gath Resolution",
+      "canon_status": "noncanon-analytical"
+    },
+    {
+      "kind": "crossscaling",
+      "key": "halatayo-projected-future-threat-interception",
+      "url": "/crossscaling/halatayo-projected-future-threat-interception/",
+      "source": "crossscaling/halatayo-projected-future-threat-interception/index.html",
+      "title": "Halatayo — Projected-Future Threat Interception",
       "canon_status": "noncanon-analytical"
     },
     {
