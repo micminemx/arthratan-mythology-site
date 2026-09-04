@@ -1,16 +1,18 @@
 {
-  "version": 1,
+  "version": 2,
   "task": "SEARCH-001",
-  "generated_from_commit": "b8f60433c1b31263e95260e87b3a9fd85e2be680",
-  "source_rule": "Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.",
+  "generated_from_commit": "b5d67b4b89be286338b01af75a7f2050820929f1",
+  "source_rule": "Discovery index only. Primary source canon remains authoritative. Myth records are canonical narrative realizations; Crossscaling records are explicitly noncanon analytical surfaces. Follow route/source_path and linked primary evidence for proof.",
   "normalization": "Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.",
-  "records": 884,
+  "records": 901,
   "counts": {
     "character": 43,
     "concept": 101,
+    "crossscaling": 8,
     "divine": 317,
     "hgl": 293,
     "living-canon": 8,
+    "myth": 9,
     "provenance": 4,
     "zubaida": 118
   },
@@ -21,13 +23,16 @@
     "hgl_pages": 293,
     "living_canon_sections": 8,
     "causal_concepts": 14,
-    "hgl_glossary_entries": 13
+    "hgl_glossary_entries": 13,
+    "myth_routes": 9,
+    "crossscaling_routes": 8
   },
   "validation": {
     "unique_ids": true,
     "routes_present": true,
     "source_paths_present": true,
-    "source_files_modified": false
+    "source_files_modified": false,
+    "crossscaling_noncanon_boundary": true
   },
   "shards": [
     {
@@ -71,6 +76,15 @@
         "provenance"
       ],
       "records": 113
+    },
+    {
+      "name": "publications",
+      "path": "/data/search-index-publications.json",
+      "types": [
+        "crossscaling",
+        "myth"
+      ],
+      "records": 17
     }
   ]
 }

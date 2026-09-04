@@ -1,5 +1,5 @@
 # Arthitean Codex unified search index
-# 884 records; JavaScript not required
+# 901 records; JavaScript not required
 # Format: title | type | route | aliases | source/data path
 # Canonical site: https://arthratanmythology.com/
 
@@ -273,6 +273,15 @@ The Vanguard Manifestation (Sessions 20-24) | zubaida | /zubaida/19f9406c97ff367
 The Varvadeil clan has successfully facilitated Empress Rhayhara's entry into the second development cycle specifically targeting the high-fidelity coding environments. During this initial session, her cognitive focus was synchronized with | zubaida | /zubaida/19defc3df577a5b9/ |  | /sources/zubaida/19defc3df577a5b9.txt
 The Varvadeil clan has successfully facilitated the complete 10-session reality synthesis for the financial extraction engine. Below are the highly detailed, mathematically verified official reports for every session conducted by Empress Rh | zubaida | /zubaida/19ded0f0d83960a1/ |  | /sources/zubaida/19ded0f0d83960a1.txt
 Zubaida transmission 46 | zubaida | /zubaida/19fde8f7e92ec8da/ |  | /sources/zubaida/19fde8f7e92ec8da.txt
+Dyvane vs Xael-Gath | myth | /myths/dyvane-vs-xael-gath/ |  | /myths/dyvane-vs-xael-gath/index.html
+Halatayo and the Projected-Amnifuture Hyperchallenge | myth | /myths/halatayo-and-the-projected-amnifuture-hyperchallenge/ |  | /myths/halatayo-and-the-projected-amnifuture-hyperchallenge/index.html
+High Lord Kaelen vs Ophidion | myth | /myths/high-lord-kaelen-vs-ophidion/ |  | /myths/high-lord-kaelen-vs-ophidion/index.html
+Myths | myth | /myths/ |  | /myths/index.html
+Qintara vs Vaelstrum | myth | /myths/qintara-vs-vaelstrum/ |  | /myths/qintara-vs-vaelstrum/index.html
+Rhayhara and Othrys: Five Orthogonal Escalations | myth | /myths/rhayhara-and-othrys-five-orthogonal-escalations/ |  | /myths/rhayhara-and-othrys-five-orthogonal-escalations/index.html
+Rhayhara vs Dalroemar: Shattering the Dead-Destiny Boundary | myth | /myths/rhayhara-vs-dalroemar/ |  | /myths/rhayhara-vs-dalroemar/index.html
+Rhayhara vs the Eidos Swarm | myth | /myths/rhayhara-vs-the-eidos-swarm/ |  | /myths/rhayhara-vs-the-eidos-swarm/index.html
+Rhayhara's Ten Destiny-Defying Trials | myth | /myths/rhayharas-ten-destiny-defying-trials/ |  | /myths/rhayharas-ten-destiny-defying-trials/index.html
 (the brain) and bodily system(nervous system) cause those cognitive abilities improve and to | divine | /divine/059/ |  | /data/divine.json
 0. How to Read This System Without Collapsing Its Dimensions | divine | /divine/094/ |  | /data/divine.json
 1. Divine v140 Foundations That Remain Canon | divine | /divine/095/ |  | /data/divine.json
@@ -887,3 +896,11 @@ Character encyclopedia | provenance | /characters/ |  | /data/characters.json
 Divine v144 source archive | provenance | /divine/ |  | /data/divine.json
 Hypergendered Logic source archive | provenance | /hgl/ |  | /data/hgl-pages.json
 Zubaida source archive | provenance | /zubaida/ |  | /data/zubaida-index.json
+Dyvane–Xael-Gath Resolution | crossscaling | /crossscaling/dyvane-xael-gath-resolution/ |  | /crossscaling/dyvane-xael-gath-resolution/index.html
+Halatayo — Projected-Future Threat Interception | crossscaling | /crossscaling/halatayo-projected-future-threat-interception/ |  | /crossscaling/halatayo-projected-future-threat-interception/index.html
+High Lord Kaelen–Ophidion Resolution | crossscaling | /crossscaling/high-lord-kaelen-ophidion-resolution/ |  | /crossscaling/high-lord-kaelen-ophidion-resolution/index.html
+Master Crossscaling | crossscaling | /crossscaling/ |  | /crossscaling/index.html
+Qintara–Vaelstrum Resolution | crossscaling | /crossscaling/qintara-vaelstrum-resolution/ |  | /crossscaling/qintara-vaelstrum-resolution/index.html
+Rhayhara–Dalroemar Dead-Destiny Reversal | crossscaling | /crossscaling/rhayhara-dalroemar-dead-destiny-reversal/ |  | /crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html
+Rhayhara–Eidos Mirror-Fuel Inversion | crossscaling | /crossscaling/rhayhara-eidos-mirror-fuel-inversion/ |  | /crossscaling/rhayhara-eidos-mirror-fuel-inversion/index.html
+Rhayhara–Othrys Orthogonal Escalation Chain | crossscaling | /crossscaling/rhayhara-othrys-orthogonal-escalation/ |  | /crossscaling/rhayhara-othrys-orthogonal-escalation/index.html
