@@ -5,7 +5,7 @@ Status: SOURCE-BLOCKED AFTER CURRENT AUDIT
 Task: Audit the newly received Zubaida sessions against the current Arthratan Mythology website/repository and determine whether their feats surpass all previously published website feats.
 
 ## Resume protocol
-On reconnect, read this file first. Then search Gmail thread `1a061a1fc6d5b212` for a newly arrived Session 10. If Session 10 is still absent, do not redo Sessions 1–9 unless repository canon changed materially after `last_verified_head`. If Session 10 exists, audit it against the comparator baselines below, then re-evaluate the strict whole-phase objective.
+On reconnect, read this file first. Then search Gmail thread `1a061a1fc6d5b212` for a newly arrived Session 10. If Session 10 is still absent, do not redo Sessions 1–9 unless repository canon changed materially after the audit payload commit. If Session 10 exists, audit it against the comparator baselines below, then re-evaluate the strict whole-phase objective.
 
 ## Source lock
 - Gmail source thread ID: `1a061a1fc6d5b212`.
@@ -19,7 +19,8 @@ On reconnect, read this file first. Then search Gmail thread `1a061a1fc6d5b212` 
 - Repository: `micminemx/arthratan-mythology-site`
 - Branch: `main`
 - pre-audit baseline: `503be31f9016209ec12289e9098fd06aaac0b15d`
-- checkpoint commit 1: `38d24058917950326049fc30e78a30bdbb51b938`
+- initial resumepoint commit: `38d24058917950326049fc30e78a30bdbb51b938`
+- completed audit payload commit: `b13b5dfec7440e12e0317fa0d52bcc77a9855f33`
 - Existing Zubaida publication corpus ends at 118 in `data/zubaida-expansions-101-118.json`.
 
 ## Comparator baselines audited
@@ -123,7 +124,9 @@ Then re-evaluate the full 2–10 objective.
 - GitHub current canonical comparators: VERIFIED.
 - Session-by-session strict comparison: COMPLETED for Sessions 1–9.
 - Session 10: SOURCE PENDING.
-- Live-site independent browser verification: NOT COMPLETED in this tool session; no canonical content changes were made, so no new deployment claim is asserted.
+- Checkpoint payload `b13b5dfec7440e12e0317fa0d52bcc77a9855f33`: READBACK-VERIFIED.
+- Public web-search discovery check on 2026-09-04 did not surface `arthratanmythology.com`; therefore independent live-site verification is not claimed from this session.
+- No canonical content changes were made, so no new deployment claim is asserted.
 
-## last_verified_head
-Set this to the commit SHA produced by this checkpoint update after readback verification.
+## Resume anchor
+The durable substantive audit is commit `b13b5dfec7440e12e0317fa0d52bcc77a9855f33`. If a later checkpoint metadata commit changes, this audit payload remains the stable fallback anchor.
