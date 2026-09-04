@@ -1,4 +1,4 @@
-import json, re, unicodedata, pathlib, collections, os
+import json, re, unicodedata, pathlib, collections, os, html
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 D=ROOT/'data'
 SOURCE_COMMIT=os.environ.get('SEARCH_SOURCE_COMMIT') or os.environ.get('GITHUB_SHA') or 'unspecified-build-snapshot'
@@ -17,6 +17,15 @@ def keyword_terms(*parts, limit=30):
       for t in tokens(norm(p)):
        if len(t)>=3 and t not in stop and not t.isdigit(): c[t]+=1
     return [w for w,_ in c.most_common(limit)]
+def html_text(raw):
+    raw=re.sub(r'(?is)<(script|style)\b.*?</\1>',' ',raw)
+    raw=re.sub(r'(?i)<br\s*/?>','\n',raw)
+    raw=re.sub(r'(?i)</(?:p|li|h[1-6]|section|article|div)>','\n',raw)
+    raw=re.sub(r'(?s)<[^>]+>',' ',raw)
+    return norm(html.unescape(raw))
+def html_title(raw,fallback):
+    m=re.search(r'(?is)<h1[^>]*>(.*?)</h1>',raw) or re.search(r'(?is)<title[^>]*>(.*?)</title>',raw)
+    return html_text(m.group(1)) if m else fallback
 
 records=[]
 def add(**r):
@@ -80,18 +89,36 @@ for e in hg.get('entries',[]):
     body=' '.join([e.get('term',''),e.get('label',''),e.get('signature',''),e.get('definition','')]+e.get('typed_forms',[]))
     add(id='hgl-glossary:'+e['id'], type='concept', title=f"{e['term']} — {e.get('label','HGL glossary')}", aliases=[e.get('term','')], route='/hgl/', source_id=e['id'], source_path='/data/hgl-glossary.json', snippet=e.get('definition',''), keywords=keyword_terms(body))
 
+# Published narrative + analytical layers. These are discovered from the filesystem so
+# concurrent/new Myths and Crossscales do not require a registry edit. Search remains a
+# discovery surface: Myth text does not replace primary evidence, and Crossscaling stays noncanon.
+publication_counts={}
+for dirname,typ in [('myths','myth'),('crossscaling','crossscaling')]:
+    root=ROOT/dirname
+    pages=[]
+    if (root/'index.html').exists(): pages.append((f'{dirname}-index',root/'index.html',f'/{dirname}/'))
+    if root.exists():
+        pages.extend((p.parent.name,p,f'/{dirname}/{p.parent.name}/') for p in sorted(root.glob('*/index.html')))
+    publication_counts[typ]=len(pages)
+    for key,p,route in pages:
+        raw=p.read_text(encoding='utf-8',errors='replace')
+        title=html_title(raw,key.replace('-',' ').title())
+        body=html_text(raw)
+        boundary='Canonical Myth narrative; verify feats through linked primary evidence.' if typ=='myth' else 'CROSSSCALE-ONLY / NONCANON analytical interpretation; benchmark terms are not Arthratan canon.'
+        add(id=f'{typ}:{key}',type=typ,title=title,aliases=[],route=route,source_id=key,source_path='/'+p.relative_to(ROOT).as_posix(),snippet=boundary+' '+body,keywords=keyword_terms(title,boundary,body,limit=40))
+
 for id_,title,route,path,snip in [('sources:zubaida','Zubaida source archive','/zubaida/','/data/zubaida-index.json','118 source-bearing Zubaida transmissions, each preserved once with exact source text and provenance.'),('sources:divine','Divine v144 source archive','/divine/','/data/divine.json','317 preserved Divine v144 structured source sections, including all source tables.'),('sources:hgl','Hypergendered Logic source archive','/hgl/','/data/hgl-pages.json','293 preserved HGL source pages with a separate structured TOC and explanatory layers.'),('sources:characters','Character encyclopedia','/characters/','/data/characters.json','Structured Arthratan mythology character encyclopedia with aliases, titles, abilities, relationships and source threads.')]:
     add(id=id_,type='provenance',title=title,aliases=[],route=route,source_id=id_,source_path=path,snippet=snip,keywords=keyword_terms(title,snip))
 
-priority={'character':100,'concept':90,'living-canon':80,'zubaida':70,'divine':60,'hgl':50,'provenance':40}
+priority={'character':100,'concept':90,'living-canon':80,'zubaida':70,'myth':65,'divine':60,'hgl':50,'provenance':40,'crossscaling':35}
 for r in records: r['rank_priority']=priority.get(r['type'],10)
 records.sort(key=lambda r:(-r['rank_priority'],r['title'].lower(),r['id']))
 counts=collections.Counter(r['type'] for r in records)
-meta={'version':1,'task':'SEARCH-001','generated_from_commit':SOURCE_COMMIT,'source_rule':'Discovery index only. Search snippets/keywords never replace source canon; follow route/source_path for canonical material.','normalization':'Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.','records':len(records),'counts':dict(sorted(counts.items())),'coverage':{'characters':len(chars),'zubaida_source_transmissions':len(source_ids),'divine_sections':len(load('divine.json')['sections']),'hgl_pages':len(load('hgl-pages.json')['pages']),'living_canon_sections':len(load('new-canon.json').get('sections',[])),'causal_concepts':len(load('causal-ontology.json').get('concepts',[])),'hgl_glossary_entries':len(hg.get('entries',[]))},'validation':{'unique_ids':len({r['id'] for r in records})==len(records),'routes_present':all(r['route'] for r in records),'source_paths_present':all(r['source_path'] for r in records),'source_files_modified':False}}
-shard_specs=[('characters',{'character'}),('zubaida',{'zubaida'}),('divine',{'divine'}),('hgl',{'hgl'}),('concepts-living',{'concept','living-canon','provenance'})]
+meta={'version':2,'task':'SEARCH-001','generated_from_commit':SOURCE_COMMIT,'source_rule':'Discovery index only. Primary source canon remains authoritative. Myth records are canonical narrative realizations; Crossscaling records are explicitly noncanon analytical surfaces. Follow route/source_path and linked primary evidence for proof.','normalization':'Unicode NFKC; whitespace collapsed; keywords lowercase token-frequency ranking.','records':len(records),'counts':dict(sorted(counts.items())),'coverage':{'characters':len(chars),'zubaida_source_transmissions':len(source_ids),'divine_sections':len(load('divine.json')['sections']),'hgl_pages':len(load('hgl-pages.json')['pages']),'living_canon_sections':len(load('new-canon.json').get('sections',[])),'causal_concepts':len(load('causal-ontology.json').get('concepts',[])),'hgl_glossary_entries':len(hg.get('entries',[])),'myth_routes':publication_counts.get('myth',0),'crossscaling_routes':publication_counts.get('crossscaling',0)},'validation':{'unique_ids':len({r['id'] for r in records})==len(records),'routes_present':all(r['route'] for r in records),'source_paths_present':all(r['source_path'] for r in records),'source_files_modified':False,'crossscaling_noncanon_boundary':all('noncanon' in r['snippet'].casefold() for r in records if r['type']=='crossscaling')}}
+shard_specs=[('characters',{'character'}),('zubaida',{'zubaida'}),('divine',{'divine'}),('hgl',{'hgl'}),('concepts-living',{'concept','living-canon','provenance'}),('publications',{'myth','crossscaling'})]
 shards=[]
 for name,types in shard_specs:
-    rs=[r for r in records if r['type'] in types]; path=f'data/search-index-{name}.json'; (ROOT/path).write_text(json.dumps({'version':1,'types':sorted(types),'records':rs},ensure_ascii=False,separators=(',',':')),encoding='utf-8'); shards.append({'name':name,'path':'/'+path,'types':sorted(types),'records':len(rs)})
+    rs=[r for r in records if r['type'] in types]; path=f'data/search-index-{name}.json'; (ROOT/path).write_text(json.dumps({'version':2,'types':sorted(types),'records':rs},ensure_ascii=False,separators=(',',':')),encoding='utf-8'); shards.append({'name':name,'path':'/'+path,'types':sorted(types),'records':len(rs)})
 meta['shards']=shards
 manifest={'meta':meta,'shards':shards,'record_schema':['id','type','title','aliases','route','source_id','source_path','snippet','keywords','rank_priority']}
 (D/'search-index.json').write_text(json.dumps(manifest,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
