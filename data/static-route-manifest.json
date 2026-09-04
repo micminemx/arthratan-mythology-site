@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T19:40:55Z",
+  "generated": "2026-09-04T19:41:27Z",
   "origin": "https://arthratanmythology.com",
-  "count": 921,
+  "count": 922,
   "routes": [
     {
       "kind": "character",
@@ -6458,6 +6458,14 @@
       "url": "/crossscaling/rhayhara-eidos-mirror-fuel-inversion/",
       "source": "crossscaling/rhayhara-eidos-mirror-fuel-inversion/index.html",
       "title": "Rhayhara–Eidos Mirror-Fuel Inversion",
+      "canon_status": "noncanon-analytical"
+    },
+    {
+      "kind": "crossscaling",
+      "key": "rhayhara-inzra-annaris-six-clashes",
+      "url": "/crossscaling/rhayhara-inzra-annaris-six-clashes/",
+      "source": "crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+      "title": "Rhayhara–Inzra–Annaris Six-Clash Resolution",
       "canon_status": "noncanon-analytical"
     },
     {
