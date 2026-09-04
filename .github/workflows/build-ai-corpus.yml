@@ -83,3 +83,5 @@ jobs:
           fi
           git commit -m 'AI-LIVE-001: generate public AI corpus'
           git push origin HEAD:main
+
+# Manual refresh marker: 2026-09-04 frontend completion audit
