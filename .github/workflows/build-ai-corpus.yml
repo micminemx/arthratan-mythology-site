@@ -33,37 +33,31 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Make AI generator tolerant of concept name-only records
+      - name: Align AI generator with current concept metadata
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('scripts/build-ai-corpus.py')
           text=p.read_text(encoding='utf-8')
-          old='title=c["title"]'
-          new='title=(c.get("title") or c.get("name") or cid.replace("-", " ").title())'
-          if old not in text and new not in text:
+          old_title='title=c["title"]'
+          new_title='title=(c.get("title") or c.get("name") or cid.replace("-", " ").title())'
+          if old_title in text:
+              text=text.replace(old_title,new_title,1)
+          elif new_title not in text:
               raise SystemExit('Expected causal concept title expression not found')
-          if old in text:
-              p.write_text(text.replace(old,new,1), encoding='utf-8')
+          old_count='"concept": 19,'
+          new_count='"concept": 27,'
+          if old_count in text:
+              text=text.replace(old_count,new_count,1)
+          elif new_count not in text:
+              raise SystemExit('Expected concept count baseline not found')
+          p.write_text(text, encoding='utf-8')
           PY
 
       - name: Generate complete-text AI corpus
         env:
           AI_SOURCE_COMMIT: ${{ github.sha }}
-        run: |
-          set +e
-          python scripts/build-ai-corpus.py > ai-build-debug.log 2>&1
-          rc=$?
-          cat ai-build-debug.log
-          if [ "$rc" -ne 0 ]; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add ai-build-debug.log
-            git commit -m 'OPS: capture second AI corpus generator failure' || true
-            git push origin HEAD:main || true
-            exit "$rc"
-          fi
-          rm -f ai-build-debug.log
+        run: python scripts/build-ai-corpus.py
 
       - name: Validate generated source/publication boundary
         run: |
@@ -71,7 +65,7 @@ jobs:
           import json, pathlib
           root=pathlib.Path('ai')
           m=json.loads((root/'index.json').read_text(encoding='utf-8'))
-          base={'character':43,'concept':19,'divine':317,'hgl':293,'living-canon':8,'provenance':4,'zubaida':118}
+          base={'character':43,'concept':27,'divine':317,'hgl':293,'living-canon':8,'provenance':4,'zubaida':118}
           assert m['validation']['base_expected_counts']==base
           assert m['record_count']==sum(m['counts'].values())
           assert m['counts'].get('myth',0)>=1
@@ -91,6 +85,8 @@ jobs:
           assert cross and all('NONCANON' in r['full_text'] for r in cross)
           myth=[json.loads(line) for line in (root/'shards'/'myth.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
           assert any(r['canonical_route'].endswith('/myths/dyvane-vs-xael-gath/') for r in myth)
+          assert any(r['canonical_route'].endswith('/myths/rhayhara-inzra-annaris-six-clashes/') for r in myth)
+          assert any(r['canonical_route'].endswith('/crossscaling/rhayhara-inzra-annaris-six-clashes/') for r in cross)
           print({'records':m['record_count'],'counts':m['counts'],'dyvane':d['counts']})
           PY
 
