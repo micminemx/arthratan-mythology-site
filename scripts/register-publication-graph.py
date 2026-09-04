@@ -5,22 +5,27 @@ Idempotent and concurrency-safe at the route layer: current filesystem routes ar
 discovered every run, so newly published or removed Myth/Crossscaling pages do not
 require a hardcoded registry update. Myths are canonical narrative routes;
 Crossscaling routes are explicitly NONCANON analytical surfaces.
+
+Publication pages also become backlink authorities for the character pages they
+explicitly reference. This closes the evidence graph in both directions without
+hardcoding one character or inferring identities from names/titles.
 """
 from __future__ import annotations
 
 import datetime as dt
 import html
 import json
-import os
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data" / "static-route-manifest.json"
 CRAWL = ROOT / "crawl" / "index.html"
-RHAYHARA = ROOT / "characters" / "rhayhara" / "index.html"
+CHARACTERS = ROOT / "characters"
 START = "<!-- PUBLICATION-GRAPH:START -->"
 END = "<!-- PUBLICATION-GRAPH:END -->"
+CHAR_START = "<!-- CHARACTER-PUBLICATION-GRAPH:START -->"
+CHAR_END = "<!-- CHARACTER-PUBLICATION-GRAPH:END -->"
 PUBLICATION_KINDS = {"myth", "crossscaling"}
 
 
@@ -77,7 +82,6 @@ def discover_publication_routes() -> list[dict]:
 
 def register_manifest(custom_routes: list[dict]) -> int:
     data = json.loads(read(MANIFEST))
-    # Remove prior custom publication records first. This also removes deleted/collision routes.
     routes = [r for r in data.setdefault("routes", []) if r.get("kind") not in PUBLICATION_KINDS]
     routes.extend(custom_routes)
     data["routes"] = routes
@@ -149,46 +153,121 @@ def patch_crawl(count: int, custom_routes: list[dict]) -> None:
     write(CRAWL, text)
 
 
-def rhayhara_links(custom_routes: list[dict]) -> str:
-    myths = [r for r in custom_routes if r["kind"] == "myth" and "rhayhara" in r["title"].lower() and r["url"] != "/myths/"]
-    scales = [r for r in custom_routes if r["kind"] == "crossscaling" and "rhayhara" in r["title"].lower() and r["url"] != "/crossscaling/"]
+def route_file(route: dict) -> Path:
+    return ROOT / route["source"]
+
+
+def publication_character_refs(custom_routes: list[dict]) -> dict[str, dict[str, list[dict]]]:
+    """Map explicit character hyperlinks in publication pages back to existing dossiers.
+
+    Identity is never inferred from names. Only an actual href to the canonical character
+    route creates the backlink. Missing referenced character routes fail closed because a
+    publication page must not silently advertise a broken identity/proof edge.
+    """
+    refs: dict[str, dict[str, list[dict]]] = {}
+    href_re = re.compile(r"href\s*=\s*['\"](?:https://arthratanmythology\.com)?/characters/([^/'\"?#]+)/?['\"]", re.I)
+    for route in custom_routes:
+        if route["url"] in {"/myths/", "/crossscaling/"}:
+            continue
+        text = read(route_file(route))
+        for slug in sorted(set(href_re.findall(text))):
+            target = CHARACTERS / slug / "index.html"
+            if not target.exists():
+                raise RuntimeError(f"Publication route {route['url']} links missing character route /characters/{slug}/")
+            bucket = refs.setdefault(slug, {"myth": [], "crossscaling": []})
+            if not any(x["url"] == route["url"] for x in bucket[route["kind"]]):
+                bucket[route["kind"]].append(route)
+    return refs
+
+
+def character_publication_block(groups: dict[str, list[dict]]) -> str:
+    myths = sorted(groups.get("myth", []), key=lambda r: (r["title"].casefold(), r["url"]))
+    scales = sorted(groups.get("crossscaling", []), key=lambda r: (r["title"].casefold(), r["url"]))
     myth_items = "".join(
         f'<li><a href="{html.escape(r["url"])}">{html.escape(r["title"])}</a></li>' for r in myths
-    )
+    ) or "<li>No character-linked Myth is currently published.</li>"
     scale_items = "".join(
         f'<li><a href="{html.escape(r["url"])}">{html.escape(r["title"])}</a> '
         '<strong>(CROSSSCALE-ONLY / NONCANON)</strong></li>' for r in scales
-    )
+    ) or "<li>No character-linked crossscale record is currently published.</li>"
     return (
-        f"<h2>Canonical Myths</h2><ul>{myth_items}</ul>"
-        "<h2>Crossscaling</h2><p>External analytical interpretations are kept separate from canon narrative. "
+        f"{CHAR_START}"
+        "<section class=\"publication-backlinks\" aria-label=\"Myths and crossscaling\">"
+        "<h2>Canonical Myths</h2>"
+        "<p>Readable source-grounded narratives linked back to exact primary evidence.</p>"
+        f"<ul>{myth_items}</ul>"
+        "<h2>Crossscaling</h2>"
+        "<p>External analytical interpretations are kept separate from canon narrative. "
         "See the <a href=\"/crossscaling/\">Master Crossscaling</a> layer.</p>"
         f"<ul>{scale_items}</ul>"
+        "</section>"
+        f"{CHAR_END}"
     )
 
 
-def patch_rhayhara(custom_routes: list[dict]) -> None:
-    text = patch_nav(read(RHAYHARA))
-    replacement = rhayhara_links(custom_routes)
-    if "<h2>Canonical Myths</h2>" in text:
-        text = re.sub(
+def remove_legacy_rhayhara_block(text: str) -> str:
+    """Migrate the first-generation Rhayhara-only backlink block to the generic marker."""
+    if CHAR_START in text:
+        return text
+    if "<h2>Canonical Myths</h2>" in text and "<h2>History</h2>" in text:
+        return re.sub(
             r"<h2>Canonical Myths</h2>.*?(?=<h2>History</h2>)",
-            replacement,
+            "",
             text,
             count=1,
             flags=re.S,
         )
-    else:
-        anchor = "<h2>History</h2>"
-        if anchor not in text:
-            raise RuntimeError("Rhayhara generator shape changed; cannot safely insert publication backlinks")
-        text = text.replace(anchor, replacement + anchor, 1)
-    write(RHAYHARA, text)
+    return text
+
+
+def patch_character_backlinks(custom_routes: list[dict]) -> list[str]:
+    refs = publication_character_refs(custom_routes)
+    changed: list[str] = []
+    for slug, groups in sorted(refs.items()):
+        path = CHARACTERS / slug / "index.html"
+        original = read(path)
+        text = patch_nav(original)
+        if slug == "rhayhara":
+            text = remove_legacy_rhayhara_block(text)
+        block = character_publication_block(groups)
+        if CHAR_START in text and CHAR_END in text:
+            text = re.sub(
+                re.escape(CHAR_START) + r".*?" + re.escape(CHAR_END),
+                block,
+                text,
+                count=1,
+                flags=re.S,
+            )
+        else:
+            if "</article>" not in text:
+                raise RuntimeError(f"Character page shape changed; cannot insert publication backlinks: {path}")
+            text = text.replace("</article>", block + "\n    </article>", 1)
+        if text != original:
+            write(path, text)
+            changed.append(slug)
+    return changed
+
+
+def validate_publication_graph(custom_routes: list[dict]) -> None:
+    seen = set()
+    for route in custom_routes:
+        if route["url"] in seen:
+            raise RuntimeError(f"Duplicate publication URL: {route['url']}")
+        seen.add(route["url"])
+        if not route_file(route).exists():
+            raise RuntimeError(f"Missing publication file for {route['url']}")
+        text = read(route_file(route))
+        if route["kind"] == "crossscaling" and "CROSSSCALE-ONLY" not in text.upper():
+            raise RuntimeError(f"Crossscaling route lacks explicit CROSSSCALE-ONLY boundary: {route['url']}")
 
 
 if __name__ == "__main__":
     publication_routes = discover_publication_routes()
+    validate_publication_graph(publication_routes)
     total = register_manifest(publication_routes)
     patch_crawl(total, publication_routes)
-    patch_rhayhara(publication_routes)
-    print(f"Publication graph registered: {len(publication_routes)} custom routes; {total} crawlable routes total.")
+    changed_characters = patch_character_backlinks(publication_routes)
+    print(
+        f"Publication graph registered: {len(publication_routes)} custom routes; "
+        f"{total} crawlable routes total; {len(changed_characters)} character backlink pages updated."
+    )
