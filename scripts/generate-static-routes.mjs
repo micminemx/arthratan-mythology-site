@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = process.cwd();
 const ORIGIN = 'https://arthratanmythology.com';
@@ -75,4 +76,25 @@ const grouped=routes.reduce((a,r)=>((a[r.kind]??=[]).push(r),a),{});
 const indexBody=`<h1>Arthratan Mythology crawlable corpus</h1><p>This static index is provided for search engines, AI retrieval systems, accessibility tools and browsers that do not execute the interactive Codex JavaScript.</p>${Object.entries(grouped).map(([kind,rs])=>`<h2>${esc(kind)} (${rs.length})</h2><ul>${rs.map(r=>`<li><a href="${esc(r.url)}">${esc(r.title)}</a></li>`).join('')}</ul>`).join('')}`;
 write('crawl/index.html',shell({title:'Arthratan Mythology — Crawlable Corpus Index',description:'Static, non-JavaScript index of Arthratan Mythology source and reference pages.',canonical:`${ORIGIN}/crawl/`,kind:'Crawler and accessibility index',body:indexBody}));
 write('data/static-route-manifest.json',JSON.stringify({generated:new Date().toISOString(),origin:ORIGIN,count:routes.length,routes},null,2)+'\n');
-console.log(`Generated ${routes.length} crawlable routes plus /crawl/.`);
+
+// Static-route generation used to overwrite the publication-aware manifest/crawl and
+// character backlinks. Always re-register hand-authored Myths/Crossscaling and rebuild
+// the sitemap after core route generation so Character → Myth → Crossscale → evidence
+// discovery survives any full static rebuild.
+const runPython = script => {
+  const candidates=[process.env.PYTHON,process.env.PYTHON3,'python3','python'].filter(Boolean);
+  let lastError=null;
+  for(const exe of [...new Set(candidates)]){
+    try{
+      execFileSync(exe,[path.join(ROOT,script)],{cwd:ROOT,stdio:'inherit'});
+      return;
+    }catch(err){
+      if(err && err.code==='ENOENT'){ lastError=err; continue; }
+      throw err;
+    }
+  }
+  throw lastError || new Error(`No Python interpreter available to run ${script}`);
+};
+runPython('scripts/register-publication-graph.py');
+runPython('scripts/generate-comprehensive-sitemap.py');
+console.log(`Generated ${routes.length} core crawlable routes plus publication graph and /crawl/.`);
