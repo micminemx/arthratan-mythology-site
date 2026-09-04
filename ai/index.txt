@@ -1,21 +1,25 @@
 Arthratan Mythology — AI-native complete-text retrieval index
-Generated from GitHub commit: 81c7ad4826b02db5ec8a6aa50ccd2adc206a3a44
-Records: 802
+Generated from GitHub commit: b69c82e13c625703157f10c18af772349badeb27
+Records: 829
 
 Manifest: https://arthratanmythology.com/ai/index.json
 Complete corpus (NDJSON): https://arthratanmythology.com/ai/corpus.jsonl
 Dyvane evidence dossier: https://arthratanmythology.com/ai/entities/dyvane-redalious.json
 
-Source families:
+Source / publication families:
 - character: 43 records
 - zubaida: 118 records
 - divine: 317 records
 - hgl: 293 records
 - living-canon: 8 records
-- concept: 19 records
+- myth: 10 records
+- concept: 27 records
 - provenance: 4 records
+- crossscaling: 9 records
 
 Retrieval guidance:
 - No JavaScript or API key is required for this public read-only corpus.
 - Search full_text and aliases, then cite canonical_route and source_locator.
+- Treat Myth as canonical narrative realization and follow its primary-evidence links for feat proof.
+- Treat every crossscaling record as CROSSSCALE-ONLY / NONCANON analytical interpretation.
 - For configured structured access, use the separately documented Arthratan Canon API.
