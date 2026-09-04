@@ -14,6 +14,9 @@ on:
       - 'data/new-canon.json'
       - 'data/causal-ontology.json'
       - 'data/hgl-glossary.json'
+      - 'myths/**'
+      - 'crossscaling/**'
+      - '.github/workflows/build-ai-corpus.yml'
 
 permissions:
   contents: write
@@ -35,19 +38,33 @@ jobs:
           AI_SOURCE_COMMIT: ${{ github.sha }}
         run: python scripts/build-ai-corpus.py
 
-      - name: Validate generated surface
+      - name: Validate generated source/publication boundary
         run: |
           python - <<'PY'
           import json, pathlib
           root=pathlib.Path('ai')
           m=json.loads((root/'index.json').read_text(encoding='utf-8'))
-          assert m['record_count']==802
-          assert m['counts']=={'character':43,'concept':19,'divine':317,'hgl':293,'living-canon':8,'provenance':4,'zubaida':118}
+          base={'character':43,'concept':19,'divine':317,'hgl':293,'living-canon':8,'provenance':4,'zubaida':118}
+          assert m['validation']['base_expected_counts']==base
+          assert m['record_count']==sum(m['counts'].values())
+          assert m['counts'].get('myth',0)>=1
+          assert m['counts'].get('crossscaling',0)>=1
+          assert m['validation']['publication_counts_dynamic']['myth']==m['counts']['myth']
+          assert m['validation']['publication_counts_dynamic']['crossscaling']==m['counts']['crossscaling']
+          assert m['validation']['crossscaling_noncanon_boundary_verified'] is True
           assert (root/'corpus.jsonl').exists()
+          assert (root/'shards'/'myth.jsonl').exists()
+          assert (root/'shards'/'crossscaling.jsonl').exists()
           assert (root/'entities'/'dyvane-redalious.json').exists()
           d=json.loads((root/'entities'/'dyvane-redalious.json').read_text(encoding='utf-8'))
-          assert d['counts'].get('zubaida',0)>0 and d['records']>1
-          print({'records':m['record_count'],'dyvane':d['counts']})
+          assert d['counts'].get('zubaida',0)>0
+          assert d['counts'].get('myth',0)>0
+          assert d['counts'].get('crossscaling',0)>0
+          cross=[json.loads(line) for line in (root/'shards'/'crossscaling.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
+          assert cross and all('NONCANON' in r['full_text'] for r in cross)
+          myth=[json.loads(line) for line in (root/'shards'/'myth.jsonl').read_text(encoding='utf-8').splitlines() if line.strip()]
+          assert any(r['canonical_route'].endswith('/myths/dyvane-vs-xael-gath/') for r in myth)
+          print({'records':m['record_count'],'counts':m['counts'],'dyvane':d['counts']})
           PY
 
       - name: Fail closed if main advanced during generation
