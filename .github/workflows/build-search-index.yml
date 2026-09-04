@@ -1,4 +1,4 @@
-name: SEARCH-001/002 Unified Search Corpus
+name: SEARCH-001/002/003 Unified Search Corpus
 
 on:
   workflow_dispatch:
@@ -46,7 +46,7 @@ jobs:
       - name: Generate static no-JavaScript search surface
         run: python scripts/build-static-search.py
 
-      - name: Validate search corpus and static discovery contract
+      - name: Validate search corpus and publication-boundary contract
         run: |
           python - <<'PY'
           import json
@@ -59,12 +59,20 @@ jobs:
           assert meta['coverage']['zubaida_source_transmissions'] == 118
           assert meta['coverage']['divine_sections'] == 317
           assert meta['coverage']['hgl_pages'] == 293
-          assert meta['coverage']['myth_routes'] >= 1
-          assert meta['coverage']['crossscaling_routes'] >= 1
+
+          expected_myths = int((root/'myths'/'index.html').exists()) + len(list((root/'myths').glob('*/index.html')))
+          expected_scales = int((root/'crossscaling'/'index.html').exists()) + len(list((root/'crossscaling').glob('*/index.html')))
+          assert meta['coverage']['myth_routes'] == expected_myths
+          assert meta['coverage']['crossscaling_routes'] == expected_scales
+          assert meta['counts']['myth'] == expected_myths
+          assert meta['counts']['crossscaling'] == expected_scales
           assert meta['validation']['unique_ids'] is True
           assert meta['validation']['routes_present'] is True
           assert meta['validation']['source_paths_present'] is True
+          assert meta['validation']['canon_status_present'] is True
+          assert meta['validation']['myths_canonical_narrative'] is True
           assert meta['validation']['crossscaling_noncanon_boundary'] is True
+
           records=[]
           for shard in manifest['shards']:
               p=root/shard['path'].lstrip('/')
@@ -74,25 +82,32 @@ jobs:
               records.extend(payload['records'])
           ids=[r['id'] for r in records]
           assert len(ids) == len(set(ids)) == meta['records']
+          assert all(r.get('canon_status') for r in records)
+
           dyvane=[r for r in records if r['title'].casefold() == 'dyvane redalious']
           assert dyvane and dyvane[0]['route'] == '/characters/dyvane-redalious/'
           assert any('hypernegative rewrite' in (r['title']+' '+' '.join(r['keywords'])).casefold() for r in records)
           myths=[r for r in records if r['type']=='myth']
           scales=[r for r in records if r['type']=='crossscaling']
-          assert any(r['route']=='/myths/dyvane-vs-xael-gath/' for r in myths)
-          assert any(r['route'].startswith('/crossscaling/') and r['route']!='/crossscaling/' for r in scales)
-          assert all('noncanon' in r['snippet'].casefold() for r in scales)
+          assert all(r['canon_status']=='canonical-narrative' for r in myths)
+          assert all(r['canon_status']=='noncanon-analytical' for r in scales)
+          assert any(r['route']=='/myths/rhayhara-and-othrys-five-orthogonal-escalations/' for r in myths)
+          assert any(r['route']=='/crossscaling/rhayhara-othrys-orthogonal-escalation/' for r in scales)
+
           page=(root/'search/index.html').read_text(encoding='utf-8')
           plain=(root/'search/index.txt').read_text(encoding='utf-8')
           assert '<main id="results"' in page
           assert 'Dyvane Redalious' in page
           assert 'href="/characters/dyvane-redalious/"' in page
-          assert 'href="/myths/dyvane-vs-xael-gath/"' in page
+          assert '/myths/rhayhara-and-othrys-five-orthogonal-escalations/' in page
+          assert '/crossscaling/rhayhara-othrys-orthogonal-escalation/' in page
+          assert 'NONCANON analytical record.' in page
+          assert 'canonical-narrative' in page
           assert 'JavaScript is optional' in page
-          assert 'Dyvane Redalious | character | /characters/dyvane-redalious/' in plain
-          assert '/myths/dyvane-vs-xael-gath/' in plain
+          assert 'Dyvane Redalious | character | canonical-source-or-dossier | /characters/dyvane-redalious/' in plain
+          assert 'Rhayhara and Othrys: Five Orthogonal Escalations | myth | canonical-narrative | /myths/rhayhara-and-othrys-five-orthogonal-escalations/' in plain
           assert (root/'search/opensearch.xml').exists()
-          print(f"validated {meta['records']} unified records including {len(myths)} Myth and {len(scales)} Crossscaling routes")
+          print(f"validated {meta['records']} unified records including {len(myths)} Myth and {len(scales)} typed Crossscaling routes")
           PY
 
       - name: Commit generated search data and static page when changed
@@ -104,5 +119,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/search-index.json data/search-index-meta.json data/search-index-*.json search/index.html search/index.txt search/opensearch.xml
-          git commit -m 'SEARCH-002: regenerate static unified search'
+          git commit -m 'SEARCH-003: index Myths and Crossscaling with canon status'
           git push
