@@ -50,7 +50,20 @@ jobs:
       - name: Generate complete-text AI corpus
         env:
           AI_SOURCE_COMMIT: ${{ github.sha }}
-        run: python scripts/build-ai-corpus.py
+        run: |
+          set +e
+          python scripts/build-ai-corpus.py > ai-build-debug.log 2>&1
+          rc=$?
+          cat ai-build-debug.log
+          if [ "$rc" -ne 0 ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add ai-build-debug.log
+            git commit -m 'OPS: capture second AI corpus generator failure' || true
+            git push origin HEAD:main || true
+            exit "$rc"
+          fi
+          rm -f ai-build-debug.log
 
       - name: Validate generated source/publication boundary
         run: |
