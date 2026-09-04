@@ -131,6 +131,13 @@ def patch_nav(text: str) -> str:
     return text
 
 
+def insert_before_outer_article_close(text: str, block: str, label: str) -> str:
+    pos = text.rfind("</article>")
+    if pos < 0:
+        raise RuntimeError(f"Page shape changed; cannot insert publication block: {label}")
+    return text[:pos] + block + "\n    " + text[pos:]
+
+
 def patch_crawl(count: int, custom_routes: list[dict]) -> None:
     text = patch_nav(read(CRAWL))
     text = re.sub(
@@ -149,7 +156,7 @@ def patch_crawl(count: int, custom_routes: list[dict]) -> None:
     if START in text and END in text:
         text = re.sub(re.escape(START) + r'.*?' + re.escape(END), block, text, count=1, flags=re.S)
     else:
-        text = text.replace("</article>", block + "\n    </article>", 1)
+        text = insert_before_outer_article_close(text, block, str(CRAWL))
     write(CRAWL, text)
 
 
@@ -229,19 +236,19 @@ def patch_character_backlinks(custom_routes: list[dict]) -> list[str]:
         text = patch_nav(original)
         if slug == "rhayhara":
             text = remove_legacy_rhayhara_block(text)
-        block = character_publication_block(groups)
+        # Always remove an existing generated block before reinsertion. This deliberately
+        # relocates first-generation blocks that may have landed inside nested chronicle
+        # <article> elements, then anchors the block at the final/outer article boundary.
         if CHAR_START in text and CHAR_END in text:
             text = re.sub(
                 re.escape(CHAR_START) + r".*?" + re.escape(CHAR_END),
-                block,
+                "",
                 text,
                 count=1,
                 flags=re.S,
             )
-        else:
-            if "</article>" not in text:
-                raise RuntimeError(f"Character page shape changed; cannot insert publication backlinks: {path}")
-            text = text.replace("</article>", block + "\n    </article>", 1)
+        block = character_publication_block(groups)
+        text = insert_before_outer_article_close(text, block, str(path))
         if text != original:
             write(path, text)
             changed.append(slug)
