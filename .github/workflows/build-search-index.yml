@@ -10,6 +10,8 @@ on:
       - 'characters/**'
       - 'divine/**'
       - 'hgl/**'
+      - 'myths/**'
+      - 'crossscaling/**'
       - 'scripts/build-search-index.py'
       - 'scripts/build-static-search.py'
       - '.github/workflows/build-search-index.yml'
@@ -57,9 +59,12 @@ jobs:
           assert meta['coverage']['zubaida_source_transmissions'] == 118
           assert meta['coverage']['divine_sections'] == 317
           assert meta['coverage']['hgl_pages'] == 293
+          assert meta['coverage']['myth_routes'] >= 1
+          assert meta['coverage']['crossscaling_routes'] >= 1
           assert meta['validation']['unique_ids'] is True
           assert meta['validation']['routes_present'] is True
           assert meta['validation']['source_paths_present'] is True
+          assert meta['validation']['crossscaling_noncanon_boundary'] is True
           records=[]
           for shard in manifest['shards']:
               p=root/shard['path'].lstrip('/')
@@ -72,15 +77,22 @@ jobs:
           dyvane=[r for r in records if r['title'].casefold() == 'dyvane redalious']
           assert dyvane and dyvane[0]['route'] == '/characters/dyvane-redalious/'
           assert any('hypernegative rewrite' in (r['title']+' '+' '.join(r['keywords'])).casefold() for r in records)
+          myths=[r for r in records if r['type']=='myth']
+          scales=[r for r in records if r['type']=='crossscaling']
+          assert any(r['route']=='/myths/dyvane-vs-xael-gath/' for r in myths)
+          assert any(r['route'].startswith('/crossscaling/') and r['route']!='/crossscaling/' for r in scales)
+          assert all('noncanon' in r['snippet'].casefold() for r in scales)
           page=(root/'search/index.html').read_text(encoding='utf-8')
           plain=(root/'search/index.txt').read_text(encoding='utf-8')
           assert '<main id="results"' in page
           assert 'Dyvane Redalious' in page
           assert 'href="/characters/dyvane-redalious/"' in page
+          assert 'href="/myths/dyvane-vs-xael-gath/"' in page
           assert 'JavaScript is optional' in page
           assert 'Dyvane Redalious | character | /characters/dyvane-redalious/' in plain
+          assert '/myths/dyvane-vs-xael-gath/' in plain
           assert (root/'search/opensearch.xml').exists()
-          print(f"validated {meta['records']} unified records and static /search/ discovery")
+          print(f"validated {meta['records']} unified records including {len(myths)} Myth and {len(scales)} Crossscaling routes")
           PY
 
       - name: Commit generated search data and static page when changed
