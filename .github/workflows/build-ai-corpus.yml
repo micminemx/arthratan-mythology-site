@@ -33,23 +33,24 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Make AI generator tolerant of concept name-only records
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/build-ai-corpus.py')
+          text=p.read_text(encoding='utf-8')
+          old='title=c["title"]'
+          new='title=(c.get("title") or c.get("name") or cid.replace("-", " ").title())'
+          if old not in text and new not in text:
+              raise SystemExit('Expected causal concept title expression not found')
+          if old in text:
+              p.write_text(text.replace(old,new,1), encoding='utf-8')
+          PY
+
       - name: Generate complete-text AI corpus
         env:
           AI_SOURCE_COMMIT: ${{ github.sha }}
-        run: |
-          set +e
-          python scripts/build-ai-corpus.py > ai-build-debug.log 2>&1
-          rc=$?
-          cat ai-build-debug.log
-          if [ "$rc" -ne 0 ]; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git add ai-build-debug.log
-            git commit -m 'OPS: capture AI corpus generator failure' || true
-            git push origin HEAD:main || true
-            exit "$rc"
-          fi
-          rm -f ai-build-debug.log
+        run: python scripts/build-ai-corpus.py
 
       - name: Validate generated source/publication boundary
         run: |
