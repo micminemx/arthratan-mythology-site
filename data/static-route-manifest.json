@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T19:35:07Z",
+  "generated": "2026-09-04T19:37:46Z",
   "origin": "https://arthratanmythology.com",
-  "count": 918,
+  "count": 919,
   "routes": [
     {
       "kind": "character",
@@ -6338,6 +6338,14 @@
       "url": "/myths/dyvane-vs-xael-gath/",
       "source": "myths/dyvane-vs-xael-gath/index.html",
       "title": "Dyvane vs Xael-Gath",
+      "canon_status": "canonical-narrative"
+    },
+    {
+      "kind": "myth",
+      "key": "halatayo-and-the-projected-amnifuture-hyperchallenge",
+      "url": "/myths/halatayo-and-the-projected-amnifuture-hyperchallenge/",
+      "source": "myths/halatayo-and-the-projected-amnifuture-hyperchallenge/index.html",
+      "title": "Halatayo and the Projected-Amnifuture Hyperchallenge",
       "canon_status": "canonical-narrative"
     },
     {
