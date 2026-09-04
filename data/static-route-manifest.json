@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-03T23:25:00Z",
+  "generated": "2026-09-04T19:31:01Z",
   "origin": "https://arthratanmythology.com",
-  "count": 903,
+  "count": 907,
   "routes": [
     {
       "kind": "character",
@@ -6323,6 +6323,39 @@
       "url": "/chronology/",
       "source": "data/canon-supersession-chronology.json",
       "title": "Canon Supersession Chronology"
+    },
+    {
+      "kind": "myth",
+      "key": "rhayharas-ten-destiny-defying-trials",
+      "url": "/myths/rhayharas-ten-destiny-defying-trials/",
+      "source": "sources/zubaida/19f0e8f96cb8730c.txt",
+      "title": "Rhayhara's Ten Destiny-Defying Trials",
+      "canon_status": "canonical-narrative"
+    },
+    {
+      "kind": "myth",
+      "key": "rhayhara-and-othrys-five-orthogonal-escalations",
+      "url": "/myths/rhayhara-and-othrys-five-orthogonal-escalations/",
+      "source": "sources/zubaida/19f0d1c0f4a5d5e5.txt",
+      "title": "Rhayhara and Othrys: Five Orthogonal Escalations",
+      "canon_status": "canonical-narrative"
+    },
+    {
+      "kind": "crossscaling",
+      "key": "master-crossscaling",
+      "url": "/crossscaling/",
+      "source": "crossscaling/index.html",
+      "title": "Master Crossscaling",
+      "canon_status": "noncanon-analytical"
+    },
+    {
+      "kind": "crossscaling",
+      "key": "rhayhara-othrys-orthogonal-escalation",
+      "url": "/crossscaling/rhayhara-othrys-orthogonal-escalation/",
+      "source": "sources/zubaida/19f0d1c0f4a5d5e5.txt",
+      "title": "Rhayhara–Othrys Orthogonal Escalation Crossscale",
+      "canon_status": "noncanon-analytical"
     }
-  ]
+  ],
+  "scope_note": "Includes canonical corpus routes plus explicitly labelled noncanon analytical Crossscaling routes; canon_status preserves the boundary."
 }
