@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T19:36:47Z",
+  "generated": "2026-09-04T19:37:26Z",
   "origin": "https://arthratanmythology.com",
-  "count": 919,
+  "count": 918,
   "routes": [
     {
       "kind": "character",
@@ -6370,14 +6370,6 @@
       "url": "/myths/rhayhara-vs-dalroemar/",
       "source": "myths/rhayhara-vs-dalroemar/index.html",
       "title": "Rhayhara vs Dalroemar: Shattering the Dead-Destiny Boundary",
-      "canon_status": "canonical-narrative"
-    },
-    {
-      "kind": "myth",
-      "key": "rhayhara-vs-eidos-swarm",
-      "url": "/myths/rhayhara-vs-eidos-swarm/",
-      "source": "myths/rhayhara-vs-eidos-swarm/index.html",
-      "title": "Rhayhara vs the Eidos Swarm",
       "canon_status": "canonical-narrative"
     },
     {
