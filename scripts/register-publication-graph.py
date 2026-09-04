@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Register hand-authored Myth and Crossscaling routes in generated discovery surfaces.
+"""Register hand-authored Myth/Crossscaling routes in generated discovery surfaces.
 
-This postprocessor is intentionally idempotent. It preserves the canonical/noncanon
-boundary: Myths are canonical narrative pages; Crossscaling pages are explicitly
-NONCANON analytical surfaces. It also repairs Rhayhara's generated dossier backlinks
-if the comprehensive static generator is rerun.
+Idempotent and concurrency-safe at the route layer: current filesystem routes are
+discovered every run, so newly published or removed Myth/Crossscaling pages do not
+require a hardcoded registry update. Myths are canonical narrative routes;
+Crossscaling routes are explicitly NONCANON analytical surfaces.
 """
 from __future__ import annotations
 
@@ -13,87 +13,87 @@ import html
 import json
 import os
 import re
+from pathlib import Path
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MANIFEST = os.path.join(ROOT, "data", "static-route-manifest.json")
-CRAWL = os.path.join(ROOT, "crawl", "index.html")
-RHAYHARA = os.path.join(ROOT, "characters", "rhayhara", "index.html")
-
-CUSTOM_ROUTES = [
-    {
-        "kind": "myth",
-        "key": "rhayharas-ten-destiny-defying-trials",
-        "url": "/myths/rhayharas-ten-destiny-defying-trials/",
-        "source": "sources/zubaida/19f0e8f96cb8730c.txt",
-        "title": "Rhayhara's Ten Destiny-Defying Trials",
-        "canon_status": "canonical-narrative",
-    },
-    {
-        "kind": "myth",
-        "key": "rhayhara-and-othrys-five-orthogonal-escalations",
-        "url": "/myths/rhayhara-and-othrys-five-orthogonal-escalations/",
-        "source": "sources/zubaida/19f0d1c0f4a5d5e5.txt",
-        "title": "Rhayhara and Othrys: Five Orthogonal Escalations",
-        "canon_status": "canonical-narrative",
-    },
-    {
-        "kind": "crossscaling",
-        "key": "master-crossscaling",
-        "url": "/crossscaling/",
-        "source": "crossscaling/index.html",
-        "title": "Master Crossscaling",
-        "canon_status": "noncanon-analytical",
-    },
-    {
-        "kind": "crossscaling",
-        "key": "rhayhara-othrys-orthogonal-escalation",
-        "url": "/crossscaling/rhayhara-othrys-orthogonal-escalation/",
-        "source": "sources/zubaida/19f0d1c0f4a5d5e5.txt",
-        "title": "Rhayhara–Othrys Orthogonal Escalation Crossscale",
-        "canon_status": "noncanon-analytical",
-    },
-]
-
+ROOT = Path(__file__).resolve().parent.parent
+MANIFEST = ROOT / "data" / "static-route-manifest.json"
+CRAWL = ROOT / "crawl" / "index.html"
+RHAYHARA = ROOT / "characters" / "rhayhara" / "index.html"
 START = "<!-- PUBLICATION-GRAPH:START -->"
 END = "<!-- PUBLICATION-GRAPH:END -->"
+PUBLICATION_KINDS = {"myth", "crossscaling"}
 
 
-def read(path: str) -> str:
-    with open(path, "r", encoding="utf-8") as f:
-        return f.read()
+def read(path: Path) -> str:
+    return path.read_text(encoding="utf-8")
 
 
-def write(path: str, text: str) -> None:
-    with open(path, "w", encoding="utf-8", newline="") as f:
-        f.write(text)
+def write(path: Path, text: str) -> None:
+    path.write_text(text, encoding="utf-8", newline="")
 
 
-def register_manifest() -> int:
-    with open(MANIFEST, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    routes = data.setdefault("routes", [])
-    by_url = {r.get("url"): i for i, r in enumerate(routes)}
-    for route in CUSTOM_ROUTES:
-        if route["url"] in by_url:
-            routes[by_url[route["url"]]] = route
-        else:
-            routes.append(route)
-            by_url[route["url"]] = len(routes) - 1
+def page_title(path: Path, fallback: str) -> str:
+    text = read(path)
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", text, flags=re.I | re.S)
+    raw = m.group(1) if m else fallback
+    raw = re.sub(r"<[^>]+>", "", raw)
+    return html.unescape(re.sub(r"\s+", " ", raw)).strip()
+
+
+def discover_publication_routes() -> list[dict]:
+    routes: list[dict] = []
+    specs = [
+        ("myth", "myths", "canonical-narrative"),
+        ("crossscaling", "crossscaling", "noncanon-analytical"),
+    ]
+    for kind, dirname, canon_status in specs:
+        root = ROOT / dirname
+        hub = root / "index.html"
+        if hub.exists():
+            routes.append({
+                "kind": kind,
+                "key": f"{dirname}-index",
+                "url": f"/{dirname}/",
+                "source": f"{dirname}/index.html",
+                "title": page_title(hub, dirname.title()),
+                "canon_status": canon_status,
+            })
+        if not root.exists():
+            continue
+        for child in sorted(p for p in root.iterdir() if p.is_dir()):
+            index = child / "index.html"
+            if not index.exists():
+                continue
+            routes.append({
+                "kind": kind,
+                "key": child.name,
+                "url": f"/{dirname}/{child.name}/",
+                "source": f"{dirname}/{child.name}/index.html",
+                "title": page_title(index, child.name.replace("-", " ").title()),
+                "canon_status": canon_status,
+            })
+    return routes
+
+
+def register_manifest(custom_routes: list[dict]) -> int:
+    data = json.loads(read(MANIFEST))
+    # Remove prior custom publication records first. This also removes deleted/collision routes.
+    routes = [r for r in data.setdefault("routes", []) if r.get("kind") not in PUBLICATION_KINDS]
+    routes.extend(custom_routes)
+    data["routes"] = routes
     data["count"] = len(routes)
     data["generated"] = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     data["scope_note"] = (
-        "Includes canonical corpus routes plus explicitly labelled noncanon analytical "
-        "Crossscaling routes; canon_status preserves the boundary."
+        "Includes canonical corpus routes plus canonical Myth narrative routes and explicitly labelled "
+        "noncanon analytical Crossscaling routes; canon_status preserves the boundary."
     )
-    with open(MANIFEST, "w", encoding="utf-8", newline="") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-        f.write("\n")
+    MANIFEST.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="")
     return len(routes)
 
 
-def custom_crawl_block() -> str:
-    myths = [r for r in CUSTOM_ROUTES if r["kind"] == "myth"]
-    scales = [r for r in CUSTOM_ROUTES if r["kind"] == "crossscaling"]
+def custom_crawl_block(custom_routes: list[dict]) -> str:
+    myths = [r for r in custom_routes if r["kind"] == "myth"]
+    scales = [r for r in custom_routes if r["kind"] == "crossscaling"]
     myth_items = "".join(
         f"<li><a href='{html.escape(r['url'])}'>{html.escape(r['title'])}</a></li>" for r in myths
     )
@@ -103,8 +103,8 @@ def custom_crawl_block() -> str:
     )
     return (
         f"{START}"
-        f"<h2 id='myth'>MYTH ({len(myths)} Canonical Narrative Pages)</h2><ul>{myth_items}</ul>"
-        f"<h2 id='crossscaling'>CROSSSCALING ({len(scales)} Noncanon Analytical Pages)</h2>"
+        f"<h2 id='myth'>MYTH ({len(myths)} Canonical Narrative Routes)</h2><ul>{myth_items}</ul>"
+        f"<h2 id='crossscaling'>CROSSSCALING ({len(scales)} Noncanon Analytical Routes)</h2>"
         "<p class='notice'><strong>Canon boundary:</strong> Crossscaling pages are external analytical "
         "surfaces. Their benchmark and totalizer terms are not Arthratan canon unless separately canonized.</p>"
         f"<ul>{scale_items}</ul>{END}"
@@ -127,22 +127,21 @@ def patch_nav(text: str) -> str:
     return text
 
 
-def patch_crawl(count: int) -> None:
-    text = read(CRAWL)
-    text = patch_nav(text)
+def patch_crawl(count: int, custom_routes: list[dict]) -> None:
+    text = patch_nav(read(CRAWL))
     text = re.sub(
         r'<meta name="description" content="Exhaustive crawlable index of all \d+ canonical pages in the Arthratan Mythology Codex\.">',
-        '<meta name="description" content="Crawlable index of the canonical Arthratan corpus plus explicitly separated noncanon analytical crossscaling records.">',
+        '<meta name="description" content="Crawlable index of the canonical Arthratan corpus, canonical Myths and explicitly separated noncanon analytical crossscaling records.">',
         text,
         count=1,
     )
     text = re.sub(
-        r'100% Comprehensive Non-JavaScript Static Corpus Directory · \d+ Canonical URLs',
+        r'100% Comprehensive Non-JavaScript Static Corpus Directory · \d+ (?:Canonical URLs|Crawlable Routes)',
         f'100% Comprehensive Non-JavaScript Static Corpus Directory · {count} Crawlable Routes',
         text,
         count=1,
     )
-    block = custom_crawl_block()
+    block = custom_crawl_block(custom_routes)
     if START in text and END in text:
         text = re.sub(re.escape(START) + r'.*?' + re.escape(END), block, text, count=1, flags=re.S)
     else:
@@ -150,33 +149,46 @@ def patch_crawl(count: int) -> None:
     write(CRAWL, text)
 
 
-def rhayhara_links() -> str:
+def rhayhara_links(custom_routes: list[dict]) -> str:
+    myths = [r for r in custom_routes if r["kind"] == "myth" and "rhayhara" in r["title"].lower() and r["url"] != "/myths/"]
+    scales = [r for r in custom_routes if r["kind"] == "crossscaling" and "rhayhara" in r["title"].lower() and r["url"] != "/crossscaling/"]
+    myth_items = "".join(
+        f'<li><a href="{html.escape(r["url"])}">{html.escape(r["title"])}</a></li>' for r in myths
+    )
+    scale_items = "".join(
+        f'<li><a href="{html.escape(r["url"])}">{html.escape(r["title"])}</a> '
+        '<strong>(CROSSSCALE-ONLY / NONCANON)</strong></li>' for r in scales
+    )
     return (
-        '<h2>Canonical Myths</h2><ul>'
-        '<li><a href="/myths/rhayharas-ten-destiny-defying-trials/">Rhayhara\'s Ten Destiny-Defying Trials</a> — '
-        'Trials I–IX are completed while Trial X remains ongoing in its preserved source state.</li>'
-        '<li><a href="/myths/rhayhara-and-othrys-five-orthogonal-escalations/">Rhayhara and Othrys: Five Orthogonal Escalations</a> — '
-        'five completed Othrys Hypervysals that successively change the failure-relation being attacked.</li>'
-        '</ul>'
-        '<h2>Crossscaling</h2><p>External analytical interpretations are kept separate from canon narrative. '
-        'See the <a href="/crossscaling/">Master Crossscaling</a> layer and the '
-        '<a href="/crossscaling/rhayhara-othrys-orthogonal-escalation/">Rhayhara–Othrys Orthogonal Escalation record</a>, '
-        'which links each analytical bridge back to the Myth and exact primary source.</p>'
+        f"<h2>Canonical Myths</h2><ul>{myth_items}</ul>"
+        "<h2>Crossscaling</h2><p>External analytical interpretations are kept separate from canon narrative. "
+        "See the <a href=\"/crossscaling/\">Master Crossscaling</a> layer.</p>"
+        f"<ul>{scale_items}</ul>"
     )
 
 
-def patch_rhayhara() -> None:
+def patch_rhayhara(custom_routes: list[dict]) -> None:
     text = patch_nav(read(RHAYHARA))
-    if "<h2>Canonical Myths</h2>" not in text:
+    replacement = rhayhara_links(custom_routes)
+    if "<h2>Canonical Myths</h2>" in text:
+        text = re.sub(
+            r"<h2>Canonical Myths</h2>.*?(?=<h2>History</h2>)",
+            replacement,
+            text,
+            count=1,
+            flags=re.S,
+        )
+    else:
         anchor = "<h2>History</h2>"
         if anchor not in text:
             raise RuntimeError("Rhayhara generator shape changed; cannot safely insert publication backlinks")
-        text = text.replace(anchor, rhayhara_links() + anchor, 1)
+        text = text.replace(anchor, replacement + anchor, 1)
     write(RHAYHARA, text)
 
 
 if __name__ == "__main__":
-    total = register_manifest()
-    patch_crawl(total)
-    patch_rhayhara()
-    print(f"Publication graph registered: {total} crawlable routes.")
+    publication_routes = discover_publication_routes()
+    total = register_manifest(publication_routes)
+    patch_crawl(total, publication_routes)
+    patch_rhayhara(publication_routes)
+    print(f"Publication graph registered: {len(publication_routes)} custom routes; {total} crawlable routes total.")
