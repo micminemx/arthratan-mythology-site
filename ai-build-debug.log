@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/runner/work/arthratan-mythology-site/arthratan-mythology-site/scripts/build-ai-corpus.py", line 144, in <module>
+    add(id="concept:" + cid, type="concept", title=c["title"], route="/#negative-rewrite" if "rewrite" in cid else "/#scaling", source_locator="/data/causal-ontology.json#" + cid, full_text=compact(c))
+                                                   ~^^^^^^^^^
+KeyError: 'title'
