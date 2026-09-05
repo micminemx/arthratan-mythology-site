@@ -7,16 +7,16 @@
     "description": "Comprehensive human-oriented A–Z and hierarchical directory across all 7 knowledge domains, with full alias resolution and route mapping.",
     "generated_at": "2026-09-03T23:05:00Z",
     "metrics": {
-      "total_canonical_entries": 710,
+      "total_canonical_entries": 715,
       "total_alias_mappings": 1297,
-      "total_indexable_terms": 2007,
+      "total_indexable_terms": 2012,
       "domains_count": 7,
       "alphabetical_partitions": 21
     }
   },
   "domains_summary": {
     "Characters & Entities": 43,
-    "Core Concepts & Masterpages": 112,
+    "Core Concepts & Masterpages": 117,
     "Divine v144 Corpus": 317,
     "Hypergendered Logic (HGL)": 95,
     "World, Clans & Warfare Institutions": 18,
@@ -328,6 +328,17 @@
         "provenance": "data/characters.json | Threads: New five sessions, Destiny throne Transcendence, Imperial Transmission: Complete 10-Session Earth Plane Verification Data",
         "target_url": "/characters/asmouth-varvadeil/",
         "description": "The Varvadeil clan head and one of the empire's foremost scientific minds, specializing in biological architecture, conceptual calculation and the formal interpretation of Arthitean upgrades.",
+        "status": "CANONICAL"
+      },
+      {
+        "id": "mp-axiomatter",
+        "label": "Axiomatter",
+        "domain": "Core Concepts & Masterpages",
+        "category": "General Ontology",
+        "aliases": [],
+        "provenance": "data/masterpages.json",
+        "target_url": "/#masterpage:axiomatter",
+        "description": "Physical manifestation of pure indisputable truth where raw strength is not measured in weight but in the sovereign reality of the action itself.",
         "status": "CANONICAL"
       },
       {
@@ -6576,6 +6587,17 @@
         "target_url": "/#masterpage:hypernegative-rewrite",
         "description": "An effect-producing rewrite whose rewrite-origin is recursively excluded at every causal, reasonal, and mixed explanatory order while the effect remains real.",
         "status": "CANONICAL"
+      },
+      {
+        "id": "mp-hyperverity",
+        "label": "Hyperverity",
+        "domain": "Core Concepts & Masterpages",
+        "category": "General Ontology",
+        "aliases": [],
+        "provenance": "data/masterpages.json",
+        "target_url": "/#masterpage:hyperverity",
+        "description": "A classification for narrative statements where a spoken absolute truth forcefully and permanently overwrites the existing mechanical logic of the entire universe.",
+        "status": "CANONICAL"
       }
     ],
     "I": [
@@ -6947,6 +6969,17 @@
         "status": "CANONICAL"
       },
       {
+        "id": "mp-nullinfinity",
+        "label": "Nullinfinity",
+        "domain": "Core Concepts & Masterpages",
+        "category": "General Ontology",
+        "aliases": [],
+        "provenance": "data/masterpages.json",
+        "target_url": "/#masterpage:nullinfinity",
+        "description": "A mathematical and conceptual measurement describing a power gap so staggeringly massive that standard maximum limits and impossibilities are instantly reduced to absolute zero.",
+        "status": "CANONICAL"
+      },
+      {
         "id": "mp-nullmetapattern-recognition",
         "label": "Nullmetapattern Recognition",
         "domain": "Core Concepts & Masterpages",
@@ -7015,6 +7048,17 @@
         "provenance": "data/clans.json",
         "target_url": "/clans/omnivox/",
         "description": "Confirmed Great Clan Omnivox of the Arthitean Empire.",
+        "status": "CANONICAL"
+      },
+      {
+        "id": "mp-omniprecedent",
+        "label": "Omniprecedent",
+        "domain": "Core Concepts & Masterpages",
+        "category": "General Ontology",
+        "aliases": [],
+        "provenance": "data/masterpages.json",
+        "target_url": "/#masterpage:omniprecedent",
+        "description": "A supreme scaling metric where an Arthitean does not just break a universal rule but retroactively becomes the fundamental reason that rule was ever created.",
         "status": "CANONICAL"
       },
       {
@@ -7636,6 +7680,17 @@
         "provenance": "data/masterpages.json",
         "target_url": "/#masterpage:transavatars",
         "description": "Higher-order projections of divine or living-concept entities capable of traversing across paratemporal and rewrite boundaries without loss of identity.",
+        "status": "CANONICAL"
+      },
+      {
+        "id": "mp-transboundless",
+        "label": "Transboundless",
+        "domain": "Core Concepts & Masterpages",
+        "category": "General Ontology",
+        "aliases": [],
+        "provenance": "data/masterpages.json",
+        "target_url": "/#masterpage:transboundless",
+        "description": "A state of capacity and volume that instantly outgrows any conceptual container or logical boundary the exact microsecond someone tries to measure it.",
         "status": "CANONICAL"
       },
       {
@@ -10203,6 +10258,12 @@
           "aliases_count": 0
         },
         {
+          "id": "mp-axiomatter",
+          "label": "Axiomatter",
+          "target_url": "/#masterpage:axiomatter",
+          "aliases_count": 0
+        },
+        {
           "id": "mp-benzshin-oaths",
           "label": "Benzshin Meritocratic Oaths",
           "target_url": "/#masterpage:benzshin-oaths",
@@ -10329,6 +10390,12 @@
           "aliases_count": 0
         },
         {
+          "id": "mp-hyperverity",
+          "label": "Hyperverity",
+          "target_url": "/#masterpage:hyperverity",
+          "aliases_count": 0
+        },
+        {
           "id": "mp-impossibility-governance",
           "label": "Impossibility-Governance",
           "target_url": "/#masterpage:impossibility-governance",
@@ -10425,6 +10492,12 @@
           "aliases_count": 0
         },
         {
+          "id": "mp-nullinfinity",
+          "label": "Nullinfinity",
+          "target_url": "/#masterpage:nullinfinity",
+          "aliases_count": 0
+        },
+        {
           "id": "mp-nullmetapattern-recognition",
           "label": "Nullmetapattern Recognition",
           "target_url": "/#masterpage:nullmetapattern-recognition",
@@ -10446,6 +10519,12 @@
           "id": "mp-nureen",
           "label": "Nüreen",
           "target_url": "/#masterpage:nureen",
+          "aliases_count": 0
+        },
+        {
+          "id": "mp-omniprecedent",
+          "label": "Omniprecedent",
+          "target_url": "/#masterpage:omniprecedent",
           "aliases_count": 0
         },
         {
@@ -10602,6 +10681,12 @@
           "id": "mp-transavatars",
           "label": "Transavatars",
           "target_url": "/#masterpage:transavatars",
+          "aliases_count": 0
+        },
+        {
+          "id": "mp-transboundless",
+          "label": "Transboundless",
+          "target_url": "/#masterpage:transboundless",
           "aliases_count": 0
         },
         {

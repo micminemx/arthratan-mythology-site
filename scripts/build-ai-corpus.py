@@ -21,7 +21,7 @@ BASE_EXPECTED = {
     "divine": 317,
     "hgl": 293,
     "living-canon": 8,
-    "concept": 19,
+    "concept": 27,
     "provenance": 4,
 }
 PUBLICATION_TYPES = ("myth", "crossscaling")
@@ -141,7 +141,8 @@ for s in new_canon_doc.get("sections", []):
 causal_doc = load("causal-ontology.json")
 for c in causal_doc.get("concepts", []):
     cid = c["id"]
-    add(id="concept:" + cid, type="concept", title=c["title"], route="/#negative-rewrite" if "rewrite" in cid else "/#scaling", source_locator="/data/causal-ontology.json#" + cid, full_text=compact(c))
+    title = c.get("title") or c.get("name") or cid
+    add(id="concept:" + cid, type="concept", title=title, route="/#negative-rewrite" if "rewrite" in cid else "/#scaling", source_locator="/data/causal-ontology.json#" + cid, full_text=compact(c))
 
 hgl_glossary_doc = load("hgl-glossary.json")
 for e in hgl_glossary_doc.get("entries", []):
@@ -197,10 +198,10 @@ order = {"character": 0, "zubaida": 1, "divine": 2, "hgl": 3, "living-canon": 4,
 records.sort(key=lambda r: (order[r["type"]], r["id"]))
 
 if OUT.exists():
-    shutil.rmtree(OUT)
-OUT.mkdir(parents=True)
-(OUT / "shards").mkdir()
-(OUT / "entities").mkdir()
+    shutil.rmtree(OUT, ignore_errors=True)
+OUT.mkdir(parents=True, exist_ok=True)
+(OUT / "shards").mkdir(exist_ok=True)
+(OUT / "entities").mkdir(exist_ok=True)
 
 def write_json(path, obj, pretty=False):
     text = json.dumps(obj, ensure_ascii=False, sort_keys=True, indent=2 if pretty else None, separators=None if pretty else (",", ":")) + "\n"

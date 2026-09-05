@@ -1,5 +1,5 @@
 # Arthitean Codex unified search index
-# 903 records; JavaScript not required
+# 908 records; JavaScript not required
 # Format: title | type | canon_status | route | aliases | source/data path
 # Canonical site: https://arthratanmythology.com/
 
@@ -64,6 +64,7 @@ Arthitean Deity (Goddess/God of Arthiteans) | concept | governing-canon-or-forma
 Arthitean Deity Factors One & Two | concept | governing-canon-or-formalization | /#masterpage:arthitean-deity-factors |  | /data/masterpages.json
 Arthitean Imperial Clan Hierarchy | concept | governing-canon-or-formalization | /#masterpage:clan-system |  | /data/masterpages.json
 Arthitean Phenotypic Invariants | concept | governing-canon-or-formalization | /#masterpage:phenotypic-invariants |  | /data/masterpages.json
+Axiomatter | concept | governing-canon-or-formalization | /#masterpage:axiomatter |  | /data/masterpages.json
 Benzshin Meritocratic Oaths | concept | governing-canon-or-formalization | /#masterpage:benzshin-oaths |  | /data/masterpages.json
 Black-Phoenix Wing Progression | concept | governing-canon-or-formalization | /#masterpage:black-phoenix-wings |  | /data/masterpages.json
 Bloodline Blessings | concept | governing-canon-or-formalization | /#masterpage:bloodline-blessings |  | /data/masterpages.json
@@ -87,6 +88,7 @@ Hypergenetics | concept | governing-canon-or-formalization | /#masterpage:hyperg
 Hyperinferring & Hyperdeducing | concept | governing-canon-or-formalization | /#masterpage:hyperinferring-deducing |  | /data/masterpages.json
 Hyperlearning | concept | governing-canon-or-formalization | /#masterpage:hyperlearning |  | /data/masterpages.json
 Hypernegative Rewrite | concept | governing-canon-or-formalization | /#masterpage:hypernegative-rewrite |  | /data/masterpages.json
+Hyperverity | concept | governing-canon-or-formalization | /#masterpage:hyperverity |  | /data/masterpages.json
 IH — Inheritance / provenance | concept | canonical-glossary | /hgl/ | IH | /data/hgl-glossary.json
 Impossibility-Governance | concept | governing-canon-or-formalization | /#masterpage:impossibility-governance |  | /data/masterpages.json
 Infracausality & Infracause | concept | governing-canon-or-formalization | /#masterpage:infracausality |  | /data/masterpages.json
@@ -105,10 +107,12 @@ Metalearning | concept | governing-canon-or-formalization | /#masterpage:metalea
 Metarules | concept | governing-canon-or-formalization | /#masterpage:metarules |  | /data/masterpages.json
 Modus-Tollens Causalities | concept | governing-canon-or-formalization | /#masterpage:modus-tollens-causality |  | /data/masterpages.json
 Negative Rewrite | concept | governing-canon-or-formalization | /#masterpage:negative-rewrite |  | /data/masterpages.json
+Nullinfinity | concept | governing-canon-or-formalization | /#masterpage:nullinfinity |  | /data/masterpages.json
 Nullmetapattern Recognition | concept | governing-canon-or-formalization | /#masterpage:nullmetapattern-recognition |  | /data/masterpages.json
 Nullpattern Recognition | concept | governing-canon-or-formalization | /#masterpage:nullpattern-recognition |  | /data/masterpages.json
 Nullrecognition | concept | governing-canon-or-formalization | /#masterpage:nullrecognition |  | /data/masterpages.json
 Nüreen | concept | governing-canon-or-formalization | /#masterpage:nureen |  | /data/masterpages.json
+Omniprecedent | concept | governing-canon-or-formalization | /#masterpage:omniprecedent |  | /data/masterpages.json
 Orotion Quests | concept | governing-canon-or-formalization | /#masterpage:orotion-quests |  | /data/masterpages.json
 Orotus (Holy Black Phoenix Divine Beast) | concept | governing-canon-or-formalization | /#masterpage:orotus |  | /data/masterpages.json
 Outercausality Stage 1 | concept | governing-canon-or-formalization | /#masterpage:outercausality-stage-1 |  | /data/masterpages.json
@@ -139,6 +143,7 @@ Technogenesis | concept | governing-canon-or-formalization | /#masterpage:techno
 Technokinesis | concept | governing-canon-or-formalization | /#masterpage:technokinesis |  | /data/masterpages.json
 Toren Scaling Hierarchy (Toren 1–5) | concept | governing-canon-or-formalization | /#masterpage:toren |  | /data/masterpages.json
 Transavatars | concept | governing-canon-or-formalization | /#masterpage:transavatars |  | /data/masterpages.json
+Transboundless | concept | governing-canon-or-formalization | /#masterpage:transboundless |  | /data/masterpages.json
 Transrecursive Hypercausality | concept | governing-canon-or-formalization | /#masterpage:transrecursive-hypercausality |  | /data/masterpages.json
 UD — Unflaw predicate | concept | canonical-glossary | /hgl/ | UD | /data/hgl-glossary.json
 Ultraarsayne | concept | governing-canon-or-formalization | /#masterpage:ultraarsayne |  | /data/masterpages.json

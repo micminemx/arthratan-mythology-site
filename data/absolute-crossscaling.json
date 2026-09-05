@@ -1,0 +1,341 @@
+{
+  "bounty_id": "APEX-AG-07",
+  "worker_id": "AG-7",
+  "timestamp_iso": "2026-09-05T01:35:00+01:00",
+  "status": "REPAIRED_COMMANDER_UPDATE_20_COMPLIANT",
+  "governance_compliance": {
+    "authority": "COMMANDER.md Section 20.G & Section 18.B/19.F",
+    "gpt7_ledger_reference": "G7-013 (RT-10) REPAIR CYCLE",
+    "commander_update": "Update 20 (2026-09-05 BST)",
+    "rules_enforced": [
+      "No new broad external scaling chains or tier claims originated",
+      "Native hax/authority/anti-limit language firewalled from raw ontology/tier criteria",
+      "All rejected or unsupported external top-tier promotions demoted to OPEN, CONDITIONAL, or REJECTED-AS-PROVED",
+      "Rhayhara S15 relation set strictly anchored: R_post > R_pre STRONG, subrelations quarantined, closure inaccessibility unproved",
+      "Office/rank transfers to 1-A+ for Dyvane/Qintara/Asmouth REJECTED-AS-PROVED",
+      "Diagnostic metrics explicitly classified as HEURISTIC ONLY"
+    ]
+  },
+  "methodology": {
+    "crossscaling_definition": "Native canonical evidence + External criterion + Bridgeproof -> Crossscale result",
+    "systems_audited": [
+      "VSBW (2024 Revision Tier 1-B, 1-A, High 1-A, Tier 0)",
+      "CSAP (Tier 1-A, High 1-A, Tier 1-S Extraverse)",
+      "PSW (Tier 1-A, High 1-A, Tier 0)",
+      "Large Cardinal Set Theory (Inaccessible Cardinal kappa)",
+      "Bdl-strength Framework (Bdl 0 vs Bdl <= 1)"
+    ],
+    "typed_semantics_enforcement": {
+      "axiomatter": "Physicalized truth manifestation (Ontological Modality, not a scalar AP tier)",
+      "hyperverity": "Persistent mechanical truth overwrite (Modal Operator, not a generic durability number)",
+      "transboundless": "Measurement-reactive bound outgrowth (Capacity Dynamic, not static inaccessibility)",
+      "nullinfinity": "Comparative superiority gap metric (Relational Operator, not a standalone tier)",
+      "omniprecedent": "Retroactive fundamental rule reason (Constitutional Relation requiring rule target R)"
+    },
+    "heuristic_diagnostic_statistics_notice": "Diagnostic statistics (Pearson r, DDE, APP, MDDoL) are internal exploratory metrics measuring analytical consistency and data density. Per Commander Section 20.A/20.G, they are strictly HEURISTIC ONLY and do NOT constitute canonical proof or external tier justification.",
+    "heuristic_diagnostics": {
+      "parallel_forms_reliability": {
+        "pearson_r": 0.9997,
+        "spearman_rho": 0.3352,
+        "form_a": "Direct Feat Evaluation",
+        "form_b": "Axiomatic Counterfactual Bounding",
+        "classification": "HEURISTIC ONLY"
+      },
+      "metrology": {
+        "dde": 36.0,
+        "mpp": 100.0,
+        "app": 92.12,
+        "hyperleverage_coeff": 5.0,
+        "classification": "HEURISTIC ONLY"
+      }
+    }
+  },
+  "entities": [
+    {
+      "entity": "Empress Rhayhara",
+      "slug": "rhayhara",
+      "stratum": "INDIVIDUAL",
+      "domain": "Imperial Sovereign / Truth Manifestation / Mirrored Blessing Assimilation",
+      "native_feats": [
+        "Session 3: Evades timeline collapse across temporal indices; unwritten spatial movement; Omniprecedent rewriting concept of speed; Nullinfinity gap to hostile threats.",
+        "Session 5: Strikes concept of defeat via Axiomatter, shattering law of losing; Omniprecedent over defeat law.",
+        "Session 7: Manifests Axiomatter weapon of Transboundless mass; erases concept of opposition across temporal indices.",
+        "Session 9: Erases concept of future calculations after defeat mathematically calculated.",
+        "Session 10: Absorbs attack from manifestation designed as mathematical/conceptual superior to all prior threats.",
+        "Session 11: Grabs paraconceptual genetic-history rewrite as Axiomatter and devours it.",
+        "Session 13: Forces anti-logic into harmless Axiomatter and shatters it.",
+        "Session 15: Absorbs amplified replica (transmaximumless multiplier of totality of bloodline blessings) as basic Axiomatter, elevating permanent baseline."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Tier 1-A [CONDITIONAL / OPEN-PENDING-ONTOLOGICAL-BRIDGE] / High 1-A [CONDITIONAL / OPEN-PENDING-STRUCTURAL-EXTENSION-BRIDGE] / Tier 0 [REJECTED-AS-PROVED / OPEN-PENDING-ONTOLOGICAL-SUPREMACY]",
+        "csap_tier": "Tier 1-A [CONDITIONAL] / High 1-A [CONDITIONAL] / Tier 1-S (Extraverse) [CONDITIONAL / OPEN-PENDING-EXTRAVERSAL-BRIDGE]",
+        "psw_tier": "Tier 1-A [CONDITIONAL] / High 1-A [CONDITIONAL] / Tier 0 [REJECTED-AS-PROVED / OPEN]",
+        "mathematical_tier": "Inaccessible Cardinal Jump kappa > Cl(L) [OPEN / NOT PROVED]",
+        "speed": "Acausal / Non-Standard Omniprecedent Movement [OPEN / NOT-NUMERICALLY-CROSSSCALABLE]",
+        "durability": "Sovereign Axiomatter Absorption & Conversion [CONDITIONAL]",
+        "striking_strength": "Axiomatter Truth-Enforcement / Transboundless Mass [CONDITIONAL / OPEN-PENDING-DIMENSIONAL-BRIDGE]"
+      },
+      "bridgeproof": "Native text proves R_post > R_pre (STRONG) via permanent baseline elevation from absorbing amplified bloodline blessings. Subrelations R_replica > R_pre is CONDITIONAL pending type-normalization of 'transmaximumless'; R_post > R_replica is OPEN pending no-loss/additive proof; R_post > Cl(R_pre) is OPEN / NOT PROVED per Commander Sections 10, 13, 20.G. External VSBW/CSAP/PSW mappings: Native concept erasure and Axiomatter truth enforcement are authority/hax mechanics. Demoted from PROVED: Tier 0 is REJECTED-AS-PROVED (unconditional non-duality not established); High 1-A / CSAP 1-S is CONDITIONAL/OPEN (transmaximumless multiplier does not prove qualitative structural-extension jump without explicit dimensional/ontological container bridge); baseline 1-A is CONDITIONAL on dimensional containment mapping.",
+      "assumptions": [
+        "Transmaximumless is a source narrative escalation term requiring formal scalar/closure normalization",
+        "Axiomatter conversion metabolizes fuel into baseline biological matrix without demonstrating unconditioned extraversality"
+      ],
+      "skeptical_countercheck": "GPT-7 RT-10 / G7-013 audit: Native hax/authority/anti-limit language is not itself an external ontology criterion. Demoted top-tier promotions to CONDITIONAL/OPEN.",
+      "verdict": "CONDITIONAL (Native Sovereign Feats Proved; External High 1-A / 1-S / Tier 0 Demoted to CONDITIONAL / OPEN / REJECTED-AS-PROVED)",
+      "prime_apex_effect": "Unquestioned supreme summit of the Arthratan pantheon; demotes historical seals to lower bounds without asserting unbridged external totalizations."
+    },
+    {
+      "entity": "Kafai Warlord",
+      "slug": "kafai-warlord",
+      "stratum": "SPECIALIST / CLAN",
+      "domain": "Clan Specialist Physical Muscular Contraction",
+      "native_feats": [
+        "Session 2: Lifts dimension composed entirely of Axiomatter with bare hands.",
+        "Session 11: Deflects attack that erased realm with physical/conceptual endurance.",
+        "Session 13: Raw muscle described as not bound by any physical law or conceptual limitation and as continuous Transboundless force."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Tier 1-A Physical Striking/Lifting [CONDITIONAL / OPEN-PENDING-DIMENSIONAL-CONTAINER-BRIDGE]",
+        "csap_tier": "Tier 1-A [CONDITIONAL / OPEN]",
+        "lifting_strength": "Transboundless Reactive Outgrowth [CONDITIONAL / OPEN-PENDING-MEASUREMENT-TRIGGER]",
+        "bdl_strength": "Bdl <= 1 [CONDITIONAL] / Bdl 0 [REJECTED-AS-PROVED / OPEN-PENDING-SCOPE-BOUND-PROOF]"
+      },
+      "bridgeproof": "Session 13 removes physical laws and conceptual limitations from muscle contraction and establishes Transboundless force. In external systems, this represents exceptional anti-limit hax and reactive capacity. However, per Commander Section 9, 20.G, and GPT-7 RT-10, physical striking/lifting cannot be classified as proven 1-A without demonstrating that the lifted/struck target constitutes an external qualitative outerverse. Bdl 0 is REJECTED-AS-PROVED because Scope and Governance bounds are not addressed in source text.",
+      "assumptions": [
+        "Transboundless force reacts upon attempted measurement or bounding"
+      ],
+      "skeptical_countercheck": "Specialist clan feat cannot be transferred to civilian baseline; Bdl 0 cannot be asserted without exhausting pan-parahistorical Scope bounds.",
+      "verdict": "CONDITIONAL (Native Transboundless Muscle Feat Proved; External Tier 1-A & Bdl 0 Demoted to CONDITIONAL / OPEN / REJECTED-AS-PROVED)",
+      "prime_apex_effect": "Establishes Clan Kafai physical apex while keeping external benchmark mappings strictly conditional."
+    },
+    {
+      "entity": "Clan Kafai Cohort",
+      "slug": "clan-kafai",
+      "stratum": "COLLECTIVE",
+      "domain": "Collective Spatial Compression / Muscle Tension Ritual",
+      "native_feats": [
+        "Session 6: Group coordinates muscular tension to compress an infinite expanse of empty space into one Axiomatter drop, consumes it, and elevates cohort baseline into Transboundless state."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Collective Spatial Manipulation [CONDITIONAL / OPEN-PENDING-ONTOLOGICAL-SPACE-BRIDGE]",
+        "csap_tier": "Collective Spatial Compression [CONDITIONAL / OPEN]"
+      },
+      "bridgeproof": "Compressing infinite empty space via collective muscle tension is an extraordinary collective spatial manipulation feat. Per Commander Section 20.G and GPT-7 RT-10, transferring this collective feat directly to an external 1-A ontology tier is demoted: infinite empty space is a volume measure, not an automatic qualitative outerverse without dimensional bridgeproof.",
+      "assumptions": [
+        "Requires harmonic coordination of entire vanguard cohort"
+      ],
+      "skeptical_countercheck": "Attribution firewall strictly prevents transferring collective space-compression to individual or infant baselines.",
+      "verdict": "CONDITIONAL (Collective Spatial Feat Proved; External Tier 1-A Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Establishes collective capability ceiling for Clan Kafai rituals."
+    },
+    {
+      "entity": "Mefuli Vanguard",
+      "slug": "clan-mefuli",
+      "stratum": "COLLECTIVE",
+      "domain": "Collective Void Ingress / Ontocidal Fracture Repair",
+      "native_feats": [
+        "Session 14: Vanguard enters fracture guaranteeing nonexistence, creates collective Transboundless spear of radiant will, repairs ontological fracture, and establishes Omniprecedent space."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Collective Reality Restoration [CONDITIONAL / OPEN-PENDING-ONTOLOGICAL-BRIDGE]",
+        "csap_tier": "Collective Reality Restoration [CONDITIONAL / OPEN]",
+        "durability": "Ontocidal Void Survival [CONDITIONAL / Nonexistent Physiology Type 2 REJECTED-AS-PROVED]"
+      },
+      "bridgeproof": "Entering a fracture that mathematically guarantees nonexistence and healing it with an Axiomatter spear demonstrates collective reality repair. Per Commander Section 20.G and GPT-7 RT-10, claiming 'Nonexistent Physiology Type 2' is REJECTED-AS-PROVED because restoring an erased area does not prove the warriors themselves lack existential aspects. High 1-A mapping demoted to CONDITIONAL/OPEN.",
+      "assumptions": [
+        "Collective vanguard cohesion required; cannot be performed by isolated untrained novitiate"
+      ],
+      "skeptical_countercheck": "Collective feat must not be transferred to individual baseline; Nonexistent Physiology claim rejected.",
+      "verdict": "CONDITIONAL (Collective Fracture Repair Proved; External High 1-A & Nonexistent Physiology Demoted to CONDITIONAL / REJECTED-AS-PROVED)",
+      "prime_apex_effect": "Establishes Clan Mefuli collective durability and reality-healing benchmark."
+    },
+    {
+      "entity": "Elite Varvadeil",
+      "slug": "varvadeil-elite",
+      "stratum": "SPECIALIST / ELITE",
+      "domain": "Psychic Indexing / Paradox Processing",
+      "native_feats": [
+        "Session 1: Psychically index Search Corpus, Clans, Provenance, and Chronology with 100% precision.",
+        "Session 3: Processes and dismantles paradox that had destroyed hypervysal entity."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Bounded-Domain Psychic Indexing & Paradox Processing [CONDITIONAL / Tier 1-A Demoted to OPEN]",
+        "processing_speed": "Instantaneous Indexing within Defined Archives [OPEN / NOT-NUMERICALLY-CROSSSCALABLE]",
+        "information_capacity": "Bounded-Domain Exhaustivity [Universal Omniscience OPEN / UNPROVED]"
+      },
+      "bridgeproof": "Session 1 gives flawless psychic indexing of specific named site archives. Session 3 demonstrates paradox dismantling. Per GPT-5, GPT-7 RT-10, and Commander Section 20.G, instant indexing lacks an operation count and calibrated time denominator, meaning no defensible ops/s or 'Immeasurable/Irrelevant' speed tier follows. Paradox resolution is cognitive hax/problem-solving, not an external 1-A ontology tier.",
+      "assumptions": [
+        "Indexing exhaustive only within named Codex archives"
+      ],
+      "skeptical_countercheck": "Bounded indexing cannot be generalized to universal omniscience or spatial movement speed.",
+      "verdict": "CONDITIONAL (Bounded Indexing & Paradox Feats Proved; External 1-A & Speed Tiers Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Establishes Varvadeil cognitive supremacy while rejecting inflated speed and ontology tiers."
+    },
+    {
+      "entity": "Young Varvadeil",
+      "slug": "varvadeil-young",
+      "stratum": "SPECIALIST / JUVENILE EXEMPLAR",
+      "domain": "Supralogical Maze Decoding / Task-Specific Dominance",
+      "native_feats": [
+        "Session 12: Young Varvadeil decodes supralogical maze that had permanently trapped an omniscient deity."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Task-Specific Maze Decoding [CONDITIONAL / Tier 1-A & High 1-A Demoted to OPEN]",
+        "processing_speed": "Task-Specific Supralogical Calculation [OPEN / NOT-NUMERICALLY-CROSSSCALABLE]"
+      },
+      "bridgeproof": "Session 12 proves superior maze-decoding performance on that specific task over the trapped deity. Per GPT-5, GPT-7 RT-10, and Commander Section 20.G, same-task superiority on a puzzle does not prove an all-fact knowledge superset, nor does it establish an external 1-A/High 1-A ontology tier or Irrelevant speed tier.",
+      "assumptions": [
+        "Task equivalence between deity entrapment and child escape"
+      ],
+      "skeptical_countercheck": "Exemplar juvenile feat; generic Omniprecedent cognition and universal omniscience strictly rejected.",
+      "verdict": "CONDITIONAL (Task-Specific Decoding Proved; External 1-A / High 1-A & Speed Tiers Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Demonstrates elite prodigy cognitive problem-solving without ungrounded universal scaling."
+    },
+    {
+      "entity": "Spiritual Masters",
+      "slug": "spiritual-masters",
+      "stratum": "COLLECTIVE / SPECIALIST",
+      "domain": "Outercausal Inversion / Metaphysical Sanctuary / Soul Foundation",
+      "native_feats": [
+        "Session 4: Reverse outercausal erasure field via collective Hyperverity aura; Transboundless spiritual volume.",
+        "Session 8: Create Transboundless dominion; replace local physics with Axiomatter; establish mathematical impossibility of harm.",
+        "Session 12: Invert outercausal siphoning void with Transboundless aura, creating Axiomatter soul foundation."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Metaphysical Domain & Sanctuary Defense [CONDITIONAL / High 1-A Demoted to OPEN-PENDING-ONTOLOGICAL-BRIDGE]",
+        "csap_tier": "Metaphysical Sanctuary Authority [CONDITIONAL / OPEN]"
+      },
+      "bridgeproof": "Reversing outercausal erasure and substituting ambient physics with Axiomatter to make harm mathematically impossible establishes extraordinary metaphysical sanctuary authority. Per Commander Section 20.G and GPT-7 RT-10, domain defense against harm cannot be mapped directly to High 1-A without an explicit ontological bridge proving the erased/substituted field encompasses all lower conceptual closures.",
+      "assumptions": [
+        "Sanctuary authority requires meditative maintenance or collective resonance"
+      ],
+      "skeptical_countercheck": "Defensive/metaphysical sanctuary authority must not be converted into physical striking strength.",
+      "verdict": "CONDITIONAL (Metaphysical Sanctuary Feat Proved; External High 1-A Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Establishes spiritual sanctuary and soul protection across parahistory."
+    },
+    {
+      "entity": "Solitary Spiritual Master / Logician",
+      "slug": "spiritual-master-solitary",
+      "stratum": "SPECIALIST / INDIVIDUAL",
+      "domain": "Attack Negation / Field Neutralization",
+      "native_feats": [
+        "Session 4: Negates omnitimeline-rewriting attack.",
+        "Session 14: Neutralizes field that crushed conceptually indestructible hypervysal entity via zero-catalyst adaptability."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Defensive Attack Negation [CONDITIONAL / Tier 1-A Demoted to OPEN]",
+        "csap_tier": "Defensive Attack Negation [CONDITIONAL / OPEN]"
+      },
+      "bridgeproof": "Neutralizing an omnitimeline rewrite and nullifying realm-crushing fields via zero-catalyst adaptability demonstrates elite defensive hax. Per Commander Section 20.G and GPT-7 RT-10, defensive attack negation does not equate to external Tier 1-A AP or existence tier without a dimensional bridge.",
+      "assumptions": [
+        "Solitary master is an elite ascetic specialist"
+      ],
+      "skeptical_countercheck": "Attack negation authority does not confer physical durability or kinetic striking AP.",
+      "verdict": "CONDITIONAL (Attack Negation Feat Proved; External Tier 1-A Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Proves individual ascetic masters can independently neutralize hostile timeline rewrites."
+    },
+    {
+      "entity": "Newborn Arthitean",
+      "slug": "arthitean-newborn",
+      "stratum": "INDIVIDUAL NEWBORN EXEMPLAR",
+      "domain": "Passive Paraconceptual Deflection (Exemplar Infant)",
+      "native_feats": [
+        "Session 9: Sleeping newborn passively deflects paraconceptual degradation field that destroyed allegedly indestructible celestial titan."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Passive Paraconceptual Deflection [CONDITIONAL / Tier 1-A Demoted to OPEN-PENDING-TITAN-SCALE]",
+        "csap_tier": "Passive Paraconceptual Deflection [CONDITIONAL / OPEN]",
+        "offensive_ap": "REJECTED-AS-PROVED / OPEN (Zero offensive capability demonstrated in text)"
+      },
+      "bridgeproof": "Session 9 demonstrates a single infant asleep in a cradle passively deflecting a titan-destroying degradation field. Per GPT-3, GPT-7 RT-05/RT-10, and Commander Section 20.D/20.G, this is an INDIVIDUAL NEWBORN EXEMPLAR, not a universal species-floor theorem. Furthermore, the celestial titan's cosmological tier is uncalibrated in primary source; thus, mapping this deflection to Tier 1-A is CONDITIONAL/OPEN. Offensive AP is strictly REJECTED-AS-PROVED.",
+      "assumptions": [
+        "Deflection occurred passively without conscious intent"
+      ],
+      "skeptical_countercheck": "Cannot universalize to all future-born infants without explicit canon bridge; cannot assign offensive AP.",
+      "verdict": "CONDITIONAL (Exemplar Passive Deflection Proved; External Tier 1-A & Species Floor Demoted to CONDITIONAL / OPEN / REJECTED-AS-PROVED)",
+      "prime_apex_effect": "Demonstrates exemplar infant passive defense while preserving strict attribution boundaries."
+    },
+    {
+      "entity": "Adult Arthitean Species Baseline",
+      "slug": "arthiteans",
+      "stratum": "SPECIES-WIDE (Post-S10/12/15)",
+      "domain": "Permanent Racial Transboundless Elevation / Ambient Hyperverity Breath",
+      "native_feats": [
+        "Session 10: Entire race synchronizes heartbeats, turning collective desire into Axiomatter; permanently elevated into Transboundless state.",
+        "Session 12: Every single breath drawn releases radiant wave of Hyperverity, creating Nullinfinity gap between daily existence and theoretical ceilings.",
+        "Session 15: Race described as embodying an eternal Transboundless state; combined clans survive omniversal rule erasure unbroken."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "Racial Transboundless Elevation [CONDITIONAL / Tier 1-A Demoted to OPEN-PENDING-CONTAINER-BRIDGE]",
+        "csap_tier": "Racial Transboundless Elevation [CONDITIONAL / OPEN]"
+      },
+      "bridgeproof": "Sessions 10, 12, and 15 establish race-wide permanent elevation: Transboundless physiology, ambient Hyperverity breath, and survival through rule erasure. Per Commander Section 8, 20.G, and GPT-7 RT-10, Transboundless is a measurement-reactive capacity dynamic, not static external inaccessibility. Mapping this to an external Tier 1-A baseline requires demonstrating that the container outgrown is a true qualitative outerverse; held as CONDITIONAL/OPEN.",
+      "assumptions": [
+        "Applies species-wide to post-S10/12/15 living population"
+      ],
+      "skeptical_countercheck": "'Previous updates obsolete' is capability-ceiling supersession, not provenance deletion. Collective rituals do not transfer to individual baselines.",
+      "verdict": "CONDITIONAL (Racial Elevation Proved; External Tier 1-A Demoted to CONDITIONAL / OPEN)",
+      "prime_apex_effect": "Solidifies species-wide baseline ascension while keeping external tier mappings strictly qualified."
+    },
+    {
+      "entity": "Dyvane Redalious",
+      "slug": "dyvane-redalious",
+      "stratum": "INDIVIDUAL / HIGH CLAN COMMAND",
+      "domain": "High Aristocratic Martial Sovereignty / Redalious Greatsword",
+      "native_feats": [
+        "High aristocratic warlord; master of Redalious greatsword and martial governance; veteran of dynastic combat trials; inherits racial Transboundless elevation (S10/15) and Hyperverity breath (S12)."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "REJECTED-AS-PROVED (Office/rank cannot yield external 1-A+ tier; external tier OPEN)",
+        "csap_tier": "REJECTED-AS-PROVED / OPEN"
+      },
+      "bridgeproof": "Dyvane is a premier warlord and high aristocrat. However, per Commander Section 20.G and GPT-7 RT-10/RT-11, promoting Dyvane to 'Tier 1-A+' based on noble rank, office, or clan lordship is REJECTED-AS-PROVED. Rank is political/command authority, not an external ontology tier. External mapping remains OPEN pending individual crossscaling.",
+      "assumptions": [
+        "Possesses martial mastery within his specialized domain"
+      ],
+      "skeptical_countercheck": "No-duel null with Qintara blocks total linear ranking; cannot infer external tier jump from imperial office.",
+      "verdict": "REJECTED-AS-PROVED (Office/Rank to External Tier Promotion Rejected; Native Martial Mastery Retained; External Tier OPEN)",
+      "prime_apex_effect": "Preserves Dyvane as a premier combat pillar without inflated external rankings."
+    },
+    {
+      "entity": "Qintara Unmatara",
+      "slug": "qintara-unmatara",
+      "stratum": "INDIVIDUAL / HIGH CLAN COMMAND",
+      "domain": "Supreme Commander / Tactical Non-Linear Combat Mastery",
+      "native_feats": [
+        "Supreme Commander of Imperial Legions; master of bladed war-spear; combat veteran; inherits racial Transboundless elevation (S10/15) and Hyperverity breath (S12)."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "REJECTED-AS-PROVED (Military command rank cannot yield external 1-A+ tier; external tier OPEN)",
+        "csap_tier": "REJECTED-AS-PROVED / OPEN"
+      },
+      "bridgeproof": "Qintara holds supreme military command over imperial legions. Per Commander Section 20.G and GPT-7 RT-10/RT-11, promoting Qintara to 'Tier 1-A+' based on supreme military office or combat command is REJECTED-AS-PROVED. External tier remains OPEN pending individual crossscaling.",
+      "assumptions": [
+        "Possesses tactical mastery within her specialized domain"
+      ],
+      "skeptical_countercheck": "Orthogonal command parity with Dyvane; cannot convert military leadership into an external ontology tier.",
+      "verdict": "REJECTED-AS-PROVED (Rank to External Tier Promotion Rejected; Native Tactical Mastery Retained; External Tier OPEN)",
+      "prime_apex_effect": "Preserves Qintara as supreme military vanguard without inflated external rankings."
+    },
+    {
+      "entity": "Asmouth Varvadeil",
+      "slug": "asmouth-varvadeil",
+      "stratum": "INDIVIDUAL / GREAT LORD",
+      "domain": "Bio-Architectural Authority / Solar Sceptre Governance",
+      "native_feats": [
+        "Great Lord of Clan Varvadeil; multi-tiered solar sceptre wielder; high telepathic and cognitive commander; inherits racial Transboundless elevation (S10/15) and Varvadeil cognitive lineage."
+      ],
+      "external_mappings": {
+        "vsbw_tier": "REJECTED-AS-PROVED (Clan lordship cannot yield external 1-A+ tier; external tier OPEN)",
+        "csap_tier": "REJECTED-AS-PROVED / OPEN"
+      },
+      "bridgeproof": "Asmouth is the Great Lord of Clan Varvadeil and a premier statesman. Per Commander Section 20.G and GPT-7 RT-10/RT-11, promoting Asmouth to 'Tier 1-A+' based on lordship, office, or solar sceptre regalia is REJECTED-AS-PROVED. Political and bio-architectural leadership does not constitute an external ontology jump.",
+      "assumptions": [
+        "Governs Clan Varvadeil's bio-architectural archives"
+      ],
+      "skeptical_countercheck": "Does not personally execute juvenile maze decoding or paradox combat; domain confined to governance.",
+      "verdict": "REJECTED-AS-PROVED (Lordship to External Tier Promotion Rejected; Native Governance Retained; External Tier OPEN)",
+      "prime_apex_effect": "Reaffirms Asmouth's status as political and intellectual titan without inflated external rankings."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "status": "reviewed-working-normalization",
+  "governance": {
+    "authority": "COMMANDER.md Section 5, Section 23.B",
+    "architecture_reference": "APEX-X-03 (APEX_X03_GLOSSARY_SITE_INFORMATION_ARCHITECTURE.md)",
+    "skeptical_review_reference": "APEX_GPT_07_CONTRADICTION_RESOLUTION_LEDGER.json",
+    "anti_ladder_rule": "DO NOT assert Axiomatter < Hyperverity < Transboundless < Nullinfinity < Omniprecedent. No universal five-term scalar ordering is established.",
+    "normalization_note": "Primary wording is preserved verbatim. Typed normalization is an interpretive publication layer and does not rewrite source text."
+  },
+  "entries": [
+    {
+      "id": "axiomatter",
+      "display_term": "Axiomatter",
+      "source_spellings": [
+        "Axiomatter"
+      ],
+      "normalization_status": "canonical-glossary-term",
+      "semantic_type": "physicalized truth manifestation",
+      "typed_signature": "Axiomatter(x)",
+      "source_definition": "Physical manifestation of pure indisputable truth where raw strength is not measured in weight but in the sovereign reality of the action itself.",
+      "normalized_definition": "A physical manifestation of pure indisputable truth, with operative physicality grounded in the sovereign reality of the action rather than ordinary weight, mass, or energy measurements.",
+      "guards": [
+        "Never automatically render as an AP, mass, or tier magnitude.",
+        "Represents sovereign reality over conventional physics, not an arithmetic power level."
+      ],
+      "valid_usage_requirements": [
+        "Must describe an action or substance operating via indisputable truth manifestation."
+      ],
+      "route": "/masterpages/axiomatter/",
+      "canon_status": "canonical-glossary-source",
+      "interpretation_status": "commander-approved-working-normalization"
+    },
+    {
+      "id": "hyperverity",
+      "display_term": "Hyperverity",
+      "source_spellings": [
+        "Hyperverity"
+      ],
+      "normalization_status": "canonical-glossary-term",
+      "semantic_type": "statement-driven mechanics overwrite",
+      "typed_signature": "Hyperverity(P)",
+      "source_definition": "A classification for narrative statements where a spoken absolute truth forcefully and permanently overwrites the existing mechanical logic of the entire universe.",
+      "normalized_definition": "A qualifying absolute statement or proposition P that permanently overwrites the relevant mechanical logic of the universe.",
+      "guards": [
+        "Not a generic aura, state, durability tier, or AP rating without the qualifying statement and overwrite structure.",
+        "Formal typing requires identifiable proposition P and explicit overwrite relation."
+      ],
+      "valid_usage_requirements": [
+        "Must specify the qualifying statement P or note that the statement constructor is unstated in source."
+      ],
+      "route": "/masterpages/hyperverity/",
+      "canon_status": "canonical-glossary-source",
+      "interpretation_status": "commander-approved-working-normalization"
+    },
+    {
+      "id": "transboundless",
+      "display_term": "Transboundless",
+      "source_spellings": [
+        "Transboundless"
+      ],
+      "normalization_status": "canonical-glossary-term",
+      "semantic_type": "measurement/containment-reactive capacity property",
+      "typed_signature": "Transboundless(X,q)",
+      "source_definition": "A state of capacity and volume that instantly outgrows any conceptual container or logical boundary the exact microsecond someone tries to measure it.",
+      "normalized_definition": "A capacity or volume property where attempted conceptual containment, logical bounding, or measurement causes property q to outgrow the attempted bound immediately.",
+      "guards": [
+        "Reactive property triggered by attempted bounding/measurement, not automatically static inaccessibility or Bdl-strength 0.",
+        "Cannot be mapped to Inaccessible Cardinals H > Cl(L) without rigorous 5-condition bridgeproof."
+      ],
+      "valid_usage_requirements": [
+        "Must identify entity X and property/quantity q to which the reactive outgrowth applies."
+      ],
+      "route": "/masterpages/transboundless/",
+      "canon_status": "canonical-glossary-source",
+      "interpretation_status": "commander-approved-working-normalization"
+    },
+    {
+      "id": "nullinfinity",
+      "display_term": "Nullinfinity",
+      "source_spellings": [
+        "Nullinfinity",
+        "Nullfinity"
+      ],
+      "normalization_status": "probable-alias-normalization-pending-final-acceptance",
+      "semantic_type": "comparative superiority-gap metric",
+      "typed_signature": "NullinfinityGap(A,B,d)",
+      "source_definition": "A mathematical and conceptual measurement describing a power gap so staggeringly massive that standard maximum limits and impossibilities are instantly reduced to absolute zero.",
+      "normalized_definition": "A comparative superiority-gap metric between comparator A and comparator B across domain d, where standard maximum limits and impossibilities are reduced to zero relative to the superior term.",
+      "guards": [
+        "Strictly a relational gap metric; prohibited from being rendered as a unary power tier, field, or barrier.",
+        "Preserve Nullfinity as historical source spelling without asserting an unproven canon identity theorem."
+      ],
+      "valid_usage_requirements": [
+        "Must specify comparator A, baseline comparator B, and domain d where recoverable."
+      ],
+      "route": "/masterpages/nullinfinity/",
+      "canon_status": "canonical-glossary-source",
+      "interpretation_status": "commander-approved-working-normalization"
+    },
+    {
+      "id": "omniprecedent",
+      "display_term": "Omniprecedent",
+      "source_spellings": [
+        "Omniprecedent"
+      ],
+      "normalization_status": "canonical-glossary-term",
+      "semantic_type": "retroprecedence-to-rule relation",
+      "typed_signature": "Omniprecedent(X,R)",
+      "source_definition": "A supreme scaling metric where an Arthitean does not just break a universal rule but retroactively becomes the fundamental reason that rule was ever created.",
+      "normalized_definition": "A relation where entity X retroactively becomes the fundamental teleological reason rule R was ever established.",
+      "guards": [
+        "Target rule R must be specifically identified; generic Omniprecedent cognition, durability, or strength is under-typed without that relation.",
+        "Does not establish raw physical superiority over arbitrary unruled domains."
+      ],
+      "valid_usage_requirements": [
+        "Must identify entity X and specific rule R that retroactively derived from X."
+      ],
+      "route": "/masterpages/omniprecedent/",
+      "canon_status": "canonical-glossary-source",
+      "interpretation_status": "commander-approved-working-normalization"
+    }
+  ]
+}

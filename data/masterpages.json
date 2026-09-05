@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "total_masterpages": 88,
+  "total_masterpages": 93,
   "domains": [
     "Arthitean Biology, Gender & HGL Bridge",
     "Bloodline & Growth",
@@ -1915,6 +1915,137 @@
         "site/data/new-canon.json:rhayhara-seals"
       ],
       "commonly_confused_with": "Contemporary Apossible/Toren scaling (Ultraarsayne is the historical seal-governing scale, now superseded by Apossible/Toren for global hierarchy)."
+    },
+    {
+      "id": "axiomatter",
+      "title": "Axiomatter",
+      "domain_key": "ONTOLOGY",
+      "domain_name": "Ontology & Reality Governance",
+      "class": "Canonical Principle",
+      "summary": "Physical manifestation of pure indisputable truth where raw strength is not measured in weight but in the sovereign reality of the action itself.",
+      "source_canon": [
+        "Physical manifestation of pure indisputable truth where raw strength is not measured in weight but in the sovereign reality of the action itself."
+      ],
+      "explanation": "Axiomatter(x) represents operative physicality grounded in sovereign reality rather than ordinary weight, mass, or energy. Governed by COMMANDER.md Section 5; anti-ladder rule strictly enforced.",
+      "formalization": [
+        "Axiomatter(x)"
+      ],
+      "related_concepts": [
+        "living-concepts",
+        "rules"
+      ],
+      "related_characters": [
+        "rhayhara"
+      ],
+      "source_occurrences": [
+        "gmail:1a06e988afa9d182"
+      ],
+      "commonly_confused_with": "Conventional physical matter, kinetic mass, or raw destructive energy."
+    },
+    {
+      "id": "hyperverity",
+      "title": "Hyperverity",
+      "domain_key": "ONTOLOGY",
+      "domain_name": "Ontology & Reality Governance",
+      "class": "Modal Operator",
+      "summary": "A classification for narrative statements where a spoken absolute truth forcefully and permanently overwrites the existing mechanical logic of the entire universe.",
+      "source_canon": [
+        "A classification for narrative statements where a spoken absolute truth forcefully and permanently overwrites the existing mechanical logic of the entire universe."
+      ],
+      "explanation": "Hyperverity(P) functions as a persistent mechanical law overwrite operator induced by qualifying proposition P. Formal typing requires identifiable proposition P and explicit overwrite relation.",
+      "formalization": [
+        "Hyperverity(P)"
+      ],
+      "related_concepts": [
+        "rules",
+        "metarules"
+      ],
+      "related_characters": [
+        "rhayhara"
+      ],
+      "source_occurrences": [
+        "gmail:1a06e988afa9d182"
+      ],
+      "commonly_confused_with": "Generic aura, durability tier, or AP rating without qualifying statement structure."
+    },
+    {
+      "id": "transboundless",
+      "title": "Transboundless",
+      "domain_key": "ONTOLOGY",
+      "domain_name": "Ontology & Reality Governance",
+      "class": "Reactive Capacity Property",
+      "summary": "A state of capacity and volume that instantly outgrows any conceptual container or logical boundary the exact microsecond someone tries to measure it.",
+      "source_canon": [
+        "A state of capacity and volume that instantly outgrows any conceptual container or logical boundary the exact microsecond someone tries to measure it."
+      ],
+      "explanation": "Transboundless(X,q) is a reactive property triggered by attempted bounding or measurement. Cannot be mapped to static Inaccessible Cardinals without rigorous 5-condition bridgeproof.",
+      "formalization": [
+        "Transboundless(X,q)"
+      ],
+      "related_concepts": [
+        "metagovernance-depth",
+        "lydrextent"
+      ],
+      "related_characters": [
+        "rhayhara"
+      ],
+      "source_occurrences": [
+        "gmail:1a06e988afa9d182"
+      ],
+      "commonly_confused_with": "Static inaccessibility or Bdl-strength 0."
+    },
+    {
+      "id": "nullinfinity",
+      "title": "Nullinfinity",
+      "domain_key": "ONTOLOGY",
+      "domain_name": "Ontology & Reality Governance",
+      "class": "Comparative Gap Metric",
+      "summary": "A mathematical and conceptual measurement describing a power gap so staggeringly massive that standard maximum limits and impossibilities are instantly reduced to absolute zero.",
+      "source_canon": [
+        "A mathematical and conceptual measurement describing a power gap so staggeringly massive that standard maximum limits and impossibilities are instantly reduced to absolute zero."
+      ],
+      "explanation": "NullinfinityGap(A,B,d) is strictly a relational comparative gap metric. Preserved source spelling alias: Nullfinity. Prohibited from being rendered as a unary power tier, field, or barrier.",
+      "formalization": [
+        "NullinfinityGap(A,B,d)"
+      ],
+      "related_concepts": [
+        "metagovernance-depth",
+        "greater-lesser-orders"
+      ],
+      "related_characters": [
+        "rhayhara"
+      ],
+      "source_occurrences": [
+        "gmail:1a06e988afa9d182"
+      ],
+      "commonly_confused_with": "Unary power tier, defensive barrier, or field."
+    },
+    {
+      "id": "omniprecedent",
+      "title": "Omniprecedent",
+      "domain_key": "ONTOLOGY",
+      "domain_name": "Ontology & Reality Governance",
+      "class": "Rule-Teleology Predicate",
+      "summary": "A supreme scaling metric where an Arthitean does not just break a universal rule but retroactively becomes the fundamental reason that rule was ever created.",
+      "source_canon": [
+        "A supreme scaling metric where an Arthitean does not just break a universal rule but retroactively becomes the fundamental reason that rule was ever created."
+      ],
+      "explanation": "Omniprecedent(X,R) is a teleological retrocausal rule-origin relation. Target rule R must be specifically identified; generic Omniprecedent cognition or strength is under-typed.",
+      "formalization": [
+        "Omniprecedent(X,R)"
+      ],
+      "related_concepts": [
+        "rules",
+        "metarules",
+        "parahistory"
+      ],
+      "related_characters": [
+        "rhayhara"
+      ],
+      "source_occurrences": [
+        "gmail:1a06e988afa9d182"
+      ],
+      "commonly_confused_with": "Generic physical strength or arbitrary rule immunity."
     }
   ]
 }
