@@ -12,6 +12,10 @@ on:
       - "data/masterpages.json"
       - "data/characters.json"
       - "data/canon-supersession-chronology.json"
+      - "data/global-concept-inventory.json"
+      - "data/clans.json"
+      - "data/clans-supplemental.json"
+      - "data/culture-clans-ontology.json"
       - "concepts/**"
       - "chronology/**"
       - "scripts/build-site-index.py"
@@ -28,6 +32,7 @@ concurrency:
 
 jobs:
   normalize:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,10 +40,12 @@ jobs:
           fetch-depth: 0
 
       - name: Validate site-index tooling syntax
-        run: python -m py_compile scripts/site_index_target_gate.py scripts/normalize-site-index-targets.py
+        run: python -m py_compile scripts/build-site-index.py scripts/site_index_target_gate.py scripts/normalize-site-index-targets.py
 
-      - name: Normalize data-driven A-Z navigation
-        run: python scripts/normalize-site-index-targets.py
+      - name: Rebuild and normalize data-driven A-Z navigation
+        run: |
+          python scripts/build-site-index.py
+          python scripts/normalize-site-index-targets.py
 
       - name: Gate every runtime A-Z target
         run: python scripts/site_index_target_gate.py . --out reports/architecture/omniindex-v2/site_index_target_gate.json
