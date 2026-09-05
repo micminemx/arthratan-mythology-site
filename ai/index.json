@@ -19,351 +19,351 @@
   },
   "entities": [
     {
-      "bytes": 71615,
+      "bytes": 71629,
       "name": "Aliza",
       "path": "/ai/entities/aliza.json",
       "records": 22,
-      "sha256": "f18f501832bf240863a71d6bc25e95f7518c0c3ee535ec018984b7606cd93c9e",
+      "sha256": "82fa53850c87d6add66e43e4647debf2012ca09fbfc8ad57d4613f0c2471ad22",
       "slug": "aliza"
     },
     {
-      "bytes": 590635,
+      "bytes": 590649,
       "name": "Annaris",
       "path": "/ai/entities/annaris-deyhamora.json",
       "records": 34,
-      "sha256": "cdec340bc74314341b28503f1d8f880ad891aaed66bb73b083a6802a141644d4",
+      "sha256": "448e86fc42def2e731b181b56262a75cb5ab213de08ad22860cd89bf34b5a9e2",
       "slug": "annaris-deyhamora"
     },
     {
-      "bytes": 1464943,
+      "bytes": 1464957,
       "name": "Asmouth Varvadeil",
       "path": "/ai/entities/asmouth-varvadeil.json",
       "records": 88,
-      "sha256": "257fb73cbbb414aeef8acbc7cc30b4d2968e20e06a36734bb0f917927ffccf6d",
+      "sha256": "937611a3efab462e61290c91cb9d914fba6bd9dfbbbca079ac19eac631371ba1",
       "slug": "asmouth-varvadeil"
     },
     {
-      "bytes": 14376,
+      "bytes": 14390,
       "name": "Commander Kaelthas",
       "path": "/ai/entities/commander-kaelthas.json",
       "records": 2,
-      "sha256": "a4b8005345cfff187cea259a1ea65d6927c2672f726c5f424e1ed1eacd60991a",
+      "sha256": "c74c8c1523cf769719fb9c20cfdff08d24284279818323258ee0c204ee6e92e2",
       "slug": "commander-kaelthas"
     },
     {
-      "bytes": 45344,
+      "bytes": 45358,
       "name": "Dalroemar",
       "path": "/ai/entities/dalroemar.json",
       "records": 8,
-      "sha256": "4bb9f24db017535749de19a8ba5948f1dec4352fd1e1256cf87439f0f82cee5f",
+      "sha256": "54e516f57c80a0a7cd8c6ae0cda040c1fef8abfb27b6eba146391f1473c0cf7d",
       "slug": "dalroemar"
     },
     {
-      "bytes": 46478,
+      "bytes": 46492,
       "name": "Daren",
       "path": "/ai/entities/daren.json",
       "records": 5,
-      "sha256": "ec67cac664716eb2871b2e7d72b309041adc555b978cb42c9bb9770e1062d427",
+      "sha256": "d52743293142b0c82899c1617fa902cdaefc71a7d7ab3f6513013970adb8272b",
       "slug": "daren"
     },
     {
-      "bytes": 780379,
+      "bytes": 780393,
       "name": "Dariyus Venakan",
       "path": "/ai/entities/dariyus-venakan.json",
       "records": 38,
-      "sha256": "aa59e5f997e9f4452461e18fc651949d48fd6d1fabfc358b82b648faf37884ac",
+      "sha256": "3bf71b91df94f0c05b600deb6876fea64e7ecbfecd5ba15700339a213302827d",
       "slug": "dariyus-venakan"
     },
     {
-      "bytes": 517537,
+      "bytes": 517551,
       "name": "Deyhamora",
       "path": "/ai/entities/deyhamora.json",
       "records": 13,
-      "sha256": "2888b4576edbf1e0c217a8135dea3fbef704b77cc73a8e0e0799c316c27e6bcd",
+      "sha256": "14583ce95c91c7df6808c082ae685d3662a121b52183219acfd63b197bdab746",
       "slug": "deyhamora"
     },
     {
-      "bytes": 1410469,
+      "bytes": 1410483,
       "name": "Dyvane Redalious",
       "path": "/ai/entities/dyvane-redalious.json",
       "records": 80,
-      "sha256": "1f886ed54ce338b9398267bda9a5f892ecf0de48da2da4930445cd68ef92940e",
+      "sha256": "c060d1efed312b08ac0b3a063689ba5feda9754fb7ddd017a62fb43cea0ef508",
       "slug": "dyvane-redalious"
     },
     {
-      "bytes": 178105,
+      "bytes": 178119,
       "name": "Grayus Venakan",
       "path": "/ai/entities/grayus-venakan.json",
       "records": 5,
-      "sha256": "802a4a9c964b8e29db4709671a601f672e56202ec6d3025cdf805440f82a9241",
+      "sha256": "73e8bdc13043eb71198bdd8eebac15c4fef34a6b5bfa3b1b2ea2593f6597ccaa",
       "slug": "grayus-venakan"
     },
     {
-      "bytes": 205045,
+      "bytes": 205059,
       "name": "Halatayo",
       "path": "/ai/entities/halatayo.json",
       "records": 19,
-      "sha256": "badc6539836734346b6e04e793b52c201c26352a8b4bec0fef2410a4d3c6330b",
+      "sha256": "3e5f823a455c91e8ffdd18b5ca4ccba074b294ab3ac2fdd10fee76e1a2b27181",
       "slug": "halatayo"
     },
     {
-      "bytes": 495238,
+      "bytes": 495252,
       "name": "High Commander Vaeloria",
       "path": "/ai/entities/vaeloria.json",
       "records": 29,
-      "sha256": "d9ce4049fdacf660c3360cffa437a8dd249693c46560d2a73d1909f2cf6141d5",
+      "sha256": "1aac7329bb1d1285419baacd7a1bba4c2a3c6ca792c0a7087545b4af7486a3c6",
       "slug": "vaeloria"
     },
     {
-      "bytes": 34542,
+      "bytes": 34556,
       "name": "High Lord Kaelen (Vanguard)",
       "path": "/ai/entities/high-lord-kaelen-vanguard.json",
       "records": 6,
-      "sha256": "e0f465d68e81536594270fc822101c030c0f216214a39afd1e53894ef7ffb7d4",
+      "sha256": "d630393c881e069c2842bac1d024e91c961950e2bf02d3a75f535f10dc157d2c",
       "slug": "high-lord-kaelen-vanguard"
     },
     {
-      "bytes": 649439,
+      "bytes": 649453,
       "name": "Inzra",
       "path": "/ai/entities/inzra.json",
       "records": 39,
-      "sha256": "cb85766fde59dc881398dd40670f0d5c42253e7662852b4b2e37b18bafd8986c",
+      "sha256": "8a931e33ad2e2bddbb2797e6f9201a37bfbabb7f9a82313a5a29d5dbf1e6b95d",
       "slug": "inzra"
     },
     {
-      "bytes": 120657,
+      "bytes": 120671,
       "name": "Kaelar Omnivox",
       "path": "/ai/entities/kaelar-omnivox.json",
       "records": 8,
-      "sha256": "c98a8b70c7cfe9c8ca88a0d744a71be8084e781cd2ddc56c660088e12f60057c",
+      "sha256": "329d7ada14c622105215804d57e496132e872ceb264f6a5091f84a198adade42",
       "slug": "kaelar-omnivox"
     },
     {
-      "bytes": 633854,
+      "bytes": 633868,
       "name": "Kaelen Redalious",
       "path": "/ai/entities/kaelen-redalious.json",
       "records": 34,
-      "sha256": "ef0aa4141e248078ada7e8ef68c302ddebe111dd4b052cb10655b2b20e2b190b",
+      "sha256": "55f502d202de310ed73a17b4036db009b6707cd06dd6b2f749d3f26d637fa9f6",
       "slug": "kaelen-redalious"
     },
     {
-      "bytes": 563032,
+      "bytes": 563046,
       "name": "Kartus Vaeloria",
       "path": "/ai/entities/kartus-vaeloria.json",
       "records": 48,
-      "sha256": "de631f8a97c6c61f9dc392d410081241a4e410f05dcd8ab7492fe985745f4eda",
+      "sha256": "44ac40557fea300269c75ba9e623152e246a16ce7c8ef5a435cdee2235593991",
       "slug": "kartus-vaeloria"
     },
     {
-      "bytes": 52058,
+      "bytes": 52072,
       "name": "Lady Vaelia",
       "path": "/ai/entities/lady-vaelia.json",
       "records": 8,
-      "sha256": "85edccd2544f44668688c9f3929a8edadb8aeb4e9a63d6c226bd134e3879181b",
+      "sha256": "5c72b5bfb95d9cbe2abb9ce172988f6ddd8d3bd8137074a08bd4feb8e9b32634",
       "slug": "lady-vaelia"
     },
     {
-      "bytes": 924943,
+      "bytes": 924957,
       "name": "Lay",
       "path": "/ai/entities/lay.json",
       "records": 67,
-      "sha256": "5e6b763d7cf7d45aff7405035a2400d97265ba40951f3e7970f849f67a5840d9",
+      "sha256": "b50ac5acac23c8c649a87a558a979f6478d0f5bbdf8e2cd71319a3d2fbbf9b7b",
       "slug": "lay"
     },
     {
-      "bytes": 53849,
+      "bytes": 53863,
       "name": "Linaele Zolfer",
       "path": "/ai/entities/linaele-zolfer.json",
       "records": 3,
-      "sha256": "69c0b9a2d8388d6cba6a3cf20d59c4875850c3dbc75124626222b61aee5bbb15",
+      "sha256": "ef60e96c37548b382ac9dc34b071d3abac5a100fa931f3f17919af7183994f3f",
       "slug": "linaele-zolfer"
     },
     {
-      "bytes": 151801,
+      "bytes": 151815,
       "name": "Lord Kaelen",
       "path": "/ai/entities/lord-kaelen.json",
       "records": 16,
-      "sha256": "9224674cba42ad6ac06cf660fb2f7cd219f3b9fa74e63ec3284a4f4a85b89adb",
+      "sha256": "52f2106759144b69e8451f30d8a9fb71637349f8dbc8068f66c78b7f512724e5",
       "slug": "lord-kaelen"
     },
     {
-      "bytes": 58970,
+      "bytes": 58984,
       "name": "Lyra Unmatara",
       "path": "/ai/entities/lyra-unmatara.json",
       "records": 6,
-      "sha256": "2da00dc021133575efd0943cb03cab86c9057f92ab5ed6feb7a78c1052313823",
+      "sha256": "d46cd2a626e16694cd48b8f4fad4387b8be49e86c20df7dab610f73b3c347524",
       "slug": "lyra-unmatara"
     },
     {
-      "bytes": 45702,
+      "bytes": 45716,
       "name": "Ophidion the Omni-Watcher",
       "path": "/ai/entities/ophidion.json",
       "records": 8,
-      "sha256": "f73e1017e5eae343aa3b56333efc041750f9db4f77f21e11c6e45fb0267b3b75",
+      "sha256": "559cf6341d4a15381177e8dacb80d398fa0dcf1d553f4e7fc5e070de1b321ff1",
       "slug": "ophidion"
     },
     {
-      "bytes": 1072562,
+      "bytes": 1072576,
       "name": "Orotus",
       "path": "/ai/entities/orotus.json",
       "records": 61,
-      "sha256": "efca9184d473664fc1694615ccd3a4d97d159d30f571c54ec333fe738e9e93bd",
+      "sha256": "36d796da631a18a81b59a078c7ca4a83af34bb635bf80f15adf59c065994cfd9",
       "slug": "orotus"
     },
     {
-      "bytes": 430057,
+      "bytes": 430071,
       "name": "Qai’lyth",
       "path": "/ai/entities/qailyth.json",
       "records": 27,
-      "sha256": "19de511d46c1dd314dc6d0c06c30de8110f8fe755e741c5b0ec2677d2f1514f7",
+      "sha256": "2d2c5fdbf571b14a3552942b3eb0081bb3e2d36a5d2546d2275c133c4d1bcdd7",
       "slug": "qailyth"
     },
     {
-      "bytes": 1359226,
+      "bytes": 1359240,
       "name": "Qintara Unmatara",
       "path": "/ai/entities/qintara-unmatara.json",
       "records": 80,
-      "sha256": "eea03cde7e271ddf75613e1345f69f596b5927df4b754fceacb2623ff3f48529",
+      "sha256": "11fd4fbaa8b42a036e27298d8d68f012123e054dc94e2f588baa740c0e6e0413",
       "slug": "qintara-unmatara"
     },
     {
-      "bytes": 2388869,
+      "bytes": 2388883,
       "name": "Rhayhara",
       "path": "/ai/entities/rhayhara.json",
       "records": 138,
-      "sha256": "97f19080f5fed0e0332f0062d18981ff7605469ca1e2140d1339f65c481c4b6e",
+      "sha256": "7ed61c6787e90ab048dcdd66f387429ebc3157fa5541832e5ab677b1c6b1a88e",
       "slug": "rhayhara"
     },
     {
-      "bytes": 334204,
+      "bytes": 334218,
       "name": "Sylvanna Xylaris",
       "path": "/ai/entities/sylvanna-xylaris.json",
       "records": 27,
-      "sha256": "79ec2e19319e5d44eda991b602396b2c16d0c609f509034dd8868e56d8664d14",
+      "sha256": "13f36c4eeaaefa81605b113c8f98589fe4c3444da050d21ad8b6d971cdde0f97",
       "slug": "sylvanna-xylaris"
     },
     {
-      "bytes": 368785,
+      "bytes": 368799,
       "name": "Thalyros Veyndarion",
       "path": "/ai/entities/thalyros-veyndarion.json",
       "records": 25,
-      "sha256": "924e29febed781ce00b1165546564e408f49e7017f1656fb587ca9c82db83703",
+      "sha256": "68bed598bcb23968b3f0e89c77df1d2e951808dea9582ecc3704ffc60cdd51f8",
       "slug": "thalyros-veyndarion"
     },
     {
-      "bytes": 2008,
+      "bytes": 2022,
       "name": "Vaelath",
       "path": "/ai/entities/vaelath.json",
       "records": 1,
-      "sha256": "0377b0ecf59424738d2c950d5c467b80025eb08d6c8e4f79d52fc42b929353c4",
+      "sha256": "834e1515fccd4b62776a94a9f375ecb62ee7918c0b264b28db2357cb82ddc7bc",
       "slug": "vaelath"
     },
     {
-      "bytes": 46689,
+      "bytes": 46703,
       "name": "Vaelstrum the Paradox-Weaver",
       "path": "/ai/entities/vaelstrum.json",
       "records": 8,
-      "sha256": "a62bc72e2faea6aea4f4e6700ddf075cf0d5085bb23f8a992fbfbe57694ec890",
+      "sha256": "9fbedcfa433559bff6f0dd16a7d35482f16bce37882e0f5912270e3563066e72",
       "slug": "vaelstrum"
     },
     {
-      "bytes": 308348,
+      "bytes": 308362,
       "name": "Valerius (Omnivox lineage)",
       "path": "/ai/entities/valerius-omnivox.json",
       "records": 17,
-      "sha256": "4b6037c6501159c2e3669082fae1df9371b03a9bc8e71871618eace6f44b5fe7",
+      "sha256": "9d37858376ef7252e9174a57495723f02a48b495e625144d4080ff976628dd09",
       "slug": "valerius-omnivox"
     },
     {
-      "bytes": 308198,
+      "bytes": 308212,
       "name": "Valerius Varvadeil",
       "path": "/ai/entities/valerius-varvadeil.json",
       "records": 17,
-      "sha256": "853a0d0edb624fe00ec39f3fe479ae2d19a7e93d78bb9089c177b2b7eb6c193c",
+      "sha256": "3e1b2bc006f7c782e3e6a0536fcbc5d0737ed9847da2de1574a361240c117b03",
       "slug": "valerius-varvadeil"
     },
     {
-      "bytes": 13185,
+      "bytes": 13199,
       "name": "Valthor",
       "path": "/ai/entities/valthor.json",
       "records": 3,
-      "sha256": "a95211371df1845f937d89c7ea1b2cf6fd76b0f45cbb02c3b4938f1dc0112b4b",
+      "sha256": "93587d45cfc4ccef59f90c2eb8c52df0772de76c6021dc268def2dbbd7c74989",
       "slug": "valthor"
     },
     {
-      "bytes": 328428,
+      "bytes": 328442,
       "name": "Varek Unmatara",
       "path": "/ai/entities/varek-unmatara.json",
       "records": 11,
-      "sha256": "4a7f281aec221525d76e9e240e78752eb017a04a08dfb97c0dea7d000defa11a",
+      "sha256": "732f6ecbc8adfa060c6b74dfe016248d80c54a59a4f0c5ec8fdd13fe5dd00711",
       "slug": "varek-unmatara"
     },
     {
-      "bytes": 47175,
+      "bytes": 47189,
       "name": "Xael-Gath",
       "path": "/ai/entities/xael-gath.json",
       "records": 8,
-      "sha256": "04b798d8b44b1ac603fd4a9d9bca806d4c71eeed18e788016cc4bb2c1e8827eb",
+      "sha256": "d40e449ccf777648dcefb620b7234a3db86056d4b5e6346800d0e00f142c8bb5",
       "slug": "xael-gath"
     },
     {
-      "bytes": 59221,
+      "bytes": 59235,
       "name": "Xelena (Xanthera lineage)",
       "path": "/ai/entities/xelena-xanthera.json",
       "records": 6,
-      "sha256": "66e9aad5497773bac9614e49efdb260fb12b3a6c7ba5c501f42e62983033687b",
+      "sha256": "ded92f4e02d82df875e9d92be769f074f3709a93880e7200a44ba8dcdc39f650",
       "slug": "xelena-xanthera"
     },
     {
-      "bytes": 34754,
+      "bytes": 34768,
       "name": "Xenon Varvadeil",
       "path": "/ai/entities/xenon-varvadeil.json",
       "records": 6,
-      "sha256": "46744520bc215dfbaf30608e6c44ae383fc34043b6f100c8c236838ce9942265",
+      "sha256": "43fe5cf3bf48045c5a2dcae237bbef9eb77c0c5196ecf806d64be14188484011",
       "slug": "xenon-varvadeil"
     },
     {
-      "bytes": 50408,
+      "bytes": 50422,
       "name": "Xylar Varvadeil",
       "path": "/ai/entities/xylar-varvadeil.json",
       "records": 7,
-      "sha256": "01580b9eb9432ee3622bba4fcfe04bc7c746e741b83fe42ea0b6bce75402d959",
+      "sha256": "5517d5307926791eee9baa96181c59f5ab7365802bdb4f64e8e84d385f2d4aaa",
       "slug": "xylar-varvadeil"
     },
     {
-      "bytes": 16324,
+      "bytes": 16338,
       "name": "Xylos",
       "path": "/ai/entities/xylos.json",
       "records": 4,
-      "sha256": "71a234e0cd7211352cf3b5db0733009750d0a1195f1058796e898ecc1f8bdc6a",
+      "sha256": "d87c3b24007fd7c978ff08c9ee63d73300a848c4339bd0221364ccbc701c8e0b",
       "slug": "xylos"
     },
     {
-      "bytes": 33156,
+      "bytes": 33170,
       "name": "Zaxor Redalious",
       "path": "/ai/entities/zaxor-redalious.json",
       "records": 5,
-      "sha256": "31aeb9bfcf715575162e4839a9f96d8972eeac52be1d7fd2822629245690c896",
+      "sha256": "5aafeb29f6a87a0d1f0734c4d3935010d404715d45e2ab4a3729dd0245ff0644",
       "slug": "zaxor-redalious"
     },
     {
-      "bytes": 267608,
+      "bytes": 267622,
       "name": "Zeta",
       "path": "/ai/entities/zeta.json",
       "records": 18,
-      "sha256": "b8b50391b8c1fe430ee6f4e504a83075e1176f9959d850e8434b0aa65102c452",
+      "sha256": "58c1a37f2a1901f71d38ab294c78678582c30191ea47cb1b4e3913dc30705025",
       "slug": "zeta"
     },
     {
-      "bytes": 24607,
+      "bytes": 24621,
       "name": "Zyra Xanthera",
       "path": "/ai/entities/zyra-xanthera.json",
       "records": 5,
-      "sha256": "dcd4b330ec84cd102d2663c7318bba0a00044b944939aa76e51790b917b44ec9",
+      "sha256": "5b2cc06f0069b1e1ea488ed8c376e0e0a803c9a22d3855e52cf67ad392d033eb",
       "slug": "zyra-xanthera"
     }
   ],
-  "generated_from_commit": "unspecified-build-snapshot",
+  "generated_from_commit": "0d142efb30dbc9cb553f209cfd1113bfc8de725b",
   "record_count": 829,
   "record_schema": [
     "id",
