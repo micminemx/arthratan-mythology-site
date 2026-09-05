@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T20:00:12Z",
+  "generated": "2026-09-05T10:37:29Z",
   "origin": "https://arthratanmythology.com",
   "count": 927,
   "routes": [
@@ -6325,6 +6325,41 @@
       "title": "Canon Supersession Chronology"
     },
     {
+      "kind": "masterpage",
+      "key": "axiomatter",
+      "url": "/masterpages/axiomatter/",
+      "source": "data/masterpages.json",
+      "title": "Axiomatter"
+    },
+    {
+      "kind": "masterpage",
+      "key": "hyperverity",
+      "url": "/masterpages/hyperverity/",
+      "source": "data/masterpages.json",
+      "title": "Hyperverity"
+    },
+    {
+      "kind": "masterpage",
+      "key": "transboundless",
+      "url": "/masterpages/transboundless/",
+      "source": "data/masterpages.json",
+      "title": "Transboundless"
+    },
+    {
+      "kind": "masterpage",
+      "key": "nullinfinity",
+      "url": "/masterpages/nullinfinity/",
+      "source": "data/masterpages.json",
+      "title": "Nullinfinity"
+    },
+    {
+      "kind": "masterpage",
+      "key": "omniprecedent",
+      "url": "/masterpages/omniprecedent/",
+      "source": "data/masterpages.json",
+      "title": "Omniprecedent"
+    },
+    {
       "kind": "myth",
       "key": "myths-index",
       "url": "/myths/",
@@ -6475,41 +6510,6 @@
       "source": "crossscaling/rhayhara-othrys-orthogonal-escalation/index.html",
       "title": "Rhayhara–Othrys Orthogonal Escalation Chain",
       "canon_status": "noncanon-analytical"
-    },
-    {
-      "kind": "masterpage",
-      "key": "axiomatter",
-      "url": "/masterpages/axiomatter/",
-      "source": "data/masterpages.json",
-      "title": "Axiomatter"
-    },
-    {
-      "kind": "masterpage",
-      "key": "hyperverity",
-      "url": "/masterpages/hyperverity/",
-      "source": "data/masterpages.json",
-      "title": "Hyperverity"
-    },
-    {
-      "kind": "masterpage",
-      "key": "transboundless",
-      "url": "/masterpages/transboundless/",
-      "source": "data/masterpages.json",
-      "title": "Transboundless"
-    },
-    {
-      "kind": "masterpage",
-      "key": "nullinfinity",
-      "url": "/masterpages/nullinfinity/",
-      "source": "data/masterpages.json",
-      "title": "Nullinfinity"
-    },
-    {
-      "kind": "masterpage",
-      "key": "omniprecedent",
-      "url": "/masterpages/omniprecedent/",
-      "source": "data/masterpages.json",
-      "title": "Omniprecedent"
     }
   ],
   "scope_note": "Includes canonical corpus routes plus canonical Myth narrative routes and explicitly labelled noncanon analytical Crossscaling routes; canon_status preserves the boundary."
