@@ -1,0 +1,10 @@
+{
+  "total_unfixed": 1,
+  "unfixed_issues": [
+    {
+      "item": "_layouts/divine.html",
+      "category": "INTERNAL_BUILD_TEMPLATE",
+      "reason": "Internal Jekyll template layout file located in _layouts/; by design it is processed by static site generators rather than served as a standalone static HTML route. Kept intact to preserve Jekyll rendering pipelines."
+    }
+  ]
+}

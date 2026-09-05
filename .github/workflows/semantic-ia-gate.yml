@@ -1,0 +1,72 @@
+name: Semantic IA and OmniIndex V2 gate
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    paths:
+      - "**/*.html"
+      - "app.js"
+      - "archive.js"
+      - "data/**"
+      - "scripts/omniindex-v2.py"
+      - "scripts/register-publication-graph.py"
+      - "scripts/normalize-static-spa-links.py"
+      - "scripts/normalize-clan-links.py"
+      - "scripts/build-site-index.py"
+      - "scripts/normalize-site-index-targets.py"
+      - "scripts/site_index_target_gate.py"
+      - "scripts/harden-spa-rendering.py"
+      - "scripts/ia_publication_scope_gate.py"
+      - ".github/workflows/semantic-ia-gate.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: semantic-ia-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semantic-ia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate audit, generation, scope and repair tooling syntax
+        run: python -m py_compile scripts/omniindex-v2.py scripts/register-publication-graph.py scripts/normalize-static-spa-links.py scripts/normalize-clan-links.py scripts/build-site-index.py scripts/normalize-site-index-targets.py scripts/site_index_target_gate.py scripts/harden-spa-rendering.py scripts/ia_publication_scope_gate.py
+
+      - name: Enforce pre-publication source and canon scope
+        run: python scripts/ia_publication_scope_gate.py
+
+      - name: Verify hardened SPA rendering is reproducible
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/harden-spa-rendering.py
+          git diff --exit-code -- app.js
+
+      - name: Verify A-Z index generation and normalization are reproducible
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/build-site-index.py
+          python scripts/normalize-site-index-targets.py
+          git diff --exit-code -- data/site-index.json chronology/index.html
+
+      - name: Gate every runtime A-Z destination
+        run: python scripts/site_index_target_gate.py . --out reports/architecture/omniindex-v2/site_index_target_gate.json
+
+      - name: Run exact multi-edge OmniIndex V2 gate
+        run: python scripts/omniindex-v2.py . --out-dir reports/architecture/omniindex-v2
+
+      - name: Upload semantic architecture evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: omniindex-v2-${{ github.sha }}
+          path: reports/architecture/omniindex-v2/
+          if-no-files-found: warn
+          retention-days: 30

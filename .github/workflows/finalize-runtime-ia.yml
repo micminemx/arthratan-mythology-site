@@ -1,0 +1,81 @@
+name: Finalize runtime IA surfaces
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/harden-spa-rendering.py"
+      - "scripts/build-site-index.py"
+      - "scripts/normalize-site-index-targets.py"
+      - "scripts/site_index_target_gate.py"
+      - "data/site-index.json"
+      - "data/zubaida-index.json"
+      - "data/zubaida-nonsource.json"
+      - "data/characters.json"
+      - "data/masterpages.json"
+      - "data/divine.json"
+      - "data/hgl-toc.json"
+      - "data/canon-supersession-chronology.json"
+      - ".github/workflows/finalize-runtime-ia.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-runtime-ia-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Correct runtime-hardener metric schema keys
+        shell: python
+        run: |
+          from pathlib import Path
+          p = Path('scripts/harden-spa-rendering.py')
+          text = p.read_text(encoding='utf-8')
+          replacements = {
+              'metrics.total_aliases': 'metrics.total_alias_mappings',
+              'metrics.total_terms': 'metrics.total_indexable_terms',
+              'metrics.domains': 'metrics.domains_count',
+          }
+          for old, new in replacements.items():
+              text = text.replace(old, new)
+          p.write_text(text, encoding='utf-8', newline='')
+
+      - name: Validate runtime IA tooling syntax
+        run: python -m py_compile scripts/harden-spa-rendering.py scripts/build-site-index.py scripts/normalize-site-index-targets.py scripts/site_index_target_gate.py scripts/omniindex-v2.py
+
+      - name: Apply canonical runtime rendering hardening
+        run: python scripts/harden-spa-rendering.py
+
+      - name: Rebuild and normalize A-Z index
+        run: |
+          python scripts/build-site-index.py
+          python scripts/normalize-site-index-targets.py
+
+      - name: Gate every runtime A-Z destination
+        run: python scripts/site_index_target_gate.py . --out reports/architecture/omniindex-v2/site_index_target_gate.json
+
+      - name: Run exact semantic OmniIndex gate
+        run: python scripts/omniindex-v2.py . --out-dir reports/architecture/omniindex-v2
+
+      - name: Commit finalized runtime IA surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.js scripts/harden-spa-rendering.py data/site-index.json chronology/index.html
+          if git diff --cached --quiet; then
+            echo "Runtime IA surfaces already finalized."
+            exit 0
+          fi
+          git commit -m "Finalize runtime IA navigation surfaces"
+          git push

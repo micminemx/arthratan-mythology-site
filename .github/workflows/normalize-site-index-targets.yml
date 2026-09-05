@@ -1,0 +1,65 @@
+name: Normalize runtime site-index targets
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/site-index.json"
+      - "data/zubaida-index.json"
+      - "data/zubaida-nonsource.json"
+      - "data/divine.json"
+      - "data/hgl-toc.json"
+      - "data/masterpages.json"
+      - "data/characters.json"
+      - "data/canon-supersession-chronology.json"
+      - "data/global-concept-inventory.json"
+      - "data/clans.json"
+      - "data/clans-supplemental.json"
+      - "data/culture-clans-ontology.json"
+      - "concepts/**"
+      - "chronology/**"
+      - "scripts/build-site-index.py"
+      - "scripts/normalize-site-index-targets.py"
+      - "scripts/site_index_target_gate.py"
+      - ".github/workflows/normalize-site-index-targets.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: normalize-site-index-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate site-index tooling syntax
+        run: python -m py_compile scripts/build-site-index.py scripts/site_index_target_gate.py scripts/normalize-site-index-targets.py
+
+      - name: Rebuild and normalize data-driven A-Z navigation
+        run: |
+          python scripts/build-site-index.py
+          python scripts/normalize-site-index-targets.py
+
+      - name: Gate every runtime A-Z target
+        run: python scripts/site_index_target_gate.py . --out reports/architecture/omniindex-v2/site_index_target_gate.json
+
+      - name: Commit normalized runtime-navigation surfaces
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/site-index.json chronology/index.html
+          if git diff --cached --quiet; then
+            echo "Site-index runtime targets already normalized."
+            exit 0
+          fi
+          git commit -m "Normalize runtime A-Z index targets"
+          git push

@@ -1,0 +1,928 @@
+{
+  "audit_target": "reports/architecture/after/violations.json",
+  "total_fragment_violations_analyzed": 1889,
+  "classification_summary": {
+    "character:/entity-addressing syntax": {
+      "count": 992,
+      "percentage": 52.51,
+      "systemically_repairable_count": 0
+    },
+    "stale renamed section": {
+      "count": 845,
+      "percentage": 44.73,
+      "systemically_repairable_count": 845
+    },
+    "dynamic JavaScript fragment": {
+      "count": 40,
+      "percentage": 2.12,
+      "systemically_repairable_count": 0
+    },
+    "genuinely missing HTML ID": {
+      "count": 12,
+      "percentage": 0.64,
+      "systemically_repairable_count": 0
+    }
+  },
+  "records_sample": [
+    {
+      "source": "characters/aliza/index.html",
+      "target": "index.html",
+      "fragment": "character:aliza",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:aliza). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/annaris-deyhamora/index.html",
+      "target": "index.html",
+      "fragment": "character:annaris-deyhamora",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:annaris-deyhamora). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/annaris/index.html",
+      "target": "index.html",
+      "fragment": "character:annaris-deyhamora",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:annaris-deyhamora). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/asmouth-varvadeil/index.html",
+      "target": "index.html",
+      "fragment": "character:asmouth-varvadeil",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:asmouth-varvadeil). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/asmouth/index.html",
+      "target": "index.html",
+      "fragment": "character:asmouth-varvadeil",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:asmouth-varvadeil). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/commander-kaelthas/index.html",
+      "target": "index.html",
+      "fragment": "character:commander-kaelthas",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:commander-kaelthas). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/dalroemar/index.html",
+      "target": "index.html",
+      "fragment": "character:dalroemar",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:dalroemar). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/daren/index.html",
+      "target": "index.html",
+      "fragment": "character:daren",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:daren). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/dariyus-venakan/index.html",
+      "target": "index.html",
+      "fragment": "character:dariyus-venakan",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:dariyus-venakan). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/deyhamora/index.html",
+      "target": "index.html",
+      "fragment": "character:deyhamora",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:deyhamora). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/dyvane-redalious/index.html",
+      "target": "index.html",
+      "fragment": "character:dyvane-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:dyvane-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/dyvane/index.html",
+      "target": "index.html",
+      "fragment": "character:dyvane-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:dyvane-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/grayus-venakan/index.html",
+      "target": "index.html",
+      "fragment": "character:grayus-venakan",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:grayus-venakan). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/halatayo/index.html",
+      "target": "index.html",
+      "fragment": "character:halatayo",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:halatayo). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/high-lord-kaelen-vanguard/index.html",
+      "target": "index.html",
+      "fragment": "character:high-lord-kaelen-vanguard",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:high-lord-kaelen-vanguard). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/inzra/index.html",
+      "target": "index.html",
+      "fragment": "character:inzra",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:inzra). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/kaelar-omnivox/index.html",
+      "target": "index.html",
+      "fragment": "character:kaelar-omnivox",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:kaelar-omnivox). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/kaelen-redalious/index.html",
+      "target": "index.html",
+      "fragment": "character:kaelen-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:kaelen-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/kaelen/index.html",
+      "target": "index.html",
+      "fragment": "character:kaelen-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:kaelen-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/kartus-vaeloria/index.html",
+      "target": "index.html",
+      "fragment": "character:kartus-vaeloria",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:kartus-vaeloria). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/kartus/index.html",
+      "target": "index.html",
+      "fragment": "character:kartus-vaeloria",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:kartus-vaeloria). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/lady-vaelia/index.html",
+      "target": "index.html",
+      "fragment": "character:lady-vaelia",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:lady-vaelia). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/lay/index.html",
+      "target": "index.html",
+      "fragment": "character:lay",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:lay). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/linaele-zolfer/index.html",
+      "target": "index.html",
+      "fragment": "character:linaele-zolfer",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:linaele-zolfer). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/lord-kaelen/index.html",
+      "target": "index.html",
+      "fragment": "character:lord-kaelen",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:lord-kaelen). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/lyra-unmatara/index.html",
+      "target": "index.html",
+      "fragment": "character:lyra-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:lyra-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/lyra/index.html",
+      "target": "index.html",
+      "fragment": "character:lyra-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:lyra-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/ophidion/index.html",
+      "target": "index.html",
+      "fragment": "character:ophidion",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:ophidion). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/orotus/index.html",
+      "target": "index.html",
+      "fragment": "character:orotus",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:orotus). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/qailyth/index.html",
+      "target": "index.html",
+      "fragment": "character:qailyth",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:qailyth). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/qintara-unmatara/index.html",
+      "target": "index.html",
+      "fragment": "character:qintara-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:qintara-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/qintara/index.html",
+      "target": "index.html",
+      "fragment": "character:qintara-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:qintara-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/rhayhara/index.html",
+      "target": "index.html",
+      "fragment": "character:rhayhara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:rhayhara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/sylvanna-xylaris/index.html",
+      "target": "index.html",
+      "fragment": "character:sylvanna-xylaris",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:sylvanna-xylaris). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/sylvanna/index.html",
+      "target": "index.html",
+      "fragment": "character:sylvanna-xylaris",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:sylvanna-xylaris). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/thalyros-veyndarion/index.html",
+      "target": "index.html",
+      "fragment": "character:thalyros-veyndarion",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:thalyros-veyndarion). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/thalyros/index.html",
+      "target": "index.html",
+      "fragment": "character:thalyros-veyndarion",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:thalyros-veyndarion). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/vaelath/index.html",
+      "target": "index.html",
+      "fragment": "character:vaelath",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:vaelath). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/vaeloria/index.html",
+      "target": "index.html",
+      "fragment": "character:vaeloria",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:vaeloria). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/vaelstrum/index.html",
+      "target": "index.html",
+      "fragment": "character:vaelstrum",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:vaelstrum). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/valerius-omnivox/index.html",
+      "target": "index.html",
+      "fragment": "character:valerius-omnivox",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:valerius-omnivox). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/valerius-varvadeil/index.html",
+      "target": "index.html",
+      "fragment": "character:valerius-varvadeil",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:valerius-varvadeil). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/valthor/index.html",
+      "target": "index.html",
+      "fragment": "character:valthor",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:valthor). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/varek-unmatara/index.html",
+      "target": "index.html",
+      "fragment": "character:varek-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:varek-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/varek/index.html",
+      "target": "index.html",
+      "fragment": "character:varek-unmatara",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:varek-unmatara). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/xael-gath/index.html",
+      "target": "index.html",
+      "fragment": "character:xael-gath",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:xael-gath). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/xelena-xanthera/index.html",
+      "target": "index.html",
+      "fragment": "character:xelena-xanthera",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:xelena-xanthera). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/xenon-varvadeil/index.html",
+      "target": "index.html",
+      "fragment": "character:xenon-varvadeil",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:xenon-varvadeil). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/xylar-varvadeil/index.html",
+      "target": "index.html",
+      "fragment": "character:xylar-varvadeil",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:xylar-varvadeil). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/xylos/index.html",
+      "target": "index.html",
+      "fragment": "character:xylos",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:xylos). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/zaxor-redalious/index.html",
+      "target": "index.html",
+      "fragment": "character:zaxor-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:zaxor-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/zaxor/index.html",
+      "target": "index.html",
+      "fragment": "character:zaxor-redalious",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:zaxor-redalious). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/zeta/index.html",
+      "target": "index.html",
+      "fragment": "character:zeta",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:zeta). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "characters/zyra-xanthera/index.html",
+      "target": "index.html",
+      "fragment": "character:zyra-xanthera",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:character",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (character:zyra-xanthera). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/anchorite-order/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/benzshin-elite/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/keshra-hunters/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/luminary-sisterhood/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/omnivox/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/redalious/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/sehexi-wardens/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/stoic-ascendancy/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/tactician-branch-1/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/unmatara/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/vaeloria/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/vanguard-branch-1/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/varvadeil/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/venakan/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/veyndarion/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/xanthera/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/xylaris/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "clans/zenith-vanguard/index.html",
+      "target": "index.html",
+      "fragment": "clans",
+      "category": "dynamic JavaScript fragment",
+      "subcategory": "spa_nav:clans",
+      "explanation": "Client-side SPA route identifier (clans) used for client-side tab switching in index.html. Compiler false positive if evaluated as static DOM ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/archmedonite-technology/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/archmedonite-technology/index.html",
+      "target": "index.html",
+      "fragment": "concept:archmedonite-technology",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:archmedonite-technology). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/archn-reen-crystalline-monasticism/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/archn-reen-crystalline-monasticism/index.html",
+      "target": "index.html",
+      "fragment": "concept:archn-reen-crystalline-monasticism",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:archn-reen-crystalline-monasticism). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/arthitean-phenotypic-baseline/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/arthitean-phenotypic-baseline/index.html",
+      "target": "index.html",
+      "fragment": "concept:arthitean-phenotypic-baseline",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:arthitean-phenotypic-baseline). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/clan-redalious-warlord-mastery/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/clan-redalious-warlord-mastery/index.html",
+      "target": "index.html",
+      "fragment": "concept:clan-redalious-warlord-mastery",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:clan-redalious-warlord-mastery). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/clan-unmatara-vanguard-tenacity/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/clan-unmatara-vanguard-tenacity/index.html",
+      "target": "index.html",
+      "fragment": "concept:clan-unmatara-vanguard-tenacity",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:clan-unmatara-vanguard-tenacity). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/clan-vaeloria-shadow-directorate/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/clan-vaeloria-shadow-directorate/index.html",
+      "target": "index.html",
+      "fragment": "concept:clan-vaeloria-shadow-directorate",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:clan-vaeloria-shadow-directorate). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/clan-varvadeil-solar-sovereignty/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/clan-varvadeil-solar-sovereignty/index.html",
+      "target": "index.html",
+      "fragment": "concept:clan-varvadeil-solar-sovereignty",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:clan-varvadeil-solar-sovereignty). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/codex-impossibility-theorem/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/codex-impossibility-theorem/index.html",
+      "target": "index.html",
+      "fragment": "concept:codex-impossibility-theorem",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:codex-impossibility-theorem). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/codex-reincarnation-architecture/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/codex-reincarnation-architecture/index.html",
+      "target": "index.html",
+      "fragment": "concept:codex-reincarnation-architecture",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:codex-reincarnation-architecture). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/crosspattern-synthesis/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/crosspattern-synthesis/index.html",
+      "target": "index.html",
+      "fragment": "concept:crosspattern-synthesis",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:crosspattern-synthesis). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/hierarchy-of-invariance/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/hierarchy-of-invariance/index.html",
+      "target": "index.html",
+      "fragment": "concept:hierarchy-of-invariance",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:hierarchy-of-invariance). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/hypergendered-logic-hgl/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/hypergendered-logic-hgl/index.html",
+      "target": "index.html",
+      "fragment": "concept:hypergendered-logic-hgl",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:hypergendered-logic-hgl). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/imperial-golden-solar-sceptre/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    },
+    {
+      "source": "concepts/imperial-golden-solar-sceptre/index.html",
+      "target": "index.html",
+      "fragment": "concept:imperial-golden-solar-sceptre",
+      "category": "character:/entity-addressing syntax",
+      "subcategory": "spa_entity:concept",
+      "explanation": "Client-side SPA deep-link routing parameter consumed dynamically by app.js (concept:imperial-golden-solar-sceptre). Compiler false positive if evaluated as a static DOM element ID.",
+      "systemically_repairable": false
+    },
+    {
+      "source": "concepts/negative-rewrite/index.html",
+      "target": "crawl/index.html",
+      "fragment": "concepts",
+      "category": "stale renamed section",
+      "subcategory": "crawl_section:concepts",
+      "explanation": "Subpage breadcrumb targeted historical section name #concepts on crawl/index.html, but the heading originally had a shortened ID. Resolved systemically by adding canonical section anchor aliases.",
+      "systemically_repairable": true
+    }
+  ]
+}

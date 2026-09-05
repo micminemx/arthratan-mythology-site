@@ -1,0 +1,96 @@
+{
+  "checkpoint_id": "IA-CANDIDATE-FREEZE-20260905",
+  "timestamp": "2026-09-05T09:14:20.927488+00:00",
+  "status": "FROZEN_CANDIDATE",
+  "flags": {
+    "committed": false,
+    "pushed": false,
+    "merged": false,
+    "deployed": false,
+    "redesign_frozen": true
+  },
+  "compiler_verdict": {
+    "status": "PASS",
+    "critical_violations": 0,
+    "production_pages": 951,
+    "home_reachable": 951,
+    "unreachable": 0,
+    "orphans": 0,
+    "dead_ends": 0,
+    "broken_links": 0,
+    "broken_anchors": 0,
+    "verified_spa_fragments": 1035
+  },
+  "files": {
+    "index.html": {
+      "sha256": "a6f6eaed53a5bfba12cfc8ad1157821dd37cf2e8b2cb85bcabaf439a9bf62649",
+      "size_bytes": 6334,
+      "last_modified_utc": "2026-09-05T08:50:25.747463+00:00"
+    },
+    "app.js": {
+      "sha256": "e0133139139866db742abf639ed0035f52462079478dbc8709330c6554d2f0bb",
+      "size_bytes": 59913,
+      "last_modified_utc": "2026-09-05T08:52:14.948839+00:00"
+    },
+    "styles.css": {
+      "sha256": "00e92bc45703b54aa14a4b9573db9c931549c01e15367c0847abbbc5344acf09",
+      "size_bytes": 29795,
+      "last_modified_utc": "2026-09-05T08:50:46.157535+00:00"
+    },
+    "source-provenance.js": {
+      "sha256": "8039da0242104b0e72a5850e21b8a0a50b8319ef2d8a88e9d81f6ec7d083ec75",
+      "size_bytes": 2855,
+      "last_modified_utc": "2026-09-03T16:13:00.680927+00:00"
+    },
+    "arthratan_site_compiler.py": {
+      "sha256": "fed4b9a471f00bbaea857a7eb24f66af394d15b42f61d5fd52e93b645902c665",
+      "size_bytes": 43533,
+      "last_modified_utc": "2026-09-05T08:52:29.902028+00:00"
+    },
+    "arthratan_site_architect.py": {
+      "sha256": "ffc00a7b26b14b545d7b5a1670d5a2f0b7444069ed107f40b8b1e95411a82594",
+      "size_bytes": 30328,
+      "last_modified_utc": "2026-09-05T08:30:36.165620+00:00"
+    },
+    "data/site-index.json": {
+      "sha256": "e765ff904fdcd99802a328fb1d9f82c715e6521510ae592cf7055bf3a0e270d9",
+      "size_bytes": 904830,
+      "last_modified_utc": "2026-09-05T01:11:57.696416+00:00"
+    },
+    "data/characters.json": {
+      "sha256": "2ae993c04639e3fc0e5bc1a10709b88a3272d28b51d868343128e1b3d0a54d9a",
+      "size_bytes": 100758,
+      "last_modified_utc": "2026-09-03T16:13:00.371355+00:00"
+    },
+    "data/causal-ontology.json": {
+      "sha256": "c91ad5eae99d30d04fe40b21937112af43179b7751a6f83f0788cb461d33b1b7",
+      "size_bytes": 28930,
+      "last_modified_utc": "2026-09-03T16:39:02.979511+00:00"
+    },
+    "crawl/index.html": {
+      "sha256": "25270dc78bf1e43649120e0475ed779d8b3cb14fb6c093f44358499a61eaab0c",
+      "size_bytes": 79243,
+      "last_modified_utc": "2026-09-05T08:38:38.131291+00:00"
+    },
+    "hgl/index.html": {
+      "sha256": "467bf9a598458e72619ff433b99a296188224ecc68b62235e8494b4a6fdee0c0",
+      "size_bytes": 23400,
+      "last_modified_utc": "2026-09-05T08:30:49.322441+00:00"
+    },
+    "divine/index.html": {
+      "sha256": "6ecbf82a9f3ef13632fb3393723e477128e3eef24fc832caf4089dea0ce631f1",
+      "size_bytes": 37099,
+      "last_modified_utc": "2026-09-05T08:30:04.869438+00:00"
+    },
+    "audits/information-architecture.md": {
+      "sha256": "76c216b70d49cfbc9a779eba04d6fa19307fcef8d4b9d779d6dc3053ad65a349",
+      "size_bytes": 17497,
+      "last_modified_utc": "2026-09-03T16:13:00.318312+00:00"
+    },
+    "audits/INFORMATION_ARCHITECTURE_COMPLETION_REPORT.md": {
+      "sha256": "b8ae00480cf43c6efe5f7d855e6a2af1c4f80b44ea7b037a157b5a7f20745599",
+      "size_bytes": 8707,
+      "last_modified_utc": "2026-09-05T08:54:34.428778+00:00"
+    }
+  }
+}

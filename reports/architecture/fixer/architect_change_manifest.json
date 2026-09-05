@@ -1,0 +1,56 @@
+{
+  "total_actions": 10,
+  "applied": true,
+  "actions": [
+    {
+      "file": "divine/index.html",
+      "action": "repaired_unrendered_template",
+      "description": "Replaced Jekyll Liquid loop with 317 pre-rendered static HTML links to all Divine v144 sections and added top navigation."
+    },
+    {
+      "file": "hgl/index.html",
+      "action": "expanded_hub_directory",
+      "description": "Expanded HGL index from 10 pages to all 293 preserved pages with full two-column crawlable HTML list."
+    },
+    {
+      "file": "concepts/index.html",
+      "action": "created_category_hub",
+      "description": "Created missing concepts/index.html category hub page listing all 24 canonical concepts with navigation breadcrumbs."
+    },
+    {
+      "file": "masterpages/index.html",
+      "action": "created_category_hub",
+      "description": "Created missing masterpages/index.html directory hub page listing all 93 masterpages formalizations."
+    },
+    {
+      "file": "crawl/index.html",
+      "action": "repaired_missing_links_and_anchors",
+      "description": "Added 5 missing masterpages (axiomatter, hyperverity, nullinfinity, omniprecedent, transboundless) and fixed #characters anchor target."
+    },
+    {
+      "file": "characters/index.html",
+      "action": "linked_alias_permalinks",
+      "description": "Connected 12 short-slug character permalinks to resolve orphan and unreachable status."
+    },
+    {
+      "file": "zubaida/index.html",
+      "action": "linked_legacy_redirect",
+      "description": "Linked legacy transposed route 19fd8d193b40dca8 to eliminate orphan status."
+    },
+    {
+      "file": "404.html",
+      "action": "repaired_dead_end_and_canonical",
+      "description": "Added canonical link tag and outbound fallback navigation links to eliminate dead-end status."
+    },
+    {
+      "file": "index.html",
+      "action": "linked_category_hubs_from_home",
+      "description": "Connected masterpages/, concepts/, and 404.html from Home footer to establish direct depth-1 access."
+    },
+    {
+      "file": "sitemap.xml",
+      "action": "synchronized_sitemap",
+      "description": "Synchronized sitemap.xml with 100% corpus coverage (952 canonical URLs with full metadata tags)."
+    }
+  ]
+}

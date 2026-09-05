@@ -1,0 +1,341 @@
+{
+  "site_root": "C:\\Users\\Michael\\Documents\\GitHub\\arthratan-mythology-site",
+  "status": "FAIL",
+  "critical_error_count": 5,
+  "violations_count": 1894,
+  "metrics_summary": {
+    "total_html_files": 953,
+    "home_reachable_count": 951,
+    "home_unreachable_count": 2,
+    "orphan_count": 2,
+    "dead_end_count": 0,
+    "broken_links_count": 0,
+    "broken_anchors_count": 1889,
+    "unrendered_templates_count": 1,
+    "depth_histogram": {
+      "0": 1,
+      "1": 5,
+      "2": 932,
+      "3": 13
+    },
+    "depth_moments": {
+      "count": 951,
+      "mean": 2.0063,
+      "median": 2.0,
+      "mode": 2.0,
+      "variance": 0.0231,
+      "std_dev": 0.152,
+      "skewness": -0.1246,
+      "kurtosis_excess": 64.0466,
+      "kurtosis_pearson": 67.0466,
+      "p50": 2.0,
+      "p75": 2.0,
+      "p90": 2.0,
+      "p95": 2.0,
+      "p99": 3.0,
+      "min": 0.0,
+      "max": 3.0,
+      "gini": 0.0104
+    },
+    "in_degree_moments": {
+      "count": 953,
+      "mean": 8.8951,
+      "median": 3.0,
+      "mode": 3.0,
+      "variance": 5444.7319,
+      "std_dev": 73.7884,
+      "skewness": 12.4768,
+      "kurtosis_excess": 153.7529,
+      "kurtosis_pearson": 156.7529,
+      "p50": 3.0,
+      "p75": 3.0,
+      "p90": 3.0,
+      "p95": 4.0,
+      "p99": 9.92,
+      "min": 0.0,
+      "max": 950.0,
+      "gini": 0.6943
+    },
+    "out_degree_moments": {
+      "count": 953,
+      "mean": 8.8951,
+      "median": 6.0,
+      "mode": 6.0,
+      "variance": 1766.0142,
+      "std_dev": 42.024,
+      "skewness": 18.7567,
+      "kurtosis_excess": 374.0309,
+      "kurtosis_pearson": 377.0309,
+      "p50": 6.0,
+      "p75": 6.0,
+      "p90": 6.0,
+      "p95": 7.0,
+      "p99": 19.36,
+      "min": 1.0,
+      "max": 930.0,
+      "gini": 0.3279
+    },
+    "strongly_connected_components": 3,
+    "largest_scc_size": 951,
+    "weakly_connected_components": 1,
+    "largest_wcc_size": 953,
+    "average_shortest_path_length": 2.0155,
+    "diameter": 4,
+    "reciprocal_edges": 3572,
+    "reciprocal_pairs": 1786,
+    "reciprocity_ratio": 0.4214,
+    "hub_robustness": {
+      "top_1": {
+        "hubs_removed": [
+          "crawl/index.html"
+        ],
+        "remaining_nodes": 952,
+        "weakly_connected_components": 1,
+        "largest_component_size": 952,
+        "home_reachable_count": 950,
+        "home_reachable_fraction": 0.9979
+      },
+      "top_3": {
+        "hubs_removed": [
+          "characters/index.html",
+          "search/index.html",
+          "crawl/index.html"
+        ],
+        "remaining_nodes": 950,
+        "weakly_connected_components": 2,
+        "largest_component_size": 949,
+        "home_reachable_count": 901,
+        "home_reachable_fraction": 0.9484
+      },
+      "top_5": {
+        "hubs_removed": [
+          "search/index.html",
+          "index.html",
+          "crawl/index.html",
+          "characters/index.html",
+          "clans/index.html"
+        ],
+        "remaining_nodes": 948,
+        "weakly_connected_components": 3,
+        "largest_component_size": 946,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      },
+      "top_10": {
+        "hubs_removed": [
+          "myths/index.html",
+          "search/index.html",
+          "zubaida/19fd8d193b40cda8/index.html",
+          "index.html",
+          "crossscaling/index.html",
+          "provenance/index.html",
+          "crawl/index.html",
+          "characters/index.html",
+          "clans/index.html",
+          "zubaida/index.html"
+        ],
+        "remaining_nodes": 943,
+        "weakly_connected_components": 4,
+        "largest_component_size": 940,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      }
+    },
+    "top_pagerank": [
+      {
+        "node": "crawl/index.html",
+        "score": 0.108344
+      },
+      {
+        "node": "search/index.html",
+        "score": 0.101919
+      },
+      {
+        "node": "index.html",
+        "score": 0.093458
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.082256
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.073348
+      },
+      {
+        "node": "chronology/index.html",
+        "score": 0.072965
+      },
+      {
+        "node": "masterpages/index.html",
+        "score": 0.016496
+      },
+      {
+        "node": "concepts/index.html",
+        "score": 0.016189
+      },
+      {
+        "node": "404.html",
+        "score": 0.01605
+      },
+      {
+        "node": "clans/anchorite-order/index.html",
+        "score": 0.003297
+      }
+    ],
+    "top_betweenness": [
+      {
+        "node": "crawl/index.html",
+        "score": 0.542818
+      },
+      {
+        "node": "search/index.html",
+        "score": 0.433484
+      },
+      {
+        "node": "characters/index.html",
+        "score": 0.012637
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.009289
+      },
+      {
+        "node": "index.html",
+        "score": 0.004891
+      },
+      {
+        "node": "myths/index.html",
+        "score": 0.001529
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.001309
+      },
+      {
+        "node": "zubaida/index.html",
+        "score": 0.001094
+      },
+      {
+        "node": "zubaida/19fd8d193b40cda8/index.html",
+        "score": 0.001048
+      },
+      {
+        "node": "crossscaling/index.html",
+        "score": 0.001019
+      }
+    ],
+    "sitemap_audit": {
+      "sitemap_present": true,
+      "urls_in_sitemap": 952,
+      "valid_pages_in_sitemap": 952,
+      "missing_from_sitemap": [
+        "_layouts/divine.html"
+      ],
+      "missing_count": 1,
+      "broken_urls_in_sitemap": []
+    }
+  },
+  "regression_summary": {
+    "baseline_present": true,
+    "regressions_detected": true,
+    "regression_count": 2,
+    "improvement_count": 7,
+    "regressions": [
+      "reciprocity_ratio decreased from 0.4594 to 0.4214 (degradation: -0.038)",
+      "depth_max degraded from 2.0 to 3.0 (+1.0)"
+    ],
+    "improvements": [
+      "home_reachable_count increased from 930 to 951 (improvement: +21)",
+      "home_unreachable_count decreased from 21 to 2 (improvement: -19)",
+      "orphan_count decreased from 21 to 2 (improvement: -19)",
+      "dead_end_count decreased from 1 to 0 (improvement: -1)",
+      "broken_links_count decreased from 1 to 0 (improvement: -1)",
+      "broken_anchors_count decreased from 1943 to 1889 (improvement: -54)",
+      "reciprocal_edges increased from 3544 to 3572 (improvement: +28)"
+    ],
+    "deltas": {
+      "home_reachable_count": {
+        "baseline": 930,
+        "current": 951,
+        "delta": 21
+      },
+      "home_unreachable_count": {
+        "baseline": 21,
+        "current": 2,
+        "delta": -19
+      },
+      "orphan_count": {
+        "baseline": 21,
+        "current": 2,
+        "delta": -19
+      },
+      "dead_end_count": {
+        "baseline": 1,
+        "current": 0,
+        "delta": -1
+      },
+      "broken_links_count": {
+        "baseline": 1,
+        "current": 0,
+        "delta": -1
+      },
+      "broken_anchors_count": {
+        "baseline": 1943,
+        "current": 1889,
+        "delta": -54
+      },
+      "reciprocal_edges": {
+        "baseline": 3544,
+        "current": 3572,
+        "delta": 28
+      },
+      "reciprocity_ratio": {
+        "baseline": 0.4594,
+        "current": 0.4214,
+        "delta": -0.038
+      },
+      "average_shortest_path_length": {
+        "baseline": 2.0017,
+        "current": 2.0155,
+        "delta": 0.0138
+      },
+      "diameter": {
+        "baseline": 3,
+        "current": 4,
+        "delta": 1
+      },
+      "depth_mean": {
+        "baseline": 1.9957,
+        "current": 2.0063,
+        "delta": 0.0106
+      },
+      "depth_max": {
+        "baseline": 2.0,
+        "current": 3.0,
+        "delta": 1.0
+      },
+      "depth_p95": {
+        "baseline": 2.0,
+        "current": 2.0,
+        "delta": 0.0
+      },
+      "depth_p99": {
+        "baseline": 2.0,
+        "current": 3.0,
+        "delta": 1.0
+      },
+      "depth_gini": {
+        "baseline": 0.0021,
+        "current": 0.0104,
+        "delta": 0.0083
+      },
+      "depth_variance": {
+        "baseline": 0.0064,
+        "current": 0.0231,
+        "delta": 0.0167
+      }
+    },
+    "status": "REGRESSION_DETECTED"
+  }
+}

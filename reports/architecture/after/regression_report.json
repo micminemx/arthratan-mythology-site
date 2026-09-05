@@ -1,0 +1,102 @@
+{
+  "baseline_present": true,
+  "regressions_detected": true,
+  "regression_count": 2,
+  "improvement_count": 7,
+  "regressions": [
+    "reciprocity_ratio decreased from 0.4594 to 0.4214 (degradation: -0.038)",
+    "depth_max degraded from 2.0 to 3.0 (+1.0)"
+  ],
+  "improvements": [
+    "home_reachable_count increased from 930 to 951 (improvement: +21)",
+    "home_unreachable_count decreased from 21 to 2 (improvement: -19)",
+    "orphan_count decreased from 21 to 2 (improvement: -19)",
+    "dead_end_count decreased from 1 to 0 (improvement: -1)",
+    "broken_links_count decreased from 1 to 0 (improvement: -1)",
+    "broken_anchors_count decreased from 1943 to 1889 (improvement: -54)",
+    "reciprocal_edges increased from 3544 to 3572 (improvement: +28)"
+  ],
+  "deltas": {
+    "home_reachable_count": {
+      "baseline": 930,
+      "current": 951,
+      "delta": 21
+    },
+    "home_unreachable_count": {
+      "baseline": 21,
+      "current": 2,
+      "delta": -19
+    },
+    "orphan_count": {
+      "baseline": 21,
+      "current": 2,
+      "delta": -19
+    },
+    "dead_end_count": {
+      "baseline": 1,
+      "current": 0,
+      "delta": -1
+    },
+    "broken_links_count": {
+      "baseline": 1,
+      "current": 0,
+      "delta": -1
+    },
+    "broken_anchors_count": {
+      "baseline": 1943,
+      "current": 1889,
+      "delta": -54
+    },
+    "reciprocal_edges": {
+      "baseline": 3544,
+      "current": 3572,
+      "delta": 28
+    },
+    "reciprocity_ratio": {
+      "baseline": 0.4594,
+      "current": 0.4214,
+      "delta": -0.038
+    },
+    "average_shortest_path_length": {
+      "baseline": 2.0017,
+      "current": 2.0155,
+      "delta": 0.0138
+    },
+    "diameter": {
+      "baseline": 3,
+      "current": 4,
+      "delta": 1
+    },
+    "depth_mean": {
+      "baseline": 1.9957,
+      "current": 2.0063,
+      "delta": 0.0106
+    },
+    "depth_max": {
+      "baseline": 2.0,
+      "current": 3.0,
+      "delta": 1.0
+    },
+    "depth_p95": {
+      "baseline": 2.0,
+      "current": 2.0,
+      "delta": 0.0
+    },
+    "depth_p99": {
+      "baseline": 2.0,
+      "current": 3.0,
+      "delta": 1.0
+    },
+    "depth_gini": {
+      "baseline": 0.0021,
+      "current": 0.0104,
+      "delta": 0.0083
+    },
+    "depth_variance": {
+      "baseline": 0.0064,
+      "current": 0.0231,
+      "delta": 0.0167
+    }
+  },
+  "status": "REGRESSION_DETECTED"
+}

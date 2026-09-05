@@ -1,0 +1,20 @@
+[COMPILER] Initializing calibrated compilation for: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site
+[COMPILER] Output reports directory: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated
+[COMPILER] Discovered 951 production HTML pages across site.
+[COMPILER] Formally excluded 2 non-production template/fixture files:
+  - test/arthratanmythology.com/index.html (test: Local test fixtures and verification mocks; decoupled from production navigation)
+  - _layouts/divine.html (_layouts: Internal Jekyll template layouts containing raw Liquid directives; not deployed as standalone HTML pages)
+[COMPILER] Directed link graph constructed: 951 nodes, 8472 edges.
+[COMPILER] Verified 1032 client-side SPA routing fragments on index.html.
+[COMPILER] Home BFS traversal complete: 951 reachable, 0 unreachable.
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\site_compile_report.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\site_compile_report.md
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\violations.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\navigation_metrics.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\site_graph.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\relationship_matrix.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\worst_pages.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\regression_report.json
+[COMPILER] Wrote artifact: C:\Users\Michael\Documents\GitHub\arthratan-mythology-site\reports\architecture\final-calibrated\regression_report.md
+[COMPILER] Site compilation completed.
+[COMPILER] PASS: 0 critical architectural errors detected. Production site architecture 100% clean.

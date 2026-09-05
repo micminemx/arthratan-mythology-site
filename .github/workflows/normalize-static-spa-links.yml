@@ -1,0 +1,62 @@
+name: Normalize static SPA deep links
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/normalize-static-spa-links.py"
+      - "scripts/generate-comprehensive-static-corpus.py"
+      - "data/divine.json"
+      - "data/hgl-pages.json"
+      - "data/global-concept-inventory.json"
+      - "data/zubaida-index.json"
+      - "divine/**"
+      - "hgl/**"
+      - "zubaida/**"
+      - "concepts/**"
+      - ".github/workflows/normalize-static-spa-links.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: normalize-static-spa-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate normalizer syntax
+        run: python -m py_compile scripts/normalize-static-spa-links.py
+
+      - name: Normalize exact dynamic route targets
+        run: python scripts/normalize-static-spa-links.py
+
+      - name: Verify legacy false-positive route families are gone
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -R -n -E 'href=["'"'"']/?#(zubaida:|concept:)' divine hgl zubaida concepts 2>/dev/null; then
+            echo "Unimplemented legacy SPA aliases remain"
+            exit 1
+          fi
+          echo "Static SPA deep-link normalization verified."
+
+      - name: Commit normalized generated pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add divine/ hgl/ zubaida/ concepts/
+          if git diff --cached --quiet; then
+            echo "Static SPA links already normalized."
+            exit 0
+          fi
+          git commit -m "Normalize static SPA deep links"
+          git push

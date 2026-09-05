@@ -47,3 +47,73 @@
 .concept-nav a:hover{border-color:#e4b76f;color:#f3d79f}
 .formula-stack{display:grid;gap:10px}
 .formula{font-family:monospace;background:#18141f;border:1px solid #3d3148;padding:10px 14px;border-radius:8px;color:#f0c7ff;font-size:14px}
+
+/* --- Information Architecture & Navigation Styles --- */
+
+/* Hierarchical Breadcrumbs (IA-FIX-002) */
+.breadcrumbs{display:flex;align-items:center;gap:8px;font-size:13px;color:#9b8eab;flex-wrap:wrap}
+.breadcrumbs a{color:#e4b76f;text-decoration:none;transition:color .15s}
+.breadcrumbs a:hover{color:#fff;text-decoration:underline}
+.breadcrumbs .crumb-sep{color:#55485f;font-size:11px}
+.breadcrumbs .crumb-current{color:#e2d8ea;font-weight:500}
+
+/* INDEX-002: A-Z Site Index Reader UI */
+.index-toolbar{position:sticky;top:68px;z-index:20;background:rgba(15,12,24,.96);backdrop-filter:blur(14px);border:1px solid #3d3148;border-radius:16px;padding:16px 20px;margin-bottom:24px;box-shadow:0 12px 36px rgba(0,0,0,.45)}
+.alphabet-jump-bar{display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.alphabet-jump-bar button{min-width:34px;height:34px;border-radius:8px;border:1px solid #4a3b63;background:#181326;color:#e2e8f0;font-size:12px;font-weight:600;cursor:pointer;display:grid;place-items:center;transition:.15s}
+.alphabet-jump-bar button:hover,.alphabet-jump-bar button.is-active{background:var(--violet,#9f7aea);border-color:#bc8dff;color:#fff;box-shadow:0 0 12px rgba(159,122,234,.45)}
+.index-search-input{width:100%;border:1px solid #3b3045;background:#09080c;color:#eee;border-radius:10px;padding:12px 14px;outline:none;font-size:14px;box-sizing:border-box}
+.index-search-input:focus{border-color:#805fc2;box-shadow:0 0 0 3px rgba(128,95,194,.15)}
+.domain-filter-row{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.domain-pill{padding:6px 12px;border-radius:999px;border:1px solid #3d3049;background:#140f1f;color:#a99db0;font-size:11px;cursor:pointer;transition:.15s}
+.domain-pill:hover,.domain-pill.is-active{border-color:#e4b76f;color:#fff;background:rgba(228,183,111,.15)}
+.index-meta-strip{display:flex;justify-content:space-between;align-items:center;margin:16px 0 20px;color:#9b8eab;font-size:12px}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:16px}
+.index-card{background:linear-gradient(180deg,rgba(24,19,38,.92),rgba(15,12,24,.96));border:1px solid #332845;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}
+.index-card:hover{transform:translateY(-3px);border-color:#664d7d}
+.index-card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:8px}
+.index-domain-badge{font-size:10px;text-transform:uppercase;letter-spacing:.12em;padding:3px 8px;border-radius:6px;font-weight:600}
+.index-domain-divine{background:rgba(237,137,54,.15);color:#fbd38d;border:1px solid rgba(237,137,54,.35)}
+.index-domain-zubaida{background:rgba(79,209,197,.15);color:#81e6d9;border:1px solid rgba(79,209,197,.35)}
+.index-domain-hgl{background:rgba(72,187,120,.15);color:#9ae6b4;border:1px solid rgba(72,187,120,.35)}
+.index-domain-concepts{background:rgba(214,175,55,.15);color:#f6e05e;border:1px solid rgba(214,175,55,.35)}
+.index-domain-characters{background:rgba(159,122,234,.15);color:#d6bcfa;border:1px solid rgba(159,122,234,.35)}
+.index-domain-chronology{background:rgba(224,134,211,.15);color:#fbb6ce;border:1px solid rgba(224,134,211,.35)}
+.index-domain-clans{background:rgba(246,173,85,.15);color:#fbd38d;border:1px solid rgba(246,173,85,.35)}
+.index-card h3{font-family:Georgia,serif;font-size:20px;margin:4px 0 8px;color:#fff}
+.index-card p{font-size:13px;color:#c3b9c8;line-height:1.5;margin:0 0 12px}
+.index-alias-list{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:12px}
+.index-alias-tag{font-size:10px;background:rgba(255,255,255,.05);border:1px solid #3d3049;border-radius:4px;padding:2px 6px;color:#9f8ea8}
+.index-card-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #281f34;padding-top:10px;margin-top:auto}
+
+/* Character Encyclopedia & Dossier */
+.roster-filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.roster-pill{padding:6px 14px;border-radius:999px;border:1px solid #473657;background:#140f1c;color:#a99db0;font-size:12px;cursor:pointer;transition:.15s}
+.roster-pill:hover,.roster-pill.is-active{background:rgba(228,183,111,.15);border-color:#e4b76f;color:#fff}
+.character-roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.character-card{border:1px solid #362944;border-radius:16px;background:linear-gradient(180deg,#171122,#0d0a13);padding:18px;display:flex;gap:16px;align-items:center;cursor:pointer;text-decoration:none;color:inherit;transition:.2s transform,.2s border-color}
+.character-card:hover{transform:translateY(-3px);border-color:#825fc2}
+.character-avatar{width:68px;height:68px;border-radius:12px;object-fit:cover;border:1px solid #473657;background:#09070e;flex-shrink:0}
+.character-card-info h3{font-family:Georgia,serif;font-size:18px;margin:0 0 4px;color:#f1e6f7}
+.character-card-info small{color:#e4b76f;display:block;font-size:11px;margin-bottom:4px}
+.character-card-info p{color:#aba0b3;font-size:12px;margin:0;line-height:1.4}
+.dossier-hero{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;align-items:start;margin-bottom:30px}
+.dossier-portrait{border:1px solid #4a385c;border-radius:20px;overflow:hidden;background:#0f0c16;box-shadow:0 16px 40px rgba(0,0,0,.5)}
+.dossier-portrait img{width:100%;display:block}
+.dossier-meta-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:14px}
+.dossier-meta-table th{text-align:left;color:#e4b76f;width:130px;padding:6px 0;font-weight:500}
+.dossier-meta-table td{padding:6px 0;color:#ded3e4}
+
+/* Causal Ontology Styles */
+.ontology-ladder-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:20px 0}
+.ontology-rung-card{border:1px solid #443551;border-radius:14px;background:linear-gradient(180deg,#1b1325,#0d0b11);padding:18px}
+.ontology-rung-card b{color:#e4b76f;font-family:Georgia,serif;font-size:18px;display:block;margin-bottom:6px}
+.ontology-rung-card p{color:#c3b9c8;font-size:13px;margin:0}
+
+/* 404 Route Not Found / Recovery View */
+.not-found-card{border:1px solid #7a3a55;border-radius:20px;background:radial-gradient(circle at 50% 0,rgba(220,53,69,.12),transparent 50%),#140d17;padding:36px;max-width:800px;margin:40px auto;text-align:center}
+.not-found-card h2{font-family:Georgia,serif;font-size:32px;color:#ff99aa;margin:0 0 12px}
+.not-found-card p{color:#d1c5d6;font-size:15px;max-width:600px;margin:0 auto 24px;line-height:1.6}
+.not-found-code{display:inline-block;font-family:monospace;background:#251420;color:#ff88a3;padding:4px 10px;border-radius:6px;border:1px solid #572238}
+.recovery-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+
