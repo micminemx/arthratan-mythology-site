@@ -12,6 +12,7 @@ on:
       - "scripts/omniindex-v2.py"
       - "scripts/register-publication-graph.py"
       - "scripts/normalize-static-spa-links.py"
+      - "scripts/normalize-clan-links.py"
       - ".github/workflows/semantic-ia-gate.yml"
 
 permissions:
@@ -29,8 +30,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate audit engine syntax
-        run: python -m py_compile scripts/omniindex-v2.py scripts/register-publication-graph.py scripts/normalize-static-spa-links.py
+      - name: Validate audit and repair tooling syntax
+        run: python -m py_compile scripts/omniindex-v2.py scripts/register-publication-graph.py scripts/normalize-static-spa-links.py scripts/normalize-clan-links.py
 
       - name: Run exact multi-edge OmniIndex V2 gate
         run: python scripts/omniindex-v2.py . --out-dir reports/architecture/omniindex-v2
