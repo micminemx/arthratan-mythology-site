@@ -1,5 +1,5 @@
 Arthratan Mythology — AI-native complete-text retrieval index
-Generated from GitHub commit: unspecified-build-snapshot
+Generated from GitHub commit: 0d142efb30dbc9cb553f209cfd1113bfc8de725b
 Records: 829
 
 Manifest: https://arthratanmythology.com/ai/index.json
