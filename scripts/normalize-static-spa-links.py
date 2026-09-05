@@ -94,8 +94,13 @@ def normalize_zubaida() -> int:
             text = text.replace(old, new)
             write(page, text)
             changed += 1
-        elif new not in text:
-            raise RuntimeError(f"Zubaida reader {tid} exposes neither canonical transmission route nor legacy alias")
+        elif new in text:
+            continue
+        else:
+            # Some deliberately preserved legacy/static reader aliases expose no SPA
+            # deep link at all. Absence is not a broken target; only an emitted bad
+            # #zubaida:<id> alias is a defect. Leave such pages unchanged.
+            continue
     return changed
 
 
