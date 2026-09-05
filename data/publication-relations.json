@@ -1,0 +1,88 @@
+{
+  "schema": "publication-relations-v1",
+  "generated": "2026-09-05",
+  "purpose": "Typed reciprocal navigation/evidence relationships for published Myths, Crossscaling records, character dossiers, and exact Zubaida evidence. This file does not create canon; it records relationships already explicit in published pages and primary-source provenance.",
+  "records": [
+    {
+      "id": "ria-six-clashes",
+      "myth": "/myths/rhayhara-inzra-annaris-six-clashes/",
+      "crossscaling": "/crossscaling/rhayhara-inzra-annaris-six-clashes/",
+      "characters": ["/characters/rhayhara/", "/characters/inzra/", "/characters/annaris-deyhamora/"],
+      "primary_sources": ["/zubaida/19fd51c7627df797/", "/sources/zubaida/19fd51c7627df797.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "rhayhara-ten-trials",
+      "myth": "/myths/rhayharas-ten-destiny-defying-trials/",
+      "crossscaling": null,
+      "characters": ["/characters/rhayhara/"],
+      "primary_sources": ["/zubaida/19f0e8f96cb8730c/", "/sources/zubaida/19f0e8f96cb8730c.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "rhayhara-othrys",
+      "myth": "/myths/rhayhara-and-othrys-five-orthogonal-escalations/",
+      "crossscaling": "/crossscaling/rhayhara-othrys-orthogonal-escalation/",
+      "characters": ["/characters/rhayhara/"],
+      "primary_sources": ["/zubaida/19f0d1c0f4a5d5e5/", "/sources/zubaida/19f0d1c0f4a5d5e5.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "rhayhara-eidos",
+      "myth": "/myths/rhayhara-vs-the-eidos-swarm/",
+      "crossscaling": "/crossscaling/rhayhara-eidos-mirror-fuel-inversion/",
+      "characters": ["/characters/rhayhara/"],
+      "primary_sources": ["/zubaida/19fe5329dab82c86/", "/sources/zubaida/19fe5329dab82c86.txt"],
+      "supporting_sources": ["/zubaida/1a0601fc96f7add3/", "/sources/zubaida/1a0601fc96f7add3.txt"],
+      "status": "published"
+    },
+    {
+      "id": "dyvane-xael-gath",
+      "myth": "/myths/dyvane-vs-xael-gath/",
+      "crossscaling": "/crossscaling/dyvane-xael-gath-resolution/",
+      "characters": ["/characters/dyvane-redalious/", "/characters/xael-gath/"],
+      "primary_sources": ["/zubaida/19fa076eb25a917b/", "/sources/zubaida/19fa076eb25a917b.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "qintara-vaelstrum",
+      "myth": "/myths/qintara-vs-vaelstrum/",
+      "crossscaling": "/crossscaling/qintara-vaelstrum-resolution/",
+      "characters": ["/characters/qintara-unmatara/", "/characters/vaelstrum/"],
+      "primary_sources": ["/zubaida/19fa076eb25a917b/", "/sources/zubaida/19fa076eb25a917b.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "high-lord-kaelen-ophidion",
+      "myth": "/myths/high-lord-kaelen-vs-ophidion/",
+      "crossscaling": "/crossscaling/high-lord-kaelen-ophidion-resolution/",
+      "characters": ["/characters/high-lord-kaelen-vanguard/", "/characters/ophidion/"],
+      "primary_sources": ["/zubaida/19fa076eb25a917b/", "/sources/zubaida/19fa076eb25a917b.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "rhayhara-dalroemar",
+      "myth": "/myths/rhayhara-vs-dalroemar/",
+      "crossscaling": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/",
+      "characters": ["/characters/rhayhara/", "/characters/dalroemar/"],
+      "primary_sources": ["/zubaida/19f19b822cb7e8bd/", "/sources/zubaida/19f19b822cb7e8bd.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    },
+    {
+      "id": "halatayo-projected-future",
+      "myth": "/myths/halatayo-and-the-projected-amnifuture-hyperchallenge/",
+      "crossscaling": "/crossscaling/halatayo-projected-future-threat-interception/",
+      "characters": ["/characters/halatayo/", "/characters/orotus/"],
+      "primary_sources": ["/zubaida/19ebdf5c2d46c894/", "/sources/zubaida/19ebdf5c2d46c894.txt"],
+      "supporting_sources": [],
+      "status": "published"
+    }
+  ]
+}
