@@ -31,10 +31,6 @@ RELATION_BLOCK = re.compile(
     r"<!--\s*PUBLICATION-RELATIONS:START\s*-->.*?<!--\s*PUBLICATION-RELATIONS:END\s*-->",
     re.I | re.S,
 )
-SOURCE_DEP_BLOCK = re.compile(
-    r"<!--\s*SOURCE-DEPENDENCY-GRAPH:START\s*-->.*?<!--\s*SOURCE-DEPENDENCY-GRAPH:END\s*-->",
-    re.I | re.S,
-)
 SOURCE_PRE = re.compile(r"<pre\s+class=[\"']source[\"'][^>]*>(.*?)</pre>", re.I | re.S)
 
 
@@ -55,6 +51,9 @@ def base_text(path: str) -> str | None:
 
 def normalize_publication(text: str) -> str:
     text = RELATION_BLOCK.sub("", text)
+    # Relationship-block insertion can introduce a newline between adjacent closing
+    # tags. Treat inter-tag whitespace as formatting, then collapse remaining runs.
+    text = re.sub(r">\s+<", "><", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -70,7 +69,7 @@ def main() -> int:
         if path == "COMMANDER.md" or path.startswith("sources/") or path in PROHIBITED_EXACT:
             fail(f"Prohibited canon/source path changed: {path}", failures)
 
-    # Myth/Crossscaling prose must be byte-equivalent modulo the explicitly generated
+    # Myth/Crossscaling prose must be equivalent modulo the explicitly generated
     # relationship block and insignificant whitespace around its insertion point.
     for path in paths:
         if not (path.startswith("myths/") or path.startswith("crossscaling/")) or not path.endswith("/index.html"):
@@ -103,8 +102,6 @@ def main() -> int:
         if "CROSSSCALE-ONLY" not in text.upper() or "NONCANON" not in text.upper():
             fail(f"Crossscaling canon boundary missing: {page.relative_to(ROOT).as_posix()}", failures)
 
-    # Source dependency navigation may be added to Zubaida HTML, but raw source files
-    # are categorically outside this IA patch's write scope (already enforced above).
     print(f"IA publication scope gate checked {len(paths)} changed paths.")
     if failures:
         print(f"FAIL: {len(failures)} scope/canon-boundary violations")
