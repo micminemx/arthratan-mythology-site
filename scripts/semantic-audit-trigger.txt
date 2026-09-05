@@ -1,0 +1,1 @@
+Semantic IA gate must include scripts/normalize-clan-links.py in its syntax validation and push-path coverage.
