@@ -1,0 +1,2 @@
+arthratan_site_compiler_pre_omniindex.py SHA-256: fed4b9a471f00bbaea857a7eb24f66af394d15b42f61d5fd52e93b645902c665
+arthratan_site_architect_pre_omniindex.py SHA-256: ffc00a7b26b14b545d7b5a1670d5a2f0b7444069ed107f40b8b1e95411a82594

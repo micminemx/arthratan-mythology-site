@@ -1,0 +1,100 @@
+{
+  "Characters": {
+    "page_count": 56,
+    "mean_outgoing_distance": 2.0048,
+    "mean_incoming_distance": 2.2195,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Chronology": {
+    "page_count": 1,
+    "mean_outgoing_distance": 2.0084,
+    "mean_incoming_distance": 1.02,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Clans": {
+    "page_count": 19,
+    "mean_outgoing_distance": 2.0064,
+    "mean_incoming_distance": 1.9648,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Concepts": {
+    "page_count": 25,
+    "mean_outgoing_distance": 2.0058,
+    "mean_incoming_distance": 2.0161,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Crawl": {
+    "page_count": 1,
+    "mean_outgoing_distance": 1.0347,
+    "mean_incoming_distance": 1.0189,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Crossscaling": {
+    "page_count": 9,
+    "mean_outgoing_distance": 2.8655,
+    "mean_incoming_distance": 1.9926,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Divine": {
+    "page_count": 318,
+    "mean_outgoing_distance": 2.0063,
+    "mean_incoming_distance": 2.0074,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "HGL": {
+    "page_count": 294,
+    "mean_outgoing_distance": 2.0064,
+    "mean_incoming_distance": 2.0074,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Home": {
+    "page_count": 2,
+    "mean_outgoing_distance": 2.019,
+    "mean_incoming_distance": 1.5006,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Masterpages": {
+    "page_count": 94,
+    "mean_outgoing_distance": 2.0062,
+    "mean_incoming_distance": 2.0162,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Myths": {
+    "page_count": 10,
+    "mean_outgoing_distance": 2.1971,
+    "mean_incoming_distance": 1.9917,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Search": {
+    "page_count": 1,
+    "mean_outgoing_distance": 1.1621,
+    "mean_incoming_distance": 1.0137,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Sources/Provenance": {
+    "page_count": 1,
+    "mean_outgoing_distance": 2.0084,
+    "mean_incoming_distance": 1.0116,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  },
+  "Zubaida": {
+    "page_count": 120,
+    "mean_outgoing_distance": 2.0148,
+    "mean_incoming_distance": 2.0149,
+    "outgoing_reachability": 1.0,
+    "incoming_reachability": 1.0
+  }
+}

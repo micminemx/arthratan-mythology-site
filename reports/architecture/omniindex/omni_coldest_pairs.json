@@ -1,0 +1,802 @@
+[
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Zubaida",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/zubaida/19fd8d193b40dca8/index.html -> /zubaida/19fd8d193b40cda8/index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Home",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/404.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Home",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/404.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/crossscaling/dyvane-xael-gath-resolution/index.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/dyvane-xael-gath-resolution/index.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/high-lord-kaelen-ophidion-resolution/index.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/crossscaling/qintara-vaelstrum-resolution/index.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/qintara-vaelstrum-resolution/index.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/halatayo-projected-future-threat-interception/index.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/varek/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/varek/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/characters/zaxor/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/zaxor/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "destination_route": "/zubaida/19fd8d193b40dca8/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Zubaida",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html -> /index.html -> /search/index.html -> /zubaida/index.html -> /zubaida/19fd8d193b40dca8/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/annaris/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/annaris/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/asmouth/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/asmouth/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/dyvane/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/dyvane/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/high-lord-kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/high-lord-kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/kaelen/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kaelen/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/kartus/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/kartus/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/lyra/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/lyra/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/qintara/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/qintara/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/sylvanna/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/sylvanna/index.html"
+  },
+  {
+    "source_route": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "destination_route": "/characters/thalyros/index.html",
+    "source_category": "Crossscaling",
+    "destination_category": "Characters",
+    "shortest_distance": 4,
+    "exact_shortest_path": "/crossscaling/rhayhara-inzra-annaris-six-clashes/index.html -> /index.html -> /search/index.html -> /characters/index.html -> /characters/thalyros/index.html"
+  }
+]

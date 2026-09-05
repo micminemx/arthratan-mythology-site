@@ -1,0 +1,52 @@
+{
+  "G_all": {
+    "graph_name": "All Internal Links (Production)",
+    "reachable_pairs": 903450,
+    "total_pairs": 903450,
+    "reachability_ratio": 1.0,
+    "mean_distance": 2.0155,
+    "median_distance": 2.0,
+    "p95": 2.0,
+    "diameter": 4
+  },
+  "G_human": {
+    "graph_name": "Human-Facing Navigation (Crawl Excluded)",
+    "reachable_pairs": 901550,
+    "total_pairs": 903450,
+    "reachability_ratio": 0.997897,
+    "mean_distance": 2.1406,
+    "median_distance": 2.0,
+    "p95": 3.0,
+    "diameter": 4
+  },
+  "G_semantic": {
+    "graph_name": "Contextual & Body Links",
+    "reachable_pairs": 1340,
+    "total_pairs": 903450,
+    "reachability_ratio": 0.001483,
+    "mean_distance": 1.3739,
+    "median_distance": 1.0,
+    "p95": 3.0,
+    "diameter": 5
+  },
+  "G_evidence": {
+    "graph_name": "Evidence & Primary Source Links",
+    "reachable_pairs": 1474,
+    "total_pairs": 903450,
+    "reachability_ratio": 0.001632,
+    "mean_distance": 1.0855,
+    "median_distance": 1.0,
+    "p95": 2.0,
+    "diameter": 3
+  },
+  "G_masked": {
+    "graph_name": "Masked Stress Graph (Headers/Footers/Crawl/Search Removed)",
+    "reachable_pairs": 1610,
+    "total_pairs": 903450,
+    "reachability_ratio": 0.001782,
+    "mean_distance": 1.7559,
+    "median_distance": 1.0,
+    "p95": 4.0,
+    "diameter": 6
+  }
+}
