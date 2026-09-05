@@ -17,6 +17,7 @@ on:
       - "scripts/normalize-site-index-targets.py"
       - "scripts/site_index_target_gate.py"
       - "scripts/harden-spa-rendering.py"
+      - "scripts/ia_publication_scope_gate.py"
       - ".github/workflows/semantic-ia-gate.yml"
 
 permissions:
@@ -34,8 +35,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate audit, generation and repair tooling syntax
-        run: python -m py_compile scripts/omniindex-v2.py scripts/register-publication-graph.py scripts/normalize-static-spa-links.py scripts/normalize-clan-links.py scripts/build-site-index.py scripts/normalize-site-index-targets.py scripts/site_index_target_gate.py scripts/harden-spa-rendering.py
+      - name: Validate audit, generation, scope and repair tooling syntax
+        run: python -m py_compile scripts/omniindex-v2.py scripts/register-publication-graph.py scripts/normalize-static-spa-links.py scripts/normalize-clan-links.py scripts/build-site-index.py scripts/normalize-site-index-targets.py scripts/site_index_target_gate.py scripts/harden-spa-rendering.py scripts/ia_publication_scope_gate.py
+
+      - name: Enforce pre-publication source and canon scope
+        run: python scripts/ia_publication_scope_gate.py
 
       - name: Verify hardened SPA rendering is reproducible
         shell: bash
