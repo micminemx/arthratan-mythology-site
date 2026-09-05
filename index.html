@@ -24,33 +24,39 @@
 <nav id="nav">
 <a data-route="home" href="#home"><img alt="" src="assets/art/chibi-codex.webp"/><span>Sanctuary</span></a>
 <a data-route="atlas" href="#atlas"><img alt="" src="assets/art/chibi-sources.webp"/><span>Visual Atlas</span></a>
-<div class="nav-label">Foundations</div>
+<a data-route="index" href="#index"><img alt="" src="assets/art/chibi-search.webp"/><span>A–Z Site Index</span></a>
+<div class="nav-label">Concepts &amp; Systems</div>
 <a data-route="masterpages" href="#masterpages"><img alt="" src="assets/art/chibi-scaling.webp"/><span>Masterpages Directory</span></a>
+<a data-route="ontology" href="#ontology"><img alt="" src="assets/art/chibi-negative-rewrite.webp"/><span>Causal Ontology</span></a>
 <a data-route="scaling" href="#scaling"><img alt="" src="assets/art/chibi-scaling.webp"/><span>Metagovernance &amp; Scaling</span></a>
 <a data-route="negative-rewrite" href="#negative-rewrite"><img alt="" src="assets/art/chibi-negative-rewrite.webp"/><span>Negative Rewrite</span></a>
-<div class="nav-label">People &amp; Biology</div>
+<div class="nav-label">People &amp; Entities</div>
+<a data-route="characters" href="#characters"><img alt="" src="assets/art/chibi-arthiteans.webp"/><span>Character Encyclopedia</span></a>
 <a data-route="arthiteans" href="#arthiteans"><img alt="" src="assets/art/chibi-arthiteans.webp"/><span>Arthitean Ontostates</span></a>
 <a data-route="rhayhara" href="#rhayhara"><img alt="" src="assets/art/chibi-rhayhara.webp"/><span>Rhayhara</span></a>
 <div class="nav-label">Formal Systems</div>
 <a data-route="hgl" href="#hgl"><img alt="" src="assets/art/chibi-hgl.webp"/><span>Hypergendered Logic</span></a>
 <a data-route="divine" href="#divine"><img alt="" src="assets/art/chibi-codex.webp"/><span>Divine v144 Archive</span></a>
 <a data-route="hgl-archive" href="#hgl-archive"><img alt="" src="assets/art/chibi-hgl.webp"/><span>HGL Archive</span></a>
-<div class="nav-label">Discovery</div>
+<div class="nav-label">Stories &amp; Correspondence</div>
 <a data-route="stories" href="#stories"><img alt="" src="assets/art/chibi-sources.webp"/><span>Story &amp; Thread Archive</span></a>
+<div class="nav-label">Discovery &amp; Research</div>
 <a data-route="search" href="/search/"><img alt="" src="assets/art/chibi-search.webp"/><span>Search the Codex</span></a>
 <a data-route="sources" href="#sources"><img alt="" src="assets/art/chibi-sources.webp"/><span>Sources &amp; Provenance</span></a>
+<a data-route="crawl" href="/crawl/"><img alt="" src="assets/art/chibi-codex.webp"/><span>Crawler Corpus</span></a>
 </nav>
 <div class="sidebar-foot"><span class="status-dot"></span><span>Public · crawlable</span></div>
 </aside>
 <div class="main-wrap">
 <header class="topbar"><button aria-label="Open navigation" class="menu-btn" id="openNav">☰</button><div class="breadcrumbs" id="crumbs">Sanctuary</div><div class="top-actions"><button class="ghost art-mini-action" id="shareBtn"><img alt="" src="assets/art/chibi-search.webp"/>Copy view link</button></div></header>
 <main id="main" tabindex="-1"><section class="page-intro" aria-label="Static discovery fallback"><div><div class="eyebrow">Arthratan mythology · source-preserving archive</div><h1 class="page-title">The Arthitean Codex</h1><p class="lede">JavaScript enhances the visual sanctuary, but discovery does not depend on it. The complete unified search corpus is available as ordinary crawlable HTML.</p><form action="/search/" method="get" role="search"><label for="staticSearch">Search the Codex</label><div class="hero-actions"><input id="staticSearch" name="q" type="search" placeholder="Try Dyvane Redalious, Hypernegative Rewrite, Inzra…"/><button type="submit" class="primary">Search 802 records</button></div></form><p><a href="/search/">Open complete no-JavaScript search</a> · <a href="/search/index.txt">Plain-text index</a> · <a href="/crawl/">Crawl index</a> · <a href="/llms.txt">LLM discovery guide</a></p></div></section></main>
-<footer><span>The Arthitean Codex · living visual canon</span><span>Source-preserving conversion · 28 Aug 2026</span></footer>
+<footer><span>The Arthitean Codex · living visual canon</span><span>Source-preserving conversion · 28 Aug 2026</span> · <a href="/masterpages/">Masterpages</a> · <a href="/concepts/">Concepts</a> · <a href="/404.html" style="opacity:0.7">404 Specification</a></footer>
 </div>
 </div>
 <div aria-live="polite" id="toast" role="status"></div>
 <script src="app.js"></script>
 <script src="archive.js"></script>
+<script src="source-provenance.js"></script>
 <script src="readability-components.js"></script>
 <script>(function(){function legacySearch(){var p=new URLSearchParams(location.search),q=p.get('q')||p.get('s');if(location.hash==='#search'||(!location.hash&&p.get('s'))){var u=new URL('/search/',location.origin);if(q)u.searchParams.set('q',q);location.replace(u.href);}}window.addEventListener('hashchange',legacySearch);legacySearch();})();</script>
 </body></html>

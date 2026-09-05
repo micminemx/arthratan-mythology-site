@@ -1,0 +1,373 @@
+{
+  "site_root": "C:\\Users\\Michael\\Documents\\GitHub\\arthratan-mythology-site",
+  "status": "PASS",
+  "critical_error_count": 0,
+  "violations_count": 0,
+  "metrics_summary": {
+    "production_html_files": 951,
+    "excluded_non_production_files": [
+      {
+        "file": "test/arthratanmythology.com/index.html",
+        "category": "test",
+        "reason": "Local test fixtures and verification mocks; decoupled from production navigation"
+      },
+      {
+        "file": "_layouts/divine.html",
+        "category": "_layouts",
+        "reason": "Internal Jekyll template layouts containing raw Liquid directives; not deployed as standalone HTML pages"
+      }
+    ],
+    "home_reachable_count": 951,
+    "home_unreachable_count": 0,
+    "orphan_count": 0,
+    "dead_end_count": 0,
+    "broken_links_count": 0,
+    "broken_anchors_count": 0,
+    "verified_spa_fragments_count": 1035,
+    "unrendered_templates_count": 0,
+    "depth_histogram": {
+      "0": 1,
+      "1": 5,
+      "2": 932,
+      "3": 13
+    },
+    "depth_moments": {
+      "count": 951,
+      "mean": 2.0063,
+      "median": 2.0,
+      "mode": 2.0,
+      "variance": 0.0231,
+      "std_dev": 0.152,
+      "skewness": -0.1246,
+      "kurtosis_excess": 64.0466,
+      "kurtosis_pearson": 67.0466,
+      "p50": 2.0,
+      "p75": 2.0,
+      "p90": 2.0,
+      "p95": 2.0,
+      "p99": 3.0,
+      "min": 0.0,
+      "max": 3.0,
+      "gini": 0.0104
+    },
+    "in_degree_moments": {
+      "count": 951,
+      "mean": 8.9085,
+      "median": 3.0,
+      "mode": 3.0,
+      "variance": 5448.2093,
+      "std_dev": 73.812,
+      "skewness": 12.4635,
+      "kurtosis_excess": 153.418,
+      "kurtosis_pearson": 156.418,
+      "p50": 3.0,
+      "p75": 3.0,
+      "p90": 3.0,
+      "p95": 4.0,
+      "p99": 10.0,
+      "min": 1.0,
+      "max": 949.0,
+      "gini": 0.6935
+    },
+    "out_degree_moments": {
+      "count": 951,
+      "mean": 8.9085,
+      "median": 6.0,
+      "mode": 6.0,
+      "variance": 1769.6415,
+      "std_dev": 42.0671,
+      "skewness": 18.7375,
+      "kurtosis_excess": 373.2526,
+      "kurtosis_pearson": 376.2526,
+      "p50": 6.0,
+      "p75": 6.0,
+      "p90": 6.0,
+      "p95": 7.0,
+      "p99": 19.5,
+      "min": 1.0,
+      "max": 930.0,
+      "gini": 0.3273
+    },
+    "strongly_connected_components": 1,
+    "largest_scc_size": 951,
+    "weakly_connected_components": 1,
+    "largest_wcc_size": 951,
+    "average_shortest_path_length": 2.0155,
+    "diameter": 4,
+    "reciprocal_edges": 3572,
+    "reciprocal_pairs": 1786,
+    "reciprocity_ratio": 0.4216,
+    "hub_robustness": {
+      "top_1": {
+        "hubs_removed": [
+          "crawl/index.html"
+        ],
+        "remaining_nodes": 950,
+        "weakly_connected_components": 1,
+        "largest_component_size": 950,
+        "home_reachable_count": 950,
+        "home_reachable_fraction": 1.0
+      },
+      "top_3": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "search/index.html",
+          "characters/index.html"
+        ],
+        "remaining_nodes": 948,
+        "weakly_connected_components": 1,
+        "largest_component_size": 948,
+        "home_reachable_count": 901,
+        "home_reachable_fraction": 0.9504
+      },
+      "top_5": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "search/index.html",
+          "index.html",
+          "clans/index.html",
+          "characters/index.html"
+        ],
+        "remaining_nodes": 946,
+        "weakly_connected_components": 2,
+        "largest_component_size": 945,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      },
+      "top_10": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "crossscaling/index.html",
+          "provenance/index.html",
+          "myths/index.html",
+          "zubaida/index.html",
+          "search/index.html",
+          "index.html",
+          "zubaida/19fd8d193b40cda8/index.html",
+          "clans/index.html",
+          "characters/index.html"
+        ],
+        "remaining_nodes": 941,
+        "weakly_connected_components": 3,
+        "largest_component_size": 939,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      }
+    },
+    "top_pagerank": [
+      {
+        "node": "crawl/index.html",
+        "score": 0.108289
+      },
+      {
+        "node": "search/index.html",
+        "score": 0.101907
+      },
+      {
+        "node": "index.html",
+        "score": 0.093468
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.082307
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.073395
+      },
+      {
+        "node": "chronology/index.html",
+        "score": 0.073011
+      },
+      {
+        "node": "masterpages/index.html",
+        "score": 0.016498
+      },
+      {
+        "node": "concepts/index.html",
+        "score": 0.016191
+      },
+      {
+        "node": "404.html",
+        "score": 0.016052
+      },
+      {
+        "node": "clans/anchorite-order/index.html",
+        "score": 0.003299
+      }
+    ],
+    "top_betweenness": [
+      {
+        "node": "crawl/index.html",
+        "score": 0.543658
+      },
+      {
+        "node": "search/index.html",
+        "score": 0.434846
+      },
+      {
+        "node": "characters/index.html",
+        "score": 0.012663
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.009328
+      },
+      {
+        "node": "index.html",
+        "score": 0.004899
+      },
+      {
+        "node": "myths/index.html",
+        "score": 0.001535
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.001315
+      },
+      {
+        "node": "zubaida/index.html",
+        "score": 0.001096
+      },
+      {
+        "node": "zubaida/19fd8d193b40cda8/index.html",
+        "score": 0.001053
+      },
+      {
+        "node": "crossscaling/index.html",
+        "score": 0.001023
+      }
+    ],
+    "sitemap_audit": {
+      "sitemap_present": true,
+      "urls_in_sitemap": 931,
+      "valid_pages_in_sitemap": 931,
+      "missing_from_sitemap": [
+        "404.html",
+        "characters/annaris/index.html",
+        "characters/asmouth/index.html",
+        "characters/dyvane/index.html",
+        "characters/high-lord-kaelen/index.html",
+        "characters/index.html",
+        "characters/kaelen/index.html",
+        "characters/kartus/index.html",
+        "characters/lyra/index.html",
+        "characters/qintara/index.html",
+        "characters/sylvanna/index.html",
+        "characters/thalyros/index.html",
+        "characters/varek/index.html",
+        "characters/zaxor/index.html",
+        "concepts/index.html",
+        "divine/index.html",
+        "hgl/index.html",
+        "masterpages/index.html",
+        "zubaida/19fd8d193b40dca8/index.html",
+        "zubaida/index.html"
+      ],
+      "missing_count": 20,
+      "broken_urls_in_sitemap": []
+    }
+  },
+  "regression_summary": {
+    "baseline_present": true,
+    "regressions_detected": true,
+    "regression_count": 2,
+    "improvement_count": 7,
+    "regressions": [
+      "reciprocity_ratio decreased from 0.4594 to 0.4216 (degradation: -0.0378)",
+      "depth_max degraded from 2.0 to 3.0 (+1.0)"
+    ],
+    "improvements": [
+      "home_reachable_count increased from 930 to 951 (improvement: +21)",
+      "home_unreachable_count decreased from 21 to 0 (improvement: -21)",
+      "orphan_count decreased from 21 to 0 (improvement: -21)",
+      "dead_end_count decreased from 1 to 0 (improvement: -1)",
+      "broken_links_count decreased from 1 to 0 (improvement: -1)",
+      "broken_anchors_count decreased from 1943 to 0 (improvement: -1943)",
+      "reciprocal_edges increased from 3544 to 3572 (improvement: +28)"
+    ],
+    "deltas": {
+      "home_reachable_count": {
+        "baseline": 930,
+        "current": 951,
+        "delta": 21
+      },
+      "home_unreachable_count": {
+        "baseline": 21,
+        "current": 0,
+        "delta": -21
+      },
+      "orphan_count": {
+        "baseline": 21,
+        "current": 0,
+        "delta": -21
+      },
+      "dead_end_count": {
+        "baseline": 1,
+        "current": 0,
+        "delta": -1
+      },
+      "broken_links_count": {
+        "baseline": 1,
+        "current": 0,
+        "delta": -1
+      },
+      "broken_anchors_count": {
+        "baseline": 1943,
+        "current": 0,
+        "delta": -1943
+      },
+      "reciprocal_edges": {
+        "baseline": 3544,
+        "current": 3572,
+        "delta": 28
+      },
+      "reciprocity_ratio": {
+        "baseline": 0.4594,
+        "current": 0.4216,
+        "delta": -0.0378
+      },
+      "average_shortest_path_length": {
+        "baseline": 2.0017,
+        "current": 2.0155,
+        "delta": 0.0138
+      },
+      "diameter": {
+        "baseline": 3,
+        "current": 4,
+        "delta": 1
+      },
+      "depth_mean": {
+        "baseline": 1.9957,
+        "current": 2.0063,
+        "delta": 0.0106
+      },
+      "depth_max": {
+        "baseline": 2.0,
+        "current": 3.0,
+        "delta": 1.0
+      },
+      "depth_p95": {
+        "baseline": 2.0,
+        "current": 2.0,
+        "delta": 0.0
+      },
+      "depth_p99": {
+        "baseline": 2.0,
+        "current": 3.0,
+        "delta": 1.0
+      },
+      "depth_gini": {
+        "baseline": 0.0021,
+        "current": 0.0104,
+        "delta": 0.0083
+      },
+      "depth_variance": {
+        "baseline": 0.0064,
+        "current": 0.0231,
+        "delta": 0.0167
+      }
+    },
+    "status": "REGRESSION_DETECTED"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "site_root": "C:\\Users\\Michael\\Documents\\GitHub\\arthratan-mythology-site",
+  "status": "FAIL",
+  "critical_error_count": 45,
+  "violations_count": 1990,
+  "metrics_summary": {
+    "total_html_files": 951,
+    "home_reachable_count": 930,
+    "home_unreachable_count": 21,
+    "orphan_count": 21,
+    "dead_end_count": 1,
+    "broken_links_count": 1,
+    "broken_anchors_count": 1943,
+    "unrendered_templates_count": 2,
+    "depth_histogram": {
+      "0": 1,
+      "1": 2,
+      "2": 927
+    },
+    "depth_moments": {
+      "count": 930,
+      "mean": 1.9957,
+      "median": 2.0,
+      "mode": 2.0,
+      "variance": 0.0064,
+      "std_dev": 0.0802,
+      "skewness": -20.6784,
+      "kurtosis_excess": 460.2254,
+      "kurtosis_pearson": 463.2254,
+      "p50": 2.0,
+      "p75": 2.0,
+      "p90": 2.0,
+      "p95": 2.0,
+      "p99": 2.0,
+      "min": 0.0,
+      "max": 2.0,
+      "gini": 0.0021
+    },
+    "in_degree_moments": {
+      "count": 951,
+      "mean": 8.1125,
+      "median": 2.0,
+      "mode": 2.0,
+      "variance": 5442.3564,
+      "std_dev": 73.7723,
+      "skewness": 12.4618,
+      "kurtosis_excess": 153.3906,
+      "kurtosis_pearson": 156.3906,
+      "p50": 2.0,
+      "p75": 2.0,
+      "p90": 3.0,
+      "p95": 4.0,
+      "p99": 10.0,
+      "min": 0.0,
+      "max": 947.0,
+      "gini": 0.7798
+    },
+    "out_degree_moments": {
+      "count": 951,
+      "mean": 8.1125,
+      "median": 6.0,
+      "mode": 6.0,
+      "variance": 1557.2187,
+      "std_dev": 39.4616,
+      "skewness": 21.5844,
+      "kurtosis_excess": 470.6369,
+      "kurtosis_pearson": 473.6369,
+      "p50": 6.0,
+      "p75": 6.0,
+      "p90": 6.0,
+      "p95": 6.0,
+      "p99": 12.0,
+      "min": 0.0,
+      "max": 925.0,
+      "gini": 0.2664
+    },
+    "strongly_connected_components": 22,
+    "largest_scc_size": 930,
+    "weakly_connected_components": 2,
+    "largest_wcc_size": 950,
+    "average_shortest_path_length": 2.0017,
+    "diameter": 3,
+    "reciprocal_edges": 3544,
+    "reciprocal_pairs": 1772,
+    "reciprocity_ratio": 0.4594,
+    "hub_robustness": {
+      "top_1": {
+        "hubs_removed": [
+          "crawl/index.html"
+        ],
+        "remaining_nodes": 950,
+        "weakly_connected_components": 2,
+        "largest_component_size": 949,
+        "home_reachable_count": 821,
+        "home_reachable_fraction": 0.8642
+      },
+      "top_3": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "clans/index.html",
+          "search/index.html"
+        ],
+        "remaining_nodes": 948,
+        "weakly_connected_components": 3,
+        "largest_component_size": 946,
+        "home_reachable_count": 1,
+        "home_reachable_fraction": 0.0011
+      },
+      "top_5": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "search/index.html",
+          "myths/index.html",
+          "index.html",
+          "clans/index.html"
+        ],
+        "remaining_nodes": 946,
+        "weakly_connected_components": 4,
+        "largest_component_size": 942,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      },
+      "top_10": {
+        "hubs_removed": [
+          "crawl/index.html",
+          "zubaida/19fd8d193b40cda8/index.html",
+          "search/index.html",
+          "provenance/index.html",
+          "crossscaling/index.html",
+          "zubaida/19fa076eb25a917b/index.html",
+          "myths/index.html",
+          "index.html",
+          "clans/index.html",
+          "characters/rhayhara/index.html"
+        ],
+        "remaining_nodes": 941,
+        "weakly_connected_components": 5,
+        "largest_component_size": 936,
+        "home_reachable_count": 0,
+        "home_reachable_fraction": 0.0
+      }
+    },
+    "top_pagerank": [
+      {
+        "node": "search/index.html",
+        "score": 0.124982
+      },
+      {
+        "node": "crawl/index.html",
+        "score": 0.124733
+      },
+      {
+        "node": "index.html",
+        "score": 0.088315
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.083643
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.075131
+      },
+      {
+        "node": "chronology/index.html",
+        "score": 0.074711
+      },
+      {
+        "node": "clans/anchorite-order/index.html",
+        "score": 0.003362
+      },
+      {
+        "node": "clans/benzshin-elite/index.html",
+        "score": 0.003362
+      },
+      {
+        "node": "clans/keshra-hunters/index.html",
+        "score": 0.003362
+      },
+      {
+        "node": "clans/luminary-sisterhood/index.html",
+        "score": 0.003362
+      }
+    ],
+    "top_betweenness": [
+      {
+        "node": "crawl/index.html",
+        "score": 0.539943
+      },
+      {
+        "node": "search/index.html",
+        "score": 0.42057
+      },
+      {
+        "node": "clans/index.html",
+        "score": 0.009308
+      },
+      {
+        "node": "myths/index.html",
+        "score": 0.001546
+      },
+      {
+        "node": "index.html",
+        "score": 0.001452
+      },
+      {
+        "node": "provenance/index.html",
+        "score": 0.001329
+      },
+      {
+        "node": "zubaida/19fd8d193b40cda8/index.html",
+        "score": 0.001031
+      },
+      {
+        "node": "crossscaling/index.html",
+        "score": 0.001011
+      },
+      {
+        "node": "characters/rhayhara/index.html",
+        "score": 0.000769
+      },
+      {
+        "node": "zubaida/19fa076eb25a917b/index.html",
+        "score": 0.000583
+      }
+    ],
+    "sitemap_audit": {
+      "sitemap_present": true,
+      "urls_in_sitemap": 931,
+      "valid_pages_in_sitemap": 931,
+      "missing_from_sitemap": [
+        "404.html",
+        "_layouts/divine.html",
+        "characters/annaris/index.html",
+        "characters/asmouth/index.html",
+        "characters/dyvane/index.html",
+        "characters/high-lord-kaelen/index.html",
+        "characters/index.html",
+        "characters/kaelen/index.html",
+        "characters/kartus/index.html",
+        "characters/lyra/index.html",
+        "characters/qintara/index.html",
+        "characters/sylvanna/index.html",
+        "characters/thalyros/index.html",
+        "characters/varek/index.html",
+        "characters/zaxor/index.html",
+        "divine/index.html",
+        "hgl/index.html",
+        "test/arthratanmythology.com/index.html",
+        "zubaida/19fd8d193b40dca8/index.html",
+        "zubaida/index.html"
+      ],
+      "missing_count": 20,
+      "broken_urls_in_sitemap": []
+    }
+  },
+  "regression_summary": {
+    "baseline_present": false,
+    "regressions_detected": false,
+    "deltas": {},
+    "status": "INITIAL_BASELINE"
+  }
+}

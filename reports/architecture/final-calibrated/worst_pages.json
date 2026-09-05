@@ -1,0 +1,8589 @@
+[
+  {
+    "page": "404.html",
+    "score": 10,
+    "depth": 1,
+    "in_degree": 1,
+    "out_degree": 2,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/annaris/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/asmouth/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/dyvane/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 12,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/high-lord-kaelen/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 11,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/kaelen/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/kartus/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/lyra/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/qintara/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 12,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/sylvanna/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/thalyros/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/varek/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/zaxor/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "zubaida/19fd8d193b40dca8/index.html",
+    "score": 10,
+    "depth": 3,
+    "in_degree": 1,
+    "out_degree": 1,
+    "broken_outbound_links": 0,
+    "reasons": [
+      "Single point of failure (in-degree 1)"
+    ]
+  },
+  {
+    "page": "characters/aliza/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/annaris-deyhamora/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/asmouth-varvadeil/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/commander-kaelthas/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/dalroemar/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 11,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/daren/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/dariyus-venakan/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/deyhamora/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/dyvane-redalious/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 8,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/grayus-venakan/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/halatayo/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 12,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/high-lord-kaelen-vanguard/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 57,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/inzra/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/kaelar-omnivox/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/kaelen-redalious/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/kartus-vaeloria/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/lady-vaelia/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/lay/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/linaele-zolfer/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/lord-kaelen/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/lyra-unmatara/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/ophidion/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/orotus/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/qailyth/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/qintara-unmatara/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/rhayhara/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 12,
+    "out_degree": 16,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/sylvanna-xylaris/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/thalyros-veyndarion/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/vaelath/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/vaeloria/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/vaelstrum/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/valerius-omnivox/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/valerius-varvadeil/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/valthor/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/varek-unmatara/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/xael-gath/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/xelena-xanthera/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/xenon-varvadeil/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/xylar-varvadeil/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/xylos/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/zaxor-redalious/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/zeta/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "characters/zyra-xanthera/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "chronology/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 931,
+    "out_degree": 5,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/anchorite-order/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/benzshin-elite/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 922,
+    "out_degree": 23,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/keshra-hunters/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/luminary-sisterhood/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/omnivox/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/redalious/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/sehexi-wardens/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/stoic-ascendancy/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/tactician-branch-1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/unmatara/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/vaeloria/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/vanguard-branch-1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/varvadeil/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/venakan/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/veyndarion/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/xanthera/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/xylaris/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "clans/zenith-vanguard/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/archmedonite-technology/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/archn-reen-crystalline-monasticism/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/arthitean-phenotypic-baseline/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/clan-redalious-warlord-mastery/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/clan-unmatara-vanguard-tenacity/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/clan-vaeloria-shadow-directorate/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/clan-varvadeil-solar-sovereignty/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/codex-impossibility-theorem/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/codex-reincarnation-architecture/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/crosspattern-synthesis/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/hierarchy-of-invariance/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/hypergendered-logic-hgl/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/imperial-golden-solar-sceptre/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/index.html",
+    "score": 0,
+    "depth": 1,
+    "in_degree": 2,
+    "out_degree": 31,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/negative-rewrite/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/nullpattern-recognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/orotus-the-sunborn-phoenix/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/parahistory-stabilizer/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/rank-stratification-protocol/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/recursive-self-improvement-cycle/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/retrocausal-invariance/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/sacred-solar-gate-halo/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/solar-bio-resonance/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/the-arthitean-sphere-realm/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "concepts/the-four-imperial-clans/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crawl/index.html",
+    "score": 0,
+    "depth": 1,
+    "in_degree": 932,
+    "out_degree": 930,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/dyvane-xael-gath-resolution/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/halatayo-projected-future-threat-interception/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/high-lord-kaelen-ophidion-resolution/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 30,
+    "out_degree": 37,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/qintara-vaelstrum-resolution/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/rhayhara-dalroemar-dead-destiny-reversal/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/rhayhara-eidos-mirror-fuel-inversion/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 9,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/rhayhara-inzra-annaris-six-clashes/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "crossscaling/rhayhara-othrys-orthogonal-escalation/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 9,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/001/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/002/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/003/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/004/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/005/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/006/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/007/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/008/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/009/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/010/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/011/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/012/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/013/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/014/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/015/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/016/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/017/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/018/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/019/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/020/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/021/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/022/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/023/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/024/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/025/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/026/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/027/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/028/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/029/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/030/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/031/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/032/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/033/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/034/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/035/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/036/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/037/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/038/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/039/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/040/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/041/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/042/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/043/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/044/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/045/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/046/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/047/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/048/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/049/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/050/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/051/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/052/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/053/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/054/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/055/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/056/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/057/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/058/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/059/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/060/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/061/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/062/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/063/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/064/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/065/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/066/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/067/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/068/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/069/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/070/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/071/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/072/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/073/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/074/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/075/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/076/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/077/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/078/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/079/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/080/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/081/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/082/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/083/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/084/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/085/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/086/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/087/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/088/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/089/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/090/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/091/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/092/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/093/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/094/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/095/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/096/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/097/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/098/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/099/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/100/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/101/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/102/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/103/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/104/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/105/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/106/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/107/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/108/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/109/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/110/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/111/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/112/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/113/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/114/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/115/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/116/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/117/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/118/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/119/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/120/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/121/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/122/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/123/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/124/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/125/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/126/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/127/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/128/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/129/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/130/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/131/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/132/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/133/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/134/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/135/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/136/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/137/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/138/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/139/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/140/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/141/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/142/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/143/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/144/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/145/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/146/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/147/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/148/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/149/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/150/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/151/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/152/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/153/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/154/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/155/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/156/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/157/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/158/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/159/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/160/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/161/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/162/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/163/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/164/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/165/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/166/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/167/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/168/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/169/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/170/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/171/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/172/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/173/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/174/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/175/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/176/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/177/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/178/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/179/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/180/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/181/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/182/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/183/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/184/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/185/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/186/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/187/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/188/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/189/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/190/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/191/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/192/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/193/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/194/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/195/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/196/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/197/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/198/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/199/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/200/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/201/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/202/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/203/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/204/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/205/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/206/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/207/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/208/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/209/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/210/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/211/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/212/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/213/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/214/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/215/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/216/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/217/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/218/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/219/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/220/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/221/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/222/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/223/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/224/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/225/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/226/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/227/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/228/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/229/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/230/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/231/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/232/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/233/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/234/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/235/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/236/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/237/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/238/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/239/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/240/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/241/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/242/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/243/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/244/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/245/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/246/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/247/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/248/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/249/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/250/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/251/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/252/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/253/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/254/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/255/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/256/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/257/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/258/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/259/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/260/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/261/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/262/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/263/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/264/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/265/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/266/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/267/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/268/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/269/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/270/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/271/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/272/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/273/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/274/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/275/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/276/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/277/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/278/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/279/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/280/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/281/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/282/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/283/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/284/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/285/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/286/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/287/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/288/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/289/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/290/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/291/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/292/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/293/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/294/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/295/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/296/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/297/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/298/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/299/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/300/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/301/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/302/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/303/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/304/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/305/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/306/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/307/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/308/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/309/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/310/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/311/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/312/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/313/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/314/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/315/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/316/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/317/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "divine/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 323,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/001/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/002/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/003/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/004/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/005/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/006/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/007/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/008/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/009/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/010/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/011/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/012/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/013/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/014/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/015/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/016/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/017/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/018/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/019/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/020/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/021/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/022/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/023/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/024/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/025/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/026/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/027/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/028/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/029/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/030/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/031/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/032/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/033/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/034/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/035/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/036/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/037/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/038/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/039/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/040/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/041/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/042/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/043/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/044/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/045/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/046/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/047/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/048/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/049/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/050/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/051/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/052/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/053/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/054/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/055/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/056/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/057/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/058/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/059/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/060/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/061/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/062/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/063/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/064/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/065/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/066/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/067/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/068/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/069/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/070/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/071/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/072/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/073/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/074/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/075/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/076/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/077/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/078/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/079/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/080/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/081/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/082/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/083/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/084/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/085/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/086/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/087/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/088/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/089/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/090/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/091/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/092/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/093/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/094/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/095/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/096/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/097/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/098/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/099/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/100/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/101/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/102/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/103/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/104/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/105/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/106/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/107/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/108/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/109/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/110/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/111/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/112/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/113/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/114/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/115/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/116/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/117/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/118/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/119/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/120/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/121/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/122/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/123/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/124/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/125/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/126/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/127/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/128/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/129/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/130/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/131/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/132/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/133/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/134/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/135/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/136/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/137/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/138/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/139/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/140/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/141/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/142/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/143/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/144/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/145/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/146/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/147/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/148/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/149/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/150/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/151/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/152/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/153/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/154/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/155/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/156/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/157/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/158/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/159/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/160/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/161/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/162/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/163/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/164/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/165/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/166/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/167/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/168/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/169/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/170/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/171/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/172/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/173/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/174/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/175/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/176/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/177/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/178/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/179/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/180/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/181/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/182/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/183/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/184/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/185/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/186/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/187/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/188/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/189/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/190/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/191/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/192/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/193/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/194/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/195/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/196/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/197/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/198/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/199/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/200/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/201/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/202/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/203/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/204/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/205/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/206/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/207/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/208/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/209/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/210/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/211/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/212/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/213/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/214/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/215/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/216/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/217/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/218/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/219/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/220/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/221/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/222/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/223/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/224/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/225/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/226/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/227/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/228/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/229/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/230/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/231/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/232/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/233/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/234/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/235/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/236/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/237/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/238/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/239/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/240/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/241/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/242/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/243/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/244/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/245/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/246/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/247/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/248/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/249/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/250/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/251/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/252/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/253/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/254/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/255/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/256/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/257/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/258/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/259/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/260/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/261/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/262/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/263/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/264/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/265/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/266/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/267/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/268/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/269/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/270/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/271/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/272/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/273/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/274/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/275/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/276/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/277/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/278/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/279/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/280/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/281/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/282/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/283/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/284/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/285/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/286/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/287/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/288/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/289/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/290/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/291/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/292/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/293/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "hgl/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 298,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "index.html",
+    "score": 0,
+    "depth": 0,
+    "in_degree": 949,
+    "out_degree": 5,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/acausality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/antagocognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/antaintelligence/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/anti-collapse-rules/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/anticausal-improvement/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/antipossibility-families/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/antipossible/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/antiprecausality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/apossible/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/archarthitean-factor/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/archarthitean/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/archmedonites/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/archnureen/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/arsayne/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/arthitean-base/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/arthitean-deity-factors/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/arthitean-deity/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/axiomatter/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/benzshin-oaths/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/black-phoenix-wings/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/bloodline-blessings/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 5,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/clan-system/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/cogniscience/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/cold-war-adaptation/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/crosspattern-recognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/degree-q/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/grand-reincarnation/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/greater-lesser-orders/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/higher-apossible/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/holeisa/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperacausality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperarsayne/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperclans/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hypergenetics/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperinferring-deducing/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperlearning/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hypernegative-rewrite/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/hyperverity/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/impossibility-governance/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/index.html",
+    "score": 0,
+    "depth": 1,
+    "in_degree": 4,
+    "out_degree": 101,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/infracausality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/kafai-ranks/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/keenmon-discipline/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/learning/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/lifra/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/living-concepts/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/lydrextent/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/medonites/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/metagovernance-depth/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/metalearning/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/metarules/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/modus-tollens-causality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/negative-rewrite/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/nullinfinity/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/nullmetapattern-recognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/nullpattern-recognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/nullrecognition/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/nureen/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/omniprecedent/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/ontoinheritance-law/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/operator-gamma/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/operator-ih/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/operator-pa/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/operator-ph/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/orotion-quests/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/orotus/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/outercausality-stage-1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/parahistory/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/paratime/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/phenotypic-invariants/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/pressurised-enlightenment/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/pressurised-hyperenlightenment/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/proxy-wars-doctrine/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/recursive-metarules/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/rh-factors/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/risvulation/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/rules/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/seal-factor-four/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/seal-factor-one/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/seal-factor-three/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/seal-factor-two/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/supraarsayne/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/supracause-asupracausal/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/supramajor/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/talmorai/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/technocogniparse/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/technogenesis/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/technokinesis/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/toren/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/transavatars/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/transboundless/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/transrecursive-hypercausality/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/ultraarsayne/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "masterpages/ultralearning/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/dyvane-vs-xael-gath/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/halatayo-and-the-projected-amnifuture-hyperchallenge/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 10,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/high-lord-kaelen-vs-ophidion/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 32,
+    "out_degree": 15,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/qintara-vs-vaelstrum/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 8,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/rhayhara-and-othrys-five-orthogonal-escalations/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 11,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/rhayhara-inzra-annaris-six-clashes/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 8,
+    "out_degree": 9,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/rhayhara-vs-dalroemar/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 11,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/rhayhara-vs-the-eidos-swarm/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 11,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "myths/rhayharas-ten-destiny-defying-trials/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 7,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "provenance/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 939,
+    "out_degree": 5,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "search/index.html",
+    "score": 0,
+    "depth": 1,
+    "in_degree": 937,
+    "out_degree": 796,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19de45adb7920381/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ded0f0d83960a1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19defc3df577a5b9/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e56867bf1bf3d3/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e57ef586da3075/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e5b5bc268151ec/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e5bf2cf47cd855/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e6ac84f1a5c268/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e75cd022cc9fa6/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e76e0f7681317c/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e7b1ae42d2b9f4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e7cd57129cb418/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19e9f1a57baddaa2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ea19028cbe67ef/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ea2e03249bd633/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ea8dbac2dea56e/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eaaf5b47ae00c8/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eac0adfb5e15a8/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eacd8e1382f217/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eb127ca13484b2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eb2ad68d624272/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eb373264c0f94c/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eb92b5bb44b764/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ebdf5c2d46c894/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ebe85bf8cf94ae/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ec13f48df3c768/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ec2fd5372c1fb2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ec3bead36c9204/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ec6ad4150de5b4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ed1dd4f8772a19/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ed29b27616b92c/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ed334f66df13d4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ed660f0676f023/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19edd46368d53704/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ee316d9a81b6b3/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ee4d2713ef9ab2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ee89b90de674e2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eea5cf0776a76e/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eeb5f62f0e9896/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19eef052eaceac85/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ef0e52f69e4ad4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19efe2cca24baa95/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f02d6e58d0f044/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f0771a2a787113/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f0a8992476696e/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f0d1c0f4a5d5e5/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f0e8f96cb8730c/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f0f39f1eb13e50/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f19b822cb7e8bd/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 7,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f1c2356873a90c/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f1f5b33c478758/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f22dbf39b171ec/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f7282ac958d4eb/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f75011fdb61e6e/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f7746193ee07dc/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f78745609dd2f6/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f7d9faf4778440/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f810f599ae9ccc/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f8750d4d5532be/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f88f41fb16946b/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f9406c97ff3670/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19f9518411db997b/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fa076eb25a917b/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 13,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fc071b9781a991/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fc3d4fa2bd6304/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fc44a574e08325/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fcad5f75d055c8/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fcb50fc92e37f3/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fd51c7627df797/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fd6196dcecbba1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fd8d193b40cda8/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 4,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fdb1794050bc43/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fde8f7e92ec8da/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2713b4030924/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe28425ab9c96a/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2a3f60a6c5ce/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2a7a58adf5dc/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2b3934748b8f/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2cdb6fed2a26/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe2cf1a21caa03/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe5163dd2d55d4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe5329dab82c86/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe540dd978ed02/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe56015ef17846/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fe56cd1bb96dbc/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fec1b4fcc904c4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19fedd98e38dc4ff/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff21800b5380e4/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff21a5e18621b0/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff21b9df9c9323/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff21d5d839ea5e/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff21ed3ed9877b/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff2206dbdcad7d/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff22309a2e3b09/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff2263b89fb296/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ff57bc49cd45bd/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffc8e14a00f61d/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffc927eae69543/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffc9464873b3f0/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffca01885e0f1b/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffca1a2f553e5a/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffda9d2c0d757f/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffdab2307c920d/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/19ffdaf11c6057c6/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0044a4f14bcfc1/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0044bf191192c8/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a004bfb6972b1de/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a009f030decebdc/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a00ae913ff3fa38/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a00aecb58db40d3/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a00cd159aa9bdc7/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0121bffc884c3a/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0121caff8899f2/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0142cc15e2d305/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0142dbe1e0f101/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a01465c9d5b5945/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a01b26c0e6e6f14/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 3,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/1a0601fc96f7add3/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 6,
+    "out_degree": 6,
+    "broken_outbound_links": 0,
+    "reasons": []
+  },
+  {
+    "page": "zubaida/index.html",
+    "score": 0,
+    "depth": 2,
+    "in_degree": 2,
+    "out_degree": 121,
+    "broken_outbound_links": 0,
+    "reasons": []
+  }
+]

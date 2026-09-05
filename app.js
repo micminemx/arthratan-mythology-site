@@ -3,9 +3,30 @@ const state={manifest:null,canon:null,divine:null,hglPages:null,hglToc:null};
 const $=s=>document.querySelector(s); const main=$('#main');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const slug=s=>String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-async function load(name){ if(state[name]) return state[name]; const map={manifest:'manifest.json',canon:'new-canon.json',divine:'divine.json',hglPages:'hgl-pages.json',hglToc:'hgl-toc.json',masterpages:'masterpages.json'}; const file=map[name]||(name.endsWith('.json')?name:name+'.json'); const r=await fetch('data/'+file); state[name]=await r.json(); return state[name]; }
+async function load(name){ if(state[name]) return state[name]; const map={manifest:'manifest.json',canon:'new-canon.json',divine:'divine.json',hglPages:'hgl-pages.json',hglToc:'hgl-toc.json',masterpages:'masterpages.json',characters:'characters.json',causalOntology:'causal-ontology.json',siteIndex:'site-index.json'}; const file=map[name]||(name.endsWith('.json')?name:name+'.json'); const r=await fetch('data/'+file); state[name]=await r.json(); return state[name]; }
 function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800)}
-function setCrumb(x){$('#crumbs').textContent=x; document.title=x+' · The Arthitean Codex'; [...document.querySelectorAll('#nav a')].forEach(a=>a.classList.toggle('active',location.hash.startsWith(a.getAttribute('href'))));}
+function setBreadcrumbs(crumbs){
+  const el=$('#crumbs'); if(!el)return;
+  if(typeof crumbs==='string'){
+    if(crumbs==='Sanctuary'){ crumbs=[{label:'Sanctuary',href:'#home'}]; }
+    else { crumbs=[{label:'Sanctuary',href:'#home'},{label:crumbs}]; }
+  }
+  if(!Array.isArray(crumbs)||!crumbs.length) crumbs=[{label:'Sanctuary',href:'#home'}];
+  const last=crumbs[crumbs.length-1];
+  document.title=(last.label||'Sanctuary')+' · The Arthitean Codex';
+  el.innerHTML=crumbs.map((c,i)=>{
+    const isLast=(i===crumbs.length-1);
+    if(isLast||!c.href){ return `<span class="crumb-current" aria-current="page">${esc(c.label)}</span>`; }
+    return `<a href="${esc(c.href)}">${esc(c.label)}</a><span class="crumb-sep">/</span>`;
+  }).join('');
+  const currentHash=location.hash||'#home';
+  document.querySelectorAll('#nav a').forEach(a=>{
+    const href=a.getAttribute('href')||'';
+    const active=(href===currentHash)||(href!=='#home'&&href!=='/'&&currentHash.startsWith(href));
+    a.classList.toggle('active',active);
+  });
+}
+function setCrumb(x){ setBreadcrumbs(x); }
 function routeTo(hash){location.hash=hash;}
 function card(title,micro,text,href){return `<article class="card ${href?'clickable':''}" ${href?`onclick="routeTo('${href}')"`:''}><div class="micro">${esc(micro)}</div><h3>${esc(title)}</h3><p>${esc(text)}</p></article>`}
 function pageIntro(kicker,title,lede,img){return `<section class="page-intro"><div><div class="eyebrow">${esc(kicker)}</div><h1 class="page-title">${esc(title)}</h1><p class="lede">${esc(lede)}</p><div class="canon-badge">◆ Living canon · source-preserving</div></div>${img?`<img src="${img}" alt="">`:''}</section>`}
@@ -186,5 +207,439 @@ async function masterpageView(id){
   `;
 }
 
-async function router(){window.scrollTo(0,0);const h=(location.hash||'#home').slice(1);try{if(h.startsWith('masterpage:'))return masterpageView(h.slice(11));if(h==='masterpages')return masterpagesHub();if(h==='home')return home();if(h==='atlas')return atlas();if(h==='scaling')return scaling();if(h==='negative-rewrite')return negativeRewrite();if(h==='arthiteans')return arthiteans();if(h==='rhayhara')return rhayhara();if(h==='hgl')return hgl();if(h==='divine')return divine();if(h==='hgl-archive')return hglArchive();if(h==='search')return searchPage();if(h==='sources')return sources();if(h.startsWith('divine-section:')){setCrumb('Divine v144 Archive');return renderDivineArchive(h.split(':')[1])}if(h.startsWith('hgl-part:')){return hglArchive(h.split(':')[1])}if(h.startsWith('hgl-page-direct:')){return hglDirect(Number(h.split(':')[1]))}return home();}catch(e){console.error(e);main.innerHTML=`<div class="card"><h3>Codex rendering error</h3><p>${esc(e.message)}</p></div>`}}
-window.addEventListener('hashchange',router);$('#shareBtn').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast('Current view link copied')}catch{toast('Copy unavailable — use browser share')}};$('#openNav').onclick=()=>$('#sidebar').classList.add('open');$('#closeNav').onclick=()=>$('#sidebar').classList.remove('open');document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>$('#sidebar').classList.remove('open')));router();
+/* --- Character Encyclopedia & Dossier Subsystem --- */
+async function charactersHub(filterClan='all'){
+  const d = await load('characters');
+  const chars = d.characters || [];
+  setBreadcrumbs([
+    {label:'Sanctuary', href:'#home'},
+    {label:'People & Entities', href:'#characters'},
+    {label:'Character Encyclopedia'}
+  ]);
+  
+  const clans = ['all', ...Array.from(new Set(chars.map(c => c.clan).filter(Boolean))).sort()];
+  const filtered = (filterClan === 'all') ? chars : chars.filter(c => c.clan === filterClan);
+  
+  const getAvatar = c => {
+    if(c.model_art) return c.model_art;
+    if(c.slug === 'rhayhara') return 'assets/art/rhayhara-crowned.webp';
+    return 'assets/art/chibi-arthiteans.webp';
+  };
+  
+  main.innerHTML = pageIntro(
+    '43 Canonical Figures · Lineages, Warlords & Ascenders',
+    'Character Encyclopedia',
+    'Comprehensive structured dossiers across all canonical Arthratan figures, documenting affiliations, paraconceptual mechanics, source transmissions, and crosslinked masterpages.',
+    'assets/art/chibi-arthiteans.webp'
+  ) + `
+  <div class="roster-filter-row">
+    ${clans.map(clanName => `
+      <button class="roster-pill ${filterClan === clanName ? 'is-active' : ''}" onclick="charactersHub('${esc(clanName)}')">
+        ${esc(clanName === 'all' ? 'All Clans & Allegiances (' + chars.length + ')' : clanName)}
+      </button>
+    `).join('')}
+  </div>
+  
+  <div class="character-roster-grid">
+    ${filtered.map(c => `
+      <a class="character-card" href="#character:${esc(c.slug)}">
+        <img class="character-avatar" src="${getAvatar(c)}" alt="${esc(c.name)}">
+        <div class="character-card-info">
+          <h3>${esc(c.name)}</h3>
+          <small>${esc(c.clan || c.species || 'Canonical entity')} · ${esc(c.status || 'Active')}</small>
+          <p>${esc(c.role || c.summary)}</p>
+        </div>
+      </a>
+    `).join('')}
+  </div>
+  `;
+}
+
+async function characterView(cslug){
+  const d = await load('characters');
+  const chars = d.characters || [];
+  const c = chars.find(x => x.slug === cslug || (x.aliases && x.aliases.map(slug).includes(slug(cslug))));
+  if(!c) return charactersHub();
+  
+  setBreadcrumbs([
+    {label:'Sanctuary', href:'#home'},
+    {label:'People & Entities', href:'#characters'},
+    {label: c.name}
+  ]);
+  
+  const avatar = c.model_art || (c.slug === 'rhayhara' ? 'assets/art/rhayhara-crowned.webp' : 'assets/art/chibi-arthiteans.webp');
+  
+  const abilitiesHtml = (c.abilities && c.abilities.length) ? `
+    <div class="section-head"><h2>Abilities & Paraconceptual Mechanics</h2></div>
+    <div class="grid two">
+      ${c.abilities.map(a => `
+        <div class="card">
+          <div class="micro">${esc(a.type || 'MECHANIC')}</div>
+          <h3>${esc(a.name || 'Ability')}</h3>
+          <p>${esc(a.description || a.summary || '')}</p>
+        </div>
+      `).join('')}
+    </div>
+  ` : '';
+  
+  const relsHtml = (c.relationships && c.relationships.length) ? `
+    <div class="section-head"><h2>Documented Relational Dynamics</h2></div>
+    <div class="grid two">
+      ${c.relationships.map(r => `
+        <div class="card">
+          <div class="micro">${esc(r.relation || 'AFFILIATION')}</div>
+          <h3><a href="#character:${esc(slug(r.target || ''))}" style="color:#e4b76f; text-decoration:none">${esc(r.target)}</a></h3>
+          <p>${esc(r.notes || r.summary || '')}</p>
+        </div>
+      `).join('')}
+    </div>
+  ` : '';
+  
+  const sourcesHtml = (c.source_threads && c.source_threads.length) ? `
+    <div class="section-head"><h2>Preserved Source Occurrences & Threads</h2></div>
+    <div class="card">
+      <ul style="margin:0; padding-left:20px; color:#c3b9c8">
+        ${c.source_threads.map(s => {
+          const isTx = s.match(/([0-9a-f]{16})/i);
+          const href = isTx ? `#transmission:${isTx[1]}` : '#stories';
+          return `<li style="margin-bottom:6px"><a href="${href}" style="color:#e4b76f">${esc(s)}</a></li>`;
+        }).join('')}
+      </ul>
+    </div>
+  ` : '';
+  
+  main.innerHTML = `
+  <section class="dossier-hero">
+    <div>
+      <div class="eyebrow">${esc(c.classification || 'Canonical Character')} · ${esc(c.clan || 'Independent')}</div>
+      <h1 class="page-title" style="margin:8px 0 14px">${esc(c.name)}</h1>
+      <p class="lede">${esc(c.summary || c.role)}</p>
+      
+      <table class="dossier-meta-table">
+        <tr><th>Role</th><td>${esc(c.role || 'Unspecified')}</td></tr>
+        ${c.titles && c.titles.length ? `<tr><th>Titles</th><td>${esc(c.titles.join(' · '))}</td></tr>` : ''}
+        <tr><th>Clan</th><td>${esc(c.clan || 'Independent')}</td></tr>
+        <tr><th>Species</th><td>${esc(c.species || 'Arthitean')}</td></tr>
+        <tr><th>Allegiance</th><td>${esc(c.allegiance || 'Empire of Arthrata')}</td></tr>
+        <tr><th>Canon Level</th><td><span class="canon-badge">◆ ${esc(c.canon_level || 'Extensive')}</span></td></tr>
+        <tr><th>Status</th><td>${esc(c.status || 'Active')}</td></tr>
+      </table>
+    </div>
+    
+    <div class="dossier-portrait">
+      <img src="${avatar}" alt="${esc(c.name)} portrait">
+      <div style="padding:12px 14px; font-size:11px; color:#84788d; text-align:center">
+        Canonical Portrait · ${esc(c.name)}
+      </div>
+    </div>
+  </section>
+  
+  <div class="section-head"><h2 style="color:#FFD700">Canonical Biography & Character Profile</h2></div>
+  <div class="card" style="border-left:4px solid #FFD700; background:rgba(255,215,0,0.03)">
+    <p style="margin-bottom:12px">${esc(c.history || c.summary)}</p>
+    ${c.personality ? `<p><b>Disposition:</b> ${esc(c.personality)}</p>` : ''}
+    ${c.appearance ? `<p><b>Appearance:</b> ${esc(c.appearance)}</p>` : ''}
+  </div>
+  
+  ${abilitiesHtml}
+  ${relsHtml}
+  ${sourcesHtml}
+  
+  <div class="concept-nav" style="margin-top:28px">
+    <a href="#characters">← Back to Character Encyclopedia</a>
+    <a href="#index">Browse A–Z Index</a>
+    <a href="#masterpages">Masterpages Directory</a>
+  </div>
+  `;
+}
+
+/* --- Causal Ontology Subsystem --- */
+async function causalOntologyView(){
+  const d = await load('causalOntology');
+  setBreadcrumbs([
+    {label:'Sanctuary', href:'#home'},
+    {label:'Concepts & Systems', href:'#masterpages'},
+    {label:'Causal Ontology'}
+  ]);
+  
+  const ladder = d.hierarchy_ladder || [];
+  const concepts = d.concepts || [];
+  
+  main.innerHTML = pageIntro(
+    'Formal Metaphysical Order · Causal & Ontic Precedence',
+    'Causal Ontology & Hierarchy',
+    d.editorial_note || 'Exhaustive classification of Arthratan causal structures, establishing rigorous precedence between physical causality, paraconceptual rewrites, and ultimate trans-ontic absolutes.',
+    'assets/art/chibi-negative-rewrite.webp'
+  ) + `
+  <div class="section-head"><h2>The 7-Tier Causal Hierarchy Ladder</h2><p>Ascending levels of ontological authority and resistance to retrospective alteration.</p></div>
+  <div class="ontology-ladder-grid">
+    ${ladder.map((rung, i) => `
+      <div class="ontology-rung-card" style="border-top: 3px solid ${['#4fd1c5','#63b3ed','#9f7aea','#b794f4','#d6bcfa','#f6ad55','#e4b76f'][i % 7]}">
+        <div class="micro">LEVEL ${rung.level || i + 1}</div>
+        <b>${esc(rung.tier || rung.name)}</b>
+        <p>${esc(rung.description || rung.scope)}</p>
+      </div>
+    `).join('')}
+  </div>
+  
+  <div class="section-head"><h2 style="color:#FFD700">Core Causal Concepts & Formalisms</h2></div>
+  <div class="grid two">
+    ${concepts.map(c => `
+      <div class="card" style="border-left: 4px solid #00FFCC; background:rgba(0,255,204,0.03)">
+        <div class="micro">${esc(c.class || 'CAUSAL OPERATOR')}</div>
+        <h3>${esc(c.name)}</h3>
+        <p style="margin-bottom:10px">${esc(c.canon_definition || c.clarification)}</p>
+        ${c.formal_logic ? `<div class="formula" style="font-size:12px; margin:8px 0">${esc(c.formal_logic)}</div>` : ''}
+        ${c.commonly_confused_with ? `<small style="color:#ff88a3; display:block; margin-top:8px"><b>Anti-Conflation:</b> ${esc(c.commonly_confused_with)}</small>` : ''}
+      </div>
+    `).join('')}
+  </div>
+  
+  <div class="concept-nav" style="margin-top:28px">
+    <a href="#scaling">Metagovernance &amp; Scaling →</a>
+    <a href="#negative-rewrite">Negative Rewrite →</a>
+    <a href="#masterpages">Masterpages Directory →</a>
+  </div>
+  `;
+}
+
+/* --- INDEX-002: A-Z Site Index & Directory Subsystem --- */
+let siteIndexState = { activeLetter: '', activeDomain: 'all', query: '' };
+
+async function siteIndexView(letter=''){
+  if(letter) siteIndexState.activeLetter = letter.toUpperCase();
+  const d = await load('siteIndex');
+  setBreadcrumbs([
+    {label:'Sanctuary', href:'#home'},
+    {label:'Discovery', href:'#search'},
+    {label:'A–Z Site Index' + (siteIndexState.activeLetter ? ' (' + siteIndexState.activeLetter + ')' : '')}
+  ]);
+  
+  const allLetters = ['ALL', ...(d.a_to_z ? Object.keys(d.a_to_z).sort() : [])];
+  const allDomains = ['all', ...Object.keys(d.domains_summary || {})];
+  
+  main.innerHTML = pageIntro(
+    '715 Canonical Entries · 1,297 Aliases · 7 Domains',
+    'A–Z Codex Directory',
+    'Authoritative, instant-searchable reference directory across all knowledge domains, unifying characters, masterpages, divine sections, HGL logic, and Zubaida correspondence.',
+    'assets/art/chibi-search.webp'
+  ) + `
+  <div class="index-toolbar">
+    <div class="alphabet-jump-bar" id="azJumpBar">
+      ${allLetters.map(l => {
+        const isAct = (l === 'ALL' && !siteIndexState.activeLetter) || (l === siteIndexState.activeLetter);
+        return `<button class="${isAct ? 'is-active' : ''}" onclick="filterIndexLetter('${l === 'ALL' ? '' : l}')">${l}</button>`;
+      }).join('')}
+    </div>
+    <input class="index-search-input" id="indexSearchInput" type="search" placeholder="Type to filter 2,012 canonical terms & aliases instant real-time..." value="${esc(siteIndexState.query)}">
+    <div class="domain-filter-row" id="domainFilterRow">
+      ${allDomains.map(dom => {
+        const isAct = (dom === siteIndexState.activeDomain);
+        const count = dom === 'all' ? (d.metadata?.metrics?.total_canonical_entries || 715) : (d.domains_summary[dom] || 0);
+        return `<button class="domain-pill ${isAct ? 'is-active' : ''}" onclick="filterIndexDomain('${esc(dom)}')">${esc(dom)} (${count})</button>`;
+      }).join('')}
+    </div>
+  </div>
+  
+  <div class="index-meta-strip" id="indexMetaStrip">Loading entries...</div>
+  <div class="index-grid" id="indexCardsGrid"></div>
+  `;
+  
+  const searchInput = $('#indexSearchInput');
+  if(searchInput){
+    searchInput.oninput = () => {
+      siteIndexState.query = searchInput.value.trim().toLowerCase();
+      renderIndexCards(d);
+    };
+  }
+  
+  renderIndexCards(d);
+}
+
+function filterIndexLetter(l){
+  siteIndexState.activeLetter = l;
+  location.hash = l ? '#index:' + l.toLowerCase() : '#index';
+}
+
+function filterIndexDomain(dom){
+  siteIndexState.activeDomain = dom;
+  const d = state['siteIndex'];
+  if(d) renderIndexCards(d);
+}
+
+function getDomainClass(domain){
+  if(domain.includes('Divine')) return 'index-domain-divine';
+  if(domain.includes('Zubaida')) return 'index-domain-zubaida';
+  if(domain.includes('Hypergendered')) return 'index-domain-hgl';
+  if(domain.includes('Concepts') || domain.includes('Masterpages')) return 'index-domain-concepts';
+  if(domain.includes('Characters')) return 'index-domain-characters';
+  if(domain.includes('Chronology')) return 'index-domain-chronology';
+  return 'index-domain-clans';
+}
+
+function renderIndexCards(d){
+  const grid = $('#indexCardsGrid');
+  const strip = $('#indexMetaStrip');
+  if(!grid || !strip) return;
+  
+  let allEntries = [];
+  Object.keys(d.a_to_z || {}).forEach(k => {
+    allEntries.push(...d.a_to_z[k]);
+  });
+  
+  const seen = new Set();
+  let entries = [];
+  allEntries.forEach(e => {
+    if(!seen.has(e.id)){
+      seen.add(e.id);
+      entries.push(e);
+    }
+  });
+  
+  if(siteIndexState.activeLetter){
+    entries = entries.filter(e => {
+      const char = (e.label || '').trim().charAt(0).toUpperCase();
+      if(siteIndexState.activeLetter === '0-9') return /^[0-9]/.test(char);
+      return char === siteIndexState.activeLetter;
+    });
+  }
+  
+  if(siteIndexState.activeDomain && siteIndexState.activeDomain !== 'all'){
+    entries = entries.filter(e => e.domain === siteIndexState.activeDomain);
+  }
+  
+  if(siteIndexState.query){
+    const q = siteIndexState.query;
+    entries = entries.filter(e => {
+      const matchLabel = (e.label || '').toLowerCase().includes(q);
+      const matchDesc = (e.description || '').toLowerCase().includes(q);
+      const matchAliases = (e.aliases || []).some(a => a.toLowerCase().includes(q));
+      return matchLabel || matchDesc || matchAliases;
+    });
+  }
+  
+  document.querySelectorAll('#azJumpBar button').forEach(b => {
+    const txt = b.textContent;
+    const isAct = (txt === 'ALL' && !siteIndexState.activeLetter) || (txt === siteIndexState.activeLetter);
+    b.classList.toggle('is-active', isAct);
+  });
+  document.querySelectorAll('#domainFilterRow button').forEach(b => {
+    const isAct = b.textContent.startsWith(siteIndexState.activeDomain);
+    b.classList.toggle('is-active', isAct);
+  });
+  
+  strip.innerHTML = `Showing <b>${entries.length}</b> matching entities ${siteIndexState.activeLetter ? `(Letter ${siteIndexState.activeLetter})` : ''} ${siteIndexState.activeDomain !== 'all' ? `[Domain: ${esc(siteIndexState.activeDomain)}]` : ''}`;
+  
+  if(entries.length === 0){
+    grid.innerHTML = `<div class="card" style="grid-column: 1 / -1; text-align:center; padding:32px">
+      <h3>No matching index entries found</h3>
+      <p>Try clearing filters or searching a different term.</p>
+      <button class="primary" style="margin-top:14px" onclick="siteIndexState.query=''; siteIndexState.activeLetter=''; siteIndexState.activeDomain='all'; renderIndexCards(state['siteIndex']);">Reset all filters</button>
+    </div>`;
+    return;
+  }
+  
+  grid.innerHTML = entries.map(e => {
+    const badgeClass = getDomainClass(e.domain);
+    const targetUrl = e.target_url || '#home';
+    return `
+    <article class="index-card">
+      <div>
+        <div class="index-card-head">
+          <span class="index-domain-badge ${badgeClass}">${esc(e.domain)}</span>
+          <span class="canon-badge" style="font-size:10px">◆ ${esc(e.status || 'CANONICAL')}</span>
+        </div>
+        <h3>${esc(e.label)}</h3>
+        <p>${esc(e.description || 'Canonical record in the Arthitean Codex.')}</p>
+        ${e.aliases && e.aliases.length ? `
+          <div class="index-alias-list">
+            ${e.aliases.slice(0, 5).map(a => `<span class="index-alias-tag">${esc(a)}</span>`).join('')}
+            ${e.aliases.length > 5 ? `<span class="index-alias-tag">+${e.aliases.length - 5} more</span>` : ''}
+          </div>
+        ` : ''}
+      </div>
+      <div class="index-card-foot">
+        <small style="color:#7f738a">${esc(e.category || 'Canonical')}</small>
+        <a class="concept-link" href="${esc(targetUrl)}" style="font-size:12px; font-weight:600; color:#e4b76f">Open entity →</a>
+      </div>
+    </article>
+    `;
+  }).join('');
+}
+
+/* --- Route Not Found / 404 Recovery Subsystem (IA-F02) --- */
+function routeNotFound(hash){
+  setBreadcrumbs([
+    {label:'Sanctuary', href:'#home'},
+    {label:'Route Not Found'}
+  ]);
+  
+  main.innerHTML = `
+  <section class="not-found-card">
+    <div class="micro" style="color:#ff88a3; letter-spacing:0.18em">INFORMATION ARCHITECTURE · NAVIGATION RECOVERY</div>
+    <h2>Codex Route Not Found</h2>
+    <p>The requested route destination <span class="not-found-code">#${esc(hash)}</span> was not found in the canonical route registry or may have been renamed during living-canon consolidation.</p>
+    
+    <div style="max-width:480px; margin:0 auto 20px">
+      <form action="/search/" method="get" role="search">
+        <div class="hero-actions" style="display:flex; gap:8px">
+          <input name="q" value="${esc(hash.replace(/[^a-zA-Z0-9\s]/g, ' '))}" type="search" placeholder="Search the Codex for this term..." style="flex:1; border:1px solid #4a3b63; background:#09080c; color:#eee; border-radius:10px; padding:10px 14px">
+          <button type="submit" class="primary">Search</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="recovery-actions">
+      <a class="primary art-action" href="#home"><img src="assets/art/chibi-codex.webp" alt=""><span>Return to Sanctuary</span></a>
+      <a class="art-action" href="#index" style="background:#1e172a; border:1px solid #4a3b63; color:#e2e8f0"><img src="assets/art/chibi-search.webp" alt=""><span>Browse A–Z Site Index</span></a>
+      <a class="art-action" href="#masterpages" style="background:#1e172a; border:1px solid #4a3b63; color:#e2e8f0"><img src="assets/art/chibi-scaling.webp" alt=""><span>Masterpages Directory</span></a>
+      <a class="art-action" href="#characters" style="background:#1e172a; border:1px solid #4a3b63; color:#e2e8f0"><img src="assets/art/chibi-arthiteans.webp" alt=""><span>Character Encyclopedia</span></a>
+      <a class="art-action" href="#stories" style="background:#1e172a; border:1px solid #4a3b63; color:#e2e8f0"><img src="assets/art/chibi-sources.webp" alt=""><span>Story &amp; Thread Archive</span></a>
+    </div>
+  </section>
+  `;
+}
+
+async function router(){
+  window.scrollTo(0,0);
+  const rawHash = (location.hash||'#home').slice(1);
+  const h = rawHash.trim();
+  try{
+    if(h==='stories'||h.startsWith('transmission:')||h.startsWith('session:')||h.startsWith('unit:'))return;
+    if(h.startsWith('masterpage:'))return masterpageView(h.slice(11));
+    if(h==='masterpages')return masterpagesHub();
+    if(h.startsWith('character:'))return characterView(h.slice(10));
+    if(h==='characters')return charactersHub();
+    if(h.startsWith('index:'))return siteIndexView(h.slice(6));
+    if(h==='index'||h==='glossary')return siteIndexView('');
+    if(h==='ontology'||h==='causal-ontology'||h==='causality')return causalOntologyView();
+    if(h==='home'||h==='')return home();
+    if(h==='atlas')return atlas();
+    if(h==='scaling')return scaling();
+    if(h==='negative-rewrite')return negativeRewrite();
+    if(h==='arthiteans')return arthiteans();
+    if(h==='rhayhara')return rhayhara();
+    if(h==='hgl')return hgl();
+    if(h==='divine')return divine();
+    if(h==='hgl-archive')return hglArchive();
+    if(h==='search')return searchPage();
+    if(h==='sources')return sources();
+    if(h.startsWith('divine-section:')){
+      setBreadcrumbs([{label:'Sanctuary',href:'#home'},{label:'Divine v144 Archive',href:'#divine'},{label:'Section '+h.split(':')[1]}]);
+      return renderDivineArchive(h.split(':')[1]);
+    }
+    if(h.startsWith('hgl-part:'))return hglArchive(h.split(':')[1]);
+    if(h.startsWith('hgl-page-direct:'))return hglDirect(Number(h.split(':')[1]));
+    return routeNotFound(rawHash);
+  }catch(e){
+    console.error(e);
+    main.innerHTML=`<div class="card"><h3>Codex rendering error</h3><p>${esc(e.message)}</p></div>`;
+  }
+}
+window.addEventListener('hashchange',router);
+$('#shareBtn').onclick=async()=>{try{await navigator.clipboard.writeText(location.href);toast('Current view link copied')}catch{toast('Copy unavailable — use browser share')}};
+$('#openNav').onclick=()=>$('#sidebar').classList.add('open');
+$('#closeNav').onclick=()=>$('#sidebar').classList.remove('open');
+document.querySelectorAll('#nav a').forEach(a=>a.addEventListener('click',()=>$('#sidebar').classList.remove('open')));
+router();
+
