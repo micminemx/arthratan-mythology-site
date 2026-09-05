@@ -208,28 +208,60 @@ async function masterpageView(id){
 }
 
 /* --- Character Encyclopedia & Dossier Subsystem --- */
+function nonEmpty(v){
+  if(v === null || v === undefined) return false;
+  if(Array.isArray(v)) return v.length > 0;
+  if(typeof v === 'string') return v.trim().length > 0;
+  if(typeof v === 'object') return Object.keys(v).length > 0;
+  return true;
+}
+
+function renderRecordValue(v){
+  if(!nonEmpty(v)) return '';
+  if(Array.isArray(v)){
+    const rows = v.filter(nonEmpty);
+    if(!rows.length) return '';
+    return `<ul style="margin:8px 0 0; padding-left:20px">${rows.map(x=>`<li>${renderRecordValue(x)}</li>`).join('')}</ul>`;
+  }
+  if(typeof v === 'object'){
+    const rows = Object.entries(v).filter(([,value])=>nonEmpty(value));
+    if(!rows.length) return '';
+    return `<dl class="record-kv">${rows.map(([key,value])=>`<dt>${esc(key.replace(/_/g,' '))}</dt><dd>${renderRecordValue(value)}</dd>`).join('')}</dl>`;
+  }
+  return esc(v);
+}
+
+function safeCharacterLookup(chars, requested){
+  const exact = chars.filter(c => c.slug === requested);
+  if(exact.length === 1) return exact[0];
+  if(exact.length > 1) return null;
+  const q = slug(requested);
+  if(!q) return null;
+  const aliasMatches = chars.filter(c => Array.isArray(c.aliases) && c.aliases.some(a => slug(a) === q));
+  return aliasMatches.length === 1 ? aliasMatches[0] : null;
+}
+
+function characterFactRow(label, value, badge=false){
+  if(!nonEmpty(value)) return '';
+  const rendered = Array.isArray(value) ? value.map(esc).join(' · ') : esc(value);
+  return `<tr><th>${esc(label)}</th><td>${badge ? `<span class="canon-badge">◆ ${rendered}</span>` : rendered}</td></tr>`;
+}
+
 async function charactersHub(filterClan='all'){
   const d = await load('characters');
   const chars = d.characters || [];
   setBreadcrumbs([
     {label:'Sanctuary', href:'#home'},
-    {label:'People & Entities', href:'#characters'},
-    {label:'Character Encyclopedia'}
+    {label:'People & Entities'}
   ]);
-  
-  const clans = ['all', ...Array.from(new Set(chars.map(c => c.clan).filter(Boolean))).sort()];
+  const clans = ['all', ...Array.from(new Set(chars.map(c => c.clan).filter(nonEmpty))).sort()];
   const filtered = (filterClan === 'all') ? chars : chars.filter(c => c.clan === filterClan);
-  
-  const getAvatar = c => {
-    if(c.model_art) return c.model_art;
-    if(c.slug === 'rhayhara') return 'assets/art/rhayhara-crowned.webp';
-    return 'assets/art/chibi-arthiteans.webp';
-  };
-  
+  const getAvatar = c => c.model_art || 'assets/art/chibi-arthiteans.webp';
+
   main.innerHTML = pageIntro(
-    '43 Canonical Figures · Lineages, Warlords & Ascenders',
+    `${chars.length} Published Character Records`,
     'Character Encyclopedia',
-    'Comprehensive structured dossiers across all canonical Arthratan figures, documenting affiliations, paraconceptual mechanics, source transmissions, and crosslinked masterpages.',
+    'Structured dossiers from the current character registry. Missing properties remain explicitly unfilled rather than inferred.',
     'assets/art/chibi-arthiteans.webp'
   ) + `
   <div class="roster-filter-row">
@@ -239,118 +271,118 @@ async function charactersHub(filterClan='all'){
       </button>
     `).join('')}
   </div>
-  
   <div class="character-roster-grid">
     ${filtered.map(c => `
       <a class="character-card" href="#character:${esc(c.slug)}">
-        <img class="character-avatar" src="${getAvatar(c)}" alt="${esc(c.name)}">
+        <img class="character-avatar" src="${esc(getAvatar(c))}" alt="${esc(c.name || c.slug || 'Character record')}">
         <div class="character-card-info">
-          <h3>${esc(c.name)}</h3>
-          <small>${esc(c.clan || c.species || 'Canonical entity')} · ${esc(c.status || 'Active')}</small>
-          <p>${esc(c.role || c.summary)}</p>
+          <h3>${esc(c.name || c.slug || 'Unnamed record')}</h3>
+          <small>${esc(c.clan || c.species || c.classification || 'Published record')}${nonEmpty(c.status) ? ' · ' + esc(c.status) : ''}</small>
+          ${nonEmpty(c.role || c.summary) ? `<p>${esc(c.role || c.summary)}</p>` : ''}
         </div>
       </a>
     `).join('')}
-  </div>
-  `;
+  </div>`;
 }
 
 async function characterView(cslug){
   const d = await load('characters');
   const chars = d.characters || [];
-  const c = chars.find(x => x.slug === cslug || (x.aliases && x.aliases.map(slug).includes(slug(cslug))));
-  if(!c) return charactersHub();
-  
+  const c = safeCharacterLookup(chars, cslug);
+  if(!c) return routeNotFound(`character:${cslug}`);
+
   setBreadcrumbs([
     {label:'Sanctuary', href:'#home'},
     {label:'People & Entities', href:'#characters'},
-    {label: c.name}
+    {label:c.name || c.slug}
   ]);
-  
-  const avatar = c.model_art || (c.slug === 'rhayhara' ? 'assets/art/rhayhara-crowned.webp' : 'assets/art/chibi-arthiteans.webp');
-  
-  const abilitiesHtml = (c.abilities && c.abilities.length) ? `
-    <div class="section-head"><h2>Abilities & Paraconceptual Mechanics</h2></div>
+
+  const hasModelArt = nonEmpty(c.model_art);
+  const avatar = hasModelArt ? c.model_art : 'assets/art/chibi-arthiteans.webp';
+  const portraitLabel = hasModelArt
+    ? (nonEmpty(c.model_note) ? c.model_note : 'Published model-art reference')
+    : 'Generic site illustration — not a canonical portrait';
+
+  const abilitiesHtml = Array.isArray(c.abilities) && c.abilities.length ? `
+    <div class="section-head"><h2>Abilities & Mechanics</h2></div>
     <div class="grid two">
-      ${c.abilities.map(a => `
-        <div class="card">
-          <div class="micro">${esc(a.type || 'MECHANIC')}</div>
-          <h3>${esc(a.name || 'Ability')}</h3>
-          <p>${esc(a.description || a.summary || '')}</p>
-        </div>
-      `).join('')}
-    </div>
-  ` : '';
-  
-  const relsHtml = (c.relationships && c.relationships.length) ? `
-    <div class="section-head"><h2>Documented Relational Dynamics</h2></div>
+      ${c.abilities.filter(nonEmpty).map(a => {
+        if(typeof a === 'string') return `<div class="card"><p>${esc(a)}</p></div>`;
+        if(a && typeof a === 'object'){
+          const title = a.name || a.title || '';
+          const micro = a.type || a.class || '';
+          const body = a.description || a.summary || a.text || '';
+          return `<div class="card">${nonEmpty(micro) ? `<div class="micro">${esc(micro)}</div>` : ''}${nonEmpty(title) ? `<h3>${esc(title)}</h3>` : ''}${nonEmpty(body) ? `<p>${renderRecordValue(body)}</p>` : renderRecordValue(a)}</div>`;
+        }
+        return '';
+      }).join('')}
+    </div>` : '';
+
+  const relsHtml = Array.isArray(c.relationships) && c.relationships.length ? `
+    <div class="section-head"><h2>Documented Relationships</h2></div>
     <div class="grid two">
-      ${c.relationships.map(r => `
-        <div class="card">
-          <div class="micro">${esc(r.relation || 'AFFILIATION')}</div>
-          <h3><a href="#character:${esc(slug(r.target || ''))}" style="color:#e4b76f; text-decoration:none">${esc(r.target)}</a></h3>
-          <p>${esc(r.notes || r.summary || '')}</p>
-        </div>
-      `).join('')}
-    </div>
-  ` : '';
-  
-  const sourcesHtml = (c.source_threads && c.source_threads.length) ? `
+      ${c.relationships.filter(nonEmpty).map(r => {
+        if(typeof r === 'string') return `<div class="card"><p>${esc(r)}</p></div>`;
+        if(!r || typeof r !== 'object') return '';
+        const relation = r.relation || r.type || '';
+        const target = r.target || r.name || '';
+        const notes = r.notes || r.summary || r.description || '';
+        const targetSlug = r.target_slug;
+        const canLink = nonEmpty(targetSlug) && chars.filter(x => x.slug === targetSlug).length === 1;
+        const targetHtml = nonEmpty(target) ? (canLink ? `<a href="#character:${esc(targetSlug)}" style="color:#e4b76f; text-decoration:none">${esc(target)}</a>` : esc(target)) : '';
+        return `<div class="card">${nonEmpty(relation) ? `<div class="micro">${esc(relation)}</div>` : ''}${targetHtml ? `<h3>${targetHtml}</h3>` : ''}${nonEmpty(notes) ? `<p>${renderRecordValue(notes)}</p>` : ''}</div>`;
+      }).join('')}
+    </div>` : '';
+
+  const sourcesHtml = Array.isArray(c.source_threads) && c.source_threads.length ? `
     <div class="section-head"><h2>Preserved Source Occurrences & Threads</h2></div>
-    <div class="card">
-      <ul style="margin:0; padding-left:20px; color:#c3b9c8">
-        ${c.source_threads.map(s => {
-          const isTx = s.match(/([0-9a-f]{16})/i);
-          const href = isTx ? `#transmission:${isTx[1]}` : '#stories';
-          return `<li style="margin-bottom:6px"><a href="${href}" style="color:#e4b76f">${esc(s)}</a></li>`;
-        }).join('')}
-      </ul>
-    </div>
-  ` : '';
-  
+    <div class="card"><ul style="margin:0; padding-left:20px; color:#c3b9c8">
+      ${c.source_threads.filter(nonEmpty).map(s => {
+        const text = typeof s === 'string' ? s : JSON.stringify(s);
+        const m = text.match(/([0-9a-f]{16})/i);
+        const href = m ? `#transmission:${m[1]}` : '#stories';
+        return `<li style="margin-bottom:6px"><a href="${href}" style="color:#e4b76f">${esc(text)}</a></li>`;
+      }).join('')}
+    </ul></div>` : '';
+
+  const biographyParts = [];
+  if(nonEmpty(c.history)) biographyParts.push(`<h3>History</h3>${renderRecordValue(c.history)}`);
+  else if(nonEmpty(c.summary)) biographyParts.push(`<p>${esc(c.summary)}</p>`);
+  if(nonEmpty(c.personality)) biographyParts.push(`<h3>Personality / Disposition</h3>${renderRecordValue(c.personality)}`);
+  if(nonEmpty(c.appearance)) biographyParts.push(`<h3>Appearance</h3>${renderRecordValue(c.appearance)}`);
+  if(Array.isArray(c.gaps) && c.gaps.length) biographyParts.push(`<h3>Information Not Yet Established</h3>${renderRecordValue(c.gaps)}`);
+
   main.innerHTML = `
   <section class="dossier-hero">
     <div>
-      <div class="eyebrow">${esc(c.classification || 'Canonical Character')} · ${esc(c.clan || 'Independent')}</div>
-      <h1 class="page-title" style="margin:8px 0 14px">${esc(c.name)}</h1>
-      <p class="lede">${esc(c.summary || c.role)}</p>
-      
+      <div class="eyebrow">${esc(c.classification || 'Published Character Record')}${nonEmpty(c.clan) ? ' · ' + esc(c.clan) : ''}</div>
+      <h1 class="page-title" style="margin:8px 0 14px">${esc(c.name || c.slug)}</h1>
+      ${nonEmpty(c.summary || c.role) ? `<p class="lede">${esc(c.summary || c.role)}</p>` : ''}
       <table class="dossier-meta-table">
-        <tr><th>Role</th><td>${esc(c.role || 'Unspecified')}</td></tr>
-        ${c.titles && c.titles.length ? `<tr><th>Titles</th><td>${esc(c.titles.join(' · '))}</td></tr>` : ''}
-        <tr><th>Clan</th><td>${esc(c.clan || 'Independent')}</td></tr>
-        <tr><th>Species</th><td>${esc(c.species || 'Arthitean')}</td></tr>
-        <tr><th>Allegiance</th><td>${esc(c.allegiance || 'Empire of Arthrata')}</td></tr>
-        <tr><th>Canon Level</th><td><span class="canon-badge">◆ ${esc(c.canon_level || 'Extensive')}</span></td></tr>
-        <tr><th>Status</th><td>${esc(c.status || 'Active')}</td></tr>
+        ${characterFactRow('Role', c.role)}
+        ${characterFactRow('Titles', c.titles)}
+        ${characterFactRow('Clan', c.clan)}
+        ${characterFactRow('Species', c.species)}
+        ${characterFactRow('Sex', c.sex)}
+        ${characterFactRow('Allegiance', c.allegiance)}
+        ${characterFactRow('Canon Level', c.canon_level, true)}
+        ${characterFactRow('Status', c.status)}
       </table>
     </div>
-    
     <div class="dossier-portrait">
-      <img src="${avatar}" alt="${esc(c.name)} portrait">
-      <div style="padding:12px 14px; font-size:11px; color:#84788d; text-align:center">
-        Canonical Portrait · ${esc(c.name)}
-      </div>
+      <img src="${esc(avatar)}" alt="${esc(c.name || c.slug)}">
+      <div style="padding:12px 14px; font-size:11px; color:#84788d; text-align:center">${esc(portraitLabel)}</div>
     </div>
   </section>
-  
-  <div class="section-head"><h2 style="color:#FFD700">Canonical Biography & Character Profile</h2></div>
-  <div class="card" style="border-left:4px solid #FFD700; background:rgba(255,215,0,0.03)">
-    <p style="margin-bottom:12px">${esc(c.history || c.summary)}</p>
-    ${c.personality ? `<p><b>Disposition:</b> ${esc(c.personality)}</p>` : ''}
-    ${c.appearance ? `<p><b>Appearance:</b> ${esc(c.appearance)}</p>` : ''}
-  </div>
-  
+  ${biographyParts.length ? `<div class="section-head"><h2>Canonical Biography & Character Profile</h2></div><div class="card">${biographyParts.join('')}</div>` : ''}
   ${abilitiesHtml}
   ${relsHtml}
   ${sourcesHtml}
-  
   <div class="concept-nav" style="margin-top:28px">
     <a href="#characters">← Back to Character Encyclopedia</a>
     <a href="#index">Browse A–Z Index</a>
     <a href="#masterpages">Masterpages Directory</a>
-  </div>
-  `;
+  </div>`;
 }
 
 /* --- Causal Ontology Subsystem --- */
@@ -407,44 +439,47 @@ async function causalOntologyView(){
 let siteIndexState = { activeLetter: '', activeDomain: 'all', query: '' };
 
 async function siteIndexView(letter=''){
-  if(letter) siteIndexState.activeLetter = letter.toUpperCase();
+  siteIndexState.activeLetter = letter ? letter.toUpperCase() : '';
   const d = await load('siteIndex');
+  const metrics = d.metadata?.metrics || {};
+  const canonicalCount = Number(metrics.total_canonical_entries || 0);
+  const aliasCount = Number(metrics.total_alias_mappings || 0);
+  const termCount = Number(metrics.total_indexable_terms || (canonicalCount + aliasCount));
+  const domainCount = Number(metrics.domains_count || Object.keys(d.domains_summary || {}).length);
+
   setBreadcrumbs([
     {label:'Sanctuary', href:'#home'},
     {label:'Discovery', href:'#search'},
     {label:'A–Z Site Index' + (siteIndexState.activeLetter ? ' (' + siteIndexState.activeLetter + ')' : '')}
   ]);
-  
+
   const allLetters = ['ALL', ...(d.a_to_z ? Object.keys(d.a_to_z).sort() : [])];
   const allDomains = ['all', ...Object.keys(d.domains_summary || {})];
-  
   main.innerHTML = pageIntro(
-    '715 Canonical Entries · 1,297 Aliases · 7 Domains',
+    `${canonicalCount} Canonical Entries · ${aliasCount} Aliases · ${domainCount} Domains`,
     'A–Z Codex Directory',
-    'Authoritative, instant-searchable reference directory across all knowledge domains, unifying characters, masterpages, divine sections, HGL logic, and Zubaida correspondence.',
+    'Search and browse the current generated index. Every “Open entity” target is validated against an implemented static or SPA destination by the architecture gate.',
     'assets/art/chibi-search.webp'
   ) + `
   <div class="index-toolbar">
     <div class="alphabet-jump-bar" id="azJumpBar">
       ${allLetters.map(l => {
         const isAct = (l === 'ALL' && !siteIndexState.activeLetter) || (l === siteIndexState.activeLetter);
-        return `<button class="${isAct ? 'is-active' : ''}" onclick="filterIndexLetter('${l === 'ALL' ? '' : l}')">${l}</button>`;
+        return `<button class="${isAct ? 'is-active' : ''}" onclick="filterIndexLetter('${l === 'ALL' ? '' : l}')">${esc(l)}</button>`;
       }).join('')}
     </div>
-    <input class="index-search-input" id="indexSearchInput" type="search" placeholder="Type to filter 2,012 canonical terms & aliases instant real-time..." value="${esc(siteIndexState.query)}">
+    <input class="index-search-input" id="indexSearchInput" type="search" placeholder="Type to filter ${termCount.toLocaleString()} indexed terms & aliases..." value="${esc(siteIndexState.query)}">
     <div class="domain-filter-row" id="domainFilterRow">
       ${allDomains.map(dom => {
-        const isAct = (dom === siteIndexState.activeDomain);
-        const count = dom === 'all' ? (d.metadata?.metrics?.total_canonical_entries || 715) : (d.domains_summary[dom] || 0);
-        return `<button class="domain-pill ${isAct ? 'is-active' : ''}" onclick="filterIndexDomain('${esc(dom)}')">${esc(dom)} (${count})</button>`;
+        const isAct = dom === siteIndexState.activeDomain;
+        const count = dom === 'all' ? canonicalCount : Number(d.domains_summary?.[dom] || 0);
+        return `<button class="domain-pill ${isAct ? 'is-active' : ''}" data-domain="${esc(dom)}">${esc(dom)} (${count})</button>`;
       }).join('')}
     </div>
   </div>
-  
   <div class="index-meta-strip" id="indexMetaStrip">Loading entries...</div>
-  <div class="index-grid" id="indexCardsGrid"></div>
-  `;
-  
+  <div class="index-grid" id="indexCardsGrid"></div>`;
+
   const searchInput = $('#indexSearchInput');
   if(searchInput){
     searchInput.oninput = () => {
@@ -452,7 +487,9 @@ async function siteIndexView(letter=''){
       renderIndexCards(d);
     };
   }
-  
+  document.querySelectorAll('#domainFilterRow button[data-domain]').forEach(btn => {
+    btn.onclick = () => filterIndexDomain(btn.dataset.domain || 'all');
+  });
   renderIndexCards(d);
 }
 
@@ -468,12 +505,13 @@ function filterIndexDomain(dom){
 }
 
 function getDomainClass(domain){
-  if(domain.includes('Divine')) return 'index-domain-divine';
-  if(domain.includes('Zubaida')) return 'index-domain-zubaida';
-  if(domain.includes('Hypergendered')) return 'index-domain-hgl';
-  if(domain.includes('Concepts') || domain.includes('Masterpages')) return 'index-domain-concepts';
-  if(domain.includes('Characters')) return 'index-domain-characters';
-  if(domain.includes('Chronology')) return 'index-domain-chronology';
+  const name = String(domain || '');
+  if(name.includes('Divine')) return 'index-domain-divine';
+  if(name.includes('Zubaida')) return 'index-domain-zubaida';
+  if(name.includes('Hypergendered')) return 'index-domain-hgl';
+  if(name.includes('Concepts') || name.includes('Masterpages')) return 'index-domain-concepts';
+  if(name.includes('Characters')) return 'index-domain-characters';
+  if(name.includes('Chronology')) return 'index-domain-chronology';
   return 'index-domain-clans';
 }
 
@@ -481,89 +519,49 @@ function renderIndexCards(d){
   const grid = $('#indexCardsGrid');
   const strip = $('#indexMetaStrip');
   if(!grid || !strip) return;
-  
-  let allEntries = [];
-  Object.keys(d.a_to_z || {}).forEach(k => {
-    allEntries.push(...d.a_to_z[k]);
-  });
-  
+
+  const allEntries = [];
+  Object.keys(d.a_to_z || {}).forEach(k => allEntries.push(...(d.a_to_z[k] || [])));
   const seen = new Set();
-  let entries = [];
-  allEntries.forEach(e => {
-    if(!seen.has(e.id)){
-      seen.add(e.id);
-      entries.push(e);
-    }
+  let entries = allEntries.filter(e => {
+    if(!e || !e.id || seen.has(e.id)) return false;
+    seen.add(e.id);
+    return true;
   });
-  
+
   if(siteIndexState.activeLetter){
     entries = entries.filter(e => {
-      const char = (e.label || '').trim().charAt(0).toUpperCase();
+      const char = String(e.label || '').trim().charAt(0).toUpperCase();
       if(siteIndexState.activeLetter === '0-9') return /^[0-9]/.test(char);
       return char === siteIndexState.activeLetter;
     });
   }
-  
-  if(siteIndexState.activeDomain && siteIndexState.activeDomain !== 'all'){
-    entries = entries.filter(e => e.domain === siteIndexState.activeDomain);
-  }
-  
+  if(siteIndexState.activeDomain && siteIndexState.activeDomain !== 'all') entries = entries.filter(e => e.domain === siteIndexState.activeDomain);
   if(siteIndexState.query){
     const q = siteIndexState.query;
     entries = entries.filter(e => {
-      const matchLabel = (e.label || '').toLowerCase().includes(q);
-      const matchDesc = (e.description || '').toLowerCase().includes(q);
-      const matchAliases = (e.aliases || []).some(a => a.toLowerCase().includes(q));
-      return matchLabel || matchDesc || matchAliases;
+      const aliases = Array.isArray(e.aliases) ? e.aliases : [];
+      return String(e.label || '').toLowerCase().includes(q) || String(e.description || '').toLowerCase().includes(q) || aliases.some(a => String(a).toLowerCase().includes(q));
     });
   }
-  
+
   document.querySelectorAll('#azJumpBar button').forEach(b => {
     const txt = b.textContent;
-    const isAct = (txt === 'ALL' && !siteIndexState.activeLetter) || (txt === siteIndexState.activeLetter);
-    b.classList.toggle('is-active', isAct);
+    b.classList.toggle('is-active', (txt === 'ALL' && !siteIndexState.activeLetter) || txt === siteIndexState.activeLetter);
   });
-  document.querySelectorAll('#domainFilterRow button').forEach(b => {
-    const isAct = b.textContent.startsWith(siteIndexState.activeDomain);
-    b.classList.toggle('is-active', isAct);
-  });
-  
-  strip.innerHTML = `Showing <b>${entries.length}</b> matching entities ${siteIndexState.activeLetter ? `(Letter ${siteIndexState.activeLetter})` : ''} ${siteIndexState.activeDomain !== 'all' ? `[Domain: ${esc(siteIndexState.activeDomain)}]` : ''}`;
-  
-  if(entries.length === 0){
-    grid.innerHTML = `<div class="card" style="grid-column: 1 / -1; text-align:center; padding:32px">
-      <h3>No matching index entries found</h3>
-      <p>Try clearing filters or searching a different term.</p>
-      <button class="primary" style="margin-top:14px" onclick="siteIndexState.query=''; siteIndexState.activeLetter=''; siteIndexState.activeDomain='all'; renderIndexCards(state['siteIndex']);">Reset all filters</button>
-    </div>`;
+  document.querySelectorAll('#domainFilterRow button[data-domain]').forEach(b => b.classList.toggle('is-active', (b.dataset.domain || 'all') === siteIndexState.activeDomain));
+
+  strip.innerHTML = `Showing <b>${entries.length}</b> matching entities${siteIndexState.activeLetter ? ` (Letter ${esc(siteIndexState.activeLetter)})` : ''}${siteIndexState.activeDomain !== 'all' ? ` [Domain: ${esc(siteIndexState.activeDomain)}]` : ''}`;
+  if(!entries.length){
+    grid.innerHTML = `<div class="card" style="grid-column:1/-1;text-align:center;padding:32px"><h3>No matching index entries found</h3><p>Try clearing filters or searching a different term.</p><button class="primary" style="margin-top:14px" onclick="siteIndexState.query='';siteIndexState.activeLetter='';siteIndexState.activeDomain='all';renderIndexCards(state['siteIndex']);">Reset all filters</button></div>`;
     return;
   }
-  
+
   grid.innerHTML = entries.map(e => {
     const badgeClass = getDomainClass(e.domain);
-    const targetUrl = e.target_url || '#home';
-    return `
-    <article class="index-card">
-      <div>
-        <div class="index-card-head">
-          <span class="index-domain-badge ${badgeClass}">${esc(e.domain)}</span>
-          <span class="canon-badge" style="font-size:10px">◆ ${esc(e.status || 'CANONICAL')}</span>
-        </div>
-        <h3>${esc(e.label)}</h3>
-        <p>${esc(e.description || 'Canonical record in the Arthitean Codex.')}</p>
-        ${e.aliases && e.aliases.length ? `
-          <div class="index-alias-list">
-            ${e.aliases.slice(0, 5).map(a => `<span class="index-alias-tag">${esc(a)}</span>`).join('')}
-            ${e.aliases.length > 5 ? `<span class="index-alias-tag">+${e.aliases.length - 5} more</span>` : ''}
-          </div>
-        ` : ''}
-      </div>
-      <div class="index-card-foot">
-        <small style="color:#7f738a">${esc(e.category || 'Canonical')}</small>
-        <a class="concept-link" href="${esc(targetUrl)}" style="font-size:12px; font-weight:600; color:#e4b76f">Open entity →</a>
-      </div>
-    </article>
-    `;
+    const targetUrl = String(e.target_url || '').trim();
+    const aliases = Array.isArray(e.aliases) ? e.aliases : [];
+    return `<article class="index-card"><div><div class="index-card-head"><span class="index-domain-badge ${badgeClass}">${esc(e.domain || 'Index')}</span>${nonEmpty(e.status) ? `<span class="canon-badge" style="font-size:10px">◆ ${esc(e.status)}</span>` : ''}</div><h3>${esc(e.label || e.id)}</h3>${nonEmpty(e.description) ? `<p>${esc(e.description)}</p>` : ''}${aliases.length ? `<div class="index-alias-list">${aliases.slice(0,5).map(a=>`<span class="index-alias-tag">${esc(a)}</span>`).join('')}${aliases.length>5 ? `<span class="index-alias-tag">+${aliases.length-5} more</span>` : ''}</div>` : ''}</div><div class="index-card-foot"><small style="color:#7f738a">${esc(e.category || '')}</small>${targetUrl ? `<a class="concept-link" href="${esc(targetUrl)}" style="font-size:12px;font-weight:600;color:#e4b76f">Open entity →</a>` : `<span class="micro">No implemented target</span>`}</div></article>`;
   }).join('');
 }
 

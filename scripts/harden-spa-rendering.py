@@ -204,9 +204,9 @@ async function siteIndexView(letter=''){
   const d = await load('siteIndex');
   const metrics = d.metadata?.metrics || {};
   const canonicalCount = Number(metrics.total_canonical_entries || 0);
-  const aliasCount = Number(metrics.total_aliases || 0);
-  const termCount = Number(metrics.total_terms || (canonicalCount + aliasCount));
-  const domainCount = Number(metrics.domains || Object.keys(d.domains_summary || {}).length);
+  const aliasCount = Number(metrics.total_alias_mappings || 0);
+  const termCount = Number(metrics.total_indexable_terms || (canonicalCount + aliasCount));
+  const domainCount = Number(metrics.domains_count || Object.keys(d.domains_summary || {}).length);
 
   setBreadcrumbs([
     {label:'Sanctuary', href:'#home'},
