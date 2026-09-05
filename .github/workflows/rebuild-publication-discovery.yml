@@ -5,6 +5,7 @@ on:
     paths:
       - "myths/**"
       - "crossscaling/**"
+      - "data/publication-relations.json"
       - "scripts/register-publication-graph.py"
       - "scripts/generate-static-routes.mjs"
       - "scripts/generate-comprehensive-sitemap.py"
@@ -28,64 +29,129 @@ jobs:
       - name: Validate publication-graph postprocessor
         run: python -m py_compile scripts/register-publication-graph.py scripts/generate-comprehensive-sitemap.py
 
-      - name: Register Myth and Crossscaling discovery routes
+      - name: Register typed Myth, Crossscaling, character and source relationships
         run: python scripts/register-publication-graph.py
 
       - name: Regenerate comprehensive sitemap
         run: python scripts/generate-comprehensive-sitemap.py
 
-      - name: Verify canon boundary, route discovery and character backlinks
+      - name: Verify canon boundary, reciprocal relations and exact evidence paths
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           import json, pathlib, re
-          root=pathlib.Path('.')
-          manifest=json.load(open(root/'data/static-route-manifest.json',encoding='utf-8'))
-          publications=[r for r in manifest['routes'] if r.get('kind') in {'myth','crossscaling'}]
+          from urllib.parse import urlsplit
+
+          root = pathlib.Path('.')
+          manifest = json.load(open(root/'data/static-route-manifest.json', encoding='utf-8'))
+          relations = json.load(open(root/'data/publication-relations.json', encoding='utf-8'))['records']
+          publications = [r for r in manifest['routes'] if r.get('kind') in {'myth','crossscaling'}]
           assert publications, 'No Myth/Crossscaling routes registered'
-          crawl=(root/'crawl/index.html').read_text(encoding='utf-8')
-          sitemap=(root/'sitemap.xml').read_text(encoding='utf-8')
-          char_re=re.compile(r'href\s*=\s*[\'\"](?:https://arthratanmythology\.com)?/characters/([^/\'\"?#]+)/?[\'\"]',re.I)
+          publication_by_url = {r['url']: r for r in publications}
+          crawl = (root/'crawl/index.html').read_text(encoding='utf-8')
+          sitemap = (root/'sitemap.xml').read_text(encoding='utf-8')
+
+          def route_file(route):
+              path = urlsplit(route).path
+              assert path.startswith('/'), route
+              rel = path.lstrip('/')
+              if not rel:
+                  return root/'index.html'
+              if rel.endswith('/'):
+                  return root/rel/'index.html'
+              return root/rel
+
+          char_re = re.compile(r'href\s*=\s*[\'\"](?:https://arthratanmythology\.com)?/characters/([^/\'\"?#]+)/?[\'\"]', re.I)
+
           for r in publications:
-              source=root/r['source']
+              source = root/r['source']
               assert source.exists(), source
-              expected='canonical-narrative' if r['kind']=='myth' else 'noncanon-analytical'
-              assert r.get('canon_status')==expected,(r['url'],r.get('canon_status'))
-              assert r['url'] in crawl,r['url']
-              assert 'https://arthratanmythology.com'+r['url'] in sitemap,r['url']
-              text=source.read_text(encoding='utf-8')
-              if r['kind']=='crossscaling':
-                  assert 'CROSSSCALE-ONLY' in text.upper(),r['url']
+              expected = 'canonical-narrative' if r['kind'] == 'myth' else 'noncanon-analytical'
+              assert r.get('canon_status') == expected, (r['url'], r.get('canon_status'))
+              assert r['url'] in crawl, r['url']
+              assert 'https://arthratanmythology.com' + r['url'] in sitemap, r['url']
+              text = source.read_text(encoding='utf-8')
+              if r['kind'] == 'crossscaling':
+                  assert 'CROSSSCALE-ONLY' in text.upper(), r['url']
               if r['url'] in {'/myths/','/crossscaling/'}:
                   continue
               for slug in set(char_re.findall(text)):
-                  page=root/'characters'/slug/'index.html'
-                  assert page.exists(),(r['url'],slug)
-                  rendered=page.read_text(encoding='utf-8')
-                  assert r['url'] in rendered,(slug,r['url'])
-          canaries={
+                  page = root/'characters'/slug/'index.html'
+                  assert page.exists(), (r['url'], slug)
+                  rendered = page.read_text(encoding='utf-8')
+                  assert r['url'] in rendered, (slug, r['url'])
+
+          seen = set()
+          for rec in relations:
+              rid = rec['id']
+              assert rid not in seen, ('duplicate relation id', rid)
+              seen.add(rid)
+              myth = rec['myth']
+              cross = rec.get('crossscaling')
+              assert myth in publication_by_url and publication_by_url[myth]['kind'] == 'myth', (rid, myth)
+              if cross:
+                  assert cross in publication_by_url and publication_by_url[cross]['kind'] == 'crossscaling', (rid, cross)
+
+              required_publication_links = list(rec['characters']) + list(rec['primary_sources']) + list(rec.get('supporting_sources', []))
+              for publication_route in [myth, cross]:
+                  if not publication_route:
+                      continue
+                  page = route_file(publication_route)
+                  text = page.read_text(encoding='utf-8')
+                  assert '<!-- PUBLICATION-RELATIONS:START -->' in text, (rid, publication_route, 'missing relationship block')
+                  for required in required_publication_links:
+                      assert f'href="{required}"' in text, (rid, publication_route, required)
+                  if publication_route.startswith('/crossscaling/'):
+                      assert 'CROSSSCALE-ONLY' in text.upper(), publication_route
+
+              for character in rec['characters']:
+                  page = route_file(character)
+                  assert page.exists(), (rid, character)
+                  text = page.read_text(encoding='utf-8')
+                  assert myth in text, (rid, character, myth)
+                  if cross:
+                      assert cross in text, (rid, character, cross)
+
+              for evidence in rec['primary_sources'] + rec.get('supporting_sources', []):
+                  page = route_file(evidence)
+                  assert page.exists(), (rid, evidence)
+                  if evidence.startswith('/zubaida/'):
+                      text = page.read_text(encoding='utf-8')
+                      assert '<!-- SOURCE-DEPENDENCY-GRAPH:START -->' in text, (rid, evidence)
+                      assert myth in text, (rid, evidence, myth)
+                      if cross:
+                          assert cross in text, (rid, evidence, cross)
+                      for character in rec['characters']:
+                          assert f'href="{character}"' in text, (rid, evidence, character)
+                      assert re.search(r'<pre\s+class=["\']source["\'][^>]*>.*?</pre>', text, flags=re.I|re.S), (evidence, 'verbatim payload missing')
+
+          canaries = {
               'dyvane-redalious':'/myths/dyvane-vs-xael-gath/',
+              'xael-gath':'/myths/dyvane-vs-xael-gath/',
               'qintara-unmatara':'/myths/qintara-vs-vaelstrum/',
+              'vaelstrum':'/myths/qintara-vs-vaelstrum/',
               'high-lord-kaelen-vanguard':'/myths/high-lord-kaelen-vs-ophidion/',
-              'rhayhara':'/myths/rhayhara-and-othrys-five-orthogonal-escalations/',
+              'ophidion':'/myths/high-lord-kaelen-vs-ophidion/',
+              'rhayhara':'/myths/rhayharas-ten-destiny-defying-trials/',
           }
-          for slug,url in canaries.items():
-              page=(root/'characters'/slug/'index.html').read_text(encoding='utf-8')
-              assert url in page,(slug,url)
-          print('Verified',len(publications),'publication routes and explicit character backlink graph')
+          for slug, url in canaries.items():
+              page = (root/'characters'/slug/'index.html').read_text(encoding='utf-8')
+              assert url in page, (slug, url)
+
+          print('Verified', len(publications), 'publication routes,', len(relations), 'typed relation records, reciprocal character backlinks and source dependency paths')
           PY
 
-      - name: Commit regenerated discovery surfaces
+      - name: Commit regenerated discovery and evidence surfaces
         shell: bash
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/static-route-manifest.json crawl/index.html sitemap.xml characters/
+          git add data/static-route-manifest.json crawl/index.html sitemap.xml characters/ myths/ crossscaling/ zubaida/
           if git diff --cached --quiet; then
-            echo "Discovery surfaces already current."
+            echo "Discovery and evidence surfaces already current."
             exit 0
           fi
-          git commit -m "Rebuild Myth and Crossscaling discovery graph"
+          git commit -m "Rebuild typed publication and evidence graph"
           git push
