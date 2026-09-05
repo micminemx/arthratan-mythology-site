@@ -141,8 +141,7 @@ for s in new_canon_doc.get("sections", []):
 causal_doc = load("causal-ontology.json")
 for c in causal_doc.get("concepts", []):
     cid = c["id"]
-    title = c.get("title") or c.get("name") or cid
-    add(id="concept:" + cid, type="concept", title=title, route="/#negative-rewrite" if "rewrite" in cid else "/#scaling", source_locator="/data/causal-ontology.json#" + cid, full_text=compact(c))
+    add(id="concept:" + cid, type="concept", title=(c.get("title") or c.get("name") or cid.replace("-", " ").title()), route="/#negative-rewrite" if "rewrite" in cid else "/#scaling", source_locator="/data/causal-ontology.json#" + cid, full_text=compact(c))
 
 hgl_glossary_doc = load("hgl-glossary.json")
 for e in hgl_glossary_doc.get("entries", []):
